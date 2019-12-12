@@ -18,7 +18,7 @@ def output_projects(proj, id)
   proj.select {|p| p['category']==id }
     .sort_by {|k,v| k['title']}
     .each do |p|
-    o << "  * [#{p['title'].force_encoding('utf-8')}](#{p['homepage']}) #{output_linux p['tags']}- #{p['description']}\n"
+    o << "* [#{p['title'].force_encoding('utf-8')}](#{p['homepage']}) #{output_linux p['tags']}- #{p['description']}\n"
   end
   o
 end
@@ -30,8 +30,8 @@ def output_content_category(c, indent)
     toc << '#'
   end
 
-  toc << " #{c['title']}\n"
-  toc << "* #{c['description']} " unless c['description'].nil?
+  toc << " ##{c['title']}\n"
+  toc << "*#{c['description']}* " unless c['description'].nil?
   toc << "[back to top](#readme) \n" if indent>2
   toc << "\n"
 
