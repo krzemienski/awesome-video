@@ -83,8 +83,8 @@ def output_header(j)
 
   o = header
    o << "\n\n"  
-  o << output_table(num_projects)
-  o
+  # o << output_table(num_projects)
+  # o
 end
 
 def output_contributing(j)
@@ -138,8 +138,8 @@ def output_toc(j)
 end
 
 def write_readme(j, filename)
-    # output = output_header(j)
-    output = output_toc(j)
+    output = output_header(j)
+    output << output_toc(j)
     output << output_content(j)
     output << output_contributing(j)
 
