@@ -1,0 +1,366 @@
+﻿Name,Tags,Edited on,Property,URL
+"Live Video Transmuxing/Transcoding: FFmpeg vs TwitchTranscoder, Part I","Ffmpeg, encoding, learning, read","Dec 11, 2019 2:23 PM",,https://blog.twitch.tv/en/2017/10/10/live-video-transmuxing-transcoding-f-fmpeg-vs-twitch-transcoder-part-i-489c1c125f28/
+"Live Video Transmuxing/Transcoding: FFmpeg vs TwitchTranscoder, Part II","Ffmpeg, encoding, learning, read","Dec 11, 2019 2:22 PM",,https://blog.twitch.tv/live-video-transmuxing-transcoding-ffmpeg-vs-twitchtranscoder-part-ii-4973f475f8a3?source=userActivityShare-94bccb50d11-1561003748&_branch_match_id=670105191114382351&gi=fd8d504494f4
+Efficient Multi-Codec Support for OTT Services: H.264/HEVC/VP9 and/or AV1? - Bitmovin,"Hevc, encoding, learning, read","Dec 11, 2019 2:21 PM",,
+Internet Video Streaming — ABR part 1,"Reading, abr, article, learning","Dec 11, 2019 2:20 PM",,https://medium.com/@eyevinntechnology/internet-video-streaming-abr-part-1-b10964849e19?source=userActivityShare-94bccb50d11-1559723768&_branch_match_id=664736558865703297
+A Docker container with the video streaming tools you need,"docker, encoding, read, tools","Dec 11, 2019 2:20 PM",,https://medium.com/@eyevinntechnology/a-docker-container-with-the-video-streaming-tools-you-need-b8319e98f36a
+Batch-Py-Remux,"Ffmpeg, Hevc, Repo, tools","Dec 11, 2019 2:19 PM",,https://github.com/ZaifSenpai/Batch-Py-Remux
+HLS and Fragmented MP4 | HTTP Live Streaming,"HLS, encoding, learning, read","Dec 11, 2019 2:18 PM",,
+15 chrome extensions for developers - codeburst,"read, tools","Dec 11, 2019 2:17 PM",,https://codeburst.io/15-chrome-extensions-for-developers-1c35444a4d61
+Deep Video Analytics,"Repo, encoding, quality, tools","Dec 11, 2019 2:17 PM",,https://github.com/AKSHAYUBHAT/DeepVideoAnalytics
+Docker container to pre-package MPEG-DASH from MP4 or HLS,"HLS, Tool, dash, docker, learning, read","Dec 11, 2019 2:16 PM",,
+Video Transcoding API,"HLS, Repo, dash, encoding, tools","Dec 11, 2019 2:15 PM",,https://github.com/video-dev/video-transcoding-api
+Internet Video Streaming — ABR part 2,"Reading, abr, article, learning","Dec 11, 2019 2:14 PM",,https://medium.com/@eyevinntechnology/internet-video-streaming-abr-part-2-dbce136b0d7c?source=userActivityShare-94bccb50d11-1559723862&_branch_match_id=664736952377004405
+Multi codec dash,"dash, learning, pdf, read","Dec 11, 2019 2:13 PM",,
+alpine-bento-ffmpeg,"HLS, Repo, dash, docker, encoding, tools","Dec 11, 2019 2:13 PM",,https://github.com/realeyes-media/alpine-bento-ffmpeg
+FFmpeg4Java 3.1.1-1.1,"Ffmpeg, Repo, tools","Dec 11, 2019 2:12 PM",,https://github.com/nextbreakpoint/ffmpeg4java
+nytimes/video-presets,"HLS, Repo, dash, tools","Dec 11, 2019 2:11 PM",,https://github.com/nytimes/video-presets
+Automated toolchain for generating DASH/ HLS compatible files from all videos inside a root folder,"HLS, Repo, dash, tools","Dec 11, 2019 2:10 PM",,
+Lambda@Edge Design Best Practices | Networking & Content Delivery,"Cdn, aws, learning, read","Dec 11, 2019 2:09 PM",,https://aws.amazon.com/blogs/networking-and-content-delivery/lambdaedge-design-best-practices/
+Generate MPEG-TS from file with ffmpeg,"Ffmpeg, learning, read","Dec 11, 2019 2:08 PM",,https://medium.com/@eyevinntechnology/generate-mpeg-ts-from-file-with-ffmpeg-7561181e6369?source=userActivityShare-94bccb50d11-1560983471&_branch_match_id=670020142756633081
+docker-bento4,"Repo, docker, encoding, tools","Dec 11, 2019 2:08 PM",,https://github.com/alfg/docker-bento4
+Dolby Vision for Content Creators | Dolby Laboratories,"Docs, Specs, dolby, read","Dec 11, 2019 2:07 PM",,https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-for-creative-professionals.html
+auto-dash-hls,"HLS, Repo, dash, tools","Dec 11, 2019 2:06 PM",,https://github.com/majamee/auto-dash-hls
+"HEVC. Efficienty  ","Hevc, learning, pdf, read","Dec 11, 2019 2:05 PM",,https://ieeexplore.ieee.org/ielx7/76/7372356/07254155.pdf?tp=&arnumber=7254155&isnumber=7372356&ref=
+serverless-application-model/examples/apps at master · awslabs/serverless-application-model,"Repo, aws, tools","Dec 11, 2019 2:05 PM",,https://github.com/awslabs/serverless-application-model/tree/master/examples/apps
+vmaf/docker.md at master · Netflix/vmaf,"Repo, docker, tools, vmaf","Dec 11, 2019 2:04 PM",,https://github.com/Netflix/vmaf/blob/master/resource/doc/docker.md
+HLS adaptive streaming tutorial with CloudFront & JW Player,"HLS, learning, read","Dec 11, 2019 2:04 PM",,https://www.miracletutorials.com/hls-adaptive-streaming-tutorial-with-cloudfront-jw-player/
+carlanton/mpd-tools,"Repo, dash, tools","Dec 11, 2019 2:03 PM",,https://github.com/carlanton/mpd-tools
+Tutorial: Creating a Simple Lambda@Edge Function - Amazon CloudFront,"learning, read","Dec 11, 2019 2:03 PM",,https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-edge-how-it-works-tutorial.html
+On-Demand and Live Streaming Video with CloudFront - Amazon CloudFront,"Cdn, Docs, aws, learning, read","Dec 11, 2019 2:02 PM",,https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/on-demand-streaming-video.html
+Adding Alternate Media to a Playlist | Apple Developer Documentation,"HLS, learning, read","Dec 11, 2019 2:02 PM",,https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/adding_alternate_media_to_a_playlist
+4K Media | Free Ultra-HD / HDR / HLG / Dolby Vision 4K Video Demos,"HLS, Test, dash, tools","Dec 11, 2019 2:02 PM",,https://4kmedia.org/
+djvergad/dash,"Repo, dash, tools","Dec 11, 2019 2:01 PM",,https://github.com/djvergad/dash
+analysis tools in vmaf,"Qoe, pdf, read, tools, vmaf","Dec 11, 2019 2:00 PM",,
+ISO - ISO/IEC 23009-1:2019 - Information technology -- Dynamic adaptive streaming over HTTP (DASH) -- Part 1: Media presentation description and segment formats,"Specs, dash, read","Dec 11, 2019 1:59 PM",,https://www.iso.org/standard/75485.html
+caststack/python-mpegdash,"Repo, dash, tools","Dec 11, 2019 1:59 PM",,https://github.com/caststack/python-mpegdash
+Video on Demand Playlist Construction | Apple Developer Documentation,"HLS, learning, read, vod","Dec 11, 2019 1:59 PM",,https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/video_on_demand_playlist_construction
+Gpac,"Repo, encoding, tools","Dec 11, 2019 1:58 PM",,https://github.com/gpac/gpac
+coopernurse/nginx-s3-proxy,"Repo, S3, tools","Dec 11, 2019 1:57 PM",,https://github.com/coopernurse/nginx-s3-proxy
+Creating a Master Playlist | Apple Developer Documentation,"HLS, learning, read","Dec 11, 2019 1:57 PM",,https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/creating_a_master_playlist#overview
+Adding Alternate Media to a Playlist | Apple Developer Documentation,"HLS, learning, read","Dec 11, 2019 1:56 PM",,https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/adding_alternate_media_to_a_playlist
+AWS S3 GET request fallback to a different virtual folder,"Cdn, aws, read","Dec 11, 2019 1:55 PM",,https://stackoverflow.com/questions/38331396/aws-s3-get-request-fallback-to-a-different-virtual-folder
+carlanton/mpd-tools: DASH MPD tools for Java,"Repo, dash, tools","Dec 11, 2019 1:55 PM",,https://github.com/carlanton/mpd-tools
+node-video-lib,"HLS, Repo, dash, tools","Dec 11, 2019 1:54 PM",,https://github.com/gkozlenko/node-video-lib
+ffmpeg HEVC with HLS specific fragment duration - Super User,"Ffmpeg, HLS, learning, read","Dec 11, 2019 1:53 PM",,
+HLS Tools,"HLS, learning, tools","Dec 11, 2019 1:52 PM",,
+Video Encoding — Compression and Resolutions – Eyevinn Technology – Medium,"encoding, learning, read","Dec 11, 2019 1:52 PM",,https://medium.com/@eyevinntechnology/chessboard-for-beginners-video-encoding-compression-and-resolutions-bcefe04fa639
+Eyevinn/vp9-dash,"Repo, dash, tools","Dec 11, 2019 1:51 PM",,https://github.com/Eyevinn/vp9-dash
+HEVC Scientific overview,"Hevc, learning, read","Dec 11, 2019 1:51 PM",,http://iphome.hhi.de/wiegand/assets/pdfs/2012_12_IEEE-HEVC-Overview.pdf
+nickdesaulniers/combine-mpd,"Repo, dash, tools","Dec 11, 2019 1:50 PM",,https://github.com/nickdesaulniers/combine-mpd
+theolampert/dash-server,"Repo, dash, tools","Dec 11, 2019 1:50 PM",,https://github.com/theolampert/dash-server
+DVB-Sub Output Captions - MediaConvert,"Doc, aws, read, tools","Dec 11, 2019 1:50 PM",,https://docs.aws.amazon.com/mediaconvert/latest/ug/dvb-sub-output-captions.html
+stultus/mp4-to-mpegdash-py,"Repo, dash, encoding, tools","Dec 11, 2019 1:49 PM",,https://github.com/stultus/mp4-to-mpegdash-py
+Example multi codec hls,"HLS, Test, learning, tools","Dec 11, 2019 1:49 PM",,
+CrackerCat/video_decrypter,"Drm, Repo, tools","Dec 11, 2019 1:47 PM",,https://github.com/CrackerCat/video_decrypter
+Eyevinn/dash-validator-js,"Repo, dash, tools","Dec 11, 2019 1:47 PM",,https://github.com/Eyevinn/dash-validator-js
+Video Encoding — Compression and Resolutions – Eyevinn Technology – Medium,"encoding, learning, read","Dec 11, 2019 1:47 PM",,https://medium.com/@eyevinntechnology/chessboard-for-beginners-video-encoding-compression-and-resolutions-bcefe04fa639
+Bitrate ladder for 2 codecs based on content complexity,"Packaging, encoding, read","Dec 11, 2019 1:46 PM",,
+Server-less Just-in-Time Packaging with AWS Fargate and Unified Origin by Unified Streaming,"HLS, dash, learning, read","Dec 11, 2019 1:46 PM",,https://medium.com/@eyevinntechnology/server-less-just-in-time-packaging-with-aws-fargate-and-unified-origin-by-unified-streaming-c1682dc051ca?source=userActivityShare-94bccb50d11-1559724204&_branch_match_id=664738392430917730
+Live Playlist (Sliding Window) Construction | Apple Developer Documentation,"HLS, Reading, learning, read","Dec 11, 2019 1:45 PM",,https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/live_playlist_sliding_window_construction
+Best Audio Codecs for Live Video Streaming | Wowza Media Systems,"audio, learning, read","Dec 11, 2019 1:45 PM",,
+FFmpeg and how to use it wrong | VideoBlerg,"Ffmpeg, encoding, learning, read","Dec 11, 2019 1:44 PM",,https://videoblerg.wordpress.com/2017/11/10/ffmpeg-and-how-to-use-it-wrong/
+cea608-extractor,"CC, Repo, closedcaptions, tools","Dec 11, 2019 1:43 PM",,https://github.com/Comcast/cea-extractor
+mhv/2019 Proceedings,"Mile high, learning, read","Dec 11, 2019 1:42 PM",,http://mile-high.video/files/mhv2019/
+MPEGDASHPlayer/MPEGDASH-iOS-Player,"Avplayer, HLS, Player, Repo, dash, tools","Dec 11, 2019 1:41 PM",,https://github.com/MPEGDASHPlayer/MPEGDASH-iOS-Player
+Secure Apple HLS streaming using DRM encryption,"Drm, HLS, learning, read","Dec 11, 2019 1:41 PM",,https://www.wowza.com/docs/how-to-secure-apple-hls-streaming-using-drm-encryption
+Audio Loudness  |  Conversational Actions  |  Google Developers,"audio-leveling, learning, read, tools","Dec 11, 2019 1:40 PM",,https://developers.google.com/assistant/tools/audio-loudness
+bitmovin/libdash,"Packaging, Repo, dash, tools","Dec 11, 2019 1:40 PM",,https://github.com/bitmovin/libdash
+(9) ReplayGain Getting your Volume to 89 dB the easy way - YouTube,"audio-leveling, read, tools","Dec 11, 2019 1:39 PM",,https://www.youtube.com/watch?v=Pz4GF3HEXV4
+Quick Tutorial: How to Increase Volume in Audacity [2019 Update],"audio-leveling, learning, read","Dec 11, 2019 1:39 PM",,https://www.iskysoft.com/video-editing/how-to-increase-volume-in-audacity.html
+sarahs/caption_converter: Flask app based on https://github.com/pbs/pycaption GitHub: https://github.com/sarahs/caption_converter,"Repo, Subtitles, audio, closedcaptions, tools","Dec 11, 2019 1:38 PM",,https://github.com/sarahs/caption_converter
+xinnjie/extract-subtitle,"CC, Repo, Subtitles, Tool","Dec 11, 2019 1:38 PM",,https://github.com/xinnjie/extract-subtitle
+awslabs/serverless-subtitles,"CC, Repo, Subtitles, audio, tools","Dec 11, 2019 1:37 PM",,https://github.com/awslabs/serverless-subtitles
+"Live Video Transmuxing/Transcoding: FFmpeg vs TwitchTranscoder, Part I","Ffmpeg, HLS, dash, learning, ott, read","Dec 11, 2019 1:36 PM",,https://blog.twitch.tv/live-video-transmuxing-transcoding-ffmpeg-vs-twitchtranscoder-part-i-489c1c125f28?source=userActivityShare-94bccb50d11-1561003677&_branch_match_id=670104894365486625&gi=8973d4e92d3b
+abinashmeher999/voice-data-extract,"CC, Subtitles, audio, tools","Dec 11, 2019 1:35 PM",,https://github.com/abinashmeher999/voice-data-extract
+Mamba,"HLS, Repo, dash, tools","Dec 11, 2019 1:34 PM",,https://github.com/Comcast/mamba
+EEL - A simple Proxy Service for JSON Event Transformation and Forwarding,"Repo, tools","Dec 11, 2019 1:34 PM",,https://github.com/Comcast/eel
+OTT Content Delivery– Multi CDN,"Cdn, Streaming, article, learning, read","Dec 11, 2019 1:33 PM",,https://medium.com/@eyevinntechnology/ott-content-delivery-multi-cdn-8cd90ad2628a?source=userActivityShare-94bccb50d11-1560983307&_branch_match_id=670019455010399744
+Dash-Industry-Forum/dash.js,"Repo, dash, learning, tools","Dec 11, 2019 1:32 PM",,https://github.com/Dash-Industry-Forum/dash.js
+tchakabam/dash-proxy,"Proxy, Repo, dash, tools","Dec 11, 2019 1:32 PM",,https://github.com/tchakabam/dash-proxy
+Short-notes on Add subtitle to any video with ffmpeg,"Ffmpeg, Subtitles, closedcaptions, learning, read, tools","Dec 11, 2019 1:31 PM",,https://mahasak.com/short-notes-on-add-subtitle-to-any-video-with-ffmpeg/
+Marcos-A/STRCleaner,"Repo, tools","Dec 11, 2019 1:30 PM",,https://github.com/Marcos-A/STRCleaner
+Suggestion for x265's --tune film - Doom9's Forum,"Ffmpeg, Hevc, encoding, learning, read","Dec 11, 2019 1:29 PM",,https://forum.doom9.org/showthread.php?t=172458
+liwf616/awesome-live-stream,"Repo, Research, learning, read, tools","Dec 11, 2019 1:28 PM",,https://github.com/liwf616/awesome-live-stream
+jrottenberg/ffmpeg: Docker build for FFmpeg on Ubuntu / Alpine / Centos 7 / Scratch,"Ffmpeg, Repo, docker, encoding","Dec 11, 2019 1:28 PM",,https://github.com/jrottenberg/ffmpeg
+dkhamsing/awesome_bot,"Repo, tools","Dec 11, 2019 1:26 PM",,https://github.com/dkhamsing/awesome_bot
+Inca - Netflix,"article, read","Dec 11, 2019 1:26 PM",,https://link.medium.com/Lu3GnIPeg0
+What is color?,"Color, Tool, learning, pdf, read","Dec 11, 2019 1:25 PM",,
+Advanced OTT strategies,"HLS, dash, learning, ott, pdf, read","Dec 11, 2019 1:25 PM",,
+artilleryio/artillery-plugin-datadog,"Repo, Testing, tools","Dec 11, 2019 1:25 PM",,https://github.com/artilleryio/artillery-plugin-datadog
+googlecast/CastReceiver,"Chromecast, Docs, Player, Repo, learning","Dec 11, 2019 1:24 PM",,https://github.com/googlecast/CastReceiver
+Eyevinn/hls-download,"HLS, Repo, Tool, tools","Dec 11, 2019 1:23 PM",,https://github.com/Eyevinn/hls-download
+Eyevinn/awmanager: Of course we need an AW manager,"Repo, Tool, tools","Dec 11, 2019 1:22 PM",,https://github.com/Eyevinn/awmanager
+"Dolby® Professional Loudness Metering, Information for Prospective Licensees, Issue 3","audio, audio-leveling, dolby","Dec 11, 2019 1:21 PM",,https://www.dolby.com/us/en/technologies/dolby-professional-loudness-solutions.pdf
+Closed Captions vs. Subtitles and why the Difference is Important - Matinee Multilingual,"Subtitles, closedcaptions, learning, read","Dec 11, 2019 1:21 PM",,https://www.matinee.co.uk/blog/closed-captions-vs-subtitles-and-why-the-difference-is-important/
+BingLingGroup/autosub: Command-line utility to transcribe/translate from video/audio/subtitles to subtitles,"Repo, Subtitles, audio, tools","Dec 11, 2019 1:19 PM",,https://github.com/BingLingGroup/autosub
+selsta/hlsdl: C program to download VoD HLS (.m3u8) files GitHub: https://github.com/selsta/hlsdl,"HLS, Repo, tools, vod","Dec 11, 2019 1:18 PM",,
+HLS Test Suite From Eurofins Digital Testing - Free HLS Test Streams and Test Cases,"HLS, Testing, tools","Dec 11, 2019 1:17 PM",,https://hlstests.eurofins-digitaltesting.com/
+lcy0321/m3u8-downloader: Download the ts files according to the given m3u8 file. GitHub: https://github.com/lcy0321/m3u8-downloader,"Repo, tools","Dec 11, 2019 1:16 PM",,
+Eyevinn/streaming-onboarding: New to streaming and don't know where to start? This is the place for you!,"HLS, dash, encoding, learning, ott, read","Dec 11, 2019 1:14 PM",,https://github.com/Eyevinn/streaming-onboarding
+Back to Basics: Encoding Definition and Adaptive Bitrate,"HLS, article, dash, encoding, learning, read","Dec 11, 2019 1:13 PM",,https://bitmovin.com/encoding-definition-bitrates/?utm_campaign=Newsletter&utm_medium=email&_hsenc=p2ANqtz-8MPFxhR7snQrxPYM7Bl3UTEMgOh5ZXoDQCHjLl9lkskqE0IfBhEuz3us39Br-lvA_CnyNmQl6L5wqO6iKOfAJ8HznenQ&_hsmi=79678208&utm_content=79677632&utm_source=hs_email&hsCtaTracking=b8eb0e0a-f292-435e-8b99-719b75d81412%7C367afa65-d810-4c2e-aa2c-c87e897a8942
+hevc video,"Hevc, encoding, learning, read","Dec 11, 2019 1:11 PM",,https://youtu.be/p6dLZfs0jTY
+Video in the War Zone: The Current State of Military Streaming,"encoding, learning, read","Dec 11, 2019 1:07 PM",,https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=101310
+Streaming Live From the Battlefield: Military Video in 2019,"encoding, learning, read","Dec 11, 2019 10:09 AM",,https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=135141
+estliberitas/node-thumbnails-webvtt: Video thumbnail generator generating WebVTT spec file,"Repo, Thumbnails, webvtt","Dec 09, 2019 12:13 PM",,https://github.com/estliberitas/node-thumbnails-webvtt
+bash scripts to create VOD HLS stream with ffmpeg almighty (tested on Linux and OS X),"Ffmpeg, HLS, learning, tools","Dec 08, 2019 9:45 PM",,https://gist.github.com/mrbar42/ae111731906f958b396f30906004b3fa
+HOW TO: View an HLS Stream in QuickTime or VLC – Softron Support Desk,"HLS, learning, tools","Dec 08, 2019 9:26 PM",,https://softron.zendesk.com/hc/en-us/articles/207694617-HOW-TO-View-an-HLS-Stream-in-QuickTime-or-VLC?mobile_site=true
+Creating A Production Ready Multi Bitrate HLS VOD stream - Peer5 P2P Docs,"HLS, learning, read, tools, vod","Dec 08, 2019 9:17 PM",,https://docs.peer5.com/guides/production-ready-hls-vod/
+Eyevinn/toolbox: A set of Docker containers with Streaming tools,"HLS, Repo, dash, encoding, tools","Dec 08, 2019 9:09 PM",,https://github.com/Eyevinn/toolbox
+HLS | Bento4,"Docs, Drm, Encryption, HLS, encoding, read, tools","Dec 08, 2019 9:05 PM",,https://www.bento4.com/developers/hls/
+"Bento4 | Fast, Modern Tools and C++ Class Library for all your MP4 and DASH media format needs","HLS, Packaging, Streaming, dash, learning, tools","Dec 08, 2019 9:02 PM",,https://www.bento4.com/
+cannonbeach/ott-packager,"Ffmpeg, HLS, Origin, Repo, Tool, dash, encoding, ott, tools","Dec 08, 2019 8:44 PM",,https://github.com/cannonbeach/ott-packager
+A short history of video coding,"article, encoding, learning, quality, read","Dec 08, 2019 8:40 PM",,https://www.slideshare.net/vcodex/a-short-history-of-video-coding?from_m_app=ios
+Video Bench — How to measure your video quality easily,"Qoe, Reading, learning, tools, vmaf","Dec 08, 2019 8:38 PM",,https://medium.com/@jnoduq/video-bench-how-measure-your-video-quality-easily-85a0feb8f6e2
+JNoDuq/videobench: VMAF PSNR Bitrate Analyzer,"Qoe, Repo, encoding, quality, tools, vod","Dec 08, 2019 8:35 PM",,https://github.com/JNoDuq/videobench
+Understanding Server-Side Dynamic Ad Insertion - Eyevinn Technology - Medium,"Ads, HLS, dash, learning, read","Dec 08, 2019 6:16 PM",,https://medium.com/@eyevinntechnology/understanding-server-side-dynamic-ad-insertion-d7ed90e34aa2
+SCTE-104/35 and Beyond: A Look at Ad Insertion in an OTT World | TvTechnology,"Ads, HLS, dash, learning, read","Dec 08, 2019 6:15 PM",,https://www.tvtechnology.com/opinions/scte10435-and-beyond-a-look-at-ad-insertion-in-an-ott-world
+obsproject/obs-studio: OBS Studio - Free and open source software for live streaming and screen recording,"HLS, Obs, Repo, dash","Dec 08, 2019 5:41 PM",,https://github.com/obsproject/obs-studio
+Open Broadcaster Software | OBS,"HLS, Obs, Repo, Streaming, dash, encoding, ott, tools","Dec 08, 2019 5:41 PM",,https://obsproject.com/
+artilleryio/artillery-plugin-hls,"HLS, Repo, Testing","Dec 08, 2019 5:29 PM",,https://github.com/artilleryio/artillery-plugin-hls
+"tanersener/mobile-ffmpeg: FFmpeg for Android, iOS and tvOS","Avplayer, Ffmpeg, Player, Repo","Dec 08, 2019 5:23 PM",,https://github.com/tanersener/mobile-ffmpeg
+minio/minio: MinIO is a high performance object storage server compatible with Amazon S3 APIs,"HLS, Origin, Repo, Streaming, dash, encoding, tools","Dec 08, 2019 5:22 PM",,https://github.com/minio/minio
+How To Setup Nginx For HLS Video Streaming On Centos 7 - DEV Community 👩‍💻👨‍💻,"HLS, learning, read","Dec 08, 2019 5:21 PM",,https://dev.to/samuyi/how-to-setup-nginx-for-hls-video-streaming-on-centos-7-3jb8
+"Create your own video streaming server with Linux | Opensource.com ","HLS, Reading, learning","Dec 08, 2019 5:20 PM",,https://opensource.com/article/19/1/basic-live-video-streaming-server
+Guide to Mobile Video Streaming with HLS,"HLS, Reading, learning","Dec 08, 2019 5:19 PM",,http://mux.com/blog/mobile-hls-guide/
+HTTP Live Streaming: HSL Player for Android | Toptal,"HLS, learning, read","Dec 08, 2019 5:19 PM",,https://www.toptal.com/apple/introduction-to-http-live-streaming-hls
+HTTP Live Streaming (HLS) - Artillery.io Docs,"HLS, Testing","Dec 08, 2019 5:11 PM",,https://artillery.io/docs/plugin-hls/
+Understanding the HTTP Live Streaming Architecture | Apple Developer Documentation,"HLS, Reading, learning","Dec 08, 2019 5:07 PM",,https://developer.apple.com/documentation/http_live_streaming/understanding_the_http_live_streaming_architecture
+tjenkinson/media-element-syncer,"Html5, Player, Repo, Web","Dec 08, 2019 12:32 PM",,https://github.com/tjenkinson/media-element-syncer
+watson-developer-cloud/text-to-speech-nodejs,"Repo, audio, text2speech","Dec 07, 2019 5:42 PM",,https://github.com/watson-developer-cloud/text-to-speech-nodejs
+"A hands-on introduction to video technology: image, video, codec (av1, vp9, h265) and more (ffmpeg encoding).","HLS, Repo, dash, encoding, learning, read","Dec 06, 2019 10:06 PM",,https://github.com/leandromoreira/digital_video_introduction
+Video Insiders Podcast,"HLS, Podcast, dash, encoding, learning","Dec 06, 2019 8:44 PM",,https://thevideoinsiders.simplecast.com/episodes
+"VVC, HEVC & MPEG codec standards. Podcast!","HLS, Specs, dash, encoding, standards","Dec 06, 2019 8:42 PM",,
+Automated testing on devices - Netflix TechBlog - Medium,"Testing, article, learning, read","Dec 06, 2019 7:36 PM",,http://techblog.netflix.com/2016/08/automated-testing-on-devices.html
+Roku Resources & Research,"Docs, Player, SmartTV, learning, read, roku","Dec 06, 2019 7:35 PM",,
+Server-less Just-in-Time Packaging with AWS Fargate and Unified Origin by Unified Streaming,"HLS, Packaging, article, read","Dec 06, 2019 7:28 PM",,https://medium.com/@eyevinntechnology/server-less-just-in-time-packaging-with-aws-fargate-and-unified-origin-by-unified-streaming-c1682dc051ca?source=userActivityShare-94bccb50d11-1560983627&_branch_match_id=670020794794030328
+👻 A curated list of awesome FFmpeg resources.,"Ffmpeg, Repo, learning","Dec 06, 2019 7:22 PM",,https://github.com/transitive-bullshit/awesome-ffmpeg
+:zap:A curated list of awesome resources for building Smart TV apps,"Repo, SmartTV","Dec 06, 2019 7:21 PM",,https://github.com/vitalets/awesome-smart-tv
+olaris / olaris-server · GitLab,"HLS, Server, Streaming, encoding, tools, vod","Dec 05, 2019 2:14 PM",,https://gitlab.com/olaris/olaris-server
+Battle of the Video Format: Comparing MKV vs MP4,"Fmp4, encoding, mkv, read","Dec 05, 2019 11:24 AM",,https://bitmovin.com/mkv-vs-mp4/?utm_campaign=Newsletter&utm_medium=email&_hsenc=p2ANqtz--KSAyThG9MNeSt28DH4ARDp3E1ujyIxyFCr2Dlctl7XcrajMAhRv2exdRRtgAFkaGnNIV_oDJgUAFV9joOCsDy-Vh_sw&_hsmi=80348170&utm_content=80347861&utm_source=hs_email&hsCtaTracking=a4ecf824-05b6-41b1-b600-20a1cd5b0cf6%7C1853ebeb-bdae-4e36-b131-2fdf6e65a93d
+Chromecast,"Chromecast, Docs, Shaka","Dec 05, 2019 5:43 AM",,https://codelabs.developers.google.com/codelabs/cast-receiver/#0
+ReplayGain 1.0 specification - Hydrogenaudio Knowledgebase,"audio, audio-leveling","Dec 05, 2019 5:41 AM",,http://wiki.hydrogenaud.io/index.php?title=ReplayGain_specification#RMS_level_calculation
+Fwd: Inside MPEG's Plans to Launch Three Codecs in 2000 - nick@fubo.tv - fubo.tv Mail,"Hevc, Research, Specs, codecs, encoding, mpeg, read","Dec 05, 2019 5:41 AM",,https://mail.google.com/mail/u/0/#inbox/FMfcgxwDrtvhZRbvMlJwVjgNLfDgnVrN
+Aws video media convert docs,"Docs, Media-convert, aws","Dec 05, 2019 5:38 AM",,https://docs.aws.amazon.com/en_pv/mediaconvert/latest/ug/mediaconvert-guide.pdf#working-with-queues
+StyleShare/HLSCachingReverseProxyServer,"Avplayer, Ios, Player, Proxy, Repo","Dec 04, 2019 10:56 PM",,https://github.com/StyleShare/HLSCachingReverseProxyServer
+masterjk/ios-avplayer-http-capture: iOS based application that embeds the AVPlayer and capture HTTP headers and send it back to the iOS application. It internally embeds a proxy server.,"Avplayer, Ios, Proxy, Repo","Dec 04, 2019 10:54 PM",,https://github.com/masterjk/ios-avplayer-http-capture
+"superpoweredSDK/Low-Latency-Android-iOS-Linux-Windows-tvOS-macOS-Interactive-Audio-Platform: 🇸Superpowered Audio, Networking and Cryptographics SDKs. High performance and cross platform on Android, iOS, macOS, tvOS, Linux, Windows and modern web browsers.","Lowlatency, Player, Repo, Streaming, audio","Dec 04, 2019 10:53 PM",,https://github.com/superpoweredSDK/Low-Latency-Android-iOS-Linux-Windows-tvOS-macOS-Interactive-Audio-Platform
+davidAgo4g/VideoPlayer-iOS: A library based on FFMPEG to play video files on iOS using OpenGLES and AudioQueue. Build with theos,"Avplayer, Ios, Opengl, Repo","Dec 04, 2019 10:49 PM",,https://github.com/davidAgo4g/VideoPlayer-iOS
+ustwo/videoplayback-ios,"Avplayer, Ios, Repo","Dec 04, 2019 10:45 PM",,https://github.com/ustwo/videoplayback-ios
+imoreapps/ffmpeg-avplayer-for-ios-tvos: A tiny but powerful iOS and Apple TV OS av player framework that's based on the FFmpeg library.,"Avplayer, Ffmpeg, Ios, Player, Repo","Dec 04, 2019 10:43 PM",,https://github.com/imoreapps/ffmpeg-avplayer-for-ios-tvos
+cta-wave/R4WG20-QoE-Metrics,"Analytics, Qoe, Repo, Specs, quality, standards, tools","Dec 04, 2019 7:13 AM",,https://github.com/cta-wave/R4WG20-QoE-Metrics
+draft-pantos-hls-rfc8216bis-05 - HTTP Live Streaming 2nd Edition,"Airplay, Doc, HLS, Specs, video","Dec 03, 2019 9:06 PM",,https://tools.ietf.org/pdf/draft-pantos-hls-rfc8216bis-05.pdf
+Dash Spec 2014,"Specs, dash, pdf, standards","Dec 03, 2019 8:37 PM",,
+Communicating Pictures - 1st Edition,"book, learning","Dec 03, 2019 8:35 PM",,https://www.elsevier.com/books/communicating-pictures/bull/978-0-12-405906-1
+9 Best Home Server Apps to Automate Media Management,"docker, tools","Nov 26, 2019 8:15 AM",,https://www.smarthomebeginner.com/best-home-server-apps/
+GitHub - Eyevinn/vod-to-live: A python library to generate Live HLS from VOD,"HLS, Repo","Nov 26, 2019 4:35 AM",,https://github.com/Eyevinn/vod-to-live
+Eyevinn/hls-relay,"HLS, Repo","Nov 26, 2019 4:12 AM",,https://github.com/Eyevinn/hls-relay
+Digital Rights Management (DRM) - Everything you need to know,"Drm, article","Nov 22, 2019 4:53 PM",,https://bitmovin.com/digital-rights-management-everything-to-know/
+video-on-demand-on-aws.pdf,"aws, tools, vod","Nov 22, 2019 6:14 AM",,https://s3.amazonaws.com/solutions-reference/video-on-demand-on-aws/latest/video-on-demand-on-aws.pdf
+Standard audio A85-2013.docx,"audio-leveling, standards","Nov 12, 2019 2:39 PM",,https://www.atsc.org/wp-content/uploads/2015/03/Techniques-for-establishing-and-maintaining-audio-loudness.pdf
+Audio normalization with ffmpeg using loudnorm (ebur128) filter – bytes and bones,audio-leveling,"Nov 10, 2019 5:05 AM",,https://bytesandbones.wordpress.com/2017/03/16/audio-nomalization-with-ffmpeg-using-loudnorm-ebur128-filter/
+How To Normalize Audio - Why Do It? Everything You Need To Know,audio-leveling,"Nov 10, 2019 4:53 AM",,https://www.learndigitalaudio.com/normalize-audio
+Loudness Explained Page | Music Tribe - TC Electronic,audio-leveling,"Nov 10, 2019 4:52 AM",,https://www.tcelectronic.com/brand/tcelectronic/loudness-explained#googtrans(en|en)
+(9) EBU R128 Introduction - Florian Camerer - YouTube,audio-leveling,"Nov 10, 2019 4:51 AM",,https://www.youtube.com/watch?v=iuEtQqC-Sqo
+Adjust and Normalize Your Music Files with FFMPEG - Make Tech Easier,audio-leveling,"Nov 10, 2019 4:48 AM",,https://www.maketecheasier.com/normalize-music-files-with-ffmpeg/
+How to Set Audio Levels for Video,audio-leveling,"Nov 10, 2019 4:42 AM",,https://www.premiumbeat.com/blog/how-to-set-audio-levels-for-video/
+ReplayGain - Audacity Forum,audio-leveling,"Nov 10, 2019 3:20 AM",,https://forum.audacityteam.org/viewtopic.php?p=167758#p167758
+slhck/ffmpeg-normalize: Audio Normalization for Python/ffmpeg,"Repo, audio","Nov 09, 2019 12:32 AM",,https://github.com/slhck/ffmpeg-normalize#examples
+Extracting contextual information from video assets,"Credits, Intro, Research","Nov 08, 2019 6:39 PM",,https://medium.com/netflix-techblog/extracting-contextual-information-from-video-assets-ee9da25b6008
+peak3d/inputstream.adaptive,"Player, Repo","Nov 05, 2019 7:15 AM",,https://github.com/peak3d/inputstream.adaptive
+Inside MPEG's Ambitious Plan to Launch 3 Video Codecs in 2020,"codecs, mpeg","Oct 24, 2019 10:36 AM",,https://www.streamingmedia.com/Articles/Editorial/Featured-Articles/Inside-MPEGs-Ambitious-Plan-to-Launch-3-Video-Codecs-in-2020-134694.aspx
+Eyevinn/manifestparser,"HLS, Java, Repo","Oct 15, 2019 4:20 AM",,https://github.com/Eyevinn/manifestparser
+Eyevinn/eyevinn-player,"Player, Repo, tools","Oct 15, 2019 4:18 AM",,https://github.com/Eyevinn/eyevinn-player
+Eyevinn/docker-jit-capture,"Jit, Repo, live2vod","Oct 15, 2019 4:16 AM",,https://github.com/Eyevinn/docker-jit-capture
+Eyevinn/srt-metadata-extractor,"Repo, Subtitles","Oct 15, 2019 4:15 AM",,https://github.com/Eyevinn/srt-metadata-extractor
+Eyevinn/ott-multiview,"HLS, Repo","Oct 15, 2019 4:11 AM",,https://github.com/Eyevinn/ott-multiview
+Eyevinn/docker-hevc,"Hevc, Repo, docker","Oct 15, 2019 4:08 AM",,https://github.com/Eyevinn/docker-hevc
+Eyevinn/pseudo-live-playout,"HLS, Live, Repo","Oct 15, 2019 4:06 AM",,https://github.com/Eyevinn/pseudo-live-playout
+Eyevinn/hls-to-dash,"HLS, Repo, dash","Oct 15, 2019 4:03 AM",,https://github.com/Eyevinn/hls-to-dash
+Eyevinn/channel-engine-multiview,"Multiview, Repo","Oct 15, 2019 4:00 AM",,https://github.com/Eyevinn/channel-engine-multiview
+Eyevinn/tv.eyevinn.technology,"HLS, Lamda, vod2live","Oct 15, 2019 3:57 AM",,https://github.com/Eyevinn/tv.eyevinn.technology
+Eyevinn/vast-info,"Ads, Repo, Vast, Vmap","Oct 15, 2019 3:52 AM",,https://github.com/Eyevinn/vast-info
+bengarney/list-of-streams,"Streams, tools","Oct 14, 2019 12:57 PM",,https://github.com/bengarney/list-of-streams
+Eyevinn/codem-client,"Pipeline, Repo, encoding","Oct 14, 2019 6:03 AM",,https://github.com/Eyevinn/codem-client
+Eyevinn/streaming-onboarding,"Repo, tools","Oct 14, 2019 6:01 AM",,https://github.com/Eyevinn/streaming-onboarding
+Eyevinn/fmp4-js,"Fmp4, Repo","Oct 14, 2019 5:58 AM",,https://github.com/Eyevinn/fmp4-js
+Eyevinn/hls-playlist-parser,"HLS, Repo, tools","Oct 14, 2019 5:57 AM",,https://github.com/Eyevinn/hls-playlist-parser
+Eyevinn/docker-html5player,"Player, Repo, docker","Oct 14, 2019 5:55 AM",,https://github.com/Eyevinn/docker-html5player
+Eyevinn/docker-dash-packager,"Repo, dash, docker","Oct 14, 2019 5:53 AM",,https://github.com/Eyevinn/docker-dash-packager
+Eyevinn/hls-ts-js,"HLS, Repo, Ts, tools","Oct 14, 2019 5:52 AM",,https://github.com/Eyevinn/hls-ts-js
+Eyevinn/ott-multiview,"Player, Repo, ott","Oct 14, 2019 5:49 AM",,https://github.com/Eyevinn/ott-multiview
+Eyevinn/docker-toolbelt,"docker, tools","Oct 14, 2019 5:46 AM",,https://github.com/Eyevinn/docker-toolbelt
+Eyevinn/abr-player-chrome,"Player, Repo","Oct 14, 2019 3:43 AM",,https://github.com/Eyevinn/abr-player-chrome
+Eyevinn/dash-validator-js,"Repo, dash, tools","Oct 14, 2019 3:17 AM",,https://github.com/Eyevinn/dash-validator-js
+Eyevinn/hls-relay,"HLS, Origin, Repo","Oct 14, 2019 3:16 AM",,https://github.com/Eyevinn/hls-relay
+Eyevinn/hls-ts-analyzer,"Analyzer, HLS, Repo, Ts","Oct 14, 2019 3:02 AM",,https://github.com/Eyevinn/hls-ts-analyzer
+Eyevinn/streaming-analyzer,"HLS, tools","Oct 14, 2019 3:00 AM",,https://github.com/Eyevinn/streaming-analyzer
+Eyevinn/eyevinn-player,"Player, Repo, Testing","Oct 14, 2019 2:53 AM",,https://github.com/Eyevinn/eyevinn-player
+Eyevinn/docker-html5player,"Player, Repo","Oct 14, 2019 2:52 AM",,https://github.com/Eyevinn/docker-html5player
+lmammino/s3st,"Cli, Repo, S3","Oct 13, 2019 1:14 PM",,https://github.com/lmammino/s3st
+bitmovin/bitmovin-java,"Bitmovin, encoding","Oct 10, 2019 7:25 PM",,https://github.com/bitmovin/bitmovin-java
+compile and install latest ffmpeg source as pkg,"Ffmpeg, linux","Oct 07, 2019 11:52 AM",,https://gist.github.com/krzemienski/e51a0b7a6ba77e616f954e516783270c#file-compile-and-install-latest-ffmpeg-source-sh-L2
+How to Install FFmpeg 4.2 in Ubuntu 18.04 / Linux Mint 19.x | UbuntuHandbook,Ffmpeg,"Oct 07, 2019 11:31 AM",,http://ubuntuhandbook.org/index.php/2019/08/install-ffmpeg-4-2-ubuntu-18-04/
+bloc97/Anime4K,"Anime, Repo, encoding","Oct 06, 2019 2:59 AM",,https://github.com/bloc97/Anime4K
+Video streaming podcast,"Podcast, Streaming","Oct 04, 2019 8:02 PM",,https://soundcloud.com/streamingpodden
+Tautulli/Tautulli: A Python based monitoring and tracking tool for Plex Media Server.,"Analytics, plex","Oct 04, 2019 4:21 AM",,https://github.com/Tautulli/Tautulli
+"pannal/Sub-Zero.bundle: Subtitles for Plex, as good you would expect them to be.","Repo, Subtitles","Oct 04, 2019 4:20 AM",,https://github.com/pannal/Sub-Zero.bundle
+XML + Code + Good times = RSG Application - Plex Labs - Medium,"Player, roku, scenegraph","Oct 04, 2019 4:19 AM",,https://medium.com/plexlabs/xml-code-good-times-rsg-application-b963f0cec01b
+multicoreware / x265 / wiki / Home — Bitbucket,"Hevc, Repo, encoding, tools, video","Oct 03, 2019 10:49 PM",,https://bitbucket.org/multicoreware/x265/wiki/Home
+mhv/2019 Proceedings,"Mile high, Talks, learning","Sep 25, 2019 3:19 PM",,http://mile-high.video/files/mhv2019/
+cuda/ubuntu16.04/ffmpeg-gpu/Dockerfile · master · nvidia / container-images / samples · GitLab,"Cuda, Ffmpeg, Nvidia, docker","Sep 24, 2019 6:52 PM",,https://gitlab.com/nvidia/container-images/samples/blob/master/cuda/ubuntu16.04/ffmpeg-gpu/Dockerfile
+jkarthic-akamai/ABR-Broadcaster: A real time encoder for Adaptive Bitrate Broadcast,"HLS, Repo, Streaming, abr, encoding, ott, video","Sep 24, 2019 12:37 AM",,https://github.com/jkarthic-akamai/ABR-Broadcaster
+alexherbo2/ffmpeg-sub,"Repo, Subtitles","Sep 22, 2019 9:57 PM",,https://github.com/alexherbo2/ffmpeg-sub
+federicocalendino/pysub-parser,"Repo, Subtitles, closedcaptions, tools","Sep 22, 2019 9:34 PM",,https://github.com/federicocalendino/pysub-parser
+Sub_extract.py,"Subtitles, python","Sep 22, 2019 9:14 PM",,
+cessen/subs_extract,"Repo, Subtitles","Sep 22, 2019 9:02 PM",,https://github.com/cessen/subs_extract
+apm1467/videocr,"Ocr, Repo, Subtitles","Sep 22, 2019 8:55 PM",,https://github.com/apm1467/videocr
+statsbiblioteket/tv-subtitle-extraction,"Java, Repo, Subtitles","Sep 22, 2019 8:51 PM",,https://github.com/statsbiblioteket/tv-subtitle-extraction
+shawnsky/extract-subtitles,"Repo, closedcaptions","Sep 22, 2019 8:30 PM",,https://github.com/shawnsky/extract-subtitles
+shawnsky/extract-subtitles: Extract Subtitles From Video 视频字幕提取 帧间差分法识别关键帧 OCR识别,,"Sep 22, 2019 8:28 PM",,https://github.com/shawnsky/extract-subtitles
+jnorton001/pycaption-cli: A command line interface for the pycaption module.,"Repo, closedcaptions","Sep 22, 2019 5:38 PM",,https://github.com/jnorton001/pycaption-cli
+VMAF: The Journey Continues - Netflix TechBlog - Medium,encoding,"Sep 22, 2019 5:06 PM",,https://medium.com/netflix-techblog/vmaf-the-journey-continues-44b51ee9ed12
+pbs/its: image transformation service,"Repo, tools","Sep 22, 2019 4:57 PM",,https://github.com/pbs/its
+pbs/pycaption: Python module to read/write popular video caption formats,"Repo, closedcaptions","Sep 22, 2019 4:53 PM",,https://github.com/pbs/pycaption
+The Netflix Content Processing Pipeline,metadata,"Sep 17, 2019 10:20 PM",,https://medium.com/netflix-techblog/the-netflix-imf-workflow-f45dd72ed700?source=userActivityShare-94bccb50d11-1568773157&_branch_match_id=702692448596112473
+mar10/wsgidav: A generic and extendable WebDAV server based on WSGI,"Repo, docker, vod","Sep 17, 2019 4:28 PM",,https://github.com/mar10/wsgidav
+video-downloader,"HLS, Repo, Shell, tools","Sep 17, 2019 12:57 AM",,https://github.com/shrimpgo/video-downloader
+Hls-download,"HLS, Repo, tools","Sep 17, 2019 12:55 AM",,https://github.com/Eyevinn/hls-download
+hls-downloader,"HLS, Repo, tools","Sep 17, 2019 12:53 AM",,https://github.com/denex/hls-downloader
+hlsdl,"HLS, Repo, tools","Sep 17, 2019 12:50 AM",,https://github.com/selsta/hlsdl
+hls-fetch,"HLS, Repo, tools","Sep 17, 2019 12:48 AM",,https://github.com/osklil/hls-fetch
+Caption Inspector | DOCUMENTATION,closedcaptions,"Sep 12, 2019 11:07 PM",,https://comcast.github.io/caption-inspector/
+scte35-js,"Repo, Scte, tools","Sep 12, 2019 11:06 PM",,https://github.com/Comcast/scte35-js
+Caption Inspector,"Repo, closedcaptions","Sep 12, 2019 11:02 PM",,https://github.com/Comcast/caption-inspector
+media-tools,"Repo, dash, tools","Sep 12, 2019 11:00 PM",,https://github.com/Dash-Industry-Forum/media-tools
+DASH-IF DASH Live Source Simulator,"Repo, dash","Sep 12, 2019 10:57 PM",,https://github.com/Dash-Industry-Forum/dash-live-source-simulator
+cea608.js,"Repo, closedcaptions","Sep 12, 2019 10:55 PM",,https://github.com/Dash-Industry-Forum/cea608.js
+VMAF: The Journey Continues - Netflix TechBlog - Medium,"Qoe, vmaf","Sep 12, 2019 2:56 PM",,https://medium.com/netflix-techblog/vmaf-the-journey-continues-44b51ee9ed12
+Toward A Practical Perceptual Video Quality Metric - Netflix TechBlog - Medium,"Qoe, vmaf","Sep 12, 2019 2:55 PM",,https://medium.com/netflix-techblog/toward-a-practical-perceptual-video-quality-metric-653f208b9652
+vmaf ffmpeg documentation,"Ffmpeg, Qoe, vmaf","Sep 12, 2019 2:47 PM",,
+IMF: A Prescription for Versionitis,metadata,"Sep 04, 2019 5:07 PM",,https://medium.com/netflix-techblog/imf-a-prescription-for-versionitis-e0b4c1865c20
+Ruffle,"Flash, Repo","Aug 28, 2019 2:01 AM",,https://github.com/ruffle-rs/ruffle
+IMF Conversion Utility,"Imf, Repo, metadata","Aug 20, 2019 2:06 PM",,https://github.com/DSRCorporation/imf-conversion
+Can ffmpeg extract closed caption data - Stack Overflow,Subtitles,"Aug 19, 2019 1:18 PM",,https://stackoverflow.com/questions/3169910/can-ffmpeg-extract-closed-caption-data
+Scaling Applications in the Cloud,docker,"Aug 17, 2019 5:21 AM",,https://medium.com/faun/scaling-applications-in-the-cloud-52bb6dfbac4e?source=userActivityShare-94bccb50d11-1566033346&_branch_match_id=691200849013112756
+identify new items in s3,S3,"Aug 17, 2019 5:14 AM",,https://link.medium.com/rKjaJvTRdZ
+bash for building dash,"Ffmpeg, vod","Aug 16, 2019 8:12 AM",,
+active-video/subtitles,"Repo, dash","Aug 15, 2019 8:01 AM",,https://github.com/active-video/subtitles
+mahbubcseju/MPEG-DASH-Downloader,dash,"Aug 15, 2019 7:59 AM",,https://github.com/mahbubcseju/MPEG-DASH-Downloader
+shengbinmeng/dash-drm,"Repo, dash","Aug 15, 2019 7:58 AM",,https://github.com/shengbinmeng/dash-drm
+yuhuili-lab/Tide,"HLS, Repo, dash","Aug 15, 2019 7:53 AM",,https://github.com/yuhuili-lab/Tide
+stultus/mp4-to-mpegdash-py,"Repo, dash","Aug 15, 2019 7:50 AM",,https://github.com/stultus/mp4-to-mpegdash-py
+aminyazdanpanah/python-ffmpeg-video-streaming,"Ffmpeg, dash, python","Aug 15, 2019 7:48 AM",,https://github.com/aminyazdanpanah/python-ffmpeg-video-streaming
+Eyevinn/docker-dash-packager,"Repo, dash, tools","Dec 11, 2019 2:59 PM",,https://github.com/Eyevinn/docker-dash-packager
+ISO Segment Validator,"Repo, dash, tools","Dec 11, 2019 2:59 PM",,https://github.com/Dash-Industry-Forum/ISOSegmentValidator
+Viblast/dash-proxy,"Repo, dash, tools","Dec 11, 2019 2:59 PM",,https://github.com/Viblast/dash-proxy
+DASH-IF Conformance Software,"Repo, dash","Aug 15, 2019 7:25 AM",,https://github.com/Dash-Industry-Forum/DASH-IF-Conformance
+libdash,"Repo, dash","Aug 15, 2019 7:21 AM",,https://github.com/bitmovin/libdash
+Netflix/vmaf: Perceptual video quality assessment based on multi-method fusion.,"Qoe, Repo, encoding, learning, tools, vmaf","Dec 11, 2019 2:37 PM",,https://github.com/Netflix/vmaf
+Cdn savings slide,Doc,"Aug 13, 2019 5:00 AM",,https://www.slideshare.net/radensamer/encoding-at-scale-for-live-video-streaming?from_m_app=ios
+http2-serverpush-proxy,"Proxy, Repo","Aug 12, 2019 8:30 PM",,https://github.com/n1try/http2-serverpush-proxy
+realeyes-media/alpine-node-video-multitool,"docker, tools","Aug 11, 2019 6:07 PM",,https://github.com/realeyes-media/alpine-node-video-multitool
+realeyes-media/alpine-node-git,"docker, tools","Aug 11, 2019 6:07 PM",,https://github.com/realeyes-media/alpine-node-git
+DASH-IF Interoperability: Guidelines for Implementations,"Specs, dash, pdf","Aug 07, 2019 10:46 AM",,https://dashif.org/docs/DASH-IF-IOP-v4.3.pdf
+aes-decrypter,"Drm, Repo","Jul 31, 2019 7:46 PM",,https://github.com/videojs/aes-decrypter
+Toward A Practical Perceptual Video Quality Metric - Netflix TechBlog - Medium,encoding,"Jul 30, 2019 12:24 PM",,https://medium.com/netflix-techblog/toward-a-practical-perceptual-video-quality-metric-653f208b9652
+roku 4k specs,"4k, Hevc, Player, Specs, roku","Dec 11, 2019 2:25 PM",,
+Roku Developer | Documentation | Streaming specifications,"Specs, Streaming, roku","Jul 28, 2019 4:12 AM",,https://developer.roku.com/docs/specs/streaming.md
+Web Video Text Tracks Format (WebVTT) - Web APIs | MDN,"closedcaptions, cue, webvtt","Jul 24, 2019 8:03 AM",,https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API
+x264 FFmpeg Options Guide - Linux Encoding,"Ffmpeg, encoding, quality, video","Jul 23, 2019 8:45 PM",,https://sites.google.com/site/linuxencoding/x264-ffmpeg-mapping
+Eyevinn/hls-origin-scripts,"HLS, Repo, live2vod","Jul 19, 2019 1:02 PM",,https://github.com/Eyevinn/hls-origin-scripts
+Eyevinn/dash-validator-js,"Repo, Tool, dash","Jul 19, 2019 12:29 PM",,https://github.com/Eyevinn/dash-validator-js
+channel-engine,"HLS, Repo, vod2live","Jul 19, 2019 12:27 PM",,https://github.com/Eyevinn/channel-engine
+Eyevinn/av1-player,"Player, Repo","Jul 19, 2019 12:22 PM",,https://github.com/Eyevinn/av1-player
+The structure of an MPEG-DASH MPD - Brendan Long,dash,"Jul 16, 2019 7:23 PM",,https://www.brendanlong.com/the-structure-of-an-mpeg-dash-mpd.html
+videojs/videojs-contrib-dash,"Repo, dash","Jul 16, 2019 7:18 PM",,https://github.com/videojs/videojs-contrib-dash
+Reverse proxy for AWS S3 w/ basic authentication,"Proxy, Repo, S3, aws, tools","Dec 11, 2019 2:34 PM",,https://github.com/pottava/aws-s3-proxy
+iheartradio/open-m3u8: Open Source m3u8 Parser GitHub: https://github.com/iheartradio/open-m3u8,"Java, Repo","Jul 16, 2019 6:13 AM",,
+Go library for mpeg ts,Repo,"Jul 16, 2019 5:56 AM",,https://github.com/Comcast/gots
+This is How I Reduced My CloudFront Bills by 80% - Faun - Medium,Cdn,"Jul 15, 2019 8:22 PM",,https://medium.com/faun/this-is-how-i-reduced-my-cloudfront-bills-by-80-a7b0dfb24128
+Amazon S3 as Origin Fastly tutorial,"Cdn, Fastly","Jul 15, 2019 7:10 PM",,https://docs.fastly.com/guides/integrations/amazon-s3#using-amazon-s3-as-an-origin
+Fastly compared to Amazon CloudFront,Cdn,"Jul 15, 2019 7:05 PM",,https://www.cdnoverview.com/compare/fastly-vs-amazon-cloudfront/
+Edge Computing with Fastly CDN and Varnish VCL for Authenticated Requests,Cdn,"Jul 15, 2019 7:01 PM",,https://endertech.com/blog/edge-computing-fastly-cdn-varnish-vcl-authenticated-requests
+Terraform module: Fastly with S3 backend,Cdn,"Jul 15, 2019 6:59 PM",,https://medium.com/levops/terraform-module-fastly-with-s3-backend-c6e963586498?source=userActivityShare-94bccb50d11-1563231509&_branch_match_id=679449139574165171
+S3stat Secure Setup,Repo,"Jul 13, 2019 7:11 PM",,https://github.com/s3stat/s3stat-secure-setup-universal
+Delivering Live Streaming Video with CloudFront and AWS Media Services - Amazon CloudFront,"Cdn, Docs, aws, learning, read","Dec 11, 2019 2:39 PM",,https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/live-streaming.html
+Optimizing High Availability with CloudFront Origin Failover - Amazon CloudFront,"H265, Origin","Jul 13, 2019 8:29 AM",,https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html
+Values That You Specify When You Create or Update a Distribution,"Cdn, Cloudfront","Jul 12, 2019 10:05 AM",,https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-values-specify.html#DownloadDistValuesDomainName
+How to use DASH and HLS Adaptive Streaming with AWS S3 and Cloudfront,"Cdn, S3","Jul 12, 2019 9:50 AM",,https://bitmovin.zendesk.com/hc/en-us/articles/115001609634-How-to-use-DASH-and-HLS-Adaptive-Streaming-with-AWS-S3-and-Cloudfront
+Delivering Live Streaming Video with CloudFront and AWS Media Services - Amazon CloudFront,"Cdn, S3, aws","Jul 10, 2019 11:09 AM",,https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/live-streaming.html
+Ultimate Guide to Closed Captioning – 3Play Media,"CC, HLS, dash","Jul 09, 2019 7:29 PM",,https://www.3playmedia.com/resources/popular-topics/closed-captioning/
+"SCTE Dash SPEC ","CC, Scte, dash","Jul 08, 2019 1:37 PM",,https://www.scte.org/SCTEDocs/Standards/ANSI_SCTE%20214-1%202015.pdf
+tec_doc_t3324-2007.pdf Multi Channel Audio codec evaluations,"HLS, audio, audio-leveling, eac3","Jun 29, 2019 2:04 PM",,https://tech.ebu.ch/docs/tech/tech3324.pdf
+"S3Proxy in Java, useful for vodpipeline","Java, Proxy, S3","Jun 27, 2019 9:06 PM",,https://github.com/gaul/s3proxy
+Testing of SRT and Edgeware Cloud Service,Test,"Jun 20, 2019 12:03 AM",,https://medium.com/@eyevinntechnology/testing-of-srt-and-edgeware-cloud-service-f166de436c6f?source=userActivityShare-94bccb50d11-1561003324&_branch_match_id=670103434993344362
+Video Quality Assessment,"article, quality, read, video","Jun 19, 2019 6:37 PM",,https://medium.com/@eyevinntechnology/video-quality-assessment-34abd35f96c0?source=userActivityShare-94bccb50d11-1560983815&_branch_match_id=670021582869771680
+Securing OTT Content — DRM,Drm,"Jun 19, 2019 6:32 PM",,https://medium.com/@eyevinntechnology/securing-ott-content-drm-1af2c08fdd31?source=userActivityShare-94bccb50d11-1560983518&_branch_match_id=670020366479331042
+Loop file and generate multiple video bitrates muxed in MPEG-TS with ffmpeg,"Ffmpeg, tools","Jun 19, 2019 6:30 PM",,https://medium.com/@eyevinntechnology/loop-file-and-generate-multiple-video-bitrates-muxed-in-mpeg-ts-with-ffmpeg-85658d0b74bb?source=userActivityShare-94bccb50d11-1560983383&_branch_match_id=670019768959110835
+OTT Content Delivery– CDN Alternatives,"ott, read","Jun 19, 2019 6:26 PM",,https://medium.com/@eyevinntechnology/ott-content-delivery-cdn-alternatives-cafe75dab71d?source=userActivityShare-94bccb50d11-1560983135&_branch_match_id=670018733519578135
+hybrik-samples/ebu_r128_audio_normalization.json at master · hybrik/hybrik-samples,audio-leveling,"Jun 15, 2019 9:24 AM",,https://github.com/hybrik/hybrik-samples/blob/master/Feature%20Examples/Filters/ebu_r128_audio_normalization.json
+Encryption & DRM with Multiple Keys — Unified Streaming,"Drm, Encryption, learning, read","Dec 11, 2019 2:25 PM",,https://docs.unified-streaming.com/documentation/package/multiple-keys.html
+"Validating HLS ","HLS, Testing, learning, pdf, read, tools","Dec 11, 2019 2:29 PM",,https://devstreaming-cdn.apple.com/videos/wwdc/2016/510ndmh9wkcvzneegv2/510/510_validating_http_live_streams.pdf
+apple hls 2019 tools (Apple Official),"Analyzer, HLS, Specs, tools","Jun 12, 2019 3:20 PM",,
+AirPlay2 WWDC 19 Slides,"Airplay, HLS, Specs","Jun 10, 2019 2:36 PM",,https://devstreaming-cdn.apple.com/videos/wwdc/2019/507fk9wyls0np6piwk/507/507_hls_authoring_for_airplay_2_video.pdf
+AirPlay2 Example Code,"Airplay, HLS, tools","Jun 10, 2019 2:35 PM",,https://developer.apple.com/documentation/avfoundation/airplay_2/integrating_airplay_for_long-form_video_apps
+Protocol Extension for Low-Latency HLS (Preliminary Specification) | Apple Developer Documentation,"HLS, Lowlatency, Specs, tools","Jun 10, 2019 2:23 PM",,https://developer.apple.com/documentation/http_live_streaming/protocol_extension_for_low-latency_hls_preliminary_specification#3291001
+Introducing Low-Latency HLS - WWDC 2019 - Videos - Apple Developer,"HLS, Specs","Jun 10, 2019 1:33 PM",,https://developer.apple.com/videos/play/wwdc2019/502
+HLS Authoring for AirPlay 2 Video - WWDC 2019 - Videos - Apple Developer,"HLS, learning, tools","Jun 10, 2019 1:30 PM",,https://developer.apple.com/videos/play/wwdc2019/507/
+Eyevinn HTML Player,"HLS, Player, Repo, abr","Jun 10, 2019 5:17 AM",,https://github.com/Eyevinn/html-player
+Streaming Tech Toolbelt,"Ffmpeg, Repo, docker, tools","Jun 10, 2019 5:15 AM",,https://github.com/Eyevinn/docker-toolbelt
+Eyevinn/hls-ts-js,"HLS, Repo, tools","Jun 10, 2019 5:09 AM",,https://github.com/Eyevinn/hls-ts-js
+HLSDownloader Swift,"HLS, Swift","Jun 05, 2019 7:21 PM",,https://github.com/qi-shun-wang/HLSDownloader
+morsel Swift HLS library,"HLS, Swift, vod2live","Jun 05, 2019 7:13 PM",,https://github.com/krad/morsel
+Latest HLS Spec Pantos,"Docs, HLS, Specs, read","Dec 11, 2019 2:38 PM",,
+HLSCore Swift HLS lib,"HLS, Swift, vod2live","Jun 05, 2019 7:12 PM",,https://github.com/fcanas/HLSCore
+Quality of Experience in Streaming,"Analytics, Qoe","Jun 05, 2019 4:57 AM",,https://medium.com/@eyevinntechnology/quality-of-experience-in-streaming-5c25355a4111?source=userActivityShare-94bccb50d11-1559724940&_branch_match_id=664741478927428385
+How video streaming works on the web: An introduction,"Player, article","Jun 05, 2019 4:55 AM",,https://medium.com/canal-tech/how-video-streaming-works-on-the-web-an-introduction-7919739f7e1
+OTT Content Delivery– Multi CDN,"Cdn, Reading, article","Jun 05, 2019 4:42 AM",,https://medium.com/@eyevinntechnology/ott-content-delivery-multi-cdn-8cd90ad2628a?source=userActivityShare-94bccb50d11-1559724108&_branch_match_id=664737987212887383
+Eyevinn/vod-to-live.js,"Drm, HLS, Repo, live2vod, vod, vod2live","Jun 05, 2019 4:35 AM",,https://github.com/Eyevinn/vod-to-live.js
+Eyevinn/toolbox: A set of Docker containers with Streaming tools,"HLS, Repo, docker","Jun 05, 2019 4:35 AM",,https://github.com/Eyevinn/toolbox
+Eyevinn/streaming-analyzer,"Analyzer, Repo, Streaming, Tool","Jun 05, 2019 4:34 AM",,https://github.com/Eyevinn/streaming-analyzer
+Eyevinn/adxchange-engine,"Ads, Proxy, Repo, Research, live2vod, vod2live","Jun 05, 2019 4:34 AM",,https://github.com/Eyevinn/adxchange-engine
+Eyevinn/fmp4-js:AJavascriptlibrarytoparseISOBaseMediaFileFormat(MPEG-4Part12)GitHub:https://github.com/Eyevinn/fmp4-js,"Fmp4, Nodejs, Repo, Tool","Jun 05, 2019 4:34 AM",,https://github.com/Eyevinn/fmp4-js
+Eyevinn/abr-player-chrome,"HLS, Player, Repo, Tool, chrome-extension, dash","Jun 05, 2019 4:34 AM",,https://github.com/Eyevinn/abr-player-chrome
+Eyevinn/channel-engine-client-tvos,"Repo, Research, Tvos, vod2live","Jun 05, 2019 4:31 AM",,https://github.com/Eyevinn/channel-engine-client-tvos
+Eyevinn/docker-2dash: A Docker container to pre-package MPEG DASH on demand content,"Repo, dash, docker","Jun 05, 2019 3:53 AM",,https://github.com/Eyevinn/docker-2dash
+OTT Content Delivery,"article, ott, read","Jun 05, 2019 3:53 AM",,https://medium.com/@eyevinntechnology/ott-content-delivery-b43a35ef24f6
+Eyevinn/channel-engine: OTT TV Channel Engine,"HLS, vod","Jun 04, 2019 9:43 PM",,https://github.com/Eyevinn/channel-engine
+Eyevinn/docker-serve: A simple Python based HTTP server that sets CORS allow headers. Useful for streaming from files on local computer,"HLS, vod","Jun 04, 2019 9:43 PM",,https://github.com/Eyevinn/docker-serve
+Eyevinn/vod-to-live.js: NPM library for HLS VOD to Live,"HLS, live2vod, vod, vod2live","Jun 04, 2019 9:42 PM",,https://github.com/Eyevinn/vod-to-live.js
+FairPlay Streaming Overview,"Drm, Encryption, HLS, Specs","Jun 04, 2019 8:23 PM",,
+HLS Authoring Update for HEVC,"HLS, Specs","Jun 04, 2019 8:22 PM",,https://devstreaming-cdn.apple.com/videos/wwdc/2017/515vy4sl7iu70/515/515_hls_authoring_update.pdf
+"Introducing HEVC HEIC ","HLS, Specs","Jun 04, 2019 8:22 PM",,https://devstreaming-cdn.apple.com/videos/wwdc/2017/503i6plfvfi7o3222/503/503_introducing_heif_and_hevc.pdf
+Advances in HTTP Live Streaming WWDC,"HLS, Hevc, Specs","Jun 04, 2019 8:17 PM",,https://devstreaming-cdn.apple.com/videos/wwdc/2017/504op4c3001w2f222/504/504_advances_in_http_live_streaming.pdf
+HLS Low Latency tools,"HLS, tools","Jun 04, 2019 7:58 PM",,
+Jan Olzer on HLS HEVC,"Drm, Encryption, HLS, Hevc, Specs","Jun 04, 2019 7:39 PM",,https://www.linkedin.com/pulse/market-significance-apples-adopting-hevc-heres-what-i-jan-ozer
+Guide to HEVC/H.265 Encoding and Playback - TechSpot,"Ffmpeg, Hevc, read","Dec 11, 2019 2:38 PM",,https://www.techspot.com/article/1131-hevc-h256-enconding-playback/
+HEVC DRM Market Update,"Drm, Hevc, Streaming, learning, read","Dec 11, 2019 2:41 PM",,https://go.buydrm.com/thedrmblog/hevc-drm-market-update
+Content Protection for HLS with AES-128 Encryption,"Drm, HLS, Player, learning, read","Dec 11, 2019 2:55 PM",,https://www.theoplayer.com/blog/content-protection-for-hls-with-aes-128-encryption
+HLS Key Specs,"Drm, HLS, Specs","Dec 11, 2019 2:55 PM",,https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis-00#section-5.1
+mp4dash | Bento4,"Docs, Ffmpeg, dash, read, tools","Dec 11, 2019 2:45 PM",,https://www.bento4.com/documentation/mp4dash/
+Advances in HTTP Live Streaming - WWDC 2017 - Videos - Apple Developer,"HLS, learning, read","Dec 11, 2019 2:54 PM",,https://developer.apple.com/videos/play/wwdc2017/504/
+matmoi/create-DASH-HLS: A tutorial to generate fMp4 files compatible with dash and HLS,"Ffmpeg, HLS, Repo, dash, learning","Dec 11, 2019 2:54 PM",,https://github.com/matmoi/create-DASH-HLS
+How to generate a fmp4 hls live stream with FFMPEG – To-Front-End,"Ffmpeg, HLS, learning, read","Dec 11, 2019 2:56 PM",,https://nomadyun.wordpress.com/2018/04/12/how-to-generate-a-fmp4-hls-live-stream-with-ffmpeg/
+HLS and Fragmented MP4 | HTTP Live Streaming,"HLS, book, learning, read","Dec 11, 2019 2:58 PM",,https://hlsbook.net/hls-fragmented-mp4/
+ffmpeg audio/video manipulation,"Ffmpeg, audio, encoding, learning, read","Dec 11, 2019 2:53 PM",,http://howto-pages.org/ffmpeg/
+HLSDownloader by nmrony,"HLS, Repo, tools","Dec 11, 2019 2:47 PM",,https://github.com/nmrony/hlsdownloader
+hevc video part 2,"Hevc, encoding, learning, read","Dec 11, 2019 2:40 PM",,https://youtu.be/V6a1AW5xyAw
+hevc video part 1,"Hevc, learning, read","Dec 11, 2019 2:35 PM",,https://youtu.be/TLNkK5C1KN8
+Introducing SVT-AV1: a scalable open-source AV1 framework,"av1, encoding, learning, read","Dec 11, 2019 2:30 PM",,https://medium.com/netflix-techblog/introducing-svt-av1-a-scalable-open-source-av1-framework-c726cce3103a
+kokorin/Jaffree,"Ffmpeg, Repo, tools","Dec 11, 2019 2:33 PM",,https://github.com/kokorin/Jaffree
+realeyes-media/demo-encoder: A nodejs encoding system based on ffmpeg and configured to write HLS streaming files to S3,"HLS, Hevc, Repo, dash, encoding, learning, read, tools","Dec 11, 2019 2:48 PM",,https://github.com/realeyes-media/demo-encoder
+x265 Documentation — x265 documentation,"Docs, Ffmpeg, Hevc, read","Dec 11, 2019 2:26 PM",,https://x265.readthedocs.io/en/default/
+HEVC in HLS: 10 Key Questions for Streaming Video Developers,"HLS, Hevc, learning, read","Dec 11, 2019 2:28 PM",,https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=122637&PageNum=2
+Dolby Vision streams within the HTTP Live Streaming format,"Test, dolby, tools","Dec 11, 2019 2:31 PM",,https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-streams-within-the-http-live-streaming-format-v2.0.pdf
+HLS Authoring Specification for Apple Devices | Apple Developer Documentation,"Docs, HLS, Specs, learning, read","Dec 11, 2019 2:49 PM",,
+ENCODING LIVE AND VOD FOR HEVC/HLS,"HLS, Hevc, dash, encoding, learning, pdf, read","Dec 11, 2019 2:27 PM",,https://streaminglearningcenter.com/wp-content/uploads/2018/05/Encoding-for-HEVC-SME-2018-Jan.pdf
+Dolby vision specs,"Specs, dolby, pdf","Dec 11, 2019 2:24 PM",,
+"CRF Guide (Constant Rate Factor in x264, x265 and libvpx)","Ffmpeg, encoding, learning, read","Dec 11, 2019 2:52 PM",,http://slhck.info/video/2017/02/24/crf-guide.html
+Apple Got It Wrong: Encoding Specs for HEVC in HLS,"HLS, Hevc, encoding, learning, read","Dec 11, 2019 2:42 PM",,
+ffmpeg and hardware acceleration of HEVC transcoding on mac - Super User,"Ffmpeg, Hevc, learning, read, tools","Dec 11, 2019 2:51 PM",,
+Encode/H.265 – FFmpeg,"Doc, Ffmpeg, Hevc, learning, read, tools","Dec 11, 2019 2:41 PM",,
+Generate hls stream using h265 codec - Super User,"Ffmpeg, HLS, Hevc, learning","Dec 11, 2019 2:50 PM",,
+17 Free MPEG-DASH example and HLS m3u8 sample test streams,"HLS, Test, dash, tools","Dec 11, 2019 2:36 PM",,
+A Large-Scale Comparison of x264 x265 and libvpx,"Hevc, encoding, learning, read","Dec 11, 2019 2:46 PM",,https://medium.com/netflix-techblog/a-large-scale-comparison-of-x264-x265-and-libvpx-a-sneak-peek-2e81e88f8b0f
+4K Media | Free Ultra-HD / HDR / HLG / Dolby Vision 4K Video Demos & Samples,"HLS, dash, encoding, tools","Dec 11, 2019 5:42 PM",,https://4kmedia.org/

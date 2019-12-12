@@ -3,41 +3,213 @@
   "header": "# Awesome Video\n \n<!-- \n\nPLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)\n\n -->\n\n",
   "header_contributing": "Please take a quick look at the [contribution guidelines](.github/CONTRIBUTING.md) first. If you see a package or project here that is no longer maintained or is not a good fit, please submit a pull request to improve this file. Thank you to all [contributors](https://github.com/matteocrippa/awesome-swift/graphs/contributors); you rock!!",
   "categories": [{
-    "title": "Guides",
-    "id": "guides",
-    "description": "An awesome list of Swift related guides."
+    "title": "Learning",
+    "id": "learning",
+    "description": "An awesome list of learning video streaming resources."
   }, {
-    "title": "Official Guides",
-    "id": "official-guides",
-    "parent": "guides"
-  }],
-  "projects": [{
-      "title": "ModelAssistant",
-      "category": "multi-database",
-      "description": "Elegant library to manage the interactions between view and model",
-      "homepage": "https://github.com/ssamadgh/ModelAssistant",
-      "tags": ["swift", "uitableview", "uicollectionview", "ios"]
-
+    "title": "HLS",
+    "id": "hls",
+    "description": "HLS tools, libraries, and resources."
+  },
+  {
+    "title": "DASH",
+    "id": "dash",
+    "description": "DASH tools, libraries, and resources."
+  },
+   {
+    "title": "Encoding",
+    "id": "encoding",
+    "description": "Encoding tools, libraries, and resources."
+  },
+   {
+    "title": "Reading",
+    "id": "reading",
+    "description": "An list of reading articles, blogs, and newsletters for video streaming."
+  },
+   {
+    "title": "Specs & Standards",
+    "id": "specs-standards",
+    "description": "Latest offical specs and standards related to video streaming."
+  },
+  {
+    "title": "Players",
+    "id": "players",
+    "description": "Client players, libraries, tools, and examples."
+  },
+   {
+    "title": "FFMPEG",
+    "id": "ffmpeg",
+    "description": "FFMPEG libraries, configs, tools, and examples."
+  },
+   {
+    "title": "Audio",
+    "id": "audio",
+    "description": "Audio libraries, tools, and examples."
+  },
+  {
+    "title": "Subtitles & Closed Captions",
+    "id": "subtitle-cc",
+    "description": "Subtitling & Closed Caption libraries, tools, and examples."
+  },
+  {
+    "title": "HEVC",
+    "id": "hevc",
+    "description": "HEVC (h265) libraries, tools, examples, and resources."
+  },
+  {
+    "title": "Ads",
+    "id": "ads",
+    "description": "Ads in streaming video related libraries, tools, examples, and resources."
+  },
+  {
+    "title": "Roku",
+    "id": "roku",
+    "description": "Roku app tools, libraries,and examples."
+  },
+   {
+    "title": "Dolby",
+    "id": "dolby",
+    "description": "Dolby specs, libraries, examples, and tools."
+  },
+  {
+    "title": "QoE & Analytics",
+    "id": "qoe",
+    "description": "QoE & Analytics tools, libraries, and resources."
+  },
+  {
+    "title": "Tools",
+    "id": "tools",
+    "description": "Streaming video tools and resources to make life easier."
+  },
+  {
+    "title": "DRM",
+    "id": "drm",
+    "description": "DRM tools, documentations, and resources."
+  },
+  {
+    "title": "Testing",
+    "id": "testing",
+    "description": "Video streaming testing tools and helpers."
+  }
+  ],
+  "projects": [
+    {
+      "title": "awesome-ffmpeg",
+      "category": "ffmpeg",
+      "description": "A curated list of awesome FFmpeg resources.",
+      "homepage": "ttps://github.com/transitive-bullshit/awesome-ffmpeg",
+      "tags": ["ffmpeg", "awesome-list"]
   }, {
-		"title": "Cards XI",
-		"category": "transition",
-		"description": "Awesome iOS 11 AppStore's Card Views.",
-		"homepage": "https://github.com/PaoloCuscela/Cards"
+		"title": "4K Media | Free Ultra-HD / HDR / HLG / Dolby Vision 4K Video Demos & Samples",
+		"category": "tools",
+		"description": "Sample 4K HDR HLG AND Dolby Vision content",
+		"homepage": "https://4kmedia.org/"
     }, {
-      "title": "Apple eBook",
-      "category": "official-guides",
-      "description": "Official Apple eBook for Swift beginners.",
-      "homepage": "https://books.apple.com/us/book/swift-programming-language/id881256329"
+      "title": "docker-dash-packager",
+      "category": "dash",
+      "description": " Docker container for an open source MPEG DASH packager",
+      "homepage": "https://github.com/Eyevinn/docker-dash-packager"
     }, {
-      "title": "API Design Guidelines",
-      "category": "official-guides",
-      "description": "Official Swift API design guidelines.",
-      "homepage": "https://swift.org/documentation/api-design-guidelines/"
-    }, {
-      "title": "Swift Education",
-      "category": "third-party-guides",
-      "description": "A community of educators sharing materials for teaching Swift and app development.",
-      "homepage": "https://github.com/swifteducation"
-    }
+      "title": "ISO Segment Validator",
+      "category": "dash",
+      "description": "ISO BMFF, DASH, CMAF and HbbTV - DVB segment validation conformance",
+      "homepage": "https://github.com/Dash-Industry-Forum/ISOSegmentValidator"
+    }, 
+    {
+      "title": "dash-proxy",
+      "category": "dash",
+      "description": "Dash proxy is a tool that allows for easy downloading or mirroring of remote MPEG-DASH streams.",
+      "homepage": "https://github.com/Viblast/dash-proxy"
+    },
+    {
+      "title": "17 Free MPEG-DASH example and HLS m3u8 sample test streams",
+      "category": "tools",
+      "description": "Collection of publicly available and free MPEG-DASH and HLS examples, test streams and datasets to help you through your development process",
+      "homepage": "https://bitmovin.com/mpeg-dash-hls-examples-sample-streams/"
+    },
+    {
+      "title": "HLS and Fragmented MP4 | HTTP Live Streaming",
+      "category": "hls",
+      "description": "At WWDC 2016, Apple announced support for fragmented MP4 (fMP4) as an alternative to MPEG-TS, which prior to their announcement was the only supported format.",
+      "homepage": "https://hlsbook.net/hls-fragmented-mp4/"
+    },
+     {
+      "title": "create-DASH-HLS",
+      "category": "learning",
+      "description": "A tutorial to generate fMp4 files compatible with dash and HLS",
+      "homepage": "https://github.com/matmoi/create-DASH-HLS/"
+    },
+    {
+      "title": "demo-encoder",
+      "category": "encoding",
+      "description": "A nodejs encoding system based on ffmpeg and configured to write HLS streaming files to S3",
+      "homepage": "https://github.com/realeyes-media/demo-encoder/"
+    },
+    {
+      "title": "HLSDownloader",
+      "category": "hls",
+      "description": "Downloads m3u8 playlist and TS chunks for a given playlist URL.",
+      "homepage": "https://github.com/nmrony/hlsdownloader"
+    },
+    {
+      "title": "A Large-Scale Comparison of x264 x265 and libvpx",
+      "category": "encoding",
+      "description": "Netflix Technology Blog.",
+      "homepage": "https://medium.com/netflix-techblog/a-large-scale-comparison-of-x264-x265-and-libvpx-a-sneak-peek-2e81e88f8b0f"
+    },
+     {
+      "title": "Advances in HTTP Live Streaming - WWDC 2017",
+      "category": "hls",
+      "description": "Videos - Apple Developer",
+      "homepage": "https://developer.apple.com/videos/play/wwdc2017/504/"
+    },
+    {
+      "title": "HLS Authoring Specification for Apple Devices",
+      "category": "specs-standards",
+      "description": "Describes the requirements for live and VOD audio-video content delivery using HTTP Live Streaming (HLS) to Apple devices.",
+      "homepage": "https://developer.apple.com/documentation/http_live_streaming/hls_authoring_specification_for_apple_devices"
+    },    
+    {
+      "title": "ffmpeg audio/video manipulation",
+      "category": "ffmpeg",
+      "description": "How to tame the Swiss army knife of audio and video manipulation…",
+      "homepage": "http://howto-pages.org/ffmpeg/"
+    },
+     {
+      "title": "Apple Got It Wrong: Encoding Specs for HEVC in HLS",
+      "category": "hevc",
+      "description": "Though I didn't recognize it at first, when Apple released its encoding specifications for HEVC and HLS, they got it wrong, though it took a comment from a true encoding expert to help me realize it.",
+      "homepage": "https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=121878"
+    },
+     {
+      "title": "How to generate a fmp4 hls live stream with FFMPEG",
+      "category": "ffmpeg",
+      "description": "ffmpeg example command.",
+      "homepage": "https://nomadyun.wordpress.com/2018/04/12/how-to-generate-a-fmp4-hls-live-stream-with-ffmpeg/"
+    },    
+ {
+      "title": "HLS Key Specs",
+      "category": "drm",
+      "description": "HLS Key Files",
+      "homepage": "https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis-00#section-5.1"
+    } ,
+  {
+      "title": "HEVC DRM Market Update",
+      "category": "drm",
+      "description": "Since time eternal, the streaming industry has toiled with and extolled the virtues of CODECs and their key enablement of the entire digital video experience.",
+      "homepage": "https://go.buydrm.com/thedrmblog/hevc-drm-market-update"
+    } ,   
+     {
+      "title": "ffmpeg and hardware acceleration of HEVC transcoding",
+      "category": "ffmpeg",
+      "description": "ffmpeg -hide_banner -h encoder=hevc_videotoolbox ",
+      "homepage": "https://superuser.com/questions/1295957/ffmpeg-and-hardware-acceleration-of-hevc-transcoding-on-mac"
+    }, 
+      {
+      "title": " CRF Guide (Constant Rate Factor in x264, x265 and libvpx)",
+      "category": "ffmpeg",
+      "description": "The Constant Rate Factor (CRF) is the default quality (and rate control) setting for the x264 and x265 encoders, and it’s also available for libvpx. ",
+      "homepage": "http://slhck.info/video/2017/02/24/crf-guide.html"
+    }  
   ]
 }

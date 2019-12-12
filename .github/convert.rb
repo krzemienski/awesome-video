@@ -82,7 +82,7 @@ def output_header(j)
 
   o = header
   o << "\n\n"
-  o << output_table(app, num_projects)
+  o << output_table(num_projects)
 
   o
 end
@@ -93,7 +93,7 @@ def output_contributing(j)
   o
 end
 
-def output_table(ios_app_link, num_projects)
+def output_table(num_projects)
   require 'date'
 
   date = DateTime.now

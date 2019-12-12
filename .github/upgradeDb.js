@@ -41,4 +41,6 @@ projects.forEach(function(proj) {
 
 //console.log(database);
 var json = JSON.stringify(database);
-fs.writeFile('database.json', json, 'utf8');
+fs.writeFile('database.json', json, 'utf8', function () {
+    console.log('finished writting database.json '); 
+});

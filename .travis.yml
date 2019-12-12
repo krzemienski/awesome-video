@@ -2,6 +2,8 @@ sudo: required
 language: ruby
 rvm: 2.2
 node_js: "0.10"
+python:
+  - "3.6"
 
 jobs:
   include:
@@ -9,6 +11,7 @@ jobs:
       before_script:
         - gem install awesome_bot
         - sudo pip install json-spec
+        - sudo pip install -r requirements.txt
       script: 
         - awesome_bot contents.json -w AERecord,theswiftwebdeveloper,bluemix,swiftplayground,awesome-for-swift-cheatsheet
         - json validate --schema-file=.github/schema.json --document-file=contents.json
@@ -16,7 +19,9 @@ jobs:
       script:
         - ruby .github/convert.rb
         - node .github/upgradeDb.js
-        - ./.github/deploy.sh
+        - cp README.md docs/index.md
+        - mkdocs build
+        # - ./.github/deploy.sh
       if: branch = master AND type != pull_request
 
 language: python
