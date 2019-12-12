@@ -1,14 +1,14 @@
 site_name: Awesome Video
 site_url: https://awesome.video
-site_description: A curated list of awesome video frameworks, libraries and software
+site_description: A curated list of awesome streaming video tools, frameworks, libraries, and learning resources.
 site_author: Nick Krzemienski
 repo_name: krzemienski/awesome-video
 repo_url: https://github.com/krzemienski/awesome-video
 theme:
   name: material
   palette:
-    primary: orange
-    accent: black
+    primary: red
+    accent: grey
 extra:
   social:
     - type: github
@@ -23,4 +23,4 @@ google_analytics:
 extra_css:
     - css/extra.css
 nav:
-  - "Home for all video streaming resouces.": "index.md"
+  - "From Ffmpeg to packaging HLS & DASH.": "index.md"
