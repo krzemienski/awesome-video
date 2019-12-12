@@ -1,4 +1,4 @@
-<!-- Thanks for contributing to awesome-swift 😊 -->
+<!-- Thanks for contributing to awesome-video -->
 
 <!-- Reminder: Please update contents.json instead of the README -->
 
@@ -7,9 +7,5 @@
 - **Project Name**:
 - **Project URL**:
 - **Project Description**:
-- **Why it should be added to `awesome-swift`**:
-- [ ] At least 15 stars (GitHub project)
-- [ ] Support `Swift 5`
+- **Why it should be added to `awesome-video`**:
 - [ ] Updated **contents.json** instead of README
-- [ ] Lib is fully open sourced, written in Swift and not a wrapper over compiled lib
-- [ ] Description does not say "written in Swift" or variant 🤓

@@ -1,4 +1,4 @@
-# Awesome Video
+# Awesome Video [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
  
 <!-- 
 
@@ -13,6 +13,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 ### Contents
 
 - [Learning](#learning)
+  - [Intro to streaming video](#intro)
 - [HLS](#hls)
 - [DASH](#dash)
 - [Encoding](#encoding)
@@ -66,11 +67,16 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Video on Demand Playlist Construction | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/video_on_demand_playlist_construction)  - 
 * [bash scripts to create VOD HLS stream with ffmpeg almighty (tested on Linux and OS X)](https://gist.github.com/mrbar42/ae111731906f958b396f30906004b3fa)  - 
 * [create-DASH-HLS](https://github.com/matmoi/create-DASH-HLS/)  - A tutorial to generate fMp4 files compatible with dash and HLS
-* [digital_video_introduction: A hands-on introduction to video technology: image, video, codec (av1, vp9, h265) and more (ffmpeg encoding).](https://github.com/leandromoreira/digital_video_introduction)  - A gentle introduction to video technology, although it's aimed at software developers / engineers, we want to make it easy for anyone to learn.
-* [eyevinn/streaming-onboarding](https://github.com/Eyevinn/streaming-onboarding)  - 
 * [ffmpeg audio/video manipulation](http://howto-pages.org/ffmpeg/)  - How to tame the Swiss army knife of audio and video manipulation
 * [ffmpeg audio/video manipulation](http://howto-pages.org/ffmpeg/)  - 
 * [matmoi/create-DASH-HLS: A tutorial to generate fMp4 files compatible with dash and HLS](https://github.com/matmoi/create-DASH-HLS)  - 
+
+### Intro to streaming video
+*What's video?*
+[back to top](#readme) 
+
+* [digital_video_introduction: A hands-on introduction to video technology: image, video, codec (av1, vp9, h265) and more (ffmpeg encoding).](https://github.com/leandromoreira/digital_video_introduction)  - A gentle introduction to video technology, although it's aimed at software developers / engineers, we want to make it easy for anyone to learn.
+* [eyevinn/streaming-onboarding](https://github.com/Eyevinn/streaming-onboarding)  - 
 
 ## HLS
 *HLS tools, libraries, and resources.*
@@ -428,4 +434,4 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 
 ### Contributing
 
-Please take a quick look at the [contribution guidelines](.github/CONTRIBUTING.md) first. If you see a package or project here that is no longer maintained or is not a good fit, please submit a pull request to improve this file. Thank you to all [contributors](https://github.com/matteocrippa/awesome-swift/graphs/contributors); you rock!!
+Please take a quick look at the [contribution guidelines](.github/CONTRIBUTING.md) first. If you see a package or project here that is no longer maintained or is not a good fit, please submit a pull request to improve this file. Thank you to all [contributors](https://github.com/krzemienski/awesome-video/graphs/contributors); you rock!!
