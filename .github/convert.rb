@@ -14,10 +14,11 @@ end
 
 def output_projects(proj, id)
   o = ''
+  # puts proj.inspect
   proj.select {|p| p['category']==id }
-    .sort_by {|k,v| k['title'].downcase}
+    .sort_by {|k,v| k['title']}
     .each do |p|
-    o << "* [#{p['title']}](#{p['homepage']}) #{output_linux p['tags']}- #{p['description']}\n"
+    o << "* [#{p['title'].force_encoding('utf-8')}](#{p['homepage']}) #{output_linux p['tags']}- #{p['description']}\n"
   end
   o
 end
@@ -81,9 +82,8 @@ def output_header(j)
   num_projects = j['projects'].count
 
   o = header
-  o << "\n\n"
+   o << "\n\n"  
   o << output_table(num_projects)
-
   o
 end
 
@@ -138,6 +138,7 @@ def output_toc(j)
 end
 
 def write_readme(j, filename)
+    output = output_header(j)
     output << output_toc(j)
     output << output_content(j)
     output << output_contributing(j)
