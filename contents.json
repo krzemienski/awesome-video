@@ -1,0 +1,43 @@
+{
+  "title": "Awesome Video",
+  "header": "# Awesome Video\n \n<!-- \n\nPLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)\n\n -->\n\n",
+  "header_contributing": "Please take a quick look at the [contribution guidelines](.github/CONTRIBUTING.md) first. If you see a package or project here that is no longer maintained or is not a good fit, please submit a pull request to improve this file. Thank you to all [contributors](https://github.com/matteocrippa/awesome-swift/graphs/contributors); you rock!!",
+  "categories": [{
+    "title": "Guides",
+    "id": "guides",
+    "description": "An awesome list of Swift related guides."
+  }, {
+    "title": "Official Guides",
+    "id": "official-guides",
+    "parent": "guides"
+  }],
+  "projects": [{
+      "title": "ModelAssistant",
+      "category": "multi-database",
+      "description": "Elegant library to manage the interactions between view and model",
+      "homepage": "https://github.com/ssamadgh/ModelAssistant",
+      "tags": ["swift", "uitableview", "uicollectionview", "ios"]
+
+  }, {
+		"title": "Cards XI",
+		"category": "transition",
+		"description": "Awesome iOS 11 AppStore's Card Views.",
+		"homepage": "https://github.com/PaoloCuscela/Cards"
+    }, {
+      "title": "Apple eBook",
+      "category": "official-guides",
+      "description": "Official Apple eBook for Swift beginners.",
+      "homepage": "https://books.apple.com/us/book/swift-programming-language/id881256329"
+    }, {
+      "title": "API Design Guidelines",
+      "category": "official-guides",
+      "description": "Official Swift API design guidelines.",
+      "homepage": "https://swift.org/documentation/api-design-guidelines/"
+    }, {
+      "title": "Swift Education",
+      "category": "third-party-guides",
+      "description": "A community of educators sharing materials for teaching Swift and app development.",
+      "homepage": "https://github.com/swifteducation"
+    }
+  ]
+}
