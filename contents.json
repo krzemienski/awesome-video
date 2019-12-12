@@ -114,7 +114,13 @@
       "description": "A curated list of awesome FFmpeg resources.",
       "homepage": "ttps://github.com/transitive-bullshit/awesome-ffmpeg",
       "tags": ["ffmpeg", "awesome-list"]
-  }, {
+  },
+   {
+    "title": "digital_video_introduction: A hands-on introduction to video technology: image, video, codec (av1, vp9, h265) and more (ffmpeg encoding).",
+    "description":"A gentle introduction to video technology, although it's aimed at software developers / engineers, we want to make it easy for anyone to learn.",
+    "category": "learning",
+    "homepage": "https://github.com/leandromoreira/digital_video_introduction"
+  },   {
 		"title": "4K Media | Free Ultra-HD / HDR / HLG / Dolby Vision 4K Video Demos & Samples",
 		"category": "testing",
 		"description": "Sample 4K HDR HLG AND Dolby Vision content",
@@ -357,11 +363,6 @@
     "homepage": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/on-demand-streaming-video.html"
   },
   {
-    "title": "Adding Alternate Media to a Playlist | Apple Developer Documentation",
-    "category": "learning",
-    "homepage": "https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/adding_alternate_media_to_a_playlist"
-  },
-  {
     "title": "djvergad/dash",
     "category": "dash",
     "homepage": "https://github.com/djvergad/dash"
@@ -468,7 +469,7 @@
   },
   {
     "title": "Server-less Just-in-Time Packaging with AWS Fargate and Unified Origin by Unified Streaming",
-    "category": "learning",
+    "category": "reading",
     "homepage": "https://medium.com/@eyevinntechnology/server-less-just-in-time-packaging-with-aws-fargate-and-unified-origin-by-unified-streaming-c1682dc051ca?source=userActivityShare-94bccb50d11-1559724204&_branch_match_id=664738392430917730"
   },
   {
@@ -912,6 +913,12 @@
     "category": "specs-standards",
     "homepage": "https://www.atsc.org/wp-content/uploads/2015/03/Techniques-for-establishing-and-maintaining-audio-loudness.pdf"
   },
+      {
+    "title": "digital_video_introduction: A hands-on introduction to video technology: image, video, codec (av1, vp9, h265) and more (ffmpeg encoding).",
+    "description":"A gentle introduction to video technology, although it's aimed at software developers / engineers, we want to make it easy for anyone to learn.",
+    "category": "learning",
+    "homepage": "https://github.com/leandromoreira/digital_video_introduction"
+  },  
   {
     "title": "Audio normalization with ffmpeg using loudnorm (ebur128) filter? bytes and bones",
     "category": "audio",
