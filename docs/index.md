@@ -6,7 +6,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 
  -->
 
-
 ### Contents
 
 - [Learning](#learning)

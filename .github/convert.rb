@@ -138,7 +138,6 @@ def output_toc(j)
 end
 
 def write_readme(j, filename)
-    output = output_header(j)
     output << output_toc(j)
     output << output_content(j)
     output << output_contributing(j)
