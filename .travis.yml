@@ -21,24 +21,24 @@ jobs:
         - node .github/upgradeDb.js
         - cp README.md docs/index.md
         - mkdocs build
-        # - ./.github/deploy.sh
+        # - ./.github/deploy.sh ruby .github/convert.rb && node .github/upgradeDb.js && cp README.md docs/index.md && mkdocs build
       if: branch = master AND type != pull_request
 
-language: python
+# language: python
 
-python:
-  - "3.6"
+# python:
+#   - "3.6"
 
-script:
-  - cp README.md docs/index.md
-  - mkdocs build
+# script:
+#   - cp README.md docs/index.md
+#   - mkdocs build
 
-deploy:
-  provider: pages
-  local-dir: site
-  skip-cleanup: true
-  keep-history: true
-  github-token: $GITHUB_TOKEN
-  on:
-    branch: master
+# deploy:
+#   provider: pages
+#   local-dir: site
+#   skip-cleanup: true
+#   keep-history: true
+#   github-token: $GITHUB_TOKEN
+#   on:
+#     branch: master
 

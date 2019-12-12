@@ -116,11 +116,6 @@
       "tags": ["ffmpeg", "awesome-list"]
   },
    {
-    "title": "digital_video_introduction: A hands-on introduction to video technology: image, video, codec (av1, vp9, h265) and more (ffmpeg encoding).",
-    "description":"A gentle introduction to video technology, although it's aimed at software developers / engineers, we want to make it easy for anyone to learn.",
-    "category": "learning",
-    "homepage": "https://github.com/leandromoreira/digital_video_introduction"
-  },   {
 		"title": "4K Media | Free Ultra-HD / HDR / HLG / Dolby Vision 4K Video Demos & Samples",
 		"category": "testing",
 		"description": "Sample 4K HDR HLG AND Dolby Vision content",
@@ -706,7 +701,8 @@
   {
     "title": "A short history of video coding",
     "category": "learning",
-    "homepage": "https://www.slideshare.net/vcodex/a-short-history-of-video-coding?from_m_app=ios"
+    "homepage": "https://www.slideshare.net/vcodex/a-short-history-of-video-coding?from_m_app=ios",
+    "description": "From H.261 to H.265"
   },
   {
     "title": "Video Bench - How to measure your video quality easily",
