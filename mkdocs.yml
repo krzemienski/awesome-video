@@ -23,4 +23,4 @@ google_analytics:
 extra_css:
     - css/extra.css
 nav:
-  - "From Ffmpeg to packaging HLS & DASH.": "index.md"
+  - "From FFMPEG to playback, streaming video.": "index.md"
