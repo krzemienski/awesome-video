@@ -29,13 +29,9 @@ jobs:
              
   deploy-awesome-video:
     docker:
-      - image: krzemienski/ruby-node-python:latest 
+      - image: krzemienski/ruby-node-python:latest
     steps:
       - checkout
-      - run:
-          name: Install mkdocs
-          command: |
-            pip install -r requirements.txt
       - run: 
           name: run README.md gen
           command: |
@@ -64,6 +60,7 @@ workflows:
       - awesomebot
       - json-validate
       - deploy-awesome-video:
+          context: org-global
           requires:
             - awesomebot
             - json-validate
