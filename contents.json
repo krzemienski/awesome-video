@@ -313,12 +313,6 @@
         "title": "High Efficiency Video Coding: Coding Tools and Specification (Signals and Communication Technology): Mathias Wien: 9783662442753: Amazon.com..."
     },
     {
-        "category": "learning",
-        "description": "",
-        "homepage": "https://medium.com/canal-tech/how-video-streaming-works-on-the-web-an-introduction-7919739f7e1",
-        "title": "How video streaming works on the web: An introduction"
-    },
-    {
         "category": "players",
         "description": "",
         "homepage": "https://github.com/iina/iina",
@@ -1417,11 +1411,6 @@
     "homepage": "https://github.com/StyleShare/HLSCachingReverseProxyServer"
   },
   {
-    "title": "masterjk/ios-avplayer-http-capture: iOS based application that embeds the AVPlayer and capture HTTP headers and send it back to the iOS application. It internally embeds a proxy server.",
-    "category": "players",
-    "homepage": "https://github.com/masterjk/ios-avplayer-http-capture"
-  },
-  {
     "title": "superpoweredSDK/Low-Latency-Android-iOS-Linux-Windows-tvOS-macOS-Interactive-Audio-Platform: Superpowered Audio, Networking and Cryptographics SDKs. High performance and cross platform on Android, iOS, macOS, tvOS, Linux, Windows and modern web browsers.",
     "category": "audio",
     "homepage": "https://github.com/superpoweredSDK/Low-Latency-Android-iOS-Linux-Windows-tvOS-macOS-Interactive-Audio-Platform"
@@ -1430,11 +1419,6 @@
     "title": "davidAgo4g/VideoPlayer-iOS: A library based on FFMPEG to play video files on iOS using OpenGLES and AudioQueue. Build with theos",
     "category": "players",
     "homepage": "https://github.com/davidAgo4g/VideoPlayer-iOS"
-  },
-  {
-    "title": "ustwo/videoplayback-ios",
-    "category": "players",
-    "homepage": "https://github.com/ustwo/videoplayback-ios"
   },
   {
     "title": "imoreapps/ffmpeg-avplayer-for-ios-tvos: A tiny but powerful iOS and Apple TV OS av player framework that's based on the FFmpeg library.",
