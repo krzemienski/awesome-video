@@ -126,7 +126,649 @@
 		"category": "testing",
 		"description": "Sample 4K HDR HLG AND Dolby Vision content",
 		"homepage": "https://4kmedia.org/"
-    }, {
+    },  {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/alfg/docker-nginx-rtmp",
+        "title": "﻿alfg/docker-nginx-rtmp: 🐋 A Dockerfile for nginx-rtmp-module + FFmpeg from source with basic settings for streaming HLS. Built on Alpine Li..."
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/anachirino/bifserver",
+        "title": "anachirino/bifserver: Server which creates and serves up BIF files for Roku players"
+    },
+    {
+        "category": "encoding",
+        "description": "",
+        "homepage": "https://github.com/avTranscoder/avTranscoder",
+        "title": "avTranscoder/avTranscoder: C++ API for LibAV / FFMpeg"
+    },
+    {
+        "category": "encoding",
+        "description": "",
+        "homepage": "https://github.com/bfansports/CloudTranscode",
+        "title": "bfansports/CloudTranscode: Distributed videos and images encoding/transcoding using Amazon SFN, FFMpeg and ImageMagic"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/briandunnington/Redoku",
+        "title": "briandunnington/Redoku: Redux for Roku"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/briandunnington/Roact",
+        "title": "briandunnington/Roact: React for Roku"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/BrikerMan/BMPlayer",
+        "title": "BrikerMan/BMPlayer: A video player for iOS, based on AVPlayer, support the horizontal, vertical screen. support adjust volume, brightness an..."
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/CCecilia/roku-suite-desktop",
+        "title": "CCecilia/roku-suite-desktop: Tool suite for Roku channel development."
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/chrishoffman/brightscript-json",
+        "title": "chrishoffman/brightscript-json: JSON parser for Roku's proprietary Brightscript language"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/DaMingShen/SUCacheLoader",
+        "title": "DaMingShen/SUCacheLoader: AVPlayer缓存实现"
+    },
+    {
+        "category": "talks",
+        "description": "",
+        "homepage": "https://m.youtube.com/playlist?list=PLkyaYNWEKcOf_C_6W45abNvXMb40xUUqh",
+        "title": "Demuxed 2019 - YouTube"
+    },
+    {
+        "category": "talks",
+        "description": "",
+        "homepage": "https://www.heavybit.com/library/podcasts/demuxed/",
+        "title": "Demuxed | Heavybit"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://medium.com/@eyevinntechnology/demystifying-html5-video-player-e480846328f0",
+        "title": "Demystifying HTML5 Video Player - Eyevinn Technology - Medium"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/DeviLeo/DLGPlayer",
+        "title": "DeviLeo/DLGPlayer: A media player for iOS based on FFmpeg 4.0"
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/dhairav/URLSessionHLSDownload",
+        "title": "dhairav/URLSessionHLSDownload: A swift 3 implementation for downloading HLS content and play it back using native AVPlayer"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/dphang/roku-lib",
+        "title": "dphang/roku-lib: Some useful Roku utilities"
+    },
+    {
+        "category": "ffmpeg",
+        "description": "",
+        "homepage": "https://github.com/ElderByte-/docker-java-media",
+        "title": "ElderByte-/docker-java-media: JRE 10 (Java 10) and media tools (ffmpeg)"
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/epiclabs-io/hls-analyzer",
+        "title": "epiclabs-io/hls-analyzer: Analyzer for HTTP Live Streams (HLS) content"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/exegersha/network-benchmark",
+        "title": "exegersha/network-benchmark: Proof of concept. Roku app implementing network layer using scene graph nodes."
+    },
+    {
+        "category": "ffmpeg",
+        "description": "",
+        "homepage": "https://github.com/FallingSnow/h265ize",
+        "title": "FallingSnow/h265ize: A node utility utilizing ffmpeg to encode videos with the hevc codec."
+    },
+    {
+        "category": "ffmpeg",
+        "description": "",
+        "homepage": "https://github.com/FFmpeg/FFmpeg",
+        "title": "FFmpeg/FFmpeg: Mirror of git://source.ffmpeg.org/ffmpeg.git"
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/flavioribeiro/nginx-audio-track-for-hls-module",
+        "title": "flavioribeiro/nginx-audio-track-for-hls-module: Nginx module that generates audio track for HTTP Live Streaming (HLS) streams on the fly."
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/flavioribeiro/nginx-vod-module-fmp4-hls",
+        "title": "flavioribeiro/nginx-vod-module-fmp4-hls: Play fragmented mp4's on HLS using nginx-vod-module"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/gabek/Amplitude-Brightscript",
+        "title": "gabek/Amplitude-Brightscript: A Brightscript (Roku) library for submitting analytics to Amplitude"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/gabek/SegmentIO-Brightscript",
+        "title": "gabek/SegmentIO-Brightscript: A BrightScript interface to SegmentIO event tracking"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/georgejecook/rooibos",
+        "title": "georgejecook/rooibos: simple, flexible, fun brightscript test framework for roku scenegraph apps"
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/globocom/hlsclient",
+        "title": "globocom/hlsclient: Python HLS Client"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/googleads/google-media-framework-ios",
+        "title": "googleads/google-media-framework-ios: The Google Media Framework (GMF) is a lightweight media player designed to make video playback and int..."
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/hanton/HTY360Player",
+        "title": "hanton/HTY360Player: Open Source iOS 360 Degree Panorama Video Player."
+    },
+    {
+        "category": "books",
+        "description": "",
+        "homepage": "https://www.amazon.com/gp/product/3319068946/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1",
+        "title": "High Efficiency Video Coding (HEVC): Algorithms and Architectures (Integrated Circuits and Systems): Vivienne Sze, Madhukar Budagavi, Gary J..."
+    },
+    {
+        "category": "books",
+        "description": "",
+        "homepage": "https://www.amazon.com/gp/product/3662442752/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1",
+        "title": "High Efficiency Video Coding: Coding Tools and Specification (Signals and Communication Technology): Mathias Wien: 9783662442753: Amazon.com..."
+    },
+    {
+        "category": "learning",
+        "description": "",
+        "homepage": "https://medium.com/canal-tech/how-video-streaming-works-on-the-web-an-introduction-7919739f7e1",
+        "title": "How video streaming works on the web: An introduction"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/iina/iina",
+        "title": "iina/iina: The modern video player for macOS."
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/imsanthosh/HLS-Stream-health-monitoring-tool",
+        "title": "imsanthosh/HLS-Stream-health-monitoring-tool: HLS stream health monitoring utility tool provides an report of live HLS stream. This utility ..."
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/juliomalves/roku-libs",
+        "title": "juliomalves/roku-libs: BrightScript Utility Libraries"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/karimkawambwa/roku-framework-example",
+        "title": "karimkawambwa/roku-framework-example: This is a project to show how the boku-framework by Karim Kawambwa is used"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/karimkawambwa/roku-framework",
+        "title": "karimkawambwa/roku-framework: Roku app framework to make app creation easier and structured. Under construction"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/kodlian/TVVLCPlayer",
+        "title": "kodlian/TVVLCPlayer: TVVLCPlayer lets you integrate easily a powerfull video player with playback control views to your tvOS apps."
+    },
+    {
+        "category": "tools",
+        "description": "",
+        "homepage": "https://github.com/Kthulu120/liquid_dl",
+        "title": "Kthulu120/liquid_dl: Liquid-dl is a simple tool for utlities such as FFMPEG, youtube-dl, and scdl. It provides a simple framework with simpl..."
+    },
+    {
+        "category": ["learning", "ffmpeg"],
+        "description": "",
+        "homepage": "https://github.com/leandromoreira/ffmpeg-libav-tutorial",
+        "title": "leandromoreira/ffmpeg-libav-tutorial: FFmpeg libav tutorial - learn how media works from basic to transmuxing, transcoding and more"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/libobjc/SGPlayer",
+        "title": "libobjc/SGPlayer: A powerful media play framework for iOS, macOS, and tvOS."
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/lightspark/lightspark",
+        "title": "lightspark/lightspark: An open source flash player implementation"
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/majamee/arch-ffmpeg-gpac",
+        "title": "majamee/arch-ffmpeg-gpac: A ready-prepared video transcoding pipeline to create DASH/ HLS compatible video files & playlists"
+    },
+    {
+        "category": "ffmpeg",
+        "description": "",
+        "homepage": "https://github.com/markus-perl/ffmpeg-build-script",
+        "title": "markus-perl/ffmpeg-build-script: The FFmpeg build script provides an easy way to build a static FFmpeg on OSX and Linux with non-free codecs..."
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/masterjk/ios-avplayer-http-capture",
+        "title": "masterjk/ios-avplayer-http-capture: iOS based application that embeds the AVPlayer and capture HTTP headers and send it back to the iOS appl..."
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/MediaBrowser/Emby.Roku",
+        "title": "MediaBrowser/Emby.Roku: Emby for Roku"
+    },
+    {
+        "category": "ffmpeg",
+        "description": "",
+        "homepage": "https://github.com/microshow/RxFFmpeg",
+        "title": "microshow/RxFFmpeg: 🔥RxFFmpeg 是基于 ( FFmpeg 4.0 + X264 + mp3lame + fdk-aac ) 编译的适用于 Android 平台的音视频编辑、视频剪辑的快速处理框架，包含以下功能（视频拼接，转码，压缩，裁剪，片头片尾，分..."
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/mifi/hls-vod",
+        "title": "mifi/hls-vod: HTTP Live Streaming with on-the-fly encoding of any video file for Web/Apple TV/iPhone/iPad/iPod"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/mrkjffrsn/RokuFramework",
+        "title": "mrkjffrsn/RokuFramework: An opensource Roku framework"
+    },
+    {
+        "category": "tools",
+        "description": "",
+        "homepage": "http://primary.telestream.net/switch/",
+        "title": "Multiformat video player, inspection and conversion tool | Switch"
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/nmrony/hlsdownloader-cli",
+        "title": "nmrony/hlsdownloader-cli: Downloads HLS Playlist file and TS chunks using Terminal"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/nod/rokumote",
+        "title": "nod/rokumote: osx app for controlling your roku because sometimes your kids lose the remote"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/nytimes/ios-360-videos",
+        "title": "nytimes/ios-360-videos: NYT360Video plays 360-degree video streamed from an AVPlayer on iOS."
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/openHPI/nginx-hls-analyzer",
+        "title": "openHPI/nginx-hls-analyzer: Fork of fmsloganalyzer to adapt it for HLS streaming analyzes with nginx"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/piemonte/Player",
+        "title": "piemonte/Player: ▶️ video player in Swift, simple way to play and stream media on iOS/tvOS"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://developer.roku.com/docs/developer-program/core-concepts/playing-videos.md#PlayingVideos-Examples",
+        "title": "Playing Videos | Roku Developer"
+    },
+    {
+        "category": "books",
+        "description": "",
+        "homepage": "https://www.amazon.com/gp/product/0976259540/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1",
+        "title": "Producing Streaming Video for Multiple Screen Delivery: Jan Lee Ozer: 9780976259541: Amazon.com: Books"
+    },
+    {
+        "category": "encoding",
+        "description": "",
+        "homepage": "https://github.com/ptrandev/swift-encoder",
+        "title": "ptrandev/swift-encoder: A fire-and-forget shell script that encodes multiple video and audio files with ffmpeg."
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/r-plus/HLSion",
+        "title": "r-plus/HLSion: HTTP Live Streaming (HLS) download manager to offline playback."
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/renzifeng/ZFPlayer",
+        "title": "renzifeng/ZFPlayer: Support customization of any player SDK and control layer(支持定制任何播放器SDK和控制层)"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/rkoshak/sensorReporter",
+        "title": "rkoshak/sensorReporter: A python based service that receives sensor inputs and publishes them over REST (should work with any API but mainly..."
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/RokuCommunity/brighterscript-formatter",
+        "title": "rokucommunity/brighterscript-formatter: A code formatter for BrighterScript (and BrightScript)"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/rokucommunity/vscode-brightscript-language",
+        "title": "rokucommunity/vscode-brightscript-language: A Visual Studio Code extension for Roku's BrightScript language"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/rokudev/automated-channel-testing",
+        "title": "rokudev/automated-channel-testing: Roku Automated Channel Testing: Selenium-based WebDriver + Robot Framework + Samples"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/rokudev/dolby-audio-sample",
+        "title": "rokudev/dolby-audio-sample: A collection of Dolby test content available in different streaming protocols."
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/rokudev/RAF4RSG-sample",
+        "title": "rokudev/RAF4RSG-sample: sample demonstrating the Roku Advertising Framework in SceneGraph"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/rokudev/samples",
+        "title": "rokudev/samples: Collection of sample channels for side-loading on your Roku device"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/rokudev/SceneGraphDeveloperExtensions",
+        "title": "rokudev/SceneGraphDeveloperExtensions"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/rokudev/SDK-Development-Guide",
+        "title": "rokudev/SDK-Development-Guide"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/rokudev/unit-testing-framework",
+        "title": "rokudev/unit-testing-framework: Tool for automating and testing Roku channels"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/rokudev/videoplayer-channel",
+        "title": "rokudev/videoplayer-channel: SceneGraph version of the SDK1 VideoPlayer Channel"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/rolandoislas/BrightWebSocket",
+        "title": "rolandoislas/BrightWebSocket: RFC 6455 WebSocket Library for the Roku"
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/rounce/nginx-hls-module",
+        "title": "rounce/nginx-hls-module: Smooth Streaming Module fork"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/sampotts/plyr",
+        "title": "sampotts/plyr: A simple HTML5, YouTube and Vimeo player"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/schtanislau/brightscript-state-machine",
+        "title": "schtanislau/brightscript-state-machine: State management for Roku channel"
+    },
+    {
+        "category": "learning",
+        "description": "",
+        "homepage": "https://medium.com/@eyevinntechnology/server-less-video-backend-1a142d1d2ba",
+        "title": "Server-less Video Backend - Eyevinn Technology - Medium"
+    },
+    {
+        "category": "ffmpeg",
+        "description": "",
+        "homepage": "https://github.com/silencecorner/jre-ffmpeg-apline",
+        "title": "silencecorner/jre-ffmpeg-apline: Dockerfile (jre8)(https://github.com/fabric8io-images/java) and (ffmpeg)(https://hub.docker.com/r/jrottenbe..."
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/sjbarag/brs-testbed",
+        "title": "sjbarag/brs-testbed: A simple, buildable Roku channel that executes arbitrary BrightScript files."
+    },
+    {
+        "category": "ffmpeg",
+        "description": "",
+        "homepage": "https://github.com/slhck/ffmpeg-debug-qp",
+        "title": "slhck/ffmpeg-debug-qp: FFmpeg Debug Script for QP Values"
+    },
+    {
+        "category": "ffmpeg",
+        "description": "",
+        "homepage": "https://github.com/slhck/ffmpeg-encoding-course",
+        "title": "slhck/ffmpeg-encoding-course: An introduction to FFmpeg and its tools"
+    },
+    {
+        "category": "encoding",
+        "description": "",
+        "homepage": "https://github.com/snickers/snickers",
+        "title": "snickers/snickers: An open source alternative to the video cloud encoding services."
+    },
+    {
+        "category": "tools",
+        "description": "",
+        "homepage": "https://www.elecard.com/products/video-analysis/stream-analyzer",
+        "title": "Stream Analyzer - ts analyzer, stream validation, ETSI TR 101 290 | Elecard: Video Compression Guru"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://developer.roku.com/docs/specs/streaming.md#AudioandVideoSupport-AdaptiveBitrateFormats",
+        "title": "Streaming specifications | Roku Developer"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/T-Pham/RokuJSONHelperNode",
+        "title": "T-Pham/RokuJSONHelperNode: Roku SceneGraph JSON Helper"
+    },
+    {
+        "category": "qoe",
+        "description": "",
+        "homepage": "https://medium.com/@eyevinntechnology/the-challenge-to-maintain-and-translate-creative-visual-ideas-to-everyones-viewing-devices-a88e1a841439",
+        "title": "The Challenge to Maintain and Translate Creative Visual Ideas to Everyone’s Viewing Devices"
+    },
+    {
+        "category": "books",
+        "description": "",
+        "homepage": "https://www.amazon.com/MPEG-4-Book-Fernando-Pereira/dp/0130616214/ref=sr_1_1?keywords=mpeg+4+book&qid=1576252504&s=books&sr=1-1",
+        "title": "The MPEG-4 Book: Fernando Pereira, Touradj Ebrahimi: 0076092011132: Amazon.com: Books"
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/tjenkinson/mock-hls-server",
+        "title": "tjenkinson/mock-hls-server: Fake a live/event HLS stream from a VOD one. Useful for testing."
+    },
+    {
+        "category": "ads",
+        "description": "",
+        "homepage": "https://medium.com/@eyevinntechnology/understanding-real-time-bidding-for-avod-services-861ebfa8bd13",
+        "title": "Understanding Real-time Bidding for AVOD Services - Eyevinn Technology - Medium"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/ustwo/videoplayback-ios",
+        "title": "ustwo/videoplayback-ios: Swift AVPlayer wrapper using the VIPER architecture. Currently a work in progress"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/veeta-tv/jasmine-roku",
+        "title": "veeta-tv/jasmine-roku: Example jasmine tests using node-roku-test for verifying Roku channel behavior"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/VeinGuo/VGPlayer",
+        "title": "VeinGuo/VGPlayer: 📺 A simple iOS video player by Vein."
+    },
+    {
+        "category": "books",
+        "description": "",
+        "homepage": "https://www.amazon.com/Video-Encoding-Numbers-Eliminate-Guesswork/dp/0998453005/ref=pd_bxgy_14_img_2/142-3989735-6086504?_encoding=UTF8&pd_rd_i=0998453005&pd_rd_r=6591968b-e54f-4fb1-8ab8-18e3f2a52f88&pd_rd_w=tWNbP&pd_rd_wg=RtRbb&pf_rd_p=09627863-9889-4290-b90a-5e9f86682449&pf_rd_r=JQP62Z6C5QJR49SEZNHP&psc=1&refRID=JQP62Z6C5QJR49SEZNHP",
+        "title": "Video Encoding by the Numbers: Eliminate the Guesswork from your Streaming Video: Jan Lee Ozer: 9780998453002: Amazon.com: Books"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://developer.roku.com/docs/references/scenegraph/media-playback-nodes/video.md",
+        "title": "Video | Roku Developer"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/video-dev/hls.js",
+        "title": "video-dev/hls.js: JavaScript HLS client using Media Source Extension"
+    },
+    {
+        "category": "testing",
+        "description": "",
+        "homepage": "https://github.com/video-dev/streams",
+        "title": "video-dev/streams: A repository of shared streams - no media uploads"
+    },
+    {
+        "category": "tools",
+        "description": "",
+        "homepage": "https://github.com/video-dev/vtt.js",
+        "title": "video-dev/vtt.js: A JavaScript implementation of the WebVTT specification"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/videojs/video.js",
+        "title": "videojs/video.js: Video.js - open source HTML5 & Flash video player"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/videolan/vlc",
+        "title": "videolan/vlc: VLC media player - All pull requests are ignored, please follow https://wiki.videolan.org/Sending_Patches_VLC/"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/vitoziv/VIMediaCache",
+        "title": "vitoziv/VIMediaCache: Cache media file while play media using AVPlayer"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/willowtreeapps/ukor",
+        "title": "willowtreeapps/ukor: A Roku build tool with support for build flavors"
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/xiewei-wayne/FFEngine.framework",
+        "title": "xiewei-wayne/FFEngine.framework: FFEngine framework is a high performance player sdk for iOS based on ffmpeg."
+    },
+    {
+        "category": "players",
+        "description": "",
+        "homepage": "https://github.com/xiewei-wayne/rtmp-video-player-for-ios",
+        "title": "xiewei-wayne/rtmp-video-player-for-ios: Based on FFEngine framework, a rtmp video player for apple iOS devices."
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/zhaiweiwei/nginx-hls",
+        "title": "zhaiweiwei/nginx-hls"
+    },
+    {
+        "category": "roku",
+        "description": "",
+        "homepage": "https://github.com/zype/zype-roku-scenegraph",
+        "title": "zype/zype-roku-scenegraph"
+    },
+    {
+        "category": "dolby",
+        "description": "",
+        "homepage": "https://docs.hybrik.com/api/v1/HybrikAPI.html?#getting-started",
+        "title": "Hybrik API Reference"
+    },
+    {
+        "category": "ffmpeg",
+        "description": "",
+        "homepage": "https://github.com/bcoudurier/FFmbc",
+        "title": "bcoudurier/FFmbc"
+    },
+    {
+        "category": "dolby",
+        "description": "",
+        "homepage": "https://github.com/hybrik/hybrik-samples",
+        "title": "hybrik/hybrik-samples"
+    }, 
+    {
       "title": "docker-dash-packager",
       "category": "dash",
       "description": " Docker container for an open source MPEG DASH packager",

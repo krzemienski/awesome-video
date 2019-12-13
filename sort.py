@@ -66,7 +66,7 @@ def main():
             blocks.append([line])
             last_indent = None
 
-    with open('README.md', 'w+') as sorted_file:
+    with open('README2.md', 'w+') as sorted_file:
         # Then all of the blocks are sorted individually
         blocks = [
             ''.join(sorted(block, key=str.lower)) for block in blocks
