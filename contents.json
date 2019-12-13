@@ -1271,11 +1271,16 @@
     "title": "HOW TO: View an HLS Stream in QuickTime or VLC",
     "category": "learning",
     "homepage": "https://softron.zendesk.com/hc/en-us/articles/207694617-HOW-TO-View-an-HLS-Stream-in-QuickTime-or-VLC?mobile_site=true"
-  },
+  },  
   {
     "title": "Creating A Production Ready Multi Bitrate HLS VOD stream",
     "category": "learning",
     "homepage": "https://docs.peer5.com/guides/production-ready-hls-vod/"
+  },
+    {
+    "title": "From sysadmin to SRE",
+    "category": "talks",
+    "homepage": "https://www.youtube.com/watch?v=lZI51YzIgVE"
   },
   {
     "title": "Eyevinn/toolbox: A set of Docker containers with Streaming tools",
