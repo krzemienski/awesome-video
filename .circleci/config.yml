@@ -1,6 +1,5 @@
 version: 2
- 
- jobs:
+jobs:
   awesomebot:
     docker:
       - image: circleci/python:latest
@@ -16,7 +15,6 @@ version: 2
           name: run json validate
           command: |
              json validate --schema-file=.github/schema.json --document-file=contents.json
-             
   deploy-awesome-video:
     docker:
       - image: circleci/python:latest
