@@ -29,7 +29,7 @@ jobs:
              
   deploy-awesome-video:
     docker:
-      - image: circleci/python:latest-node
+      - image: krzemienski/ruby-node-python:latest 
     steps:
       - checkout
       - run:
