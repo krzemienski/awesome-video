@@ -266,7 +266,7 @@
   {
     "title": "Video Transcoding API",
     "category": "encoding",
-    "homepage": "https://github.com/video-dev/video-transcoding-api"
+    "homepage": "https://github.com/nytimes/video-transcoding-api"
   },
   {
     "title": "Video Transcoding API",
@@ -293,20 +293,10 @@
     "category": "encoding",
     "homepage": "https://github.com/nytimes/video-presets"
   },
-    {
-    "title": "nytimes/video-presets",
-    "category":  "tools",
-    "homepage": "https://github.com/nytimes/video-presets"
-  },
   {
     "title": "Lambda@Edge Design Best Practices | Networking & Content Delivery",
     "category": "cdn",
     "homepage": "https://aws.amazon.com/blogs/networking-and-content-delivery/lambdaedge-design-best-practices/"
-  },
-  {
-    "title": "Generate MPEG-TS from file with ffmpeg",
-    "category": "learning",
-    "homepage": "https://medium.com/@eyevinntechnology/generate-mpeg-ts-from-file-with-ffmpeg-7561181e6369?source=userActivityShare-94bccb50d11-1560983471&_branch_match_id=670020142756633081"
   },
     {
     "title": "Generate MPEG-TS from file with ffmpeg",
@@ -325,12 +315,7 @@
   },
   {
     "title": "auto-dash-hls",
-    "category":  "dash",
-    "homepage": "https://github.com/majamee/auto-dash-hls"
-  },
-    {
-    "title": "auto-dash-hls",
-    "category": "hls",
+    "category":  ["tools", "hls", "dash"],
     "homepage": "https://github.com/majamee/auto-dash-hls"
   },
   {
@@ -349,11 +334,6 @@
     "homepage": "https://www.miracletutorials.com/hls-adaptive-streaming-tutorial-with-cloudfront-jw-player/"
   },
   {
-    "title": "carlanton/mpd-tools",
-    "category": "dash",
-    "homepage": "https://github.com/carlanton/mpd-tools"
-  },
-  {
     "title": "Tutorial: Creating a Simple Lambda@Edge Function - Amazon CloudFront",
     "category":"cdn", 
     "homepage": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-edge-how-it-works-tutorial.html"
@@ -370,12 +350,7 @@
   },
   {
     "title": "ISO - ISO/IEC 23009-1:2019 - Information technology -- Dynamic adaptive streaming over HTTP (DASH) -- Part 1: Media presentation description and segment formats",
-    "category": "specs-standards",
-    "homepage": "https://www.iso.org/standard/75485.html"
-  },
-   {
-    "title": "ISO - ISO/IEC 23009-1:2019 - Information technology -- Dynamic adaptive streaming over HTTP (DASH) -- Part 1: Media presentation description and segment formats",
-    "category": " dash",
+    "category": ["specs-standards", "dash"],
     "homepage": "https://www.iso.org/standard/75485.html"
   },
   {
@@ -415,12 +390,7 @@
   },
   {
     "title": "node-video-lib",
-    "category":"tools",
-    "homepage": "https://github.com/gkozlenko/node-video-lib"
-  },
-    {
-    "title": "node-video-lib",
-    "category": "encoding",
+    "category"[:]"tools", "encoding"],
     "homepage": "https://github.com/gkozlenko/node-video-lib"
   },
   {
@@ -509,11 +479,6 @@
     "homepage": "https://developers.google.com/assistant/tools/audio-loudness"
   },
   {
-    "title": "bitmovin/libdash",
-    "category": "dash",
-    "homepage": "https://github.com/bitmovin/libdash"
-  },
-  {
     "title": "Quick Tutorial: How to Increase Volume in Audacity [2019 Update]",
     "category": "audio",
     "homepage": "https://www.iskysoft.com/video-editing/how-to-increase-volume-in-audacity.html"
@@ -600,11 +565,6 @@
     "homepage": "https://github.com/googlecast/CastReceiver"
   },
   {
-    "title": "Eyevinn/hls-download",
-    "category": "hls",
-    "homepage": "https://github.com/Eyevinn/hls-download"
-  },
-  {
     "title": "DolbyProfessional Loudness",
     "category": "dolby",
     "homepage": "https://www.dolby.com/us/en/technologies/dolby-professional-loudness-solutions.pdf"
@@ -633,11 +593,6 @@
     "title": "lcy0321/m3u8-downloader: Download the ts files according to the given m3u8 file.",
     "category": "hls",
     "homepage": "https://github.com/lcy0321/m3u8-downloader"
-  },
-  {
-    "title": "Eyevinn/streaming-onboarding: New to streaming and don't know where to start? This is the place for you!",
-    "category": "learning",
-    "homepage": "https://github.com/Eyevinn/streaming-onboarding"
   },
   {
     "title": "Back to Basics: Encoding Definition and Adaptive Bitrate",
@@ -688,11 +643,6 @@
     "title": "HLS | Bento4",
     "category": "hls",
     "homepage": "https://www.bento4.com/developers/hls/"
-  },
-  {
-    "title": "Bento4 | Fast, Modern Tools and C++ Class Library for all your MP4 and DASH media format needs",
-    "category": "tools",
-    "homepage": "https://www.bento4.com/"
   },
     {
     "title": "Bento4 | Fast, Modern Tools and C++ Class Library for all your MP4 and DASH media format needs",
@@ -768,7 +718,7 @@
   {
     "title": "Guide to Mobile Video Streaming with HLS",
     "category": "learning",
-    "homepage": "http://mux.com/blog/mobile-hls-guide/"
+    "homepage": "https://mux.com/blog/mobile-hls-guide/"
   },
   {
     "title": "HTTP Live Streaming: HLS Player for Android | Toptal",
@@ -803,7 +753,7 @@
   {
     "title": "Automated testing on devices - Netflix TechBlog - Medium",
     "category": "testing",
-    "homepage": "http://techblog.netflix.com/2016/08/automated-testing-on-devices.html"
+    "homepage": "https://medium.com/netflix-techblog/automated-testing-on-devices-fc5a39f47e24"
   },
   {
     "title": "Server-less Just-in-Time Packaging with AWS Fargate and Unified Origin by Unified Streaming",
@@ -910,11 +860,6 @@
     "category": "audio",
     "homepage": "https://www.atsc.org/wp-content/uploads/2015/03/Techniques-for-establishing-and-maintaining-audio-loudness.pdf"
   },
-    {
-    "title": "Standard audio A85-2013",
-    "category": "specs-standards",
-    "homepage": "https://www.atsc.org/wp-content/uploads/2015/03/Techniques-for-establishing-and-maintaining-audio-loudness.pdf"
-  },
       {
     "title": "digital_video_introduction: A hands-on introduction to video technology: image, video, codec (av1, vp9, h265) and more (ffmpeg encoding).",
     "description":"A gentle introduction to video technology, although it's aimed at software developers / engineers, we want to make it easy for anyone to learn.",
@@ -982,11 +927,6 @@
     "homepage": "https://github.com/Eyevinn/manifestparser"
   },
   {
-    "title": "Eyevinn/eyevinn-player",
-    "category": "players",
-    "homepage": "https://github.com/Eyevinn/eyevinn-player"
-  },
-  {
     "title": "Eyevinn/docker-jit-capture",
     "category": "tools",
     "homepage": "https://github.com/Eyevinn/docker-jit-capture"
@@ -1013,14 +953,9 @@
   },
   {
     "title": "Eyevinn/hls-to-dash",
-    "category": "dash",
+    "category": ["dash","hls"],
     "homepage": "https://github.com/Eyevinn/hls-to-dash"
   }, 
-  {
-    "title": "Eyevinn/hls-to-dash",
-    "category": "hls",
-    "homepage": "https://github.com/Eyevinn/hls-to-dash"
-  },
   {
     "title": "Eyevinn/channel-engine-multiview",
     "category": "players",
@@ -1039,6 +974,7 @@
   {
     "title": "eyevinn/streaming-onboarding",
     "category": "intro",
+    "description":"New to streaming and don't know where to start? This is the place for you!",
     "homepage": "https://github.com/Eyevinn/streaming-onboarding"
   },
   {
@@ -1055,11 +991,6 @@
     "title": "Eyevinn/docker-html5player",
     "category": "players",
     "homepage": "https://github.com/Eyevinn/docker-html5player"
-  },
-  {
-    "title": "Eyevinn/docker-dash-packager",
-    "category": "dash",
-    "homepage": "https://github.com/Eyevinn/docker-dash-packager"
   },
   {
     "title": "Eyevinn/hls-ts-js",
@@ -1085,11 +1016,6 @@
     "title": "Eyevinn/eyevinn-player",
     "category": "players",
     "homepage": "https://github.com/Eyevinn/eyevinn-player"
-  },
-  {
-    "title": "Eyevinn/docker-html5player",
-    "category": "players",
-    "homepage": "https://github.com/Eyevinn/docker-html5player"
   },
   {
     "title": "compile and install latest ffmpeg source as pkg",
@@ -1162,11 +1088,6 @@
     "homepage": "https://medium.com/netflix-techblog/vmaf-the-journey-continues-44b51ee9ed12"
   },
   {
-    "title": "pbs/pycaption: Python module to read/write popular video caption formats",
-    "category": "subtitle-cc",
-    "homepage": "https://github.com/pbs/pycaption"
-  },
-  {
     "title": "The Netflix Content Processing Pipeline",
     "category": "reading",
     "homepage": "https://medium.com/netflix-techblog/the-netflix-imf-workflow-f45dd72ed700?source=userActivityShare-94bccb50d11-1568773157&_branch_match_id=702692448596112473"
@@ -1190,11 +1111,6 @@
     "title": "denex/hls-downloader",
     "category": "hls",
     "homepage": "https://github.com/denex/hls-downloader"
-  },
-  {
-    "title": "hlsdl",
-    "category": "hls",
-    "homepage": "https://github.com/selsta/hlsdl"
   },
   {
     "title": "hls-fetch",
@@ -1266,11 +1182,6 @@
     "category": "drm",
     "homepage": "https://github.com/shengbinmeng/dash-drm"
   },
-   {
-    "title": "shengbinmeng/dash-drm",
-    "category": "dash", 
-    "homepage": "https://github.com/shengbinmeng/dash-drm"
-  },
   {
     "title": "yuhuili-lab/Tide",
     "category": "hls",
@@ -1280,11 +1191,6 @@
     "title": "aminyazdanpanah/python-ffmpeg-video-streaming",
     "category": "Ffmpeg",
     "homepage": "https://github.com/aminyazdanpanah/python-ffmpeg-video-streaming"
-  },
-  {
-    "title": "Viblast/dash-proxy",
-    "category": "dash",
-    "homepage": "https://github.com/Viblast/dash-proxy"
   },
   {
     "title": "DASH-IF Conformance Software",
@@ -1298,22 +1204,12 @@
   },
   {
     "title": "realeyes-media/alpine-node-video-multitool",
-    "category": "encoding",
-    "homepage": "https://github.com/realeyes-media/alpine-node-video-multitool"
-  },
-    {
-    "title": "realeyes-media/alpine-node-video-multitool",
     "category": "tools",
     "homepage": "https://github.com/realeyes-media/alpine-node-video-multitool"
   },
   {
     "title": "DASH-IF Interoperability: Guidelines for Implementations",
     "category": "dash",
-    "homepage": "https://dashif.org/docs/DASH-IF-IOP-v4.3.pdf"
-  },
-    {
-    "title": "DASH-IF Interoperability: Guidelines for Implementations",
-    "category":  "specs-standards",
     "homepage": "https://dashif.org/docs/DASH-IF-IOP-v4.3.pdf"
   },
   {
@@ -1379,7 +1275,7 @@
   {
     "title": "Amazon S3 as Origin Fastly tutorial",
     "category": "cdn",
-    "homepage": "https://docs.fastly.com/guides/integrations/amazon-s3#using-amazon-s3-as-an-origin"
+    "homepage": "https://docs.fastly.com/en/guides/amazon-s3"
   },
   {
     "title": "Fastly compared to Amazon CloudFront",
@@ -1407,15 +1303,16 @@
     "homepage": "https://bitmovin.zendesk.com/hc/en-us/articles/115001609634-How-to-use-DASH-and-HLS-Adaptive-Streaming-with-AWS-S3-and-Cloudfront"
   },
   {
-    "title": "Delivering Live Streaming Video with CloudFront and AWS Media Services - Amazon CloudFront",
-    "category": "cdn",
-    "homepage": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/live-streaming.html"
-  },
-  {
     "title": "Ultimate Guide to Closed Captioning",
     "category": "subtitle-cc",
     "homepage": "https://www.3playmedia.com/resources/popular-topics/closed-captioning/"
   },
+    {
+    "title": "Collection of VMAF Resources ",
+    "category": "qoe",
+    "description":"How VMAF works.",
+    "homepage": "https://streaminglearningcenter.com/blogs/collection-of-vmaf-resources.html"
+  },  
   {
     "title": "SCTE Dash SPEC",
     "category":  "specs-standards",
@@ -1556,11 +1453,6 @@
     "category": "hevc",
     "homepage": "https://www.techspot.com/article/1131-hevc-h256-enconding-playback/"
   },
-  {
-    "title": "HEVC DRM Market Update",
-    "category": "drm",
-    "homepage": "https://go.buydrm.com/thedrmblog/hevc-drm-market-update"
-  },
     {
     "title": "HEVC DRM Market Update",
     "category": "hevc",
@@ -1572,64 +1464,29 @@
     "homepage": "https://www.theoplayer.com/blog/content-protection-for-hls-with-aes-128-encryption"
   },
   {
-    "title": "HLS Key Specs",
-    "category": "drm",
-    "homepage": "https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis-00#section-5.1"
-  },
-  {
     "title": "mp4dash | Bento4",
     "category": "dash",
     "homepage": "https://www.bento4.com/documentation/mp4dash/"
-  },
-  {
-    "title": "Advances in HTTP Live Streaming - WWDC 2017 - Videos - Apple Developer",
-    "category": "hls",
-    "homepage": "https://developer.apple.com/videos/play/wwdc2017/504/"
-  },
-   {
-    "title": "Advances in HTTP Live Streaming - WWDC 2017 - Videos - Apple Developer",
-    "category": "talks",
-    "homepage": "https://developer.apple.com/videos/play/wwdc2017/504/"
   },
   {
     "title": "matmoi/create-DASH-HLS: A tutorial to generate fMp4 files compatible with dash and HLS",
     "category": "learning",
     "homepage": "https://github.com/matmoi/create-DASH-HLS"
   },
-  {
-    "title": "How to generate a fmp4 hls live stream with FFMPEG",
-    "category": "ffmpeg",
-    "homepage": "https://nomadyun.wordpress.com/2018/04/12/how-to-generate-a-fmp4-hls-live-stream-with-ffmpeg/"
-  },
-  {
-    "title": "HLS and Fragmented MP4 | HTTP Live Streaming",
-    "category": "hls",
-    "homepage": "https://hlsbook.net/hls-fragmented-mp4/"
-  },
-  {
-    "title": "ffmpeg audio/video manipulation",
-    "category":  "ffmpeg",
-    "homepage": "http://howto-pages.org/ffmpeg/"
-  },
     {
     "title": "ffmpeg audio/video manipulation",
-    "category": "learning",
+    "category": "ffmpeg",
     "homepage": "http://howto-pages.org/ffmpeg/"
-  },
-  {
-    "title": "HLSDownloader by nmrony",
-    "category": "hls",
-    "homepage": "https://github.com/nmrony/hlsdownloader"
   },
   {
     "title": "hevc video part 2",
     "category": "hevc",
-    "homepage": "https://youtu.be/V6a1AW5xyAw"
+    "homepage": "https://www.youtube.com/watch?v=V6a1AW5xyAw&feature=youtu.be"
   },
   {
     "title": "hevc video part 1",
     "category": "hevc",
-    "homepage": "https://youtu.be/TLNkK5C1KN8"
+    "homepage": "https://www.youtube.com/watch?v=TLNkK5C1KN8&feature=youtu.be"
   },
   {
     "title": "Introducing SVT-AV1: a scalable open-source AV1 framework",
@@ -1661,11 +1518,6 @@
     "category": "dolby",
     "homepage": "https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-streams-within-the-http-live-streaming-format-v2.0.pdf"
   },
-  {
-    "title": "HLS Authoring Specification for Apple Devices | Apple Developer Documentation",
-    "category": "specs-standards",
-    "homepage": "https://developer.apple.com/documentation/http_live_streaming/hls_authoring_specification_for_apple_devices"
-  },
    {
     "title": "HLS Authoring Specification for Apple Devices | Apple Developer Documentation",
     "category": "learning",
@@ -1675,16 +1527,6 @@
     "title": "Encoding Live and VOD for HEVC & HLS",
     "category": "hevc",
     "homepage": "https://streaminglearningcenter.com/wp-content/uploads/2018/05/Encoding-for-HEVC-SME-2018-Jan.pdf"
-  },
-  {
-    "title": "CRF Guide (Constant Rate Factor in x264, x265 and libvpx)",
-    "category": "ffmpeg",
-    "homepage": "http://slhck.info/video/2017/02/24/crf-guide.html"
-  },
-  {
-    "title": "A Large-Scale Comparison of x264 x265 and libvpx",
-    "category": "encoding",
-    "homepage": "https://medium.com/netflix-techblog/a-large-scale-comparison-of-x264-x265-and-libvpx-a-sneak-peek-2e81e88f8b0f"
   },
     {
     "title": "Xiph.org Test Media",

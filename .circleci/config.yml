@@ -12,10 +12,10 @@ jobs:
       - run:
           name: run awesomebot
           command: |
-             awesome_bot contents.json -w AERecord,theswiftwebdeveloper,bluemix,swiftplayground,awesome-for-swift-cheatsheet
+             awesome_bot contents.json ---allow-rediret --allow-ssl
   json-validate:
     docker:
-      - image: circleci/python:latest
+     - image: circleci/python:latest
     steps:
       - checkout
       - run:
@@ -29,13 +29,14 @@ jobs:
              
   deploy-awesome-video:
     docker:
-      - image: circleci/python:latest
+      - image: circleci/python:latest-node
     steps:
       - checkout
       - run:
           name: Install mkdocs
           command: |
             sudo pip install -r requirements.txt
+            sudo apt-get install ruby
       - run: 
           name: run README.md gen
           command: |
