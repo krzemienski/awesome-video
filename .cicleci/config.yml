@@ -1,0 +1,67 @@
+general:
+  branches:
+    ignore:
+      - gh-pages
+
+test:
+  override:
+    - exit 0
+
+deployment:
+  staging:
+    branch: master
+    commands:
+      - ruby .github/convert.rb
+      - node .github/upgradeDb.js
+      - cp README.md docs/index.md
+      - mkdocs build
+      - .github/deploy-ghpages.sh site
+
+  deploy-awesome-video:
+    docker:
+      - image: circleci/python:latest
+      - image: circleci/nodejs:latest
+      - image: circleci/ruby:latest
+    working_directory: .
+    steps:
+      - checkout
+      - run:
+          name: Install mkdocs
+          command: |
+            sudo pip install -r requirements.txt
+      - run:
+          name: install json-spec
+          command: |
+             sudo pip install json-spec
+      - run:
+          name: install awesomebot
+          command: |
+             gem install awesome_bot
+      - run:
+          name: run awesomebot
+          command: |
+             awesome_bot contents.json -w AERecord,theswiftwebdeveloper,bluemix,swiftplayground,awesome-for-swift-cheatsheet
+      - run: 
+          name: run json validate
+          command: |
+             json validate --schema-file=.github/schema.json --document-file=contents.json
+      - run: 
+          name: run README.md gen
+          command: |
+             ruby .github/convert.rb
+      - run: 
+          name: run database.json gen
+          command: |
+             node .github/upgradeDb.js
+      - run: 
+          name: run copy readme to docs for site gen
+          command: |
+             cp README.md docs/index.md
+      - run: 
+          name: run static site gen
+          command: |
+             mkdocs build
+      - run: 
+          name: deploy gh pages
+          command: | 
+            .github/deploy-ghpages.sh site
