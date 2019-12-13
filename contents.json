@@ -198,7 +198,31 @@
         "homepage": "https://www.heavybit.com/library/podcasts/demuxed/",
         "title": "Demuxed | Heavybit"
     },
-    {
+     {
+        "category": "talks",
+        "description": "",
+        "homepage": "https://www.youtube.com/watch?v=bfK_f7GBA8s&list=PLkyaYNWEKcOfARqEht42i1P4kBemzEV2V",
+        "title": "Demuxed 2018 - YouTube"
+    },
+     {
+        "category": "talks",
+        "description": "",
+        "homepage": "https://www.youtube.com/watch?v=PSdhW-R9u6s&list=PLkyaYNWEKcOfntbMd6KtHhF7qpL9hj6of",
+        "title": "Demuxed 2017 - YouTube"
+    },
+     {
+        "category": "talks",
+        "description": "",
+        "homepage": "https://www.youtube.com/watch?v=kEo2TrXm7F4&list=PLkyaYNWEKcOekC2m9Na77G40Lmhb1bnsK",
+        "title": "Demuxed 2016 - YouTube"
+    },
+     {
+        "category": "talks",
+        "description": "",
+        "homepage": "https://www.youtube.com/watch?v=s661CU6Fvl4&list=PLkyaYNWEKcOcIXrPKRfIK-T9J48J4Vuwk",
+        "title": "Demuxed 2015 - YouTube"
+    },
+        {
         "category": "players",
         "description": "",
         "homepage": "https://medium.com/@eyevinntechnology/demystifying-html5-video-player-e480846328f0",
