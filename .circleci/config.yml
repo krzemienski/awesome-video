@@ -1,28 +1,27 @@
-general:
-  branches:
-    ignore:
-      - gh-pages
-
-test:
-  override:
-    - exit 0
-
-deployment:
-  staging:
-    branch: master
-    commands:
-      - ruby .github/convert.rb
-      - node .github/upgradeDb.js
-      - cp README.md docs/index.md
-      - mkdocs build
-      - .github/deploy-ghpages.sh site
-
+version: 2
+ 
+ jobs:
+  awesomebot:
+    docker:
+      - image: circleci/python:latest
+      - image: circleci/nodejs:latest
+      - image: circleci/ruby:latest
+    steps:
+      - checkout
+      - run:
+          name: run awesomebot
+          command: |
+             awesome_bot contents.json -w AERecord,theswiftwebdeveloper,bluemix,swiftplayground,awesome-for-swift-cheatsheet
+      - run: 
+          name: run json validate
+          command: |
+             json validate --schema-file=.github/schema.json --document-file=contents.json
+             
   deploy-awesome-video:
     docker:
       - image: circleci/python:latest
       - image: circleci/nodejs:latest
       - image: circleci/ruby:latest
-    working_directory: .
     steps:
       - checkout
       - run:
@@ -37,14 +36,6 @@ deployment:
           name: install awesomebot
           command: |
              gem install awesome_bot
-      - run:
-          name: run awesomebot
-          command: |
-             awesome_bot contents.json -w AERecord,theswiftwebdeveloper,bluemix,swiftplayground,awesome-for-swift-cheatsheet
-      - run: 
-          name: run json validate
-          command: |
-             json validate --schema-file=.github/schema.json --document-file=contents.json
       - run: 
           name: run README.md gen
           command: |
@@ -65,3 +56,16 @@ deployment:
           name: deploy gh pages
           command: | 
             .github/deploy-ghpages.sh site
+            
+            
+workflows:
+  version: 2
+  build:
+    jobs:
+      - awesomebot
+      - deploy-awesome-video:
+          requires:
+            - awesomebot
+          filters:
+            branches:
+              only: master
