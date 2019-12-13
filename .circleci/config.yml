@@ -2,15 +2,9 @@ version: 2
 jobs:
   awesomebot:
     docker:
-      - image: circleci/python:latest
-      - image: circleci/node:latest
-      - image: circleci/ruby:latest
+      - image: circleci/ruby:2.4-python-jessie
     steps:
       - checkout
-      - run:
-          name: Install mkdocs
-          command: |
-            sudo pip install -r requirements.txt
       - run:
           name: install json-spec
           command: |
@@ -29,9 +23,8 @@ jobs:
              json validate --schema-file=.github/schema.json --document-file=contents.json
   deploy-awesome-video:
     docker:
+      - image: circleci/ruby:2.4-node-jessie
       - image: circleci/python:latest
-      - image: circleci/node:latest
-      - image: circleci/ruby:latest
     steps:
       - checkout
       - run:
