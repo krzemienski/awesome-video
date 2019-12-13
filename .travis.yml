@@ -13,7 +13,7 @@ jobs:
         - sudo pip install json-spec
         - sudo pip install -r requirements.txt
       script: 
-        - awesome_bot contents.json -w AERecord,theswiftwebdeveloper,bluemix,swiftplayground,awesome-for-swift-cheatsheet
+        # - awesome_bot contents.json -w AERecord,theswiftwebdeveloper,bluemix,swiftplayground,awesome-for-swift-cheatsheet
         # - json validate --schema-file=.github/schema.json --document-file=contents.json
     - stage: "Deploy"
       script:
