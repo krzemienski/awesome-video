@@ -259,12 +259,7 @@
   },
   {
     "title": "Video Transcoding API",
-    "category": "encoding",
-    "homepage": "https://github.com/nytimes/video-transcoding-api"
-  },
-  {
-    "title": "Video Transcoding API",
-    "category": " tools",
+    "category": ["tools", "encoding"],
     "homepage": "https://github.com/video-dev/video-transcoding-api"
   },
   {
