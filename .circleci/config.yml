@@ -60,6 +60,7 @@ workflows:
       - awesomebot
       - json-validate
       - deploy-awesome-video:
+          context: org-global
           requires:
             - awesomebot
             - json-validate
