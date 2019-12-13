@@ -7,7 +7,7 @@ set -e
 # show where we are on the machine
 pwd
 
-remote=$(git config https://${GH_TOKEN_DK}@github.com/krzemienski/awesome-video)
+remote=$(git config https://${GH_TOKEN}@github.com/krzemienski/awesome-video)
 
 siteSource="$1"
 
@@ -21,8 +21,8 @@ fi
 mkdir gh-pages-branch
 cd gh-pages-branch
 # now lets setup a new repo so we can update the gh-pages branch
-git config --global user.email "$GH_EMAIL" > /dev/null 2>&1
-git config --global user.name "$GH_NAME" > /dev/null 2>&1
+git config --global user.email "readmebot@users.noreply.github.com" > /dev/null 2>&1
+git config --global user.name "READMEbot" > /dev/null 2>&1
 git init
 git remote add --fetch origin "$remote"
 
