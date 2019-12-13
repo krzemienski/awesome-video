@@ -8,6 +8,18 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install mkdocs
+          command: |
+            sudo pip install -r requirements.txt
+      - run:
+          name: install json-spec
+          command: |
+             sudo pip install json-spec
+      - run:
+          name: install awesomebot
+          command: |
+             gem install awesome_bot
+      - run:
           name: run awesomebot
           command: |
              awesome_bot contents.json -w AERecord,theswiftwebdeveloper,bluemix,swiftplayground,awesome-for-swift-cheatsheet
