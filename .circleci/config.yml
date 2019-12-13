@@ -12,7 +12,7 @@ jobs:
       - run:
           name: run awesomebot
           command: |
-             awesome_bot contents.json ---allow-rediret --allow-ssl
+             awesome_bot contents.json ---allow-redirect --allow-ssl
   json-validate:
     docker:
      - image: circleci/python:latest

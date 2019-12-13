@@ -390,7 +390,7 @@
   },
   {
     "title": "node-video-lib",
-    "category"[:]"tools", "encoding"],
+    "category":["tools", "encoding"],
     "homepage": "https://github.com/gkozlenko/node-video-lib"
   },
   {
