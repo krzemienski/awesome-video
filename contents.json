@@ -185,15 +185,9 @@
       "description": "Videos - Apple Developer",
       "homepage": "https://developer.apple.com/videos/play/wwdc2017/504/"
     },
-    {
-      "title": "HLS Authoring Specification for Apple Devices",
-      "category": "specs-standards",
-      "description": "Describes the requirements for live and VOD audio-video content delivery using HTTP Live Streaming (HLS) to Apple devices.",
-      "homepage": "https://developer.apple.com/documentation/http_live_streaming/hls_authoring_specification_for_apple_devices"
-    },    
         {
       "title": "ffmpeg audio/video manipulation",
-      "category": "learning",
+      "category": ["learning", "ffmpeg"],
       "description": "How to tame the Swiss army knife of audio and video manipulation",
       "homepage": "http://howto-pages.org/ffmpeg/"
     },
@@ -482,11 +476,6 @@
     "title": "Quick Tutorial: How to Increase Volume in Audacity [2019 Update]",
     "category": "audio",
     "homepage": "https://www.iskysoft.com/video-editing/how-to-increase-volume-in-audacity.html"
-  },
-  {
-    "title": "sarahs/caption_converter: Flask app based on https://github.com/pbs/pycaption",
-    "category": "subtitle-cc",
-    "homepage": "https://github.com/sarahs/caption_converter"
   },
   {
     "title": "xinnjie/extract-subtitle",
@@ -1318,11 +1307,6 @@
     "category":  "specs-standards",
     "homepage": "https://www.scte.org/SCTEDocs/Standards/ANSI_SCTE%20214-1%202015.pdf"
   },
-    {
-    "title": "DASH-IF Interoperability: Guidelines for Implementations",
-    "category": "dash",
-    "homepage": "https://dashif.org/docs/DASH-IF-IOP-v4.3.pdf"
-  },
   {
     "title": "Multi Channel Audio codec evaluations",
     "category": "audio",
@@ -1453,11 +1437,6 @@
     "category": "hevc",
     "homepage": "https://www.techspot.com/article/1131-hevc-h256-enconding-playback/"
   },
-    {
-    "title": "HEVC DRM Market Update",
-    "category": "hevc",
-    "homepage": "https://go.buydrm.com/thedrmblog/hevc-drm-market-update"
-  },
   {
     "title": "Content Protection for HLS with AES-128 Encryption",
     "category": "drm",
@@ -1472,11 +1451,6 @@
     "title": "matmoi/create-DASH-HLS: A tutorial to generate fMp4 files compatible with dash and HLS",
     "category": "learning",
     "homepage": "https://github.com/matmoi/create-DASH-HLS"
-  },
-    {
-    "title": "ffmpeg audio/video manipulation",
-    "category": "ffmpeg",
-    "homepage": "http://howto-pages.org/ffmpeg/"
   },
   {
     "title": "hevc video part 2",
