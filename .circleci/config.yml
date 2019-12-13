@@ -2,7 +2,8 @@ version: 2
 jobs:
   awesomebot:
     docker:
-      - image: circleci/ruby:2.4-python-jessie
+      - image: circleci/ruby:2.4-node-jessie
+      - image: circleci/python:latest
     steps:
       - checkout
       - run:
