@@ -14,7 +14,7 @@ jobs:
         - sudo pip install -r requirements.txt
       script: 
         - awesome_bot contents.json -w AERecord,theswiftwebdeveloper,bluemix,swiftplayground,awesome-for-swift-cheatsheet
-        - json validate --schema-file=.github/schema.json --document-file=contents.json
+        # - json validate --schema-file=.github/schema.json --document-file=contents.json
     - stage: "Deploy"
       script:
         - ruby .github/convert.rb

@@ -118,7 +118,7 @@
       "title": "awesome-ffmpeg",
       "category": "ffmpeg",
       "description": "A curated list of awesome FFmpeg resources.",
-      "homepage": "ttps://github.com/transitive-bullshit/awesome-ffmpeg",
+      "homepage": "https://github.com/transitive-bullshit/awesome-ffmpeg",
       "tags": ["ffmpeg", "awesome-list"]
   },
    {
@@ -919,7 +919,6 @@
     "title": "digital_video_introduction: A hands-on introduction to video technology: image, video, codec (av1, vp9, h265) and more (ffmpeg encoding).",
     "description":"A gentle introduction to video technology, although it's aimed at software developers / engineers, we want to make it easy for anyone to learn.",
     "category": "intro",
-    "parent":"learning",
     "homepage": "https://github.com/leandromoreira/digital_video_introduction"
   },  
   {
@@ -1040,7 +1039,6 @@
   {
     "title": "eyevinn/streaming-onboarding",
     "category": "intro",
-    "parent":"learning",
     "homepage": "https://github.com/Eyevinn/streaming-onboarding"
   },
   {
