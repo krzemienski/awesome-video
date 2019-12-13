@@ -3,7 +3,7 @@ jobs:
   awesomebot:
     docker:
       - image: circleci/python:latest
-      - image: circleci/nodejs:latest
+      - image: circleci/node:latest
       - image: circleci/ruby:latest
     steps:
       - checkout
@@ -18,7 +18,7 @@ jobs:
   deploy-awesome-video:
     docker:
       - image: circleci/python:latest
-      - image: circleci/nodejs:latest
+      - image: circleci/node:latest
       - image: circleci/ruby:latest
     steps:
       - checkout
