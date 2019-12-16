@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
 set -e
 
-if [[ $CI_BRANCH != 'master' ]]
+if [[ $CIRCLE_BRANCH != 'master' ]]
 then
   exit
 fi
@@ -10,6 +10,7 @@ fi
 git checkout master
 
 remote=$(git config remote.origin.url)
+git remote add --fetch origin "$remote"
 
 git config user.name "READMEbot"
 git config user.email "readmebot@users.noreply.github.com"
@@ -22,4 +23,4 @@ echo commit
 git commit -m "[auto] [ci skip] Generate README & Database.json"
 
 echo push
-git push --quiet "https://${GH_TOKEN}@github.com/krzemienski/awesome-video" master:master > /dev/null 2>&1
+git push --quiet --force origin master > /dev/null 2>&1
