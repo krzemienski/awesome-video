@@ -49,6 +49,10 @@ jobs:
           command: |
              mkdocs build
       - run: 
+          name: deploy new README
+          command: |
+            .github/deploy-readme.sh
+      - run: 
           name: deploy gh pages
           command: | 
             .github/deploy-ghpages.sh site
