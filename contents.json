@@ -10,7 +10,7 @@
     "title": "Learning",
     "id": "learning",
     "description": "An awesome list of learning video streaming resources."
-  }, 
+  },
    {
     "title": "HLS",
     "id": "hls",
@@ -784,7 +784,7 @@
         "description": "",
         "homepage": "https://github.com/hybrik/hybrik-samples",
         "title": "hybrik/hybrik-samples"
-    }, 
+    },
     {
       "title": "docker-dash-packager",
       "category": "dash",
@@ -795,7 +795,7 @@
       "category": "dash",
       "description": "ISO BMFF, DASH, CMAF and HbbTV - DVB segment validation conformance",
       "homepage": "https://github.com/Dash-Industry-Forum/ISOSegmentValidator"
-    }, 
+    },
     {
       "title": "dash-proxy",
       "category": "dash",
@@ -861,7 +861,7 @@
       "category": "ffmpeg",
       "description": "ffmpeg example command.",
       "homepage": "https://nomadyun.wordpress.com/2018/04/12/how-to-generate-a-fmp4-hls-live-stream-with-ffmpeg/"
-    },    
+    },
  {
       "title": "HLS Key Specs",
       "category": "drm",
@@ -873,13 +873,13 @@
       "category": "drm",
       "description": "Since time eternal, the streaming industry has toiled with and extolled the virtues of CODECs and their key enablement of the entire digital video experience.",
       "homepage": "https://go.buydrm.com/thedrmblog/hevc-drm-market-update"
-    } ,   
+    } ,
      {
       "title": "ffmpeg and hardware acceleration of HEVC transcoding",
       "category": "ffmpeg",
       "description": "ffmpeg -hide_banner -h encoder=hevc_videotoolbox ",
       "homepage": "https://superuser.com/questions/1295957/ffmpeg-and-hardware-acceleration-of-hevc-transcoding-on-mac"
-    }, 
+    },
       {
       "title": " CRF Guide (Constant Rate Factor in x264, x265 and libvpx)",
       "category": "ffmpeg",
@@ -983,7 +983,7 @@
   },
   {
     "title": "Tutorial: Creating a Simple Lambda@Edge Function - Amazon CloudFront",
-    "category":"cdn", 
+    "category":"cdn",
     "homepage": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-edge-how-it-works-tutorial.html"
   },
   {
@@ -1271,7 +1271,7 @@
     "title": "HOW TO: View an HLS Stream in QuickTime or VLC",
     "category": "learning",
     "homepage": "https://softron.zendesk.com/hc/en-us/articles/207694617-HOW-TO-View-an-HLS-Stream-in-QuickTime-or-VLC?mobile_site=true"
-  },  
+  },
   {
     "title": "Creating A Production Ready Multi Bitrate HLS VOD stream",
     "category": "learning",
@@ -1503,7 +1503,7 @@
     "description":"A gentle introduction to video technology, although it's aimed at software developers / engineers, we want to make it easy for anyone to learn.",
     "category": "intro",
     "homepage": "https://github.com/leandromoreira/digital_video_introduction"
-  },  
+  },
   {
     "title": "Audio normalization with ffmpeg using loudnorm (ebur128) filter? bytes and bones",
     "category": "audio",
@@ -1593,7 +1593,7 @@
     "title": "Eyevinn/hls-to-dash",
     "category": ["dash","hls"],
     "homepage": "https://github.com/Eyevinn/hls-to-dash"
-  }, 
+  },
   {
     "title": "Eyevinn/channel-engine-multiview",
     "category": "players",
@@ -1950,7 +1950,7 @@
     "category": "qoe",
     "description":"How VMAF works.",
     "homepage": "https://streaminglearningcenter.com/blogs/collection-of-vmaf-resources.html"
-  },  
+  },
   {
     "title": "SCTE Dash SPEC",
     "category":  "specs-standards",
@@ -2078,7 +2078,7 @@
   },
   {
     "title": "Jan Olzer on HLS HEVC",
-    "category": "hevc", 
+    "category": "hevc",
     "homepage": "https://www.linkedin.com/pulse/market-significance-apples-adopting-hevc-heres-what-i-jan-ozer"
   },
   {
@@ -2161,11 +2161,66 @@
       "category": "hls",
       "homepage": "https://github.com/videojs/m3u8-parser"
     },
-    
+
     {
       "title": "mpd-parser",
       "category": "dash",
       "homepage": "https://github.com/videojs/mpd-parser"
+    },
+    {
+      "title": "Apple LLHLS + LL-CMAF",
+      "category": "learning",
+      "homepage": "https://docs.google.com/presentation/d/1ZwqWcweR5SqeMBRmJjSukWaHbpdPy-EPYvJCS23_n3U/edit?usp=sharing"
+    },
+    {
+      "title": "WebAssembly on the CDN Edge",
+      "category": "learning",
+      "homepage": "https://docs.google.com/presentation/d/1sonEk2neNVBcy8EzieUjWCNzj5SXN7dk-unkR_lpl8k/edit?usp=sharing"
+    },
+    {
+      "title": "Using Tensor flow machine learning for audience ratings",
+      "category": "learning",
+      "homepage": "https://docs.google.com/presentation/d/1NAqYWmFOwxJEacZCuPLdX0mRNRFPFgeRbsm22EaxerU/edit?usp=sharing"
+    },
+    {
+      "title": "How video engineers might be able to help out with wild bush fires",
+      "category": "learning",
+      "homepage": "https://docs.google.com/presentation/d/1Ua76BBaZKtTmaZrlfM_eG0vwz0ZAqPIjreCSfB4qFQQ/edit?usp=sharing"
+    },
+    {
+      "title": "Video on Demand to Linear Live streaming auto translation VOD2Live",
+      "category": "learning",
+      "homepage": "https://docs.google.com/presentation/d/1Ua76BBaZKtTmaZrlfM_eG0vwz0ZAqPIjreCSfB4qFQQ/edit?usp=sharing"
+    },
+    {
+      "title": "Experiences with the AV1 codec, how it works, how to encode decode",
+      "category": "learning",
+      "homepage": "https://docs.google.com/presentation/d/12_Vewc0SDpB1FycflfT4us9eipRCy0HWJVSaDMDifRs/edit?usp=sharing"
+    },
+    {
+      "title": "Xdebug, useful for anyone manipulating video with PHP",
+      "category": "learning",
+      "homepage": "https://docs.google.com/presentation/d/15560aTv054w6bXKQ9gmBCE8gYwgtXhaPOHS1JcqTofk/edit?usp=sharing"
+    },
+    {
+      "title": "SwitchMedia MediaHQ - CMS",
+      "category": "tools",
+      "homepage": "https://www.switch.tv/mediahq/"
+    },
+    {
+      "title": "SwitchMedia MediaHQ - AdEase Server Side Ad Injection (SSAI)",
+      "category": "tools",
+      "homepage": "https://www.switch.tv/mediahq/adease/"
+    },
+    {
+      "title": "SwitchMedia MediaHQ - SmartTV/CTV HbbTV player",
+      "category": "players",
+      "homepage": "https://www.switch.tv/mediahq/universal-player/"
+    },
+    {
+      "title": "SwitchMedia MediaHQ - Live2VOD asset capture and trimmer",
+      "category": "tools",
+      "homepage": "https://www.switch.tv/mediahq/live2vod/"
     }
   ]
 }
