@@ -2,7 +2,7 @@
 
 set -e
 
-if [[ $CIRCLE_BRANCH != 'master' ]]
+if [ $CIRCLE_BRANCH != "master" ]
 then
   exit
 fi
@@ -10,7 +10,6 @@ fi
 git checkout master
 
 remote=$(git config remote.origin.url)
-git remote add --fetch origin "$remote"
 
 git config user.name "READMEbot"
 git config user.email "readmebot@users.noreply.github.com"
