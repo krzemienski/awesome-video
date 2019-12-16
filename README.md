@@ -46,10 +46,12 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *An awesome list of learning video streaming resources.*
 
 * [Adding Alternate Media to a Playlist | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/adding_alternate_media_to_a_playlist)  - 
+* [Apple LLHLS + LL-CMAF](https://docs.google.com/presentation/d/1ZwqWcweR5SqeMBRmJjSukWaHbpdPy-EPYvJCS23_n3U/edit?usp=sharing)  - 
 * [Back to Basics: Encoding Definition and Adaptive Bitrate](https://bitmovin.com/encoding-definition-bitrates/?utm_campaign=Newsletter&utm_medium=email&_hsenc=p2ANqtz-8MPFxhR7snQrxPYM7Bl3UTEMgOh5ZXoDQCHjLl9lkskqE0IfBhEuz3us39Br-lvA_CnyNmQl6L5wqO6iKOfAJ8HznenQ&_hsmi=79678208&utm_content=79677632&utm_source=hs_email&hsCtaTracking=b8eb0e0a-f292-435e-8b99-719b75d81412%7C367afa65-d810-4c2e-aa2c-c87e897a8942)  - 
 * [Create your own video streaming server with Linux | Opensource.com](https://opensource.com/article/19/1/basic-live-video-streaming-server)  - 
 * [Creating A Production Ready Multi Bitrate HLS VOD stream](https://docs.peer5.com/guides/production-ready-hls-vod/)  - 
 * [Creating a Master Playlist | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/creating_a_master_playlist#overview)  - 
+* [Experiences with the AV1 codec, how it works, how to encode decode](https://docs.google.com/presentation/d/12_Vewc0SDpB1FycflfT4us9eipRCy0HWJVSaDMDifRs/edit?usp=sharing)  - 
 * [FFmpeg and how to use it wrong | VideoBlerg](https://videoblerg.wordpress.com/2017/11/10/ffmpeg-and-how-to-use-it-wrong/)  - 
 * [Guide to Mobile Video Streaming with HLS](https://mux.com/blog/mobile-hls-guide/)  - 
 * [HLS Authoring Specification for Apple Devices | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/hls_authoring_specification_for_apple_devices)  - 
@@ -57,6 +59,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [HOW TO: View an HLS Stream in QuickTime or VLC](https://softron.zendesk.com/hc/en-us/articles/207694617-HOW-TO-View-an-HLS-Stream-in-QuickTime-or-VLC?mobile_site=true)  - 
 * [HTTP Live Streaming: HLS Player for Android | Toptal](https://www.toptal.com/apple/introduction-to-http-live-streaming-hls)  - 
 * [How To Setup Nginx For HLS Video Streaming On Centos 7](https://dev.to/samuyi/how-to-setup-nginx-for-hls-video-streaming-on-centos-7-3jb8)  - 
+* [How video engineers might be able to help out with wild bush fires](https://docs.google.com/presentation/d/1yiVEOq2rvtFynP1tLdJj7pBWkAEiE9g8BMaoryxRVrk/edit?usp=sharing)  - 
 * [How video streaming works on the web: An introduction](https://medium.com/canal-tech/how-video-streaming-works-on-the-web-an-introduction-7919739f7e1)  - 
 * [Internet Video Streaming part 1](https://medium.com/@eyevinntechnology/internet-video-streaming-abr-part-1-b10964849e19?source=userActivityShare-94bccb50d11-1559723768&_branch_match_id=664736558865703297)  - 
 * [Internet Video Streaming? ABR part 2](https://medium.com/@eyevinntechnology/internet-video-streaming-abr-part-2-dbce136b0d7c?source=userActivityShare-94bccb50d11-1559723862&_branch_match_id=664736952377004405)  - 
@@ -68,8 +71,12 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Server-less Video Backend - Eyevinn Technology - Medium](https://medium.com/@eyevinntechnology/server-less-video-backend-1a142d1d2ba)  - 
 * [The structure of an MPEG-DASH MPD - Brendan Long](https://www.brendanlong.com/the-structure-of-an-mpeg-dash-mpd.html)  - 
 * [Understanding the HTTP Live Streaming Architecture | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/understanding_the_http_live_streaming_architecture)  - 
+* [Using Tensor flow machine learning for audience ratings](https://docs.google.com/presentation/d/1NAqYWmFOwxJEacZCuPLdX0mRNRFPFgeRbsm22EaxerU/edit?usp=sharing)  - 
 * [Video Encoding Compression and Resolutions](https://medium.com/@eyevinntechnology/chessboard-for-beginners-video-encoding-compression-and-resolutions-bcefe04fa639)  - 
 * [Video on Demand Playlist Construction | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/video_on_demand_playlist_construction)  - 
+* [Video on Demand to Linear Live streaming auto translation VOD2Live](https://docs.google.com/presentation/d/1Ua76BBaZKtTmaZrlfM_eG0vwz0ZAqPIjreCSfB4qFQQ/edit?usp=sharing)  - 
+* [WebAssembly on the CDN Edge](https://docs.google.com/presentation/d/1sonEk2neNVBcy8EzieUjWCNzj5SXN7dk-unkR_lpl8k/edit?usp=sharing)  - 
+* [Xdebug, useful for anyone manipulating video with PHP](https://docs.google.com/presentation/d/15560aTv054w6bXKQ9gmBCE8gYwgtXhaPOHS1JcqTofk/edit?usp=sharing)  - 
 * [bash scripts to create VOD HLS stream with ffmpeg almighty (tested on Linux and OS X)](https://gist.github.com/mrbar42/ae111731906f958b396f30906004b3fa)  - 
 * [create-DASH-HLS](https://github.com/matmoi/create-DASH-HLS/)  - A tutorial to generate fMp4 files compatible with dash and HLS
 * [matmoi/create-DASH-HLS: A tutorial to generate fMp4 files compatible with dash and HLS](https://github.com/matmoi/create-DASH-HLS)  - 
@@ -204,6 +211,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [MPEGDASHPlayer/MPEGDASH-iOS-Player](https://github.com/MPEGDASHPlayer/MPEGDASH-iOS-Player)  - 
 * [Ruffle](https://github.com/ruffle-rs/ruffle)  - 
 * [StyleShare/HLSCachingReverseProxyServer](https://github.com/StyleShare/HLSCachingReverseProxyServer)  - 
+* [SwitchMedia MediaHQ - SmartTV/CTV HbbTV player](https://www.switch.tv/mediahq/universal-player/)  - 
 * [VeinGuo/VGPlayer: 📺 A simple iOS video player by Vein.](https://github.com/VeinGuo/VGPlayer)  - 
 * [davidAgo4g/VideoPlayer-iOS: A library based on FFMPEG to play video files on iOS using OpenGLES and AudioQueue. Build with theos](https://github.com/davidAgo4g/VideoPlayer-iOS)  - 
 * [googleads/google-media-framework-ios: The Google Media Framework (GMF) is a lightweight media player designed to make video playback and int...](https://github.com/googleads/google-media-framework-ios)  - 
@@ -418,6 +426,9 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Multiformat video player, inspection and conversion tool | Switch](http://primary.telestream.net/switch/)  - 
 * [Open Broadcaster Software | OBS](https://obsproject.com/)  - 
 * [Stream Analyzer - ts analyzer, stream validation, ETSI TR 101 290 | Elecard: Video Compression Guru](https://www.elecard.com/products/video-analysis/stream-analyzer)  - 
+* [SwitchMedia MediaHQ - AdEase Server Side Ad Injection (SSAI)](https://www.switch.tv/mediahq/adease/)  - 
+* [SwitchMedia MediaHQ - CMS](https://www.switch.tv/mediahq/)  - 
+* [SwitchMedia MediaHQ - Live2VOD asset capture and trimmer](https://www.switch.tv/mediahq/live2vod/)  - 
 * [alpine-bento-ffmpeg](https://github.com/realeyes-media/alpine-bento-ffmpeg)  - 
 * [channel-engine](https://github.com/Eyevinn/channel-engine)  - 
 * [coopernurse/nginx-s3-proxy](https://github.com/coopernurse/nginx-s3-proxy)  - 
