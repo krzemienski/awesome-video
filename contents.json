@@ -2,11 +2,13 @@
   "title": "Awesome Video ",
   "header": "# Awesome Video [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)\n \n<!-- \n\nPLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)\n\n -->\n\n",
   "header_contributing": "Please take a quick look at the [contribution guidelines](https://github.com/krzemienski/awesome-video/blob/master/.github/CONTRIBUTING.md) first. If you see a package or project here that is no longer maintained or is not a good fit, please submit a pull request to improve this file. Thank you to all [contributors](https://github.com/krzemienski/awesome-video/graphs/contributors); you rock!!",
-  "categories": [ {
+  "categories": [ 
+    {
     "title": "Introduction",
     "id": "intro",
     "description": "What's video?"
-  },{
+  },
+  {
     "title": "Learning",
     "id": "learning",
     "description": "An awesome list of learning video streaming resources."
@@ -26,15 +28,26 @@
     "id": "encoding",
     "description": "Encoding tools, libraries, and resources."
   },
+  { 
+    "title": "Streaming Infastructure and Operations",
+    "id":"infastructure",
+    "description": "Packagers, origins (s3, gcs), and data movement for linear and finite playback. "
+  },
    {
     "title": "Reading",
     "id": "reading",
     "description": "A list of reading articles, blogs, and newsletters for video streaming."
   },
    {
-    "title": "Specs & Standards",
+    "title": "Specs and Standards",
     "id": "specs-standards",
     "description": "Latest offical specs and standards related to video streaming."
+  },
+   {
+    "title": "MPEG",
+    "id": "mpeg",
+     "parent": "specs-standards",
+    "description": "MPEG meetings, standards, and resources. "
   },
   {
     "title": "Players",
@@ -52,14 +65,21 @@
     "description": "Audio libraries, tools, and examples."
   },
   {
-    "title": "Subtitles & Closed Captions",
+    "title": "Subtitles and Captions",
     "id": "subtitle",
     "description": "Subtitling & Closed Caption libraries, tools, and examples."
   },
   {
     "title": "HEVC",
     "id": "hevc",
+    "parent":"encoding",
     "description": "HEVC (h265) libraries, tools, examples, and resources."
+  },
+  {
+    "title": "VP9",
+    "id": "vp9",
+    "parent":"encoding",
+    "description": "VP9 libraries, tools, examples, and resources."
   },
   {
     "title": "Ads",
@@ -69,11 +89,48 @@
   {
     "title": "Roku",
     "id": "roku",
+    "parent": "players",
     "description": "Roku app tools, libraries,and examples."
+  },
+    {
+    "title": "iOS tvOS",
+    "id": "ios",
+    "parent": "players",
+    "description": "AVPlayer, playback tools, sdks, and examples."
+  },
+    {
+    "title": "Web",
+    "id": "web",
+    "parent": "players",
+    "description": "Web browser player, tools, sdks, and examples."
+  },
+     {
+    "title": "Smart TVs",
+    "id": "smart-tv",
+    "parent": "players",
+    "description": ""
+  },
+      {
+    "title": "Android",
+    "id": "droid",
+    "parent": "players",
+    "description": "Android and fireTV tools, sdks, and examples."
+  },
+    {
+    "title": "Chromecast",
+    "id": "chromecast",
+    "parent": "players",
+    "description": "Roku app tools, libraries,and examples."
+  },
+    {
+    "title": "Vendors",
+    "id": "vendors",
+    "description": "Video indurstry's various vendors documentations."
   },
    {
     "title": "Dolby",
     "id": "dolby",
+    "parent":"vendors",
     "description": "Dolby specs, libraries, examples, and tools."
   },
   {
@@ -96,14 +153,36 @@
     "id": "testing",
     "description": "Video streaming testing tools and helpers."
   },
-{
-    "title": "Talks and Presentations",
+  {
+    "title": "Community",
+    "id": "community",
+    "description": "Video developers community, slack groups, conferences, meetups"
+  },
+    {
+    "title": "Conferences",
+    "id": "conferences",
+    "parent":"community"
+  },
+  {
+    "title": "Slack Groups",
+    "id": "slack",
+    "parent":"community"
+  },
+    {
+    "title": "Meet ups",
+    "id": "meetups",
+    "parent":"community"
+  },
+  {
+    "title": "Talks, Presentations, Podcasts",
     "id": "talks",
-    "description": "Conference talks and presentations on streaming video ."
+    "parent":"learning",
+    "description": "Conference talks and pdf presentations and podcasts on streaming video ."
   },
   {
     "title": "Books",
-    "id": "books",
+    "id": "books",    
+    "parent":"learning",
     "description": "Books on video streaming."
   },
   {
