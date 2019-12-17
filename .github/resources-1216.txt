@@ -1,0 +1,157 @@
+﻿[3d0c/gmf] (https://github.com/3d0c/gmf)
+[A simple similarity based recommendation engine and NPM module built on top of Node.js and Redis.] (https://github.com/Eyevinn/eye-recommender)
+[A web app that lets you insert a cut into a segment, which is then cut into two new segments.] (https://github.com/Eyevinn/hls-cutsegment)"
+[asticode/go-astisub] (https://github.com/asticode/go-astisub)
+[asticode/go-astits] (https://github.com/asticode/go-astits)
+[balloob/pychromecast] (https://github.com/balloob/pychromecast)
+[bavc/qctools] (https://github.com/bavc/qctools)
+[bbc/bigscreen-player] (https://github.com/bbc/bigscreen-player)
+[bbc/brave: Basic Real-time AV Editor - allowing you to preview, mix, and route live audio and video streams on the cloud] (https://github.com/bbc/brave)"
+[Ch00k/ffmpy] (https://github.com/Ch00k/ffmpy)
+[Chimeejs/chimee] (https://github.com/Chimeejs/chimee)
+[crunchyroll/objective_perceptual_analysis] (https://github.com/crunchyroll/objective_perceptual_analysis)
+[Dash-Industry-Forum/dash-live-source-simulator] (https://github.com/Dash-Industry-Forum/dash-live-source-simulator)
+[epiclabs-io/epic-video-comparator] (https://github.com/epiclabs-io/epic-video-comparator)
+[epiclabs-io/hls-analyzer] (https://github.com/epiclabs-io/hls-analyzer)
+[escaped/django-video-encoding: django-video-encoding helps to convert your videos into different formats and resolutions.] (https://github.com/escaped/django-video-encoding)
+[flavioribeiro/video-thumbnail-generator] (https://github.com/flavioribeiro/video-thumbnail-generator)
+[From Sys Admin to Netflix SRE - YouTube] (https://m.youtube.com/watch?v=lZI51YzIgVE)
+[giorgisio/goav] (https://github.com/giorgisio/goav)
+[globocom/m3u8] (https://github.com/globocom/m3u8)
+[google/ExoPlayer] (https://github.com/google/ExoPlayer)
+[google/shaka-packager] (https://github.com/google/shaka-packager)
+[grafov/m3u8: Parser and generator of M3U8-playlists for Apple HLS. Library for Go language.] (https://github.com/grafov/m3u8)
+[How Do I Become an ANSI Member] (https://www.ansi.org/membership/how_to_join/how_3)
+[jliljebl/flowblade] (https://github.com/jliljebl/flowblade)
+[Join Video.js on Slack!] (http://slack.videojs.com/)
+[Kagami/ffmpeg.js: Port of FFmpeg with Emscripten](https://github.com/Kagami/ffmpeg.js)
+[kkroening/ffmpeg-python] (https://github.com/kkroening/ffmpeg-python)
+[korandiz/v4l](https://github.com/korandiz/v4l)
+[KTachibanaM/simple-url-previewer](https://github.com/KTachibanaM/simple-url-previewer)
+[lostintime/aws-s3-webdav: Basic AWS S3 WebDAV interface implemented in Rust](https://github.com/lostintime/aws-s3-webdav)
+[matt-42/vpp](https://github.com/matt-42/vpp)
+[matvp91/indigo-player](https://github.com/matvp91/indigo-player)
+[mifi/lossless-cut](https://github.com/mifi/lossless-cut)
+[mltframework/mlt](https://github.com/mltframework/mlt)
+[mozilla/mp4parse-rust](https://github.com/mozilla/mp4parse-rust)
+[MPEG-5 | MPEG](https://mpeg.chiariglione.org/standards/mpeg-5)
+[mpv-player/mpv](https://github.com/mpv-player/mpv)
+[muxinc/hlstools](https://github.com/muxinc/hlstools)
+[Netflix/photon](https://github.com/Netflix/photon)
+[NYTimes/video-transcoding-api](https://github.com/NYTimes/video-transcoding-api)
+[OpenVisualCloud/SVT-AV1](https://github.com/OpenVisualCloud/SVT-AV1)
+[OpenVisualCloud/SVT-HEVC](https://github.com/OpenVisualCloud/SVT-HEVC)
+[OpenVisualCloud/SVT-VP9](https://github.com/OpenVisualCloud/SVT-VP9)
+[pbs/pycaption](https://github.com/pbs/pycaption)
+[qtlmovie/qtlmovie](https://github.com/qtlmovie/qtlmovie)
+[samirkumardas/jmuxer](https://github.com/samirkumardas/jmuxer)
+[sampotts/plyr](https://github.com/sampotts/plyr)
+[scivision/PyLivestream](https://github.com/scivision/PyLivestream)
+[senko/avtk](https://github.com/senko/avtk)
+[senko/python-video-converter](https://github.com/senko/python-video-converter)
+[sitkevij/mpi](https://github.com/sitkevij/mpi)
+[SVT/vivict](https://github.com/SVT/vivict)
+[tsduck/tsduck](https://github.com/tsduck/tsduck)
+[videojs/http-streaming: HLS, DASH, and future HTTP streaming protocols library for video.js](https://github.com/videojs/http-streaming)"
+[videojs/mux.js: Lightweight utilities for inspecting and manipulating video container formats.](https://github.com/videojs/mux.js)
+[videojs/videojs-contrib-ads: A Tool for Building Video.js Ad Plugins](https://github.com/videojs/videojs-contrib-ads)
+[videojs/videojs-contrib-quality-levels](https://github.com/videojs/videojs-contrib-quality-levels)
+[vimond/replay](https://github.com/vimond/replay)
+[wang-bin/QtAV](https://github.com/wang-bin/QtAV)
+[wargarblgarbl/libgosubs](https://github.com/wargarblgarbl/libgosubs)
+[xfrr/goffmpeg](https://github.com/xfrr/goffmpeg)
+[Xingtao/FFdynamic: Library with dynamic audio/video composition and runtime control](https://github.com/Xingtao/FFdynamic) @ffmpeg
+[ziutek/gst](https://github.com/ziutek/gst)
+[Zulko/moviepy](https://github.com/Zulko/moviepy)
+[MPEG Future; to give MPEG the right future] ( http://mpegfuture.org/)
+[ AFathi/ARVideoKit] (https://github.com/AFathi/ARVideoKit)
+[aizvorski/scikit-video] ( https://github.com/aizvorski/scikit-video)
+[MPEG Future LinkedIn Group] (https://www.linkedin.com/groups/12296389)
+[Color Me Intrigued: A Jaunt Through Color Technology in Video] (https://www.youtube.com/watch?v=XMnvY7a4-As&feature=share)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

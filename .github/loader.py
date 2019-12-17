@@ -1,6 +1,7 @@
 
 from twisted.python.util import println
 import json
+from unicontent.extractors import get_metadata
 
 
 def add_to_contents():
@@ -14,7 +15,7 @@ def add_to_contents():
 
 def main():
     # First, we load the current README into memory as an array of lines
-    with open('resources-1214.txt', 'r') as resources_file:
+    with open('resources-1216.txt', 'r') as resources_file:
         resources = resources_file.readlines()
         resources_dict = []
 
@@ -58,12 +59,16 @@ def main():
                 else:
                         resource_nice['category'] = ''
                 
+                url_to_get_metadata =  resource_nice['homepage']
+
+                data = get_metadata(identifier=url_to_get_metadata, format='n3')
+                resource_nice['metadata'] = data
                 resources_dict.append(resource_nice)
             except Exception as exception:
                 print("could not get a [ in the given line]")
                 println(line)
         
-        with open('resources-1214.json', 'w') as outfile:
+        with open('resources-1217.json', 'w') as outfile:
             json.dump(resources_dict, outfile, sort_keys=True, indent=4, ensure_ascii=False)
             println("wrote json to file")
     

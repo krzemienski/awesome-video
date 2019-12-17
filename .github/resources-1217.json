@@ -1,0 +1,1058 @@
+[
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/3d0c/gmf",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Go Media Framework. Contribute to 3d0c/gmf development by creating an account on GitHub.",
+            "image_url": "https://avatars3.githubusercontent.com/u/2892570?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "3d0c/gmf",
+            "url": "https://github.com/3d0c/gmf"
+        },
+        "title": "﻿3d0c/gmf"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/Eyevinn/eye-recommender",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "A simple similarity based recommendation engine and NPM module built on top of Node.js and Redis. - Eyevinn/eye-recommender",
+            "image_url": "https://avatars2.githubusercontent.com/u/7300575?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "Eyevinn/eye-recommender",
+            "url": "https://github.com/Eyevinn/eye-recommender"
+        },
+        "title": "A simple similarity based recommendation engine and NPM module built on top of Node.js and Redis."
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/Eyevinn/hls-cutsegment",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "A web app that lets you insert a cut into a segment, which is then cut into two new segments. - Eyevinn/hls-cutsegment",
+            "image_url": "https://avatars2.githubusercontent.com/u/7300575?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "Eyevinn/hls-cutsegment",
+            "url": "https://github.com/Eyevinn/hls-cutsegment"
+        },
+        "title": "A web app that lets you insert a cut into a segment, which is then cut into two new segments."
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/assembl/url_metadata",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "An URL metadata getter Flask micro website. Contribute to assembl/url_metadata development by creating an account on GitHub.",
+            "image_url": "https://avatars0.githubusercontent.com/u/20449542?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "assembl/url_metadata",
+            "url": "https://github.com/assembl/url_metadata"
+        },
+        "title": "assembl/url_metadata: An URL metadata getter Flask micro website"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/asticode/go-astisub",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Manipulate subtitles in GO (.srt, .ssa/.ass, .stl, .ttml, .vtt (webvtt), teletext, etc.) - asticode/go-astisub",
+            "image_url": "https://avatars1.githubusercontent.com/u/11619296?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "asticode/go-astisub",
+            "url": "https://github.com/asticode/go-astisub"
+        },
+        "title": "asticode/go-astisub"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/asticode/go-astits",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Parse and demux MPEG Transport Streams (.ts) natively in GO - asticode/go-astits",
+            "image_url": "https://avatars1.githubusercontent.com/u/11619296?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "asticode/go-astits",
+            "url": "https://github.com/asticode/go-astits"
+        },
+        "title": "asticode/go-astits"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/balloob/pychromecast",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Library for Python 3 to communicate with the Google Chromecast. - balloob/pychromecast",
+            "image_url": "https://avatars2.githubusercontent.com/u/1444314?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "balloob/pychromecast",
+            "url": "https://github.com/balloob/pychromecast"
+        },
+        "title": "balloob/pychromecast"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/bavc/qctools",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "QCTools (Quality Control Tools for Video Preservation) is a free and open source software tool that helps users analyze and understand their digitized video files through use of audiovisual analyti...",
+            "image_url": "https://avatars0.githubusercontent.com/u/1406425?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "bavc/qctools",
+            "url": "https://github.com/bavc/qctools"
+        },
+        "title": "bavc/qctools"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/bbc/bigscreen-player",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Simplified media playback for bigscreen devices. Contribute to bbc/bigscreen-player development by creating an account on GitHub.",
+            "image_url": "https://avatars2.githubusercontent.com/u/828722?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "bbc/bigscreen-player",
+            "url": "https://github.com/bbc/bigscreen-player"
+        },
+        "title": "bbc/bigscreen-player"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/bbc/brave",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Basic Real-time AV Editor - allowing you to preview, mix, and route live audio and video streams on the cloud - bbc/brave",
+            "image_url": "https://avatars2.githubusercontent.com/u/828722?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "bbc/brave",
+            "url": "https://github.com/bbc/brave"
+        },
+        "title": "bbc/brave: Basic Real-time AV Editor - allowing you to preview, mix, and route live audio and video streams on the cloud"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/Ch00k/ffmpy",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Pythonic interface for FFmpeg/FFprobe command line - Ch00k/ffmpy",
+            "image_url": "https://avatars0.githubusercontent.com/u/230214?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "Ch00k/ffmpy",
+            "url": "https://github.com/Ch00k/ffmpy"
+        },
+        "title": "Ch00k/ffmpy"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/Chimeejs/chimee",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "a video player framework aims to bring wonderful experience on browser - Chimeejs/chimee",
+            "image_url": "https://avatars3.githubusercontent.com/u/29886630?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "Chimeejs/chimee",
+            "url": "https://github.com/Chimeejs/chimee"
+        },
+        "title": "Chimeejs/chimee"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/crunchyroll/objective_perceptual_analysis",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Objective Perceptual Analysis - Compression Karma Predictor - crunchyroll/objective_perceptual_analysis",
+            "image_url": "https://avatars0.githubusercontent.com/u/3979933?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "crunchyroll/objective_perceptual_analysis",
+            "url": "https://github.com/crunchyroll/objective_perceptual_analysis"
+        },
+        "title": "crunchyroll/objective_perceptual_analysis"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/Dash-Industry-Forum/dash-live-source-simulator",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "DASH live source simulator providing reference live content. - Dash-Industry-Forum/dash-live-source-simulator",
+            "image_url": "https://avatars1.githubusercontent.com/u/2762280?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "Dash-Industry-Forum/dash-live-source-simulator",
+            "url": "https://github.com/Dash-Industry-Forum/dash-live-source-simulator"
+        },
+        "title": "Dash-Industry-Forum/dash-live-source-simulator"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/epiclabs-io/epic-video-comparator",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Javascript library which implements a video comparator component: two overlaped and synchronized video players each one playing an independent source. - epiclabs-io/epic-video-comparator",
+            "image_url": "https://avatars1.githubusercontent.com/u/11574532?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "epiclabs-io/epic-video-comparator",
+            "url": "https://github.com/epiclabs-io/epic-video-comparator"
+        },
+        "title": "epiclabs-io/epic-video-comparator"
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/epiclabs-io/hls-analyzer",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Analyzer for HTTP Live Streams (HLS) content. Contribute to epiclabs-io/hls-analyzer development by creating an account on GitHub.",
+            "image_url": "https://avatars1.githubusercontent.com/u/11574532?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "epiclabs-io/hls-analyzer",
+            "url": "https://github.com/epiclabs-io/hls-analyzer"
+        },
+        "title": "epiclabs-io/hls-analyzer"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/escaped/django-video-encoding",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "django-video-encoding helps to convert your videos into different formats and resolutions. - escaped/django-video-encoding",
+            "image_url": "https://avatars1.githubusercontent.com/u/318650?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "escaped/django-video-encoding",
+            "url": "https://github.com/escaped/django-video-encoding"
+        },
+        "title": "escaped/django-video-encoding: django-video-encoding helps to convert your videos into different formats and resolutions."
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/flavioribeiro/video-thumbnail-generator",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": ":camera: Generate thumbnail sprites from videos. Contribute to flavioribeiro/video-thumbnail-generator development by creating an account on GitHub.",
+            "image_url": "https://avatars2.githubusercontent.com/u/244265?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "flavioribeiro/video-thumbnail-generator",
+            "url": "https://github.com/flavioribeiro/video-thumbnail-generator"
+        },
+        "title": "flavioribeiro/video-thumbnail-generator"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://m.youtube.com/watch?v=lZI51YzIgVE",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Talk by Jonah Horowitz, Albert Tobey What does it take to be a Netflix SRE? With tens of thousands of Linux instances in a distributed system architecture, a...",
+            "image_url": "https://i.ytimg.com/vi/lZI51YzIgVE/maxresdefault.jpg",
+            "language": "en",
+            "publisher": "YouTube",
+            "title": "From Sys Admin to Netflix SRE",
+            "url": "https://www.youtube.com/watch?v=lZI51YzIgVE"
+        },
+        "title": "From Sys Admin to Netflix SRE - YouTube"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/giorgisio/goav",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Golang bindings for FFmpeg. Contribute to giorgisio/goav development by creating an account on GitHub.",
+            "image_url": "https://avatars0.githubusercontent.com/u/12117774?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "giorgisio/goav",
+            "url": "https://github.com/giorgisio/goav"
+        },
+        "title": "giorgisio/goav"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/globocom/m3u8",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Python m3u8 Parser for HTTP Live Streaming (HLS) Transmissions - globocom/m3u8",
+            "image_url": "https://avatars3.githubusercontent.com/u/83798?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "globocom/m3u8",
+            "url": "https://github.com/globocom/m3u8"
+        },
+        "title": "globocom/m3u8"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/google/ExoPlayer",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "An extensible media player for Android. Contribute to google/ExoPlayer development by creating an account on GitHub.",
+            "image_url": "https://avatars0.githubusercontent.com/u/1342004?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "google/ExoPlayer",
+            "url": "https://github.com/google/ExoPlayer"
+        },
+        "title": "google/ExoPlayer"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/google/shaka-packager",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "A media packaging and development framework for VOD and Live DASH and HLS applications, supporting Common Encryption for Widevine and other DRM Systems. - google/shaka-packager",
+            "image_url": "https://avatars0.githubusercontent.com/u/1342004?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "google/shaka-packager",
+            "url": "https://github.com/google/shaka-packager"
+        },
+        "title": "google/shaka-packager"
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/grafov/m3u8",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Parser and generator of M3U8-playlists for Apple HLS. Library for Go language. :cinema: - grafov/m3u8",
+            "image_url": "https://avatars3.githubusercontent.com/u/607056?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "grafov/m3u8",
+            "url": "https://github.com/grafov/m3u8"
+        },
+        "title": "grafov/m3u8: Parser and generator of M3U8-playlists for Apple HLS. Library for Go language."
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://www.ansi.org/membership/how_to_join/how_3",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": null,
+            "image_url": null,
+            "language": "en",
+            "publisher": null,
+            "title": "\r\n\tHow Do I Become an ANSI Member\r\n",
+            "url": null
+        },
+        "title": "How Do I Become an ANSI Member"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/jliljebl/flowblade",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Video Editor for Linux. Contribute to jliljebl/flowblade development by creating an account on GitHub.",
+            "image_url": "https://avatars0.githubusercontent.com/u/1823444?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "jliljebl/flowblade",
+            "url": "https://github.com/jliljebl/flowblade"
+        },
+        "title": "jliljebl/flowblade"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "http://slack.videojs.com/",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": null,
+            "image_url": null,
+            "language": null,
+            "publisher": null,
+            "title": "Join Video.js on Slack!",
+            "url": null
+        },
+        "title": "Join Video.js on Slack!"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/Kagami/ffmpeg.js",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Port of FFmpeg with Emscripten. Contribute to Kagami/ffmpeg.js development by creating an account on GitHub.",
+            "image_url": "https://avatars1.githubusercontent.com/u/533383?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "Kagami/ffmpeg.js",
+            "url": "https://github.com/Kagami/ffmpeg.js"
+        },
+        "title": "Kagami/ffmpeg.js: Port of FFmpeg with Emscripten"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/kkroening/ffmpeg-python",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Python bindings for FFmpeg - with complex filtering support - kkroening/ffmpeg-python",
+            "image_url": "https://avatars3.githubusercontent.com/u/2035953?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "kkroening/ffmpeg-python",
+            "url": "https://github.com/kkroening/ffmpeg-python"
+        },
+        "title": "kkroening/ffmpeg-python"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/korandiz/v4l",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Facade to the Video4Linux video capture interface.  - korandiz/v4l",
+            "image_url": "https://avatars1.githubusercontent.com/u/5960833?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "korandiz/v4l",
+            "url": "https://github.com/korandiz/v4l"
+        },
+        "title": "korandiz/v4l"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/KTachibanaM/simple-url-previewer",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "A simple service that extracts metadata from a URL - KTachibanaM/simple-url-previewer",
+            "image_url": "https://avatars2.githubusercontent.com/u/3515852?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "KTachibanaM/simple-url-previewer",
+            "url": "https://github.com/KTachibanaM/simple-url-previewer"
+        },
+        "title": "KTachibanaM/simple-url-previewer"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/lostintime/aws-s3-webdav",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Basic AWS S3 WebDAV interface implemented in Rust. Contribute to lostintime/aws-s3-webdav development by creating an account on GitHub.",
+            "image_url": "https://avatars3.githubusercontent.com/u/722841?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "lostintime/aws-s3-webdav",
+            "url": "https://github.com/lostintime/aws-s3-webdav"
+        },
+        "title": "lostintime/aws-s3-webdav: Basic AWS S3 WebDAV interface implemented in Rust"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/matt-42/vpp",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Video++, a C++14 high performance video and image processing library. - matt-42/vpp",
+            "image_url": "https://avatars1.githubusercontent.com/u/846584?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "matt-42/vpp",
+            "url": "https://github.com/matt-42/vpp"
+        },
+        "title": "matt-42/vpp"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/matvp91/indigo-player",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Highly extensible, modern, JavaScript video player. Handles MPEG-Dash / HLS / MPEG-4 and is built on top of the HTML5 video element. - matvp91/indigo-player",
+            "image_url": "https://avatars1.githubusercontent.com/u/12699796?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "matvp91/indigo-player",
+            "url": "https://github.com/matvp91/indigo-player"
+        },
+        "title": "matvp91/indigo-player"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/mifi/lossless-cut",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Save space by quickly and losslessly trimming video and audio files - mifi/lossless-cut",
+            "image_url": "https://avatars1.githubusercontent.com/u/402547?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "mifi/lossless-cut",
+            "url": "https://github.com/mifi/lossless-cut"
+        },
+        "title": "mifi/lossless-cut"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/mltframework/mlt",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "MLT Multimedia Framework. Contribute to mltframework/mlt development by creating an account on GitHub.",
+            "image_url": "https://avatars2.githubusercontent.com/u/1558770?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "mltframework/mlt",
+            "url": "https://github.com/mltframework/mlt"
+        },
+        "title": "mltframework/mlt"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/mozilla/mp4parse-rust",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Parser for ISO Base Media Format aka video/mp4 written in Rust. - mozilla/mp4parse-rust",
+            "image_url": "https://avatars0.githubusercontent.com/u/131524?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "mozilla/mp4parse-rust",
+            "url": "https://github.com/mozilla/mp4parse-rust"
+        },
+        "title": "mozilla/mp4parse-rust"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://mpeg.chiariglione.org/standards/mpeg-5",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": null,
+            "image_url": null,
+            "language": null,
+            "publisher": null,
+            "title": "MPEG-5 | MPEG",
+            "url": "https://mpeg.chiariglione.org/standards/mpeg-5"
+        },
+        "title": "MPEG-5 | MPEG"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/mpv-player/mpv",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "🎥 Command line video player. Contribute to mpv-player/mpv development by creating an account on GitHub.",
+            "image_url": "https://avatars2.githubusercontent.com/u/2550273?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "mpv-player/mpv",
+            "url": "https://github.com/mpv-player/mpv"
+        },
+        "title": "mpv-player/mpv"
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/muxinc/hlstools",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Tools for analyzing and processing hls streams. Contribute to muxinc/hlstools development by creating an account on GitHub.",
+            "image_url": "https://avatars3.githubusercontent.com/u/16199997?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "muxinc/hlstools",
+            "url": "https://github.com/muxinc/hlstools"
+        },
+        "title": "muxinc/hlstools"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/Netflix/photon",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Photon is a Java implementation of the Interoperable Master Format (IMF) standard. IMF is a SMPTE standard whose core constraints are defined in the specification st2067-2:2013 - Netflix/photon",
+            "image_url": "https://avatars1.githubusercontent.com/u/913567?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "Netflix/photon",
+            "url": "https://github.com/Netflix/photon"
+        },
+        "title": "Netflix/photon"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/NYTimes/video-transcoding-api",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Agnostic API to transcode media assets across different cloud services. - video-dev/video-transcoding-api",
+            "image_url": "https://avatars0.githubusercontent.com/u/25984302?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "video-dev/video-transcoding-api",
+            "url": "https://github.com/video-dev/video-transcoding-api"
+        },
+        "title": "NYTimes/video-transcoding-api"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/OpenVisualCloud/SVT-AV1",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Welcome to the GitHub repo for the SVT-AV1! Help us grow the community by subscribing to our SVT-AV1 mailing list! http://bit.ly/svt-av1-mailing - OpenVisualCloud/SVT-AV1",
+            "image_url": "https://avatars1.githubusercontent.com/u/46843401?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "OpenVisualCloud/SVT-AV1",
+            "url": "https://github.com/OpenVisualCloud/SVT-AV1"
+        },
+        "title": "OpenVisualCloud/SVT-AV1"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/OpenVisualCloud/SVT-HEVC",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Welcome to the GitHub repo for the SVT-HEVC encoder! To see a list of feature request and view what is planned for the SVT-HEVC encoder, visit our Trello page. http://bit.ly/svt-hevc  Help us grow ...",
+            "image_url": "https://avatars1.githubusercontent.com/u/46843401?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "OpenVisualCloud/SVT-HEVC",
+            "url": "https://github.com/OpenVisualCloud/SVT-HEVC"
+        },
+        "title": "OpenVisualCloud/SVT-HEVC"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/OpenVisualCloud/SVT-VP9",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Welcome to the GitHub repo for the SVT-VP9 encoder! To see a list of feature request and view what is planned for the SVT-VP9 encoder, visit our Trello page: http://bit.ly/svt-vp9 - OpenVisualCloud...",
+            "image_url": "https://avatars1.githubusercontent.com/u/46843401?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "OpenVisualCloud/SVT-VP9",
+            "url": "https://github.com/OpenVisualCloud/SVT-VP9"
+        },
+        "title": "OpenVisualCloud/SVT-VP9"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/pbs/pycaption",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Python module to read/write popular video caption formats - pbs/pycaption",
+            "image_url": "https://avatars3.githubusercontent.com/u/547533?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "pbs/pycaption",
+            "url": "https://github.com/pbs/pycaption"
+        },
+        "title": "pbs/pycaption"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/qtlmovie/qtlmovie",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "A specialized Qt frontend for FFmpeg and other free media tools - qtlmovie/qtlmovie",
+            "image_url": "https://avatars0.githubusercontent.com/u/20928815?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "qtlmovie/qtlmovie",
+            "url": "https://github.com/qtlmovie/qtlmovie"
+        },
+        "title": "qtlmovie/qtlmovie"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/samirkumardas/jmuxer",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "jMuxer - a simple javascript mp4 muxer for non-standard streaming communications protocol - samirkumardas/jmuxer",
+            "image_url": "https://avatars3.githubusercontent.com/u/4821199?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "samirkumardas/jmuxer",
+            "url": "https://github.com/samirkumardas/jmuxer"
+        },
+        "title": "samirkumardas/jmuxer"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/sampotts/plyr",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "A simple HTML5, YouTube and Vimeo player. Contribute to sampotts/plyr development by creating an account on GitHub.",
+            "image_url": "https://avatars1.githubusercontent.com/u/719092?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "sampotts/plyr",
+            "url": "https://github.com/sampotts/plyr"
+        },
+        "title": "sampotts/plyr"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/scivision/PyLivestream",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Pure Python FFmpeg-based live video / audio streaming to YouTube, Facebook, Periscope, Twitch, and more - scivision/PyLivestream",
+            "image_url": "https://avatars1.githubusercontent.com/u/10931741?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "scivision/PyLivestream",
+            "url": "https://github.com/scivision/PyLivestream"
+        },
+        "title": "scivision/PyLivestream"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/senko/avtk",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Audio/Video toolkit for Python. Contribute to senko/avtk development by creating an account on GitHub.",
+            "image_url": "https://avatars1.githubusercontent.com/u/3362?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "senko/avtk",
+            "url": "https://github.com/senko/avtk"
+        },
+        "title": "senko/avtk"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/senko/python-video-converter",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Python Video Converter (ffmpeg wrapper). Contribute to senko/python-video-converter development by creating an account on GitHub.",
+            "image_url": "https://avatars1.githubusercontent.com/u/3362?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "senko/python-video-converter",
+            "url": "https://github.com/senko/python-video-converter"
+        },
+        "title": "senko/python-video-converter"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/sitkevij/mpi",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Rust-based MPEG-4 box inspector with TOML output. Contribute to sitkevij/mpi development by creating an account on GitHub.",
+            "image_url": "https://avatars2.githubusercontent.com/u/1553398?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "sitkevij/mpi",
+            "url": "https://github.com/sitkevij/mpi"
+        },
+        "title": "sitkevij/mpi"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/SVT/vivict",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Contribute to SVT/vivict development by creating an account on GitHub.",
+            "image_url": "https://avatars3.githubusercontent.com/u/1532834?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "SVT/vivict",
+            "url": "https://github.com/SVT/vivict"
+        },
+        "title": "SVT/vivict"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/tsduck/tsduck",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "MPEG Transport Stream Toolkit . Contribute to tsduck/tsduck development by creating an account on GitHub.",
+            "image_url": "https://avatars2.githubusercontent.com/u/29593658?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "tsduck/tsduck",
+            "url": "https://github.com/tsduck/tsduck"
+        },
+        "title": "tsduck/tsduck"
+    },
+    {
+        "category": "hls",
+        "description": "",
+        "homepage": "https://github.com/videojs/http-streaming",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "HLS, DASH, and future HTTP streaming protocols library for video.js - videojs/http-streaming",
+            "image_url": "https://avatars3.githubusercontent.com/u/3287189?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "videojs/http-streaming",
+            "url": "https://github.com/videojs/http-streaming"
+        },
+        "title": "videojs/http-streaming: HLS, DASH, and future HTTP streaming protocols library for video.js"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/videojs/mux.js",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Lightweight utilities for inspecting and manipulating video container formats. - videojs/mux.js",
+            "image_url": "https://avatars3.githubusercontent.com/u/3287189?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "videojs/mux.js",
+            "url": "https://github.com/videojs/mux.js"
+        },
+        "title": "videojs/mux.js: Lightweight utilities for inspecting and manipulating video container formats."
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/videojs/videojs-contrib-ads",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "A Tool for Building Video.js Ad Plugins. Contribute to videojs/videojs-contrib-ads development by creating an account on GitHub.",
+            "image_url": "https://avatars3.githubusercontent.com/u/3287189?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "videojs/videojs-contrib-ads",
+            "url": "https://github.com/videojs/videojs-contrib-ads"
+        },
+        "title": "videojs/videojs-contrib-ads: A Tool for Building Video.js Ad Plugins"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/videojs/videojs-contrib-quality-levels",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Contribute to videojs/videojs-contrib-quality-levels development by creating an account on GitHub.",
+            "image_url": "https://avatars3.githubusercontent.com/u/3287189?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "videojs/videojs-contrib-quality-levels",
+            "url": "https://github.com/videojs/videojs-contrib-quality-levels"
+        },
+        "title": "videojs/videojs-contrib-quality-levels"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/vimond/replay",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "A React video player facilitating adaptive stream playback with custom UI and a React-friendly API. - vimond/replay",
+            "image_url": "https://avatars1.githubusercontent.com/u/1105697?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "vimond/replay",
+            "url": "https://github.com/vimond/replay"
+        },
+        "title": "vimond/replay"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/wang-bin/QtAV",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "A cross-platform multimedia framework based on Qt and FFmpeg(https://github.com/wang-bin/avbuild). High performance. User &amp; developer friendly. Supports Android, iOS, Windows store and desktops...",
+            "image_url": "https://avatars3.githubusercontent.com/u/785206?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "wang-bin/QtAV",
+            "url": "https://github.com/wang-bin/QtAV"
+        },
+        "title": "wang-bin/QtAV"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/wargarblgarbl/libgosubs",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "golang library to read and write various subtitle formats - wargarblgarbl/libgosubs",
+            "image_url": "https://avatars0.githubusercontent.com/u/5711361?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "wargarblgarbl/libgosubs",
+            "url": "https://github.com/wargarblgarbl/libgosubs"
+        },
+        "title": "wargarblgarbl/libgosubs"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/xfrr/goffmpeg",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "FFMPEG wrapper written in GO. Contribute to xfrr/goffmpeg development by creating an account on GitHub.",
+            "image_url": "https://avatars2.githubusercontent.com/u/35836929?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "xfrr/goffmpeg",
+            "url": "https://github.com/xfrr/goffmpeg"
+        },
+        "title": "xfrr/goffmpeg"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/Xingtao/FFdynamic @ffmpeg",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": null,
+            "image_url": null,
+            "language": null,
+            "publisher": null,
+            "title": null,
+            "url": null
+        },
+        "title": "Xingtao/FFdynamic: Library with dynamic audio/video composition and runtime control"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/ziutek/gst",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Go bindings for GStreamer (retired: currently I don't use/develop this package) - ziutek/gst",
+            "image_url": "https://avatars0.githubusercontent.com/u/294880?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "ziutek/gst",
+            "url": "https://github.com/ziutek/gst"
+        },
+        "title": "ziutek/gst"
+    },
+    {
+        "category": "",
+        "description": "",
+        "homepage": "https://github.com/Zulko/moviepy",
+        "metadata": {
+            "author_name": null,
+            "date_published": null,
+            "description": "Video editing with Python. Contribute to Zulko/moviepy development by creating an account on GitHub.",
+            "image_url": "https://avatars0.githubusercontent.com/u/1646122?s=400&v=4",
+            "language": "en",
+            "publisher": "GitHub",
+            "title": "Zulko/moviepy",
+            "url": "https://github.com/Zulko/moviepy"
+        },
+        "title": "Zulko/moviepy"
+    }
+]

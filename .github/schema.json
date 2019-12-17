@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"$id": "https://raw.githubusercontent.com/matteocrippa/awesome-swift/master/.github/schema.json",
+	"$id": "https://raw.githubusercontent.com/krzemienski/awesome-video/master/.github/schema.json",
 	"type": "object",
 	"properties": {
 		"title": {
@@ -87,13 +87,7 @@
 						"description": "A place to put any metadata for a project. The items can be any type.",
 						"type": "array",
 						"default": []
-					},
-					"swift": {
-						"title": "Supported Swift Version",
-						"description": "Currently supported swift version",
-						"type": "number"
 					}
-
 				},
 				"required": ["title", "category", "homepage"],
 				"additionalProperties": false
