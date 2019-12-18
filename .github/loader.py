@@ -1,8 +1,16 @@
 
-from twisted.python.util import println
 import json
+
+from twisted.python.util import println
+import re
 from unicontent.extractors import get_metadata
 
+def find(string): 
+    url = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', string)    
+    return url 
+
+def insertCharacterAtPos(char,string, index, ):
+    return string[:index] + '-' + string[index:]
 
 def read_and_sanitize_metadata_contents_json():
         santized_projects = []     
@@ -38,95 +46,88 @@ def read_and_sanitize_metadata_contents_json():
                         print('URL : ' + project['homepage'])
                         if 'description' in project:
                                 print('CURRENT Description: ' + project['description'])
+                       
+                        url_to_get_metadata = project['homepage']
                         
-                        url_to_get_metadata =  project['homepage']
-
-                        metadata_from_url= get_metadata(identifier=url_to_get_metadata, format='n3')
-                        santized_project['description'] = metadata_from_url['description']
-                        santized_project['title'] = metadata_from_url['title']            
-                        santized_projects.append(santized_project)
-                        
-                        contents['projects'] = santized_projects
-                        for project in contents['projects']:
-                                if 'title' in project and project['title'] != None:
-                                        print('NEW Title : ' + project['title'])
-                                if isinstance(project['category'] , list):
-                                        for a in project['category']:
-                                                print('Category : ' + a)
-                                else:
-                                        print('Category : ' + project['category'])
-                                        
-                                print('URL : ' + project['homepage'])
-                                if 'description' in project and project['description'] != None:
-                                        print('NEW Description: ' + project['description'])
-                        
+                        if 'https' in url_to_get_metadata:                                
+                                metadata_from_url = get_metadata(identifier=url_to_get_metadata, format='n3')
+                                santized_project['description'] = metadata_from_url['description']
+                                santized_project['title'] = metadata_from_url['title']            
+                                santized_projects.append(santized_project)
+                                
+                                contents['projects'] = santized_projects
+                                for project in contents['projects']:
+                                        if 'title' in project and project['title'] != None:
+                                                print('NEW Title : ' + project['title'])
+                                        if isinstance(project['category'] , list):
+                                                for a in project['category']:
+                                                        print('Category : ' + a)
+                                        else:
+                                                print('Category : ' + project['category'])
+                                                
+                                        print('URL : ' + project['homepage'])
+                                        if 'description' in project and project['description'] != None:
+                                                print('NEW Description: ' + project['description'])
+                        else: 
+                              print("NEED TO FIX HTTPS " + project['homepage'])
         with open('../contents-new.json', 'w') as outfile:
                 json.dump(contents, outfile, indent=4, ensure_ascii=False)
                 println("wrote santized json to contents.json")             
 
 def add_new_projects():
-        with open('resources-1216.txt', 'r') as resources_file:
+        with open('resources.txt', 'r') as resources_file:
                 resources = resources_file.readlines()
                 resources_dict = []
 
                 for line in resources:
-                        resource_nice = {}
-                        try:
-                                split_line = line.split(']')
-                                resource_description = split_line[0]
-                                resource_link = split_line[1]
-
-                                println( resource_description)
-                                println (resource_link)
-
-                                resource_nice['homepage'] = resource_link.replace("(", "").replace(")","").replace("\n", "").replace("\"", "").strip()
-                                resource_nice['title'] = resource_description.replace("[", "").replace("\n", "").replace("\"", "").strip()
-                                resource_nice["description"] = ''
-                                resource_description = resource_nice['title'].lower()
-
-                                if resource_description.__contains__('roku'):
-                                        resource_nice['category'] = 'roku'
-                                else:
-                                        resource_nice['category'] = ''
-
-                                if resource_description.__contains__('player'):
-                                        resource_nice['category'] = 'players'
-                                else:
-                                        resource_nice['category'] = ''
-
-                                if resource_description.__contains__('encoding'):
-                                        resource_nice['category'] = 'encoding'
-                                else:
-                                        resource_nice['category'] = ''
-
-                                if resource_description.__contains__('ffmpeg'):
-                                        resource_nice['category'] = 'ffmpeg'
-                                else:
-                                        resource_nice['category'] = ''
-
-                                if resource_description.__contains__('hls'):
-                                        resource_nice['category'] = 'hls'
-                                else:
-                                        resource_nice['category'] = ''
+                        santized_project = {}
+                        resource_url = find(line)
+                        
+                        print("PARSED URL" + resource_url) 
+                        
+                        if 'https' in resource_url:                                
+                                metadata_from_url = get_metadata(identifier=resource_url, format='n3')
+                                santized_project['description'] = metadata_from_url['description']
+                                santized_project['title'] = metadata_from_url['title']                                          
+                                santized_project['hopmepage'] = resource_url
+                                santized_project['category'] = ''
                                 
-                                url_to_get_metadata =  resource_nice['homepage']
+                                if santized_project['description'].__contains__('roku'):
+                                       santized_project['category'] = 'roku'
+                                
 
-                                data = get_metadata(identifier=url_to_get_metadata, format='n3')
-                                resource_nice['metadata'] = data
-                                resources_dict.append(resource_nice)
-                        except Exception as exception:
-                                print("could not get a [ in the given line]")
-                                println(line)
+                                if santized_project['description'].__contains__('player'):
+                                        santized_project['category'] = 'players'
+                               
+
+                                if santized_project['description'].__contains__('encoding'):
+                                        santized_project['category'] = 'encoding'
+                               
+
+                                if santized_project['description'].__contains__('ffmpeg'):
+                                        santized_project['category'] = 'ffmpeg'
+                              
+
+                                if santized_project['description'].__contains__('hls'):
+                                        santized_project['category'] = 'hls'
+                                
+
+                        else:
+                              print("NEED TO FIX HTTPS " + resource_url)
+                        
+                        resources_dict.append(santized_project)
+                        with open('resources.json', 'w') as outfile:
+                                json.dump(resources_dict, outfile, sort_keys=True, indent=4, ensure_ascii=False)
+                                println("wrote resources.json to file")        
+                        return resources_dict
         
-        with open('resources-1217.json', 'w') as outfile:
-            json.dump(resources_dict, outfile, sort_keys=True, indent=4, ensure_ascii=False)
-            println("wrote json to file")        
+        
         
 def main():
-    # First, we  sanitize the current contents
-    read_and_sanitize_metadata_contents_json()
-          
-    
-    
+# First, we  sanitize the current contents
+        read_and_sanitize_metadata_contents_json()
+        add_new_projects()
+
+
 if __name__ == "__main__":
-    main()
+        main()

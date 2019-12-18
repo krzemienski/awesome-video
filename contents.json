@@ -29,8 +29,8 @@
     "description": "Encoding tools, libraries, and resources."
   },
   { 
-    "title": "Streaming Infastructure and Operations",
-    "id":"infastructure",
+    "title": "Streaming Server and Storage",
+    "id":"server",
     "description": "Packagers, origins (s3, gcs), and data movement for linear and finite playback. "
   },
    {
@@ -1290,13 +1290,7 @@
     "title": "DolbyProfessional Loudness",
     "category": "dolby",
     "homepage": "https://www.dolby.com/us/en/technologies/dolby-professional-loudness-solutions.pdf"
-  },
-  {
-    "title": "Closed Captions vs. Subtitles and why the Difference is Important - Matinee Multilingual",
-    "category": "subtitle",
-    "homepage": "https://www.matinee.co.uk/blog/closed-captions-vs-subtitles-and-why-the-difference-is-important/"
-  },
-  {
+  },{  
     "title": "BingLingGroup/autosub: Command-line utility to transcribe/translate from video/audio/subtitles to subtitles",
     "category": "subtitle",
     "homepage": "https://github.com/BingLingGroup/autosub"
@@ -1305,11 +1299,6 @@
     "title": "selsta/hlsdl: C program to download VoD HLS (.m3u8) files GitHub:",
     "category": "hls",
     "homepage": "https://github.com/selsta/hlsdl"
-  },
-  {
-    "title": "HLS Test Suite From Eurofins Digital Testing - Free HLS Test Streams and Test Cases",
-    "category": "testing",
-    "homepage": "https://hlstests.eurofins-digitaltesting.com/"
   },
   {
     "title": "lcy0321/m3u8-downloader: Download the ts files according to the given m3u8 file.",
