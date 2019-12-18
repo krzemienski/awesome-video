@@ -1,4 +1,4 @@
-﻿http://slack.videojs.com/
+﻿https://slack.videojs.com/
 https://www.amazon.com/dp/140207011X/ref=cm_sw_r_oth_api_i_DLz-DbTTZS7FP
 https://github.com/gnolizuh/BLSS  @encoding @tools
 https://github.com/IvanoBilenchi/Adaptive-Video-Player @ios 
@@ -18,22 +18,19 @@ https://www.amazon.com/dp/0470147830/ref=cm_sw_r_oth_api_i_wEz-DbZVSF65G] @books
 https://www.amazon.com/dp/0340691905/ref=cm_sw_r_oth_api_i_2Fz-DbHHGXNMZ @books
 https://github.com/haiwen/seafile  @tools @storage
 https://github.com/gpac/mp4box.js @dash @encoding @tools
-http://www.springerlink.com/content/1939-8018/63/2/ @books
 https://github.com/gitfu/manifesto @ffmpeg @hls @subtitles @tools
 https://www.ansi.org/membership/how_to_join/how_3 @mpeg
 https://github.com/rclone/rclone @data
 https://github.com/Eyevinn/docker-serve @tools
 https://github.com/awslabs/aws-stale-playlist-detector @hls @tools
-http://www.telestream.net/captioning/overview.htm?utm_campaign=partners&utm_source=itunespartner.apple.com&utm_medium=text_link @subtitles @tools
+https://www.telestream.net/captioning/overview.htm?utm_campaign=partners&utm_source=itunespartner.apple.com&utm_medium=text_link @subtitles @tools
 https://www.amazon.com/dp/1402073577/ref=cm_sw_r_oth_api_i_YIz-DbVR4VXKS @books @audio
-http://www.telestream.net/pdfs/whitepapers/wp-captioning-iTunes-delivery.pdf?utm_campaign=partners&utm_source=itunespartner.apple.com&utm_medium=text_link  @subtitle @learning
+https://www.telestream.net/pdfs/whitepapers/wp-captioning-iTunes-delivery.pdf?utm_campaign=partners&utm_source=itunespartner.apple.com&utm_medium=text_link  @subtitle @learning
 https://github.com/creeveliu/HTTPLiveStreamingTools @hls @tools
 https://mux.com/blog/quantifying-packaging-overhead-2 @qoe @reading
 https://github.com/leandromoreira/http-video-streaming-troubleshooting @learning @reading
 https://github.com/openstack/swift @encoding @tools @data
-https://github.com/flavioribeiro/nginx-audio-track-for-hls-module flavioribeiro/nginx-audio-track-for-hls-module flavioribeiro/nginx-audio-track-for-hls-module @audio @encoding
-Links to add
-https://mpeg.chiariglione.org/standards/mpeg-5 @standars @reading
+https://github.com/flavioribeiro/nginx-audio-track-for-hls-module @audio @encoding
 https://snowmix.sourceforge.io @encoding @tools
 https://github.com/smacke/subsync @subtitles @tools
 https://github.com/WritingMinds/ffmpeg-android-java @ffmpeg
@@ -66,57 +63,18 @@ https://github.com/matvp91/indigo-player @web
 https://github.com/mpv-player/mpv @player
 https://github.com/sampotts/plyr @web
 https://github.com/vimond/replay @web
-[samirkumardas/jmuxer](https://github.com/samirkumardas/jmuxer)
-[Dash-Industry-Forum/dash-live-source-simulator](https://github.com/Dash-Industry-Forum/dash-live-source-simulator)
-[senko/avtk](https://github.com/senko/avtk)
-[kkroening/ffmpeg-python](https://github.com/kkroening/ffmpeg-python)
-[Ch00k/ffmpy](https://github.com/Ch00k/ffmpy)
-[epiclabs-io/hls-analyzer](https://github.com/epiclabs-io/hls-analyzer)
-[globocom/m3u8](https://github.com/globocom/m3u8)
-[Zulko/moviepy](https://github.com/Zulko/moviepy)
-[crunchyroll/objective_perceptual_analysis](https://github.com/crunchyroll/objective_perceptual_analysis)
-[pbs/pycaption](https://github.com/pbs/pycaption)
-[balloob/pychromecast](https://github.com/balloob/pychromecast)
-[scivision/PyLivestream](https://github.com/scivision/PyLivestream)
-[senko/python-video-converter](https://github.com/senko/python-video-converter)
-[3d0c/gmf](https://github.com/3d0c/gmf)
-[xfrr/goffmpeg](https://github.com/xfrr/goffmpeg)
-[asticode/go-astisub](https://github.com/asticode/go-astisub)
-[asticode/go-astits](https://github.com/asticode/go-astits)
-[giorgisio/goav](https://github.com/giorgisio/goav)
-[ziutek/gst](https://github.com/ziutek/gst)
-[wargarblgarbl/libgosubs](https://github.com/wargarblgarbl/libgosubs)
-[korandiz/v4l](https://github.com/korandiz/v4l)
-[mozilla/mp4parse-rust](https://github.com/mozilla/mp4parse-rust)
-[sitkevij/mpi](https://github.com/sitkevij/mpi)
-[Netflix/photon](https://github.com/Netflix/photon)
-[jliljebl/flowblade](https://github.com/jliljebl/flowblade)
-[muxinc/hlstools](https://github.com/muxinc/hlstools)
-[mifi/lossless-cut](https://github.com/mifi/lossless-cut)
-[mltframework/mlt](https://github.com/mltframework/mlt)
-[bavc/qctools](https://github.com/bavc/qctools)
-[wang-bin/QtAV](https://github.com/wang-bin/QtAV)
-[qtlmovie/qtlmovie](https://github.com/qtlmovie/qtlmovie)
-[google/shaka-packager](https://github.com/google/shaka-packager)
-[OpenVisualCloud/SVT-AV1](https://github.com/OpenVisualCloud/SVT-AV1)
-[NYTimes/video-transcoding-api](https://github.com/NYTimes/video-transcoding-api)
-[OpenVisualCloud/SVT-VP9](https://github.com/OpenVisualCloud/SVT-VP9)
-[OpenVisualCloud/SVT-HEVC](https://github.com/OpenVisualCloud/SVT-HEVC)
-[tsduck/tsduck](https://github.com/tsduck/tsduck)
-[matt-42/vpp](https://github.com/matt-42/vpp)
-[SVT/vivict](https://github.com/SVT/vivict)
-[flavioribeiro/video-thumbnail-generator](https://github.com/flavioribeiro/video-thumbnail-generator)
-https://github.com/AFathi/ARVideoKit (AFathi/ARVideoKit)
-https://github.com/thiagopnts/kaleidoscope (thiagopnts/kaleidoscope)
-http://mpegfuture.org/ (MPEG Future &#8211; to give MPEG the right future)
-voc/voctomix The C3VOC creates lecture recordings from German hacker/tech conferences. In the past we have used dvswitch very successfully but it has some serious limitations. Therefore we started looking for a replacement in 2014. @encoding @tools
-[Xingtao/FFdynamic: Library with dynamic audio/video composition and runtime control](https://github.com/Xingtao/FFdynamic) @ffmpeg
-[videojs/mux.js: Lightweight utilities for inspecting and manipulating video container formats.](https://github.com/videojs/mux.js)
-[videojs/videojs-contrib-ads: A Tool for Building Video.js Ad Plugins](https://github.com/videojs/videojs-contrib-ads)
-[videojs/videojs-contrib-quality-levels](https://github.com/videojs/videojs-contrib-quality-levels)
-[Basic AWS S3 WebDAV interface implemented in Rust](https://github.com/lostintime/aws-s3-webdav)
-https://github.com/aizvorski/scikit-video (aizvorski/scikit-video)
-https://www.linkedin.com/groups/12296389 (LinkedIn)
-https://docs.google.com/presentation/d/1Ua76BBaZKtTmaZrlfM_eG0vwz0ZAqPIjreCSfB4qFQQ/edit?usp=sharing (VOD2Live)
-https://www.youtube.com/watch?v=XMnvY7a4-As&feature=share (Vittorio Giovara - Color Me Intrigued: A Jaunt Through Color Technology in Video)
-[From Sys Admin to Netflix SRE - YouTube](https://m.youtube.com/watch?v=lZI51YzIgVE)
+https://github.com/samirkumardas/jmuxerhttps://github.com/Dash-Industry-Forum/dash-live-source-simulator)
+https://github.com/senko/avtk
+https://github.com/kkroening/ffmpeg-python
+https://github.com/Ch00k/ffmpy
+https://github.com/epiclabs-io/hls-analyzer
+https://github.com/globocom/m3u8
+https://github.com/Zulko/moviepy
+https://github.com/crunchyroll/objective_perceptual_analysis
+https://github.com/wargarblgarbl/libgosubs
+https://github.com/sitkevij/mpi
+https://github.com/bavc/qctools
+https://github.com/jliljebl/flowblade
+https://github.com/muxinc/hlstools
+https://github.com/mifi/lossless-cut
+https://github.com/mltframework/mlt

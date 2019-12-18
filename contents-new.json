@@ -1,0 +1,2543 @@
+{
+    "title": "Awesome Video ",
+    "header": "# Awesome Video [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)\n \n<!-- \n\nPLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)\n\n -->\n\n",
+    "header_contributing": "Please take a quick look at the [contribution guidelines](https://github.com/krzemienski/awesome-video/blob/master/.github/CONTRIBUTING.md) first. If you see a package or project here that is no longer maintained or is not a good fit, please submit a pull request to improve this file. Thank you to all [contributors](https://github.com/krzemienski/awesome-video/graphs/contributors); you rock!!",
+    "categories": [
+        {
+            "title": "Introduction",
+            "id": "intro",
+            "description": "What's video?"
+        },
+        {
+            "title": "Learning",
+            "id": "learning",
+            "description": "An awesome list of learning video streaming resources."
+        },
+        {
+            "title": "HLS",
+            "id": "hls",
+            "description": "HLS tools, libraries, and resources."
+        },
+        {
+            "title": "DASH",
+            "id": "dash",
+            "description": "DASH tools, libraries, and resources."
+        },
+        {
+            "title": "Encoding",
+            "id": "encoding",
+            "description": "Encoding tools, libraries, and resources."
+        },
+        {
+            "title": "Streaming Server and Storage",
+            "id": "server",
+            "description": "Packagers, origins (s3, gcs), and data movement for linear and finite playback. "
+        },
+        {
+            "title": "Reading",
+            "id": "reading",
+            "description": "A list of reading articles, blogs, and newsletters for video streaming."
+        },
+        {
+            "title": "Specs and Standards",
+            "id": "specs-standards",
+            "description": "Latest offical specs and standards related to video streaming."
+        },
+        {
+            "title": "MPEG",
+            "id": "mpeg",
+            "parent": "specs-standards",
+            "description": "MPEG meetings, standards, and resources. "
+        },
+        {
+            "title": "Players",
+            "id": "players",
+            "description": "Client players, libraries, tools, and examples."
+        },
+        {
+            "title": "FFMPEG",
+            "id": "ffmpeg",
+            "description": "FFMPEG libraries, configs, tools, and examples."
+        },
+        {
+            "title": "Audio",
+            "id": "audio",
+            "description": "Audio libraries, tools, and examples."
+        },
+        {
+            "title": "Subtitles and Captions",
+            "id": "subtitle",
+            "description": "Subtitling & Closed Caption libraries, tools, and examples."
+        },
+        {
+            "title": "HEVC",
+            "id": "hevc",
+            "parent": "encoding",
+            "description": "HEVC (h265) libraries, tools, examples, and resources."
+        },
+        {
+            "title": "VP9",
+            "id": "vp9",
+            "parent": "encoding",
+            "description": "VP9 libraries, tools, examples, and resources."
+        },
+        {
+            "title": "Ads",
+            "id": "ads",
+            "description": "Ads in streaming video related libraries, tools, examples, and resources."
+        },
+        {
+            "title": "Roku",
+            "id": "roku",
+            "parent": "players",
+            "description": "Roku app tools, libraries,and examples."
+        },
+        {
+            "title": "iOS tvOS",
+            "id": "ios",
+            "parent": "players",
+            "description": "AVPlayer, playback tools, sdks, and examples."
+        },
+        {
+            "title": "Web",
+            "id": "web",
+            "parent": "players",
+            "description": "Web browser player, tools, sdks, and examples."
+        },
+        {
+            "title": "Smart TVs",
+            "id": "smart-tv",
+            "parent": "players",
+            "description": ""
+        },
+        {
+            "title": "Android",
+            "id": "droid",
+            "parent": "players",
+            "description": "Android and fireTV tools, sdks, and examples."
+        },
+        {
+            "title": "Chromecast",
+            "id": "chromecast",
+            "parent": "players",
+            "description": "Roku app tools, libraries,and examples."
+        },
+        {
+            "title": "Vendors",
+            "id": "vendors",
+            "description": "Video indurstry's various vendors documentations."
+        },
+        {
+            "title": "Dolby",
+            "id": "dolby",
+            "parent": "vendors",
+            "description": "Dolby specs, libraries, examples, and tools."
+        },
+        {
+            "title": "QoE",
+            "id": "qoe",
+            "description": "QoE & Analytics tools, libraries, and resources."
+        },
+        {
+            "title": "Tools",
+            "id": "tools",
+            "description": "Streaming video tools and resources to make life easier."
+        },
+        {
+            "title": "DRM",
+            "id": "drm",
+            "description": "DRM tools, documentations, and resources."
+        },
+        {
+            "title": "Testing",
+            "id": "testing",
+            "description": "Video streaming testing tools and helpers."
+        },
+        {
+            "title": "Community",
+            "id": "community",
+            "description": "Video developers community, slack groups, conferences, meetups"
+        },
+        {
+            "title": "Conferences",
+            "id": "conferences",
+            "parent": "community"
+        },
+        {
+            "title": "Slack Groups",
+            "id": "slack",
+            "parent": "community"
+        },
+        {
+            "title": "Meet ups",
+            "id": "meetups",
+            "parent": "community"
+        },
+        {
+            "title": "Talks, Presentations, Podcasts",
+            "id": "talks",
+            "parent": "learning",
+            "description": "Conference talks and pdf presentations and podcasts on streaming video ."
+        },
+        {
+            "title": "Books",
+            "id": "books",
+            "parent": "learning",
+            "description": "Books on video streaming."
+        },
+        {
+            "title": "CDN",
+            "id": "cdn",
+            "description": "Last mile tools, documentations, and resources."
+        }
+    ],
+    "projects": [
+        {
+            "category": "ffmpeg",
+            "homepage": "https://github.com/transitive-bullshit/awesome-ffmpeg",
+            "description": "👻 A curated list of awesome FFmpeg resources. Contribute to transitive-bullshit/awesome-ffmpeg development by creating an account on GitHub.",
+            "title": "transitive-bullshit/awesome-ffmpeg"
+        },
+        {
+            "category": "testing",
+            "homepage": "https://4kmedia.org/",
+            "description": "Uncompressed 4K demos, samples, and trailers, to show off your new ultra-HD (2160p) HDR/HLG/Dolby Vision television or monitor.",
+            "title": "4K Media | Free Ultra-HD / HDR / HLG / Dolby Vision 4K Video Demos"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/alfg/docker-nginx-rtmp",
+            "description": "🐋 A Dockerfile for nginx-rtmp-module + FFmpeg from source with basic settings for streaming HLS. Built on Alpine Linux. - alfg/docker-nginx-rtmp",
+            "title": "alfg/docker-nginx-rtmp"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/anachirino/bifserver",
+            "description": "Server which creates and serves up BIF files for Roku players - anachirino/bifserver",
+            "title": "anachirino/bifserver"
+        },
+        {
+            "category": "encoding",
+            "homepage": "https://github.com/avTranscoder/avTranscoder",
+            "description": "C++ API for LibAV / FFMpeg. Contribute to avTranscoder/avTranscoder development by creating an account on GitHub.",
+            "title": "avTranscoder/avTranscoder"
+        },
+        {
+            "category": "encoding",
+            "homepage": "https://github.com/bfansports/CloudTranscode",
+            "description": "Distributed videos and images encoding/transcoding using Amazon SFN, FFMpeg and ImageMagic - bfansports/CloudTranscode",
+            "title": "bfansports/CloudTranscode"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/briandunnington/Redoku",
+            "description": "Redux for Roku. Contribute to briandunnington/Redoku development by creating an account on GitHub.",
+            "title": "briandunnington/Redoku"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/briandunnington/Roact",
+            "description": "React for Roku. Contribute to briandunnington/Roact development by creating an account on GitHub.",
+            "title": "briandunnington/Roact"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/BrikerMan/BMPlayer",
+            "description": "A video player for iOS, based on AVPlayer, support the horizontal, vertical screen. support adjust volume, brightness and seek by slide, support subtitles.  - BrikerMan/BMPlayer",
+            "title": "BrikerMan/BMPlayer"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/CCecilia/roku-suite-desktop",
+            "description": "Tool suite for Roku channel development. Contribute to CCecilia/roku-suite-desktop development by creating an account on GitHub.",
+            "title": "CCecilia/roku-suite-desktop"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/chrishoffman/brightscript-json",
+            "description": "JSON parser for Roku's proprietary Brightscript language - chrishoffman/brightscript-json",
+            "title": "chrishoffman/brightscript-json"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/DaMingShen/SUCacheLoader",
+            "description": "AVPlayer缓存实现. Contribute to DaMingShen/SUCacheLoader development by creating an account on GitHub.",
+            "title": "DaMingShen/SUCacheLoader"
+        },
+        {
+            "category": "talks",
+            "homepage": "https://m.youtube.com/playlist?list=PLkyaYNWEKcOf_C_6W45abNvXMb40xUUqh",
+            "description": null,
+            "title": "Demuxed 2019 - YouTube"
+        },
+        {
+            "category": "talks",
+            "homepage": "https://www.heavybit.com/library/podcasts/demuxed/",
+            "description": "Demuxed is a podcast made for and by engineers working with video. Brought to you by Heavybit.",
+            "title": "Demuxed | Heavybit"
+        },
+        {
+            "category": "talks",
+            "homepage": "https://www.youtube.com/watch?v=bfK_f7GBA8s&list=PLkyaYNWEKcOfARqEht42i1P4kBemzEV2V",
+            "description": "As part of our FIFA World Cup coverage this year, we've been able to deliver matches live in UHD with HDR10. We had a few short weeks to negotiate source acq...",
+            "title": "Billy Romero & Thomas Symborski - Lessons learned from streaming the World Cup in UHD with HDR"
+        },
+        {
+            "category": "talks",
+            "homepage": "https://www.youtube.com/watch?v=PSdhW-R9u6s&list=PLkyaYNWEKcOfntbMd6KtHhF7qpL9hj6of",
+            "description": "Next year will see widespread availability of a new creative canvas (High Dynamic Range, Wider Colors), a new royalty-free codec (AV-1) and a new royalty-fre...",
+            "title": "Mark Watson - Lights, Colors, Artwork"
+        },
+        {
+            "category": "talks",
+            "homepage": "https://www.youtube.com/watch?v=kEo2TrXm7F4&list=PLkyaYNWEKcOekC2m9Na77G40Lmhb1bnsK",
+            "description": "We encode movies and TV shows for millions of viewers worldwide and aim to deliver the best video quality possible no matter what the content, viewing device...",
+            "title": "Anne Aaron, Netflix - Measuring Perceptual Video Quality at Scale [DEMUXED 2016]"
+        },
+        {
+            "category": "talks",
+            "homepage": "https://www.youtube.com/watch?v=s661CU6Fvl4&list=PLkyaYNWEKcOcIXrPKRfIK-T9J48J4Vuwk",
+            "description": "Presented by Matt Szatmary at Demuxed 2015. Keynote: A tongue-in-cheek stroll through the history of video standards.",
+            "title": "What Idiot Designed This?! [Keynote by Matt Szatmary at Demuxed 2015]"
+        },
+        {
+            "category": "players",
+            "homepage": "https://medium.com/@eyevinntechnology/demystifying-html5-video-player-e480846328f0",
+            "description": "In this post we will go under the hood of a HTML video player for video streaming. With the exception of Apple and their browser Safari, no…",
+            "title": "Demystifying HTML5 Video Player"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/DeviLeo/DLGPlayer",
+            "description": "A media player for iOS based on FFmpeg 4.0. Contribute to DeviLeo/DLGPlayer development by creating an account on GitHub.",
+            "title": "DeviLeo/DLGPlayer"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/dhairav/URLSessionHLSDownload",
+            "description": "A swift 3 implementation for downloading HLS content and play it back using native AVPlayer - dhairav/URLSessionHLSDownload",
+            "title": "dhairav/URLSessionHLSDownload"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/dphang/roku-lib",
+            "description": "Some useful Roku utilities. Contribute to dphang/roku-lib development by creating an account on GitHub.",
+            "title": "dphang/roku-lib"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://github.com/ElderByte-/docker-java-media",
+            "description": "JRE 10 (Java 10) and media tools (ffmpeg). Contribute to ElderByte-/docker-java-media development by creating an account on GitHub.",
+            "title": "ElderByte-/docker-java-media"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/epiclabs-io/hls-analyzer",
+            "description": "Analyzer for HTTP Live Streams (HLS) content. Contribute to epiclabs-io/hls-analyzer development by creating an account on GitHub.",
+            "title": "epiclabs-io/hls-analyzer"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/exegersha/network-benchmark",
+            "description": "Proof of concept. Roku app implementing network layer using scene graph nodes. - exegersha/network-benchmark",
+            "title": "exegersha/network-benchmark"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://github.com/FallingSnow/h265ize",
+            "description": "A node utility utilizing ffmpeg to encode videos with the hevc codec. - FallingSnow/h265ize",
+            "title": "FallingSnow/h265ize"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://github.com/FFmpeg/FFmpeg",
+            "description": "Mirror of git://source.ffmpeg.org/ffmpeg.git. Contribute to FFmpeg/FFmpeg development by creating an account on GitHub.",
+            "title": "FFmpeg/FFmpeg"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/flavioribeiro/nginx-audio-track-for-hls-module",
+            "description": ":sound: Nginx module that generates audio track for HTTP Live Streaming (HLS) streams on the fly. - flavioribeiro/nginx-audio-track-for-hls-module",
+            "title": "flavioribeiro/nginx-audio-track-for-hls-module"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/flavioribeiro/nginx-vod-module-fmp4-hls",
+            "description": "Play fragmented mp4's on HLS using nginx-vod-module - flavioribeiro/nginx-vod-module-fmp4-hls",
+            "title": "flavioribeiro/nginx-vod-module-fmp4-hls"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/gabek/Amplitude-Brightscript",
+            "description": "A Brightscript (Roku) library for submitting analytics to Amplitude - gabek/Amplitude-Brightscript",
+            "title": "gabek/Amplitude-Brightscript"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/gabek/SegmentIO-Brightscript",
+            "description": "A BrightScript interface to SegmentIO event tracking - gabek/SegmentIO-Brightscript",
+            "title": "gabek/SegmentIO-Brightscript"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/georgejecook/rooibos",
+            "description": "simple, flexible, fun brightscript test framework for roku scenegraph apps - georgejecook/rooibos",
+            "title": "georgejecook/rooibos"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/globocom/hlsclient",
+            "description": "Python HLS Client. Contribute to globocom/hlsclient development by creating an account on GitHub.",
+            "title": "globocom/hlsclient"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/googleads/google-media-framework-ios",
+            "description": "The Google Media Framework (GMF) is a lightweight media player designed to make video playback and integration with the Google IMA SDK on iOS easier. - googleads/google-media-framework-ios",
+            "title": "googleads/google-media-framework-ios"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/hanton/HTY360Player",
+            "description": "Open Source iOS 360 Degree Panorama Video Player. Contribute to hanton/HTY360Player development by creating an account on GitHub.",
+            "title": "hanton/HTY360Player"
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/gp/product/3319068946/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1",
+            "description": null,
+            "title": "Robot Check"
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/gp/product/3662442752/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1",
+            "description": null,
+            "title": "Robot Check"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/iina/iina",
+            "description": "The modern video player for macOS. Contribute to iina/iina development by creating an account on GitHub.",
+            "title": "iina/iina"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/imsanthosh/HLS-Stream-health-monitoring-tool",
+            "description": "HLS stream health monitoring utility tool provides an report of live HLS stream. This utility tool checks the all available bitrate streams and generates the report in html file format. HTML file i...",
+            "title": "imsanthosh/HLS-Stream-health-monitoring-tool"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/juliomalves/roku-libs",
+            "description": "BrightScript Utility Libraries. Contribute to juliomalves/roku-libs development by creating an account on GitHub.",
+            "title": "juliomalves/roku-libs"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/karimkawambwa/roku-framework-example",
+            "description": "This is a project to show how the boku-framework by Karim Kawambwa is used - karimkawambwa/roku-framework-example",
+            "title": "karimkawambwa/roku-framework-example"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/karimkawambwa/roku-framework",
+            "description": "Roku app framework to make app creation easier and structured. Under construction - karimkawambwa/roku-framework",
+            "title": "karimkawambwa/roku-framework"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/kodlian/TVVLCPlayer",
+            "description": "TVVLCPlayer lets you integrate easily a powerfull video player with playback control views to your tvOS apps. - kodlian/TVVLCPlayer",
+            "title": "kodlian/TVVLCPlayer"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/Kthulu120/liquid_dl",
+            "description": "Liquid-dl is a simple tool for utlities such as FFMPEG, youtube-dl, and scdl. It provides a simple framework with simple point and click options allowing users to just click on what they need and u...",
+            "title": "Kthulu120/liquid_dl"
+        },
+        {
+            "category": [
+                "learning",
+                "ffmpeg"
+            ],
+            "homepage": "https://github.com/leandromoreira/ffmpeg-libav-tutorial",
+            "description": "FFmpeg libav tutorial - learn how media works from basic to transmuxing, transcoding and more - leandromoreira/ffmpeg-libav-tutorial",
+            "title": "leandromoreira/ffmpeg-libav-tutorial"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/libobjc/SGPlayer",
+            "description": "A powerful media play framework for iOS, macOS, and tvOS. - libobjc/SGPlayer",
+            "title": "libobjc/SGPlayer"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/lightspark/lightspark",
+            "description": "An open source flash player implementation. Contribute to lightspark/lightspark development by creating an account on GitHub.",
+            "title": "lightspark/lightspark"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/majamee/arch-ffmpeg-gpac",
+            "description": "A ready-prepared video transcoding pipeline to create DASH/ HLS compatible video files & playlists - majamee/arch-ffmpeg-gpac",
+            "title": "majamee/arch-ffmpeg-gpac"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://github.com/markus-perl/ffmpeg-build-script",
+            "description": "The FFmpeg build script provides an easy way to build a static FFmpeg on OSX and Linux with non-free codecs included. - markus-perl/ffmpeg-build-script",
+            "title": "markus-perl/ffmpeg-build-script"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/masterjk/ios-avplayer-http-capture",
+            "description": "iOS based application that embeds the AVPlayer and capture HTTP headers and send it back to the iOS application.  It internally embeds a proxy server. - masterjk/ios-avplayer-http-capture",
+            "title": "masterjk/ios-avplayer-http-capture"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/MediaBrowser/Emby.Roku",
+            "description": "Emby for Roku. Contribute to MediaBrowser/Emby.Roku development by creating an account on GitHub.",
+            "title": "MediaBrowser/Emby.Roku"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://github.com/microshow/RxFFmpeg",
+            "description": "🔥RxFFmpeg 是基于 ( FFmpeg 4.0 + X264 + mp3lame + fdk-aac ) 编译的适用于 Android 平台的音视频编辑、视频剪辑的快速处理框架，包含以下功能（视频拼接，转码，压缩，裁剪，片头片尾，分离音视频，变速，添加静态贴纸和gif动态贴纸，添加字幕，添加滤镜，添加背景音乐，加速减速视频，倒放音视频，音频裁剪，变声，混音，图片合成视频，视频解码图片等...",
+            "title": "microshow/RxFFmpeg"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/mifi/hls-vod",
+            "description": "HTTP Live Streaming with on-the-fly encoding of any video file for Web/Apple TV/iPhone/iPad/iPod - mifi/hls-vod",
+            "title": "mifi/hls-vod"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/mrkjffrsn/RokuFramework",
+            "description": "An opensource Roku framework. Contribute to mrkjffrsn/RokuFramework development by creating an account on GitHub.",
+            "title": "mrkjffrsn/RokuFramework"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/nmrony/hlsdownloader-cli",
+            "description": "Downloads HLS Playlist file and TS chunks using Terminal - nmrony/hlsdownloader-cli",
+            "title": "nmrony/hlsdownloader-cli"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/nod/rokumote",
+            "description": "osx app for controlling your roku because sometimes your kids lose the remote - nod/rokumote",
+            "title": "nod/rokumote"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/nytimes/ios-360-videos",
+            "description": "NYT360Video plays 360-degree video streamed from an AVPlayer on iOS. - nytimes/ios-360-videos",
+            "title": "nytimes/ios-360-videos"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/openHPI/nginx-hls-analyzer",
+            "description": "Fork of fmsloganalyzer to adapt it for HLS streaming analyzes with nginx - openHPI/nginx-hls-analyzer",
+            "title": "openHPI/nginx-hls-analyzer"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/piemonte/Player",
+            "description": "▶️ video player in Swift, simple way to play and stream media on iOS/tvOS - piemonte/Player",
+            "title": "piemonte/Player"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://developer.roku.com/docs/developer-program/core-concepts/playing-videos.md#PlayingVideos-Examples",
+            "description": "Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.",
+            "title": "Roku"
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/gp/product/0976259540/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1",
+            "description": null,
+            "title": "Robot Check"
+        },
+        {
+            "category": "encoding",
+            "homepage": "https://github.com/ptrandev/swift-encoder",
+            "description": "A fire-and-forget shell script that encodes multiple video and audio files with ffmpeg. - ptrandev/swift-encoder",
+            "title": "ptrandev/swift-encoder"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/r-plus/HLSion",
+            "description": "HTTP Live Streaming (HLS) download manager to offline playback. - r-plus/HLSion",
+            "title": "r-plus/HLSion"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/renzifeng/ZFPlayer",
+            "description": "Support customization of any player SDK and control layer(支持定制任何播放器SDK和控制层) - renzifeng/ZFPlayer",
+            "title": "renzifeng/ZFPlayer"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/rkoshak/sensorReporter",
+            "description": "A python based service that receives sensor inputs and publishes them over REST (should work with any API but mainly tested with openHAB) or MQTT. It can also receive commands and perform an action...",
+            "title": "rkoshak/sensorReporter"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/RokuCommunity/brighterscript-formatter",
+            "description": "A code formatter for BrighterScript (and BrightScript) - rokucommunity/brighterscript-formatter",
+            "title": "rokucommunity/brighterscript-formatter"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/rokucommunity/vscode-brightscript-language",
+            "description": "A Visual Studio Code extension for Roku's BrightScript language - rokucommunity/vscode-brightscript-language",
+            "title": "rokucommunity/vscode-brightscript-language"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/rokudev/automated-channel-testing",
+            "description": "Roku Automated Channel Testing: Selenium-based WebDriver + Robot Framework + Samples - rokudev/automated-channel-testing",
+            "title": "rokudev/automated-channel-testing"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/rokudev/dolby-audio-sample",
+            "description": "A collection of Dolby test content available in different streaming protocols. - rokudev/dolby-audio-sample",
+            "title": "rokudev/dolby-audio-sample"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/rokudev/RAF4RSG-sample",
+            "description": "sample demonstrating the Roku Advertising Framework in SceneGraph - rokudev/RAF4RSG-sample",
+            "title": "rokudev/RAF4RSG-sample"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/rokudev/samples",
+            "description": "Collection of sample channels for side-loading on your Roku device - rokudev/samples",
+            "title": "rokudev/samples"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/rokudev/SceneGraphDeveloperExtensions",
+            "description": "Contribute to rokudev/SceneGraphDeveloperExtensions development by creating an account on GitHub.",
+            "title": "rokudev/SceneGraphDeveloperExtensions"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/rokudev/SDK-Development-Guide",
+            "description": "Contribute to rokudev/SDK-Development-Guide development by creating an account on GitHub.",
+            "title": "rokudev/SDK-Development-Guide"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/rokudev/unit-testing-framework",
+            "description": "Tool for automating and testing Roku channels. Contribute to rokudev/unit-testing-framework development by creating an account on GitHub.",
+            "title": "rokudev/unit-testing-framework"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/rokudev/videoplayer-channel",
+            "description": "SceneGraph version of the SDK1 VideoPlayer Channel  - rokudev/videoplayer-channel",
+            "title": "rokudev/videoplayer-channel"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/rolandoislas/BrightWebSocket",
+            "description": "RFC 6455 WebSocket Library for the Roku. Contribute to rolandoislas/BrightWebSocket development by creating an account on GitHub.",
+            "title": "rolandoislas/BrightWebSocket"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/rounce/nginx-hls-module",
+            "description": "Smooth Streaming Module fork. Contribute to rounce/nginx-hls-module development by creating an account on GitHub.",
+            "title": "rounce/nginx-hls-module"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/sampotts/plyr",
+            "description": "A simple HTML5, YouTube and Vimeo player. Contribute to sampotts/plyr development by creating an account on GitHub.",
+            "title": "sampotts/plyr"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/schtanislau/brightscript-state-machine",
+            "description": "State management for Roku channel. Contribute to schtanislau/brightscript-state-machine development by creating an account on GitHub.",
+            "title": "schtanislau/brightscript-state-machine"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://medium.com/@eyevinntechnology/server-less-video-backend-1a142d1d2ba",
+            "description": "In this blog post by Jonas Rydholm Birmé he describes how a completely server-less video backend on AWS would look like.",
+            "title": "Server-less Video Backend"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://github.com/silencecorner/jre-ffmpeg-apline",
+            "description": "Dockerfile [jre8](https://github.com/fabric8io-images/java) and [ffmpeg](https://hub.docker.com/r/jrottenberg/ffmpeg)  - silencecorner/jre-ffmpeg-apline",
+            "title": "silencecorner/jre-ffmpeg-apline"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/sjbarag/brs-testbed",
+            "description": "A simple, buildable Roku channel that executes arbitrary BrightScript files. - sjbarag/brs-testbed",
+            "title": "sjbarag/brs-testbed"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://github.com/slhck/ffmpeg-debug-qp",
+            "description": "FFmpeg Debug Script for QP Values. Contribute to slhck/ffmpeg-debug-qp development by creating an account on GitHub.",
+            "title": "slhck/ffmpeg-debug-qp"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://github.com/slhck/ffmpeg-encoding-course",
+            "description": "An introduction to FFmpeg and its tools. Contribute to slhck/ffmpeg-encoding-course development by creating an account on GitHub.",
+            "title": "slhck/ffmpeg-encoding-course"
+        },
+        {
+            "category": "encoding",
+            "homepage": "https://github.com/snickers/snickers",
+            "description": ":chocolate_bar: An open source alternative to the video cloud encoding services. - snickers/snickers",
+            "title": "snickers/snickers"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://www.elecard.com/products/video-analysis/stream-analyzer",
+            "description": "Professional Video Analysis Tool For Syntax Analysis Of Encoded Media Streams. Operates With MPEG-2 PS/TS, VES and MP4 Files. Automation, batch execution via Command Line Interface. Check your multiplexer",
+            "title": "\nStream Analyzer - ts analyzer, stream validation, ETSI TR 101 290\n| Elecard: Video Compression Guru\n"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://developer.roku.com/docs/specs/streaming.md#AudioandVideoSupport-AdaptiveBitrateFormats",
+            "description": "Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.",
+            "title": "Roku"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/T-Pham/RokuJSONHelperNode",
+            "description": "Roku SceneGraph JSON Helper. Contribute to T-Pham/RokuJSONHelperNode development by creating an account on GitHub.",
+            "title": "T-Pham/RokuJSONHelperNode"
+        },
+        {
+            "category": "qoe",
+            "homepage": "https://medium.com/@eyevinntechnology/the-challenge-to-maintain-and-translate-creative-visual-ideas-to-everyones-viewing-devices-a88e1a841439",
+            "description": "Many articles have already been posted drawing conclusions on what went wrong with the visual quality of a very popular TV show that was…",
+            "title": "The Challenge to Maintain and Translate Creative Visual Ideas to Everyone’s Viewing Devices"
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/MPEG-4-Book-Fernando-Pereira/dp/0130616214/ref=sr_1_1?keywords=mpeg+4+book&qid=1576252504&s=books&sr=1-1",
+            "description": null,
+            "title": "Robot Check"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/tjenkinson/mock-hls-server",
+            "description": "Fake a live/event HLS stream from a VOD one. Useful for testing. - tjenkinson/mock-hls-server",
+            "title": "tjenkinson/mock-hls-server"
+        },
+        {
+            "category": "ads",
+            "homepage": "https://medium.com/@eyevinntechnology/understanding-real-time-bidding-for-avod-services-861ebfa8bd13",
+            "description": "We have in previous blog articles described the principles behind server-side ad-insertion and described some of the challenges with it as…",
+            "title": "Understanding Real-time Bidding for AVOD Services"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/ustwo/videoplayback-ios",
+            "description": "Swift AVPlayer wrapper using the VIPER architecture. Currently a work in progress  - ustwo/videoplayback-ios",
+            "title": "ustwo/videoplayback-ios"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/veeta-tv/jasmine-roku",
+            "description": "Example jasmine tests using node-roku-test for verifying Roku channel behavior - veeta-tv/jasmine-roku",
+            "title": "veeta-tv/jasmine-roku"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/VeinGuo/VGPlayer",
+            "description": "📺  A simple iOS video player by Vein. Contribute to VeinGuo/VGPlayer development by creating an account on GitHub.",
+            "title": "VeinGuo/VGPlayer"
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/Video-Encoding-Numbers-Eliminate-Guesswork/dp/0998453005/ref=pd_bxgy_14_img_2/142-3989735-6086504?_encoding=UTF8&pd_rd_i=0998453005&pd_rd_r=6591968b-e54f-4fb1-8ab8-18e3f2a52f88&pd_rd_w=tWNbP&pd_rd_wg=RtRbb&pf_rd_p=09627863-9889-4290-b90a-5e9f86682449&pf_rd_r=JQP62Z6C5QJR49SEZNHP&psc=1&refRID=JQP62Z6C5QJR49SEZNHP",
+            "description": null,
+            "title": "Robot Check"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://developer.roku.com/docs/references/scenegraph/media-playback-nodes/video.md",
+            "description": "Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.",
+            "title": "Roku"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/video-dev/hls.js",
+            "description": "JavaScript HLS client using Media Source Extension - video-dev/hls.js",
+            "title": "video-dev/hls.js"
+        },
+        {
+            "category": "testing",
+            "homepage": "https://github.com/video-dev/streams",
+            "description": "A repository of shared streams - no media uploads. Contribute to video-dev/streams development by creating an account on GitHub.",
+            "title": "video-dev/streams"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/video-dev/vtt.js",
+            "description": "A JavaScript implementation of the WebVTT specification - video-dev/vtt.js",
+            "title": "video-dev/vtt.js"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/videojs/video.js",
+            "description": "Video.js - open source HTML5 & Flash video player. Contribute to videojs/video.js development by creating an account on GitHub.",
+            "title": "videojs/video.js"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/videolan/vlc",
+            "description": "VLC media player - All pull requests are ignored, please follow https://wiki.videolan.org/Sending_Patches_VLC/ - videolan/vlc",
+            "title": "videolan/vlc"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/vitoziv/VIMediaCache",
+            "description": "Cache media file while play media using AVPlayer. Contribute to vitoziv/VIMediaCache development by creating an account on GitHub.",
+            "title": "vitoziv/VIMediaCache"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/willowtreeapps/ukor",
+            "description": "A Roku build tool with support for build flavors. Contribute to willowtreeapps/ukor development by creating an account on GitHub.",
+            "title": "willowtreeapps/ukor"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/xiewei-wayne/FFEngine.framework",
+            "description": "FFEngine framework is a high performance player sdk for iOS based on ffmpeg. - xiewei-wayne/FFEngine.framework",
+            "title": "xiewei-wayne/FFEngine.framework"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/xiewei-wayne/rtmp-video-player-for-ios",
+            "description": "Based on FFEngine framework, a rtmp video player for apple iOS devices. - xiewei-wayne/rtmp-video-player-for-ios",
+            "title": "xiewei-wayne/rtmp-video-player-for-ios"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/zhaiweiwei/nginx-hls",
+            "description": "Contribute to zhaiweiwei/nginx-hls development by creating an account on GitHub.",
+            "title": "zhaiweiwei/nginx-hls"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://github.com/zype/zype-roku-scenegraph",
+            "description": "Contribute to zype/zype-roku-scenegraph development by creating an account on GitHub.",
+            "title": "zype/zype-roku-scenegraph"
+        },
+        {
+            "category": "dolby",
+            "homepage": "https://docs.hybrik.com/api/v1/HybrikAPI.html?#getting-started",
+            "description": null,
+            "title": "Hybrik API Reference 2"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://github.com/bcoudurier/FFmbc",
+            "description": "FFmpeg customized for broadcast and professional usage - bcoudurier/FFmbc",
+            "title": "bcoudurier/FFmbc"
+        },
+        {
+            "category": "dolby",
+            "homepage": "https://github.com/hybrik/hybrik-samples",
+            "description": "Hybrik Samples. Contribute to hybrik/hybrik-samples development by creating an account on GitHub.",
+            "title": "hybrik/hybrik-samples"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/Eyevinn/docker-dash-packager",
+            "description": "Open source MPEG DASH packager for live and VOD. Contribute to Eyevinn/docker-dash-packager development by creating an account on GitHub.",
+            "title": "Eyevinn/docker-dash-packager"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/Dash-Industry-Forum/ISOSegmentValidator",
+            "description": "Contribute to Dash-Industry-Forum/ISOSegmentValidator development by creating an account on GitHub.",
+            "title": "Dash-Industry-Forum/ISOSegmentValidator"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/Viblast/dash-proxy",
+            "description": "Easy downloading and mirroring of MPEG-DASH streams - Viblast/dash-proxy",
+            "title": "Viblast/dash-proxy"
+        },
+        {
+            "category": "testing",
+            "homepage": "https://bitmovin.com/mpeg-dash-hls-examples-sample-streams/",
+            "description": null,
+            "title": "403 Forbidden"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://hlsbook.net/hls-fragmented-mp4/",
+            "description": "At WWDC 2016, Apple announced support for fragmented MP4 (fMP4) as an alternative to MPEG-TS, which prior to their announcement was the only supported format. So why use fragmented MP4 files? Well,…",
+            "title": "HLS and Fragmented MP4"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://github.com/matmoi/create-DASH-HLS/",
+            "description": "A tutorial to generate fMp4 files compatible with dash and HLS - matmoi/create-DASH-HLS",
+            "title": "matmoi/create-DASH-HLS"
+        },
+        {
+            "category": "encoding",
+            "homepage": "https://github.com/realeyes-media/demo-encoder/",
+            "description": "A nodejs encoding system based on ffmpeg and configured to write HLS streaming files to S3 - realeyes-media/demo-encoder",
+            "title": "realeyes-media/demo-encoder"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/nmrony/hlsdownloader",
+            "description": "Downloads HLS Playlist file and TS chunks. Contribute to nmrony/hlsdownloader development by creating an account on GitHub.",
+            "title": "nmrony/hlsdownloader"
+        },
+        {
+            "category": "encoding",
+            "homepage": "https://medium.com/netflix-techblog/a-large-scale-comparison-of-x264-x265-and-libvpx-a-sneak-peek-2e81e88f8b0f",
+            "description": "a Sneak Peek",
+            "title": "A Large-Scale Comparison of x264, x265, and libvpx"
+        },
+        {
+            "category": "talks",
+            "homepage": "https://developer.apple.com/videos/play/wwdc2017/504/",
+            "description": "HTTP Live Streaming allows you to stream live and on-demand content to global audiences. Learn about great new features and enhancements...",
+            "title": "Advances in HTTP Live Streaming - WWDC 2017 - Videos - Apple Developer"
+        },
+        {
+            "category": "hevc",
+            "homepage": "https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=121878",
+            "description": "Adding HEVC to your HLS streams is looking like a no brainer, but if you decide to do so, you may not want to take Apple's HEVC encoding recommendations verbatim. You'll deliver noticeably higher quality video if you follow the advice detailed below.",
+            "title": "Apple Got It Wrong: Encoding Specs for HEVC in HLS "
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://nomadyun.wordpress.com/2018/04/12/how-to-generate-a-fmp4-hls-live-stream-with-ffmpeg/",
+            "description": "ffmpeg -re -stream_loop -1 -i voweb.mp4 -hls_fmp4_init_filename init.mp4 -vf “settb=AVTB,setpts=’trunc(PTS/1K)*1K+st\\(1,trunc(RTCTIME/1K))-1K*trunc(ld(1)/1K)’,\\ drawtext=fontfile=…",
+            "title": "How to generate a fmp4 hls live stream with FFMPEG"
+        },
+        {
+            "category": "drm",
+            "homepage": "https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis-00#section-5.1",
+            "description": null,
+            "title": "draft-pantos-hls-rfc8216bis-00 - HTTP Live Streaming 2nd Edition"
+        },
+        {
+            "category": "drm",
+            "homepage": "https://go.buydrm.com/thedrmblog/hevc-drm-market-update",
+            "description": "Since time eternal, the streaming industry has toiled with and extolled the virtues of CODECs and their key enablement of the entire digital video experience. Now comes the latest candy in the increasingly large bowl, H.265 (MPEG-H Part 2) or as it’s more commonly known. HEVC.",
+            "title": "HEVC DRM Market Update"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://superuser.com/questions/1295957/ffmpeg-and-hardware-acceleration-of-hevc-transcoding-on-mac",
+            "description": "I have a MacBook Pro with a Kaby Lake processor running macOS High Sierra (10.12). Is it possibe somehow to setup FFmpeg to utilize hardware encoding of HEVC with toolbox, instead of libx265?",
+            "title": "Is it possible to get FFmpeg to use hardware acceleration for HEVC transcoding on macOS?"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://blog.twitch.tv/en/2017/10/10/live-video-transmuxing-transcoding-f-fmpeg-vs-twitch-transcoder-part-i-489c1c125f28/",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "learning",
+            "homepage": "https://blog.twitch.tv/live-video-transmuxing-transcoding-ffmpeg-vs-twitchtranscoder-part-ii-4973f475f8a3?source=userActivityShare-94bccb50d11-1561003748&_branch_match_id=670105191114382351&gi=fd8d504494f4",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "learning",
+            "homepage": "https://medium.com/@eyevinntechnology/internet-video-streaming-abr-part-1-b10964849e19?source=userActivityShare-94bccb50d11-1559723768&_branch_match_id=664736558865703297",
+            "description": "Background",
+            "title": "Internet Video Streaming — ABR part 1"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://medium.com/@eyevinntechnology/a-docker-container-with-the-video-streaming-tools-you-need-b8319e98f36a",
+            "description": "As a video streaming technician there are a number of tools that you find yourself using on a daily basis. Wouldn’t it be handy if all…",
+            "title": "A Docker container with the video streaming tools you need"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/ZaifSenpai/Batch-Py-Remux",
+            "description": "Convert mkv video to hevc (h.265). Contribute to ZaifSenpai/Batch-Py-Remux development by creating an account on GitHub.",
+            "title": "ZaifSenpai/Batch-Py-Remux"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/AKSHAYUBHAT/DeepVideoAnalytics",
+            "description": "A distributed visual search and visual data analytics platform. - AKSHAYUBHAT/DeepVideoAnalytics",
+            "title": "AKSHAYUBHAT/DeepVideoAnalytics"
+        },
+        {
+            "category": [
+                "tools",
+                "encoding"
+            ],
+            "homepage": "https://github.com/video-dev/video-transcoding-api",
+            "description": "Agnostic API to transcode media assets across different cloud services. - video-dev/video-transcoding-api",
+            "title": "video-dev/video-transcoding-api"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://medium.com/@eyevinntechnology/internet-video-streaming-abr-part-2-dbce136b0d7c?source=userActivityShare-94bccb50d11-1559723862&_branch_match_id=664736952377004405",
+            "description": "Background",
+            "title": "Internet Video Streaming — ABR part 2"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/realeyes-media/alpine-bento-ffmpeg",
+            "description": "Alpine Linux with FFMPEG, Bento, and PM2. Contribute to realeyes-media/alpine-bento-ffmpeg development by creating an account on GitHub.",
+            "title": "realeyes-media/alpine-bento-ffmpeg"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://github.com/nextbreakpoint/ffmpeg4java",
+            "description": "FFmpeg4Java provides a JNI wrapper of FFmpeg library - nextbreakpoint/ffmpeg4java",
+            "title": "nextbreakpoint/ffmpeg4java"
+        },
+        {
+            "category": "encoding",
+            "homepage": "https://github.com/nytimes/video-presets",
+            "description": "The video transcoding presets used by The New York Times - nytimes/video-presets",
+            "title": "nytimes/video-presets"
+        },
+        {
+            "category": "cdn",
+            "homepage": "https://aws.amazon.com/blogs/networking-and-content-delivery/lambdaedge-design-best-practices/",
+            "description": "Lambda@Edge transforms CloudFront into a highly programmable CDN with serverless compute capabilities closer to your viewers around the world. This blog is the first in a series that explains best practices associated with using Lambda@Edge functions to customize your content delivery.",
+            "title": "Lambda@Edge Design Best Practices | Amazon Web Services"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://medium.com/@eyevinntechnology/generate-mpeg-ts-from-file-with-ffmpeg-7561181e6369?source=userActivityShare-94bccb50d11-1560983471&_branch_match_id=670020142756633081",
+            "description": "In this post I will describe how an MPEG-TS multicast stream can be generated with ffmpeg by looping an MP4 file and a Docker container…",
+            "title": "Generate MPEG-TS from file with ffmpeg"
+        },
+        {
+            "category": "encoding",
+            "homepage": "https://github.com/alfg/docker-bento4",
+            "description": "A dockerized Bento4 from source. Built on Alpine Linux.  - alfg/docker-bento4",
+            "title": "alfg/docker-bento4"
+        },
+        {
+            "category": "dolby",
+            "homepage": "https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-for-creative-professionals.html",
+            "description": "The Dolby Vision integrated workflow gives you the tools needed to efficiently create wide color gamut and high dynamic range content and ensures that the look you create in the color suite stays true when experienced across across a multitude of devices. With Dolby Vision high dynamic range imaging, you get bolder highlights and incredible contrast. That means greater sharpness, depth, and more detailed shadows to expand your storytelling possibilities like never before.",
+            "title": "\r\n\tDolby Vision for Content Creators | Dolby Laboratories\r\n"
+        },
+        {
+            "category": [
+                "tools",
+                "hls",
+                "dash"
+            ],
+            "homepage": "https://github.com/majamee/auto-dash-hls",
+            "description": "Automated toolchain for generating DASH/ HLS compatible files from all videos inside a root folder - majamee/auto-dash-hls",
+            "title": "majamee/auto-dash-hls"
+        },
+        {
+            "category": "hevc",
+            "homepage": "https://ieeexplore.ieee.org/ielx7/76/7372356/07254155.pdf?tp=&arnumber=7254155&isnumber=7372356&ref=",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "qoe",
+            "homepage": "https://github.com/Netflix/vmaf/",
+            "description": "Perceptual video quality assessment based on multi-method fusion. - Netflix/vmaf",
+            "title": "Netflix/vmaf"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://www.miracletutorials.com/hls-adaptive-streaming-tutorial-with-cloudfront-jw-player/",
+            "description": "A step-by-step HLS adaptive streaming tutorial with CloudFront & JW Player in two parts. It is easier than you think. This tutorial presumes you have",
+            "title": "HLS adaptive streaming tutorial with CloudFront & JW Player | Miracle Tutorials"
+        },
+        {
+            "category": "cdn",
+            "homepage": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-edge-how-it-works-tutorial.html",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "cdn",
+            "homepage": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/on-demand-streaming-video.html",
+            "description": "Provides information for how to use CloudFront for live streaming, on-demand video, and RTMP streaming.",
+            "title": null
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/djvergad/dash",
+            "description": "An MPEG/DASH client-server module for simulating rate adaptation mechanisms over HTTP/TCP. - djvergad/dash",
+            "title": "djvergad/dash"
+        },
+        {
+            "category": [
+                "specs-standards",
+                "dash"
+            ],
+            "homepage": "https://www.iso.org/standard/75485.html",
+            "description": "Information technology — Dynamic adaptive streaming over HTTP (DASH) — Part 1: Media presentation description and segment formats",
+            "title": "ISO/IEC 23009-1:2019"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/caststack/python-mpegdash",
+            "description": "MPEG-DASH MPD(Media Presentation Description) Parser - sangwonl/python-mpegdash",
+            "title": "sangwonl/python-mpegdash"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/video_on_demand_playlist_construction",
+            "description": null,
+            "title": "Video on Demand Playlist Construction | Apple Developer Documentation"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/gpac/gpac",
+            "description": "GPAC main code repository. Contribute to gpac/gpac development by creating an account on GitHub.",
+            "title": "gpac/gpac"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/coopernurse/nginx-s3-proxy",
+            "description": "nginx compiled with aws-auth support, suitable for S3 reverse proxy usage - coopernurse/nginx-s3-proxy",
+            "title": "coopernurse/nginx-s3-proxy"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/creating_a_master_playlist#overview",
+            "description": null,
+            "title": "Creating a Master Playlist | Apple Developer Documentation"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/adding_alternate_media_to_a_playlist",
+            "description": null,
+            "title": "Adding Alternate Media to a Playlist | Apple Developer Documentation"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/carlanton/mpd-tools",
+            "description": "DASH MPD tools for Java. Contribute to carlanton/mpd-tools development by creating an account on GitHub.",
+            "title": "carlanton/mpd-tools"
+        },
+        {
+            "category": [
+                "tools",
+                "encoding"
+            ],
+            "homepage": "https://github.com/gkozlenko/node-video-lib",
+            "description": "Node.js Video Library / MP4 & FLV parser / MP4 builder / HLS muxer - gkozlenko/node-video-lib",
+            "title": "gkozlenko/node-video-lib"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://medium.com/@eyevinntechnology/chessboard-for-beginners-video-encoding-compression-and-resolutions-bcefe04fa639",
+            "description": "Written by: Boris Asadanin, Streaming Media Consultant at Eyevinn Technology",
+            "title": "Video Encoding — Compression and Resolutions"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/Eyevinn/vp9-dash",
+            "description": "FFMpeg wrapper script to create VP9 MPEG-DASH packages - Eyevinn/vp9-dash",
+            "title": "Eyevinn/vp9-dash"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/nickdesaulniers/combine-mpd",
+            "description": "Combine MPEG DASH MPD manifest files. Contribute to nickdesaulniers/combine-mpd development by creating an account on GitHub.",
+            "title": "nickdesaulniers/combine-mpd"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/theolampert/dash-server",
+            "description": "Small, command-line HTTP/2 file server for serving MPEG-DASH content. - theolampert/dash-server",
+            "title": "theolampert/dash-server"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://docs.aws.amazon.com/mediaconvert/latest/ug/dvb-sub-output-captions.html",
+            "description": "** If your output captions are DVB-Sub, set them up in your outputs according to the following information.",
+            "title": null
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/stultus/mp4-to-mpegdash-py",
+            "description": "Python Script to convert a MP4 file into onDemand MPEG-DASH - stultus/mp4-to-mpegdash-py",
+            "title": "stultus/mp4-to-mpegdash-py"
+        },
+        {
+            "category": "drm",
+            "homepage": "https://github.com/CrackerCat/video_decrypter",
+            "description": "Decrypt video from a streaming site with MPEG-DASH Widevine DRM encryption. - CrackerCat/video_decrypter",
+            "title": "CrackerCat/video_decrypter"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/Eyevinn/dash-validator-js",
+            "description": "MPEG DASH validator JS library. Contribute to Eyevinn/dash-validator-js development by creating an account on GitHub.",
+            "title": "Eyevinn/dash-validator-js"
+        },
+        {
+            "category": "reading",
+            "homepage": "https://medium.com/@eyevinntechnology/server-less-just-in-time-packaging-with-aws-fargate-and-unified-origin-by-unified-streaming-c1682dc051ca?source=userActivityShare-94bccb50d11-1559724204&_branch_match_id=664738392430917730",
+            "description": "In this blog article Jonas Rydholm Birmé describes how he created a server-less just-in-time packaging origin, using AWS ECS Fargate tasks…",
+            "title": "Server-less Just-in-Time Packaging with AWS Fargate and Unified Origin by Unified Streaming"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/live_playlist_sliding_window_construction",
+            "description": null,
+            "title": "Live Playlist (Sliding Window) Construction | Apple Developer Documentation"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://videoblerg.wordpress.com/2017/11/10/ffmpeg-and-how-to-use-it-wrong/",
+            "description": "I’ve been in the streaming media industry since 2008 and have seen a lot of misinformation regarding both FFmpeg and libx264. In this post I hope to help shed some light on what does and does…",
+            "title": "FFmpeg and how to use it wrong"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/Comcast/cea-extractor",
+            "description": "Parsing and display logic for CEA-608 caption data in fragmented MP4 files. - Comcast/cea-extractor",
+            "title": "Comcast/cea-extractor"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/MPEGDASHPlayer/MPEGDASH-iOS-Player",
+            "description": "The MPEG-DASH Player iOS Application. Contribute to MPEGDASHPlayer/MPEGDASH-iOS-Player development by creating an account on GitHub.",
+            "title": "MPEGDASHPlayer/MPEGDASH-iOS-Player"
+        },
+        {
+            "category": "drm",
+            "homepage": "https://www.wowza.com/docs/how-to-secure-apple-hls-streaming-using-drm-encryption",
+            "description": "Protect live and on-demand HLS streaming using DRM encryption in Wowza Streaming Engine.",
+            "title": "Secure HLS streaming using DRM encryption"
+        },
+        {
+            "category": "audio",
+            "homepage": "https://developers.google.com/assistant/tools/audio-loudness",
+            "description": null,
+            "title": "Audio Loudness  |  Conversational Actions  |  Google Developers"
+        },
+        {
+            "category": "audio",
+            "homepage": "https://www.iskysoft.com/video-editing/how-to-increase-volume-in-audacity.html",
+            "description": "How to increase volume in Audacity? This article will guide you to change volume in Audacity and its alternative tool. You can pick up one of them to edit volume in Audacity as you like.",
+            "title": "Quick Tutorial: How to Increase Volume in Audacity [2019 Update]"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/xinnjie/extract-subtitle",
+            "description": "extract subtitles from video. Contribute to xinnjie/extract-subtitle development by creating an account on GitHub.",
+            "title": "xinnjie/extract-subtitle"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/awslabs/serverless-subtitles",
+            "description": "Serverless Subtitles can handle a video input, extract the sound, transcript it and generate different subtitle files for your video. - awslabs/serverless-subtitles",
+            "title": "awslabs/serverless-subtitles"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/abinashmeher999/voice-data-extract",
+            "description": "A command line interface to combine text information from subtitles with voice data in the video. Provides a convenient way to generate training data for speech-recognition purposes. - abinashmeher...",
+            "title": "abinashmeher999/voice-data-extract"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/Comcast/mamba",
+            "description": "Mamba is a Swift iOS, tvOS and macOS framework to parse, validate and write HTTP Live Streaming (HLS) data. - Comcast/mamba",
+            "title": "Comcast/mamba"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/Comcast/eel",
+            "description": "A simple proxy service to forward JSON events and transform or filter them along the way. - Comcast/eel",
+            "title": "Comcast/eel"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://medium.com/@eyevinntechnology/ott-content-delivery-multi-cdn-8cd90ad2628a?source=userActivityShare-94bccb50d11-1560983307&_branch_match_id=670019455010399744",
+            "description": "Background",
+            "title": "OTT Content Delivery– Multi CDN"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/Dash-Industry-Forum/dash.js",
+            "description": "A reference client implementation for the playback of MPEG DASH via Javascript and compliant browsers. - Dash-Industry-Forum/dash.js",
+            "title": "Dash-Industry-Forum/dash.js"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/tchakabam/dash-proxy",
+            "description": "Experimental MPEG-DASH media gateway - proxy on-the-fly modified MP4 segment metadata - tchakabam/dash-proxy",
+            "title": "tchakabam/dash-proxy"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://mahasak.com/short-notes-on-add-subtitle-to-any-video-with-ffmpeg/",
+            "description": "บางทีเวลาทำ VDO ประกอบ presentation หรือ document นี่ก็จะมีความอยากใส่ subtitle เพื่อที่จะได้ให้คำอธิบายแบบละเอียดๆ เคลียร์ๆ และไม่ต้องมาซ้ำอธิบายหลายๆครั้ง วันนี้พอทำ VDO อันที่ 2/3 นี่แหละก็ลืมไปแล้วว่าครั้งที่แล้วทำยังไงเลยเขียน blog เผื",
+            "title": "Short-notes on Add subtitle to any video with ffmpeg"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/Marcos-A/STRCleaner",
+            "description": "Script that extracts all the text from a subtitles file ignoring time indications, HTML tags and other alien info. - Marcos-A/STRCleaner",
+            "title": "Marcos-A/STRCleaner"
+        },
+        {
+            "category": "hevc",
+            "homepage": "https://forum.doom9.org/showthread.php?t=172458",
+            "description": " Suggestion for x265's --tune film High Efficiency Video Coding (HEVC)",
+            "title": " Suggestion for x265's --tune film - Doom9's Forum"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/liwf616/awesome-live-stream",
+            "description": "Webrtc && Nginx && DASH && Quic 学习资料收集，持续更新中. Contribute to liwf616/awesome-live-stream development by creating an account on GitHub.",
+            "title": "liwf616/awesome-live-stream"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://github.com/jrottenberg/ffmpeg",
+            "description": "Docker build for FFmpeg on Ubuntu / Alpine / Centos 7 / Scratch - jrottenberg/ffmpeg",
+            "title": "jrottenberg/ffmpeg"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://link.medium.com/Lu3GnIPeg0",
+            "description": "At Netflix, our real-time data infrastructure have embraced the multi-cluster Kafka architecture and Flink powered stream processing…",
+            "title": "Inca — Message Tracing and Loss Detection For Streaming Data @Netflix"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/googlecast/CastReceiver",
+            "description": "Reference Receiver: CastReceiver shows how to develop a fully Cast Design Checklist compliant receiver with additional features. - googlecast/CastReceiver",
+            "title": "googlecast/CastReceiver"
+        },
+        {
+            "category": "dolby",
+            "homepage": "https://www.dolby.com/us/en/technologies/dolby-professional-loudness-solutions.pdf",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/BingLingGroup/autosub",
+            "description": "Command-line utility to transcribe/translate from video/audio/subtitles to subtitles  - BingLingGroup/autosub",
+            "title": "BingLingGroup/autosub"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/selsta/hlsdl",
+            "description": "C program to download VoD HLS (.m3u8) files. Contribute to selsta/hlsdl development by creating an account on GitHub.",
+            "title": "selsta/hlsdl"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/lcy0321/m3u8-downloader",
+            "description": "Download the ts files according to the given m3u8 file. - lcy0321/m3u8-downloader",
+            "title": "lcy0321/m3u8-downloader"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://bitmovin.com/encoding-definition-bitrates/?utm_campaign=Newsletter&utm_medium=email&_hsenc=p2ANqtz-8MPFxhR7snQrxPYM7Bl3UTEMgOh5ZXoDQCHjLl9lkskqE0IfBhEuz3us39Br-lvA_CnyNmQl6L5wqO6iKOfAJ8HznenQ&_hsmi=79678208&utm_content=79677632&utm_source=hs_email&hsCtaTracking=b8eb0e0a-f292-435e-8b99-719b75d81412%7C367afa65-d810-4c2e-aa2c-c87e897a8942",
+            "description": null,
+            "title": "403 Forbidden"
+        },
+        {
+            "category": "hevc",
+            "homepage": "https://youtu.be/p6dLZfs0jTY",
+            "description": "Standardization of High Efficiency Video Coding (HEVC) Jens-Rainer Ohm, Institute of Communication Engineering, RWTH Aachen University, DE",
+            "title": "Standardization of High Efficiency Video Coding (HEVC)"
+        },
+        {
+            "category": "reading",
+            "homepage": "https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=101310",
+            "description": "For the armed forces, streaming is a matter of national security. Here's an exclusive look at how the military, from analysts to ground troops, is using streaming video.",
+            "title": "Video in the War Zone: The Current State of Military Streaming"
+        },
+        {
+            "category": "reading",
+            "homepage": "https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=135141",
+            "description": "Metadata and low-latency video create a tactical advantage in intelligence-gathering and decision making. Discover why HEVC is gaining momentum in the armed forces, and Android is preferred over iOS.",
+            "title": "Streaming Live From the Battlefield: Military Video in 2019"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/estliberitas/node-thumbnails-webvtt",
+            "description": "Video thumbnail generator generating WebVTT spec file - estliberitas/node-thumbnails-webvtt",
+            "title": "estliberitas/node-thumbnails-webvtt"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://gist.github.com/mrbar42/ae111731906f958b396f30906004b3fa",
+            "description": "bash scripts to create VOD HLS stream with ffmpeg almighty (tested on Linux and OS X) - README.md",
+            "title": "bash scripts to create VOD HLS stream with ffmpeg almighty (tested on Linux and OS X)"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://softron.zendesk.com/hc/en-us/articles/207694617-HOW-TO-View-an-HLS-Stream-in-QuickTime-or-VLC?mobile_site=true",
+            "description": null,
+            "title": "HOW TO: View an HLS Stream in QuickTime or VLC – Softron Support Desk"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://docs.peer5.com/guides/production-ready-hls-vod/",
+            "description": "Peer5 documentation",
+            "title": "Creating A Production Ready Multi Bitrate HLS VOD stream - Peer5 P2P Docs"
+        },
+        {
+            "category": "talks",
+            "homepage": "https://www.youtube.com/watch?v=lZI51YzIgVE",
+            "description": "Talk by Jonah Horowitz, Albert Tobey What does it take to be a Netflix SRE? With tens of thousands of Linux instances in a distributed system architecture, a...",
+            "title": "From Sys Admin to Netflix SRE"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/Eyevinn/toolbox",
+            "description": "A set of Docker containers with Streaming tools. Contribute to Eyevinn/toolbox development by creating an account on GitHub.",
+            "title": "Eyevinn/toolbox"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://www.bento4.com/developers/hls/",
+            "description": null,
+            "title": "HLS | Bento4"
+        },
+        {
+            "category": "encoding",
+            "homepage": "https://www.bento4.com/",
+            "description": null,
+            "title": "Bento4 | Fast, Modern Tools and C++ Class Library for all your MP4 and DASH media format needs"
+        },
+        {
+            "category": "encoding",
+            "homepage": "https://github.com/cannonbeach/ott-packager",
+            "description": "OTT/ABR streaming encoder (H264/HEVC) and packager for DASH and HLS - cannonbeach/ott-packager",
+            "title": "cannonbeach/ott-packager"
+        },
+        {
+            "category": "intro",
+            "homepage": "https://www.slideshare.net/vcodex/a-short-history-of-video-coding?from_m_app=ios",
+            "description": "Video coding is an essential component of video streaming, digital TV, video chat and many other technologies. This presentation, an invited lecture to the US …",
+            "title": "A short history of video coding"
+        },
+        {
+            "category": "qoe",
+            "homepage": "https://medium.com/@jnoduq/video-bench-how-measure-your-video-quality-easily-85a0feb8f6e2",
+            "description": "Introduction",
+            "title": "Video Bench — How measure your video quality easily"
+        },
+        {
+            "category": "qoe",
+            "homepage": "https://github.com/JNoDuq/videobench",
+            "description": "VMAF PSNR Bitrate Analyzer. Contribute to JNoDuq/videobench development by creating an account on GitHub.",
+            "title": "JNoDuq/videobench"
+        },
+        {
+            "category": "ads",
+            "homepage": "https://medium.com/@eyevinntechnology/understanding-server-side-dynamic-ad-insertion-d7ed90e34aa2",
+            "description": "In this post we’re explaining the principles behind Server-Side Dynamic Ad Insertion technology. If you are already familiar with video…",
+            "title": "Understanding Server-Side Dynamic Ad Insertion"
+        },
+        {
+            "category": "ads",
+            "homepage": "https://www.tvtechnology.com/opinions/scte10435-and-beyond-a-look-at-ad-insertion-in-an-ott-world",
+            "description": "Ad Insertion is a very important part of many video delivery systems because of the monetization aspect—it generates revenue!",
+            "title": "SCTE-104/35 and Beyond: A Look at Ad Insertion in an OTT World"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/obsproject/obs-studio",
+            "description": "OBS Studio - Free and open source software for live streaming and screen recording - obsproject/obs-studio",
+            "title": "obsproject/obs-studio"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://obsproject.com/",
+            "description": "OBS (Open Broadcaster Software) is free and open source software for video recording and live streaming. Stream to Twitch, YouTube and many other providers or record your own videos with high quality H264 / AAC encoding.",
+            "title": "Open Broadcaster Software | OBS"
+        },
+        {
+            "category": "testing",
+            "homepage": "https://github.com/artilleryio/artillery-plugin-hls",
+            "description": "Load test HTTP Live Streaming (HLS) servers with Artillery 🎥 - artilleryio/artillery-plugin-hls",
+            "title": "artilleryio/artillery-plugin-hls"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/tanersener/mobile-ffmpeg",
+            "description": "FFmpeg for Android, iOS and tvOS. Contribute to tanersener/mobile-ffmpeg development by creating an account on GitHub.",
+            "title": "tanersener/mobile-ffmpeg"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/minio/minio",
+            "description": "MinIO is a high performance object storage server compatible with Amazon S3 APIs - minio/minio",
+            "title": "minio/minio"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://dev.to/samuyi/how-to-setup-nginx-for-hls-video-streaming-on-centos-7-3jb8",
+            "description": "How to live stream videos with Nginx",
+            "title": "How To Setup Nginx For HLS Video Streaming On Centos 7"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://opensource.com/article/19/1/basic-live-video-streaming-server",
+            "description": "Live video streaming is incredibly popular—and it's still growing. Platforms like Amazon's Twitch and Google's YouTube boast millions of users that stream and consume countless hours of live and recorded media. These services are often free to use but require you to have an account and generally hold your content behind advertisements. Some people don't need their videos to be available to the masses or just want more control over their content. Thankfully, with the power of open source software, anyone can set up a live streaming server.",
+            "title": "Create your own video streaming server with Linux"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://mux.com/blog/mobile-hls-guide/",
+            "description": "HTTP Live Streaming, also known as HLS, is the most common format used today for streaming video. If you're building a video streaming application today, you should probably use HLS. Apple created the HLS standard in 2009, and it is the required streaming format for iOS devices. Since then, Android",
+            "title": "Guide to Mobile Video Streaming with HLS"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://www.toptal.com/apple/introduction-to-http-live-streaming-hls",
+            "description": "This article explains how HTTP Live Streaming works and demonstrates how to create an HLS player in Android.",
+            "title": "Introduction to HTTP Live Streaming: HLS on Android and More"
+        },
+        {
+            "category": "testing",
+            "homepage": "https://artillery.io/docs/plugin-hls/",
+            "description": null,
+            "title": "HTTP Live Streaming (HLS) - Artillery.io Docs"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://developer.apple.com/documentation/http_live_streaming/understanding_the_http_live_streaming_architecture",
+            "description": null,
+            "title": "Understanding the HTTP Live Streaming Architecture | Apple Developer Documentation"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/tjenkinson/media-element-syncer",
+            "description": "Synchronise two or more HTML5 media elements. Contribute to tjenkinson/media-element-syncer development by creating an account on GitHub.",
+            "title": "tjenkinson/media-element-syncer"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/watson-developer-cloud/text-to-speech-nodejs",
+            "description": ":speaker: Sample Node.js Application for the IBM Watson Text to Speech Service - watson-developer-cloud/text-to-speech-nodejs",
+            "title": "watson-developer-cloud/text-to-speech-nodejs"
+        },
+        {
+            "category": "talks",
+            "homepage": "https://thevideoinsiders.simplecast.com/episodes",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "testing",
+            "homepage": "https://medium.com/netflix-techblog/automated-testing-on-devices-fc5a39f47e24",
+            "description": "key concepts and infrastructure",
+            "title": "Automated Testing on Devices"
+        },
+        {
+            "category": "reading",
+            "homepage": "https://medium.com/@eyevinntechnology/server-less-just-in-time-packaging-with-aws-fargate-and-unified-origin-by-unified-streaming-c1682dc051ca?source=userActivityShare-94bccb50d11-1560983627&_branch_match_id=670020794794030328",
+            "description": "In this blog article Jonas Rydholm Birmé describes how he created a server-less just-in-time packaging origin, using AWS ECS Fargate tasks…",
+            "title": "Server-less Just-in-Time Packaging with AWS Fargate and Unified Origin by Unified Streaming"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/vitalets/awesome-smart-tv",
+            "description": ":zap:A curated list of awesome resources for building Smart TV apps - vitalets/awesome-smart-tv",
+            "title": "vitalets/awesome-smart-tv"
+        },
+        {
+            "category": "encoding",
+            "homepage": "https://gitlab.com/olaris/olaris-server",
+            "description": "GitLab.com",
+            "title": "olaris / olaris-server"
+        },
+        {
+            "category": "reading",
+            "homepage": "https://bitmovin.com/mkv-vs-mp4/?utm_campaign=Newsletter&utm_medium=email&_hsenc=p2ANqtz--KSAyThG9MNeSt28DH4ARDp3E1ujyIxyFCr2Dlctl7XcrajMAhRv2exdRRtgAFkaGnNIV_oDJgUAFV9joOCsDy-Vh_sw&_hsmi=80348170&utm_content=80347861&utm_source=hs_email&hsCtaTracking=a4ecf824-05b6-41b1-b600-20a1cd5b0cf6%7C1853ebeb-bdae-4e36-b131-2fdf6e65a93d",
+            "description": null,
+            "title": "403 Forbidden"
+        },
+        {
+            "category": "players",
+            "homepage": "https://codelabs.developers.google.com/codelabs/cast-receiver/#0",
+            "description": null,
+            "title": "Build a basic Cast Receiver"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://docs.aws.amazon.com/en_pv/mediaconvert/latest/ug/mediaconvert-guide.pdf#working-with-queues",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/StyleShare/HLSCachingReverseProxyServer",
+            "description": "A simple local reverse proxy server for HLS segment cache - StyleShare/HLSCachingReverseProxyServer",
+            "title": "StyleShare/HLSCachingReverseProxyServer"
+        },
+        {
+            "category": "audio",
+            "homepage": "https://github.com/superpoweredSDK/Low-Latency-Android-iOS-Linux-Windows-tvOS-macOS-Interactive-Audio-Platform",
+            "description": "🇸Superpowered Audio, Networking and Cryptographics SDKs. High performance and cross platform on Android, iOS, macOS, tvOS, Linux, Windows and modern web browsers. - superpoweredSDK/Low-Latency-Andr...",
+            "title": "superpoweredSDK/Low-Latency-Android-iOS-Linux-Windows-tvOS-macOS-Interactive-Audio-Platform"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/davidAgo4g/VideoPlayer-iOS",
+            "description": "A library based on FFMPEG to play video files on iOS using OpenGLES and AudioQueue. Build with theos - davidAgo4g/VideoPlayer-iOS",
+            "title": "davidAgo4g/VideoPlayer-iOS"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/imoreapps/ffmpeg-avplayer-for-ios-tvos",
+            "description": "A tiny but powerful iOS and Apple TV OS av player framework that's based on the FFmpeg library. - imoreapps/ffmpeg-avplayer-for-ios-tvos",
+            "title": "imoreapps/ffmpeg-avplayer-for-ios-tvos"
+        },
+        {
+            "category": "qoe",
+            "homepage": "https://github.com/cta-wave/R4WG20-QoE-Metrics",
+            "description": "Issue tracking repository for the R4-Wg20 QoE Initiative - cta-wave/R4WG20-QoE-Metrics",
+            "title": "cta-wave/R4WG20-QoE-Metrics"
+        },
+        {
+            "category": "specs-standards",
+            "homepage": "https://tools.ietf.org/pdf/draft-pantos-hls-rfc8216bis-05.pdf",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.elsevier.com/books/communicating-pictures/bull/978-0-12-405906-1",
+            "description": "Purchase Communicating Pictures - 1st Edition. Print Book & E-Book. ISBN 9780124059061, 9780080993744",
+            "title": "Communicating Pictures - 1st Edition"
+        },
+        {
+            "category": "reading",
+            "homepage": "https://www.smarthomebeginner.com/best-home-server-apps/",
+            "description": "These are top 9 best home server apps to automate media management, so you get the latest Movies, Music and TV Shows in the best quality available.",
+            "title": "9 Best Home Server Apps to Automate Media Management"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/Eyevinn/vod-to-live",
+            "description": "A python library to generate Live HLS from VOD. Contribute to Eyevinn/vod-to-live development by creating an account on GitHub.",
+            "title": "Eyevinn/vod-to-live"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/Eyevinn/hls-relay",
+            "description": "Script to pull HLS stream from one origin and push to another origin - Eyevinn/hls-relay",
+            "title": "Eyevinn/hls-relay"
+        },
+        {
+            "category": "drm",
+            "homepage": "https://bitmovin.com/digital-rights-management-everything-to-know/",
+            "description": null,
+            "title": "403 Forbidden"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://s3.amazonaws.com/solutions-reference/video-on-demand-on-aws/latest/video-on-demand-on-aws.pdf",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "audio",
+            "homepage": "https://www.atsc.org/wp-content/uploads/2015/03/Techniques-for-establishing-and-maintaining-audio-loudness.pdf",
+            "description": null,
+            "title": "403 Forbidden"
+        },
+        {
+            "category": "intro",
+            "homepage": "https://github.com/leandromoreira/digital_video_introduction",
+            "description": "A hands-on introduction to video technology: image, video, codec (av1, vp9, h265) and more (ffmpeg encoding). - leandromoreira/digital_video_introduction",
+            "title": "leandromoreira/digital_video_introduction"
+        },
+        {
+            "category": "audio",
+            "homepage": "https://bytesandbones.wordpress.com/2017/03/16/audio-nomalization-with-ffmpeg-using-loudnorm-ebur128-filter/",
+            "description": "Source: Source: (Credits: k@ylo.ph | Source discovered by Mulvya)   ./ffmpeg -i /path/to/input.wav -af loudnorm=I=-16:TP=-1.5:LRA=11:print_format=summary -f null – This instructs FFmpeg to me…",
+            "title": "Audio normalization with ffmpeg using loudnorm (ebur128) filter"
+        },
+        {
+            "category": "audio",
+            "homepage": "https://www.learndigitalaudio.com/normalize-audio",
+            "description": null,
+            "title": "410 Gone"
+        },
+        {
+            "category": "audio",
+            "homepage": "https://www.tcelectronic.com/brand/tcelectronic/loudness-explained#googtrans(en|en)",
+            "description": "tcelectronic, ",
+            "title": "\n\t\tLoudness Explained Page | Music Tribe - TC Electronic"
+        },
+        {
+            "category": "audio",
+            "homepage": "https://www.youtube.com/watch?v=iuEtQqC-Sqo",
+            "description": "Florian Camerer gives an introduction to the European Broadcasting Union's R128 Broadcast Standard and speaks in general about perceived loudness, peak norma...",
+            "title": "EBU R128 Introduction - Florian Camerer"
+        },
+        {
+            "category": "audio",
+            "homepage": "https://www.maketecheasier.com/normalize-music-files-with-ffmpeg/",
+            "description": "If your music files are too loud, too soft, or have obnoxious peaks and irregular volume, you can use FFmpeg to normalize your music files. Here's how.",
+            "title": "Adjust and Normalize Your Music Files with FFMPEG - Make Tech Easier"
+        },
+        {
+            "category": "audio",
+            "homepage": "https://www.premiumbeat.com/blog/how-to-set-audio-levels-for-video/",
+            "description": "Bad sound can easily ruin good footage. Use these tips when it comes time to set audio levels for video and film projects.",
+            "title": "How to Set Audio Levels for Video"
+        },
+        {
+            "category": "audio",
+            "homepage": "https://forum.audacityteam.org/viewtopic.php?t=63067",
+            "description": null,
+            "title": "ReplayGain - Audacity Forum"
+        },
+        {
+            "category": "audio",
+            "homepage": "https://github.com/slhck/ffmpeg-normalize#examples",
+            "description": "Audio Normalization for Python/ffmpeg. Contribute to slhck/ffmpeg-normalize development by creating an account on GitHub.",
+            "title": "slhck/ffmpeg-normalize"
+        },
+        {
+            "category": "reading",
+            "homepage": "https://medium.com/netflix-techblog/extracting-contextual-information-from-video-assets-ee9da25b6008",
+            "description": "for an improved Netflix user experience",
+            "title": "Extracting contextual information from video assets"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/peak3d/inputstream.adaptive",
+            "description": "kodi inputstream addon for several manifest types. Contribute to peak3d/inputstream.adaptive development by creating an account on GitHub.",
+            "title": "peak3d/inputstream.adaptive"
+        },
+        {
+            "category": "reading",
+            "homepage": "https://www.streamingmedia.com/Articles/Editorial/Featured-Articles/Inside-MPEGs-Ambitious-Plan-to-Launch-3-Video-Codecs-in-2020-134694.aspx",
+            "description": "The pace of innovation is getting faster and the demands on video codecs are getting greater. MPEG's three-part plan answers questions of royalties, licensing, and computational efficiency. Meet VVC, MPEG-5 Part 1 (EVC), and MPEG-5 Part 2 (LCEVC).",
+            "title": "Inside MPEG's Ambitious Plan to Launch 3 Video Codecs in 2020"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/Eyevinn/manifestparser",
+            "description": "A manifest parser. Contribute to Eyevinn/manifestparser development by creating an account on GitHub.",
+            "title": "Eyevinn/manifestparser"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/Eyevinn/docker-jit-capture",
+            "description": "A Docker container for an open source Just-In-Time Capture Origin - Eyevinn/docker-jit-capture",
+            "title": "Eyevinn/docker-jit-capture"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/Eyevinn/srt-metadata-extractor",
+            "description": "Contribute to Eyevinn/srt-metadata-extractor development by creating an account on GitHub.",
+            "title": "Eyevinn/srt-metadata-extractor"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/Eyevinn/ott-multiview",
+            "description": "This is a web based multiview screen for HLS and MPEG-DASH streams based on hls.js and Shaka Player. - Eyevinn/ott-multiview",
+            "title": "Eyevinn/ott-multiview"
+        },
+        {
+            "category": "hevc",
+            "homepage": "https://github.com/Eyevinn/docker-hevc",
+            "description": "Docker container to create HEVC streaming packages - Eyevinn/docker-hevc",
+            "title": "Eyevinn/docker-hevc"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/Eyevinn/pseudo-live-playout",
+            "description": "Contribute to Eyevinn/pseudo-live-playout development by creating an account on GitHub.",
+            "title": "Eyevinn/pseudo-live-playout"
+        },
+        {
+            "category": [
+                "dash",
+                "hls"
+            ],
+            "homepage": "https://github.com/Eyevinn/hls-to-dash",
+            "description": "Open source packager and tools to rewrap live HLS to live MPEG DASH - Eyevinn/hls-to-dash",
+            "title": "Eyevinn/hls-to-dash"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/Eyevinn/channel-engine-multiview",
+            "description": "A multiview frontend for Eyevinn Channel Engine. Contribute to Eyevinn/channel-engine-multiview development by creating an account on GitHub.",
+            "title": "Eyevinn/channel-engine-multiview"
+        },
+        {
+            "category": "ads",
+            "homepage": "https://github.com/Eyevinn/vast-info",
+            "description": "Parse a VAST or VMAP to show valuable information in a readable format - Eyevinn/vast-info",
+            "title": "Eyevinn/vast-info"
+        },
+        {
+            "category": "testing",
+            "homepage": "https://github.com/bengarney/list-of-streams",
+            "description": "Community list of public test streams for HLS and DASH. - bengarney/list-of-streams",
+            "title": "bengarney/list-of-streams"
+        },
+        {
+            "category": "intro",
+            "homepage": "https://github.com/Eyevinn/streaming-onboarding",
+            "description": "New to streaming and don't know where to start? This is the place for you! - Eyevinn/streaming-onboarding",
+            "title": "Eyevinn/streaming-onboarding"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/Eyevinn/fmp4-js",
+            "description": "A Javascript library to parse ISO Base Media File Format (MPEG-4 Part 12) - Eyevinn/fmp4-js",
+            "title": "Eyevinn/fmp4-js"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/Eyevinn/hls-playlist-parser",
+            "description": "A Javascript library to parse Hls playlists. Contribute to Eyevinn/hls-playlist-parser development by creating an account on GitHub.",
+            "title": "Eyevinn/hls-playlist-parser"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/Eyevinn/docker-html5player",
+            "description": "A Docker containerized HTML5 player based on Shaka Player - Eyevinn/docker-html5player",
+            "title": "Eyevinn/docker-html5player"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/Eyevinn/hls-ts-js",
+            "description": "HLS MPEG-TS parser library in Javascript. Contribute to Eyevinn/hls-ts-js development by creating an account on GitHub.",
+            "title": "Eyevinn/hls-ts-js"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/Eyevinn/abr-player-chrome",
+            "description": "Chrome extension that uses Eyevinn HTML player to be able to play HLS and MPEG-DASH natively - Eyevinn/abr-player-chrome",
+            "title": "Eyevinn/abr-player-chrome"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/Eyevinn/hls-ts-analyzer",
+            "description": "Example implementation of hls-ts.js library. Contribute to Eyevinn/hls-ts-analyzer development by creating an account on GitHub.",
+            "title": "Eyevinn/hls-ts-analyzer"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/Eyevinn/streaming-analyzer",
+            "description": "Analyze and visualize HTTP ABR streams. Contribute to Eyevinn/streaming-analyzer development by creating an account on GitHub.",
+            "title": "Eyevinn/streaming-analyzer"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/Eyevinn/eyevinn-player",
+            "description": "Throttled video player to test video streams. Contribute to Eyevinn/eyevinn-player development by creating an account on GitHub.",
+            "title": "Eyevinn/eyevinn-player"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://gist.github.com/krzemienski/e51a0b7a6ba77e616f954e516783270c#file-compile-and-install-latest-ffmpeg-source-sh-L2",
+            "description": "compile and install latest ffmpeg source as pkg. GitHub Gist: instantly share code, notes, and snippets.",
+            "title": "compile and install latest ffmpeg source as pkg"
+        },
+        {
+            "category": "encoding",
+            "homepage": "https://github.com/bloc97/Anime4K",
+            "description": "A High-Quality Real Time Upscaler for Anime Video. Contribute to bloc97/Anime4K development by creating an account on GitHub.",
+            "title": "bloc97/Anime4K"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://medium.com/plexlabs/xml-code-good-times-rsg-application-b963f0cec01b",
+            "description": "Written by John Zolezzi — April 6th 2018",
+            "title": "XML + Code + Good times = RSG Application"
+        },
+        {
+            "category": "hevc",
+            "homepage": "https://bitbucket.org/multicoreware/x265/wiki/Home",
+            "description": null,
+            "title": "\n  multicoreware / x265 / wiki / Home — Bitbucket\n"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://gitlab.com/nvidia/container-images/samples/blob/master/cuda/ubuntu16.04/ffmpeg-gpu/Dockerfile",
+            "description": "Sample Dockerfiles for Docker Hub images",
+            "title": "cuda/ubuntu16.04/ffmpeg-gpu/Dockerfile · master · nvidia / container-images / samples"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/jkarthic-akamai/ABR-Broadcaster",
+            "description": "A real time encoder for Adaptive Bitrate Broadcast - jkarthic-akamai/ABR-Broadcaster",
+            "title": "jkarthic-akamai/ABR-Broadcaster"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/alexherbo2/ffmpeg-sub",
+            "description": "FFmpeg command to extract subtitles. Contribute to alexherbo2/ffmpeg-sub development by creating an account on GitHub.",
+            "title": "alexherbo2/ffmpeg-sub"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/federicocalendino/pysub-parser",
+            "description": "Utility to extract the text and timestamps of a subtitle file (.srt, .ssa, .sub, .txt). - federicocalendino/pysub-parser",
+            "title": "federicocalendino/pysub-parser"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/cessen/subs_extract",
+            "description": "Extracts per-sentence subtitles + audio from a subtitle file + video file. - cessen/subs_extract",
+            "title": "cessen/subs_extract"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/apm1467/videocr",
+            "description": "Extract hardcoded subtitles from videos using machine learning - apm1467/videocr",
+            "title": "apm1467/videocr"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/statsbiblioteket/tv-subtitle-extraction",
+            "description": "System for extraction of subtitles from TV broadcasts. - statsbiblioteket/tv-subtitle-extraction",
+            "title": "statsbiblioteket/tv-subtitle-extraction"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/shawnsky/extract-subtitles",
+            "description": "Extract Subtitles From Video 视频字幕提取 帧间差分法识别关键帧 OCR识别 - shawnsky/extract-subtitles",
+            "title": "shawnsky/extract-subtitles"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/jnorton001/pycaption-cli",
+            "description": "A command line interface for the pycaption module. - jnorton001/pycaption-cli",
+            "title": "jnorton001/pycaption-cli"
+        },
+        {
+            "category": "qoe",
+            "homepage": "https://medium.com/netflix-techblog/vmaf-the-journey-continues-44b51ee9ed12",
+            "description": "by Zhi Li, Christos Bampis, Julie Novak, Anne Aaron, Kyle Swanson, Anush Moorthy and Jan De Cock",
+            "title": "VMAF: The Journey Continues"
+        },
+        {
+            "category": "reading",
+            "homepage": "https://medium.com/netflix-techblog/the-netflix-imf-workflow-f45dd72ed700?source=userActivityShare-94bccb50d11-1568773157&_branch_match_id=702692448596112473",
+            "description": "interesting architectural implications",
+            "title": "The Netflix IMF Workflow"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/mar10/wsgidav",
+            "description": "A generic and extendable WebDAV server based on WSGI - mar10/wsgidav",
+            "title": "mar10/wsgidav"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/shrimpgo/video-downloader",
+            "description": "Helper to download HLS videos. Contribute to shrimpgo/video-downloader development by creating an account on GitHub.",
+            "title": "shrimpgo/video-downloader"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/Eyevinn/hls-download",
+            "description": "Download HLS and convert to MP4. Contribute to Eyevinn/hls-download development by creating an account on GitHub.",
+            "title": "Eyevinn/hls-download"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/denex/hls-downloader",
+            "description": "Download all video files from HLS (HTTP Live Streaming) VoD (Video on Demand) m3u8 playlist for local playback - denex/hls-downloader",
+            "title": "denex/hls-downloader"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/osklil/hls-fetch",
+            "description": "Download and decrypt videos served by the HTTP Live Streaming (HLS) protocol. - osklil/hls-fetch",
+            "title": "osklil/hls-fetch"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/Comcast/scte35-js",
+            "description": "A SCTE 35 Parser for JavaScript. Contribute to Comcast/scte35-js development by creating an account on GitHub.",
+            "title": "Comcast/scte35-js"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/Comcast/caption-inspector",
+            "description": "Caption Inspector is a reference decoder for Closed Captions (CEA-608 and CEA-708). - Comcast/caption-inspector",
+            "title": "Comcast/caption-inspector"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/Dash-Industry-Forum/media-tools",
+            "description": "A collection of tools for analyzing, handling, and creating media and media containers - Dash-Industry-Forum/media-tools",
+            "title": "Dash-Industry-Forum/media-tools"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/Dash-Industry-Forum/dash-live-source-simulator",
+            "description": "DASH live source simulator providing reference live content. - Dash-Industry-Forum/dash-live-source-simulator",
+            "title": "Dash-Industry-Forum/dash-live-source-simulator"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/Dash-Industry-Forum/cea608.js",
+            "description": "A JavaScript project designed to extract CEA-608 captions. - Dash-Industry-Forum/cea608.js",
+            "title": "Dash-Industry-Forum/cea608.js"
+        },
+        {
+            "category": "qoe",
+            "homepage": "https://medium.com/netflix-techblog/toward-a-practical-perceptual-video-quality-metric-653f208b9652",
+            "description": "measuring video quality accurately at scale",
+            "title": "Toward A Practical Perceptual Video Quality Metric"
+        },
+        {
+            "category": "reading",
+            "homepage": "https://medium.com/netflix-techblog/imf-a-prescription-for-versionitis-e0b4c1865c20",
+            "description": "the emerging Interoperable Master Format standard",
+            "title": "IMF: A Prescription for Versionitis"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/ruffle-rs/ruffle",
+            "description": "A Flash Player emulator written in Rust. Contribute to ruffle-rs/ruffle development by creating an account on GitHub.",
+            "title": "ruffle-rs/ruffle"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/DSRCorporation/imf-conversion",
+            "description": "NF IMF media conversion utility allows to handle flat file creation from a specified CPL within the IMF package - DSRCorporation/imf-conversion",
+            "title": "DSRCorporation/imf-conversion"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://stackoverflow.com/questions/3169910/can-ffmpeg-extract-closed-caption-data",
+            "description": "I am currently using ffmpeg to convert videos in various formats to flv files. One request has also come up and that is to get closed caption info out o the file as well. Does anyone have any exper...",
+            "title": "Can ffmpeg extract closed caption data"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://github.com/active-video/subtitles",
+            "description": "AV Platform MPEG DASH subtitles. Contribute to active-video/subtitles development by creating an account on GitHub.",
+            "title": "active-video/subtitles"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/mahbubcseju/MPEG-DASH-Downloader",
+            "description": "Contribute to mahbubcseju/MPEG-DASH-Downloader development by creating an account on GitHub.",
+            "title": "mahbubcseju/MPEG-DASH-Downloader"
+        },
+        {
+            "category": "drm",
+            "homepage": "https://github.com/shengbinmeng/dash-drm",
+            "description": "Demos of MPEG-DASH and DRM. Contribute to shengbinmeng/dash-drm development by creating an account on GitHub.",
+            "title": "shengbinmeng/dash-drm"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/yuhuili-lab/Tide",
+            "description": "Simple m3u8 and MPEG-DASH MPD video downloader using libcurl - yuhuili-lab/Tide",
+            "title": "yuhuili-lab/Tide"
+        },
+        {
+            "category": "Ffmpeg",
+            "homepage": "https://github.com/aminyazdanpanah/python-ffmpeg-video-streaming",
+            "description": "📼 Package media content for online streaming(DASH and HLS) using FFmpeg - aminyazdanpanah/python-ffmpeg-video-streaming",
+            "title": "aminyazdanpanah/python-ffmpeg-video-streaming"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/Dash-Industry-Forum/DASH-IF-Conformance",
+            "description": "This repository provides the source code for MPEG-DASH/DASH-IF Conformance Software/Validator. It has been extended according to further standards, such as CMAF, DVB-DASH, HbbTV, and CTA WAVE. - Da...",
+            "title": "Dash-Industry-Forum/DASH-IF-Conformance"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/bitmovin/libdash",
+            "description": "MPEG-DASH Access Library - Official ISO/IEC MPEG-DASH Reference Implementation - bitmovin/libdash",
+            "title": "bitmovin/libdash"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/realeyes-media/alpine-node-video-multitool",
+            "description": "Contribute to realeyes-media/alpine-node-video-multitool development by creating an account on GitHub.",
+            "title": "realeyes-media/alpine-node-video-multitool"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://dashif.org/docs/DASH-IF-IOP-v4.3.pdf",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "drm",
+            "homepage": "https://github.com/videojs/aes-decrypter",
+            "description": "Contribute to videojs/aes-decrypter development by creating an account on GitHub.",
+            "title": "videojs/aes-decrypter"
+        },
+        {
+            "category": "roku",
+            "homepage": "https://developer.roku.com/docs/specs/streaming.md",
+            "description": "Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.",
+            "title": "Roku"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API",
+            "description": "Web Video Text Tracks Format (WebVTT) is a format for displaying timed text tracks (such as subtitles or captions) using the track element.",
+            "title": "Web Video Text Tracks Format (WebVTT)"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://sites.google.com/site/linuxencoding/x264-ffmpeg-mapping",
+            "description": "null",
+            "title": "x264 FFmpeg Options Guide - Linux Encoding"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/Eyevinn/hls-origin-scripts",
+            "description": "Scripts to manipulate HLS manifests at origin or edge server - Eyevinn/hls-origin-scripts",
+            "title": "Eyevinn/hls-origin-scripts"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/Eyevinn/channel-engine",
+            "description": "OTT TV Channel Engine. Contribute to Eyevinn/channel-engine development by creating an account on GitHub.",
+            "title": "Eyevinn/channel-engine"
+        },
+        {
+            "category": "players",
+            "homepage": "https://github.com/Eyevinn/av1-player",
+            "description": "Eyevinn AV1 player. Contribute to Eyevinn/av1-player development by creating an account on GitHub.",
+            "title": "Eyevinn/av1-player"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://www.brendanlong.com/the-structure-of-an-mpeg-dash-mpd.html",
+            "description": "The MPEG-DASH Media Presentation Description (MPD) is an XML document containing information about media segments, their relationships and information necessary to choose between them, and other metadata that may be needed by clients. In this post, I describe the most important pieces of the MPD, starting from the top level (Periods) and going to the bottom (Segments).",
+            "title": "The structure of an MPEG-DASH MPD"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/videojs/videojs-contrib-dash",
+            "description": "Video.js plugin for supporting the MPEG-DASH playback through a video.js player - videojs/videojs-contrib-dash",
+            "title": "videojs/videojs-contrib-dash"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/iheartradio/open-m3u8",
+            "description": "Open Source m3u8 Parser. Contribute to iheartradio/open-m3u8 development by creating an account on GitHub.",
+            "title": "iheartradio/open-m3u8"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/Comcast/gots",
+            "description": "MPEG Transport Stream handling in Go. Contribute to Comcast/gots development by creating an account on GitHub.",
+            "title": "Comcast/gots"
+        },
+        {
+            "category": " cdn",
+            "homepage": "https://medium.com/faun/this-is-how-i-reduced-my-cloudfront-bills-by-80-a7b0dfb24128",
+            "description": "If you are using S3 and CloudFront to host your content and noticed that your bills are increasing, read this!",
+            "title": "This is How I Reduced My CloudFront Bills by 80%"
+        },
+        {
+            "category": "cdn",
+            "homepage": "https://docs.fastly.com/en/guides/amazon-s3",
+            "description": null,
+            "title": "Amazon S3 | Fastly Help Guides"
+        },
+        {
+            "category": "cdn",
+            "homepage": "https://www.cdnoverview.com/compare/fastly-vs-amazon-cloudfront/",
+            "description": "Compare CDN features and pricing on CDNOverview.com",
+            "title": "Fastly compared to Amazon CloudFront "
+        },
+        {
+            "category": "cdn",
+            "homepage": "https://endertech.com/blog/edge-computing-fastly-cdn-varnish-vcl-authenticated-requests",
+            "description": "A brief explanation of how to use Fastly CDN and Varnish with authenticated requests to offload static file serving from the origin and edge caching.",
+            "title": "Edge Computing with Fastly CDN and Varnish VCL for Authenticated Requests - Endertech"
+        },
+        {
+            "category": "cdn",
+            "homepage": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/live-streaming.html",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "cdn",
+            "homepage": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "cdn",
+            "homepage": "https://bitmovin.zendesk.com/hc/en-us/articles/115001609634-How-to-use-DASH-and-HLS-Adaptive-Streaming-with-AWS-S3-and-Cloudfront",
+            "description": "Bitmovin integrates DASH and HLS adaptive streaming seamlessly into your AWS workflows. The Bitmovin encoding service could be configured to use an AWS S3 bucket as input and output for your DASH a...",
+            "title": "How to use DASH and HLS Adaptive Streaming with AWS S3 and Cloudfront"
+        },
+        {
+            "category": "subtitle",
+            "homepage": "https://www.3playmedia.com/resources/popular-topics/closed-captioning/",
+            "description": null,
+            "title": "403 Forbidden"
+        },
+        {
+            "category": "qoe",
+            "homepage": "https://streaminglearningcenter.com/blogs/collection-of-vmaf-resources.html",
+            "description": "A colleague asked for some resources relating to VMAF. Rather than answer in an email I thought I would create a post around it. Some of these are from Netflix, most from me (Jan Ozer). I’ve broken the items into three groups; Computing VMAF, Using VMAF, and About VMAF. I hope you find this collection useful.…",
+            "title": "Collection of VMAF Resources"
+        },
+        {
+            "category": "specs-standards",
+            "homepage": "https://www.scte.org/SCTEDocs/Standards/ANSI_SCTE%20214-1%202015.pdf",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "audio",
+            "homepage": "https://tech.ebu.ch/docs/tech/tech3324.pdf",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "qoe",
+            "homepage": "https://medium.com/@eyevinntechnology/video-quality-assessment-34abd35f96c0?source=userActivityShare-94bccb50d11-1560983815&_branch_match_id=670021582869771680",
+            "description": "In Eyevinn’s initiative to share our knowledge around quality we continue with addressing video quality assessment; from both a subjective…",
+            "title": "Video Quality Assessment"
+        },
+        {
+            "category": "drm",
+            "homepage": "https://medium.com/@eyevinntechnology/securing-ott-content-drm-1af2c08fdd31?source=userActivityShare-94bccb50d11-1560983518&_branch_match_id=670020366479331042",
+            "description": "Written by: Boris Asadanin, Streaming Media Consultant and Partner at Eyevinn Technology",
+            "title": "Securing OTT Content — DRM"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://medium.com/@eyevinntechnology/loop-file-and-generate-multiple-video-bitrates-muxed-in-mpeg-ts-with-ffmpeg-85658d0b74bb?source=userActivityShare-94bccb50d11-1560983383&_branch_match_id=670019768959110835",
+            "description": "In a previous post I described how an MPEG-TS multicast stream can be generated with ffmpeg by looping an MP4 file. In this post I will…",
+            "title": "Loop file and generate multiple video bitrates muxed in MPEG-TS with ffmpeg"
+        },
+        {
+            "category": "cdn",
+            "homepage": "https://medium.com/@eyevinntechnology/ott-content-delivery-cdn-alternatives-cafe75dab71d?source=userActivityShare-94bccb50d11-1560983135&_branch_match_id=670018733519578135",
+            "description": "Introduction",
+            "title": "OTT Content Delivery– CDN Alternatives"
+        },
+        {
+            "category": "audio",
+            "homepage": "https://github.com/hybrik/hybrik-samples/blob/master/Feature%20Examples/Filters/ebu_r128_audio_normalization.json",
+            "description": "Hybrik Samples. Contribute to hybrik/hybrik-samples development by creating an account on GitHub.",
+            "title": "hybrik/hybrik-samples"
+        },
+        {
+            "category": "drm",
+            "homepage": "https://docs.unified-streaming.com/documentation/package/multiple-keys.html",
+            "description": "DRM with multiple keys for Unified Packager",
+            "title": "Encryption & DRM with Multiple Keys — Unified Streaming"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://devstreaming-cdn.apple.com/videos/wwdc/2016/510ndmh9wkcvzneegv2/510/510_validating_http_live_streams.pdf",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "hls",
+            "homepage": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/507fk9wyls0np6piwk/507/507_hls_authoring_for_airplay_2_video.pdf",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "hls",
+            "homepage": "https://developer.apple.com/documentation/avfoundation/airplay_2/integrating_airplay_for_long-form_video_apps",
+            "description": null,
+            "title": "Integrating AirPlay for Long-Form Video Apps | Apple Developer Documentation"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://developer.apple.com/documentation/http_live_streaming/protocol_extension_for_low-latency_hls_preliminary_specification#3291001",
+            "description": null,
+            "title": "Protocol Extension for Low-Latency HLS (Preliminary Specification) | Apple Developer Documentation"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://developer.apple.com/videos/play/wwdc2019/502",
+            "description": "Since its introduction in 2009, HTTP Live Streaming (HLS) has enabled the delivery of countless live and on‐demand audio and video...",
+            "title": "Introducing Low-Latency HLS - WWDC 2019 - Videos - Apple Developer"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/qi-shun-wang/HLSDownloader",
+            "description": "Download Crypted HLS with server key and play video as local playing on iOS device. - qi-shun-wang/HLSDownloader",
+            "title": "qi-shun-wang/HLSDownloader"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/krad/morsel",
+            "description": "📇 Swift library for creating HLS playlists and fragmented mp4 files.  Works on Linux and iOS. - krad/morsel",
+            "title": "krad/morsel"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/fcanas/HLSCore",
+            "description": "A collection of Swift packages for working with HLS - fcanas/HLSCore",
+            "title": "fcanas/HLSCore"
+        },
+        {
+            "category": "qoe",
+            "homepage": "https://medium.com/@eyevinntechnology/quality-of-experience-in-streaming-5c25355a4111?source=userActivityShare-94bccb50d11-1559724940&_branch_match_id=664741478927428385",
+            "description": "In Eyevinn Technology’s ambition to broader our sharing of knowledge we now expand this with addressing quality. In today’s landscape of…",
+            "title": "Quality of Experience in Streaming"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://medium.com/canal-tech/how-video-streaming-works-on-the-web-an-introduction-7919739f7e1",
+            "description": "Note: this article is an introduction to video streaming in JavaScript and is mostly targeted to web developers. A large part of the…",
+            "title": "How video streaming works on the web: An introduction"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/Eyevinn/vod-to-live.js",
+            "description": "NPM library for HLS VOD to Live. Contribute to Eyevinn/vod-to-live.js development by creating an account on GitHub.",
+            "title": "Eyevinn/vod-to-live.js"
+        },
+        {
+            "category": "ads",
+            "homepage": "https://github.com/Eyevinn/adxchange-engine",
+            "description": "Eyevinn Adxchange Engine is a microservice placed between the server-side ad-insertion component and the adserver or SSP - Eyevinn/adxchange-engine",
+            "title": "Eyevinn/adxchange-engine"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/Eyevinn/docker-2dash",
+            "description": "A Docker container to pre-package MPEG DASH on demand content - Eyevinn/docker-2dash",
+            "title": "Eyevinn/docker-2dash"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://medium.com/@eyevinntechnology/ott-content-delivery-b43a35ef24f6",
+            "description": "Background",
+            "title": "OTT Content Delivery"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/Eyevinn/docker-serve",
+            "description": "A simple Python based HTTP server that sets CORS allow headers. Useful for streaming from files on local computer - Eyevinn/docker-serve",
+            "title": "Eyevinn/docker-serve"
+        },
+        {
+            "category": "hevc",
+            "homepage": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/515vy4sl7iu70/515/515_hls_authoring_update.pdf",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "hls",
+            "homepage": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/504op4c3001w2f222/504/504_advances_in_http_live_streaming.pdf",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "hevc",
+            "homepage": "https://www.linkedin.com/pulse/market-significance-apples-adopting-hevc-heres-what-i-jan-ozer",
+            "description": "At the recent World Wide Developer's Conference (WWDC), Apple announced that the next versions of Safari, iOS, and tvOS will support HLS with HEVC encoded video. This puts Apple firmly in the HEVC camp, with the Alliance for Open Media camp (Amazon, Cisco, Intel, Google, Microsoft, Mozilla, Netflix,",
+            "title": "The Market Significance of Apple's Adopting HEVC: Here's What I Think"
+        },
+        {
+            "category": "hevc",
+            "homepage": "https://www.techspot.com/article/1131-hevc-h256-enconding-playback/",
+            "description": "HEVC's main advantage over H.264 is that it offers roughly double the compression ratio for the same quality. This means that a video file encoded with HEVC can occupy half the space of its H.264 equivalent with no noticeable change in quality, or the same amount of space with improved quality.",
+            "title": "Guide to HEVC/H.265 Encoding and Playback"
+        },
+        {
+            "category": "drm",
+            "homepage": "https://www.theoplayer.com/blog/content-protection-for-hls-with-aes-128-encryption",
+            "description": "We will outline the most popular method for content protection with the HTTP Live Streaming (HLS) protocol: AES-128 content encryption.",
+            "title": "Content Protection for HLS with AES-128 Encryption"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://www.bento4.com/documentation/mp4dash/",
+            "description": null,
+            "title": "mp4dash | Bento4"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://github.com/matmoi/create-DASH-HLS",
+            "description": "A tutorial to generate fMp4 files compatible with dash and HLS - matmoi/create-DASH-HLS",
+            "title": "matmoi/create-DASH-HLS"
+        },
+        {
+            "category": "hevc",
+            "homepage": "https://www.youtube.com/watch?v=V6a1AW5xyAw&feature=youtu.be",
+            "description": "Dr. Dan Grois, Benjamin Bross, Dr. Detlev Marpe and Karsten Sühring HEVC/H.265 Video Coding Standart including the Range Extensions Scalable Extensions and M...",
+            "title": "HEVC/H.265 Video Coding Standard: Part 2"
+        },
+        {
+            "category": "hevc",
+            "homepage": "https://www.youtube.com/watch?v=TLNkK5C1KN8&feature=youtu.be",
+            "description": "Dr. Dan Grois, Benjamin Bross, Dr. Detlev Marpe and Karsten Sühring HEVC/H.265 Video Coding Standart including the Range Extensions Scalable Extensions and M...",
+            "title": "HEVC/H.265 Video Coding Standard: Part 1"
+        },
+        {
+            "category": "encoding",
+            "homepage": "https://medium.com/netflix-techblog/introducing-svt-av1-a-scalable-open-source-av1-framework-c726cce3103a",
+            "description": "by Andrey Norkin, Joel Sole, Kyle Swanson, Mariana Afonso, Anush Moorthy, Anne Aaron",
+            "title": "Introducing SVT-AV1: a scalable open-source AV1 framework"
+        },
+        {
+            "category": "ffmpeg",
+            "homepage": "https://github.com/kokorin/Jaffree",
+            "description": "Java ffmpeg and ffprobe command-line wrapper. Contribute to kokorin/Jaffree development by creating an account on GitHub.",
+            "title": "kokorin/Jaffree"
+        },
+        {
+            "category": "encoding",
+            "homepage": "https://github.com/realeyes-media/demo-encoder",
+            "description": "A nodejs encoding system based on ffmpeg and configured to write HLS streaming files to S3 - realeyes-media/demo-encoder",
+            "title": "realeyes-media/demo-encoder"
+        },
+        {
+            "category": "hevc",
+            "homepage": "https://x265.readthedocs.io/en/default/",
+            "description": null,
+            "title": "x265 Documentation — x265  documentation"
+        },
+        {
+            "category": "hevc",
+            "homepage": "https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=122637&PageNum=2",
+            "description": "Many who heard that Apple is adding support for HEVC playback in HTTP Live Streaming were left with more questions than answers. Here's what developers need to know.",
+            "title": "HEVC in HLS: 10 Key Questions for Streaming Video Developers"
+        },
+        {
+            "category": "dolby",
+            "homepage": "https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-streams-within-the-http-live-streaming-format-v2.0.pdf",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "learning",
+            "homepage": "https://developer.apple.com/documentation/http_live_streaming/hls_authoring_specification_for_apple_devices",
+            "description": null,
+            "title": "HLS Authoring Specification for Apple Devices | Apple Developer Documentation"
+        },
+        {
+            "category": "hevc",
+            "homepage": "https://streaminglearningcenter.com/wp-content/uploads/2018/05/Encoding-for-HEVC-SME-2018-Jan.pdf",
+            "description": null,
+            "title": null
+        },
+        {
+            "category": "testing",
+            "homepage": "https://media.xiph.org/",
+            "description": null,
+            "title": "Xiph.org :: Test Media"
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/videojs/m3u8-parser",
+            "description": "An m3u8 parser. Contribute to videojs/m3u8-parser development by creating an account on GitHub.",
+            "title": "videojs/m3u8-parser"
+        },
+        {
+            "category": "dash",
+            "homepage": "https://github.com/videojs/mpd-parser",
+            "description": "Contribute to videojs/mpd-parser development by creating an account on GitHub.",
+            "title": "videojs/mpd-parser"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://docs.google.com/presentation/d/1ZwqWcweR5SqeMBRmJjSukWaHbpdPy-EPYvJCS23_n3U/edit?usp=sharing",
+            "description": "Low Latency Live Streaming Apple LLHLS / CMAF Kevin Staunton-Lambert Solutions Architect R&D (July 2019) @kevleyski www.switch.tv",
+            "title": "Low Latency Live Streaming"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://docs.google.com/presentation/d/1sonEk2neNVBcy8EzieUjWCNzj5SXN7dk-unkR_lpl8k/edit?usp=sharing",
+            "description": "WebAssembly (Wasm) On the Edge Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv Wasm)",
+            "title": "WebAssembly (Wasm)"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://docs.google.com/presentation/d/1NAqYWmFOwxJEacZCuPLdX0mRNRFPFgeRbsm22EaxerU/edit?usp=sharing",
+            "description": "Using Tensorflow For Audience Measurement Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv",
+            "title": "Video Tensorflow"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://docs.google.com/presentation/d/1yiVEOq2rvtFynP1tLdJj7pBWkAEiE9g8BMaoryxRVrk/edit?usp=sharing",
+            "description": "VOD2Live Kevin Staunton-Lambert Solutions Architect R&D @kevleyski Wild Fire! How video engineers can help save lives www.switch.tv",
+            "title": "WildFires"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://docs.google.com/presentation/d/1Ua76BBaZKtTmaZrlfM_eG0vwz0ZAqPIjreCSfB4qFQQ/edit?usp=sharing",
+            "description": "VOD2Live Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv",
+            "title": "VOD2Live"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://docs.google.com/presentation/d/12_Vewc0SDpB1FycflfT4us9eipRCy0HWJVSaDMDifRs/edit?usp=sharing",
+            "description": "Working with the AV1 Codec Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv",
+            "title": "AV1 Codec"
+        },
+        {
+            "category": "learning",
+            "homepage": "https://docs.google.com/presentation/d/15560aTv054w6bXKQ9gmBCE8gYwgtXhaPOHS1JcqTofk/edit?usp=sharing",
+            "description": "Brewing in Pyrmont Prepared for The Pyrmont Historical Society, Nov 2019 Kev Staunton-Lambert pyrmontbrewery.com",
+            "title": "Pyrmont Brewery"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://www.switch.tv/mediahq/",
+            "description": null,
+            "title": "403 Forbidden"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://www.switch.tv/mediahq/adease/",
+            "description": null,
+            "title": "403 Forbidden"
+        },
+        {
+            "category": "players",
+            "homepage": "https://www.switch.tv/mediahq/universal-player/",
+            "description": null,
+            "title": "403 Forbidden"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://www.switch.tv/mediahq/live2vod/",
+            "description": null,
+            "title": "403 Forbidden"
+        }
+    ]
+}
