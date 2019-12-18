@@ -1337,6 +1337,12 @@
             "title": "googlecast/CastReceiver"
         },
         {
+            "category": "players",
+            "homepage": "https://github.com/google/ExoPlayer",
+            "description": "ExoPlayer is an application level media player for Android.",
+            "title": "google/ExoPlayer"
+        },
+        {
             "category": "dolby",
             "homepage": "https://www.dolby.com/us/en/technologies/dolby-professional-loudness-solutions.pdf",
             "description": null,
