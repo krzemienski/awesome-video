@@ -48,7 +48,7 @@ def read_and_sanitize_metadata_contents_json():
                                  print('Category : ' + project['category'])
 
                         print('URL : ' + project['homepage'])
-                        if 'description' in project:
+                        if 'description' in project and project['description'] != None:
                                 print('CURRENT Description: ' +
                                       project['description'])
 
@@ -136,7 +136,7 @@ def add_new_projects():
                 return resources_dict
 def main():
 # First, we  sanitize the current contents
-        #read_and_sanitize_metadata_contents_json()
+        read_and_sanitize_metadata_contents_json()
         add_new_projects()
 if __name__ == "__main__":
         main()
