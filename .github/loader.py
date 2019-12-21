@@ -40,14 +40,16 @@ def read_and_sanitize_metadata_contents_json():
                         santized_project['category'] = project['category']
                         santized_project['homepage'] = project['homepage']
 
-                        print('CURRENT Title : ' + project['title'])
+                        if project['title'] != None: 
+                                print('CURRENT Title : ' + project['title'])
                         if isinstance(project['category'], list):
                                  for a in project['category']:
                                         print('Category : ' + a)
                         else:
                                  print('Category : ' + project['category'])
-
-                        print('URL : ' + project['homepage'])
+                        
+                        if project['homepage'] != None: 
+                                print('URL : ' + project['homepage'])
                         if 'description' in project and project['description'] != None:
                                 print('CURRENT Description: ' +
                                       project['description'])
