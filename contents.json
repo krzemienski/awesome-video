@@ -120,7 +120,7 @@
             "title": "Chromecast",
             "id": "chromecast",
             "parent": "players",
-            "description": "Roku app tools, libraries,and examples."
+            "description": "Chromecast app tools, libraries,and examples."
         },
         {
             "title": "Vendors",
@@ -2832,6 +2832,21 @@
             "category": "vendors",
             "homepage": "https://www.switch.tv/mediahq/live2vod/",
             "title": "switch media live2vod"
+        },
+        {
+            "category":"mpeg",
+            "title": "MPEG future",
+            "homepage":"http://mpegfuture.org/"
+        },
+         {
+            "category":"mpeg",
+            "title": "MPEG About",
+            "homepage":"https://mpeg.chiariglione.org/about"
+        }
+         {
+            "category":"mpeg",
+            "title": "MPEG Meetings",
+            "homepage":"https://mpeg.chiariglione.org/meetings"
         }
     ]
 }
