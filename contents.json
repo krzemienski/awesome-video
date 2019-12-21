@@ -253,12 +253,6 @@
     },
     {
         "category": "hls",
-        "description": "HLS stream health monitoring utility tool provides an report of live HLS stream. This utility tool checks the all available bitrate streams and generates the report in html file format. HTML file i...",
-        "homepage": "https://github.com/imsanthosh/HLS-Stream-health-monitoring-tool",
-        "title": "imsanthosh/HLS-Stream-health-monitoring-tool"
-    },
-    {
-        "category": "hls",
         "description": "Download all video files from HLS (HTTP Live Streaming) VoD (Video on Demand) m3u8 playlist for local playback - denex/hls-downloader",
         "homepage": "https://github.com/denex/hls-downloader",
         "title": "denex/hls-downloader"
@@ -384,12 +378,6 @@
         "title": "openstack/swift"
     },
     {
-        "category": "hls",
-        "description": ":sound: Nginx module that generates audio track for HTTP Live Streaming (HLS) streams on the fly. - flavioribeiro/nginx-audio-track-for-hls-module",
-        "homepage": "https://github.com/flavioribeiro/nginx-audio-track-for-hls-module",
-        "title": "flavioribeiro/nginx-audio-track-for-hls-module"
-    },
-    {
         "category": "encoding",
         "description": "Snowmix Video Mixer",
         "homepage": "https://snowmix.sourceforge.io",
@@ -438,22 +426,10 @@
         "title": "ant-media/Ant-Media-Server"
     },
     {
-        "category": "ffmpeg",
-        "description": "A node utility utilizing ffmpeg to encode videos with the hevc codec. - FallingSnow/h265ize",
-        "homepage": "https://github.com/FallingSnow/h265ize",
-        "title": "FallingSnow/h265ize"
-    },
-    {
         "category": "players",
         "description": "A HTML5 video player with a parser that saves traffic - bytedance/xgplayer",
         "homepage": "https://github.com/bytedance/xgplayer",
         "title": "bytedance/xgplayer"
-    },
-    {
-        "category": "tools",
-        "description": "mult-media(audio/image/qrcode/markdown/html/svg) support web service (多媒体处理的web服务, 酷炫二维码, 音频, 图片, svg, markdown, html渲染服务支持)  http://liuyueyi.gitee.io/quick-media/#/ https://liuyueyi.github.io/quic...",
-        "homepage": "https://github.com/liuyueyi/quick-media",
-        "title": "liuyueyi/quick-media"
     },
     {
         "category": "ffmpeg",
@@ -545,7 +521,6 @@
         "homepage": "https://github.com/epiclabs-io/epic-video-comparator",
         "title": "epiclabs-io/epic-video-comparator"
     },
-    {},
     {
         "category": "players",
         "description": "Highly extensible, modern, JavaScript video player. Handles MPEG-Dash / HLS / MPEG-4 and is built on top of the HTML5 video element. - matvp91/indigo-player",
@@ -560,25 +535,12 @@
     },
     {
         "category": "players",
-        "description": "A simple HTML5, YouTube and Vimeo player.",
-        "homepage": "https://github.com/sampotts/plyr",
-        "title": "sampotts/plyr"
-    },
-    {
-        "category": "players",
         "description": "A React video player facilitating adaptive stream playback with custom UI and a React-friendly API. - vimond/replay",
         "homepage": "https://github.com/vimond/replay",
         "title": "vimond/replay"
     },
     {
-        "category": "dash",
-        "description": "Dash live source simulator",
-        "homepage": "https://github.com/Dash-Industry-Forum/dash-live-source-simulator",
-        "title": "dash-industry-forum/dash-live-source-simulator"
-    },
-    {
         "category": "encoding",
-        "description": "",
         "homepage": "https://github.com/senko/avtk",
         "title": "senko/avtk"
     },
@@ -591,12 +553,6 @@
         "category": "ffmpeg",
         "homepage": "https://github.com/Ch00k/ffmpy",
         "title":"Ch00k/ffmpy"
-    },
-    {
-        "category": "hls",
-        "description": "HLS Analyzer",
-        "homepage": "https://github.com/epiclabs-io/hls-analyzer",
-        "title": "epiclabs-io/hls-analyzer"
     },
     {
         "category": "hls",
@@ -2359,12 +2315,6 @@
         },
         {
             "category": "hls",
-            "homepage": "https://github.com/denex/hls-downloader",
-            "description": "Download all video files from HLS (HTTP Live Streaming) VoD (Video on Demand) m3u8 playlist for local playback - denex/hls-downloader",
-            "title": "denex/hls-downloader"
-        },
-        {
-            "category": "hls",
             "homepage": "https://github.com/osklil/hls-fetch",
             "description": "Download and decrypt videos served by the HTTP Live Streaming (HLS) protocol. - osklil/hls-fetch",
             "title": "osklil/hls-fetch"
@@ -2721,12 +2671,6 @@
             "title": "OTT Content Delivery"
         },
         {
-            "category": "tools",
-            "homepage": "https://github.com/Eyevinn/docker-serve",
-            "description": "A simple Python based HTTP server that sets CORS allow headers. Useful for streaming from files on local computer - Eyevinn/docker-serve",
-            "title": "Eyevinn/docker-serve"
-        },
-        {
             "category": "hevc",
             "homepage": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/515vy4sl7iu70/515/515_hls_authoring_update.pdf",
             "title": "515_hls_authoring_update"
@@ -2862,12 +2806,6 @@
             "homepage": "https://docs.google.com/presentation/d/1Ua76BBaZKtTmaZrlfM_eG0vwz0ZAqPIjreCSfB4qFQQ/edit?usp=sharing",
             "description": "VOD2Live Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv",
             "title": "VOD2Live"
-        },
-        {
-            "category": "learning",
-            "homepage": "https://docs.google.com/presentation/d/12_Vewc0SDpB1FycflfT4us9eipRCy0HWJVSaDMDifRs/edit?usp=sharing",
-            "description": "Working with the AV1 Codec Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv",
-            "title": "AV1 Codec"
         },
         {
             "category": "learning",
