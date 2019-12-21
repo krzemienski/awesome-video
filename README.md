@@ -292,6 +292,9 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *MPEG meetings, standards, and resources. *
 [back to top](#readme) 
 
+* [MPEG About](https://mpeg.chiariglione.org/about)  - 
+* [MPEG Meetings](https://mpeg.chiariglione.org/meetings)  - 
+* [MPEG future](http://mpegfuture.org/)  - 
 
 ## Players
 *Client players, libraries, tools, and examples.*
@@ -348,7 +351,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [xiewei-wayne/rtmp-video-player-for-ios](https://github.com/xiewei-wayne/rtmp-video-player-for-ios)  - Based on FFEngine framework, a rtmp video player for apple iOS devices. - xiewei-wayne/rtmp-video-player-for-ios
 
 ### Chromecast
-*Roku app tools, libraries,and examples.*
+*Chromecast app tools, libraries,and examples.*
 [back to top](#readme) 
 
 * [Build a basic Cast Receiver](https://codelabs.developers.google.com/codelabs/cast-receiver/#0)  - 
