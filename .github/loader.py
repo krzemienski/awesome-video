@@ -68,8 +68,7 @@ def read_and_sanitize_metadata_contents_json():
                                                       project['title'])
                                         if isinstance(project['category'], list):
                                                 for a in project['category']:
-                                                        print(
-                                                            'Category : ' + a)
+                                                        print('Category : ' + a)
                                         else:
                                                 print('Category : ' +
                                                       project['category'])
