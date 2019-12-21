@@ -212,442 +212,442 @@
         },
           {
         "category": "books",
-        "hopmepage": "https://www.amazon.com/dp/140207011X/ref=cm_sw_r_oth_api_i_DLz-DbTTZS7FP",
+        "homepage": "https://www.amazon.com/dp/140207011X/ref=cm_sw_r_oth_api_i_DLz-DbTTZS7FP",
         "title": "Transporting Compressed Digital Video"
     },
     {
         "category": "tools",
         "description": "NGINX-based Live Media Streaming Server.",
-        "hopmepage": "https://github.com/gnolizuh/BLSS",
+        "homepage": "https://github.com/gnolizuh/BLSS",
         "title": "gnolizuh/BLSS"
     },
     {
         "category": "players",
         "description": "HLS player for iOS that supports manual selection for the quality of adaptive streams - IvanoBilenchi/Adaptive-Video-Player",
-        "hopmepage": "https://github.com/IvanoBilenchi/Adaptive-Video-Player",
+        "homepage": "https://github.com/IvanoBilenchi/Adaptive-Video-Player",
         "title": "IvanoBilenchi/Adaptive-Video-Player"
     },
     {
         "category": "hls",
         "description": "A light weight M3U8 parser. Support X-Key & X-Session-Key. - M3U8Kit/M3U8Parser",
-        "hopmepage": "https://github.com/M3U8Kit/M3U8Parser",
+        "homepage": "https://github.com/M3U8Kit/M3U8Parser",
         "title": "M3U8Kit/M3U8Parser"
     },
     {
         "category": "hls",
         "description": "Google Chrome Extension for sniffing and downloading HTTP Live streams (HLS) - puemos/hls-downloader-chrome-extension",
-        "hopmepage": "https://github.com/puemos/hls-downloader-chrome-extension",
+        "homepage": "https://github.com/puemos/hls-downloader-chrome-extension",
         "title": "puemos/hls-downloader-chrome-extension"
     },
     {
         "category": "hls",
         "description": "HLS media segmenter.",
-        "hopmepage": "https://github.com/iliya-gr/mediasegmenter",
+        "homepage": "https://github.com/iliya-gr/mediasegmenter",
         "title": "iliya-gr/mediasegmenter"
     },
     {
         "category": "hls",
         "description": "A lovely video downloader for HLS videos.",
-        "hopmepage": "https://github.com/Last-Order/Minyami",
+        "homepage": "https://github.com/Last-Order/Minyami",
         "title": "Last-Order/Minyami"
     },
     {
         "category": "hls",
         "description": "HLS stream health monitoring utility tool provides an report of live HLS stream. This utility tool checks the all available bitrate streams and generates the report in html file format. HTML file i...",
-        "hopmepage": "https://github.com/imsanthosh/HLS-Stream-health-monitoring-tool",
+        "homepage": "https://github.com/imsanthosh/HLS-Stream-health-monitoring-tool",
         "title": "imsanthosh/HLS-Stream-health-monitoring-tool"
     },
     {
         "category": "hls",
         "description": "Download all video files from HLS (HTTP Live Streaming) VoD (Video on Demand) m3u8 playlist for local playback - denex/hls-downloader",
-        "hopmepage": "https://github.com/denex/hls-downloader",
+        "homepage": "https://github.com/denex/hls-downloader",
         "title": "denex/hls-downloader"
     },
     {
         "category": "tools",
         "description": "Unison file synchronizer.",
-        "hopmepage": "https://github.com/bcpierce00/unison",
+        "homepage": "https://github.com/bcpierce00/unison",
         "title": "bcpierce00/unison"
     },
     {
         "category": "hls",
         "description": "An asynchronous terminal-based hls video stream (m3u8) downloader & combiner, with AES-128 decryption support. - SoulMelody/hls-get",
-        "hopmepage": "https://github.com/SoulMelody/hls-get",
+        "homepage": "https://github.com/SoulMelody/hls-get",
         "title": "SoulMelody/hls-get"
     },
     {
         "category": "books",
-        "hopmepage": "https://www.amazon.com/dp/024080578X/ref=cm_sw_r_oth_api_i_oTz-Db86M94H9",
+        "homepage": "https://www.amazon.com/dp/024080578X/ref=cm_sw_r_oth_api_i_oTz-Db86M94H9",
         "title": "The MPEG Handbook, Second Edition "
     },
     {
         "category": "players",
         "description": "ModernAVPlayer is a persistence AVPlayer wrapper. ",
-        "hopmepage": "https://github.com/noreasonprojects/ModernAVPlayer",
+        "homepage": "https://github.com/noreasonprojects/ModernAVPlayer",
         "title": "noreasonprojects/ModernAVPlayer"
     },
     {
         "category": "tools",
         "description": "Node.js DASH and HLS downloader. ",
-        "hopmepage": "https://github.com/schedules/dl",
+        "homepage": "https://github.com/schedules/dl",
         "title": "schedules/dl"
     },
     {
         "category": "books",
-        "hopmepage": "https://www.amazon.com/dp/0071375902/ref=cm_sw_r_oth_api_i_JHz-DbCZ4AJN3",
+        "homepage": "https://www.amazon.com/dp/0071375902/ref=cm_sw_r_oth_api_i_JHz-DbCZ4AJN3",
         "title": "Data Broadcasting: Understanding the ATSC Data Broadcast Standard"
     },
     {
         "category": "books",
-        "hopmepage": "https://www.amazon.com/dp/0470147830/ref=cm_sw_r_oth_api_i_wEz-DbZVSF65G]",
+        "homepage": "https://www.amazon.com/dp/0470147830/ref=cm_sw_r_oth_api_i_wEz-DbZVSF65G]",
         "title": "Digital Television: Technology and Standards "
     },
     {
         "category": "books",
-        "hopmepage": "https://www.amazon.com/dp/0340691905/ref=cm_sw_r_oth_api_i_2Fz-DbHHGXNMZ",
+        "homepage": "https://www.amazon.com/dp/0340691905/ref=cm_sw_r_oth_api_i_2Fz-DbHHGXNMZ",
         "title": "Digital Television: MPEG-1, MPEG-2 and Principles of the DVB System"
     },
     {
         "category": "",
         "description": "High performance file syncing and sharing, with also Markdown WYSIWYG editing, Wiki, file label and other knowledge management features. - haiwen/seafile",
-        "hopmepage": "https://github.com/haiwen/seafile",
+        "homepage": "https://github.com/haiwen/seafile",
         "title": "haiwen/seafile"
     },
     {
         "category": "tools",
         "description": "JavaScript version of GPAC's MP4Box tool.",
-        "hopmepage": "https://github.com/gpac/mp4box.js",
+        "homepage": "https://github.com/gpac/mp4box.js",
         "title": "gpac/mp4box.js"
     },
     {
         "category": "ffmpeg",
         "description": "Manifesto is an HLS tool for creating multiple variants, a master.m3u8 file, and converting 608 captions to segmented webvtt subtitles via ffmpeg. - gitfu/manifesto",
-        "hopmepage": "https://github.com/gitfu/manifesto",
+        "homepage": "https://github.com/gitfu/manifesto",
         "title": "gitfu/manifesto"
     },
     {
         "category": "specs-standards",
-        "hopmepage": "https://www.ansi.org/membership/how_to_join/how_3",
+        "homepage": "https://www.ansi.org/membership/how_to_join/how_3",
         "title": "How Do I Become an ANSI Member"
     },
     {
         "category": "data",
         "description": "\"rsync for cloud storage\" - Google Drive, Amazon Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Cloudfiles, Google Cloud Storage, Yandex Files - rclone/rclone",
-        "hopmepage": "https://github.com/rclone/rclone",
+        "homepage": "https://github.com/rclone/rclone",
         "title": "rclone/rclone"
     },
     {
         "category": "tools",
         "description": "A simple Python based HTTP server that sets CORS allow headers. Useful for streaming from files on local computer - Eyevinn/docker-serve",
-        "hopmepage": "https://github.com/Eyevinn/docker-serve",
+        "homepage": "https://github.com/Eyevinn/docker-serve",
         "title": "Eyevinn/docker-serve"
     },
     {
         "category": "tools",
         "description": "The Stale Playlist Detector (SPD) is a tool to monitor live HLS origin endpoints for changing playlists. The Stale Playlist Detector (SPD) will use data in the top-level playlist, the child playlis...",
-        "hopmepage": "https://github.com/awslabs/aws-stale-playlist-detector",
+        "homepage": "https://github.com/awslabs/aws-stale-playlist-detector",
         "title": "awslabs/aws-stale-playlist-detector"
     },
     {
         "category": "subtitles",
         "description": "Telestream Closed Captioning: MacCaption and CaptionMaker allow you to easily author, edit, create subtitles, and encode and repurpose video captions for television, web and mobile delivery",
-        "hopmepage": "https://www.telestream.net/captioning/overview.htm?utm_campaign=partners&utm_source=itunespartner.apple.com&utm_medium=text_link",
+        "homepage": "https://www.telestream.net/captioning/overview.htm?utm_campaign=partners&utm_source=itunespartner.apple.com&utm_medium=text_link",
         "title": "Closed Captioning and Subtitling Products - MacCaption and CaptionMaker Overview - Telestream"
     },
     {
         "category": "books",
-        "hopmepage": "https://www.amazon.com/dp/1402073577/ref=cm_sw_r_oth_api_i_YIz-DbVR4VXKS",
+        "homepage": "https://www.amazon.com/dp/1402073577/ref=cm_sw_r_oth_api_i_YIz-DbVR4VXKS",
         "title": "Introduction to Digital Audio Coding and Standards"
     },
     {
         "category": "hls",
         "description": "Latest Apple HLS tools copy from Apple Developer Center - creeveliu/HTTPLiveStreamingTools",
-        "hopmepage": "https://github.com/creeveliu/HTTPLiveStreamingTools",
+        "homepage": "https://github.com/creeveliu/HTTPLiveStreamingTools",
         "title": "creeveliu/HTTPLiveStreamingTools"
     },
     {
         "category": "reading",
         "description": "Mux makes adding video to your app or website as easy as making a single API call. But behind the scenes is a large multistep process to analyze and transform the video into something that can be easily consumed by a device. This process is commonly called a media “pipeline”",
-        "hopmepage": "https://mux.com/blog/quantifying-packaging-overhead-2",
+        "homepage": "https://mux.com/blog/quantifying-packaging-overhead-2",
         "title": "Quantifying packaging overhead"
     },
     {
         "category": "hls",
         "description": "A collection of fixes / problem solutions to HTTP video streaming - leandromoreira/http-video-streaming-troubleshooting",
-        "hopmepage": "https://github.com/leandromoreira/http-video-streaming-troubleshooting",
+        "homepage": "https://github.com/leandromoreira/http-video-streaming-troubleshooting",
         "title": "leandromoreira/http-video-streaming-troubleshooting"
     },
     {
         "category": "data",
         "description": "OpenStack Storage (Swift).",
-        "hopmepage": "https://github.com/openstack/swift",
+        "homepage": "https://github.com/openstack/swift",
         "title": "openstack/swift"
     },
     {
         "category": "hls",
         "description": ":sound: Nginx module that generates audio track for HTTP Live Streaming (HLS) streams on the fly. - flavioribeiro/nginx-audio-track-for-hls-module",
-        "hopmepage": "https://github.com/flavioribeiro/nginx-audio-track-for-hls-module",
+        "homepage": "https://github.com/flavioribeiro/nginx-audio-track-for-hls-module",
         "title": "flavioribeiro/nginx-audio-track-for-hls-module"
     },
     {
         "category": "encoding",
         "description": "Snowmix Video Mixer",
-        "hopmepage": "https://snowmix.sourceforge.io",
+        "homepage": "https://snowmix.sourceforge.io",
         "title": "Snowmix - The Swiss Army Knife of Open Source Live Video Mixing."
     },
     {
         "category": "subtitles",
         "description": "Automagically synchronize subtitles with video.",
-        "hopmepage": "https://github.com/smacke/subsync",
+        "homepage": "https://github.com/smacke/subsync",
         "title": "smacke/subsync"
     },
     {
         "category": "ffmpeg",
         "description": "Android java library for FFmpeg binary compiled using https://github.com/writingminds/ffmpeg-android - WritingMinds/ffmpeg-android-java",
-        "hopmepage": "https://github.com/WritingMinds/ffmpeg-android-java",
+        "homepage": "https://github.com/WritingMinds/ffmpeg-android-java",
         "title": "WritingMinds/ffmpeg-android-java"
     },
     {
         "category": "ffmpeg",
         "description": "Shell scripts to build FFmpeg for iOS and tvOS. ",
-        "hopmepage": "https://github.com/kewlbear/FFmpeg-iOS-build-script",
+        "homepage": "https://github.com/kewlbear/FFmpeg-iOS-build-script",
         "title": "kewlbear/FFmpeg-iOS-build-script"
     },
     {
         "category": "players",
         "description": ":lollipop: Wow, such a lovely HTML5 danmaku video player - MoePlayer/DPlayer",
-        "hopmepage": "https://github.com/MoePlayer/DPlayer",
+        "homepage": "https://github.com/MoePlayer/DPlayer",
         "title": "MoePlayer/DPlayer"
     },
     {
         "category": "hls",
         "description": "A server that exposes a directory for video streaming via web interface - shimberger/gohls",
-        "hopmepage": "https://github.com/shimberger/gohls",
+        "homepage": "https://github.com/shimberger/gohls",
         "title": "shimberger/gohls"
     },
     {
         "category": "hls",
         "description": "A hls.js plugin to offload bandwidth from expensive traditional CDNs，while also maximizing a user’s viewing experience.  - cdnbye/hlsjs-p2p-engine",
-        "hopmepage": "https://github.com/cdnbye/hlsjs-p2p-engine",
+        "homepage": "https://github.com/cdnbye/hlsjs-p2p-engine",
         "title": "cdnbye/hlsjs-p2p-engine"
     },
     {
         "category": "server",
         "description": "Ant Media Server supports RTMP, RTSP, WebRTC and Adaptive Bitrate. It can also record videos in MP4, HLS and FLV - ant-media/Ant-Media-Server",
-        "hopmepage": "https://github.com/ant-media/Ant-Media-Server",
+        "homepage": "https://github.com/ant-media/Ant-Media-Server",
         "title": "ant-media/Ant-Media-Server"
     },
     {
         "category": "ffmpeg",
         "description": "A node utility utilizing ffmpeg to encode videos with the hevc codec. - FallingSnow/h265ize",
-        "hopmepage": "https://github.com/FallingSnow/h265ize",
+        "homepage": "https://github.com/FallingSnow/h265ize",
         "title": "FallingSnow/h265ize"
     },
     {
         "category": "players",
         "description": "A HTML5 video player with a parser that saves traffic - bytedance/xgplayer",
-        "hopmepage": "https://github.com/bytedance/xgplayer",
+        "homepage": "https://github.com/bytedance/xgplayer",
         "title": "bytedance/xgplayer"
     },
     {
         "category": "tools",
         "description": "mult-media(audio/image/qrcode/markdown/html/svg) support web service (多媒体处理的web服务, 酷炫二维码, 音频, 图片, svg, markdown, html渲染服务支持)  http://liuyueyi.gitee.io/quick-media/#/ https://liuyueyi.github.io/quic...",
-        "hopmepage": "https://github.com/liuyueyi/quick-media",
+        "homepage": "https://github.com/liuyueyi/quick-media",
         "title": "liuyueyi/quick-media"
     },
     {
         "category": "ffmpeg",
         "description": "An S3-triggered Amazon Web Services Lambda function that runs your choice of FFmpeg 🎬 commands on a file  🎥 and uploads the outputs to a bucket. - binoculars/aws-lambda-ffmpeg",
-        "hopmepage": "https://github.com/binoculars/aws-lambda-ffmpeg",
+        "homepage": "https://github.com/binoculars/aws-lambda-ffmpeg",
         "title": "binoculars/aws-lambda-ffmpeg"
     },
     {
         "category": "ffmpeg",
         "description": "FFME: The Advanced WPF MediaElement (based on FFmpeg) - unosquare/ffmediaelement",
-        "hopmepage": "https://github.com/unosquare/ffmediaelement",
+        "homepage": "https://github.com/unosquare/ffmediaelement",
         "title": "unosquare/ffmediaelement"
     },
     {
         "category": "ffmpeg",
         "description": "Java wrapper around the FFmpeg command line tool.",
-        "hopmepage": "https://github.com/bramp/ffmpeg-cli-wrapper",
+        "homepage": "https://github.com/bramp/ffmpeg-cli-wrapper",
         "title": "bramp/ffmpeg-cli-wrapper"
     },
     {
         "category": "server",
         "description": "SRS is a simple live streaming cluster, a simple joy. - ossrs/srs",
-        "hopmepage": "https://github.com/ossrs/srs",
+        "homepage": "https://github.com/ossrs/srs",
         "title": "ossrs/srs"
     },
     {
         "category": "encoding",
         "description": "Full-HD Software Live-Video-Mixer in python.",
-        "hopmepage": "https://github.com/voc/voctomix",
+        "homepage": "https://github.com/voc/voctomix",
         "title": "voc/voctomix"
     },
     {
         "category": "hls",
         "description": "A web app that lets you insert a cut into a segment, which is then cut into two new segments. - Eyevinn/hls-cutsegment",
-        "hopmepage": "https://github.com/Eyevinn/hls-cutsegment",
+        "homepage": "https://github.com/Eyevinn/hls-cutsegment",
         "title": "Eyevinn/hls-cutsegment"
     },
     {
         "category": "av1",
         "description": "Working with the AV1 Codec Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv",
-        "hopmepage": "https://docs.google.com/presentation/d/12_Vewc0SDpB1FycflfT4us9eipRCy0HWJVSaDMDifRs/edit?usp=sharing",
+        "homepage": "https://docs.google.com/presentation/d/12_Vewc0SDpB1FycflfT4us9eipRCy0HWJVSaDMDifRs/edit?usp=sharing",
         "title": "AV1 Codec"
     },
     {
         "category": "players",
         "description": "HLS, DASH, and future HTTP streaming protocols library for video.js - videojs/http-streaming",
-        "hopmepage": "https://github.com/videojs/http-streaming",
+        "homepage": "https://github.com/videojs/http-streaming",
         "title": "videojs/http-streaming"
     },
     {
         "category": "hls",
         "description": "Parser and generator of M3U8-playlists for Apple HLS. Library for Go language. :cinema: - grafov/m3u8",
-        "hopmepage": "https://github.com/grafov/m3u8",
+        "homepage": "https://github.com/grafov/m3u8",
         "title": "grafov/m3u8"
     },
     {
         "category": "ffmpeg",
         "description": "Port of FFmpeg with Emscripten.",
-        "hopmepage": "https://github.com/Kagami/ffmpeg.js",
+        "homepage": "https://github.com/Kagami/ffmpeg.js",
         "title": "Kagami/ffmpeg.js"
     },
     {
         "category": "encoding",
         "description": "Basic Real-time AV Editor - allowing you to preview, mix, and route live audio and video streams on the cloud - bbc/brave",
-        "hopmepage": "https://github.com/bbc/brave",
+        "homepage": "https://github.com/bbc/brave",
         "title": "bbc/brave"
     },
     {
         "category": "encoding",
         "description": "django-video-encoding helps to convert your videos into different formats and resolutions. - escaped/django-video-encoding",
-        "hopmepage": "https://github.com/escaped/django-video-encoding",
+        "homepage": "https://github.com/escaped/django-video-encoding",
         "title": "escaped/django-video-encoding"
     },
     {
         "category": "players",
         "description": "a video player framework aims to bring wonderful experience on browser - Chimeejs/chimee",
-        "hopmepage": "https://github.com/Chimeejs/chimee",
+        "homepage": "https://github.com/Chimeejs/chimee",
         "title": "Chimeejs/chimee"
     },
     {
         "category": "players",
         "description": "Simplified media playback for bigscreen devices.",
-        "hopmepage": "https://github.com/bbc/bigscreen-player",
+        "homepage": "https://github.com/bbc/bigscreen-player",
         "title": "bbc/bigscreen-player"
     },
     {
         "category": "players",
         "description": "Javascript library which implements a video comparator component: two overlaped and synchronized video players each one playing an independent source. - epiclabs-io/epic-video-comparator",
-        "hopmepage": "https://github.com/epiclabs-io/epic-video-comparator",
+        "homepage": "https://github.com/epiclabs-io/epic-video-comparator",
         "title": "epiclabs-io/epic-video-comparator"
     },
     {},
     {
         "category": "players",
         "description": "Highly extensible, modern, JavaScript video player. Handles MPEG-Dash / HLS / MPEG-4 and is built on top of the HTML5 video element. - matvp91/indigo-player",
-        "hopmepage": "https://github.com/matvp91/indigo-player",
+        "homepage": "https://github.com/matvp91/indigo-player",
         "title": "matvp91/indigo-player"
     },
     {
         "category": "players",
         "description": "🎥 Command line video player.",
-        "hopmepage": "https://github.com/mpv-player/mpv",
+        "homepage": "https://github.com/mpv-player/mpv",
         "title": "mpv-player/mpv"
     },
     {
         "category": "players",
         "description": "A simple HTML5, YouTube and Vimeo player.",
-        "hopmepage": "https://github.com/sampotts/plyr",
+        "homepage": "https://github.com/sampotts/plyr",
         "title": "sampotts/plyr"
     },
     {
         "category": "players",
         "description": "A React video player facilitating adaptive stream playback with custom UI and a React-friendly API. - vimond/replay",
-        "hopmepage": "https://github.com/vimond/replay",
+        "homepage": "https://github.com/vimond/replay",
         "title": "vimond/replay"
     },
     {
         "category": "dash",
         "description": "Dash live source simulator",
-        "hopmepage": "https://github.com/Dash-Industry-Forum/dash-live-source-simulator",
+        "homepage": "https://github.com/Dash-Industry-Forum/dash-live-source-simulator",
         "title": "dash-industry-forum/dash-live-source-simulator"
     },
     {
         "category": "encoding",
         "description": "",
-        "hopmepage": "https://github.com/senko/avtk",
+        "homepage": "https://github.com/senko/avtk",
         "title": "senko/avtk"
     },
     {
         "category": "ffmpeg",
-        "hopmepage": "https://github.com/kkroening/ffmpeg-python",
+        "homepage": "https://github.com/kkroening/ffmpeg-python",
         "title": "kkroening/ffmpeg-python"
     },
     {
         "category": "ffmpeg",
-        "hopmepage": "https://github.com/Ch00k/ffmpy",
+        "homepage": "https://github.com/Ch00k/ffmpy",
         "title":"Ch00k/ffmpy"
     },
     {
         "category": "hls",
         "description": "HLS Analyzer",
-        "hopmepage": "https://github.com/epiclabs-io/hls-analyzer",
+        "homepage": "https://github.com/epiclabs-io/hls-analyzer",
         "title": "epiclabs-io/hls-analyzer"
     },
     {
         "category": "hls",
         "description": "M3U8 library",
-        "hopmepage": "https://github.com/globocom/m3u8",
+        "homepage": "https://github.com/globocom/m3u8",
         "title": "globocom/m3u8"
     },
     {
         "category": "encoding",
-        "hopmepage": "https://github.com/Zulko/moviepy",
+        "homepage": "https://github.com/Zulko/moviepy",
         "title": "Zulko/moviepy"
     },
     {
         "category": "qoe",
-        "hopmepage": "https://github.com/crunchyroll/objective_perceptual_analysis",
+        "homepage": "https://github.com/crunchyroll/objective_perceptual_analysis",
         "title":"crunchyroll/objective_perceptual_analysis"
     },
     {
         "category": "subtitles",
-        "hopmepage": "https://github.com/wargarblgarbl/libgosubs",
+        "homepage": "https://github.com/wargarblgarbl/libgosubs",
         "title": "wargarblgarbl/libgosubs"
     },
     {
         "category": "encoding",
-        "hopmepage": "https://github.com/sitkevij/mpi",
+        "homepage": "https://github.com/sitkevij/mpi",
         "title": "sitkevij/mp"
     },
     {
         "category": "qoe",
-        "hopmepage": "https://github.com/bavc/qctools",
+        "homepage": "https://github.com/bavc/qctools",
         "title": "bavc/qctools"
     },
     {
         "category": "encoding",
-        "hopmepage": "https://github.com/jliljebl/flowblade",
+        "homepage": "https://github.com/jliljebl/flowblade",
         "title": "jliljebl/flowblade"
     },
     {
         "category": "hls",
-        "hopmepage": "https://github.com/muxinc/hlstools",
+        "homepage": "https://github.com/muxinc/hlstools",
         "title": "muxinc/hlstools"
     },
     {
         "category": "tools",
-        "hopmepage": "https://github.com/mifi/lossless-cut",
+        "homepage": "https://github.com/mifi/lossless-cut",
         "title": "mifi/lossless-cut"
     },
     {
         "category": "encoding",
         "description": "MLT Multimedia Framework.",
-        "hopmepage": "https://github.com/mltframework/mlt",
+        "homepage": "https://github.com/mltframework/mlt",
         "title": "mltframework/mlt"
     },
         {
