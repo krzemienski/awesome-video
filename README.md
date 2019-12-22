@@ -19,22 +19,23 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 - [HLS](#hls)
 - [DASH](#dash)
 - [Encoding](#encoding)
+  - [AV1](#av1)
   - [HEVC](#hevc)
   - [VP9](#vp9)
-- [Streaming Server and Storage](#server)
+- [Streaming Server and Storage](#streaming-server-and-storage)
 - [Reading](#reading)
-- [Specs and Standards](#specs-standards)
+- [Specs and Standards](#specs-and-standards)
   - [MPEG](#mpeg)
 - [Players](#players)
   - [Chromecast](#chromecast)
   - [Android](#droid)
-  - [iOS tvOS](#ios)
+  - [iOS tvOS](#ios-tvos)
   - [Roku](#roku)
   - [Smart TVs](#smart-tv)
   - [Web](#web)
 - [FFMPEG](#ffmpeg)
 - [Audio](#audio)
-- [Subtitles and Captions](#subtitle)
+- [Subtitles and Captions](#subtitles-and-captions)
 - [Ads](#ads)
 - [Vendors](#vendors)
   - [Dolby](#dolby)
@@ -237,6 +238,13 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [snickers/snickers](https://github.com/snickers/snickers)  - :chocolate_bar: An open source alternative to the video cloud encoding services. - snickers/snickers
 * [voc/voctomix](https://github.com/voc/voctomix)  - Full-HD Software Live-Video-Mixer in python.
 
+### AV1
+*AV1 libraries, tools, examples, and resources.*
+[back to top](#readme) 
+
+* [AV1 Codec](https://docs.google.com/presentation/d/12_Vewc0SDpB1FycflfT4us9eipRCy0HWJVSaDMDifRs/edit?usp=sharing)  - Working with the AV1 Codec Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv
+* [Eyevinn/av1-player](https://github.com/Eyevinn/av1-player)  - Eyevinn AV1 player.
+
 ### HEVC
 *HEVC (h265) libraries, tools, examples, and resources.*
 [back to top](#readme) 
@@ -265,12 +273,16 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Packagers, origins (s3, gcs), and data movement for linear and finite playback. *
 
 * [ant-media/Ant-Media-Server](https://github.com/ant-media/Ant-Media-Server)  - Ant Media Server supports RTMP, RTSP, WebRTC and Adaptive Bitrate. It can also record videos in MP4, HLS and FLV - ant-media/Ant-Media-Server
+* [haiwen/seafile](https://github.com/haiwen/seafile)  - High performance file syncing and sharing, with also Markdown WYSIWYG editing, Wiki, file label and other knowledge management features. - haiwen/seafile
+* [openstack/swift](https://github.com/openstack/swift)  - OpenStack Storage (Swift).
 * [ossrs/srs](https://github.com/ossrs/srs)  - SRS is a simple live streaming cluster, a simple joy. - ossrs/srs
+* [rclone/rclone](https://github.com/rclone/rclone)  - "rsync for cloud storage" - Google Drive, Amazon Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Cloudfiles, Google Cloud Storage, Yandex Files - rclone/rclone
 
 ## Reading
 *A list of reading articles, blogs, and newsletters for video streaming.*
 
 * [9 Best Home Server Apps to Automate Media Management](https://www.smarthomebeginner.com/best-home-server-apps/)  - These are top 9 best home server apps to automate media management, so you get the latest Movies, Music and TV Shows in the best quality available.
+* [Demystifying HTML5 Video Player](https://medium.com/@eyevinntechnology/demystifying-html5-video-player-e480846328f0)  - In this post we will go under the hood of a HTML video player for video streaming. With the exception of Apple and their browser Safari, no…
 * [Extracting contextual information from video assets](https://medium.com/netflix-techblog/extracting-contextual-information-from-video-assets-ee9da25b6008)  - for an improved Netflix user experience
 * [IMF: A Prescription for Versionitis](https://medium.com/netflix-techblog/imf-a-prescription-for-versionitis-e0b4c1865c20)  - the emerging Interoperable Master Format standard
 * [Inside MPEG's Ambitious Plan to Launch 3 Video Codecs in 2020](https://www.streamingmedia.com/Articles/Editorial/Featured-Articles/Inside-MPEGs-Ambitious-Plan-to-Launch-3-Video-Codecs-in-2020-134694.aspx)  - The pace of innovation is getting faster and the demands on video codecs are getting greater. MPEG's three-part plan answers questions of royalties, licensing, and computational efficiency. Meet VVC, MPEG-5 Part 1 (EVC), and MPEG-5 Part 2 (LCEVC).
@@ -299,62 +311,26 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 ## Players
 *Client players, libraries, tools, and examples.*
 
-* [BrikerMan/BMPlayer](https://github.com/BrikerMan/BMPlayer)  - A video player for iOS, based on AVPlayer, support the horizontal, vertical screen. support adjust volume, brightness and seek by slide, support subtitles.  - BrikerMan/BMPlayer
-* [Chimeejs/chimee](https://github.com/Chimeejs/chimee)  - a video player framework aims to bring wonderful experience on browser - Chimeejs/chimee
-* [DaMingShen/SUCacheLoader](https://github.com/DaMingShen/SUCacheLoader)  - AVPlayer缓存实现. 
-* [Demystifying HTML5 Video Player](https://medium.com/@eyevinntechnology/demystifying-html5-video-player-e480846328f0)  - In this post we will go under the hood of a HTML video player for video streaming. With the exception of Apple and their browser Safari, no…
-* [DeviLeo/DLGPlayer](https://github.com/DeviLeo/DLGPlayer)  - A media player for iOS based on FFmpeg 4.0.
-* [Eyevinn/abr-player-chrome](https://github.com/Eyevinn/abr-player-chrome)  - Chrome extension that uses Eyevinn HTML player to be able to play HLS and MPEG-DASH natively - Eyevinn/abr-player-chrome
-* [Eyevinn/channel-engine-multiview](https://github.com/Eyevinn/channel-engine-multiview)  - A multiview frontend for Eyevinn Channel Engine.
-* [Eyevinn/docker-html5player](https://github.com/Eyevinn/docker-html5player)  - A Docker containerized HTML5 player based on Shaka Player - Eyevinn/docker-html5player
-* [Eyevinn/eyevinn-player](https://github.com/Eyevinn/eyevinn-player)  - Throttled video player to test video streams.
-* [Eyevinn/ott-multiview](https://github.com/Eyevinn/ott-multiview)  - This is a web based multiview screen for HLS and MPEG-DASH streams based on hls.js and Shaka Player. - Eyevinn/ott-multiview
 * [IvanoBilenchi/Adaptive-Video-Player](https://github.com/IvanoBilenchi/Adaptive-Video-Player)  - HLS player for iOS that supports manual selection for the quality of adaptive streams - IvanoBilenchi/Adaptive-Video-Player
-* [MPEGDASHPlayer/MPEGDASH-iOS-Player](https://github.com/MPEGDASHPlayer/MPEGDASH-iOS-Player)  - The MPEG-DASH Player iOS Application.
-* [MoePlayer/DPlayer](https://github.com/MoePlayer/DPlayer)  - :lollipop: Wow, such a lovely HTML5 danmaku video player - MoePlayer/DPlayer
-* [StyleShare/HLSCachingReverseProxyServer](https://github.com/StyleShare/HLSCachingReverseProxyServer)  - A simple local reverse proxy server for HLS segment cache - StyleShare/HLSCachingReverseProxyServer
-* [VeinGuo/VGPlayer](https://github.com/VeinGuo/VGPlayer)  - 📺  A simple iOS video player by Vein.
-* [bbc/bigscreen-player](https://github.com/bbc/bigscreen-player)  - Simplified media playback for bigscreen devices.
-* [bytedance/xgplayer](https://github.com/bytedance/xgplayer)  - A HTML5 video player with a parser that saves traffic - bytedance/xgplayer
 * [davidAgo4g/VideoPlayer-iOS](https://github.com/davidAgo4g/VideoPlayer-iOS)  - A library based on FFMPEG to play video files on iOS using OpenGLES and AudioQueue. Build with theos - davidAgo4g/VideoPlayer-iOS
-* [epiclabs-io/epic-video-comparator](https://github.com/epiclabs-io/epic-video-comparator)  - Javascript library which implements a video comparator component: two overlaped and synchronized video players each one playing an independent source. - epiclabs-io/epic-video-comparator
-* [googleads/google-media-framework-ios](https://github.com/googleads/google-media-framework-ios)  - The Google Media Framework (GMF) is a lightweight media player designed to make video playback and integration with the Google IMA SDK on iOS easier. - googleads/google-media-framework-ios
-* [googlecast/CastReceiver](https://github.com/googlecast/CastReceiver)  - Reference Receiver: CastReceiver shows how to develop a fully Cast Design Checklist compliant receiver with additional features. - googlecast/CastReceiver
-* [hanton/HTY360Player](https://github.com/hanton/HTY360Player)  - Open Source iOS 360 Degree Panorama Video Player.
-* [iina/iina](https://github.com/iina/iina)  - The modern video player for macOS.
 * [imoreapps/ffmpeg-avplayer-for-ios-tvos](https://github.com/imoreapps/ffmpeg-avplayer-for-ios-tvos)  - A tiny but powerful iOS and Apple TV OS av player framework that's based on the FFmpeg library. - imoreapps/ffmpeg-avplayer-for-ios-tvos
-* [kodlian/TVVLCPlayer](https://github.com/kodlian/TVVLCPlayer)  - TVVLCPlayer lets you integrate easily a powerfull video player with playback control views to your tvOS apps. - kodlian/TVVLCPlayer
-* [libobjc/SGPlayer](https://github.com/libobjc/SGPlayer)  - A powerful media play framework for iOS, macOS, and tvOS. - libobjc/SGPlayer
 * [lightspark/lightspark](https://github.com/lightspark/lightspark)  - An open source flash player implementation.
-* [masterjk/ios-avplayer-http-capture](https://github.com/masterjk/ios-avplayer-http-capture)  - iOS based application that embeds the AVPlayer and capture HTTP headers and send it back to the iOS application.  It internally embeds a proxy server. - masterjk/ios-avplayer-http-capture
 * [matvp91/indigo-player](https://github.com/matvp91/indigo-player)  - Highly extensible, modern, JavaScript video player. Handles MPEG-Dash / HLS / MPEG-4 and is built on top of the HTML5 video element. - matvp91/indigo-player
 * [mpv-player/mpv](https://github.com/mpv-player/mpv)  - 🎥 Command line video player.
-* [noreasonprojects/ModernAVPlayer](https://github.com/noreasonprojects/ModernAVPlayer)  - ModernAVPlayer is a persistence AVPlayer wrapper. 
 * [nytimes/ios-360-videos](https://github.com/nytimes/ios-360-videos)  - NYT360Video plays 360-degree video streamed from an AVPlayer on iOS. - nytimes/ios-360-videos
 * [peak3d/inputstream.adaptive](https://github.com/peak3d/inputstream.adaptive)  - kodi inputstream addon for several manifest types.
-* [piemonte/Player](https://github.com/piemonte/Player)  - ▶️ video player in Swift, simple way to play and stream media on iOS/tvOS - piemonte/Player
-* [renzifeng/ZFPlayer](https://github.com/renzifeng/ZFPlayer)  - Support customization of any player SDK and control layer(支持定制任何播放器SDK和控制层) - renzifeng/ZFPlayer
-* [rokudev/videoplayer-channel](https://github.com/rokudev/videoplayer-channel)  - SceneGraph version of the SDK1 VideoPlayer Channel  - rokudev/videoplayer-channel
 * [ruffle-rs/ruffle](https://github.com/ruffle-rs/ruffle)  - A Flash Player emulator written in Rust.
-* [sampotts/plyr](https://github.com/sampotts/plyr)  - A simple HTML5, YouTube and Vimeo player.
-* [tanersener/mobile-ffmpeg](https://github.com/tanersener/mobile-ffmpeg)  - FFmpeg for Android, iOS and tvOS.
 * [tjenkinson/media-element-syncer](https://github.com/tjenkinson/media-element-syncer)  - Synchronise two or more HTML5 media elements.
 * [ustwo/videoplayback-ios](https://github.com/ustwo/videoplayback-ios)  - Swift AVPlayer wrapper using the VIPER architecture. Currently a work in progress  - ustwo/videoplayback-ios
-* [video-dev/hls.js](https://github.com/video-dev/hls.js)  - JavaScript HLS client using Media Source Extension - video-dev/hls.js
-* [videojs/http-streaming](https://github.com/videojs/http-streaming)  - HLS, DASH, and future HTTP streaming protocols library for video.js - videojs/http-streaming
-* [videojs/video.js](https://github.com/videojs/video.js)  - Video.js - open source HTML5 & Flash video player.
 * [videolan/vlc](https://github.com/videolan/vlc)  - VLC media player - All pull requests are ignored, please follow https://wiki.videolan.org/Sending_Patches_VLC/ - videolan/vlc
-* [vimond/replay](https://github.com/vimond/replay)  - A React video player facilitating adaptive stream playback with custom UI and a React-friendly API. - vimond/replay
 * [vitalets/awesome-smart-tv](https://github.com/vitalets/awesome-smart-tv)  - :zap:A curated list of awesome resources for building Smart TV apps - vitalets/awesome-smart-tv
-* [vitoziv/VIMediaCache](https://github.com/vitoziv/VIMediaCache)  - Cache media file while play media using AVPlayer.
-* [xiewei-wayne/FFEngine.framework](https://github.com/xiewei-wayne/FFEngine.framework)  - FFEngine framework is a high performance player sdk for iOS based on ffmpeg. - xiewei-wayne/FFEngine.framework
-* [xiewei-wayne/rtmp-video-player-for-ios](https://github.com/xiewei-wayne/rtmp-video-player-for-ios)  - Based on FFEngine framework, a rtmp video player for apple iOS devices. - xiewei-wayne/rtmp-video-player-for-ios
 
 ### Chromecast
 *Chromecast app tools, libraries,and examples.*
 [back to top](#readme) 
 
 * [Build a basic Cast Receiver](https://codelabs.developers.google.com/codelabs/cast-receiver/#0)  - 
+* [googlecast/CastReceiver](https://github.com/googlecast/CastReceiver)  - Reference Receiver: CastReceiver shows how to develop a fully Cast Design Checklist compliant receiver with additional features. - googlecast/CastReceiver
 
 ### Android
 *Android and fireTV tools, sdks, and examples.*
@@ -365,6 +341,25 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *AVPlayer, playback tools, sdks, and examples.*
 [back to top](#readme) 
 
+* [BrikerMan/BMPlayer](https://github.com/BrikerMan/BMPlayer)  - A video player for iOS, based on AVPlayer, support the horizontal, vertical screen. support adjust volume, brightness and seek by slide, support subtitles.  - BrikerMan/BMPlayer
+* [DaMingShen/SUCacheLoader](https://github.com/DaMingShen/SUCacheLoader)  - AVPlayer缓存实现. 
+* [DeviLeo/DLGPlayer](https://github.com/DeviLeo/DLGPlayer)  - A media player for iOS based on FFmpeg 4.0.
+* [MPEGDASHPlayer/MPEGDASH-iOS-Player](https://github.com/MPEGDASHPlayer/MPEGDASH-iOS-Player)  - The MPEG-DASH Player iOS Application.
+* [StyleShare/HLSCachingReverseProxyServer](https://github.com/StyleShare/HLSCachingReverseProxyServer)  - A simple local reverse proxy server for HLS segment cache - StyleShare/HLSCachingReverseProxyServer
+* [VeinGuo/VGPlayer](https://github.com/VeinGuo/VGPlayer)  - 📺  A simple iOS video player by Vein.
+* [googleads/google-media-framework-ios](https://github.com/googleads/google-media-framework-ios)  - The Google Media Framework (GMF) is a lightweight media player designed to make video playback and integration with the Google IMA SDK on iOS easier. - googleads/google-media-framework-ios
+* [hanton/HTY360Player](https://github.com/hanton/HTY360Player)  - Open Source iOS 360 Degree Panorama Video Player.
+* [iina/iina](https://github.com/iina/iina)  - The modern video player for macOS.
+* [kodlian/TVVLCPlayer](https://github.com/kodlian/TVVLCPlayer)  - TVVLCPlayer lets you integrate easily a powerfull video player with playback control views to your tvOS apps. - kodlian/TVVLCPlayer
+* [libobjc/SGPlayer](https://github.com/libobjc/SGPlayer)  - A powerful media play framework for iOS, macOS, and tvOS. - libobjc/SGPlayer
+* [masterjk/ios-avplayer-http-capture](https://github.com/masterjk/ios-avplayer-http-capture)  - iOS based application that embeds the AVPlayer and capture HTTP headers and send it back to the iOS application.  It internally embeds a proxy server. - masterjk/ios-avplayer-http-capture
+* [noreasonprojects/ModernAVPlayer](https://github.com/noreasonprojects/ModernAVPlayer)  - ModernAVPlayer is a persistence AVPlayer wrapper. 
+* [piemonte/Player](https://github.com/piemonte/Player)  - ▶️ video player in Swift, simple way to play and stream media on iOS/tvOS - piemonte/Player
+* [renzifeng/ZFPlayer](https://github.com/renzifeng/ZFPlayer)  - Support customization of any player SDK and control layer
+* [tanersener/mobile-ffmpeg](https://github.com/tanersener/mobile-ffmpeg)  - FFmpeg for Android, iOS and tvOS.
+* [vitoziv/VIMediaCache](https://github.com/vitoziv/VIMediaCache)  - Cache media file while play media using AVPlayer.
+* [xiewei-wayne/FFEngine.framework](https://github.com/xiewei-wayne/FFEngine.framework)  - FFEngine framework is a high performance player sdk for iOS based on ffmpeg. - xiewei-wayne/FFEngine.framework
+* [xiewei-wayne/rtmp-video-player-for-ios](https://github.com/xiewei-wayne/rtmp-video-player-for-ios)  - Based on FFEngine framework, a rtmp video player for apple iOS devices. - xiewei-wayne/rtmp-video-player-for-ios
 
 ### Roku
 *Roku app tools, libraries,and examples.*
@@ -402,6 +397,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [rokudev/dolby-audio-sample](https://github.com/rokudev/dolby-audio-sample)  - A collection of Dolby test content available in different streaming protocols. - rokudev/dolby-audio-sample
 * [rokudev/samples](https://github.com/rokudev/samples)  - Collection of sample channels for side-loading on your Roku device - rokudev/samples
 * [rokudev/unit-testing-framework](https://github.com/rokudev/unit-testing-framework)  - Tool for automating and testing Roku channels.
+* [rokudev/videoplayer-channel](https://github.com/rokudev/videoplayer-channel)  - SceneGraph version of the SDK1 VideoPlayer Channel  - rokudev/videoplayer-channel
 * [rolandoislas/BrightWebSocket](https://github.com/rolandoislas/BrightWebSocket)  - RFC 6455 WebSocket Library for the Roku.
 * [schtanislau/brightscript-state-machine](https://github.com/schtanislau/brightscript-state-machine)  - State management for Roku channel..
 * [sjbarag/brs-testbed](https://github.com/sjbarag/brs-testbed)  - A simple, buildable Roku channel that executes arbitrary BrightScript files. - sjbarag/brs-testbed
@@ -418,6 +414,21 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Web browser player, tools, sdks, and examples.*
 [back to top](#readme) 
 
+* [Chimeejs/chimee](https://github.com/Chimeejs/chimee)  - a video player framework aims to bring wonderful experience on browser - Chimeejs/chimee
+* [Eyevinn/abr-player-chrome](https://github.com/Eyevinn/abr-player-chrome)  - Chrome extension that uses Eyevinn HTML player to be able to play HLS and MPEG-DASH natively - Eyevinn/abr-player-chrome
+* [Eyevinn/channel-engine-multiview](https://github.com/Eyevinn/channel-engine-multiview)  - A multiview frontend for Eyevinn Channel Engine.
+* [Eyevinn/docker-html5player](https://github.com/Eyevinn/docker-html5player)  - A Docker containerized HTML5 player based on Shaka Player - Eyevinn/docker-html5player
+* [Eyevinn/eyevinn-player](https://github.com/Eyevinn/eyevinn-player)  - Throttled video player to test video streams.
+* [Eyevinn/ott-multiview](https://github.com/Eyevinn/ott-multiview)  - This is a web based multiview screen for HLS and MPEG-DASH streams based on hls.js and Shaka Player. - Eyevinn/ott-multiview
+* [MoePlayer/DPlayer](https://github.com/MoePlayer/DPlayer)  - :lollipop: Wow, such a lovely HTML5 danmaku video player - MoePlayer/DPlayer
+* [bbc/bigscreen-player](https://github.com/bbc/bigscreen-player)  - Simplified media playback for bigscreen devices.
+* [bytedance/xgplayer](https://github.com/bytedance/xgplayer)  - A HTML5 video player with a parser that saves traffic - bytedance/xgplayer
+* [epiclabs-io/epic-video-comparator](https://github.com/epiclabs-io/epic-video-comparator)  - Javascript library which implements a video comparator component: two overlaped and synchronized video players each one playing an independent source. - epiclabs-io/epic-video-comparator
+* [sampotts/plyr](https://github.com/sampotts/plyr)  - A simple HTML5, YouTube and Vimeo player.
+* [video-dev/hls.js](https://github.com/video-dev/hls.js)  - JavaScript HLS client using Media Source Extension - video-dev/hls.js
+* [videojs/http-streaming](https://github.com/videojs/http-streaming)  - HLS, DASH, and future HTTP streaming protocols library for video.js - videojs/http-streaming
+* [videojs/video.js](https://github.com/videojs/video.js)  - Video.js - open source HTML5 & Flash video player.
+* [vimond/replay](https://github.com/vimond/replay)  - A React video player facilitating adaptive stream playback with custom UI and a React-friendly API. - vimond/replay
 
 ## FFMPEG
 *FFMPEG libraries, configs, tools, and examples.*
@@ -475,12 +486,12 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 
 * [BingLingGroup/autosub](https://github.com/BingLingGroup/autosub)  - Command-line utility to transcribe/translate from video/audio/subtitles to subtitles  - BingLingGroup/autosub
 * [Can ffmpeg extract closed caption data](https://stackoverflow.com/questions/3169910/can-ffmpeg-extract-closed-caption-data)  - I am currently using ffmpeg to convert videos in various formats to flv files. One request has also come up and that is to get closed caption info out o the file as well. Does anyone have any exper...
+* [Closed Captioning and Subtitling Products - MacCaption and CaptionMaker Overview - Telestream](https://www.telestream.net/captioning/overview.htm?utm_campaign=partners&utm_source=itunespartner.apple.com&utm_medium=text_link)  - Telestream Closed Captioning: MacCaption and CaptionMaker allow you to easily author, edit, create subtitles, and encode and repurpose video captions for television, web and mobile delivery
 * [Comcast/caption-inspector](https://github.com/Comcast/caption-inspector)  - Caption Inspector is a reference decoder for Closed Captions (CEA-608 and CEA-708). - Comcast/caption-inspector
 * [Comcast/cea-extractor](https://github.com/Comcast/cea-extractor)  - Parsing and display logic for CEA-608 caption data in fragmented MP4 files. - Comcast/cea-extractor
 * [DVB captions in media convert](https://docs.aws.amazon.com/mediaconvert/latest/ug/dvb-sub-output-captions.html)  - ** If your output captions are DVB-Sub, set them up in your outputs according to the following information.
 * [Dash-Industry-Forum/cea608.js](https://github.com/Dash-Industry-Forum/cea608.js)  - A JavaScript project designed to extract CEA-608 captions. - Dash-Industry-Forum/cea608.js
 * [Eyevinn/srt-metadata-extractor](https://github.com/Eyevinn/srt-metadata-extractor)  - Contribute to Eyevinn/srt-metadata-extractor development by creating an account on GitHub.
-* [Short-notes on Add subtitle to any video with ffmpeg](https://mahasak.com/short-notes-on-add-subtitle-to-any-video-with-ffmpeg/)  - บางทีเวลาทำ VDO ประกอบ presentation หรือ document นี่ก็จะมีความอยากใส่ subtitle เพื่อที่จะได้ให้คำอธิบายแบบละเอียดๆ เคลียร์ๆ และไม่ต้องมาซ้ำอธิบายหลายๆครั้ง วันนี้พอทำ VDO อันที่ 2/3 นี่แหละก็ลืมไปแล้วว่าครั้งที่แล้วทำยังไงเลยเขียน blog เผื
 * [The ultimate guide to CCs](https://www.3playmedia.com/resources/popular-topics/closed-captioning/)  - 
 * [Web Video Text Tracks Format (WebVTT)](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API)  - Web Video Text Tracks Format (WebVTT) is a format for displaying timed text tracks (such as subtitles or captions) using the track element.
 * [abinashmeher999/voice-data-extract](https://github.com/abinashmeher999/voice-data-extract)  - A command line interface to combine text information from subtitles with voice data in the video. Provides a convenient way to generate training data for speech-recognition purposes. - abinashmeher...
@@ -491,8 +502,10 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [cessen/subs_extract](https://github.com/cessen/subs_extract)  - Extracts per-sentence subtitles + audio from a subtitle file + video file. - cessen/subs_extract
 * [federicocalendino/pysub-parser](https://github.com/federicocalendino/pysub-parser)  - Utility to extract the text and timestamps of a subtitle file (.srt, .ssa, .sub, .txt). - federicocalendino/pysub-parser
 * [jnorton001/pycaption-cli](https://github.com/jnorton001/pycaption-cli)  - A command line interface for the pycaption module. - jnorton001/pycaption-cli
-* [shawnsky/extract-subtitles](https://github.com/shawnsky/extract-subtitles)  - Extract Subtitles From Video 视频字幕提取 帧间差分法识别关键帧 OCR识别 - shawnsky/extract-subtitles
+* [shawnsky/extract-subtitles](https://github.com/shawnsky/extract-subtitles)  - Extract Subtitles From Video
+* [smacke/subsync](https://github.com/smacke/subsync)  - Automagically synchronize subtitles with video.
 * [statsbiblioteket/tv-subtitle-extraction](https://github.com/statsbiblioteket/tv-subtitle-extraction)  - System for extraction of subtitles from TV broadcasts. - statsbiblioteket/tv-subtitle-extraction
+* [wargarblgarbl/libgosubs](https://github.com/wargarblgarbl/libgosubs)  - 
 * [xinnjie/extract-subtitle](https://github.com/xinnjie/extract-subtitle)  - extract subtitles from video.
 
 ## Ads
@@ -516,10 +529,8 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Dolby specs, libraries, examples, and tools.*
 [back to top](#readme) 
 
-* [
-	Dolby Vision for Content Creators | Dolby Laboratories
-](https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-for-creative-professionals.html)  - The Dolby Vision integrated workflow gives you the tools needed to efficiently create wide color gamut and high dynamic range content and ensures that the look you create in the color suite stays true when experienced across across a multitude of devices. With Dolby Vision high dynamic range imaging, you get bolder highlights and incredible contrast. That means greater sharpness, depth, and more detailed shadows to expand your storytelling possibilities like never before.
 * [Dolby Professional Loudness Suite](https://www.dolby.com/us/en/technologies/dolby-professional-loudness-solutions.pdf)  - 
+* [Dolby Vision for Content Creators | Dolby Laboratories](https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-for-creative-professionals.html)  - The Dolby Vision integrated workflow gives you the tools needed to efficiently create wide color gamut and high dynamic range content and ensures that the look you create in the color suite stays true when experienced across across a multitude of devices. With Dolby Vision high dynamic range imaging, you get bolder highlights and incredible contrast. That means greater sharpness, depth, and more detailed shadows to expand your storytelling possibilities like never before.
 * [Hybrik API Reference](https://docs.hybrik.com/api/v1/HybrikAPI.html?#getting-started)  - 
 * [dolby-vision-streams-within-the-http-live-streaming-format](https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-streams-within-the-http-live-streaming-format-v2.0.pdf)  - 
 * [hybrik/hybrik-samples](https://github.com/hybrik/hybrik-samples)  - Hybrik Samples.
