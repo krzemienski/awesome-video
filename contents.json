@@ -2220,6 +2220,12 @@
             "title": "bloc97/Anime4K"
         },
         {
+            "category": "droid",
+            "homepage": "https://github.com/google/ExoPlayer",
+            "description": "ExoPlayer is an application level media player for Android.",
+            "title": "google/ExoPlayer"
+        },
+        {
             "category": "roku",
             "homepage": "https://medium.com/plexlabs/xml-code-good-times-rsg-application-b963f0cec01b",
             "description": "Written by John Zolezzi — April 6th 2018",
