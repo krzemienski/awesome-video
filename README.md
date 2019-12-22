@@ -335,6 +335,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Android and fireTV tools, sdks, and examples.*
 [back to top](#readme) 
 
+* [google/ExoPlayer](https://github.com/google/ExoPlayer)  - ExoPlayer is an application level media player for Android.
 
 ### iOS tvOS
 *AVPlayer, playback tools, sdks, and examples.*
