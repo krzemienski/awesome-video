@@ -698,30 +698,6 @@
         },
         {
             "category": "talks-presentations-podcasts",
-            "homepage": "https://www.youtube.com/watch?v=bfK_f7GBA8s&list=PLkyaYNWEKcOfARqEht42i1P4kBemzEV2V",
-            "description": "As part of our FIFA World Cup coverage this year, we've been able to deliver matches live in UHD with HDR10. We had a few short weeks to negotiate source acq...",
-            "title": "Billy Romero & Thomas Symborski - Lessons learned from streaming the World Cup in UHD with HDR"
-        },
-        {
-            "category": "talks-presentations-podcasts",
-            "homepage": "https://www.youtube.com/watch?v=PSdhW-R9u6s&list=PLkyaYNWEKcOfntbMd6KtHhF7qpL9hj6of",
-            "description": "Next year will see widespread availability of a new creative canvas (High Dynamic Range, Wider Colors), a new royalty-free codec (AV-1) and a new royalty-fre...",
-            "title": "Mark Watson - Lights, Colors, Artwork"
-        },
-        {
-            "category": "talks-presentations-podcasts",
-            "homepage": "https://www.youtube.com/watch?v=kEo2TrXm7F4&list=PLkyaYNWEKcOekC2m9Na77G40Lmhb1bnsK",
-            "description": "We encode movies and TV shows for millions of viewers worldwide and aim to deliver the best video quality possible no matter what the content, viewing device...",
-            "title": "Anne Aaron, Netflix - Measuring Perceptual Video Quality at Scale [DEMUXED 2016]"
-        },
-        {
-            "category": "talks-presentations-podcasts",
-            "homepage": "https://www.youtube.com/watch?v=s661CU6Fvl4&list=PLkyaYNWEKcOcIXrPKRfIK-T9J48J4Vuwk",
-            "description": "Presented by Matt Szatmary at Demuxed 2015. Keynote: A tongue-in-cheek stroll through the history of video standards.",
-            "title": "What Idiot Designed This?! [Keynote by Matt Szatmary at Demuxed 2015]"
-        },
-        {
-            "category": "talks-presentations-podcasts",
             "homepage": " http://mile-high.video/files/mhv2019/",
             "description": "Mile High Video 2019 talks & presentations",
             "title": "Mile High Video 2019 Proceedings"
