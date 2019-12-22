@@ -15,7 +15,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 - [Introduction](#intro)
 - [Learning](#learning)
   - [Books](#books)
-  - [Talks, Presentations, Podcasts](#talks)
+  - [Talks Presentations Podcasts](#talks-presentations-podcasts)
 - [HLS](#hls)
 - [DASH](#dash)
 - [Encoding](#encoding)
@@ -111,19 +111,18 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Transporting Compressed Digital Video](https://www.amazon.com/dp/140207011X/ref=cm_sw_r_oth_api_i_DLz-DbTTZS7FP)  - 
 * [Video Encoding by the Numbers: Eliminate the Guesswork from your Streaming Video](https://www.amazon.com/Video-Encoding-Numbers-Eliminate-Guesswork/dp/0998453005/ref=pd_bxgy_14_img_2/142-3989735-6086504?_encoding=UTF8&pd_rd_i=0998453005&pd_rd_r=6591968b-e54f-4fb1-8ab8-18e3f2a52f88&pd_rd_w=tWNbP&pd_rd_wg=RtRbb&pf_rd_p=09627863-9889-4290-b90a-5e9f86682449&pf_rd_r=JQP62Z6C5QJR49SEZNHP&psc=1&refRID=JQP62Z6C5QJR49SEZNHP)  - 
 
-### Talks, Presentations, Podcasts
+### Talks Presentations Podcasts
 *Conference talks and pdf presentations and podcasts on streaming video .*
 [back to top](#readme) 
 
-* [Advances in HTTP Live Streaming - WWDC 2017 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2017/504/)  - HTTP Live Streaming allows you to stream live and on-demand content to global audiences. Learn about great new features and enhancements...
-* [Anne Aaron, Netflix - Measuring Perceptual Video Quality at Scale [DEMUXED 2016]](https://www.youtube.com/watch?v=kEo2TrXm7F4&list=PLkyaYNWEKcOekC2m9Na77G40Lmhb1bnsK)  - We encode movies and TV shows for millions of viewers worldwide and aim to deliver the best video quality possible no matter what the content, viewing device...
-* [Billy Romero & Thomas Symborski - Lessons learned from streaming the World Cup in UHD with HDR](https://www.youtube.com/watch?v=bfK_f7GBA8s&list=PLkyaYNWEKcOfARqEht42i1P4kBemzEV2V)  - As part of our FIFA World Cup coverage this year, we've been able to deliver matches live in UHD with HDR10. We had a few short weeks to negotiate source acq...
-* [Demuxed 2019 - YouTube](https://m.youtube.com/playlist?list=PLkyaYNWEKcOf_C_6W45abNvXMb40xUUqh)  - 
-* [Demuxed | Heavybit](https://www.heavybit.com/library/podcasts/demuxed/)  - Demuxed is a podcast made for and by engineers working with video. Brought to you by Heavybit.
+* [Demuxed 2016](https://www.youtube.com/watch?v=kEo2TrXm7F4&list=PLkyaYNWEKcOekC2m9Na77G40Lmhb1bnsK)  - 2016 Demuxed talks & presentations
+* [Demuxed 2017](https://www.youtube.com/watch?v=PSdhW-R9u6s&list=PLkyaYNWEKcOfntbMd6KtHhF7qpL9hj6of)  - 2017 Demuxed talks & presentations
+* [Demuxed 2018](https://www.youtube.com/watch?v=bfK_f7GBA8s&list=PLkyaYNWEKcOfARqEht42i1P4kBemzEV2V)  - 2018  Demuxed talks & presentations
+* [Demuxed 2019](https://m.youtube.com/playlist?list=PLkyaYNWEKcOf_C_6W45abNvXMb40xUUqh)  - 2019 Demuxed talks & presentations
+* [Demuxed | Heavybit](https://www.heavybit.com/library/podcasts/demuxed)  - Demuxed is a podcast made for and by engineers working with video. Brought to you by Heavybit.
 * [From Sys Admin to Netflix SRE](https://www.youtube.com/watch?v=lZI51YzIgVE)  - Talk by Jonah Horowitz, Albert Tobey What does it take to be a Netflix SRE? With tens of thousands of Linux instances in a distributed system architecture, a...
-* [Mark Watson - Lights, Colors, Artwork](https://www.youtube.com/watch?v=PSdhW-R9u6s&list=PLkyaYNWEKcOfntbMd6KtHhF7qpL9hj6of)  - Next year will see widespread availability of a new creative canvas (High Dynamic Range, Wider Colors), a new royalty-free codec (AV-1) and a new royalty-fre...
-* [The Video Insiders Podcast](https://thevideoinsiders.simplecast.com/episodes)  - 
-* [What Idiot Designed This?! [Keynote by Matt Szatmary at Demuxed 2015]](https://www.youtube.com/watch?v=s661CU6Fvl4&list=PLkyaYNWEKcOcIXrPKRfIK-T9J48J4Vuwk)  - Presented by Matt Szatmary at Demuxed 2015. Keynote: A tongue-in-cheek stroll through the history of video standards.
+* [Mile High Video 2019 Proceedings](http://mile-high.video/files/mhv2019)  - Mile High Video 2019 talks & presentations
+* [The Video Insiders](https://thevideoinsiders.simplecast.com/episodes)  - Video Insiders Podcast
 
 ## HLS
 *HLS tools, libraries, and resources.*
@@ -276,7 +275,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [haiwen/seafile](https://github.com/haiwen/seafile)  - High performance file syncing and sharing, with also Markdown WYSIWYG editing, Wiki, file label and other knowledge management features. - haiwen/seafile
 * [openstack/swift](https://github.com/openstack/swift)  - OpenStack Storage (Swift).
 * [ossrs/srs](https://github.com/ossrs/srs)  - SRS is a simple live streaming cluster, a simple joy. - ossrs/srs
-* [rclone/rclone](https://github.com/rclone/rclone)  - "rsync for cloud storage" - Google Drive, Amazon Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Cloudfiles, Google Cloud Storage, Yandex Files - rclone/rclone
+* [rclone/rclone](https://github.com/rclone/rclone)  - rsync for cloud storage - Google Drive, Amazon Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Cloudfiles, Google Cloud Storage, Yandex Files - rclone/rclone
 
 ## Reading
 *A list of reading articles, blogs, and newsletters for video streaming.*
@@ -342,7 +341,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 [back to top](#readme) 
 
 * [BrikerMan/BMPlayer](https://github.com/BrikerMan/BMPlayer)  - A video player for iOS, based on AVPlayer, support the horizontal, vertical screen. support adjust volume, brightness and seek by slide, support subtitles.  - BrikerMan/BMPlayer
-* [DaMingShen/SUCacheLoader](https://github.com/DaMingShen/SUCacheLoader)  - AVPlayer缓存实现. 
+* [DaMingShen/SUCacheLoader](https://github.com/DaMingShen/SUCacheLoader)  - AVPlayer 
 * [DeviLeo/DLGPlayer](https://github.com/DeviLeo/DLGPlayer)  - A media player for iOS based on FFmpeg 4.0.
 * [MPEGDASHPlayer/MPEGDASH-iOS-Player](https://github.com/MPEGDASHPlayer/MPEGDASH-iOS-Player)  - The MPEG-DASH Player iOS Application.
 * [StyleShare/HLSCachingReverseProxyServer](https://github.com/StyleShare/HLSCachingReverseProxyServer)  - A simple local reverse proxy server for HLS segment cache - StyleShare/HLSCachingReverseProxyServer
@@ -406,7 +405,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [zype/zype-roku-scenegraph](https://github.com/zype/zype-roku-scenegraph)  - Contribute to zype/zype-roku-scenegraph development by creating an account on GitHub.
 
 ### Smart TVs
-**
 [back to top](#readme) 
 
 
@@ -518,7 +516,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Understanding Server-Side Dynamic Ad Insertion](https://medium.com/@eyevinntechnology/understanding-server-side-dynamic-ad-insertion-d7ed90e34aa2)  - In this post we’re explaining the principles behind Server-Side Dynamic Ad Insertion technology. If you are already familiar with video…
 
 ## Vendors
-*Video indurstry's various vendors documentations.*
+*Video indurstry's various vendors products and documentations.*
 
 * [switch media adease](https://www.switch.tv/mediahq/adease/)  - 
 * [switch media live2vod](https://www.switch.tv/mediahq/live2vod/)  - 
