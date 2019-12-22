@@ -27,8 +27,8 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 - [Specs and Standards](#specs-and-standards)
   - [MPEG](#mpeg)
 - [Players](#players)
+  - [Android](#android)
   - [Chromecast](#chromecast)
-  - [Android](#droid)
   - [iOS tvOS](#ios-tvos)
   - [Roku](#roku)
   - [Smart TVs](#smart-tv)
@@ -324,18 +324,18 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [videolan/vlc](https://github.com/videolan/vlc)  - VLC media player - All pull requests are ignored, please follow https://wiki.videolan.org/Sending_Patches_VLC/ - videolan/vlc
 * [vitalets/awesome-smart-tv](https://github.com/vitalets/awesome-smart-tv)  - :zap:A curated list of awesome resources for building Smart TV apps - vitalets/awesome-smart-tv
 
+### Android
+*Android and fireTV tools, sdks, and examples.*
+[back to top](#readme) 
+
+* [google/ExoPlayer](https://github.com/google/ExoPlayer)  - ExoPlayer is an application level media player for Android.
+
 ### Chromecast
 *Chromecast app tools, libraries,and examples.*
 [back to top](#readme) 
 
 * [Build a basic Cast Receiver](https://codelabs.developers.google.com/codelabs/cast-receiver/#0)  - 
 * [googlecast/CastReceiver](https://github.com/googlecast/CastReceiver)  - Reference Receiver: CastReceiver shows how to develop a fully Cast Design Checklist compliant receiver with additional features. - googlecast/CastReceiver
-
-### Android
-*Android and fireTV tools, sdks, and examples.*
-[back to top](#readme) 
-
-* [google/ExoPlayer](https://github.com/google/ExoPlayer)  - ExoPlayer is an application level media player for Android.
 
 ### iOS tvOS
 *AVPlayer, playback tools, sdks, and examples.*
