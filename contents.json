@@ -2550,6 +2550,51 @@
             "homepage": "https://www.3playmedia.com/resources/popular-topics/closed-captioning/",
             "title": "The ultimate guide to CCs"
         },
+         {
+            "category": "subtitles-and-captions",
+            "homepage": "https://github.com/sandflow/imscJS/",
+            "title": "sandflow/imscJS"
+        },
+         {
+            "category": "subtitles-and-captions",
+            "homepage": "https://sandflow.com/imsc1proc/index.html",
+            "title": "IMSC renderer"
+        },
+         {
+            "category": "subtitles-and-captions",
+            "homepage": "https://apps.sandflow.com/imscV/",
+            "title": "IMSC validator"
+        },
+         {
+            "category": "subtitles-and-captions",
+            "homepage": "https://subcheck.io/#/",
+            "title": "IRT/BaseX IMSC validator"
+        },
+    {
+            "category": "subtitles-and-captions",
+            "homepage": "https://www.w3.org/TR/ttml-imsc1.1/",
+            "title": "IMSC Specification"
+        },
+            {
+            "category": "subtitles-and-captions",
+            "homepage": "http://ebu.github.io/ebu-tt-live-toolkit/",
+            "title": "EBU-TT Live Interoperability Toolkit"
+        },
+             {
+            "category": "subtitles-and-captions",
+            "homepage": "https://github.com/w3c/IMSC-1.0.1_Text_TestContent/",
+            "title": "IMSC 1.0.1 Text test content"
+        },
+         {
+            "category": "subtitles-and-captions",
+            "homepage": "https://github.com/w3c/IMSC-1.1_Text_TestContent/",
+            "title": "IMSC 1.1 Text test content"
+        },
+         {
+            "category": "subtitles-and-captions",
+            "homepage": "https://github.com/w3c/IMSC-1.1_Image_TestContent/",
+            "title": "IMSC 1.1 Image test content"
+        },
         {
             "category": "qoe",
             "homepage": "https://streaminglearningcenter.com/blogs/collection-of-vmaf-resources.html",
