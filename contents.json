@@ -30,7 +30,7 @@
         },
         {
             "title": "Streaming Server and Storage",
-            "id": "server",
+            "id": "streaming-server-and-storage",
             "description": "Packagers, origins (s3, gcs), and data movement for linear and finite playback. "
         },
         {
@@ -40,13 +40,13 @@
         },
         {
             "title": "Specs and Standards",
-            "id": "specs-standards",
+            "id": "specs-and-standards",
             "description": "Latest offical specs and standards related to video streaming."
         },
         {
             "title": "MPEG",
             "id": "mpeg",
-            "parent": "specs-standards",
+            "parent": "specs-and-standards",
             "description": "MPEG meetings, standards, and resources. "
         },
         {
@@ -66,7 +66,7 @@
         },
         {
             "title": "Subtitles and Captions",
-            "id": "subtitle",
+            "id": "subtitles-and-captions",
             "description": "Subtitling & Closed Caption libraries, tools, and examples."
         },
         {
@@ -82,6 +82,12 @@
             "description": "VP9 libraries, tools, examples, and resources."
         },
         {
+            "title": "AV1",
+            "id": "av1",
+            "parent": "encoding",
+            "description": "AV1 libraries, tools, examples, and resources."
+        },
+        {
             "title": "Ads",
             "id": "ads",
             "description": "Ads in streaming video related libraries, tools, examples, and resources."
@@ -94,7 +100,7 @@
         },
         {
             "title": "iOS tvOS",
-            "id": "ios",
+            "id": "ios-tvos",
             "parent": "players",
             "description": "AVPlayer, playback tools, sdks, and examples."
         },
@@ -275,7 +281,7 @@
         "title": "The MPEG Handbook, Second Edition "
     },
     {
-        "category": "players",
+        "category": "ios-tvos",
         "description": "ModernAVPlayer is a persistence AVPlayer wrapper. ",
         "homepage": "https://github.com/noreasonprojects/ModernAVPlayer",
         "title": "noreasonprojects/ModernAVPlayer"
@@ -302,7 +308,7 @@
         "title": "Digital Television: MPEG-1, MPEG-2 and Principles of the DVB System"
     },
     {
-        "category": "",
+        "category": "streaming-server-and-storage",
         "description": "High performance file syncing and sharing, with also Markdown WYSIWYG editing, Wiki, file label and other knowledge management features. - haiwen/seafile",
         "homepage": "https://github.com/haiwen/seafile",
         "title": "haiwen/seafile"
@@ -320,12 +326,12 @@
         "title": "gitfu/manifesto"
     },
     {
-        "category": "specs-standards",
+        "category": "specs-and-standards",
         "homepage": "https://www.ansi.org/membership/how_to_join/how_3",
         "title": "How Do I Become an ANSI Member"
     },
     {
-        "category": "data",
+        "category": "streaming-server-and-storage",
         "description": "\"rsync for cloud storage\" - Google Drive, Amazon Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Cloudfiles, Google Cloud Storage, Yandex Files - rclone/rclone",
         "homepage": "https://github.com/rclone/rclone",
         "title": "rclone/rclone"
@@ -343,7 +349,7 @@
         "title": "awslabs/aws-stale-playlist-detector"
     },
     {
-        "category": "subtitles",
+        "category": "subtitles-and-captions",
         "description": "Telestream Closed Captioning: MacCaption and CaptionMaker allow you to easily author, edit, create subtitles, and encode and repurpose video captions for television, web and mobile delivery",
         "homepage": "https://www.telestream.net/captioning/overview.htm?utm_campaign=partners&utm_source=itunespartner.apple.com&utm_medium=text_link",
         "title": "Closed Captioning and Subtitling Products - MacCaption and CaptionMaker Overview - Telestream"
@@ -372,7 +378,7 @@
         "title": "leandromoreira/http-video-streaming-troubleshooting"
     },
     {
-        "category": "data",
+        "category": "streaming-server-and-storage",
         "description": "OpenStack Storage (Swift).",
         "homepage": "https://github.com/openstack/swift",
         "title": "openstack/swift"
@@ -384,7 +390,7 @@
         "title": "Snowmix - The Swiss Army Knife of Open Source Live Video Mixing."
     },
     {
-        "category": "subtitles",
+        "category": "subtitles-and-captions",
         "description": "Automagically synchronize subtitles with video.",
         "homepage": "https://github.com/smacke/subsync",
         "title": "smacke/subsync"
@@ -402,7 +408,7 @@
         "title": "kewlbear/FFmpeg-iOS-build-script"
     },
     {
-        "category": "players",
+        "category": "web",
         "description": ":lollipop: Wow, such a lovely HTML5 danmaku video player - MoePlayer/DPlayer",
         "homepage": "https://github.com/MoePlayer/DPlayer",
         "title": "MoePlayer/DPlayer"
@@ -420,13 +426,13 @@
         "title": "cdnbye/hlsjs-p2p-engine"
     },
     {
-        "category": "server",
+        "category": "streaming-server-and-storage",
         "description": "Ant Media Server supports RTMP, RTSP, WebRTC and Adaptive Bitrate. It can also record videos in MP4, HLS and FLV - ant-media/Ant-Media-Server",
         "homepage": "https://github.com/ant-media/Ant-Media-Server",
         "title": "ant-media/Ant-Media-Server"
     },
     {
-        "category": "players",
+        "category": "web",
         "description": "A HTML5 video player with a parser that saves traffic - bytedance/xgplayer",
         "homepage": "https://github.com/bytedance/xgplayer",
         "title": "bytedance/xgplayer"
@@ -450,7 +456,7 @@
         "title": "bramp/ffmpeg-cli-wrapper"
     },
     {
-        "category": "server",
+        "category": "streaming-server-and-storage",
         "description": "SRS is a simple live streaming cluster, a simple joy. - ossrs/srs",
         "homepage": "https://github.com/ossrs/srs",
         "title": "ossrs/srs"
@@ -474,7 +480,7 @@
         "title": "AV1 Codec"
     },
     {
-        "category": "players",
+        "category": "web",
         "description": "HLS, DASH, and future HTTP streaming protocols library for video.js - videojs/http-streaming",
         "homepage": "https://github.com/videojs/http-streaming",
         "title": "videojs/http-streaming"
@@ -504,19 +510,19 @@
         "title": "escaped/django-video-encoding"
     },
     {
-        "category": "players",
+        "category": "web",
         "description": "a video player framework aims to bring wonderful experience on browser - Chimeejs/chimee",
         "homepage": "https://github.com/Chimeejs/chimee",
         "title": "Chimeejs/chimee"
     },
     {
-        "category": "players",
+        "category": "web",
         "description": "Simplified media playback for bigscreen devices.",
         "homepage": "https://github.com/bbc/bigscreen-player",
         "title": "bbc/bigscreen-player"
     },
     {
-        "category": "players",
+        "category": "web",
         "description": "Javascript library which implements a video comparator component: two overlaped and synchronized video players each one playing an independent source. - epiclabs-io/epic-video-comparator",
         "homepage": "https://github.com/epiclabs-io/epic-video-comparator",
         "title": "epiclabs-io/epic-video-comparator"
@@ -534,7 +540,7 @@
         "title": "mpv-player/mpv"
     },
     {
-        "category": "players",
+        "category": "web",
         "description": "A React video player facilitating adaptive stream playback with custom UI and a React-friendly API. - vimond/replay",
         "homepage": "https://github.com/vimond/replay",
         "title": "vimond/replay"
@@ -571,7 +577,7 @@
         "title":"crunchyroll/objective_perceptual_analysis"
     },
     {
-        "category": "subtitles",
+        "category": "subtitles-and-captions",
         "homepage": "https://github.com/wargarblgarbl/libgosubs",
         "title": "wargarblgarbl/libgosubs"
     },
@@ -637,7 +643,7 @@
             "title": "briandunnington/Roact"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/BrikerMan/BMPlayer",
             "description": "A video player for iOS, based on AVPlayer, support the horizontal, vertical screen. support adjust volume, brightness and seek by slide, support subtitles.  - BrikerMan/BMPlayer",
             "title": "BrikerMan/BMPlayer"
@@ -655,7 +661,7 @@
             "title": "chrishoffman/brightscript-json"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/DaMingShen/SUCacheLoader",
             "description": "AVPlayer缓存实现. ",
             "title": "DaMingShen/SUCacheLoader"
@@ -696,13 +702,13 @@
             "title": "What Idiot Designed This?! [Keynote by Matt Szatmary at Demuxed 2015]"
         },
         {
-            "category": "players",
+            "category": "reading",
             "homepage": "https://medium.com/@eyevinntechnology/demystifying-html5-video-player-e480846328f0",
             "description": "In this post we will go under the hood of a HTML video player for video streaming. With the exception of Apple and their browser Safari, no…",
             "title": "Demystifying HTML5 Video Player"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/DeviLeo/DLGPlayer",
             "description": "A media player for iOS based on FFmpeg 4.0.",
             "title": "DeviLeo/DLGPlayer"
@@ -786,13 +792,13 @@
             "title": "globocom/hlsclient"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/googleads/google-media-framework-ios",
             "description": "The Google Media Framework (GMF) is a lightweight media player designed to make video playback and integration with the Google IMA SDK on iOS easier. - googleads/google-media-framework-ios",
             "title": "googleads/google-media-framework-ios"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/hanton/HTY360Player",
             "description": "Open Source iOS 360 Degree Panorama Video Player.",
             "title": "hanton/HTY360Player"
@@ -808,7 +814,7 @@
             "title": "High Efficiency Video Coding: Coding Tools and Specification (Signals and Communication Technology)"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/iina/iina",
             "description": "The modern video player for macOS.",
             "title": "iina/iina"
@@ -838,7 +844,7 @@
             "title": "karimkawambwa/roku-framework"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/kodlian/TVVLCPlayer",
             "description": "TVVLCPlayer lets you integrate easily a powerfull video player with playback control views to your tvOS apps. - kodlian/TVVLCPlayer",
             "title": "kodlian/TVVLCPlayer"
@@ -859,7 +865,7 @@
             "title": "leandromoreira/ffmpeg-libav-tutorial"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/libobjc/SGPlayer",
             "description": "A powerful media play framework for iOS, macOS, and tvOS. - libobjc/SGPlayer",
             "title": "libobjc/SGPlayer"
@@ -883,7 +889,7 @@
             "title": "markus-perl/ffmpeg-build-script"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/masterjk/ios-avplayer-http-capture",
             "description": "iOS based application that embeds the AVPlayer and capture HTTP headers and send it back to the iOS application.  It internally embeds a proxy server. - masterjk/ios-avplayer-http-capture",
             "title": "masterjk/ios-avplayer-http-capture"
@@ -937,7 +943,7 @@
             "title": "openHPI/nginx-hls-analyzer"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/piemonte/Player",
             "description": "▶️ video player in Swift, simple way to play and stream media on iOS/tvOS - piemonte/Player",
             "title": "piemonte/Player"
@@ -966,9 +972,9 @@
             "title": "r-plus/HLSion"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/renzifeng/ZFPlayer",
-            "description": "Support customization of any player SDK and control layer(支持定制任何播放器SDK和控制层) - renzifeng/ZFPlayer",
+            "description": "Support customization of any player SDK and control layer",
             "title": "renzifeng/ZFPlayer"
         },
         {
@@ -1032,7 +1038,7 @@
             "title": "rokudev/unit-testing-framework"
         },
         {
-            "category": "players",
+            "category": "roku",
             "homepage": "https://github.com/rokudev/videoplayer-channel",
             "description": "SceneGraph version of the SDK1 VideoPlayer Channel  - rokudev/videoplayer-channel",
             "title": "rokudev/videoplayer-channel"
@@ -1050,7 +1056,7 @@
             "title": "rounce/nginx-hls-module"
         },
         {
-            "category": "players",
+            "category": "web",
             "homepage": "https://github.com/sampotts/plyr",
             "description": "A simple HTML5, YouTube and Vimeo player.",
             "title": "sampotts/plyr"
@@ -1151,7 +1157,7 @@
             "title": "veeta-tv/jasmine-roku"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/VeinGuo/VGPlayer",
             "description": "📺  A simple iOS video player by Vein.",
             "title": "VeinGuo/VGPlayer"
@@ -1168,7 +1174,7 @@
             "title": "Roku"
         },
         {
-            "category": "players",
+            "category": "web",
             "homepage": "https://github.com/video-dev/hls.js",
             "description": "JavaScript HLS client using Media Source Extension - video-dev/hls.js",
             "title": "video-dev/hls.js"
@@ -1186,7 +1192,7 @@
             "title": "video-dev/vtt.js"
         },
         {
-            "category": "players",
+            "category": "web",
             "homepage": "https://github.com/videojs/video.js",
             "description": "Video.js - open source HTML5 & Flash video player.",
             "title": "videojs/video.js"
@@ -1198,7 +1204,7 @@
             "title": "videolan/vlc"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/vitoziv/VIMediaCache",
             "description": "Cache media file while play media using AVPlayer.",
             "title": "vitoziv/VIMediaCache"
@@ -1210,13 +1216,13 @@
             "title": "willowtreeapps/ukor"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/xiewei-wayne/FFEngine.framework",
             "description": "FFEngine framework is a high performance player sdk for iOS based on ffmpeg. - xiewei-wayne/FFEngine.framework",
             "title": "xiewei-wayne/FFEngine.framework"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/xiewei-wayne/rtmp-video-player-for-ios",
             "description": "Based on FFEngine framework, a rtmp video player for apple iOS devices. - xiewei-wayne/rtmp-video-player-for-ios",
             "title": "xiewei-wayne/rtmp-video-player-for-ios"
@@ -1427,7 +1433,7 @@
             "category": "dolby",
             "homepage": "https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-for-creative-professionals.html",
             "description": "The Dolby Vision integrated workflow gives you the tools needed to efficiently create wide color gamut and high dynamic range content and ensures that the look you create in the color suite stays true when experienced across across a multitude of devices. With Dolby Vision high dynamic range imaging, you get bolder highlights and incredible contrast. That means greater sharpness, depth, and more detailed shadows to expand your storytelling possibilities like never before.",
-            "title": "\r\n\tDolby Vision for Content Creators | Dolby Laboratories\r\n"
+            "title": "Dolby Vision for Content Creators | Dolby Laboratories"
         },
         {
             "category": [
@@ -1470,7 +1476,7 @@
         },
         {
             "category": [
-                "specs-standards",
+                "specs-and-standards",
                 "dash"
             ],
             "homepage": "https://www.iso.org/standard/75485.html",
@@ -1550,7 +1556,7 @@
             "title": "theolampert/dash-server"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://docs.aws.amazon.com/mediaconvert/latest/ug/dvb-sub-output-captions.html",
             "description": "** If your output captions are DVB-Sub, set them up in your outputs according to the following information.",
             "title": "DVB captions in media convert"
@@ -1591,13 +1597,13 @@
             "title": "FFmpeg and how to use it wrong"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/Comcast/cea-extractor",
             "description": "Parsing and display logic for CEA-608 caption data in fragmented MP4 files. - Comcast/cea-extractor",
             "title": "Comcast/cea-extractor"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/MPEGDASHPlayer/MPEGDASH-iOS-Player",
             "description": "The MPEG-DASH Player iOS Application.",
             "title": "MPEGDASHPlayer/MPEGDASH-iOS-Player"
@@ -1620,19 +1626,19 @@
             "title": "Quick Tutorial: How to Increase Volume in Audacity [2019 Update]"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/xinnjie/extract-subtitle",
             "description": "extract subtitles from video.",
             "title": "xinnjie/extract-subtitle"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/awslabs/serverless-subtitles",
             "description": "Serverless Subtitles can handle a video input, extract the sound, transcript it and generate different subtitle files for your video. - awslabs/serverless-subtitles",
             "title": "awslabs/serverless-subtitles"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/abinashmeher999/voice-data-extract",
             "description": "A command line interface to combine text information from subtitles with voice data in the video. Provides a convenient way to generate training data for speech-recognition purposes. - abinashmeher...",
             "title": "abinashmeher999/voice-data-extract"
@@ -1668,12 +1674,6 @@
             "title": "tchakabam/dash-proxy"
         },
         {
-            "category": "subtitle",
-            "homepage": "https://mahasak.com/short-notes-on-add-subtitle-to-any-video-with-ffmpeg/",
-            "description": "บางทีเวลาทำ VDO ประกอบ presentation หรือ document นี่ก็จะมีความอยากใส่ subtitle เพื่อที่จะได้ให้คำอธิบายแบบละเอียดๆ เคลียร์ๆ และไม่ต้องมาซ้ำอธิบายหลายๆครั้ง วันนี้พอทำ VDO อันที่ 2/3 นี่แหละก็ลืมไปแล้วว่าครั้งที่แล้วทำยังไงเลยเขียน blog เผื",
-            "title": "Short-notes on Add subtitle to any video with ffmpeg"
-        },
-        {
             "category": "tools",
             "homepage": "https://github.com/Marcos-A/STRCleaner",
             "description": "Script that extracts all the text from a subtitles file ignoring time indications, HTML tags and other alien info. - Marcos-A/STRCleaner",
@@ -1704,7 +1704,7 @@
             "title": "Inca — Message Tracing and Loss Detection For Streaming Data @Netflix"
         },
         {
-            "category": "players",
+            "category": "chromecast",
             "homepage": "https://github.com/googlecast/CastReceiver",
             "description": "Reference Receiver: CastReceiver shows how to develop a fully Cast Design Checklist compliant receiver with additional features. - googlecast/CastReceiver",
             "title": "googlecast/CastReceiver"
@@ -1715,7 +1715,7 @@
             "title": "Dolby Professional Loudness Suite"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/BingLingGroup/autosub",
             "description": "Command-line utility to transcribe/translate from video/audio/subtitles to subtitles  - BingLingGroup/autosub",
             "title": "BingLingGroup/autosub"
@@ -1855,7 +1855,7 @@
             "title": "artilleryio/artillery-plugin-hls"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/tanersener/mobile-ffmpeg",
             "description": "FFmpeg for Android, iOS and tvOS.",
             "title": "tanersener/mobile-ffmpeg"
@@ -1947,7 +1947,7 @@
             "title": "Build a basic Cast Receiver"
         },
         {
-            "category": "players",
+            "category": "ios-tvos",
             "homepage": "https://github.com/StyleShare/HLSCachingReverseProxyServer",
             "description": "A simple local reverse proxy server for HLS segment cache - StyleShare/HLSCachingReverseProxyServer",
             "title": "StyleShare/HLSCachingReverseProxyServer"
@@ -1977,7 +1977,7 @@
             "title": "cta-wave/R4WG20-QoE-Metrics"
         },
         {
-            "category": "specs-standards",
+            "category": "specs-and-standards",
             "homepage": "https://tools.ietf.org/pdf/draft-pantos-hls-rfc8216bis-05.pdf",
             "title": "latest HLS Spec"
         },
@@ -2102,13 +2102,13 @@
             "title": "Eyevinn/docker-jit-capture"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/Eyevinn/srt-metadata-extractor",
             "description": "Contribute to Eyevinn/srt-metadata-extractor development by creating an account on GitHub.",
             "title": "Eyevinn/srt-metadata-extractor"
         },
         {
-            "category": "players",
+            "category": "web",
             "homepage": "https://github.com/Eyevinn/ott-multiview",
             "description": "This is a web based multiview screen for HLS and MPEG-DASH streams based on hls.js and Shaka Player. - Eyevinn/ott-multiview",
             "title": "Eyevinn/ott-multiview"
@@ -2135,7 +2135,7 @@
             "title": "Eyevinn/hls-to-dash"
         },
         {
-            "category": "players",
+            "category": "web",
             "homepage": "https://github.com/Eyevinn/channel-engine-multiview",
             "description": "A multiview frontend for Eyevinn Channel Engine.",
             "title": "Eyevinn/channel-engine-multiview"
@@ -2171,7 +2171,7 @@
             "title": "Eyevinn/hls-playlist-parser"
         },
         {
-            "category": "players",
+            "category": "web",
             "homepage": "https://github.com/Eyevinn/docker-html5player",
             "description": "A Docker containerized HTML5 player based on Shaka Player - Eyevinn/docker-html5player",
             "title": "Eyevinn/docker-html5player"
@@ -2183,7 +2183,7 @@
             "title": "Eyevinn/hls-ts-js"
         },
         {
-            "category": "players",
+            "category": "web",
             "homepage": "https://github.com/Eyevinn/abr-player-chrome",
             "description": "Chrome extension that uses Eyevinn HTML player to be able to play HLS and MPEG-DASH natively - Eyevinn/abr-player-chrome",
             "title": "Eyevinn/abr-player-chrome"
@@ -2201,7 +2201,7 @@
             "title": "Eyevinn/streaming-analyzer"
         },
         {
-            "category": "players",
+            "category": "web",
             "homepage": "https://github.com/Eyevinn/eyevinn-player",
             "description": "Throttled video player to test video streams.",
             "title": "Eyevinn/eyevinn-player"
@@ -2242,43 +2242,43 @@
             "title": "jkarthic-akamai/ABR-Broadcaster"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/alexherbo2/ffmpeg-sub",
             "description": "FFmpeg command to extract subtitles.",
             "title": "alexherbo2/ffmpeg-sub"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/federicocalendino/pysub-parser",
             "description": "Utility to extract the text and timestamps of a subtitle file (.srt, .ssa, .sub, .txt). - federicocalendino/pysub-parser",
             "title": "federicocalendino/pysub-parser"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/cessen/subs_extract",
             "description": "Extracts per-sentence subtitles + audio from a subtitle file + video file. - cessen/subs_extract",
             "title": "cessen/subs_extract"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/apm1467/videocr",
             "description": "Extract hardcoded subtitles from videos using machine learning - apm1467/videocr",
             "title": "apm1467/videocr"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/statsbiblioteket/tv-subtitle-extraction",
             "description": "System for extraction of subtitles from TV broadcasts. - statsbiblioteket/tv-subtitle-extraction",
             "title": "statsbiblioteket/tv-subtitle-extraction"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/shawnsky/extract-subtitles",
-            "description": "Extract Subtitles From Video 视频字幕提取 帧间差分法识别关键帧 OCR识别 - shawnsky/extract-subtitles",
+            "description": "Extract Subtitles From Video",
             "title": "shawnsky/extract-subtitles"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/jnorton001/pycaption-cli",
             "description": "A command line interface for the pycaption module. - jnorton001/pycaption-cli",
             "title": "jnorton001/pycaption-cli"
@@ -2326,7 +2326,7 @@
             "title": "Comcast/scte35-js"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/Comcast/caption-inspector",
             "description": "Caption Inspector is a reference decoder for Closed Captions (CEA-608 and CEA-708). - Comcast/caption-inspector",
             "title": "Comcast/caption-inspector"
@@ -2344,7 +2344,7 @@
             "title": "Dash-Industry-Forum/dash-live-source-simulator"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/Dash-Industry-Forum/cea608.js",
             "description": "A JavaScript project designed to extract CEA-608 captions. - Dash-Industry-Forum/cea608.js",
             "title": "Dash-Industry-Forum/cea608.js"
@@ -2374,13 +2374,13 @@
             "title": "DSRCorporation/imf-conversion"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://stackoverflow.com/questions/3169910/can-ffmpeg-extract-closed-caption-data",
             "description": "I am currently using ffmpeg to convert videos in various formats to flv files. One request has also come up and that is to get closed caption info out o the file as well. Does anyone have any exper...",
             "title": "Can ffmpeg extract closed caption data"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://github.com/active-video/subtitles",
             "description": "AV Platform MPEG DASH subtitles.",
             "title": "active-video/subtitles"
@@ -2445,7 +2445,7 @@
             "title": "Roku"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API",
             "description": "Web Video Text Tracks Format (WebVTT) is a format for displaying timed text tracks (such as subtitles or captions) using the track element.",
             "title": "Web Video Text Tracks Format (WebVTT)"
@@ -2539,7 +2539,7 @@
             "title": "How to use DASH and HLS Adaptive Streaming with AWS S3 and Cloudfront"
         },
         {
-            "category": "subtitle",
+            "category": "subtitles-and-captions",
             "homepage": "https://www.3playmedia.com/resources/popular-topics/closed-captioning/",
             "title": "The ultimate guide to CCs"
         },
