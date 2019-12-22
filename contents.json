@@ -117,7 +117,7 @@
         },
         {
             "title": "Android",
-            "id": "droid",
+            "id": "android",
             "parent": "players",
             "description": "Android and fireTV tools, sdks, and examples."
         },
@@ -2220,7 +2220,7 @@
             "title": "bloc97/Anime4K"
         },
         {
-            "category": "droid",
+            "category": "android",
             "homepage": "https://github.com/google/ExoPlayer",
             "description": "ExoPlayer is an application level media player for Android.",
             "title": "google/ExoPlayer"
