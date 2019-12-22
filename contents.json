@@ -113,8 +113,7 @@
         {
             "title": "Smart TVs",
             "id": "smart-tv",
-            "parent": "players",
-            "description": ""
+            "parent": "players"
         },
         {
             "title": "Android",
@@ -332,7 +331,7 @@
     },
     {
         "category": "streaming-server-and-storage",
-        "description": "\"rsync for cloud storage\" - Google Drive, Amazon Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Cloudfiles, Google Cloud Storage, Yandex Files - rclone/rclone",
+        "description": "rsync for cloud storage - Google Drive, Amazon Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Cloudfiles, Google Cloud Storage, Yandex Files - rclone/rclone",
         "homepage": "https://github.com/rclone/rclone",
         "title": "rclone/rclone"
     },
@@ -692,13 +691,13 @@
         },
         {
             "category": "talks-presentations-podcasts",
-            "homepage": "https://www.heavybit.com/library/podcasts/demuxed/",
+            "homepage": "https://www.heavybit.com/library/podcasts/demuxed",
             "description": "Demuxed is a podcast made for and by engineers working with video. Brought to you by Heavybit.",
             "title": "Demuxed | Heavybit"
         },
         {
             "category": "talks-presentations-podcasts",
-            "homepage": " http://mile-high.video/files/mhv2019/",
+            "homepage": " http://mile-high.video/files/mhv2019",
             "description": "Mile High Video 2019 talks & presentations",
             "title": "Mile High Video 2019 Proceedings"
         },       
