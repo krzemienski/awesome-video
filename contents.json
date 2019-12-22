@@ -131,7 +131,7 @@
         {
             "title": "Vendors",
             "id": "vendors",
-            "description": "Video indurstry's various vendors documentations."
+            "description": "Video indurstry's various vendors products and documentations."
         },
         {
             "title": "Dolby",
@@ -180,8 +180,8 @@
             "parent": "community"
         },
         {
-            "title": "Talks, Presentations, Podcasts",
-            "id": "talks",
+            "title": "Talks Presentations Podcasts",
+            "id": "talks-presentations-podcasts",
             "parent": "learning",
             "description": "Conference talks and pdf presentations and podcasts on streaming video ."
         },
@@ -663,44 +663,69 @@
         {
             "category": "ios-tvos",
             "homepage": "https://github.com/DaMingShen/SUCacheLoader",
-            "description": "AVPlayer缓存实现. ",
+            "description": "AVPlayer ",
             "title": "DaMingShen/SUCacheLoader"
         },
         {
-            "category": "talks",
+            "category": "talks-presentations-podcasts",
             "homepage": "https://m.youtube.com/playlist?list=PLkyaYNWEKcOf_C_6W45abNvXMb40xUUqh",
-            "title": "Demuxed 2019 - YouTube"
+             "description": "2019 Demuxed talks & presentations",
+            "title": "Demuxed 2019"
+        },
+         {
+            "category": "talks-presentations-podcasts",
+            "homepage": "https://www.youtube.com/watch?v=bfK_f7GBA8s&list=PLkyaYNWEKcOfARqEht42i1P4kBemzEV2V",
+            "title": "Demuxed 2018",
+             "description": "2018  Demuxed talks & presentations"
+        },
+         {
+            "category": "talks-presentations-podcasts",
+            "homepage": "https://www.youtube.com/watch?v=PSdhW-R9u6s&list=PLkyaYNWEKcOfntbMd6KtHhF7qpL9hj6of",
+            "title": "Demuxed 2017",
+            "description": "2017 Demuxed talks & presentations"
+        },
+         {
+            "category": "talks-presentations-podcasts",
+            "homepage": "https://www.youtube.com/watch?v=kEo2TrXm7F4&list=PLkyaYNWEKcOekC2m9Na77G40Lmhb1bnsK",
+            "title": "Demuxed 2016",
+             "description": "2016 Demuxed talks & presentations"
         },
         {
-            "category": "talks",
+            "category": "talks-presentations-podcasts",
             "homepage": "https://www.heavybit.com/library/podcasts/demuxed/",
             "description": "Demuxed is a podcast made for and by engineers working with video. Brought to you by Heavybit.",
             "title": "Demuxed | Heavybit"
         },
         {
-            "category": "talks",
+            "category": "talks-presentations-podcasts",
             "homepage": "https://www.youtube.com/watch?v=bfK_f7GBA8s&list=PLkyaYNWEKcOfARqEht42i1P4kBemzEV2V",
             "description": "As part of our FIFA World Cup coverage this year, we've been able to deliver matches live in UHD with HDR10. We had a few short weeks to negotiate source acq...",
             "title": "Billy Romero & Thomas Symborski - Lessons learned from streaming the World Cup in UHD with HDR"
         },
         {
-            "category": "talks",
+            "category": "talks-presentations-podcasts",
             "homepage": "https://www.youtube.com/watch?v=PSdhW-R9u6s&list=PLkyaYNWEKcOfntbMd6KtHhF7qpL9hj6of",
             "description": "Next year will see widespread availability of a new creative canvas (High Dynamic Range, Wider Colors), a new royalty-free codec (AV-1) and a new royalty-fre...",
             "title": "Mark Watson - Lights, Colors, Artwork"
         },
         {
-            "category": "talks",
+            "category": "talks-presentations-podcasts",
             "homepage": "https://www.youtube.com/watch?v=kEo2TrXm7F4&list=PLkyaYNWEKcOekC2m9Na77G40Lmhb1bnsK",
             "description": "We encode movies and TV shows for millions of viewers worldwide and aim to deliver the best video quality possible no matter what the content, viewing device...",
             "title": "Anne Aaron, Netflix - Measuring Perceptual Video Quality at Scale [DEMUXED 2016]"
         },
         {
-            "category": "talks",
+            "category": "talks-presentations-podcasts",
             "homepage": "https://www.youtube.com/watch?v=s661CU6Fvl4&list=PLkyaYNWEKcOcIXrPKRfIK-T9J48J4Vuwk",
             "description": "Presented by Matt Szatmary at Demuxed 2015. Keynote: A tongue-in-cheek stroll through the history of video standards.",
             "title": "What Idiot Designed This?! [Keynote by Matt Szatmary at Demuxed 2015]"
         },
+        {
+            "category": "talks-presentations-podcasts",
+            "homepage": " http://mile-high.video/files/mhv2019/",
+            "description": "Mile High Video 2019 talks & presentations",
+            "title": "Mile High Video 2019 Proceedings"
+        },       
         {
             "category": "reading",
             "homepage": "https://medium.com/@eyevinntechnology/demystifying-html5-video-player-e480846328f0",
@@ -1779,7 +1804,7 @@
             "title": "Creating A Production Ready Multi Bitrate HLS VOD stream - Peer5 P2P Docs"
         },
         {
-            "category": "talks",
+            "category": "talks-presentations-podcasts",
             "homepage": "https://www.youtube.com/watch?v=lZI51YzIgVE",
             "description": "Talk by Jonah Horowitz, Albert Tobey What does it take to be a Netflix SRE? With tens of thousands of Linux instances in a distributed system architecture, a...",
             "title": "From Sys Admin to Netflix SRE"
@@ -1913,9 +1938,10 @@
             "title": "watson-developer-cloud/text-to-speech-nodejs"
         },
         {
-            "category": "talks",
+            "category": "talks-presentations-podcasts",
             "homepage": "https://thevideoinsiders.simplecast.com/episodes",
-            "title": "The Video Insiders Podcast"
+            "description":"Video Insiders Podcast",
+            "title": "The Video Insiders"
         },
         {
             "category": "testing",
