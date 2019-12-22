@@ -365,13 +365,13 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Roku app tools, libraries,and examples.*
 [back to top](#readme) 
 
+* [Audio and Video Support](https://developer.roku.com/docs/specs/streaming.md#AudioandVideoSupport-AdaptiveBitrateFormats)  - Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.
 * [CCecilia/roku-suite-desktop](https://github.com/CCecilia/roku-suite-desktop)  - Tool suite for Roku channel development.
 * [MediaBrowser/Emby.Roku](https://github.com/MediaBrowser/Emby.Roku)  - Emby for Roku. 
-* [Roku](https://developer.roku.com/docs/developer-program/core-concepts/playing-videos.md#PlayingVideos-Examples)  - Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.
-* [Roku](https://developer.roku.com/docs/specs/streaming.md#AudioandVideoSupport-AdaptiveBitrateFormats)  - Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.
-* [Roku](https://developer.roku.com/docs/references/scenegraph/media-playback-nodes/video.md)  - Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.
+* [Playing Video Examples](https://developer.roku.com/docs/developer-program/core-concepts/playing-videos.md#PlayingVideos-Examples)  - Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.
 * [Roku](https://developer.roku.com/docs/specs/streaming.md)  - Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.
 * [T-Pham/RokuJSONHelperNode](https://github.com/T-Pham/RokuJSONHelperNode)  - Roku SceneGraph JSON Helper.
+* [Video Node Docs](https://developer.roku.com/docs/references/scenegraph/media-playback-nodes/video.md)  - Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.
 * [XML + Code + Good times = RSG Application](https://medium.com/plexlabs/xml-code-good-times-rsg-application-b963f0cec01b)  - Written by John Zolezzi — April 6th 2018
 * [anachirino/bifserver](https://github.com/anachirino/bifserver)  - Server which creates and serves up BIF files for Roku players - anachirino/bifserver
 * [briandunnington/Redoku](https://github.com/briandunnington/Redoku)  - Redux for Roku.
