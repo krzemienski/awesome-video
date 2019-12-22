@@ -952,7 +952,7 @@
             "category": "roku",
             "homepage": "https://developer.roku.com/docs/developer-program/core-concepts/playing-videos.md#PlayingVideos-Examples",
             "description": "Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.",
-            "title": "Roku"
+            "title": "Playing Video Examples"
         },
         {
             "category": "books",
@@ -1113,7 +1113,7 @@
             "category": "roku",
             "homepage": "https://developer.roku.com/docs/specs/streaming.md#AudioandVideoSupport-AdaptiveBitrateFormats",
             "description": "Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.",
-            "title": "Roku"
+            "title": "Audio and Video Support"
         },
         {
             "category": "roku",
@@ -1171,7 +1171,7 @@
             "category": "roku",
             "homepage": "https://developer.roku.com/docs/references/scenegraph/media-playback-nodes/video.md",
             "description": "Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.",
-            "title": "Roku"
+            "title": "Video Node Docs"
         },
         {
             "category": "web",
