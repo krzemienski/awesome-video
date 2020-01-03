@@ -88,8 +88,14 @@ def output_header(j)
 end
 
 def output_contributing(j)
-  o = "\n\n### Contributing\n\n"
+  o = "\n\n## Contributing\n\n"
   o << j['header_contributing']
+  o
+end
+
+def output_license(j)
+  o = "\n\n## License\n\n"
+  o << j['header_License']
   o
 end
 
@@ -142,6 +148,7 @@ def write_readme(j, filename)
     output << output_toc(j)
     output << output_content(j)
     output << output_contributing(j)
+    output << output_license(j)
 
     File.open(filename, 'w') { |f| f.write output}
     puts "Wrote #{filename} :-)"
