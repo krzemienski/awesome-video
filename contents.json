@@ -700,7 +700,13 @@
             "homepage": "http://mile-high.video/files/mhv2019",
             "description": "Mile High Video 2019 talks & presentations",
             "title": "Mile High Video 2019 Proceedings"
-        },       
+        },   
+        {
+            "category": "talks-presentations-podcasts",
+            "homepage": "http://mile-high.video/files/mhv2018",
+            "description": "Mile High Video 2018 talks & presentations",
+            "title": "Mile High Video 2018 Proceedings"
+        },   
         {
             "category": "reading",
             "homepage": "https://medium.com/@eyevinntechnology/demystifying-html5-video-player-e480846328f0",
@@ -1979,8 +1985,13 @@
         },
         {
             "category": "specs-and-standards",
-            "homepage": "https://tools.ietf.org/pdf/draft-pantos-hls-rfc8216bis-05.pdf",
+            "homepage": "https://datatracker.ietf.org/doc/draft-pantos-hls-rfc8216bis/",
             "title": "latest HLS Spec"
+        },
+        {
+            "category": "specs-and-standards",
+            "homepage": "https://dashif.org/guidelines/",
+            "title": "DASH-IF IOPs"
         },
         {
             "category": "books",
