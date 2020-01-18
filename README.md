@@ -121,6 +121,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Demuxed 2019](https://m.youtube.com/playlist?list=PLkyaYNWEKcOf_C_6W45abNvXMb40xUUqh)  - 2019 Demuxed talks & presentations
 * [Demuxed | Heavybit](https://www.heavybit.com/library/podcasts/demuxed)  - Demuxed is a podcast made for and by engineers working with video. Brought to you by Heavybit.
 * [From Sys Admin to Netflix SRE](https://www.youtube.com/watch?v=lZI51YzIgVE)  - Talk by Jonah Horowitz, Albert Tobey What does it take to be a Netflix SRE? With tens of thousands of Linux instances in a distributed system architecture, a...
+* [Mile High Video 2018 Proceedings](http://mile-high.video/files/mhv2018)  - Mile High Video 2018 talks & presentations
 * [Mile High Video 2019 Proceedings](http://mile-high.video/files/mhv2019)  - Mile High Video 2019 talks & presentations
 * [The Video Insiders](https://thevideoinsiders.simplecast.com/episodes)  - Video Insiders Podcast
 
@@ -296,8 +297,9 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 ## Specs and Standards
 *Latest offical specs and standards related to video streaming.*
 
+* [DASH-IF IOPs](https://dashif.org/guidelines/)  - 
 * [How Do I Become an ANSI Member](https://www.ansi.org/membership/how_to_join/how_3)  - 
-* [latest HLS Spec](https://tools.ietf.org/pdf/draft-pantos-hls-rfc8216bis-05.pdf)  - 
+* [latest HLS Spec](https://datatracker.ietf.org/doc/draft-pantos-hls-rfc8216bis/)  - 
 
 ### MPEG
 *MPEG meetings, standards, and resources. *
