@@ -48,6 +48,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
   - [Meet ups](#meetups)
   - [Slack Groups](#slack)
 - [CDN](#cdn)
+- [HDR10, HLG, Dolby Vision](#hdr)
 
 ## Introduction
 *What's video?*
@@ -292,6 +293,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Streaming Live From the Battlefield: Military Video in 2019](https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=135141)  - Metadata and low-latency video create a tactical advantage in intelligence-gathering and decision making. Discover why HEVC is gaining momentum in the armed forces, and Android is preferred over iOS.
 * [The Netflix IMF Workflow](https://medium.com/netflix-techblog/the-netflix-imf-workflow-f45dd72ed700?source=userActivityShare-94bccb50d11-1568773157&_branch_match_id=702692448596112473)  - interesting architectural implications
 * [VOD on AWS](https://s3.amazonaws.com/solutions-reference/video-on-demand-on-aws/latest/video-on-demand-on-aws.pdf)  - 
+* [Video Coding - BBC R&D](https://www.bbc.co.uk/rd/projects/video-coding)  - BBC video encoding R&D home page
 * [Video in the War Zone: The Current State of Military Streaming](https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=101310)  - For the armed forces, streaming is a matter of national security. Here's an exclusive look at how the military, from analysts to ground troops, is using streaming video.
 
 ## Specs and Standards
@@ -299,7 +301,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 
 * [DASH-IF IOPs](https://dashif.org/guidelines/)  - 
 * [How Do I Become an ANSI Member](https://www.ansi.org/membership/how_to_join/how_3)  - 
-* [latest HLS Spec](https://datatracker.ietf.org/doc/draft-pantos-hls-rfc8216bis/)  - 
+* [latest HLS Spec](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis-05)  - 
 
 ### MPEG
 *MPEG meetings, standards, and resources. *
@@ -505,12 +507,15 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Web Video Text Tracks Format (WebVTT)](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API)  - Web Video Text Tracks Format (WebVTT) is a format for displaying timed text tracks (such as subtitles or captions) using the track element.
 * [abinashmeher999/voice-data-extract](https://github.com/abinashmeher999/voice-data-extract)  - A command line interface to combine text information from subtitles with voice data in the video. Provides a convenient way to generate training data for speech-recognition purposes. - abinashmeher...
 * [active-video/subtitles](https://github.com/active-video/subtitles)  - AV Platform MPEG DASH subtitles.
-* [alexherbo2/ffmpeg-sub](https://github.com/alexherbo2/ffmpeg-sub)  - FFmpeg command to extract subtitles.
 * [apm1467/videocr](https://github.com/apm1467/videocr)  - Extract hardcoded subtitles from videos using machine learning - apm1467/videocr
 * [awslabs/serverless-subtitles](https://github.com/awslabs/serverless-subtitles)  - Serverless Subtitles can handle a video input, extract the sound, transcript it and generate different subtitle files for your video. - awslabs/serverless-subtitles
 * [cessen/subs_extract](https://github.com/cessen/subs_extract)  - Extracts per-sentence subtitles + audio from a subtitle file + video file. - cessen/subs_extract
+* [djstava/manifesto](https://github.com/djstava/manifesto)  - HLS multibitrate encoding with WebVTT subtitles and master.m3u8 generator in one easy step.
 * [federicocalendino/pysub-parser](https://github.com/federicocalendino/pysub-parser)  - Utility to extract the text and timestamps of a subtitle file (.srt, .ssa, .sub, .txt). - federicocalendino/pysub-parser
+* [glut23/webvtt-py](https://github.com/glut23/webvtt-py)  - Read, write and segment WebVTT caption files in Python.
 * [jnorton001/pycaption-cli](https://github.com/jnorton001/pycaption-cli)  - A command line interface for the pycaption module. - jnorton001/pycaption-cli
+* [opencoconut/webvtt-ruby](https://github.com/opencoconut/webvtt-ruby)  - WebVTT Ruby parser and segmenter.
+* [osk/node-webvtt](https://github.com/osk/node-webvtt)  - Parse WebVTT files, segments and generates HLS playlists for them.
 * [sandflow/imscJS](https://github.com/sandflow/imscJS/)  - 
 * [shawnsky/extract-subtitles](https://github.com/shawnsky/extract-subtitles)  - Extract Subtitles From Video
 * [smacke/subsync](https://github.com/smacke/subsync)  - Automagically synchronize subtitles with video.
@@ -658,6 +663,20 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Lambda Edge Tutorial](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-edge-how-it-works-tutorial.html)  - This tutorial shows you how to get started with Lambda@Edge by helping you create and add a sample Node.js function that runs in CloudFront. The example that we walk through adds HTTP security headers to a response, which can improve security and privacy for a website. (That said, you don’t need a website for this walkthrough; we simply add security headers to a response when CloudFront retrieves a file.)
 * [Lambda@Edge Design Best Practices | Amazon Web Services](https://aws.amazon.com/blogs/networking-and-content-delivery/lambdaedge-design-best-practices/)  - Lambda@Edge transforms CloudFront into a highly programmable CDN with serverless compute capabilities closer to your viewers around the world. This blog is the first in a series that explains best practices associated with using Lambda@Edge functions to customize your content delivery.
 * [OTT Content Delivery– CDN Alternatives](https://medium.com/@eyevinntechnology/ott-content-delivery-cdn-alternatives-cafe75dab71d?source=userActivityShare-94bccb50d11-1560983135&_branch_match_id=670018733519578135)  - Introduction
+
+## HDR10, HLG, Dolby Vision
+*HDR tools, learning, documentations, and resources.*
+
+* [Encode HDR with VP9](https://developers.google.com/media/vp9/hdr-encoding)  - Hands on tutorial of using ffmpeg to do hdr encoding
+* [Frequently Asked Questions on High Dynamic Range and Hybrid Log-Gamma](https://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_FAQ.pdf)  - FAQ regarding HDR by BBC R&D
+* [HLG vs PQ Systems for HDR Television](https://www.displaydaily.com/article/display-daily/hlg-vs-pq-systems-for-hdr-television)  - Article explaining hlg vs pq in depth.
+* [High Dynamic Range Television and Hybrid Log-Gamma - BBC R&D](https://www.bbc.co.uk/rd/projects/high-dynamic-range)  - BBC R&D HDR project page.
+* [Perceptual Quantiser (PQ) to Hybrid Log-Gamma (HLG) Transcoding](https://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_PQ_HLG_Transcode_v2.pdf)  - In depth break down on converting from pq to hlg
+* [UHD & HDR Overview](https://www.smpte.org/sites/default/files/users/user27446/HDR%20SMPTE%20Presentation%20March%2021%2C%202017%20V2.compressed.pdf)  - SMPTE Presentation
+* [Use of Look-Up Tables (LUTs) in FFmpeg](https://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_Use_of_LUTs_FFmpeg.pdf)  - How to use luts with ffmpeg for converting between differnt hdr encodes
+* [Vittorio Giovara - Color Me Intrigued: A Jaunt Through Color Technology in Video](https://www.youtube.com/watch?v=XMnvY7a4-As&feature=share)  - This talk aims to shed light on colorspaces - what they are, how and why they work, why we should care about handling edge cases properly. Starting with hist...
+* [bbc/qtff-parameter-editor](https://github.com/bbc/qtff-parameter-editor)  - QuickTime file parameter editor for modifying transfer function, colour primary and matrix characteristics.
+* [id3as/ffmpeg-libvpx-HDR-static](https://github.com/id3as/ffmpeg-libvpx-HDR-static)  - A script to build a static binary of FFmpeg optimised for libvpx (HDR 10bit) encoding.
 
 
 ### Contributing
