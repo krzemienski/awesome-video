@@ -194,6 +194,11 @@
             "title": "CDN",
             "id": "cdn",
             "description": "Last mile tools, documentations, and resources."
+        },
+        {
+            "title": "HDR10, HLG, Dolby Vision",
+            "id": "hdr",
+            "description": "HDR tools, learning, documentations, and resources."
         }
     ],
     "projects": [
@@ -1985,7 +1990,7 @@
         },
         {
             "category": "specs-and-standards",
-            "homepage": "https://datatracker.ietf.org/doc/draft-pantos-hls-rfc8216bis/",
+            "homepage": "https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis-05",
             "title": "latest HLS Spec"
         },
         {
@@ -2258,12 +2263,6 @@
             "homepage": "https://github.com/jkarthic-akamai/ABR-Broadcaster",
             "description": "A real time encoder for Adaptive Bitrate Broadcast - jkarthic-akamai/ABR-Broadcaster",
             "title": "jkarthic-akamai/ABR-Broadcaster"
-        },
-        {
-            "category": "subtitles-and-captions",
-            "homepage": "https://github.com/alexherbo2/ffmpeg-sub",
-            "description": "FFmpeg command to extract subtitles.",
-            "title": "alexherbo2/ffmpeg-sub"
         },
         {
             "category": "subtitles-and-captions",
@@ -2910,6 +2909,96 @@
             "category":"mpeg",
             "title": "MPEG Meetings",
             "homepage":"https://mpeg.chiariglione.org/meetings"
-        }
+        },
+        {
+        "category": "subtitles-and-captions",
+        "description": "Read, write and segment WebVTT caption files in Python.",
+        "hopmepage": "https://github.com/glut23/webvtt-py",
+        "title": "glut23/webvtt-py"
+    },
+    {
+        "category": "subtitles-and-captions",
+        "description": "Parse WebVTT files, segments and generates HLS playlists for them.",
+        "hopmepage": "https://github.com/osk/node-webvtt",
+        "title": "osk/node-webvtt"
+    },
+    {
+        "category": "subtitles-and-captions",
+        "description": "WebVTT Ruby parser and segmenter.",
+        "hopmepage": "https://github.com/opencoconut/webvtt-ruby",
+        "title": "opencoconut/webvtt-ruby"
+    },
+    {
+        "category": "subtitles-and-captions",
+        "description": "HLS multibitrate encoding with WebVTT subtitles and master.m3u8 generator in one easy step.",
+        "hopmepage": "https://github.com/djstava/manifesto",
+        "title": "djstava/manifesto"
+    },
+    {
+        "category": "hdr",
+        "description": "This talk aims to shed light on colorspaces - what they are, how and why they work, why we should care about handling edge cases properly. Starting with hist...",
+        "hopmepage": "https://www.youtube.com/watch?v=XMnvY7a4-As&feature=share",
+        "title": "Vittorio Giovara - Color Me Intrigued: A Jaunt Through Color Technology in Video"
+    },
+    {
+        "category": "hdr",
+        "description": "SMPTE Presentation",
+        "hopmepage": "https://www.smpte.org/sites/default/files/users/user27446/HDR%20SMPTE%20Presentation%20March%2021%2C%202017%20V2.compressed.pdf",
+        "title": "UHD & HDR Overview"
+    },
+    {
+        "category": "hdr",
+        "description": "Article explaining hlg vs pq in depth.",
+        "hopmepage": "https://www.displaydaily.com/article/display-daily/hlg-vs-pq-systems-for-hdr-television",
+        "title": "HLG vs PQ Systems for HDR Television"
+    },
+    {
+        "category": "hdr",
+        "description": "Hands on tutorial of using ffmpeg to do hdr encoding",
+        "hopmepage": "https://developers.google.com/media/vp9/hdr-encoding",
+        "title": "Encode HDR with VP9"
+    },
+    {
+        "category": "hdr",
+        "description": "QuickTime file parameter editor for modifying transfer function, colour primary and matrix characteristics.",
+        "hopmepage": "https://github.com/bbc/qtff-parameter-editor",
+        "title": "bbc/qtff-parameter-editor"
+    },
+    {
+        "category": "hdr",
+        "description": "How to use luts with ffmpeg for converting between differnt hdr encodes",
+        "hopmepage": "https://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_Use_of_LUTs_FFmpeg.pdf",
+        "title": "Use of Look-Up Tables (LUTs) in FFmpeg"
+    },
+    {
+        "category": "reading",
+        "description": "BBC video encoding R&D home page",
+        "hopmepage": "https://www.bbc.co.uk/rd/projects/video-coding",
+        "title": "Video Coding - BBC R&D"
+    },
+    {
+        "category": "hdr",
+        "description": "FAQ regarding HDR by BBC R&D",
+        "hopmepage": "https://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_FAQ.pdf",
+        "title": "Frequently Asked Questions on High Dynamic Range and Hybrid Log-Gamma"
+    },
+    {
+        "category": "hdr",
+        "description": "In depth break down on converting from pq to hlg",
+        "hopmepage": "https://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_PQ_HLG_Transcode_v2.pdf",
+        "title": "Perceptual Quantiser (PQ) to Hybrid Log-Gamma (HLG) Transcoding"
+    },
+    {
+        "category": "hdr",
+        "description": "A script to build a static binary of FFmpeg optimised for libvpx (HDR 10bit) encoding.",
+        "hopmepage": "https://github.com/id3as/ffmpeg-libvpx-HDR-static",
+        "title": "id3as/ffmpeg-libvpx-HDR-static"
+    },
+    {
+        "category": "hdr",
+        "description": "BBC R&D HDR project page.",
+        "hopmepage": "https://www.bbc.co.uk/rd/projects/high-dynamic-range",
+        "title": "High Dynamic Range Television and Hybrid Log-Gamma - BBC R&D"
+    }
     ]
 }
