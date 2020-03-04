@@ -1097,7 +1097,13 @@
             "title": "sjbarag/brs-testbed"
         },
         {
-            "category": "ffmpeg",
+            "category": "tools",
+            "homepage": "https://github.com/slhck/ffmpeg-bitrate-stats",
+            "description": "Calculate bitrate statistics using FFmpeg",
+            "title": "slhck/ffmpeg-bitrate-stats"
+        },
+        {
+            "category": "tools",
             "homepage": "https://github.com/slhck/ffmpeg-debug-qp",
             "description": "FFmpeg Debug Script for QP Values",
             "title": "slhck/ffmpeg-debug-qp"
@@ -1107,6 +1113,18 @@
             "homepage": "https://github.com/slhck/ffmpeg-encoding-course",
             "description": "An introduction to FFmpeg and its tools. ",
             "title": "slhck/ffmpeg-encoding-course"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/slhck/scenecut-extractor",
+            "description": "Extract scenecuts from video files using ffmpeg",
+            "title": "slhck/scenecut-extractor"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://github.com/slhck/ffmpeg-quality-metrics",
+            "description": "Calculate quality metrics with FFmpeg (SSIM, PSNR, VMAF)",
+            "title": "slhck/ffmpeg-quality-metrics"
         },
         {
             "category": "encoding",
