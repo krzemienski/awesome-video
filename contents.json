@@ -1435,12 +1435,6 @@
             "title": "nextbreakpoint/ffmpeg4java"
         },
         {
-            "category": "encoding",
-            "homepage": "https://github.com/nytimes/video-presets",
-            "description": "The video transcoding presets used by The New York Times - nytimes/video-presets",
-            "title": "nytimes/video-presets"
-        },
-        {
             "category": "cdn",
             "homepage": "https://aws.amazon.com/blogs/networking-and-content-delivery/lambdaedge-design-best-practices/",
             "description": "Lambda@Edge transforms CloudFront into a highly programmable CDN with serverless compute capabilities closer to your viewers around the world. This blog is the first in a series that explains best practices associated with using Lambda@Edge functions to customize your content delivery.",
