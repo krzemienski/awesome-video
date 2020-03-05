@@ -229,7 +229,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [escaped/django-video-encoding](https://github.com/escaped/django-video-encoding)  - django-video-encoding helps to convert your videos into different formats and resolutions. - escaped/django-video-encoding
 * [jliljebl/flowblade](https://github.com/jliljebl/flowblade)  - 
 * [mltframework/mlt](https://github.com/mltframework/mlt)  - MLT Multimedia Framework.
-* [nytimes/video-presets](https://github.com/nytimes/video-presets)  - The video transcoding presets used by The New York Times - nytimes/video-presets
 * [olaris / olaris-server](https://gitlab.com/olaris/olaris-server)  - GitLab.com
 * [ptrandev/swift-encoder](https://github.com/ptrandev/swift-encoder)  - A fire-and-forget shell script that encodes multiple video and audio files with ffmpeg. - ptrandev/swift-encoder
 * [realeyes-media/demo-encoder](https://github.com/realeyes-media/demo-encoder/)  - A nodejs encoding system based on ffmpeg and configured to write HLS streaming files to S3 - realeyes-media/demo-encoder
@@ -460,7 +459,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [microshow/RxFFmpeg](https://github.com/microshow/RxFFmpeg)  - 🔥RxFFmpeg 是基于 ( FFmpeg 4.0 + X264 + mp3lame + fdk-aac )
 * [nextbreakpoint/ffmpeg4java](https://github.com/nextbreakpoint/ffmpeg4java)  - FFmpeg4Java provides a JNI wrapper of FFmpeg library - nextbreakpoint/ffmpeg4java
 * [silencecorner/jre-ffmpeg-apline](https://github.com/silencecorner/jre-ffmpeg-apline)  - Dockerfile [jre8](https://github.com/fabric8io-images/java) and [ffmpeg](https://hub.docker.com/r/jrottenberg/ffmpeg)  - silencecorner/jre-ffmpeg-apline
-* [slhck/ffmpeg-debug-qp](https://github.com/slhck/ffmpeg-debug-qp)  - FFmpeg Debug Script for QP Values
 * [slhck/ffmpeg-encoding-course](https://github.com/slhck/ffmpeg-encoding-course)  - An introduction to FFmpeg and its tools. 
 * [transitive-bullshit/awesome-ffmpeg](https://github.com/transitive-bullshit/awesome-ffmpeg)  - 👻 A curated list of awesome FFmpeg resources.
 * [unosquare/ffmediaelement](https://github.com/unosquare/ffmediaelement)  - FFME: The Advanced WPF MediaElement (based on FFmpeg) - unosquare/ffmediaelement
@@ -606,6 +604,10 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [realeyes-media/alpine-bento-ffmpeg](https://github.com/realeyes-media/alpine-bento-ffmpeg)  - Alpine Linux with FFMPEG, Bento, and PM2.
 * [realeyes-media/alpine-node-video-multitool](https://github.com/realeyes-media/alpine-node-video-multitool)  - Contribute to realeyes-media/alpine-node-video-multitool development by creating an account on GitHub.
 * [schedules/dl](https://github.com/schedules/dl)  - Node.js DASH and HLS downloader. 
+* [slhck/ffmpeg-bitrate-stats](https://github.com/slhck/ffmpeg-bitrate-stats)  - Calculate bitrate statistics using FFmpeg
+* [slhck/ffmpeg-debug-qp](https://github.com/slhck/ffmpeg-debug-qp)  - FFmpeg Debug Script for QP Values
+* [slhck/ffmpeg-quality-metrics](https://github.com/slhck/ffmpeg-quality-metrics)  - Calculate quality metrics with FFmpeg (SSIM, PSNR, VMAF)
+* [slhck/scenecut-extractor](https://github.com/slhck/scenecut-extractor)  - Extract scenecuts from video files using ffmpeg
 * [video-dev/vtt.js](https://github.com/video-dev/vtt.js)  - A JavaScript implementation of the WebVTT specification - video-dev/vtt.js
 * [watson-developer-cloud/text-to-speech-nodejs](https://github.com/watson-developer-cloud/text-to-speech-nodejs)  - :speaker: Sample Node.js Application for the IBM Watson Text to Speech Service - watson-developer-cloud/text-to-speech-nodejs
 
