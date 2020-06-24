@@ -1,0 +1,304 @@
+[
+    {
+        "description": "Agnostic API orchestrating the transcoding of media assets across various cloud providers, previously https://github.com/cbsinteractive/video-transcoding-api - cbsinteractive/transcode-orchestrator",
+        "title": "cbsinteractive/transcode-orchestrator",
+        "hopmepage": "https://github.com/cbsinteractive/transcode-orchestrator",
+        "category": []
+    },
+    {
+        "description": "Quickly transcode a source video to MP4, OGV, and WebM, with scale, bitrate, and screengrab options. - monking/transcode-web-video",
+        "title": "monking/transcode-web-video",
+        "hopmepage": "https://github.com/monking/transcode-web-video",
+        "category": []
+    },
+    {
+        "description": "Distributed video transcoding. ",
+        "title": "ericgriffin/fflock",
+        "hopmepage": "https://github.com/ericgriffin/fflock",
+        "category": []
+    },
+    {
+        "description": "Simple video transcoding application for Django Framework - just-work/django-video-transcoding",
+        "title": "just-work/django-video-transcoding",
+        "hopmepage": "https://github.com/just-work/django-video-transcoding",
+        "category": []
+    },
+    {
+        "description": "Video Transcoder for React Native. ",
+        "title": "selsamman/react-native-transcode",
+        "hopmepage": "https://github.com/selsamman/react-native-transcode",
+        "category": []
+    },
+    {
+        "description": "Transcoding long (>1 hour) videos quickly and cost-effectively on GCP to adaptive HLS and MP4 mezzanine files. Up to 40x $ savings. - xyk2/cloud-transcoder",
+        "title": "xyk2/cloud-transcoder",
+        "hopmepage": "https://github.com/xyk2/cloud-transcoder",
+        "category": []
+    },
+    {
+        "description": "Unattended video transcoder to H265 and ACC codecs, in MKV containers. - amaurypm/transcode2H265",
+        "title": "amaurypm/transcode2H265",
+        "hopmepage": "https://github.com/amaurypm/transcode2H265",
+        "category": []
+    },
+    {
+        "description": "Python package containing many tools useful for converting video files to h264/h265 encoded MP4 or MKV files - kwodzicki/video_utils",
+        "title": "kwodzicki/video_utils",
+        "hopmepage": "https://github.com/kwodzicki/video_utils",
+        "category": []
+    },
+    {
+        "description": "Tools to batch transcode and process videos. ",
+        "title": "bmhayward/Transcode",
+        "hopmepage": "https://github.com/bmhayward/Transcode",
+        "category": []
+    },
+    {
+        "description": "Offline video transcoder written in node.js. ",
+        "title": "madebyhiro/codem-transcode",
+        "hopmepage": "https://github.com/madebyhiro/codem-transcode",
+        "category": []
+    },
+    {
+        "description": "Docker container to transcode videos in mounted volume to H265 using FFMPEG - Vilsol/Transcoder",
+        "title": "Vilsol/Transcoder",
+        "hopmepage": "https://github.com/Vilsol/Transcoder",
+        "category": []
+    },
+    {
+        "description": "📹🔥 Transcode Google Cloud Storage video files with Node.js and FFmpeg - diego3g/gcloud-node-video-transcoding",
+        "title": "diego3g/gcloud-node-video-transcoding",
+        "hopmepage": "https://github.com/diego3g/gcloud-node-video-transcoding",
+        "category": []
+    },
+    {
+        "description": ":clapper: A self-hosted opensource LTI video provider - openfun/marsha",
+        "title": "openfun/marsha",
+        "hopmepage": "https://github.com/openfun/marsha",
+        "category": []
+    },
+    {
+        "description": "Fantastic transcoder is a video transcoder which utilizes massively parallel compute to achieve ludicrous conversion speeds. - ClearSlide/Fantastic-Transcoder",
+        "title": "ClearSlide/Fantastic-Transcoder",
+        "hopmepage": "https://github.com/ClearSlide/Fantastic-Transcoder",
+        "category": []
+    },
+    {
+        "description": "node.js video transcoding library. ",
+        "title": "benvanik/node-transcoding",
+        "hopmepage": "https://github.com/benvanik/node-transcoding",
+        "category": []
+    },
+    {
+        "description": "HLSを使ってみたです．. ",
+        "title": "tozastation/HLS-Streaming",
+        "hopmepage": "https://github.com/tozastation/HLS-Streaming",
+        "category": []
+    },
+    {
+        "description": "List of example projects of how to use oat++ framework - oatpp/oatpp-examples",
+        "title": "oatpp/oatpp-examples",
+        "hopmepage": "https://github.com/oatpp/oatpp-examples",
+        "category": []
+    },
+    {
+        "description": "Middleware for serving HTTP Live Streaming (HLS) compatible media streams. - t-mullen/hls-server",
+        "title": "t-mullen/hls-server",
+        "hopmepage": "https://github.com/t-mullen/hls-server",
+        "category": []
+    },
+    {
+        "description": "encoder with hls output based on gstreamer. ",
+        "title": "i4tv/gstreamill",
+        "hopmepage": "https://github.com/i4tv/gstreamill",
+        "category": []
+    },
+    {
+        "description": "by Andrey Norkin, Joel Sole, Mariana Afonso, Kyle Swanson, Agata Opalach, Anush Moorthy, Anne Aaron",
+        "title": "SVT-AV1: an open-source AV1 encoder and decoder",
+        "hopmepage": "https://netflixtechblog.com/svt-av1-an-open-source-av1-encoder-and-decoder-ad295d9b5ca2",
+        "category": []
+    },
+    {
+        "description": "SRT Alliance is enabling the delivery of high-quality, low-latency video across the public Internet with open-source SRT. Join us today!",
+        "title": "SRT Alliance - Open-source SRT - Secure Reliable Transport",
+        "hopmepage": "https://www.srtalliance.org/",
+        "category": []
+    },
+    {
+        "description": "How to use CUDA GPU hardware encoding with ffmpeg to encode h264 and h264 HEVC movies in high quality and highspeed with our optimized parameter settings.",
+        "title": "CUDA GPU Accelerated h264/h265/HEVC Video Encoding with ffmpeg",
+        "hopmepage": "https://ntown.at/de/knowledgebase/cuda-gpu-accelerated-h264-h265-hevc-video-encoding-with-ffmpeg/",
+        "category": []
+    },
+    {
+        "description": "I recently remembered this popular post from my old blog. Since that blog no longer exists, I thought I would repost it here. Since I wrote this post about a decade ago, many others of done a much better job describing this in detail. I highly recommend the following two videos by Alec Watson fro",
+        "title": "About Frame Rates or Why 29.97?",
+        "hopmepage": "http://theautomaticfilmmaker.com/blog/2009/2/23/about-frame-rates-or-why-2997.html",
+        "category": []
+    },
+    {
+        "description": "VQMT: Video Quality Measurement Tool. Fast implementations of the following objective image quality metrics: PSNR, SSIM, MS-SSIM, VIFp, PSNR-HVS and PSNR-HVS-M. - Rolinh/VQMT",
+        "title": "Rolinh/VQMT",
+        "hopmepage": "https://github.com/Rolinh/VQMT",
+        "category": []
+    },
+    {
+        "description": "piper - a distributed workflow engine. ",
+        "title": "creactiviti/piper",
+        "hopmepage": "https://github.com/creactiviti/piper",
+        "category": []
+    },
+    {
+        "description": "Browse The Most Popular 656 Video Open Source Projects",
+        "title": "The Top 656 Video Open Source Projects",
+        "hopmepage": "https://awesomeopensource.com/projects/video",
+        "category": []
+    },
+    {
+        "description": "Convenient unified display of the most relevant technical and tag data for video and audio files. - MediaArea/MediaInfo",
+        "title": "MediaArea/MediaInfo",
+        "hopmepage": "https://github.com/MediaArea/MediaInfo",
+        "category": []
+    },
+    {
+        "description": "Tools to transcode, inspect and convert videos. ",
+        "title": "donmelton/video_transcoding",
+        "hopmepage": "https://github.com/donmelton/video_transcoding",
+        "category": []
+    },
+    {
+        "description": "Other tools to transcode videos. ",
+        "title": "donmelton/other_video_transcoding",
+        "hopmepage": "https://github.com/donmelton/other_video_transcoding",
+        "category": []
+    },
+    {
+        "description": "Encrypted Media Extensions. ",
+        "title": "w3c/encrypted-media",
+        "hopmepage": "https://github.com/w3c/encrypted-media/",
+        "category": [
+            "drm"
+        ]
+    },
+    {
+        "description": "Python script to download all Springer books released for free during the 2020 COVID-19 quarantine - alexgand/springer_free_books",
+        "title": "alexgand/springer_free_books: Python script to download all Springer books released for free during the 2020 COVID-19 quarantine",
+        "hopmepage": "https://github.com/alexgand/springer_free_books",
+        "category": []
+    },
+    {
+        "description": "",
+        "title": "HowVideo.works",
+        "hopmepage": "https://howvideo.works",
+        "category": []
+    },
+    {
+        "description": "A command-line tool for inspecting MPEG-TS files. Contribute to brendanlong/mpeg-ts-inspector development by creating an account on GitHub.",
+        "title": "brendanlong/mpeg-ts-inspector: A command-line tool for inspecting MPEG-TS files",
+        "hopmepage": "https://github.com/brendanlong/mpeg-ts-inspector",
+        "category": []
+    },
+    {
+        "description": "Vireo is a lightweight and versatile video processing library written in C++11 - twitter/vireo",
+        "title": "twitter/vireo: Vireo is a lightweight and versatile video processing library written in C++11",
+        "hopmepage": "https://github.com/twitter/vireo",
+        "category": []
+    },
+    {
+        "description": "Specification for Encapsulating Opus Audio in ISO-BMFF Container - webmproject/opus-dash",
+        "title": "webmproject/opus-dash: Specification for Encapsulating Opus Audio in ISO-BMFF Container",
+        "hopmepage": "https://github.com/webmproject/opus-dash",
+        "category": []
+    },
+    {
+        "description": "CCExtractor - Official version maintained by the core team - CCExtractor/ccextractor",
+        "title": "CCExtractor/ccextractor: CCExtractor - Official version maintained by the core team",
+        "hopmepage": "https://github.com/CCExtractor/ccextractor",
+        "category": []
+    },
+    {
+        "description": "avbroadcast - republish media streams for mass consumption - media-toolbox/avbroadcast",
+        "title": "media-toolbox/avbroadcast: avbroadcast - republish media streams for mass consumption",
+        "hopmepage": "https://github.com/media-toolbox/avbroadcast",
+        "category": []
+    },
+    {
+        "description": "",
+        "title": "MPEG DASH Sample Content | Bento4",
+        "hopmepage": "http://www.bento4.com/developers/dash/dash-sample-content",
+        "category": []
+    },
+    {
+        "description": "Find the offset of an audio file within another audio file - bbc/audio-offset-finder",
+        "title": "bbc/audio-offset-finder: Find the offset of an audio file within another audio file",
+        "hopmepage": "https://github.com/bbc/audio-offset-finder",
+        "category": []
+    },
+    {
+        "description": "",
+        "title": "ffmprovisr",
+        "hopmepage": "https://amiaopensource.github.io/ffmprovisr#convert-colorspace",
+        "category": []
+    },
+    {
+        "description": "Automatically compile and configure ffmpeg, Python 3.7.2(default), PyAV, OpenCV, Keras, Tensorflow(CPU Mode) and other relative environment. - sunhailin-Leo/AutoConfigShellScript",
+        "title": "sunhailin-Leo/AutoConfigShellScript: Automatically compile and configure ffmpeg, Python 3.7.2(default), PyAV, OpenCV, Keras, Tensorflow(CPU Mode) and other relative environment.",
+        "hopmepage": "https://github.com/sunhailin-Leo/AutoConfigShellScript",
+        "category": []
+    },
+    {
+        "description": "Runs FFmpeg transcoding processes simultaneously and measures CPU performance - 2501world/transcoding-performance-trial",
+        "title": "2501world/transcoding-performance-trial: Runs FFmpeg transcoding processes simultaneously and measures CPU performance",
+        "hopmepage": "https://github.com/2501world/transcoding-performance-trial",
+        "category": []
+    },
+    {
+        "description": "分布式FFMpeg转码集群。A FFMpeg transcoding cluster runs in variable CPUs, including ARM, x86, and others which can run linux. You can use it to run a RaspberryPi cluster. - chn-lee-yumi/distributed_ffmpeg_...",
+        "title": "chn-lee-yumi/distributed_ffmpeg_transcoding_cluster: 分布式FFMpeg转码集群。A FFMpeg transcoding cluster runs in variable CPUs, including ARM, x86, and others which can run linux. You can use it to run a RaspberryPi cluster.",
+        "hopmepage": "https://github.com/chn-lee-yumi/distributed_ffmpeg_transcoding_cluster",
+        "category": []
+    },
+    {
+        "description": "",
+        "title": "Saurabh702/ffmpeg-scale-benchmark",
+        "hopmepage": "https://github.com/Saurabh702/ffmpeg-scale-benchmark",
+        "category": []
+    },
+    {
+        "description": "FFmpeg transcoders benchmark. Contribute to AlvianPrasetya/transcoding development by creating an account on GitHub.",
+        "title": "AlvianPrasetya/transcoding: FFmpeg transcoders benchmark",
+        "hopmepage": "https://github.com/AlvianPrasetya/transcoding",
+        "category": []
+    },
+    {
+        "description": "A comparison of ffmpeg, Shotdetect and PySceneDetect for shot transition detection - albanie/shot-detection-benchmarks",
+        "title": "albanie/shot-detection-benchmarks: A comparison of ffmpeg, Shotdetect and PySceneDetect for shot transition detection",
+        "hopmepage": "https://github.com/albanie/shot-detection-benchmarks",
+        "category": []
+    },
+    {
+        "description": "This repository is about video compression, and more specifically about the motion estimation block (ME block) of a video encoder. It is a research project for developing an efficient motion estima...",
+        "title": "AK1194/Video-Compression-motion-estimation-block-video-encoder: This repository is about video compression, and more specifically about the motion estimation block (ME block) of a video encoder. It is a research project for developing an efficient motion",
+        "hopmepage": "https://github.com/AK1194/Video-Compression-motion-estimation-block-video-encoder",
+        "category": []
+    },
+    {
+        "description": "Cross-platform command-line AV1 encode toolkit. Contribute to master-of-zen/Av1an development by creating an account on GitHub.",
+        "title": "master-of-zen/Av1an: Cross-platform command-line AV1 encode toolkit",
+        "hopmepage": "https://github.com/master-of-zen/Av1an",
+        "category": []
+    },
+    {
+        "description": "A collection of FFmpeg commands taken from practice - mitio/useful-ffmpeg-commands",
+        "title": "mitio/useful-ffmpeg-commands: A collection of FFmpeg commands taken from practice",
+        "hopmepage": "https://github.com/mitio/useful-ffmpeg-commands",
+        "category": []
+    },
+    {
+        "description": "GUI File Format Converter. Contribute to ilstam/FF-Multi-Converter development by creating an account on GitHub.",
+        "title": "ilstam/FF-Multi-Converter: GUI File Format Converter",
+        "hopmepage": "https://github.com/ilstam/FF-Multi-Converter",
+        "category": []
+    }
+]

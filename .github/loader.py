@@ -1,9 +1,7 @@
 import json
 
 from twisted.python.util import println
-import re
-from unicontent.extractors import get_metadata
-
+import requests
 
 def find(string):
     url = re.findall(
@@ -57,31 +55,13 @@ def read_and_sanitize_metadata_contents_json():
                         url_to_get_metadata = project['homepage']
 
                         if 'https' in url_to_get_metadata:
-                                metadata_from_url = get_metadata(
-                                    identifier=url_to_get_metadata, format='n3')
-                                santized_project['description'] = metadata_from_url['description']
-                                santized_project['title'] = metadata_from_url['title']
-                                santized_projects.append(santized_project)
+                                santized_projects.append(create_project_from_raindrop(project))
 
                                 contents['projects'] = santized_projects
-                                for project in contents['projects']:
-                                        if 'title' in project and project['title'] != None:
-                                                print('NEW Title : ' +
-                                                      project['title'])
-                                        if isinstance(project['category'], list):
-                                                for a in project['category']:
-                                                        print('Category : ' + a)
-                                        else:
-                                                print('Category : ' +
-                                                      project['category'])
-
-                                        print('URL : ' + project['homepage'])
-                                        if 'description' in project and project['description'] != None:
-                                                print('NEW Description: ' +
-                                                      project['description'])
+                                
                         else:
                               print("NEED TO FIX HTTPS " + project['homepage'])
-        with open('../contents-new.json', 'w') as outfile:
+        with open('../contents-sanitized.json', 'w') as outfile:
                 json.dump(contents, outfile, indent=4, ensure_ascii=False)
                 println("wrote santized json to contents.json")
 
@@ -136,9 +116,68 @@ def add_new_projects():
                         json.dump(resources_dict, outfile, sort_keys=True, indent=4, ensure_ascii=False)
                         println("wrote resources.json to file")        
                 return resources_dict
+
+def add_projects_from_raindrop_collection():
+        url = "https://api.raindrop.io/v1/raindrops/11035632?sort=-created&page=1&perpage=1000"
+
+        payload = {}
+        headers = {
+        'User-Agent': 'rn3/379 CFNetwork/1126 Darwin/19.5.0',
+        'Host': 'api.raindrop.io',
+        'Cookie': 'connect.sid=s%3AE6PpfChMzJaZBivrzTjbAvzip_HSSIGj.mTMUOokoewe6iBIhyrE34BZqdGzlALrUJ3mnhk%2FCBfQ; _ga=GA1.2.420119653.1585613645; __cfduid=d85eb790f0a74c61f126b3536d73535f51573300023; connect.sid=s%3AE6PpfChMzJaZBivrzTjbAvzip_HSSIGj.mTMUOokoewe6iBIhyrE34BZqdGzlALrUJ3mnhk%2FCBfQ'
+        }
+
+        response = requests.request("GET", url, headers=headers, data = payload)
+
+        projects_in_collection = response.json()['items']
+        new_resources = []
+        for project in projects_in_collection:
+                new_resource = {}
+                homepage = project['link']
+                description = project['excerpt']
+                title = project['title']
+                description = description.replace(f"Contribute to {title} development by creating an account on GitHub.","")                
+                new_resource['description'] = description
+                new_resource['title'] = title 
+                new_resource['hopmepage'] = homepage
+                println(new_resource['hopmepage'])
+                println(new_resource['title'])
+                println(new_resource['description'])
+                if len(project['tags']) > 0:
+                        new_resource['category'] = project['tags']
+                else:
+                        new_resource['category'] = []
+                new_resources.append(new_resource)
+        with open('../contents-added.json', 'w') as outfile:
+                json.dump(new_resources, outfile, indent=4, ensure_ascii=False)
+                println("wrote santized json to contents-new.json")
+
+def create_project_from_raindrop(current_resource):
+        link_to_parse = current_resource['homepage']
+        url = f"https://api.raindrop.io/v1/parse?url={link_to_parse}"
+
+        payload = {}
+        headers = {
+        'User-Agent': 'extension/379 CFNetwork/1126 Darwin/19.5.0',
+        'Host': 'api.raindrop.io',
+        'Cookie': 'connect.sid=s%3AE6PpfChMzJaZBivrzTjbAvzip_HSSIGj.mTMUOokoewe6iBIhyrE34BZqdGzlALrUJ3mnhk%2FCBfQ; _ga=GA1.2.420119653.1585613645; __cfduid=d85eb790f0a74c61f126b3536d73535f51573300023; connect.sid=s%3AE6PpfChMzJaZBivrzTjbAvzip_HSSIGj.mTMUOokoewe6iBIhyrE34BZqdGzlALrUJ3mnhk%2FCBfQ'
+        }
+
+        response = requests.request("GET", url, headers=headers, data = payload)
+
+        json_response = response.json()
+        if json_response['result'] == True:
+                title = json_response['item']['title']
+                current_resource['title'] = title
+                description = json_response['item']['excerpt']
+                description = description.replace(f"Contribute to {title} development by creating an account on GitHub.","")
+                current_resource['description'] = description
+        println(current_resource)
+        return current_resource
+
 def main():
-# First, we  sanitize the current contents
+        # First, we  sanitize the current contents
         read_and_sanitize_metadata_contents_json()
-        add_new_projects()
+        add_projects_from_raindrop_collection()
 if __name__ == "__main__":
         main()
