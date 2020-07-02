@@ -2397,6 +2397,12 @@
             "title": "ruffle-rs/ruffle"
         },
         {
+            "category": "players",
+            "homepage": "https://github.com/videolan/LibVLCSharp",
+            "description": "Cross-platform .NET/Mono bindings for LibVLC",
+            "title": "videolan/libvlcsharp"
+        },
+        {
             "category": "tools",
             "homepage": "https://github.com/DSRCorporation/imf-conversion",
             "description": "NF IMF media conversion utility allows to handle flat file creation from a specified CPL within the IMF package - DSRCorporation/imf-conversion",
