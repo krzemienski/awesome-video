@@ -3011,6 +3011,12 @@
         "description": "BBC R&D HDR project page.",
         "homepage": "https://www.bbc.co.uk/rd/projects/high-dynamic-range",
         "title": "High Dynamic Range Television and Hybrid Log-Gamma - BBC R&D"
+    },
+    {
+        "category": "community",
+        "description": "VideoLAN events",
+        "homepage": "https://www.videolan.org/videolan/events",
+        "title": "Community events of the VideoLAN non-profit organization"
     }
     ]
 }
