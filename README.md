@@ -324,6 +324,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [ruffle-rs/ruffle](https://github.com/ruffle-rs/ruffle)  - A Flash Player emulator written in Rust.
 * [tjenkinson/media-element-syncer](https://github.com/tjenkinson/media-element-syncer)  - Synchronise two or more HTML5 media elements.
 * [ustwo/videoplayback-ios](https://github.com/ustwo/videoplayback-ios)  - Swift AVPlayer wrapper using the VIPER architecture. Currently a work in progress  - ustwo/videoplayback-ios
+* [videolan/libvlcsharp](https://github.com/videolan/LibVLCSharp)  - Cross-platform .NET/Mono bindings for LibVLC
 * [videolan/vlc](https://github.com/videolan/vlc)  - VLC media player - All pull requests are ignored, please follow https://wiki.videolan.org/Sending_Patches_VLC/ - videolan/vlc
 * [vitalets/awesome-smart-tv](https://github.com/vitalets/awesome-smart-tv)  - :zap:A curated list of awesome resources for building Smart TV apps - vitalets/awesome-smart-tv
 
@@ -640,6 +641,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 ## Community
 *Video developers community, slack groups, conferences, meetups*
 
+* [Community events of the VideoLAN non-profit organization](https://www.videolan.org/videolan/events)  - VideoLAN events
 
 ### Conferences
 [back to top](#readme) 
