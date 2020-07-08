@@ -5,7 +5,7 @@
     "categories": [
         {
             "title": "Introduction",
-            "id": "intro",
+            "id": "introduction",
             "description": "What's video?"
         },
         {
@@ -2397,6 +2397,12 @@
             "title": "ruffle-rs/ruffle"
         },
         {
+            "category": "players",
+            "homepage": "https://github.com/videolan/LibVLCSharp",
+            "description": "Cross-platform .NET/Mono bindings for LibVLC",
+            "title": "videolan/libvlcsharp"
+        },
+        {
             "category": "tools",
             "homepage": "https://github.com/DSRCorporation/imf-conversion",
             "description": "NF IMF media conversion utility allows to handle flat file creation from a specified CPL within the IMF package - DSRCorporation/imf-conversion",
@@ -3011,6 +3017,12 @@
         "description": "BBC R&D HDR project page.",
         "homepage": "https://www.bbc.co.uk/rd/projects/high-dynamic-range",
         "title": "High Dynamic Range Television and Hybrid Log-Gamma - BBC R&D"
+    },
+    {
+        "category": "community",
+        "description": "VideoLAN events",
+        "homepage": "https://www.videolan.org/videolan/events",
+        "title": "Community events of the VideoLAN non-profit organization"
     }
     ]
 }
