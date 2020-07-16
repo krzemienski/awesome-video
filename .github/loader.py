@@ -61,9 +61,63 @@ def read_and_sanitize_metadata_contents_json():
                                 
                         else:
                               print("NEED TO FIX HTTPS " + project['homepage'])
-        with open('../contents-sanitized.json', 'w') as outfile:
+        contents['projects'] = santized_projects.extend(add_projects_from_raindrop_collection())                       
+        with open('../contents-sanitized-plus-new.json', 'w') as outfile:
                 json.dump(contents, outfile, indent=4, ensure_ascii=False)
                 println("wrote santized json to contents.json")
+
+def generate_new_contents():
+        santized_projects = []
+        contents = {}
+
+        with open('../contents.json') as json_file:
+                contents = json.load(json_file)
+                for category in contents['categories']:
+                        print('Category : ' + category['title'])
+
+                        if 'description' in category:
+                                print('Description: ' +
+                                      category['description'])
+
+                        print('Id: ' + category['id'])
+
+                        if 'parent' in category:
+                                print('Parent: ' + category['parent'])
+                        print('')
+
+                for project in contents['projects']:
+                        santized_project = {}
+
+                        santized_project['category'] = project['category']
+                        santized_project['homepage'] = project['homepage']
+
+                        if project['title'] != None: 
+                                print('CURRENT Title : ' + project['title'])
+                        if isinstance(project['category'], list):
+                                 for a in project['category']:
+                                        print('Category : ' + a)
+                        else:
+                                 print('Category : ' + project['category'])
+                        
+                        if project['homepage'] != None: 
+                                print('URL : ' + project['homepage'])
+                        if 'description' in project and project['description'] != None:
+                                print('CURRENT Description: ' +
+                                      project['description'])
+
+                        url_to_get_metadata = project['homepage']
+
+                        if 'https' in url_to_get_metadata:
+                                santized_projects.append(create_project_from_raindrop(project))
+
+                                contents['projects'] = santized_projects
+                                
+                        else:
+                              print("NEED TO FIX HTTPS " + project['homepage'])
+        contents['projects'] = santized_projects.extend(add_projects_from_raindrop_collection())                       
+        with open('../contents-sanitized-plus-new.json', 'w') as outfile:
+                json.dump(contents, outfile, indent=4, ensure_ascii=False)
+                println("wrote santized json to contents.json")                
 
 
 def add_new_projects():
@@ -151,6 +205,7 @@ def add_projects_from_raindrop_collection():
         with open('../contents-added.json', 'w') as outfile:
                 json.dump(new_resources, outfile, indent=4, ensure_ascii=False)
                 println("wrote santized json to contents-new.json")
+        return new_resources
 
 def create_project_from_raindrop(current_resource):
         link_to_parse = current_resource['homepage']
@@ -178,6 +233,6 @@ def create_project_from_raindrop(current_resource):
 def main():
         # First, we  sanitize the current contents
         read_and_sanitize_metadata_contents_json()
-        add_projects_from_raindrop_collection()
+        
 if __name__ == "__main__":
         main()
