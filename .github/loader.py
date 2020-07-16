@@ -193,8 +193,8 @@ def add_projects_from_raindrop_collection():
                 description = description.replace(f"Contribute to {title} development by creating an account on GitHub.","")                
                 new_resource['description'] = description
                 new_resource['title'] = title 
-                new_resource['hopmepage'] = homepage
-                println(new_resource['hopmepage'])
+                new_resource['homepage'] = homepage
+                println(new_resource['homepage'])
                 println(new_resource['title'])
                 println(new_resource['description'])
                 if len(project['tags']) > 0:
