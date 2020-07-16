@@ -603,7 +603,7 @@
         "description": "Tools to batch transcode and process videos. ",
         "title": "bmhayward/Transcode",
         "hopmepage": "https://github.com/bmhayward/Transcode",
-        "category": []
+        "category": [ "encoding"]
     },
     {
         "description": "Offline video transcoder written in node.js. ",
@@ -620,7 +620,7 @@
         "category": [
             "encoding"
         ]
-        } 
+        },
       
       {
             "category": "ffmpeg",
