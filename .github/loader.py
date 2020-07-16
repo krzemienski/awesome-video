@@ -198,7 +198,7 @@ def add_projects_from_raindrop_collection():
                 println(new_resource['title'])
                 println(new_resource['description'])
                 if len(project['tags']) > 0:
-                        new_resource['category'] = project['tags']
+                        new_resource['category'] = project['tags'][0]
                 else:
                         new_resource['category'] = []
                 new_resources.append(new_resource)
