@@ -205,7 +205,7 @@
         {
         "description": "QCTools (Quality Control Tools for Video Preservation) is a free and open source software tool that helps users analyze and understand their digitized video files through use of audiovisual analytics and filtering. QCTools is funded by the National Endowment for the Humanities and the Knight Foundation, and is developed by the Bay Area Video Coalition.",
         "title": "QCTools Documentation",
-        "hopmepage": "http://bavc.github.io/qctools/",
+        "homepage": "http://bavc.github.io/qctools/",
         "category": [
             "qoe"
         ]
@@ -213,7 +213,7 @@
     {
         "description": "A guide to cables and connectors used for audiovisual tech - amiaopensource/cable-bible",
         "title": "amiaopensource/cable-bible",
-        "hopmepage": "https://github.com/amiaopensource/cable-bible",
+        "homepage": "https://github.com/amiaopensource/cable-bible",
         "category": [
             "learning",
             "encoding",
@@ -223,7 +223,7 @@
     {
         "description": "",
         "title": "The Cable Bible",
-        "hopmepage": "https://amiaopensource.github.io/cable-bible/",
+        "homepage": "https://amiaopensource.github.io/cable-bible/",
         "category": [
             "reading"
         ]
@@ -231,7 +231,7 @@
     {
         "description": "Create and execute FFmpeg commands. ",
         "title": "ColorlabMD/FFCommand_Engine",
-        "hopmepage": "https://github.com/ColorlabMD/FFCommand_Engine",
+        "homepage": "https://github.com/ColorlabMD/FFCommand_Engine",
         "category": [
             "ffmpeg"
         ]
@@ -239,7 +239,7 @@
     {
         "description": "",
         "title": "ffmpeg tutorial",
-        "hopmepage": "http://www.dranger.com/ffmpeg/",
+        "homepage": "http://www.dranger.com/ffmpeg/",
         "category": [
             "learning",
             "ffmpeg"
@@ -248,7 +248,7 @@
     {
         "description": "A fluent API to FFMPEG (http://www.ffmpeg.org). ",
         "title": "fluent-ffmpeg/node-fluent-ffmpeg",
-        "hopmepage": "https://github.com/fluent-ffmpeg/node-fluent-ffmpeg",
+        "homepage": "https://github.com/fluent-ffmpeg/node-fluent-ffmpeg",
         "category": [
             "ffmpeg"
         ]
@@ -256,7 +256,7 @@
     {
         "description": "A high level transcoder using ffmpeg that in addition to transcoding provides real time stats, detection of bad video, integration with nginx for on demand video - dschere/industrial-ffmpeg",
         "title": "dschere/industrial-ffmpeg",
-        "hopmepage": "https://github.com/dschere/industrial-ffmpeg",
+        "homepage": "https://github.com/dschere/industrial-ffmpeg",
         "category": [
             "ffmpeg"
         ]
@@ -264,7 +264,7 @@
     {
         "description": "This application transcode a video that you send on all formats what you want and diferent resolutions. - cash2one/VideoTranscoding-Backend",
         "title": "cash2one/VideoTranscoding-Backend",
-        "hopmepage": "https://github.com/cash2one/VideoTranscoding-Backend",
+        "homepage": "https://github.com/cash2one/VideoTranscoding-Backend",
         "category": [
             "encoding",
             "tools"
@@ -273,7 +273,7 @@
     {
         "description": "Worker that is used to transcode video to supported formats and resolutions - TenPennyTV/worker-ffmpeg",
         "title": "TenPennyTV/worker-ffmpeg",
-        "hopmepage": "https://github.com/TenPennyTV/worker-ffmpeg",
+        "homepage": "https://github.com/TenPennyTV/worker-ffmpeg",
         "category": [
             "ffmpeg"
         ]
@@ -281,7 +281,7 @@
     {
         "description": "Transcodes audio & video files to text, supports MP3, M4A, WAV, MP4, MKV, AVI, MPG & MPEG. No Online API's. Python 3 - shinobizero/audio_transcriber",
         "title": "shinobizero/audio_transcriber",
-        "hopmepage": "https://github.com/shinobizero/audio_transcriber",
+        "homepage": "https://github.com/shinobizero/audio_transcriber",
         "category": [
             "audio",
             "subtitles-and-captions"
@@ -290,7 +290,7 @@
     {
         "description": "Gui for ffmpeg to simplify transcoding and embeding audio / subtitles in mkv videos - mugiseyebrows/mugi-ffmpeg",
         "title": "mugiseyebrows/mugi-ffmpeg",
-        "hopmepage": "https://github.com/mugiseyebrows/mugi-ffmpeg",
+        "homepage": "https://github.com/mugiseyebrows/mugi-ffmpeg",
         "category": [
             "tools",
             "encoding"
@@ -299,7 +299,7 @@
     {
         "description": "Transcode video files using FFMPEG and python3. ",
         "title": "zolinux/MediaArchiver",
-        "hopmepage": "https://github.com/zolinux/MediaArchiver",
+        "homepage": "https://github.com/zolinux/MediaArchiver",
         "category": [
             "ffmpeg",
             "encoding",
@@ -309,7 +309,7 @@
     {
         "description": "A docker-based video converter that uses VAAPI-compatible hardware for transcoding - git-developer/vaapi-video-converter",
         "title": "git-developer/vaapi-video-converter",
-        "hopmepage": "https://github.com/git-developer/vaapi-video-converter",
+        "homepage": "https://github.com/git-developer/vaapi-video-converter",
         "category": [
             "ffmpeg",
             "encoding",
@@ -319,7 +319,7 @@
     {
         "description": "Transcoding video usando ffmpeg. ",
         "title": "LordCrainer/transcoding_ffmpeg",
-        "hopmepage": "https://github.com/LordCrainer/transcoding_ffmpeg",
+        "homepage": "https://github.com/LordCrainer/transcoding_ffmpeg",
         "category": [
             "ffmpeg"
         ]
@@ -327,7 +327,7 @@
     {
         "description": "video transcode based on ffmpeg, support H264/HEVC and more. - sambios/ffmpeg_transcoder",
         "title": "sambios/ffmpeg_transcoder",
-        "hopmepage": "https://github.com/sambios/ffmpeg_transcoder",
+        "homepage": "https://github.com/sambios/ffmpeg_transcoder",
         "category": [
             "encoding",
             "ffmpeg"
@@ -336,19 +336,19 @@
     {
         "description": "nodejs ffmpeg video transcode webui，基于nodejs的云转码系统 https://www.efvcms.com - bookyo/express-ffmpeg",
         "title": "bookyo/express-ffmpeg",
-        "hopmepage": "https://github.com/bookyo/express-ffmpeg",
+        "homepage": "https://github.com/bookyo/express-ffmpeg",
         "category": []
     },
     {
         "description": "NatReader is a cross-platform video decoding API designed for transcoding applications. - natsuite/NatReader-API",
         "title": "natsuite/NatReader-API",
-        "hopmepage": "https://github.com/natsuite/NatReader-API",
+        "homepage": "https://github.com/natsuite/NatReader-API",
         "category": []
     },
     {
         "description": "This project includes 100 video streams in standardized format and their transcoding information and merging efficiency info - hpcclab/videostreamingBenchmark",
         "title": "hpcclab/videostreamingBenchmark",
-        "hopmepage": "https://github.com/hpcclab/videostreamingBenchmark",
+        "homepage": "https://github.com/hpcclab/videostreamingBenchmark",
         "category": [
             "tools"
         ]
@@ -356,7 +356,7 @@
     {
         "description": "FFMPEG Wasm Video Transcoder. ",
         "title": "Mozilla-Open-Lab-Etwas/Video-Transcoder",
-        "hopmepage": "https://github.com/Mozilla-Open-Lab-Etwas/Video-Transcoder",
+        "homepage": "https://github.com/Mozilla-Open-Lab-Etwas/Video-Transcoder",
         "category": [
             "encoding"
         ]
@@ -364,13 +364,13 @@
     {
         "description": "Python based batch tools to transcode audio and video conveniently (leverages FFMpeg) - okorach/audio-video-tools",
         "title": "okorach/audio-video-tools",
-        "hopmepage": "https://github.com/okorach/audio-video-tools",
+        "homepage": "https://github.com/okorach/audio-video-tools",
         "category": []
     },
     {
         "description": "Making Streaming Video Better Streaming video is exploding in popularity. Consumers are watching more video online across a myriad of devices. But, the streaming experiences, across providers, can be wildly different from each other which ultimately hurts adoption. The problem is a lack of colla ...",
         "title": "Home | Streaming Video Alliance",
-        "hopmepage": "https://www.streamingvideoalliance.org/",
+        "homepage": "https://www.streamingvideoalliance.org/",
         "category": [
             "vendors"
         ]
@@ -378,7 +378,7 @@
     {
         "description": "The ffmpeg program has numerous “switches” that help to adjust and convert audio and video files. Some of them are not explained very well in the documentation, and many websites have c…",
         "title": "Correcting for audio/video sync issues with the ffmpeg program’s ITSOFFSET switch",
-        "hopmepage": "https://wjwoodrow.wordpress.com/2013/02/04/correcting-for-audiovideo-sync-issues-with-the-ffmpeg-programs-itsoffset-switch/",
+        "homepage": "https://wjwoodrow.wordpress.com/2013/02/04/correcting-for-audiovideo-sync-issues-with-the-ffmpeg-programs-itsoffset-switch/",
         "category": [
             "ffmpeg",
             "reading"
@@ -387,7 +387,7 @@
     {
         "description": "",
         "title": "DASH Industry Forum | Catalyzing the adoption of MPEG-DASH",
-        "hopmepage": "https://dashif.org/identifiers/content_protection/",
+        "homepage": "https://dashif.org/identifiers/content_protection/",
         "category": [
             "dash",
             "drm"
@@ -396,7 +396,7 @@
     {
         "description": "",
         "title": "aom - Git at Google",
-        "hopmepage": "https://aomedia.googlesource.com/aom/",
+        "homepage": "https://aomedia.googlesource.com/aom/",
         "category": [
             "av1"
         ]
@@ -404,7 +404,7 @@
     {
         "description": "",
         "title": "multicoreware / x265 / wiki / Home",
-        "hopmepage": "https://bitbucket.org/multicoreware/x265/wiki/Home",
+        "homepage": "https://bitbucket.org/multicoreware/x265/wiki/Home",
         "category": [
             "hevc"
         ]
@@ -412,7 +412,7 @@
     {
         "description": "Authored by Chirag Oswal, Solution Architect, AWS, and Vikas Tiwari, Solution Architect Manager, AWS Video has become the primary means of Information sharing and learning. Customers are investing in innovative solutions to tap into the e-learning and video space. Video content is their IP and needs to be protected and securely delivered. Online video is a […]",
         "title": "Creating a secure video-on-demand (VOD) platform using AWS",
-        "hopmepage": "https://aws.amazon.com/blogs/media/creating-a-secure-video-on-demand-vod-platform-using-aws/",
+        "homepage": "https://aws.amazon.com/blogs/media/creating-a-secure-video-on-demand-vod-platform-using-aws/",
         "category": [
             "drm"
         ]
@@ -420,7 +420,7 @@
     {
         "description": "FFmpeg/FFprobe AWS Lambda layer. ",
         "title": "serverlesspub/ffmpeg-aws-lambda-layer",
-        "hopmepage": "https://github.com/serverlesspub/ffmpeg-aws-lambda-layer",
+        "homepage": "https://github.com/serverlesspub/ffmpeg-aws-lambda-layer",
         "category": [
             "ffmpeg"
         ]
@@ -428,7 +428,7 @@
     {
         "description": "A guide to building a transcoder using Exodus, FFmpeg, and AWS Lambda.",
         "title": "Running FFmpeg on AWS Lambda for 1.9% the cost of AWS Elastic Transcoder",
-        "hopmepage": "https://intoli.com/blog/transcoding-on-aws-lambda/",
+        "homepage": "https://intoli.com/blog/transcoding-on-aws-lambda/",
         "category": [
             "reading",
             "encoding"
@@ -437,13 +437,13 @@
     {
         "description": "Python module to read/write popular video caption formats - pbs/pycaption",
         "title": "pbs/pycaption",
-        "hopmepage": "https://github.com/pbs/pycaption",
+        "homepage": "https://github.com/pbs/pycaption",
         "category": []
     },
     {
         "description": "Simulate bitrate switching algorithms based on real data traces - pokey909/dash_adaptation_simulator",
         "title": "pokey909/dash_adaptation_simulator",
-        "hopmepage": "https://github.com/pokey909/dash_adaptation_simulator",
+        "homepage": "https://github.com/pokey909/dash_adaptation_simulator",
         "category": [
             "reading",
             "qoe",
@@ -453,13 +453,13 @@
     {
         "description": "A Django project that allows you to catalog and stream your videos (using FFmpeg to add subtitles and transcode). - davidbt/djmediastreamer",
         "title": "davidbt/djmediastreamer",
-        "hopmepage": "https://github.com/davidbt/djmediastreamer",
+        "homepage": "https://github.com/davidbt/djmediastreamer",
         "category": []
     },
     {
         "description": "AWS S3 + Lambda + Transcode. ",
         "title": "andressspinetti/video-transcoder",
-        "hopmepage": "https://github.com/andressspinetti/video-transcoder",
+        "homepage": "https://github.com/andressspinetti/video-transcoder",
         "category": [
             "encoding"
         ]
@@ -467,7 +467,7 @@
     {
         "description": "bash script which will detect video new file in folder and transcode it to adaprive bitrate - SmurfManX/ffmpeg-nvidia-adaptive-vod-transcoder",
         "title": "SmurfManX/ffmpeg-nvidia-adaptive-vod-transcoder",
-        "hopmepage": "https://github.com/SmurfManX/ffmpeg-nvidia-adaptive-vod-transcoder",
+        "homepage": "https://github.com/SmurfManX/ffmpeg-nvidia-adaptive-vod-transcoder",
         "category": [
             "ffmpeg",
             "encoding",
@@ -477,7 +477,7 @@
     {
         "description": "Video transcoding ffmpeg frontend in Python. ",
         "title": "mrpdaemon/mmf",
-        "hopmepage": "https://github.com/mrpdaemon/mmf",
+        "homepage": "https://github.com/mrpdaemon/mmf",
         "category": [
             "ffmpeg",
             "encoding",
@@ -487,7 +487,7 @@
     {
         "description": "A Swift wrapper around the transcode-video command - Ponyboy47/TranscodeVideo",
         "title": "Ponyboy47/TranscodeVideo",
-        "hopmepage": "https://github.com/Ponyboy47/TranscodeVideo",
+        "homepage": "https://github.com/Ponyboy47/TranscodeVideo",
         "category": [
             "encoding",
             "tools"
@@ -496,7 +496,7 @@
     {
         "description": "Video Transcoding Tools. ",
         "title": "kees/transcode",
-        "hopmepage": "https://github.com/kees/transcode",
+        "homepage": "https://github.com/kees/transcode",
         "category": [
             "encoding"
         ]
@@ -504,7 +504,7 @@
     {
         "description": "Transcode video by ffmpeg with nvenc; normalize the volume; force dynamic range compression to the volume - quarkscript/media_works",
         "title": "quarkscript/media_works",
-        "hopmepage": "https://github.com/quarkscript/media_works",
+        "homepage": "https://github.com/quarkscript/media_works",
         "category": [
             "encoding",
             "tools"
@@ -513,7 +513,7 @@
     {
         "description": "Transcode video files to the AV1 format using ffmpeg and libaom-av1. - luziferius/av1transcoder",
         "title": "luziferius/av1transcoder",
-        "hopmepage": "https://github.com/luziferius/av1transcoder",
+        "homepage": "https://github.com/luziferius/av1transcoder",
         "category": [
             "av1",
             "tools"
@@ -522,7 +522,7 @@
     {
         "description": "a Python-based software to transcode videos and upload files to a remote server or S3-bucket - sw360cab/pyup-transcoder",
         "title": "sw360cab/pyup-transcoder",
-        "hopmepage": "https://github.com/sw360cab/pyup-transcoder",
+        "homepage": "https://github.com/sw360cab/pyup-transcoder",
         "category": [
             "encoding"
         ]
@@ -530,7 +530,7 @@
     {
         "description": "Agnostic API orchestrating the transcoding of media assets across various cloud providers, previously https://github.com/cbsinteractive/video-transcoding-api - cbsinteractive/transcode-orchestrator",
         "title": "cbsinteractive/transcode-orchestrator",
-        "hopmepage": "https://github.com/cbsinteractive/transcode-orchestrator",
+        "homepage": "https://github.com/cbsinteractive/transcode-orchestrator",
         "category": [
             "encoding",
             "tools"
@@ -539,7 +539,7 @@
     {
         "description": "Quickly transcode a source video to MP4, OGV, and WebM, with scale, bitrate, and screengrab options. - monking/transcode-web-video",
         "title": "monking/transcode-web-video",
-        "hopmepage": "https://github.com/monking/transcode-web-video",
+        "homepage": "https://github.com/monking/transcode-web-video",
         "category": [
             "encoding",
             "tools"
@@ -548,7 +548,7 @@
     {
         "description": "Distributed video transcoding. ",
         "title": "ericgriffin/fflock",
-        "hopmepage": "https://github.com/ericgriffin/fflock",
+        "homepage": "https://github.com/ericgriffin/fflock",
         "category": [
             "encoding"
         ]
@@ -556,7 +556,7 @@
     {
         "description": "Simple video transcoding application for Django Framework - just-work/django-video-transcoding",
         "title": "just-work/django-video-transcoding",
-        "hopmepage": "https://github.com/just-work/django-video-transcoding",
+        "homepage": "https://github.com/just-work/django-video-transcoding",
         "category": [
             "tools"
         ]
@@ -564,7 +564,7 @@
     {
         "description": "Video Transcoder for React Native. ",
         "title": "selsamman/react-native-transcode",
-        "hopmepage": "https://github.com/selsamman/react-native-transcode",
+        "homepage": "https://github.com/selsamman/react-native-transcode",
         "category": [
             "encoding",
             "tools"
@@ -573,7 +573,7 @@
     {
         "description": "Transcoding long (>1 hour) videos quickly and cost-effectively on GCP to adaptive HLS and MP4 mezzanine files. Up to 40x $ savings. - xyk2/cloud-transcoder",
         "title": "xyk2/cloud-transcoder",
-        "hopmepage": "https://github.com/xyk2/cloud-transcoder",
+        "homepage": "https://github.com/xyk2/cloud-transcoder",
         "category": [
             "encoding",
             "tools"
@@ -582,7 +582,7 @@
     {
         "description": "Unattended video transcoder to H265 and ACC codecs, in MKV containers. - amaurypm/transcode2H265",
         "title": "amaurypm/transcode2H265",
-        "hopmepage": "https://github.com/amaurypm/transcode2H265",
+        "homepage": "https://github.com/amaurypm/transcode2H265",
         "category": [
             "hevc",
             "encoding",
@@ -592,7 +592,7 @@
     {
         "description": "Python package containing many tools useful for converting video files to h264/h265 encoded MP4 or MKV files - kwodzicki/video_utils",
         "title": "kwodzicki/video_utils",
-        "hopmepage": "https://github.com/kwodzicki/video_utils",
+        "homepage": "https://github.com/kwodzicki/video_utils",
         "category": [
             "hevc",
             "encoding",
@@ -602,13 +602,13 @@
     {
         "description": "Tools to batch transcode and process videos. ",
         "title": "bmhayward/Transcode",
-        "hopmepage": "https://github.com/bmhayward/Transcode",
+        "homepage": "https://github.com/bmhayward/Transcode",
         "category": [ "encoding"]
     },
     {
         "description": "Offline video transcoder written in node.js. ",
         "title": "madebyhiro/codem-transcode",
-        "hopmepage": "https://github.com/madebyhiro/codem-transcode",
+        "homepage": "https://github.com/madebyhiro/codem-transcode",
         "category": [
             "encoding"
         ]
@@ -616,7 +616,7 @@
     {
         "description": "Docker container to transcode videos in mounted volume to H265 using FFMPEG - Vilsol/Transcoder",
         "title": "Vilsol/Transcoder",
-        "hopmepage": "https://github.com/Vilsol/Transcoder",
+        "homepage": "https://github.com/Vilsol/Transcoder",
         "category": [
             "encoding"
         ]
@@ -3492,4 +3492,4 @@
             "title": "High Dynamic Range Television and Hybrid Log-Gamma"
         }
     ]
-}
+    }
