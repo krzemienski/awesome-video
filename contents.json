@@ -3019,6 +3019,12 @@
         "title": "High Dynamic Range Television and Hybrid Log-Gamma - BBC R&D"
     },
     {
+        "category": "qoe",
+        "homepage": "https://arewecompressedyet.com/",
+        "description": "Webapp to run and view QoE analysis with comparison features across many codecs and quality metrics",
+        "title": "Xiph.org :: Test Media"
+    },
+    {
         "category": "community",
         "description": "VideoLAN events",
         "homepage": "https://www.videolan.org/videolan/events",
