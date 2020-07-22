@@ -3021,8 +3021,8 @@
     {
         "category": "qoe",
         "homepage": "https://arewecompressedyet.com/",
-        "description": "Webapp to run and view QoE analysis with comparison features across many codecs and quality metrics",
-        "title": "Xiph.org :: Test Media"
+        "description": "Webapp to run and view QoE analysis with comparison features across many codecs and quality metrics made by Xiph org. Site code: https://github.com/xiph/awcy",
+        "title": "Xiph.org :: Are We Compressed Yet?"
     },
     {
         "category": "community",
