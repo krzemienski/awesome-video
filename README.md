@@ -558,6 +558,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [VMAF: The Journey Continues](https://medium.com/netflix-techblog/vmaf-the-journey-continues-44b51ee9ed12)  - by Zhi Li, Christos Bampis, Julie Novak, Anne Aaron, Kyle Swanson, Anush Moorthy and Jan De Cock
 * [Video Bench — How measure your video quality easily](https://medium.com/@jnoduq/video-bench-how-measure-your-video-quality-easily-85a0feb8f6e2)  - Introduction
 * [Video Quality Assessment](https://medium.com/@eyevinntechnology/video-quality-assessment-34abd35f96c0?source=userActivityShare-94bccb50d11-1560983815&_branch_match_id=670021582869771680)  - In Eyevinn’s initiative to share our knowledge around quality we continue with addressing video quality assessment; from both a subjective…
+* [Xiph.org :: Are We Compressed Yet?](https://arewecompressedyet.com/)  - Webapp to run and view QoE analysis with comparison features across many codecs and quality metrics made by Xiph org. Site code: https://github.com/xiph/awcy
 * [bavc/qctools](https://github.com/bavc/qctools)  - 
 * [crunchyroll/objective_perceptual_analysis](https://github.com/crunchyroll/objective_perceptual_analysis)  - 
 * [cta-wave/R4WG20-QoE-Metrics](https://github.com/cta-wave/R4WG20-QoE-Metrics)  - Issue tracking repository for the R4-Wg20 QoE Initiative - cta-wave/R4WG20-QoE-Metrics
