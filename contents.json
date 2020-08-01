@@ -1545,6 +1545,12 @@
             "description": "DASH MPD tools for Java.",
             "title": "carlanton/mpd-tools"
         },
+        {                                                                                                         
+            "category": "hls",                                                                                    
+            "homepage": "https://github.com/carlanton/m3u8-parser",                                               
+            "description": "HLS compliant m3u8 parser for Java.",                                                        
+            "title": "carlanton/m3u8-parser"                                                                      
+        },
         {
             "category": [
                 "tools",
