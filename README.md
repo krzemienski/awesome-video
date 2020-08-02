@@ -146,6 +146,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Protocol Extension for Low-Latency HLS (Preliminary Specification) | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/protocol_extension_for_low-latency_hls_preliminary_specification#3291001)  - 
 * [SoulMelody/hls-get](https://github.com/SoulMelody/hls-get)  - An asynchronous terminal-based hls video stream (m3u8) downloader & combiner, with AES-128 decryption support. - SoulMelody/hls-get
 * [alfg/docker-nginx-rtmp](https://github.com/alfg/docker-nginx-rtmp)  - 🐋 A Dockerfile for nginx-rtmp-module + FFmpeg from source with basic settings for streaming HLS. Built on Alpine Linux. - alfg/docker-nginx-rtmp
+* [carlanton/m3u8-parser](https://github.com/carlanton/m3u8-parser)  - HLS compliant m3u8 parser for Java.
 * [cdnbye/hlsjs-p2p-engine](https://github.com/cdnbye/hlsjs-p2p-engine)  - A hls.js plugin to offload bandwidth from expensive traditional CDNs，while also maximizing a user’s viewing experience.  - cdnbye/hlsjs-p2p-engine
 * [creeveliu/HTTPLiveStreamingTools](https://github.com/creeveliu/HTTPLiveStreamingTools)  - Latest Apple HLS tools copy from Apple Developer Center - creeveliu/HTTPLiveStreamingTools
 * [denex/hls-downloader](https://github.com/denex/hls-downloader)  - Download all video files from HLS (HTTP Live Streaming) VoD (Video on Demand) m3u8 playlist for local playback - denex/hls-downloader
