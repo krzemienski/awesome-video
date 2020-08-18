@@ -3035,6 +3035,12 @@
         "description": "VideoLAN events",
         "homepage": "https://www.videolan.org/videolan/events",
         "title": "Community events of the VideoLAN non-profit organization"
+    },
+    {
+        "category": "tools",
+        "homepage": "https://github.com/IENT/YUView",
+        "description": "YUView is a QT based, cross-platform YUV player with an advanced analytic toolset.",
+        "title": "IENT/YUView"
     }
     ]
 }
