@@ -1836,7 +1836,7 @@
             "title": "cannonbeach/ott-packager"
         },
         {
-            "category": "intro",
+            "category": "introduction",
             "homepage": "https://www.slideshare.net/vcodex/a-short-history-of-video-coding?from_m_app=ios",
             "description": "Video coding is an essential component of video streaming, digital TV, video chat and many other technologies. This presentation, an invited lecture to the US …",
             "title": "A short history of video coding"
@@ -2056,7 +2056,7 @@
             "title": "Techniques for Establishing and Maintaining Audio Loudness for Digital Television"
         },
         {
-            "category": "intro",
+            "category": "introduction",
             "homepage": "https://github.com/leandromoreira/digital_video_introduction",
             "description": "A hands-on introduction to video technology: image, video, codec (av1, vp9, h265) and more (ffmpeg encoding). - leandromoreira/digital_video_introduction",
             "title": "leandromoreira/digital_video_introduction"
@@ -2188,7 +2188,7 @@
             "title": "bengarney/list-of-streams"
         },
         {
-            "category": "intro",
+            "category": "introduction",
             "homepage": "https://github.com/Eyevinn/streaming-onboarding",
             "description": "New to streaming and don't know where to start? This is the place for you! - Eyevinn/streaming-onboarding",
             "title": "Eyevinn/streaming-onboarding"
