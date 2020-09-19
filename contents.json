@@ -2409,6 +2409,12 @@
             "title": "videolan/libvlcsharp"
         },
         {
+            "category": "players",
+            "homepage": "https://github.com/adrg/libvlc-go",
+            "description": "Go bindings for libVLC and high-level media player interface.",
+            "title": "adrg/libvlc-go"
+        },
+        {
             "category": "tools",
             "homepage": "https://github.com/DSRCorporation/imf-conversion",
             "description": "NF IMF media conversion utility allows to handle flat file creation from a specified CPL within the IMF package - DSRCorporation/imf-conversion",
