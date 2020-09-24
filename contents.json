@@ -3100,6 +3100,12 @@
         "title": "Streaming With SRT Protocol in OBS"
     },
     {
+        "category": "srt",
+        "homepage": "https://srtlab.github.io/srt-cookbook/",
+        "title": "SRT Cookbook",
+        "description": "More in-depth technical documentaion on the SRT protocol and library."
+    },
+    {
         "category": "rtmp",
         "homepage": "https://www.wowza.com/blog/rtmp-streaming-real-time-messaging-protocol",
         "title": "The Real-Time Messaging Protocol Explained"
