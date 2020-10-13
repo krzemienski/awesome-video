@@ -3109,6 +3109,12 @@
         "homepage": "https://opensource.com/article/19/1/basic-live-video-streaming-server",
         "title": "Create your own video streaming server with Linux",
         "description": "Using Nginx to create a streaming server using RTMP and nginx"
-    }
+    },
+	{
+        "category": "drm",
+        "homepage": "https://ottverse.com/hitchhikers-guide-to-drm-2/",
+        "title": "The Hitchhiker's Guide to DRM",
+        "description": "A gentle guide to the world of Digital Rights Management. It includes a technology overview of AES, EME, CDM, CENC, Keys, and then explores popular DRM technologies such as Google Widevine, Apple FairPlay, Microsoft PlayReady, and finally, Multi-DRM."
+	}
     ]
 }
