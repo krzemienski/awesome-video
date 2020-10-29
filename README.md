@@ -22,6 +22,10 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
   - [AV1](#av1)
   - [HEVC](#hevc)
   - [VP9](#vp9)
+- [Transport](#transport)
+  - [RIST](#rist)
+  - [RTMP](#rtmp)
+  - [SRT](#srt)
 - [Streaming Server and Storage](#streaming-server-and-storage)
 - [Reading](#reading)
 - [Specs and Standards](#specs-and-standards)
@@ -60,6 +64,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 ## Learning
 *An awesome list of learning video streaming resources.*
 
+<<<<<<< HEAD
 * [Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/video_on_demand_playlist_construction)  - 
 * [Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/creating_a_master_playlist#overview)  - 
 * [Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/adding_alternate_media_to_a_playlist)  - 
@@ -68,6 +73,10 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/hls_authoring_specification_for_apple_devices)  - 
 * [Back to Basics: Encoding Definition and Adaptive Bitrate](https://bitmovin.com/encoding-definition-bitrates/?utm_campaign=Newsletter&utm_medium=email&_hsenc=p2ANqtz-8MPFxhR7snQrxPYM7Bl3UTEMgOh5ZXoDQCHjLl9lkskqE0IfBhEuz3us39Br-lvA_CnyNmQl6L5wqO6iKOfAJ8HznenQ&_hsmi=79678208&utm_content=79677632&utm_source=hs_email&hsCtaTracking=b8eb0e0a-f292-435e-8b99-719b75d81412%7C367afa65-d810-4c2e-aa2c-c87e897a8942)  - This blog posts covers the basics of Video Tech that everyone NEEDS to know, including an Encoding definition, Codec overview, & Adaptive Bitrate definition
 * [Create your own video streaming server with Linux](https://opensource.com/article/19/1/basic-live-video-streaming-server)  - Live video streaming is incredibly popular—and it's still growing. Platforms like Amazon's Twitch and Google's YouTube boast millions of users that stream and consume countless hours of live and recorded media. These services are often free to use but require you to have an account and generally hold your content behind advertisements. Some people don't need their videos to be available to the masses or just want more control over their content. Thankfully, with the power of open source software, anyone can set up a live streaming server.
+=======
+* [Adding Alternate Media to a Playlist | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/adding_alternate_media_to_a_playlist)  - 
+* [Back to Basics: Encoding Definition and Adaptive Bitrate](https://bitmovin.com/encoding-definition-bitrates/?utm_campaign=Newsletter&utm_medium=email&_hsenc=p2ANqtz-8MPFxhR7snQrxPYM7Bl3UTEMgOh5ZXoDQCHjLl9lkskqE0IfBhEuz3us39Br-lvA_CnyNmQl6L5wqO6iKOfAJ8HznenQ&_hsmi=79678208&utm_content=79677632&utm_source=hs_email&hsCtaTracking=b8eb0e0a-f292-435e-8b99-719b75d81412%7C367afa65-d810-4c2e-aa2c-c87e897a8942)  - 
+>>>>>>> 1d6b95e55382d53bb0afba39ded7180f9680bda6
 * [Creating A Production Ready Multi Bitrate HLS VOD stream - Peer5 P2P Docs](https://docs.peer5.com/guides/production-ready-hls-vod/)  - Peer5 documentation
 * [FFmpeg and how to use it wrong](https://videoblerg.wordpress.com/2017/11/10/ffmpeg-and-how-to-use-it-wrong/)  - I’ve been in the streaming media industry since 2008 and have seen a lot of misinformation regarding both FFmpeg and libx264. In this post I hope to help shed some light on what does and does…
 * [Guide to Mobile Video Streaming with HLS | Mux blog](https://mux.com/blog/mobile-hls-guide/)  - HTTP Live Streaming, also known as HLS, is the most common format used today for streaming video. If you're building a video streaming application today, you should probably use HLS. Apple created th ...
@@ -147,7 +156,12 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [M3U8Kit/M3U8Parser](https://github.com/M3U8Kit/M3U8Parser)  - A light weight M3U8 parser. Support X-Key & X-Session-Key. - M3U8Kit/M3U8Parser
 * [SoulMelody/hls-get](https://github.com/SoulMelody/hls-get)  - An asynchronous terminal-based hls video stream (m3u8) downloader & combiner, with AES-128 decryption support. - SoulMelody/hls-get
 * [alfg/docker-nginx-rtmp](https://github.com/alfg/docker-nginx-rtmp)  - 🐋 A Dockerfile for nginx-rtmp-module + FFmpeg from source with basic settings for streaming HLS. Built on Alpine Linux. - alfg/docker-nginx-rtmp
+<<<<<<< HEAD
 * [cdnbye/hlsjs-p2p-engine](https://github.com/cdnbye/hlsjs-p2p-engine)  - A hls.js plugin to offload bandwidth from expensive traditional CDNs，while also maximizing a user’s viewing experience. - cdnbye/hlsjs-p2p-engine
+=======
+* [carlanton/m3u8-parser](https://github.com/carlanton/m3u8-parser)  - HLS compliant m3u8 parser for Java.
+* [cdnbye/hlsjs-p2p-engine](https://github.com/cdnbye/hlsjs-p2p-engine)  - A hls.js plugin to offload bandwidth from expensive traditional CDNs，while also maximizing a user’s viewing experience.  - cdnbye/hlsjs-p2p-engine
+>>>>>>> 1d6b95e55382d53bb0afba39ded7180f9680bda6
 * [creeveliu/HTTPLiveStreamingTools](https://github.com/creeveliu/HTTPLiveStreamingTools)  - Latest Apple HLS tools copy from Apple Developer Center - creeveliu/HTTPLiveStreamingTools
 * [denex/hls-downloader](https://github.com/denex/hls-downloader)  - Download all video files from HLS (HTTP Live Streaming) VoD (Video on Demand) m3u8 playlist for local playback - denex/hls-downloader
 * [dhairav/URLSessionHLSDownload](https://github.com/dhairav/URLSessionHLSDownload)  - A swift 3 implementation for downloading HLS content and play it back using native AVPlayer - dhairav/URLSessionHLSDownload
@@ -267,6 +281,33 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 [back to top](#readme) 
 
 
+## Transport
+*Transport protocols, libraries, and resources.*
+
+
+### RIST
+*Reliable Internet Stream Transport protocol*
+[back to top](#readme) 
+
+* [RIST Forum](https://www.rist.tv/)  - The RIST forum manage the Reliable Internet Stream Transport (RIST), for transporting live video over unmanaged networks.
+* [librist](https://code.videolan.org/rist/librist)  - A library that can be used to easily add the RIST protocol to your application.
+
+### RTMP
+*Real-Time Messaging Protocol*
+[back to top](#readme) 
+
+* [Create your own video streaming server with Linux](https://opensource.com/article/19/1/basic-live-video-streaming-server)  - Using Nginx to create a streaming server using RTMP and nginx
+* [The Real-Time Messaging Protocol Explained](https://www.wowza.com/blog/rtmp-streaming-real-time-messaging-protocol)  - 
+
+### SRT
+*Secure Reliable Transport protocol*
+[back to top](#readme) 
+
+* [SRT Alliance](https://www.srtalliance.org/)  - Home page for the SRT protocol
+* [SRT Cookbook](https://srtlab.github.io/srt-cookbook/)  - More in-depth technical documentaion on the SRT protocol and library.
+* [SRT Open Source project](https://github.com/Haivision/srt)  - 
+* [Streaming With SRT Protocol in OBS](https://obsproject.com/wiki/Streaming-With-SRT-Protocol)  - 
+
 ## Streaming Server and Storage
 *Packagers, origins (s3, gcs), and data movement for linear and finite playback. *
 
@@ -311,6 +352,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Client players, libraries, tools, and examples.*
 
 * [IvanoBilenchi/Adaptive-Video-Player](https://github.com/IvanoBilenchi/Adaptive-Video-Player)  - HLS player for iOS that supports manual selection for the quality of adaptive streams - IvanoBilenchi/Adaptive-Video-Player
+* [adrg/libvlc-go](https://github.com/adrg/libvlc-go)  - Go bindings for libVLC and high-level media player interface.
 * [davidAgo4g/VideoPlayer-iOS](https://github.com/davidAgo4g/VideoPlayer-iOS)  - A library based on FFMPEG to play video files on iOS using OpenGLES and AudioQueue. Build with theos - davidAgo4g/VideoPlayer-iOS
 * [imoreapps/ffmpeg-avplayer-for-ios-tvos](https://github.com/imoreapps/ffmpeg-avplayer-for-ios-tvos)  - A tiny but powerful iOS and Apple TV OS av player framework that's based on the FFmpeg library. - imoreapps/ffmpeg-avplayer-for-ios-tvos
 * [lightspark/lightspark](https://github.com/lightspark/lightspark)  - An open source flash player implementation. 
@@ -555,9 +597,15 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Toward A Practical Perceptual Video Quality Metric](https://medium.com/netflix-techblog/toward-a-practical-perceptual-video-quality-metric-653f208b9652)  - measuring video quality accurately at scale
 * [Video Bench — How measure your video quality easily](https://medium.com/@jnoduq/video-bench-how-measure-your-video-quality-easily-85a0feb8f6e2)  - Introduction
 * [Video Quality Assessment](https://medium.com/@eyevinntechnology/video-quality-assessment-34abd35f96c0?source=userActivityShare-94bccb50d11-1560983815&_branch_match_id=670021582869771680)  - In Eyevinn’s initiative to share our knowledge around quality we continue with addressing video quality assessment; from both a subjective…
+<<<<<<< HEAD
 * [Vmaf the journey continues 44b51ee9ed12](https://medium.com/netflix-techblog/vmaf-the-journey-continues-44b51ee9ed12)  - 
 * [bavc/qctools](https://github.com/bavc/qctools)  - QCTools (Quality Control Tools for Video Preservation) is a free and open source software tool that helps users analyze and understand their digitized video files through use of audiovisual analyti...
 * [crunchyroll/objective_perceptual_analysis](https://github.com/crunchyroll/objective_perceptual_analysis)  - Objective Perceptual Analysis - Compression Karma Predictor - crunchyroll/objective_perceptual_analysis
+=======
+* [Xiph.org :: Are We Compressed Yet?](https://arewecompressedyet.com/)  - Webapp to run and view QoE analysis with comparison features across many codecs and quality metrics made by Xiph org. Site code: https://github.com/xiph/awcy
+* [bavc/qctools](https://github.com/bavc/qctools)  - 
+* [crunchyroll/objective_perceptual_analysis](https://github.com/crunchyroll/objective_perceptual_analysis)  - 
+>>>>>>> 1d6b95e55382d53bb0afba39ded7180f9680bda6
 * [cta-wave/R4WG20-QoE-Metrics](https://github.com/cta-wave/R4WG20-QoE-Metrics)  - Issue tracking repository for the R4-Wg20 QoE Initiative - cta-wave/R4WG20-QoE-Metrics
 
 ## Tools
@@ -575,11 +623,20 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Eyevinn/docker-jit-capture](https://github.com/Eyevinn/docker-jit-capture)  - A Docker container for an open source Just-In-Time Capture Origin - Eyevinn/docker-jit-capture
 * [Eyevinn/docker-serve](https://github.com/Eyevinn/docker-serve)  - A simple Python based HTTP server that sets CORS allow headers. Useful for streaming from files on local computer - Eyevinn/docker-serve
 * [Eyevinn/fmp4-js](https://github.com/Eyevinn/fmp4-js)  - A Javascript library to parse ISO Base Media File Format (MPEG-4 Part 12) - Eyevinn/fmp4-js
+<<<<<<< HEAD
 * [Eyevinn/pseudo-live-playout](https://github.com/Eyevinn/pseudo-live-playout)  - 
 * [Eyevinn/streaming-analyzer](https://github.com/Eyevinn/streaming-analyzer)  - Analyze and visualize HTTP ABR streams. 
 * [Eyevinn/toolbox](https://github.com/Eyevinn/toolbox)  - A set of Docker containers with Streaming tools. 
 * [Eyevinn/vod-to-live.js](https://github.com/Eyevinn/vod-to-live.js)  - NPM library for HLS VOD to Live. 
 * [Inca — Message Tracing and Loss Detection For Streaming Data @Netflix](https://link.medium.com/Lu3GnIPeg0)  - At Netflix, our real-time data infrastructure have embraced the multi-cluster Kafka architecture and Flink powered stream processing…
+=======
+* [Eyevinn/pseudo-live-playout](https://github.com/Eyevinn/pseudo-live-playout)  - Contribute to Eyevinn/pseudo-live-playout development by creating an account on GitHub.
+* [Eyevinn/streaming-analyzer](https://github.com/Eyevinn/streaming-analyzer)  - Analyze and visualize HTTP ABR streams.
+* [Eyevinn/toolbox](https://github.com/Eyevinn/toolbox)  - A set of Docker containers with Streaming tools.
+* [Eyevinn/vod-to-live.js](https://github.com/Eyevinn/vod-to-live.js)  - NPM library for HLS VOD to Live.
+* [IENT/YUView](https://github.com/IENT/YUView)  - YUView is a QT based, cross-platform YUV player with an advanced analytic toolset.
+* [Inca — Message Tracing and Loss Detection For Streaming Data @Netflix](https://link.medium.com/Lu3GnIPeg0)  - At Netflix, our real-time data infrastructure have embraced the multi-cluster Kafka architecture and Flink powered stream processing…
+>>>>>>> 1d6b95e55382d53bb0afba39ded7180f9680bda6
 * [Kthulu120/liquid_dl](https://github.com/Kthulu120/liquid_dl)  - Liquid-dl is a simple tool for utlities such as FFMPEG, youtube-dl, and scdl. It provides a simple framework with simple point and click options allowing users to just click on what they need and u...
 * [Marcos-A/STRCleaner](https://github.com/Marcos-A/STRCleaner)  - Script that extracts all the text from a subtitles file ignoring time indications, HTML tags and other alien info. - Marcos-A/STRCleaner
 * [Open Broadcaster Software®️ | OBS](https://obsproject.com/)  - OBS (Open Broadcaster Software) is free and open source software for video recording and live streaming. Stream to Twitch, YouTube and many other providers or record your own videos with high quality H264 / AAC encoding.
