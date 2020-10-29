@@ -278,10 +278,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Reading & resources, relative to the world of kubernetes leveraged for video devs.*
 
 
-## Kubernetes
-*Reading & resources, relative to the world of kubernetes leveraged for video devs.*
-
-
 ## Encoding
 *Encoding tools, libraries, and resources.*
 
