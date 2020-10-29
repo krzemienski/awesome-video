@@ -23,6 +23,11 @@
             "id": "dash",
             "description": "DASH tools, libraries, and resources."
         },
+	 {
+            "title": "Kubernetes",
+            "id": "kubernetes",
+            "description": "Reading & resources, relative to the world of kubernetes leveraged for video devs."
+        },
         {
             "title": "Encoding",
             "id": "encoding",
