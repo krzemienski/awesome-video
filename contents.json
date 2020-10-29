@@ -940,12 +940,7 @@
             "description": "The FFmpeg build script provides an easy way to build a static FFmpeg on OSX and Linux with non-free codecs included. - markus-perl/ffmpeg-build-script",
             "title": "markus-perl/ffmpeg-build-script"
         },
-        {
-            "category": "ios-tvos",
-            "homepage": "https://github.com/masterjk/ios-avplayer-http-capture",
-            "description": "iOS based application that embeds the AVPlayer and capture HTTP headers and send it back to the iOS application.  It internally embeds a proxy server. - masterjk/ios-avplayer-http-capture",
-            "title": "masterjk/ios-avplayer-http-capture"
-        },
+        
         {
             "category": "roku",
             "homepage": "https://github.com/MediaBrowser/Emby.Roku",
@@ -1779,11 +1774,7 @@
             "description": "Reference Receiver: CastReceiver shows how to develop a fully Cast Design Checklist compliant receiver with additional features. - googlecast/CastReceiver",
             "title": "googlecast/CastReceiver"
         },
-        {
-            "category": "dolby",
-            "homepage": "https://www.dolby.com/us/en/technologies/dolby-professional-loudness-solutions.pdf",
-            "title": "Dolby Professional Loudness Suite"
-        },
+       
         {
             "category": "subtitles-and-captions",
             "homepage": "https://github.com/BingLingGroup/autosub",
@@ -2302,7 +2293,7 @@
         },
         {
             "category": "hevc",
-            "homepage": "https://bitbucket.org/multicoreware/x265/wiki/Home",
+            "homepage": "https://bitbucket.org/multicoreware/x265_git/wiki/Home",
             "title": "multicoreware / x265 / wiki / Home — Bitbucket"
         },
         {
@@ -2863,7 +2854,7 @@
         },
         {
             "category": "hevc",
-            "homepage": "https://x265.readthedocs.io/en/default/",
+            "homepage": "https://x265.readthedocs.io/en/master/",
             "title": "x265 Documentation — x265  documentation"
         },
         {
@@ -2872,11 +2863,8 @@
             "description": "Many who heard that Apple is adding support for HEVC playback in HTTP Live Streaming were left with more questions than answers. Here's what developers need to know.",
             "title": "HEVC in HLS: 10 Key Questions for Streaming Video Developers"
         },
-        {
-            "category": "dolby",
-            "homepage": "https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-streams-within-the-http-live-streaming-format-v2.0.pdf",
-            "title": "dolby-vision-streams-within-the-http-live-streaming-format"
-        },
+        
+
         {
             "category": "learning",
             "homepage": "https://developer.apple.com/documentation/http_live_streaming/hls_authoring_specification_for_apple_devices",
@@ -2993,24 +2981,14 @@
             "homepage": "https://github.com/opencoconut/webvtt-ruby",
             "title": "opencoconut/webvtt-ruby"
         },
-        {
-            "category": "subtitles-and-captions",
-            "description": "HLS multibitrate encoding with WebVTT subtitles and master.m3u8 generator in one easy step.",
-            "homepage": "https://github.com/djstava/manifesto",
-            "title": "djstava/manifesto"
-        },
+        
         {
             "category": "hdr",
             "description": "This talk aims to shed light on colorspaces - what they are, how and why they work, why we should care about handling edge cases properly. Starting with hist...",
             "homepage": "https://www.youtube.com/watch?v=XMnvY7a4-As&feature=share",
             "title": "Vittorio Giovara - Color Me Intrigued: A Jaunt Through Color Technology in Video"
         },
-        {
-            "category": "hdr",
-            "description": "SMPTE Presentation",
-            "homepage": "https://www.smpte.org/sites/default/files/users/user27446/HDR%20SMPTE%20Presentation%20March%2021%2C%202017%20V2.compressed.pdf",
-            "title": "UHD & HDR Overview"
-        },
+        
         {
             "category": "hdr",
             "description": "Article explaining hlg vs pq in depth.",
