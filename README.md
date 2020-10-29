@@ -444,7 +444,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 
 * [DASH-IF IOPs](https://dashif.org/guidelines/)  - 
 * [How Do I Become an ANSI Member](https://www.ansi.org/membership/how_to_join/how_3)  - 
-* [latest HLS Spec](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis-05)  - 
+* [latest HLS Spec](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis-08)  - 
 
 ### Industry Forums
 *Industry forums relative to video streaming.*
