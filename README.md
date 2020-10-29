@@ -386,8 +386,8 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [The Market Significance of Apple's Adopting HEVC: Here's What I Think](https://www.linkedin.com/pulse/market-significance-apples-adopting-hevc-heres-what-i-jan-ozer)  - At the recent World Wide Developer's Conference (WWDC), Apple announced that the next versions of Safari, iOS, and tvOS will support HLS with HEVC encoded video. This puts Apple firmly in the HEVC camp, with the Alliance for Open Media camp (Amazon, Cisco, Intel, Google, Microsoft, Mozilla, Netflix,
 * [Video Quality Evaluation Methodology and Verification Testing of HEVC Compression Performance](https://ieeexplore.ieee.org/ielx7/76/7372356/07254155.pdf?tp=&arnumber=7254155&isnumber=7372356&ref=)  - 
 * [amaurypm/transcode2H265](https://github.com/amaurypm/transcode2H265)  - Unattended video transcoder to H265 and ACC codecs, in MKV containers. - amaurypm/transcode2H265
-* [multicoreware / x265 / wiki / Home — Bitbucket](https://bitbucket.org/multicoreware/x265/wiki/Home)  - 
-* [x265 Documentation — x265  documentation](https://x265.readthedocs.io/en/default/)  - 
+* [multicoreware / x265 / wiki / Home — Bitbucket](https://bitbucket.org/multicoreware/x265_git/wiki/Home)  - 
+* [x265 Documentation — x265  documentation](https://x265.readthedocs.io/en/master/)  - 
 
 ### VP9
 *VP9 libraries, tools, examples, and resources.*
@@ -514,7 +514,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [iina/iina](https://github.com/iina/iina)  - The modern video player for macOS.
 * [kodlian/TVVLCPlayer](https://github.com/kodlian/TVVLCPlayer)  - TVVLCPlayer lets you integrate easily a powerfull video player with playback control views to your tvOS apps. - kodlian/TVVLCPlayer
 * [libobjc/SGPlayer](https://github.com/libobjc/SGPlayer)  - A powerful media play framework for iOS, macOS, and tvOS. - libobjc/SGPlayer
-* [masterjk/ios-avplayer-http-capture](https://github.com/masterjk/ios-avplayer-http-capture)  - iOS based application that embeds the AVPlayer and capture HTTP headers and send it back to the iOS application.  It internally embeds a proxy server. - masterjk/ios-avplayer-http-capture
 * [noreasonprojects/ModernAVPlayer](https://github.com/noreasonprojects/ModernAVPlayer)  - ModernAVPlayer is a persistence AVPlayer wrapper. 
 * [piemonte/Player](https://github.com/piemonte/Player)  - ▶️ video player in Swift, simple way to play and stream media on iOS/tvOS - piemonte/Player
 * [renzifeng/ZFPlayer](https://github.com/renzifeng/ZFPlayer)  - Support customization of any player SDK and control layer
@@ -717,7 +716,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [apm1467/videocr](https://github.com/apm1467/videocr)  - Extract hardcoded subtitles from videos using machine learning - apm1467/videocr
 * [awslabs/serverless-subtitles](https://github.com/awslabs/serverless-subtitles)  - Serverless Subtitles can handle a video input, extract the sound, transcript it and generate different subtitle files for your video. - awslabs/serverless-subtitles
 * [cessen/subs_extract](https://github.com/cessen/subs_extract)  - Extracts per-sentence subtitles + audio from a subtitle file + video file. - cessen/subs_extract
-* [djstava/manifesto](https://github.com/djstava/manifesto)  - HLS multibitrate encoding with WebVTT subtitles and master.m3u8 generator in one easy step.
 * [federicocalendino/pysub-parser](https://github.com/federicocalendino/pysub-parser)  - Utility to extract the text and timestamps of a subtitle file (.srt, .ssa, .sub, .txt). - federicocalendino/pysub-parser
 * [glut23/webvtt-py](https://github.com/glut23/webvtt-py)  - Read, write and segment WebVTT caption files in Python.
 * [jnorton001/pycaption-cli](https://github.com/jnorton001/pycaption-cli)  - A command line interface for the pycaption module. - jnorton001/pycaption-cli
@@ -757,7 +755,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Dolby specs, libraries, examples, and tools.*
 [back to top](#readme) 
 
-* [Dolby Professional Loudness Suite](https://www.dolby.com/us/en/technologies/dolby-professional-loudness-solutions.pdf)  - 
 * [Dolby Vision for Content Creators | Dolby Laboratories](https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-for-creative-professionals.html)  - The Dolby Vision integrated workflow gives you the tools needed to efficiently create wide color gamut and high dynamic range content and ensures that the look you create in the color suite stays true when experienced across across a multitude of devices. With Dolby Vision high dynamic range imaging, you get bolder highlights and incredible contrast. That means greater sharpness, depth, and more detailed shadows to expand your storytelling possibilities like never before.
 * [DolbyLaboratories/AM-Viewer: Audio Metadata Viewer](https://github.com/DolbyLaboratories/AM-Viewer)  - Audio Metadata Viewer. Contribute to DolbyLaboratories/AM-Viewer development by creating an account on GitHub.
 * [DolbyLaboratories/dbmd-atmos-parser: Dolby Atmos DBMD Wave Chunk Parser](https://github.com/DolbyLaboratories/dbmd-atmos-parser)  - Dolby Atmos DBMD Wave Chunk Parser. Contribute to DolbyLaboratories/dbmd-atmos-parser development by creating an account on GitHub.
@@ -766,7 +763,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Hybrik API Reference](https://docs.hybrik.com/api/v1/HybrikAPI.html?#getting-started)  - 
 * [ShaoWeiguo/dlb_mp4demux: The Dolby MP4 streaming demuxer (dlb_mp4demux) is a software implementation of a demuxer of fragmented or unfragmented ISO base media file format (mp4). It supports demuxing of Dolby Digital (AC-3), Dolby Digital Plus (E-AC-3), an](https://github.com/ShaoWeiguo/dlb_mp4demux)  - The Dolby MP4 streaming demuxer (dlb_mp4demux) is a software implementation of a demuxer of fragmented or unfragmented ISO base media file format (mp4). It supports demuxing of Dolby Digital (AC-3)...
 * [dolby-encoding-engine/plugins at master · DolbyLaboratories/dolby-encoding-engine](https://github.com/DolbyLaboratories/dolby-encoding-engine/tree/master/plugins)  - Contribute to DolbyLaboratories/dolby-encoding-engine development by creating an account on GitHub.
-* [dolby-vision-streams-within-the-http-live-streaming-format](https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-streams-within-the-http-live-streaming-format-v2.0.pdf)  - 
 * [hybrik/hybrik-samples](https://github.com/hybrik/hybrik-samples)  - Hybrik Samples.
 
 ## QoE
@@ -954,7 +950,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Help creating a LUT: BT709 to PQ - Doom9's Forum](https://forum.doom9.org/showthread.php?t=175621)  - Help creating a LUT: BT709 to PQ General Discussion
 * [High Dynamic Range Television and Hybrid Log-Gamma - BBC R&D](https://www.bbc.co.uk/rd/projects/high-dynamic-range)  - BBC R&D HDR project page.
 * [Perceptual Quantiser (PQ) to Hybrid Log-Gamma (HLG) Transcoding](https://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_PQ_HLG_Transcode_v2.pdf)  - In depth break down on converting from pq to hlg
-* [UHD & HDR Overview](https://www.smpte.org/sites/default/files/users/user27446/HDR%20SMPTE%20Presentation%20March%2021%2C%202017%20V2.compressed.pdf)  - SMPTE Presentation
 * [Use of Look-Up Tables (LUTs) in FFmpeg](https://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_Use_of_LUTs_FFmpeg.pdf)  - How to use luts with ffmpeg for converting between differnt hdr encodes
 * [Vittorio Giovara - Color Me Intrigued: A Jaunt Through Color Technology in Video](https://www.youtube.com/watch?v=XMnvY7a4-As&feature=share)  - This talk aims to shed light on colorspaces - what they are, how and why they work, why we should care about handling edge cases properly. Starting with hist...
 * [bbc/qtff-parameter-editor](https://github.com/bbc/qtff-parameter-editor)  - QuickTime file parameter editor for modifying transfer function, colour primary and matrix characteristics.
