@@ -18,6 +18,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
   - [Talks Presentations Podcasts](#talks-presentations-podcasts)
 - [HLS](#hls)
 - [DASH](#dash)
+- [Kubernetes](#kubernetes)
 - [Encoding](#encoding)
   - [AV1](#av1)
   - [HEVC](#hevc)
@@ -216,6 +217,10 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [theolampert/dash-server](https://github.com/theolampert/dash-server)  - Small, command-line HTTP/2 file server for serving MPEG-DASH content. - theolampert/dash-server
 * [videojs/mpd-parser](https://github.com/videojs/mpd-parser)  - Contribute to videojs/mpd-parser development by creating an account on GitHub.
 * [videojs/videojs-contrib-dash](https://github.com/videojs/videojs-contrib-dash)  - Video.js plugin for supporting the MPEG-DASH playback through a video.js player - videojs/videojs-contrib-dash
+
+## Kubernetes
+*Reading & resources, relative to the world of kubernetes leveraged for video devs.*
+
 
 ## Encoding
 *Encoding tools, libraries, and resources.*
