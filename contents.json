@@ -64,14 +64,15 @@
         {
             "title": "Reading",
             "id": "reading",
-            "description": "A list of reading articles, blogs, and newsletters for video streaming."
+            "description": "A list of reading articles, blogs, and newsletters for video streaming.",
+            "parent":"learning"
         },
         {
             "title": "Specs and Standards",
             "id": "specs-and-standards",
             "description": "Latest offical specs and standards related to video streaming."
         },
-	{
+	    {
             "title": "Industry Forums",
             "id": "industry-forums",
             "parent": "specs-and-standards",
@@ -1414,12 +1415,12 @@
             "title": "Is it possible to get FFmpeg to use hardware acceleration for HEVC transcoding on macOS?"
         },
         {
-            "category": "learning",
+            "category": "encoding",
             "homepage": "https://blog.twitch.tv/en/2017/10/10/live-video-transmuxing-transcoding-f-fmpeg-vs-twitch-transcoder-part-i-489c1c125f28/",
             "title": "Live Video Transmuxing/Transcoding: FFmpeg vs TwitchTranscoder, Part I"
         },
         {
-            "category": "learning",
+            "category": "encoding",
             "homepage": "https://blog.twitch.tv/live-video-transmuxing-transcoding-ffmpeg-vs-twitchtranscoder-part-ii-4973f475f8a3?source=userActivityShare-94bccb50d11-1561003748&_branch_match_id=670105191114382351&gi=fd8d504494f4",
             "title": "Live Video Transmuxing/Transcoding: FFmpeg vs TwitchTranscoder, Part 2"
         },
