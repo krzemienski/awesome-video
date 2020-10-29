@@ -29,6 +29,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 - [Streaming Server and Storage](#streaming-server-and-storage)
 - [Reading](#reading)
 - [Specs and Standards](#specs-and-standards)
+  - [Industry Forums](#industry-forums)
   - [MPEG](#mpeg)
 - [Players](#players)
   - [Android](#android)
@@ -332,6 +333,11 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [DASH-IF IOPs](https://dashif.org/guidelines/)  - 
 * [How Do I Become an ANSI Member](https://www.ansi.org/membership/how_to_join/how_3)  - 
 * [latest HLS Spec](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis-05)  - 
+
+### Industry Forums
+*Industry forums relative to video streaming.*
+[back to top](#readme) 
+
 
 ### MPEG
 *MPEG meetings, standards, and resources. *
