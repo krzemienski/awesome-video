@@ -66,6 +66,12 @@
             "id": "specs-and-standards",
             "description": "Latest offical specs and standards related to video streaming."
         },
+	{
+            "title": "Industry Forums",
+            "id": "industry-forums",
+            "parent": "specs-and-standards",
+            "description": "Industry forums relative to video streaming."
+        },
         {
             "title": "MPEG",
             "id": "mpeg",
