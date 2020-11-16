@@ -23,7 +23,7 @@
             "id": "dash",
             "description": "DASH tools, libraries, and resources."
         },
-	 {
+        {
             "title": "Kubernetes",
             "id": "kubernetes",
             "description": "Reading & resources, relative to the world of kubernetes leveraged for video devs."
@@ -65,14 +65,14 @@
             "title": "Reading",
             "id": "reading",
             "description": "A list of reading articles, blogs, and newsletters for video streaming.",
-            "parent":"learning"
+            "parent": "learning"
         },
         {
             "title": "Specs and Standards",
             "id": "specs-and-standards",
             "description": "Latest offical specs and standards related to video streaming."
         },
-	    {
+        {
             "title": "Industry Forums",
             "id": "industry-forums",
             "parent": "specs-and-standards",
@@ -229,7 +229,7 @@
             "title": "Books",
             "id": "books",
             "parent": "learning",
-            "description": "Books on video streaming."
+            "description": "Books on video streaming. NOTE: Books published more than 4-5 years ago may not be up to date on latest streaming tech."
         },
         {
             "title": "CDN",
@@ -260,11 +260,6 @@
             "homepage": "https://github.com/alfg/docker-nginx-rtmp",
             "description": "🐋 A Dockerfile for nginx-rtmp-module + FFmpeg from source with basic settings for streaming HLS. Built on Alpine Linux. - alfg/docker-nginx-rtmp",
             "title": "alfg/docker-nginx-rtmp"
-        },
-        {
-            "category": "books",
-            "homepage": "https://www.amazon.com/dp/140207011X/ref=cm_sw_r_oth_api_i_DLz-DbTTZS7FP",
-            "title": "Transporting Compressed Digital Video"
         },
         {
             "category": "tools",
@@ -321,11 +316,6 @@
             "title": "SoulMelody/hls-get"
         },
         {
-            "category": "books",
-            "homepage": "https://www.amazon.com/dp/024080578X/ref=cm_sw_r_oth_api_i_oTz-Db86M94H9",
-            "title": "The MPEG Handbook, Second Edition "
-        },
-        {
             "category": "ios-tvos",
             "description": "ModernAVPlayer is a persistence AVPlayer wrapper. ",
             "homepage": "https://github.com/noreasonprojects/ModernAVPlayer",
@@ -336,21 +326,6 @@
             "description": "Node.js DASH and HLS downloader. ",
             "homepage": "https://github.com/schedules/dl",
             "title": "schedules/dl"
-        },
-        {
-            "category": "books",
-            "homepage": "https://www.amazon.com/dp/0071375902/ref=cm_sw_r_oth_api_i_JHz-DbCZ4AJN3",
-            "title": "Data Broadcasting: Understanding the ATSC Data Broadcast Standard"
-        },
-        {
-            "category": "books",
-            "homepage": "https://www.amazon.com/dp/0470147830/ref=cm_sw_r_oth_api_i_wEz-DbZVSF65G]",
-            "title": "Digital Television: Technology and Standards "
-        },
-        {
-            "category": "books",
-            "homepage": "https://www.amazon.com/dp/0340691905/ref=cm_sw_r_oth_api_i_2Fz-DbHHGXNMZ",
-            "title": "Digital Television: MPEG-1, MPEG-2 and Principles of the DVB System"
         },
         {
             "category": "streaming-server-and-storage",
@@ -398,11 +373,6 @@
             "description": "Telestream Closed Captioning: MacCaption and CaptionMaker allow you to easily author, edit, create subtitles, and encode and repurpose video captions for television, web and mobile delivery",
             "homepage": "https://www.telestream.net/captioning/overview.htm?utm_campaign=partners&utm_source=itunespartner.apple.com&utm_medium=text_link",
             "title": "Closed Captioning and Subtitling Products - MacCaption and CaptionMaker Overview - Telestream"
-        },
-        {
-            "category": "books",
-            "homepage": "https://www.amazon.com/dp/1402073577/ref=cm_sw_r_oth_api_i_YIz-DbVR4VXKS",
-            "title": "Introduction to Digital Audio Coding and Standards"
         },
         {
             "category": "hls",
@@ -856,16 +826,6 @@
             "title": "hanton/HTY360Player"
         },
         {
-            "category": "books",
-            "homepage": "https://www.amazon.com/gp/product/3319068946/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1",
-            "title": "High Efficiency Video Coding (HEVC): Algorithms and Architectures (Integrated Circuits and Systems)"
-        },
-        {
-            "category": "books",
-            "homepage": "https://www.amazon.com/gp/product/3662442752/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1",
-            "title": "High Efficiency Video Coding: Coding Tools and Specification (Signals and Communication Technology)"
-        },
-        {
             "category": "ios-tvos",
             "homepage": "https://github.com/iina/iina",
             "description": "The modern video player for macOS.",
@@ -940,7 +900,7 @@
             "description": "The FFmpeg build script provides an easy way to build a static FFmpeg on OSX and Linux with non-free codecs included. - markus-perl/ffmpeg-build-script",
             "title": "markus-perl/ffmpeg-build-script"
         },
-        
+
         {
             "category": "roku",
             "homepage": "https://github.com/MediaBrowser/Emby.Roku",
@@ -1000,11 +960,6 @@
             "homepage": "https://developer.roku.com/docs/developer-program/core-concepts/playing-videos.md#PlayingVideos-Examples",
             "description": "Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.",
             "title": "Playing Video Examples"
-        },
-        {
-            "category": "books",
-            "homepage": "https://www.amazon.com/gp/product/0976259540/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1",
-            "title": "Producing Streaming Video for Multiple Screen Delivery"
         },
         {
             "category": "encoding",
@@ -1193,11 +1148,6 @@
             "title": "The Challenge to Maintain and Translate Creative Visual Ideas to Everyone’s Viewing Devices"
         },
         {
-            "category": "books",
-            "homepage": "https://www.amazon.com/MPEG-4-Book-Fernando-Pereira/dp/0130616214/ref=sr_1_1?keywords=mpeg+4+book&qid=1576252504&s=books&sr=1-1",
-            "title": "MPEG-4 Book"
-        },
-        {
             "category": "hls",
             "homepage": "https://github.com/tjenkinson/mock-hls-server",
             "description": "Fake a live/event HLS stream from a VOD one. Useful for testing. - tjenkinson/mock-hls-server",
@@ -1226,11 +1176,6 @@
             "homepage": "https://github.com/VeinGuo/VGPlayer",
             "description": "📺  A simple iOS video player by Vein.",
             "title": "VeinGuo/VGPlayer"
-        },
-        {
-            "category": "books",
-            "homepage": "https://www.amazon.com/Video-Encoding-Numbers-Eliminate-Guesswork/dp/0998453005/ref=pd_bxgy_14_img_2/142-3989735-6086504?_encoding=UTF8&pd_rd_i=0998453005&pd_rd_r=6591968b-e54f-4fb1-8ab8-18e3f2a52f88&pd_rd_w=tWNbP&pd_rd_wg=RtRbb&pf_rd_p=09627863-9889-4290-b90a-5e9f86682449&pf_rd_r=JQP62Z6C5QJR49SEZNHP&psc=1&refRID=JQP62Z6C5QJR49SEZNHP",
-            "title": "Video Encoding by the Numbers: Eliminate the Guesswork from your Streaming Video"
         },
         {
             "category": "roku",
@@ -1774,7 +1719,7 @@
             "description": "Reference Receiver: CastReceiver shows how to develop a fully Cast Design Checklist compliant receiver with additional features. - googlecast/CastReceiver",
             "title": "googlecast/CastReceiver"
         },
-       
+
         {
             "category": "subtitles-and-captions",
             "homepage": "https://github.com/BingLingGroup/autosub",
@@ -2041,12 +1986,6 @@
             "category": "specs-and-standards",
             "homepage": "https://dashif.org/guidelines/",
             "title": "DASH-IF IOPs"
-        },
-        {
-            "category": "books",
-            "homepage": "https://www.elsevier.com/books/communicating-pictures/bull/978-0-12-405906-1",
-            "description": "Purchase Communicating Pictures - 1st Edition. Print Book & E-Book. ISBN 9780124059061, 9780080993744",
-            "title": "Communicating Pictures - 1st Edition"
         },
         {
             "category": "reading",
@@ -2863,7 +2802,6 @@
             "description": "Many who heard that Apple is adding support for HEVC playback in HTTP Live Streaming were left with more questions than answers. Here's what developers need to know.",
             "title": "HEVC in HLS: 10 Key Questions for Streaming Video Developers"
         },
-        
 
         {
             "category": "learning",
@@ -2981,14 +2919,14 @@
             "homepage": "https://github.com/opencoconut/webvtt-ruby",
             "title": "opencoconut/webvtt-ruby"
         },
-        
+
         {
             "category": "hdr",
             "description": "This talk aims to shed light on colorspaces - what they are, how and why they work, why we should care about handling edge cases properly. Starting with hist...",
             "homepage": "https://www.youtube.com/watch?v=XMnvY7a4-As&feature=share",
             "title": "Vittorio Giovara - Color Me Intrigued: A Jaunt Through Color Technology in Video"
         },
-        
+
         {
             "category": "hdr",
             "description": "Article explaining hlg vs pq in depth.",
@@ -3153,6 +3091,90 @@
             "title": "nickdesaulniers/netfix",
             "homepage": "https://github.com/nickdesaulniers/netfix",
             "category": "learning"
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/dp/0134866215/",
+            "title": "Video Compression Handbook",
+            "description": "2018-07-03 (2nd Edition). Beach, Andy; Owen, Aaron."
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/Video-Encoding-Numbers-Eliminate-Guesswork/dp/0998453005/",
+            "title": "Video Encoding by the Numbers: Eliminate the Guesswork from your Streaming Video",
+            "description": "2016-12-28. Ozer, Jan."
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/gp/product/3662442752/",
+            "title": "High Efficiency Video Coding: Coding Tools and Specification (Signals and Communication Technology)",
+            "description": "2014-10-08. Wien, Mathias."
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/gp/product/3319068946/",
+            "title": "High Efficiency Video Coding (HEVC): Algorithms and Architectures (Integrated Circuits and Systems)",
+            "description": "2014-09-03. Budagavi, Madhukar; Sze, Vivienne; Sullivan, Gary."
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.elsevier.com/books/communicating-pictures/bull/978-0-12-405906-1",
+            "title": "Communicating Pictures",
+            "description": "2014-06-20 (1st Edition). Bull, David."
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/gp/product/0976259540/",
+            "title": "Producing Streaming Video for Multiple Screen Delivery",
+            "description": "2013-04-01. Ozer, Jan."
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/dp/0123919266/",
+            "title": "Digital Video and HD: Algorithms and Interfaces",
+            "description": "2012-02-07 (2nd Edition). Poynton, Charles."
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/dp/0470147830/",
+            "title": "Digital Television: Technology and Standards",
+            "description": "2007-09-17. Arnold, John; Frater, Michael; Pickering, Mark."
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/dp/024080578X/",
+            "title": "The MPEG Handbook",
+            "description": "2004-11-15 (2nd Edition). Watkinson, John."
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/dp/1402073577/",
+            "title": "Introduction to Digital Audio Coding and Standards",
+            "description": "2002-12-31. Bosi, Marina; Goldberg, Richard."
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/MPEG-4-Book-Fernando-Pereira/dp/0130616214/",
+            "title": "The MPEG-4 Book",
+            "description": "2002-07-20. Ebrahimi, Touradj; Pereira, Fernando."
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/dp/140207011X/",
+            "title": "Transporting Compressed Digital Video",
+            "description": "2002-03-31. Chen, Xuemin."
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/dp/0071375902/",
+            "title": "Data Broadcasting: Understanding the ATSC Data Broadcast Standard",
+            "description": "2001-04-16 (1st Edition). Chernock, Richard; Crinon, Regis; Mick, John."
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/dp/0340691905/",
+            "title": "Digital Television: MPEG-1, MPEG-2 and Principles of the DVB System",
+            "description": "1997-07-11. Benoit, Herve."
         },
         {
             "description": "The repo for https://stream.new. ",
@@ -4504,13 +4526,13 @@
             "homepage": "https://github.com/DolbyLaboratories/dlb_mp4demux",
             "category": "encoding"
         },
-        
+
         {
             "description": "As of the version of 2.6.0, ExoPlayer started supporting Widevine + HLS playback. WideVine is the one of the DRM schemes defined by Google…",
             "title": "HLS with Widevine for Android - Taku Semba - Medium",
             "homepage": "https://medium.com/@takusemba/hls-with-widevine-for-android-de3f41027ed2",
             "category": "drm"
-        },       
+        },
         {
             "description": "Lock it down. If you're streaming proprietary or premium online video, it's time to take the step up to true digital rights management protection. Here's how to get started.",
             "title": "How to Protect Your Content With DRM",
@@ -4553,19 +4575,18 @@
             "homepage": "https://github.com/Axinom/cpix-validator",
             "category": "drm"
         },
-              
         {
             "description": "Digital rights management, or you could just refer to it as DRM, is a way of controlling what users can do with some sort of digital…",
             "title": "Play your own DRM content on ExoPlayer - Taku Semba - Medium",
             "homepage": "https://medium.com/@takusemba/play-your-own-drm-content-on-exoplayer-e8ed73d5864c",
             "category": "drm"
-        },       
+        },
         {
             "description": "In this installment of TheDRMBlog we take an in-depth look at Advanced Encryption Techniques.",
             "title": "Advanced Encryption Techniques: ContentProtection Tags for MPDs and PSSH Boxes for DASH.",
             "homepage": "https://go.buydrm.com/thedrmblog/advanced_encryption_techniques",
             "category": "drm"
-        },        
+        },
         {
             "description": "In this post we provide an in-depth first party overview of the complex integration between the KeyOS Platform and the Elemental Media Services via the SPEKE API.",
             "title": "Deploying KeyOS with AWS Elemental Media Services",
@@ -4577,7 +4598,7 @@
             "title": "linuxserver/docker-ffmpeg",
             "homepage": "https://github.com/linuxserver/docker-ffmpeg",
             "category": "ffmpeg"
-        }, 
+        },
         {
             "description": "This is the second in a five-part series on how to cut your encoding and streaming costs. The first article was Saving on Encoding: Adjust Encoding Configuration to Increase Capacity. Article summary: Capped CRF encoding is a single-pass encoding method that can save encoding costs compared to two-pass VBR. Capped CRF is also a simple per-title…",
             "title": "Saving on Encoding and Streaming: Deploy Capped CRF – Streaming Learning Center",
