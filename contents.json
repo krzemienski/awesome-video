@@ -2888,18 +2888,43 @@
         },
         {
             "category": "mpeg",
+            "title": "MPEG home page",
+            "homepage": "https://www.mpegstandards.org"
+        },
+        {
+            "category": "mpeg",
+            "title": "MPEG point cloud compression",
+            "homepage": "https://mpeg-pcc.org"
+        },
+        {
+            "category": "mpeg",
+            "title": "ISO Base Media File Format Reference Software",
+            "homepage": "https://github.com/MPEGGroup/isobmff"
+        },
+        {
+            "category": "mpeg",
+            "title": "Official Registration Authority for the ISOBMFF family of standards",
+            "homepage": "http://mp4ra.org/"
+        },
+        {
+            "category": "mpeg",
+            "title": "MPEG High Efficiency Image File Format (HEIF)",
+            "homepage": "https://nokiatech.github.io/heif/"
+        },
+        {
+            "category": "mpeg",
             "title": "MPEG future",
             "homepage": "http://mpegfuture.org/"
         },
         {
             "category": "mpeg",
             "title": "MPEG About",
-            "homepage": "https://mpeg.chiariglione.org/about"
+            "homepage": "https://www.mpegstandards.org/about-mpeg/"
         },
         {
             "category": "mpeg",
             "title": "MPEG Meetings",
-            "homepage": "https://mpeg.chiariglione.org/meetings"
+            "homepage": "https://www.mpegstandards.org/meetings/"
         },
         {
             "category": "subtitles-and-captions",
