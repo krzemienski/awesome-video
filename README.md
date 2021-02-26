@@ -459,10 +459,15 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *MPEG meetings, standards, and resources. *
 [back to top](#readme) 
 
-* [MPEG About](https://mpeg.chiariglione.org/about)  - 
-* [MPEG Meetings](https://mpeg.chiariglione.org/meetings)  - 
+* [ISO Base Media File Format Reference Software](https://github.com/MPEGGroup/isobmff)  - 
+* [MPEG About](https://www.mpegstandards.org/about-mpeg/)  - 
+* [MPEG High Efficiency Image File Format (HEIF)](https://nokiatech.github.io/heif/)  - 
+* [MPEG Meetings](https://www.mpegstandards.org/meetings/)  - 
 * [MPEG future](http://mpegfuture.org/)  - 
+* [MPEG home page](https://www.mpegstandards.org)  - 
+* [MPEG point cloud compression](https://mpeg-pcc.org)  - 
 * [MPEG: What Happened?](https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=141678)  - At the end of last month, MPEG co-founder Leonardo Chiariglione announced the 'MPEG is closed.' That's not quite true, but it is undergoing a reorganization. So what does that mean for the organization and the new codec standards it is bringing out this year?
+* [Official Registration Authority for the ISOBMFF family of standards](http://mp4ra.org/)  - 
 
 ## Players
 *Client players, libraries, tools, and examples.*
@@ -709,7 +714,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [IMSC Specification](https://www.w3.org/TR/ttml-imsc1.1/)  - 
 * [IMSC renderer](https://sandflow.com/imsc1proc/index.html)  - 
 * [IMSC validator](https://apps.sandflow.com/imscV/)  - 
-* [IRT/BaseX IMSC validator](https://subcheck.io/#/)  - 
 * [The ultimate guide to CCs](https://www.3playmedia.com/resources/popular-topics/closed-captioning/)  - 
 * [Web Video Text Tracks Format (WebVTT)](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API)  - Web Video Text Tracks Format (WebVTT) is a format for displaying timed text tracks (such as subtitles or captions) using the track element.
 * [abhirooptalasila/AutoSub](https://github.com/abhirooptalasila/AutoSub)  - AutoSub is a CLI application to generate subtitle file (.srt) for any video file using Mozilla DeepSpeech - abhirooptalasila/AutoSub
