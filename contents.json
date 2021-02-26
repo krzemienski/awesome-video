@@ -2572,11 +2572,6 @@
         },
         {
             "category": "subtitles-and-captions",
-            "homepage": "https://subcheck.io/#/",
-            "title": "IRT/BaseX IMSC validator"
-        },
-        {
-            "category": "subtitles-and-captions",
             "homepage": "https://www.w3.org/TR/ttml-imsc1.1/",
             "title": "IMSC Specification"
         },
