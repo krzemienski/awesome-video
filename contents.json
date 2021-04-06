@@ -4630,6 +4630,12 @@
             "title": "CRF Guide (Constant Rate Factor in x264, x265 and libvpx)",
             "homepage": "https://slhck.info/video/2017/02/24/crf-guide.html",
             "category": "encoding"
-        }
+        },
+        {
+            "description": "The WAVE (Web Application Video Ecosystem) Project, hosted by the Consumer Technology Association (CTA)®, aims to improve how internet-delivered commercial video is handled on consumer electronics devices and to make it easier for content creators to distribute video to those devices.",
+            "title": "CTA | WAVE Project",
+            "homepage": "https://cta.tech/Resources/Standards/WAVE-Project",
+            "category": "industry-forums"
+        }        
     ]
 }
