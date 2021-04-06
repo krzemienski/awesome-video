@@ -451,6 +451,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Industry forums relative to video streaming.*
 [back to top](#readme) 
 
+* [CTA | WAVE Project](https://cta.tech/Resources/Standards/WAVE-Project)  - The WAVE (Web Application Video Ecosystem) Project, hosted by the Consumer Technology Association (CTA)®, aims to improve how internet-delivered commercial video is handled on consumer electronics devices and to make it easier for content creators to distribute video to those devices.
 * [DASH Industry Forum | Catalyzing the adoption of MPEG-DASH](https://dashif.org/software)  - 
 * [Home | Streaming Video Alliance](https://www.streamingvideoalliance.org/)  - Making Streaming Video Better Streaming video is exploding in popularity. Consumers are watching more video online across a myriad of devices. But, the streaming experiences, across providers, can be wildly different from each other which ultimately hurts adoption. The problem is a lack of colla ...
 
