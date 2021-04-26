@@ -4307,7 +4307,7 @@
             "category": "audio"
         },
         {
-            "description": "",
+            "description": "Cookbook of commonly used FFmpeg recipes with descriptions of how each command works and how to modify it to fit your needs",
             "title": "ffmprovisr",
             "homepage": "https://amiaopensource.github.io/ffmprovisr",
             "category": "ffmpeg"
