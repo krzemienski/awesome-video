@@ -4508,7 +4508,7 @@
             "description": "pmd_tool is a command line utility that converts between different representations of SMPTE RDD49 metadata - DolbyLaboratories/pmd_tool",
             "title": "DolbyLaboratories/pmd_tool: pmd_tool is a command line utility that converts between different representations of SMPTE RDD49 metadata",
             "homepage": "https://github.com/DolbyLaboratories/pmd_tool",
-            "category": "hdr"
+            "category": "dolby"
         },
         {
             "description": "The Dolby MP4 streaming muxer (dlb_mp4base) is a software implementation of a muxer of fragmented or unfragmented ISO base media file format (mp4). It supports muxing of Dolby Digital (AC-3), Dolby...",
