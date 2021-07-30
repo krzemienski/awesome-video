@@ -4636,6 +4636,12 @@
             "title": "CTA | WAVE Project",
             "homepage": "https://cta.tech/Resources/Standards/WAVE-Project",
             "category": "industry-forums"
-        }        
+        },
+        {
+            "category": "hls",
+            "homepage": "https://github.com/soldiermoth/hlsq",
+            "title": "soldiermoth/hlsq",
+            "description": "A CLI for adding some color to your HLS manifests along with some basic filtering"
+        }
     ]
 }
