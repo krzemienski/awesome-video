@@ -4642,6 +4642,11 @@
             "title": "Streamlab",
             "homepage": "https://vimond.github.io/streamlab/",
             "category": "tools"
+        },
+            "category": "hls",
+            "homepage": "https://github.com/soldiermoth/hlsq",
+            "title": "soldiermoth/hlsq",
+            "description": "A CLI for adding some color to your HLS manifests along with some basic filtering"
         }
     ]
 }
