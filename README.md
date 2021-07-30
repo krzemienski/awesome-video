@@ -233,6 +233,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [selsta/hlsdl](https://github.com/selsta/hlsdl)  - C program to download VoD HLS (.m3u8) files.
 * [shimberger/gohls](https://github.com/shimberger/gohls)  - A server that exposes a directory for video streaming via web interface - shimberger/gohls
 * [shrimpgo/video-downloader](https://github.com/shrimpgo/video-downloader)  - Helper to download HLS videos.
+* [soldiermoth/hlsq](https://github.com/soldiermoth/hlsq)  - A CLI for adding some color to your HLS manifests along with some basic filtering
 * [t-mullen/hls-server](https://github.com/t-mullen/hls-server)  - Middleware for serving HTTP Live Streaming (HLS) compatible media streams. - t-mullen/hls-server
 * [tjenkinson/mock-hls-server](https://github.com/tjenkinson/mock-hls-server)  - Fake a live/event HLS stream from a VOD one. Useful for testing. - tjenkinson/mock-hls-server
 * [tozastation/HLS-Streaming](https://github.com/tozastation/HLS-Streaming)  - HLSを使ってみたです．. 
