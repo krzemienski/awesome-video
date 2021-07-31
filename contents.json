@@ -4638,6 +4638,12 @@
             "category": "industry-forums"
         },
         {
+            "description": "Multi-format stream test tool for the browser. Brings convenience to verifying, inspecting, and troubleshooting adaptive streams and video files. A common interface on top of Shaka Player, HLS.js, and Rx-Player.",
+            "title": "Streamlab",
+            "homepage": "https://vimond.github.io/streamlab/",
+            "category": "tools"
+        },
+        {
             "category": "hls",
             "homepage": "https://github.com/soldiermoth/hlsq",
             "title": "soldiermoth/hlsq",
