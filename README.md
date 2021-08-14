@@ -174,8 +174,8 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Demuxed 2019](https://m.youtube.com/playlist?list=PLkyaYNWEKcOf_C_6W45abNvXMb40xUUqh)  - 2019 Demuxed talks & presentations
 * [Demuxed | Heavybit](https://www.heavybit.com/library/podcasts/demuxed)  - Demuxed is a podcast made for and by engineers working with video. Brought to you by Heavybit.
 * [From Sys Admin to Netflix SRE](https://www.youtube.com/watch?v=lZI51YzIgVE)  - Talk by Jonah Horowitz, Albert Tobey What does it take to be a Netflix SRE? With tens of thousands of Linux instances in a distributed system architecture, a...
-* [Mile High Video 2018 Proceedings](http://mile-high.video/files/mhv2018)  - Mile High Video 2018 talks & presentations
-* [Mile High Video 2019 Proceedings](http://mile-high.video/files/mhv2019)  - Mile High Video 2019 talks & presentations
+* [Mile High Video 2018 Proceedings](https://mile-high.video/files/mhv2018)  - Mile High Video 2018 talks & presentations
+* [Mile High Video 2019 Proceedings](https://mile-high.video/files/mhv2019)  - Mile High Video 2019 talks & presentations
 * [The Video Insiders](https://thevideoinsiders.simplecast.com/episodes)  - Video Insiders Podcast
 
 ## HLS
@@ -362,7 +362,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [AV1 Codec](https://docs.google.com/presentation/d/12_Vewc0SDpB1FycflfT4us9eipRCy0HWJVSaDMDifRs/edit?usp=sharing)  - Working with the AV1 Codec Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv
 * [AV1 decoder model](https://norkin.org/research/av1_decoder_model/)  - Description of the AV1 decoder model.
 * [Alkl58/NotEnoughAV1Encodes](https://github.com/Alkl58/NotEnoughAV1Encodes)  - GUI Handler for AV1 Encoders (aomenc, rav1e & svt-av1) - Alkl58/NotEnoughAV1Encodes
-* [Analysis of AV1 Encoding Tools & libaom Case Study](https://visionular.com/performance-analysis-of-av1-encoding-tools-libaom-case-study/)  - This article provides a performance analysis of AV1 encoding tools.
+* [Analysis of AV1 Encoding Tools & libaom Case Study](https://visionular.io/performance-analysis-of-av1-encoding-tools-libaom-case-study/)  - This article provides a performance analysis of AV1 encoding tools.
 * [Eyevinn/av1-player](https://github.com/Eyevinn/av1-player)  - Eyevinn AV1 player.
 * [Promising Initial Results with AV1 Testing - Streaming Learning Center](https://streaminglearningcenter.com/blogs/promising-initial-results-with-av1-testing.html)  - [vc_row margin_top=”30″][vc_column][vc_column_text]I began testing AV1 early this week. Briefly, my tests involve 16 ten-second clips in four genres (movies, sports, animations, gaming) and an “other” category (music video, nature video). I’ve completed the first set of tests with FFmpeg 4.3, benchmarking x264, x265, and the latest version of the Alliance for Open Media AV1 codec,…
 * [SVT-AV1: an open-source AV1 encoder and decoder](https://netflixtechblog.com/svt-av1-an-open-source-av1-encoder-and-decoder-ad295d9b5ca2)  - by Andrey Norkin, Joel Sole, Mariana Afonso, Kyle Swanson, Agata Opalach, Anush Moorthy, Anne Aaron
@@ -825,6 +825,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Open Broadcaster Software | OBS](https://obsproject.com/)  - OBS (Open Broadcaster Software) is free and open source software for video recording and live streaming. Stream to Twitch, YouTube and many other providers or record your own videos with high quality H264 / AAC encoding.
 * [Shaka Packager – opensource.google](https://opensource.google/projects/shaka-packager)  - Learn about all our projects.
 * [Stream Analyzer - ts analyzer, stream validation, ETSI TR 101 290 | Elecard: Video Compression Guru ](https://www.elecard.com/products/video-analysis/stream-analyzer)  - Professional Video Analysis Tool For Syntax Analysis Of Encoded Media Streams. Operates With MPEG-2 PS/TS, VES and MP4 Files. Automation, batch execution via Command Line Interface. Check your multiplexer
+* [Streamlab](https://vimond.github.io/streamlab/)  - Multi-format stream test tool for the browser. Brings convenience to verifying, inspecting, and troubleshooting adaptive streams and video files. A common interface on top of Shaka Player, HLS.js, and Rx-Player.
 * [The Top 656 Video Open Source Projects](https://awesomeopensource.com/projects/video)  - Browse The Most Popular 656 Video Open Source Projects
 * [ZaifSenpai/Batch-Py-Remux](https://github.com/ZaifSenpai/Batch-Py-Remux)  - Convert mkv video to hevc (h.265).
 * [antiboredom/videogrep](https://github.com/antiboredom/videogrep)  - automatic video supercuts with python. 
