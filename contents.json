@@ -2558,12 +2558,26 @@
         {
             "category": "subtitles-and-captions",
             "homepage": "https://github.com/sandflow/imscJS/",
-            "title": "sandflow/imscJS"
+            "description": "Renders IMSC/TTML/SMPTE-TT/EBU-TT-D subtitles and captions to HTML",
+            "title": "imscJS: IMSC/TTML/SMPTE-TT/EBU-TT-D renderer"
+        },
+        {
+            "category": "subtitles-and-captions",
+            "homepage": "https://github.com/sandflow/imscHRM",
+            "description": "Validator for the IMSC Hypothetical Render Model (HRM), which constrains TTML document complexity",
+            "title": "IMSC HRM validator"
         },
         {
             "category": "subtitles-and-captions",
             "homepage": "https://sandflow.com/imsc1proc/index.html",
-            "title": "IMSC renderer"
+            "description": "Demo web app that uses imscJS to render IMSC/TTML/SMPTE-TT/EBU-TT-D subtitles",
+            "title": "Online IMSC renderer"
+        },
+        {
+            "category": "subtitles-and-captions",
+            "homepage": "https://github.com/sandflow/ttconv",
+            "description": "Converts EBU STL, IMSC/TTML/SMPTE-TT/EBU-TT-D and 608/SCC into IMSC, WebVTT and SRT",
+            "title": "ttconv: subtitle/caption format converter"
         },
         {
             "category": "subtitles-and-captions",
