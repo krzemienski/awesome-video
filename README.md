@@ -712,9 +712,10 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [IMSC 1.0.1 Text test content](https://github.com/w3c/IMSC-1.0.1_Text_TestContent/)  - 
 * [IMSC 1.1 Image test content](https://github.com/w3c/IMSC-1.1_Image_TestContent/)  - 
 * [IMSC 1.1 Text test content](https://github.com/w3c/IMSC-1.1_Text_TestContent/)  - 
+* [IMSC HRM validator](https://github.com/sandflow/imscHRM)  - Validator for the IMSC Hypothetical Render Model (HRM), which constrains TTML document complexity
 * [IMSC Specification](https://www.w3.org/TR/ttml-imsc1.1/)  - 
-* [IMSC renderer](https://sandflow.com/imsc1proc/index.html)  - 
 * [IMSC validator](https://apps.sandflow.com/imscV/)  - 
+* [Online IMSC renderer](https://sandflow.com/imsc1proc/index.html)  - Demo web app that uses imscJS to render IMSC/TTML/SMPTE-TT/EBU-TT-D subtitles
 * [The ultimate guide to CCs](https://www.3playmedia.com/resources/popular-topics/closed-captioning/)  - 
 * [Web Video Text Tracks Format (WebVTT)](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API)  - Web Video Text Tracks Format (WebVTT) is a format for displaying timed text tracks (such as subtitles or captions) using the track element.
 * [abhirooptalasila/AutoSub](https://github.com/abhirooptalasila/AutoSub)  - AutoSub is a CLI application to generate subtitle file (.srt) for any video file using Mozilla DeepSpeech - abhirooptalasila/AutoSub
@@ -725,16 +726,17 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [cessen/subs_extract](https://github.com/cessen/subs_extract)  - Extracts per-sentence subtitles + audio from a subtitle file + video file. - cessen/subs_extract
 * [federicocalendino/pysub-parser](https://github.com/federicocalendino/pysub-parser)  - Utility to extract the text and timestamps of a subtitle file (.srt, .ssa, .sub, .txt). - federicocalendino/pysub-parser
 * [glut23/webvtt-py](https://github.com/glut23/webvtt-py)  - Read, write and segment WebVTT caption files in Python.
+* [imscJS: IMSC/TTML/SMPTE-TT/EBU-TT-D renderer](https://github.com/sandflow/imscJS/)  - Renders IMSC/TTML/SMPTE-TT/EBU-TT-D subtitles and captions to HTML
 * [jnorton001/pycaption-cli](https://github.com/jnorton001/pycaption-cli)  - A command line interface for the pycaption module. - jnorton001/pycaption-cli
 * [opencoconut/webvtt-ruby](https://github.com/opencoconut/webvtt-ruby)  - WebVTT Ruby parser and segmenter.
 * [osk/node-webvtt](https://github.com/osk/node-webvtt)  - Parse WebVTT files, segments and generates HLS playlists for them.
 * [pbs/pycaption](https://github.com/pbs/pycaption)  - Python module to read/write popular video caption formats - pbs/pycaption
-* [sandflow/imscJS](https://github.com/sandflow/imscJS/)  - 
 * [shawnsky/extract-subtitles](https://github.com/shawnsky/extract-subtitles)  - Extract Subtitles From Video
 * [shinobizero/audio_transcriber](https://github.com/shinobizero/audio_transcriber)  - Transcodes audio & video files to text, supports MP3, M4A, WAV, MP4, MKV, AVI, MPG & MPEG. No Online API's. Python 3 - shinobizero/audio_transcriber
 * [smacke/subsync](https://github.com/smacke/subsync)  - Automagically synchronize subtitles with video.
 * [statsbiblioteket/tv-subtitle-extraction](https://github.com/statsbiblioteket/tv-subtitle-extraction)  - System for extraction of subtitles from TV broadcasts. - statsbiblioteket/tv-subtitle-extraction
 * [szatmary/libcaption](https://github.com/szatmary/libcaption)  - Free open-source CEA608 / CEA708 closed-caption encoder/decoder - szatmary/libcaption
+* [ttconv: subtitle/caption format converter](https://github.com/sandflow/ttconv)  - Converts EBU STL, IMSC/TTML/SMPTE-TT/EBU-TT-D and 608/SCC into IMSC, WebVTT and SRT
 * [wargarblgarbl/libgosubs](https://github.com/wargarblgarbl/libgosubs)  - 
 * [xinnjie/extract-subtitle](https://github.com/xinnjie/extract-subtitle)  - extract subtitles from video.
 
