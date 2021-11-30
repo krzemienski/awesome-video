@@ -15,7 +15,7 @@ jobs:
              awesome_bot contents.json --allow-ssl --allow-redirect -a 403,503,429,404
   json-validate:
     docker:
-     - image: cimg/python:3.9.9-browsers
+     - image: cimg/python:3.10.0
 
 
     steps:
@@ -23,7 +23,7 @@ jobs:
       - run:
           name: install json-spec
           command: |
-             sudo pip install json-spec
+            pip install json-spec
       - run: 
           name: run json validate
           command: |
