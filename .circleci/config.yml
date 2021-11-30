@@ -15,7 +15,8 @@ jobs:
              awesome_bot contents.json --allow-ssl --allow-redirect -a 403,503,429,404
   json-validate:
     docker:
-     - image: cimg/python:3.10.0
+     - image: cimg/python:3.7.12
+
 
 
     steps:
