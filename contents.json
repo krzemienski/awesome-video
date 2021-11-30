@@ -2569,12 +2569,6 @@
         },
         {
             "category": "subtitles-and-captions",
-            "homepage": "https://sandflow.com/imsc1proc/index.html",
-            "description": "Demo web app that uses imscJS to render IMSC/TTML/SMPTE-TT/EBU-TT-D subtitles",
-            "title": "Online IMSC renderer"
-        },
-        {
-            "category": "subtitles-and-captions",
             "homepage": "https://github.com/sandflow/ttconv",
             "description": "Converts EBU STL, IMSC/TTML/SMPTE-TT/EBU-TT-D and 608/SCC into IMSC, WebVTT and SRT",
             "title": "ttconv: subtitle/caption format converter"
