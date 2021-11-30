@@ -1690,12 +1690,6 @@
             "title": "Marcos-A/STRCleaner"
         },
         {
-            "category": "hevc",
-            "homepage": "https://forum.doom9.org/showthread.php?t=172458",
-            "description": " Suggestion for x265's --tune film High Efficiency Video Coding (HEVC)",
-            "title": " Suggestion for x265's --tune film - Doom9's Forum"
-        },
-        {
             "category": "tools",
             "homepage": "https://github.com/liwf616/awesome-live-stream",
             "description": "Webrtc && Nginx && DASH && Quic 学习资料收集，持续更新中.",
@@ -4572,12 +4566,6 @@
             "title": "Integrate BuyDRM for a Multi-DRM workflow",
             "homepage": "https://bitmovin.com/integrate-buydrm-multi-drm-system",
             "category": "drm"
-        },
-        {
-            "description": "Help creating a LUT: BT709 to PQ General Discussion",
-            "title": "Help creating a LUT: BT709 to PQ - Doom9's Forum",
-            "homepage": "https://forum.doom9.org/showthread.php?t=175621",
-            "category": "hdr"
         },
         {
             "description": "What is “rate control”? It’s what a video encoder does when it decides how many bits to spend for a given frame. The goal of (lossy) video encoding is to sav...",
