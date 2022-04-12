@@ -112,6 +112,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Books on video streaming. NOTE: Books published more than 4-5 years ago may not be up to date on latest streaming tech.*
 [back to top](#readme) 
 
+* [Circles of Confusion](https://tech.ebu.ch/publicaions/circles-of-confusion)  - 2009-01-01. Roberts, Alan.
 * [Communicating Pictures](https://www.elsevier.com/books/communicating-pictures/bull/978-0-12-405906-1)  - 2014-06-20 (1st Edition). Bull, David.
 * [Data Broadcasting: Understanding the ATSC Data Broadcast Standard](https://www.amazon.com/dp/0071375902/)  - 2001-04-16 (1st Edition). Chernock, Richard; Crinon, Regis; Mick, John.
 * [Digital Television: MPEG-1, MPEG-2 and Principles of the DVB System](https://www.amazon.com/dp/0340691905/)  - 1997-07-11. Benoit, Herve.
@@ -121,10 +122,12 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [High Efficiency Video Coding: Coding Tools and Specification (Signals and Communication Technology)](https://www.amazon.com/gp/product/3662442752/)  - 2014-10-08. Wien, Mathias.
 * [Introduction to Digital Audio Coding and Standards](https://www.amazon.com/dp/1402073577/)  - 2002-12-31. Bosi, Marina; Goldberg, Richard.
 * [Producing Streaming Video for Multiple Screen Delivery](https://www.amazon.com/gp/product/0976259540/)  - 2013-04-01. Ozer, Jan.
+* [The H.264 Advanced Video Compression Standard](https://www.amazon.de/-/en/Iain-Richardson/dp/0470516925)  - 2010-04-23. Richardson, Iain.
 * [The MPEG Handbook](https://www.amazon.com/dp/024080578X/)  - 2004-11-15 (2nd Edition). Watkinson, John.
 * [The MPEG-4 Book](https://www.amazon.com/MPEG-4-Book-Fernando-Pereira/dp/0130616214/)  - 2002-07-20. Ebrahimi, Touradj; Pereira, Fernando.
 * [Transporting Compressed Digital Video](https://www.amazon.com/dp/140207011X/)  - 2002-03-31. Chen, Xuemin.
 * [Video Compression Handbook](https://www.amazon.com/dp/0134866215/)  - 2018-07-03 (2nd Edition). Beach, Andy; Owen, Aaron.
+* [Video Demystified: A Handbook for the Digital Engineer](https://www.amazon.com/Video-Demystified-Handbook-Digital-Engineer/dp/0750683953)  - 2007-05-14. Jack, Keith.
 * [Video Encoding by the Numbers: Eliminate the Guesswork from your Streaming Video](https://www.amazon.com/Video-Encoding-Numbers-Eliminate-Guesswork/dp/0998453005/)  - 2016-12-28. Ozer, Jan.
 
 ### Reading
