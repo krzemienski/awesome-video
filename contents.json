@@ -3193,6 +3193,24 @@
             "description": "1997-07-11. Benoit, Herve."
         },
         {
+            "category": "books",
+            "homepage": "https://tech.ebu.ch/publicaions/circles-of-confusion",
+            "title": "Circles of Confusion",
+            "description": "2009-01-01. Roberts, Alan."
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.com/Video-Demystified-Handbook-Digital-Engineer/dp/0750683953",
+            "title": "Video Demystified: A Handbook for the Digital Engineer",
+            "description": "2007-05-14. Jack, Keith."
+        },
+        {
+            "category": "books",
+            "homepage": "https://www.amazon.de/-/en/Iain-Richardson/dp/0470516925",
+            "title": "The H.264 Advanced Video Compression Standard",
+            "description": "2010-04-23. Richardson, Iain."
+        },
+        {
             "description": "The repo for https://stream.new. ",
             "title": "muxinc/stream.new",
             "homepage": "https://github.com/muxinc/stream.new",
