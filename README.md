@@ -173,10 +173,8 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 
 * [Demuxed 2016](https://www.youtube.com/watch?v=kEo2TrXm7F4&list=PLkyaYNWEKcOekC2m9Na77G40Lmhb1bnsK)  - 2016 Demuxed talks & presentations
 * [Demuxed 2017](https://www.youtube.com/watch?v=PSdhW-R9u6s&list=PLkyaYNWEKcOfntbMd6KtHhF7qpL9hj6of)  - 2017 Demuxed talks & presentations
-* [Demuxed 2018](https://www.youtube.com/watch?v=bfK_f7GBA8s&list=PLkyaYNWEKcOfARqEht42i1P4kBemzEV2V)  - 2018 Demuxed talks & presentations
-* [Demuxed 2019](https://www.youtube.com/watch?v=qe8F3_2g7g4&list=PLkyaYNWEKcOf_C_6W45abNvXMb40xUUqh)  - 2019 Demuxed talks & presentations
-* [Demuxed 2020](https://www.youtube.com/watch?v=WUIkR_KCKQQ&list=PLkyaYNWEKcOcDlGjEbpxBe4woCJGHrarN)  - 2020 Demuxed talks & presentations
-* [Demuxed 2021](https://www.youtube.com/watch?v=Bn63DE6VhOE&list=PLkyaYNWEKcOfD1GYFxFbZXDP03XM-cZPg)  - 2021 Demuxed talks & presentations
+* [Demuxed 2018](https://www.youtube.com/watch?v=bfK_f7GBA8s&list=PLkyaYNWEKcOfARqEht42i1P4kBemzEV2V)  - 2018  Demuxed talks & presentations
+* [Demuxed 2019](https://m.youtube.com/playlist?list=PLkyaYNWEKcOf_C_6W45abNvXMb40xUUqh)  - 2019 Demuxed talks & presentations
 * [Demuxed | Heavybit](https://www.heavybit.com/library/podcasts/demuxed)  - Demuxed is a podcast made for and by engineers working with video. Brought to you by Heavybit.
 * [From Sys Admin to Netflix SRE](https://www.youtube.com/watch?v=lZI51YzIgVE)  - Talk by Jonah Horowitz, Albert Tobey What does it take to be a Netflix SRE? With tens of thousands of Linux instances in a distributed system architecture, a...
 * [Mile High Video 2018 Proceedings](https://mile-high.video/files/mhv2018)  - Mile High Video 2018 talks & presentations
