@@ -1908,6 +1908,12 @@
         },
         {
             "category": "talks-presentations-podcasts",
+            "homepage": "https://youtu.be/LDeL7-49qm4",
+            "description": "A basic introduction to the basics of video coding",
+            "title": "Video Coding Basics - How is this so efficient?"
+        },
+        {
+            "category": "talks-presentations-podcasts",
             "homepage": "https://thevideoinsiders.simplecast.com/episodes",
             "description": "Video Insiders Podcast",
             "title": "The Video Insiders"
