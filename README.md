@@ -180,6 +180,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Mile High Video 2018 Proceedings](https://mile-high.video/files/mhv2018)  - Mile High Video 2018 talks & presentations
 * [Mile High Video 2019 Proceedings](https://mile-high.video/files/mhv2019)  - Mile High Video 2019 talks & presentations
 * [The Video Insiders](https://thevideoinsiders.simplecast.com/episodes)  - Video Insiders Podcast
+* [Video Coding Basics - How is this so efficient?](https://youtu.be/LDeL7-49qm4)  - An introduction to the basics of video coding
 
 ## HLS
 *HLS tools, libraries, and resources.*
