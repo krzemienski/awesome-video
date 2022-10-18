@@ -683,6 +683,18 @@
         },
         {
             "category": "talks-presentations-podcasts",
+            "homepage": "https://www.youtube.com/playlist?list=PLkyaYNWEKcOfD1GYFxFbZXDP03XM-cZPg",
+            "description": "2021 Demuxed talks & presentations",
+            "title": "Demuxed 2021"
+        },
+        {
+            "category": "talks-presentations-podcasts",
+            "homepage": "https://www.youtube.com/playlist?list=PLkyaYNWEKcOcDlGjEbpxBe4woCJGHrarN",
+            "description": "2020 Demuxed talks & presentations",
+            "title": "Demuxed 2020"
+        },
+        {
+            "category": "talks-presentations-podcasts",
             "homepage": "https://m.youtube.com/playlist?list=PLkyaYNWEKcOf_C_6W45abNvXMb40xUUqh",
             "description": "2019 Demuxed talks & presentations",
             "title": "Demuxed 2019"
