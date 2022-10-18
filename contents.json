@@ -1967,6 +1967,12 @@
         },
         {
             "category": "players",
+            "homepage": "https://github.com/muxinc/elements/tree/main/packages/mux-player",
+            "description": "`<mux-player>` is the official Mux-flavored video player web component. The player UI is built on [Media Chrome](https://github.com/muxinc/media-chrome) and [`<mux-video>`](https://github.com/muxinc/elements/tree/main/packages/mux-video) drives the core video logic used to play Mux Video content.",
+            "title": "elements/packages/mux-player"
+        },
+        {
+            "category": "players",
             "homepage": "https://github.com/imoreapps/ffmpeg-avplayer-for-ios-tvos",
             "description": "A tiny but powerful iOS and Apple TV OS av player framework that's based on the FFmpeg library. - imoreapps/ffmpeg-avplayer-for-ios-tvos",
             "title": "imoreapps/ffmpeg-avplayer-for-ios-tvos"
