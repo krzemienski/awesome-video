@@ -61,6 +61,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 
 * [A short history of video coding](https://www.slideshare.net/vcodex/a-short-history-of-video-coding?from_m_app=ios)  - Video coding is an essential component of video streaming, digital TV, video chat and many other technologies. This presentation, an invited lecture to the US …
 * [Eyevinn/streaming-onboarding](https://github.com/Eyevinn/streaming-onboarding)  - New to streaming and don't know where to start? This is the place for you! - Eyevinn/streaming-onboarding
+* [Video Streaming Cheatsheet](https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet.pdf)  - The Video Streaming Cheatsheet is a double sided page, suitable for printing, that contains common terminology used in the video streaming industry in a quick reference format
 * [leandromoreira/digital_video_introduction](https://github.com/leandromoreira/digital_video_introduction)  - A hands-on introduction to video technology: image, video, codec (av1, vp9, h265) and more (ffmpeg encoding). - leandromoreira/digital_video_introduction
 
 ## Learning
