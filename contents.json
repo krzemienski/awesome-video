@@ -2177,6 +2177,12 @@
             "title": "Eyevinn/streaming-onboarding"
         },
         {
+            "category": "introduction",
+            "homepage": "https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet.pdf",
+            "description": "The Video Streaming Cheatsheet is a double sided page, suitable for printing, that contains common terminology used in the video streaming industry in a quick reference format",
+            "title": "Video Streaming Cheatsheet"
+        },
+        {
             "category": "tools",
             "homepage": "https://github.com/Eyevinn/fmp4-js",
             "description": "A Javascript library to parse ISO Base Media File Format (MPEG-4 Part 12) - Eyevinn/fmp4-js",
