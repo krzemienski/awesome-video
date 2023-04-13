@@ -2546,12 +2546,6 @@
         },
         {
             "category": "cdn",
-            "homepage": "https://www.cdnoverview.com/compare/fastly-vs-amazon-cloudfront/",
-            "description": "Compare CDN features and pricing on CDNOverview.com",
-            "title": "Fastly compared to Amazon CloudFront "
-        },
-        {
-            "category": "cdn",
             "homepage": "https://endertech.com/blog/edge-computing-fastly-cdn-varnish-vcl-authenticated-requests",
             "description": "A brief explanation of how to use Fastly CDN and Varnish with authenticated requests to offload static file serving from the origin and edge caching.",
             "title": "Edge Computing with Fastly CDN and Varnish VCL for Authenticated Requests - Endertech"
@@ -3328,12 +3322,6 @@
             "description": "ts2mpa is a simple tool to extract MPEG Audio from a MPEG-2 Transport Stream. - njh/ts2mpa",
             "title": "njh/ts2mpa",
             "homepage": "https://github.com/njh/ts2mpa",
-            "category": "dvb"
-        },
-        {
-            "description": "Digital television services",
-            "title": "OpenCaster 3.2.2: the free digital tv software",
-            "homepage": "http://www.avalpa.com/the-key-values/15-free-software/33-opencaster",
             "category": "dvb"
         },
         {
