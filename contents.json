@@ -4686,6 +4686,12 @@
             "homepage": "https://github.com/soldiermoth/hlsq",
             "title": "soldiermoth/hlsq",
             "description": "A CLI for adding some color to your HLS manifests along with some basic filtering"
+        },
+        {
+            "category": "tools",
+            "homepage": "https://media-analyzer.pro",
+            "description": "In-browser tool that helps to analyze the internal structure of MPEG-TS and MP4/MOV files",
+            "title": "VTCLab Media Analyzer"
         }
     ]
 }
