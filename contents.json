@@ -1474,11 +1474,6 @@
             "title": "majamee/auto-dash-hls"
         },
         {
-            "category": "hevc",
-            "homepage": "https://ieeexplore.ieee.org/ielx7/76/7372356/07254155.pdf?tp=&arnumber=7254155&isnumber=7372356&ref=",
-            "title": "Video Quality Evaluation Methodology and Verification Testing of HEVC Compression Performance"
-        },
-        {
             "category": "qoe",
             "homepage": "https://github.com/Netflix/vmaf/",
             "description": "Perceptual video quality assessment based on multi-method fusion. - Netflix/vmaf",
