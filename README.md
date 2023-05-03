@@ -269,6 +269,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Viblast/dash-proxy](https://github.com/Viblast/dash-proxy)  - Easy downloading and mirroring of MPEG-DASH streams - Viblast/dash-proxy
 * [bitmovin/libdash](https://github.com/bitmovin/libdash)  - MPEG-DASH Access Library - Official ISO/IEC MPEG-DASH Reference Implementation - bitmovin/libdash
 * [carlanton/mpd-tools](https://github.com/carlanton/mpd-tools)  - DASH MPD tools for Java.
+* [dash-mpd-rs](https://github.com/emarsden/dash-mpd-rs)  - Rust library for parsing, serializing and downloading media content from a DASH MPD file.
 * [dash-validator-js/README.md at master · Eyevinn/dash-validator-js](https://github.com/Eyevinn/dash-validator-js/)  - MPEG DASH validator JS library. Contribute to Eyevinn/dash-validator-js development by creating an account on GitHub.
 * [djvergad/dash](https://github.com/djvergad/dash)  - An MPEG/DASH client-server module for simulating rate adaptation mechanisms over HTTP/TCP. - djvergad/dash
 * [mahbubcseju/MPEG-DASH-Downloader](https://github.com/mahbubcseju/MPEG-DASH-Downloader)  - Contribute to mahbubcseju/MPEG-DASH-Downloader development by creating an account on GitHub.
@@ -392,7 +393,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [HEVC/H.265 Video Coding Standard: Part 2](https://www.youtube.com/watch?v=V6a1AW5xyAw&feature=youtu.be)  - Dr. Dan Grois, Benjamin Bross, Dr. Detlev Marpe and Karsten Sühring HEVC/H.265 Video Coding Standart including the Range Extensions Scalable Extensions and M...
 * [Standardization of High Efficiency Video Coding (HEVC)](https://youtu.be/p6dLZfs0jTY)  - Standardization of High Efficiency Video Coding (HEVC) Jens-Rainer Ohm, Institute of Communication Engineering, RWTH Aachen University, DE
 * [The Market Significance of Apple's Adopting HEVC: Here's What I Think](https://www.linkedin.com/pulse/market-significance-apples-adopting-hevc-heres-what-i-jan-ozer)  - At the recent World Wide Developer's Conference (WWDC), Apple announced that the next versions of Safari, iOS, and tvOS will support HLS with HEVC encoded video. This puts Apple firmly in the HEVC camp, with the Alliance for Open Media camp (Amazon, Cisco, Intel, Google, Microsoft, Mozilla, Netflix,
-* [Video Quality Evaluation Methodology and Verification Testing of HEVC Compression Performance](https://ieeexplore.ieee.org/ielx7/76/7372356/07254155.pdf?tp=&arnumber=7254155&isnumber=7372356&ref=)  - 
 * [amaurypm/transcode2H265](https://github.com/amaurypm/transcode2H265)  - Unattended video transcoder to H265 and ACC codecs, in MKV containers. - amaurypm/transcode2H265
 * [multicoreware / x265 / wiki / Home — Bitbucket](https://bitbucket.org/multicoreware/x265_git/wiki/Home)  - 
 * [x265 Documentation — x265  documentation](https://x265.readthedocs.io/en/master/)  - 
