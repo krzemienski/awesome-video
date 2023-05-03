@@ -683,6 +683,12 @@
         },
         {
             "category": "talks-presentations-podcasts",
+            "homepage": "https://www.youtube.com/playlist?list=PLkyaYNWEKcOf98lZxnCcL6y7ZIVU3oSYO",
+            "description": "2022 Demuxed talks & presentations",
+            "title": "Demuxed 2022"
+        },
+        {
+            "category": "talks-presentations-podcasts",
             "homepage": "https://www.youtube.com/playlist?list=PLkyaYNWEKcOfD1GYFxFbZXDP03XM-cZPg",
             "description": "2021 Demuxed talks & presentations",
             "title": "Demuxed 2021"
