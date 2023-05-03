@@ -1297,6 +1297,18 @@
             "title": "Viblast/dash-proxy"
         },
         {
+            "category": "dash",
+            "homepage": "https://github.com/emarsden/dash-mpd-rs",
+            "description": "Rust library for parsing, serializing and downloading media content from a DASH MPD file.",
+            "title": "dash-mpd-rs"
+        },
+        {
+            "category": ["dash", "tools"],
+            "homepage": "https://github.com/emarsden/dash-mpd-cli",
+            "description": "Commandline application for downloading media content from a DASH MPD manifest.",
+            "title": "dash-mpd-cli"
+        },
+        {
             "category": "testing",
             "homepage": "https://bitmovin.com/mpeg-dash-hls-examples-sample-streams/",
             "title": "DASH & HLS Sample Streams"
