@@ -850,6 +850,12 @@
             "title": "iina/iina"
         },
         {
+            "category": "ios-tvos",
+            "homepage": "https://code.videolan.org/videolan/vlc-ios",
+            "description": "VLC for iOS is the official port of VLC on the iOS/tvOS platforms.",
+            "title": "videolan/vlc-ios"
+        },
+        {
             "category": "hls",
             "homepage": "https://github.com/imsanthosh/HLS-Stream-health-monitoring-tool",
             "description": "HLS stream health monitoring utility tool provides an report of live HLS stream. This utility tool checks the all available bitrate streams and generates the report in html file format. HTML file i...",
