@@ -2268,6 +2268,12 @@
             "title": "google/ExoPlayer"
         },
         {
+            "category": "android",
+            "homepage": "https://code.videolan.org/videolan/vlc-android",
+            "description": "VLC for Android, Android TV and ChromeOS.",
+            "title": "videolan/vlc-android"
+        },
+        {
             "category": "roku",
             "homepage": "https://medium.com/plexlabs/xml-code-good-times-rsg-application-b963f0cec01b",
             "description": "Written by John Zolezzi — April 6th 2018",
