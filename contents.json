@@ -3578,6 +3578,12 @@
             "category": "av1"
         },
         {
+            "description": "dav1d is the fastest AV1 decoder on all platforms.",
+            "title": "videolan/dav1d",
+            "homepage": "https://code.videolan.org/videolan/dav1d",
+            "category": "av1"
+        },
+        {
             "description": "",
             "title": "intel/vaapi-fits",
             "homepage": "https://github.com/intel/vaapi-fits",
