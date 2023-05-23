@@ -123,6 +123,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [High Efficiency Video Coding: Coding Tools and Specification (Signals and Communication Technology)](https://www.amazon.com/gp/product/3662442752/)  - 2014-10-08. Wien, Mathias.
 * [Introduction to Digital Audio Coding and Standards](https://www.amazon.com/dp/1402073577/)  - 2002-12-31. Bosi, Marina; Goldberg, Richard.
 * [Producing Streaming Video for Multiple Screen Delivery](https://www.amazon.com/gp/product/0976259540/)  - 2013-04-01. Ozer, Jan.
+* [The Good Parts of LibVLC](https://mfkl.gumroad.com/l/libvlc-good-parts)  - 2022-09-15. Finkel, Martin.
 * [The H.264 Advanced Video Compression Standard](https://www.amazon.de/-/en/Iain-Richardson/dp/0470516925)  - 2010-04-23. Richardson, Iain.
 * [The MPEG Handbook](https://www.amazon.com/dp/024080578X/)  - 2004-11-15 (2nd Edition). Watkinson, John.
 * [The MPEG-4 Book](https://www.amazon.com/MPEG-4-Book-Fernando-Pereira/dp/0130616214/)  - 2002-07-20. Ebrahimi, Touradj; Pereira, Fernando.
@@ -378,6 +379,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [aom - Git at Google](https://aomedia.googlesource.com/aom/)  - 
 * [luziferius/av1transcoder](https://github.com/luziferius/av1transcoder)  - Transcode video files to the AV1 format using ffmpeg and libaom-av1. - luziferius/av1transcoder
 * [master-of-zen/Av1an: Cross-platform command-line AV1 encode toolkit](https://github.com/master-of-zen/Av1an)  - Cross-platform command-line AV1 encode toolkit. Contribute to master-of-zen/Av1an development by creating an account on GitHub.
+* [videolan/dav1d](https://code.videolan.org/videolan/dav1d)  - dav1d is the fastest AV1 decoder on all platforms.
 * [xiph/rav1e](https://github.com/xiph/rav1e)  - The fastest and safest AV1 encoder. 
 
 ### HEVC
@@ -505,6 +507,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 
 * [google/ExoPlayer](https://github.com/google/ExoPlayer)  - ExoPlayer is an application level media player for Android.
 * [mkaflowski/HybridMediaPlayer](https://github.com/mkaflowski/HybridMediaPlayer)  - Android music and video player. Uses ExoPlayer 2 and MediaPlayer for lower APIs and makes using ExoMediaPlayer easier. If you need advanced options such as handling Chromecast it is delivered by Ex...
+* [videolan/vlc-android](https://code.videolan.org/videolan/vlc-android)  - VLC for Android, Android TV and ChromeOS.
 
 ### Chromecast
 *Chromecast app tools, libraries,and examples.*
@@ -535,6 +538,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [renzifeng/ZFPlayer](https://github.com/renzifeng/ZFPlayer)  - Support customization of any player SDK and control layer
 * [rinsuki/HWAcceleratedVP9Player](https://github.com/rinsuki/HWAcceleratedVP9Player)  - Hardware Accelerated VP9 Player in macOS 11.0 Big Sur beta 4+ - rinsuki/HWAcceleratedVP9Player
 * [tanersener/mobile-ffmpeg](https://github.com/tanersener/mobile-ffmpeg)  - FFmpeg for Android, iOS and tvOS.
+* [videolan/vlc-ios](https://code.videolan.org/videolan/vlc-ios)  - VLC for iOS is the official port of VLC on the iOS/tvOS platforms.
 * [vitoziv/VIMediaCache](https://github.com/vitoziv/VIMediaCache)  - Cache media file while play media using AVPlayer.
 * [wxxsw/GSPlayer](https://github.com/wxxsw/GSPlayer)  - ⏯ Video player, support for caching, preload, fullscreen transition and custom control view. 视频播放器，支持边下边播、预加载、全屏转场和自定义控制层 - wxxsw/GSPlayer
 * [xiewei-wayne/FFEngine.framework](https://github.com/xiewei-wayne/FFEngine.framework)  - FFEngine framework is a high performance player sdk for iOS based on ffmpeg. - xiewei-wayne/FFEngine.framework
