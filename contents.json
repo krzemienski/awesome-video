@@ -850,6 +850,12 @@
             "title": "iina/iina"
         },
         {
+            "category": "ios-tvos",
+            "homepage": "https://code.videolan.org/videolan/vlc-ios",
+            "description": "VLC for iOS is the official port of VLC on the iOS/tvOS platforms.",
+            "title": "videolan/vlc-ios"
+        },
+        {
             "category": "hls",
             "homepage": "https://github.com/imsanthosh/HLS-Stream-health-monitoring-tool",
             "description": "HLS stream health monitoring utility tool provides an report of live HLS stream. This utility tool checks the all available bitrate streams and generates the report in html file format. HTML file i...",
@@ -2262,6 +2268,12 @@
             "title": "google/ExoPlayer"
         },
         {
+            "category": "android",
+            "homepage": "https://code.videolan.org/videolan/vlc-android",
+            "description": "VLC for Android, Android TV and ChromeOS.",
+            "title": "videolan/vlc-android"
+        },
+        {
             "category": "roku",
             "homepage": "https://medium.com/plexlabs/xml-code-good-times-rsg-application-b963f0cec01b",
             "description": "Written by John Zolezzi — April 6th 2018",
@@ -3242,6 +3254,12 @@
             "description": "2010-04-23. Richardson, Iain."
         },
         {
+            "category": "books",
+            "homepage": "https://mfkl.gumroad.com/l/libvlc-good-parts",
+            "title": "The Good Parts of LibVLC",
+            "description": "2022-09-15. Finkel, Martin."
+        },
+        {
             "description": "The repo for https://stream.new. ",
             "title": "muxinc/stream.new",
             "homepage": "https://github.com/muxinc/stream.new",
@@ -3557,6 +3575,12 @@
             "description": "The fastest and safest AV1 encoder. ",
             "title": "xiph/rav1e",
             "homepage": "https://github.com/xiph/rav1e",
+            "category": "av1"
+        },
+        {
+            "description": "dav1d is the fastest AV1 decoder on all platforms.",
+            "title": "videolan/dav1d",
+            "homepage": "https://code.videolan.org/videolan/dav1d",
             "category": "av1"
         },
         {
