@@ -10,6 +10,9 @@ theme:
     primary: red
     accent: pink
 extra:
+  analytics:
+    provider: google
+    property: G-WEW2L61G6H
   social:
     - type: github
       link: https://github.com/krzemienski
@@ -17,9 +20,6 @@ extra:
       link: https://twitter.com/nkrzemienski
     - type: linkedin
       link: https://www.linkedin.com/in/krzemienski
-google_analytics:
-  - G-WEW2L61G6H
-  - auto
 extra_css:
     - css/extra.css
 nav:
