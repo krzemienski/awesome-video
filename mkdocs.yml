@@ -18,7 +18,7 @@ extra:
     - type: linkedin
       link: https://www.linkedin.com/in/krzemienski
 google_analytics:
-  - UA-154476193-1
+  - G-WEW2L61G6H
   - auto
 extra_css:
     - css/extra.css
