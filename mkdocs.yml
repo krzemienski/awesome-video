@@ -12,7 +12,7 @@ theme:
 extra:
   analytics:
     provider: google
-    property: G-WEW2L61G6H
+    property: G-VQCESB210D
   social:
     - type: github
       link: https://github.com/krzemienski
