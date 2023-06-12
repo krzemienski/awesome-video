@@ -1,0 +1,54 @@
+name: krzemienski/awesome-video/build
+on:
+  push:
+    branches:
+    - master
+env:
+  GH_TOKEN: xxxxd4ef
+jobs:
+  awesomebot:
+    runs-on: ubuntu-latest
+    container:
+      image: ruby:latest
+    steps:
+    - uses: actions/checkout@v3.5.0
+    - name: install awesomebot
+      run: gem install awesome_bot
+    - name: run awesomebot
+      run: awesome_bot contents.json --allow-ssl --allow-redirect -a 403,503,429,404
+  json-validate:
+    runs-on: ubuntu-latest
+    container:
+      image: python:3.7.12
+    steps:
+    - uses: actions/checkout@v3.5.0
+    - name: install json-spec
+      run: pip install json-spec
+    - name: run json validate
+      run: json validate --schema-file=.github/schema.json --document-file=contents.json
+  deploy-awesome-video:
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    container:
+      image: krzemienski/ruby-node-python:latest
+    needs:
+    - awesomebot
+    - json-validate
+    env:
+      DOCKER_PASSWORD:
+      DOCKER_USERNAME:
+      GH_TOKEN:
+    steps:
+    - uses: actions/checkout@v3.5.0
+    - name: run README.md gen
+      run: ruby .github/convert.rb
+    - name: run database.json gen
+      run: node .github/upgradeDb.js
+    - name: run copy readme to docs for site gen
+      run: cp README.md docs/index.md
+    - name: run static site gen
+      run: mkdocs build
+    - name: deploy new README
+      run: ".github/deploy-readme.sh"
+    - name: deploy gh pages
+      run: ".github/deploy-ghpages.sh site"
