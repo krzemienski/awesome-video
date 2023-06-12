@@ -1,7 +1,5 @@
 #!/bin/sh
 
-set -e
-
 if [ $CIRCLE_BRANCH != "master" ]
 then
   exit
