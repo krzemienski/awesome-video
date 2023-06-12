@@ -707,6 +707,10 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [slhck/ffmpeg-normalize](https://github.com/slhck/ffmpeg-normalize#examples)  - Audio Normalization for Python/ffmpeg.
 * [superpoweredSDK/Low-Latency-Android-iOS-Linux-Windows-tvOS-macOS-Interactive-Audio-Platform](https://github.com/superpoweredSDK/Low-Latency-Android-iOS-Linux-Windows-tvOS-macOS-Interactive-Audio-Platform)  - 🇸Superpowered Audio, Networking and Cryptographics SDKs. High performance and cross platform on Android, iOS, macOS, tvOS, Linux, Windows and modern web browsers. - superpoweredSDK/Low-Latency-Andr...
 * [webmproject/opus-dash: Specification for Encapsulating Opus Audio in ISO-BMFF Container](https://github.com/webmproject/opus-dash)  - Specification for Encapsulating Opus Audio in ISO-BMFF Container - webmproject/opus-dash
+* [Docker-FFmpeg-Nvenc](https://github.com/Allan-Nava/Docker-FFmpeg-Nvenc) - Docker-FFmpeg-Nvenc is a repository that provides a Docker image for FFmpeg with NVIDIA NVENC support. It enables hardware-accelerated video encoding using NVIDIA GPUs and allows you to perform high-performance video transcoding tasks.
+* [go-ffmpeg](https://github.com/Paxx-RnD/go-ffmpeg) - go-ffmpeg is a powerful and versatile Go library that provides a seamless integration with FFmpeg, a popular multimedia framework, allowing developers to manipulate audio and video files with ease
+
+
 
 ## Subtitles and Captions
 *Subtitling & Closed Caption libraries, tools, and examples.*
