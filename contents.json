@@ -3260,6 +3260,12 @@
             "description": "2022-09-15. Finkel, Martin."
         },
         {
+            "category": "books",
+            "homepage": "https://www.amazon.com/Fundamentals-Multimedia-Texts-Computer-Science/dp/303062126X/",
+            "title": "Fundamentals of Multimedia",
+            "description": "2022-02-17 (3rd Edition). Ze-Nian Li (Author), Mark S. Drew (Author), Jiangchuan Liu."
+        },
+        {
             "description": "The repo for https://stream.new. ",
             "title": "muxinc/stream.new",
             "homepage": "https://github.com/muxinc/stream.new",
