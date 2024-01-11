@@ -26,7 +26,7 @@ jobs:
       run: pip install json-spec
     - name: run json validate
       run: json validate --schema-file=.github/schema.json --document-file=contents.json
-  deploy-awesome-video:
+  gen-awesome-video:
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     container:
@@ -48,7 +48,23 @@ jobs:
       run: cp README.md docs/index.md
     - name: run static site gen
       run: mkdocs build
-    - name: deploy new README
-      run: ".github/deploy-readme.sh"
-    - name: deploy gh pages
-      run: ".github/deploy-ghpages.sh site"
+  deploy-pages:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
+    needs:
+      - awesomebot
+      - json-validate
+      - gen-awesome-video
+    env:
+          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          CUSTOM_DOMAIN: awesome.video
+          CONFIG_FILE: mkdocs.yml
+          EXTRA_PACKAGES: build-base
+          # GITHUB_DOMAIN: github.myenterprise.com
+          REQUIREMENTS: requirements.txt
