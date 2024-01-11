@@ -502,7 +502,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Android and fireTV tools, sdks, and examples.*
 [back to top](#readme) 
 
-* [google/ExoPlayer](https://github.com/google/ExoPlayer)  - ExoPlayer is an application level media player for Android.
+* [androidx/media](https://github.com/androidx/media) - Collection of Android libraries implementing video playback and editing, media sessions and more. Formerly known as [google/ExoPlayer](https://github.com/google/ExoPlayer).
 * [mkaflowski/HybridMediaPlayer](https://github.com/mkaflowski/HybridMediaPlayer)  - Android music and video player. Uses ExoPlayer 2 and MediaPlayer for lower APIs and makes using ExoMediaPlayer easier. If you need advanced options such as handling Chromecast it is delivered by Ex...
 * [videolan/vlc-android](https://code.videolan.org/videolan/vlc-android)  - VLC for Android, Android TV and ChromeOS.
 
