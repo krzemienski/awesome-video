@@ -3824,12 +3824,6 @@
             "category": "ads"
         },
         {
-            "description": "This article provides a performance analysis of AV1 encoding tools.",
-            "title": "Analysis of AV1 Encoding Tools & libaom Case Study",
-            "homepage": "https://visionular.io/performance-analysis-of-av1-encoding-tools-libaom-case-study/",
-            "category": "av1"
-        },
-        {
             "description": "Free open-source CEA608 / CEA708 closed-caption encoder/decoder - szatmary/libcaption",
             "title": "szatmary/libcaption",
             "homepage": "https://github.com/szatmary/libcaption",
