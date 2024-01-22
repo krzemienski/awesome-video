@@ -43,8 +43,9 @@ jobs:
       CONFIG_FILE: mkdocs.yml
       EXTRA_PACKAGES: build-base
       REQUIREMENTS: requirements.txt
+      GIT_DISCOVERY_ACROSS_FILESYSTEM: 1
     steps:
-    - uses: actions/checkout@v3.5.0
+    - uses: actions/checkout@v4
     - name: run README.md gen
       run: ruby .github/convert.rb
     - name: run database.json gen
@@ -54,4 +55,4 @@ jobs:
     - name: run static site gen
       run: make site_build
     - name: Deploy docs
-      uses: mhausenblas/mkdocs-deploy-gh-pages@master
+      uses: make site_deploy
