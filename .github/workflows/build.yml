@@ -55,4 +55,4 @@ jobs:
     - name: run static site gen
       run: make site_build
     - name: Deploy docs
-      uses: make site_deploy
+      uses: mhausenblas/mkdocs-deploy-gh-pages@master
