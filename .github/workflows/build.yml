@@ -47,6 +47,6 @@ jobs:
     - name: run copy readme to docs for site gen
       run: make site_link
     - name: run static site gen
-		  run: make site_build
-		- name: run static site deploy
-			run: make site_deploy
+      run: make site_build
+    - name: run static site deploy
+      run: make site_deploy
