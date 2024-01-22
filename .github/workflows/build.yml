@@ -37,7 +37,7 @@ jobs:
     env:
       DOCKER_PASSWORD:
       DOCKER_USERNAME:
-      GH_TOKEN:
+      GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
     steps:
     - uses: actions/checkout@v3.5.0
     - name: run README.md gen
@@ -45,26 +45,8 @@ jobs:
     - name: run database.json gen
       run: node .github/upgradeDb.js
     - name: run copy readme to docs for site gen
-      run: cp README.md docs/index.md
+      run: make site_link
     - name: run static site gen
-      run: mkdocs build
-  deploy-pages:
-    name: Deploy docs
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout main
-        uses: actions/checkout@v2
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
-    needs:
-      - awesomebot
-      - json-validate
-      - gen-awesome-video
-    env:
-          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-          CUSTOM_DOMAIN: awesome.video
-          CONFIG_FILE: mkdocs.yml
-          EXTRA_PACKAGES: build-base
-          # GITHUB_DOMAIN: github.myenterprise.com
-          REQUIREMENTS: requirements.txt
+		  run: make site_build
+		- name: run static site deploy
+			run: make site_deploy

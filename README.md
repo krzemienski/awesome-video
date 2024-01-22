@@ -104,8 +104,8 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [ffmpeg tutorial](http://www.dranger.com/ffmpeg/)  - 
 * [leandromoreira/video-containers-debugging-tools](https://github.com/leandromoreira/video-containers-debugging-tools)  - A set of command lines to debug video streaming files like mp4 (MPEG-4 Part 14), ts (MPEG-2 Part 1), fmp4 in Dash, HLS, or MSS, with or without DRM. - leandromoreira/video-containers-debugging-tools
 * [lhls-simple-live-platform](https://slides.com/jordicenzano/deck-973aed)  - You can build your own live platform just wiring up some open source tools, this is a demo video of https://github.com/jordicenzano/lhls-simple-live-platform
-* [matmoi/create-DASH-HLS](https://github.com/matmoi/create-DASH-HLS/)  - A tutorial to generate fMp4 files compatible with dash and HLS - matmoi/create-DASH-HLS
 * [matmoi/create-DASH-HLS](https://github.com/matmoi/create-DASH-HLS)  - A tutorial to generate fMp4 files compatible with dash and HLS - matmoi/create-DASH-HLS
+* [matmoi/create-DASH-HLS](https://github.com/matmoi/create-DASH-HLS/)  - A tutorial to generate fMp4 files compatible with dash and HLS - matmoi/create-DASH-HLS
 * [mofo7777/Stackoverflow](https://github.com/mofo7777/Stackoverflow)  - All source codes I've provided on stackoverflow as an answer, usually under tag ms-media-foundation. Mediafoundation, audio, video, 3D, decoder, encoder. - mofo7777/Stackoverflow
 * [nickdesaulniers/netfix](https://github.com/nickdesaulniers/netfix)  - Let's build a Netflix. 
 
@@ -119,6 +119,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Digital Television: MPEG-1, MPEG-2 and Principles of the DVB System](https://www.amazon.com/dp/0340691905/)  - 1997-07-11. Benoit, Herve.
 * [Digital Television: Technology and Standards](https://www.amazon.com/dp/0470147830/)  - 2007-09-17. Arnold, John; Frater, Michael; Pickering, Mark.
 * [Digital Video and HD: Algorithms and Interfaces](https://www.amazon.com/dp/0123919266/)  - 2012-02-07 (2nd Edition). Poynton, Charles.
+* [Fundamentals of Multimedia](https://www.amazon.com/Fundamentals-Multimedia-Texts-Computer-Science/dp/303062126X/)  - 2022-02-17 (3rd Edition). Ze-Nian Li (Author), Mark S. Drew (Author), Jiangchuan Liu.
 * [High Efficiency Video Coding (HEVC): Algorithms and Architectures (Integrated Circuits and Systems)](https://www.amazon.com/gp/product/3319068946/)  - 2014-09-03. Budagavi, Madhukar; Sze, Vivienne; Sullivan, Gary.
 * [High Efficiency Video Coding: Coding Tools and Specification (Signals and Communication Technology)](https://www.amazon.com/gp/product/3662442752/)  - 2014-10-08. Wien, Mathias.
 * [Introduction to Digital Audio Coding and Standards](https://www.amazon.com/dp/1402073577/)  - 2002-12-31. Bosi, Marina; Goldberg, Richard.
@@ -159,8 +160,8 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Riot Games Keeps League of Legends Esports Rolling With Fully Cloud-Based Virtualized Workflow](https://www.sportsvideo.org/2020/03/27/riot-games-keeps-league-of-legends-esports-rolling-with-fully-cloud-based-virtualized-production-workflow/)  - Although the traditional sports world has come to a standstill due to the coronavirus pandemic, many major esports properties are soldiering on, hosting compe
 * [Running FFmpeg on AWS Lambda for 1.9% the cost of AWS Elastic Transcoder](https://intoli.com/blog/transcoding-on-aws-lambda/)  - A guide to building a transcoder using Exodus, FFmpeg, and AWS Lambda.
 * [Saving on Encoding and Streaming: Deploy Capped CRF – Streaming Learning Center](https://streaminglearningcenter.com/blogs/saving-encoding-streaming-deploy-capped-crf.html)  - This is the second in a five-part series on how to cut your encoding and streaming costs. The first article was Saving on Encoding: Adjust Encoding Configuration to Increase Capacity. Article summary: Capped CRF encoding is a single-pass encoding method that can save encoding costs compared to two-pass VBR. Capped CRF is also a simple per-title…
-* [Server-less Just-in-Time Packaging with AWS Fargate and Unified Origin by Unified Streaming](https://medium.com/@eyevinntechnology/server-less-just-in-time-packaging-with-aws-fargate-and-unified-origin-by-unified-streaming-c1682dc051ca?source=userActivityShare-94bccb50d11-1559724204&_branch_match_id=664738392430917730)  - In this blog article Jonas Rydholm Birmé describes how he created a server-less just-in-time packaging origin, using AWS ECS Fargate tasks…
 * [Server-less Just-in-Time Packaging with AWS Fargate and Unified Origin by Unified Streaming](https://medium.com/@eyevinntechnology/server-less-just-in-time-packaging-with-aws-fargate-and-unified-origin-by-unified-streaming-c1682dc051ca?source=userActivityShare-94bccb50d11-1560983627&_branch_match_id=670020794794030328)  - In this blog article Jonas Rydholm Birmé describes how he created a server-less just-in-time packaging origin, using AWS ECS Fargate tasks…
+* [Server-less Just-in-Time Packaging with AWS Fargate and Unified Origin by Unified Streaming](https://medium.com/@eyevinntechnology/server-less-just-in-time-packaging-with-aws-fargate-and-unified-origin-by-unified-streaming-c1682dc051ca?source=userActivityShare-94bccb50d11-1559724204&_branch_match_id=664738392430917730)  - In this blog article Jonas Rydholm Birmé describes how he created a server-less just-in-time packaging origin, using AWS ECS Fargate tasks…
 * [Streaming Live From the Battlefield: Military Video in 2019](https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=135141)  - Metadata and low-latency video create a tactical advantage in intelligence-gathering and decision making. Discover why HEVC is gaining momentum in the armed forces, and Android is preferred over iOS.
 * [The H.264 Sequence Parameter Set](https://www.cardinalpeak.com/the-h-264-sequence-parameter-set)  - [vc_row][vc_column][vc_column_text]This is a follow-up to my World’s Smallest H.264 Encoder post. I’ve received several emails asking about precise details of things in two entities in the H.264 bitstream: the Sequence Parameter Set (SPS) and the Picture Parameter Set (PPS). Both entities contain information that an H.264 decoder needs to decode the video data, for example,…
 * [The Netflix IMF Workflow](https://medium.com/netflix-techblog/the-netflix-imf-workflow-f45dd72ed700?source=userActivityShare-94bccb50d11-1568773157&_branch_match_id=702692448596112473)  - interesting architectural implications
@@ -309,7 +310,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [SmurfManX/ffmpeg-nvidia-adaptive-vod-transcoder](https://github.com/SmurfManX/ffmpeg-nvidia-adaptive-vod-transcoder)  - bash script which will detect video new file in folder and transcode it to adaprive bitrate - SmurfManX/ffmpeg-nvidia-adaptive-vod-transcoder
 * [Snowmix - The Swiss Army Knife of Open Source Live Video Mixing.](https://snowmix.sourceforge.io)  - Snowmix Video Mixer
 * [VQEG/streamsim](https://github.com/VQEG/streamsim)  - 
-* [Vilsol/Transcoder](https://github.com/Vilsol/Transcoder)  - Docker container to transcode videos in mounted volume to H265 using FFMPEG - Vilsol/Transcoder [unmaintained]
+* [Vilsol/Transcoder](https://github.com/Vilsol/Transcoder)  - Docker container to transcode videos in mounted volume to H265 using FFMPEG - Vilsol/Transcoder
 * [Zulko/moviepy](https://github.com/Zulko/moviepy)  - 
 * [alfg/docker-bento4](https://github.com/alfg/docker-bento4)  - A dockerized Bento4 from source. Built on Alpine Linux.  - alfg/docker-bento4
 * [andressspinetti/video-transcoder](https://github.com/andressspinetti/video-transcoder)  - AWS S3 + Lambda + Transcode. 
@@ -322,6 +323,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [bmhayward/Transcode](https://github.com/bmhayward/Transcode)  - Tools to batch transcode and process videos. 
 * [bookyo/express-ffmpeg](https://github.com/bookyo/express-ffmpeg)  - nodejs ffmpeg video transcode webui，基于nodejs的云转码系统 https://www.efvcms.com - bookyo/express-ffmpeg
 * [cannonbeach/ott-packager](https://github.com/cannonbeach/ott-packager)  - OTT/ABR streaming encoder (H264/HEVC) and packager for DASH and HLS - cannonbeach/ott-packager
+* [cbsinteractive/transcode-orchestrator](https://github.com/cbsinteractive/transcode-orchestrator)  - Agnostic API orchestrating the transcoding of media assets across various cloud providers, previously https://github.com/cbsinteractive/video-transcoding-api - cbsinteractive/transcode-orchestrator
 * [chn-lee-yumi/distributed_ffmpeg_transcoding_cluster: 分布式FFMpeg转码集群。A FFMpeg transcoding cluster runs in variable CPUs, including ARM, x86, and others which can run linux. You can use it to run a RaspberryPi cluster.](https://github.com/chn-lee-yumi/distributed_ffmpeg_transcoding_cluster)  - 分布式FFMpeg转码集群。A FFMpeg transcoding cluster runs in variable CPUs, including ARM, x86, and others which can run linux. You can use it to run a RaspberryPi cluster. - chn-lee-yumi/distributed_ffmpeg_...
 * [cwinging/transcode](https://github.com/cwinging/transcode)  - python transcode server. 
 * [davidbt/djmediastreamer](https://github.com/davidbt/djmediastreamer)  - A Django project that allows you to catalog and stream your videos (using FFmpeg to add subtitles and transcode). - davidbt/djmediastreamer
@@ -344,9 +346,11 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [media-toolbox/avbroadcast: avbroadcast - republish media streams for mass consumption](https://github.com/media-toolbox/avbroadcast)  - avbroadcast - republish media streams for mass consumption - media-toolbox/avbroadcast
 * [mltframework/mlt](https://github.com/mltframework/mlt)  - MLT Multimedia Framework.
 * [monking/transcode-web-video](https://github.com/monking/transcode-web-video)  - Quickly transcode a source video to MP4, OGV, and WebM, with scale, bitrate, and screengrab options. - monking/transcode-web-video
+* [natsuite/NatReader-API](https://github.com/natsuite/NatReader-API)  - NatReader is a cross-platform video decoding API designed for transcoding applications. - natsuite/NatReader-API
 * [olaris / olaris-server](https://gitlab.com/olaris/olaris-server)  - GitLab.com
 * [ptrandev/swift-encoder](https://github.com/ptrandev/swift-encoder)  - A fire-and-forget shell script that encodes multiple video and audio files with ffmpeg. - ptrandev/swift-encoder
 * [quarkscript/media_works](https://github.com/quarkscript/media_works)  - Transcode video by ffmpeg with nvenc; normalize the volume; force dynamic range compression to the volume - quarkscript/media_works
+* [realeyes-media/demo-encoder](https://github.com/realeyes-media/demo-encoder)  - A nodejs encoding system based on ffmpeg and configured to write HLS streaming files to S3 - realeyes-media/demo-encoder
 * [realeyes-media/demo-encoder](https://github.com/realeyes-media/demo-encoder/)  - A nodejs encoding system based on ffmpeg and configured to write HLS streaming files to S3 - realeyes-media/demo-encoder
 * [sambios/ffmpeg_transcoder](https://github.com/sambios/ffmpeg_transcoder)  - video transcode based on ffmpeg, support H264/HEVC and more. - sambios/ffmpeg_transcoder
 * [selsamman/react-native-transcode](https://github.com/selsamman/react-native-transcode)  - Video Transcoder for React Native. 
@@ -369,7 +373,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [AV1 Codec](https://docs.google.com/presentation/d/12_Vewc0SDpB1FycflfT4us9eipRCy0HWJVSaDMDifRs/edit?usp=sharing)  - Working with the AV1 Codec Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv
 * [AV1 decoder model](https://norkin.org/research/av1_decoder_model/)  - Description of the AV1 decoder model.
 * [Alkl58/NotEnoughAV1Encodes](https://github.com/Alkl58/NotEnoughAV1Encodes)  - GUI Handler for AV1 Encoders (aomenc, rav1e & svt-av1) - Alkl58/NotEnoughAV1Encodes
-* [Analysis of AV1 Encoding Tools & libaom Case Study](https://visionular.io/performance-analysis-of-av1-encoding-tools-libaom-case-study/)  - This article provides a performance analysis of AV1 encoding tools.
 * [Eyevinn/av1-player](https://github.com/Eyevinn/av1-player)  - Eyevinn AV1 player.
 * [Promising Initial Results with AV1 Testing - Streaming Learning Center](https://streaminglearningcenter.com/blogs/promising-initial-results-with-av1-testing.html)  - [vc_row margin_top=”30″][vc_column][vc_column_text]I began testing AV1 early this week. Briefly, my tests involve 16 ten-second clips in four genres (movies, sports, animations, gaming) and an “other” category (music video, nature video). I’ve completed the first set of tests with FFmpeg 4.3, benchmarking x264, x265, and the latest version of the Alliance for Open Media AV1 codec,…
 * [SVT-AV1: an open-source AV1 encoder and decoder](https://netflixtechblog.com/svt-av1-an-open-source-av1-encoder-and-decoder-ad295d9b5ca2)  - by Andrey Norkin, Joel Sole, Mariana Afonso, Kyle Swanson, Agata Opalach, Anush Moorthy, Anne Aaron
@@ -443,7 +446,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [openfun/marsha](https://github.com/openfun/marsha)  - :clapper: A self-hosted opensource LTI video provider - openfun/marsha
 * [openstack/swift](https://github.com/openstack/swift)  - OpenStack Storage (Swift).
 * [ossrs/srs](https://github.com/ossrs/srs)  - SRS is a simple live streaming cluster, a simple joy. - ossrs/srs
-* [prologic/tube](https://git.mills.io/prologic/tube)  - 📺 a Youtube-like (without censorship and features you don&#39;t need!) Video Sharing App written in Go which also supports automatic transcoding to MP4 H.265 AAC, multiple collections and R...
+* [prologic/tube](https://github.com/prologic/tube)  - 📺 a Youtube-like (without censorship and features you don&#39;t need!) Video Sharing App written in Go which also supports automatic transcoding to MP4 H.265 AAC, multiple collections and R...
 * [rclone/rclone](https://github.com/rclone/rclone)  - rsync for cloud storage - Google Drive, Amazon Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Cloudfiles, Google Cloud Storage, Yandex Files - rclone/rclone
 * [streamaserver/streama](https://github.com/streamaserver/streama)  - Self hosted streaming media server. https://docs.streama-project.com/ - streamaserver/streama
 
@@ -502,7 +505,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Android and fireTV tools, sdks, and examples.*
 [back to top](#readme) 
 
-* [androidx/media](https://github.com/androidx/media) - Collection of Android libraries implementing video playback and editing, media sessions and more. Formerly known as [google/ExoPlayer](https://github.com/google/ExoPlayer).
+* [google/ExoPlayer](https://github.com/google/ExoPlayer)  - ExoPlayer is an application level media player for Android.
 * [mkaflowski/HybridMediaPlayer](https://github.com/mkaflowski/HybridMediaPlayer)  - Android music and video player. Uses ExoPlayer 2 and MediaPlayer for lower APIs and makes using ExoMediaPlayer easier. If you need advanced options such as handling Chromecast it is delivered by Ex...
 * [videolan/vlc-android](https://code.videolan.org/videolan/vlc-android)  - VLC for Android, Android TV and ChromeOS.
 
@@ -627,7 +630,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [ElderByte-/docker-java-media](https://github.com/ElderByte-/docker-java-media)  - JRE 10 (Java 10) and media tools (ffmpeg).
 * [FFmpeg/FFV1](https://github.com/FFmpeg/FFV1)  - The FFV1 lossless video codec specification. 
 * [FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg)  - Mirror of git://source.ffmpeg.org/ffmpeg.git.
-* [FallingSnow/h265ize](https://github.com/FallingSnow/h265ize)  - A node utility utilizing ffmpeg to encode videos with the hevc codec. - FallingSnow/h265ize [unmaintained]
+* [FallingSnow/h265ize](https://github.com/FallingSnow/h265ize)  - A node utility utilizing ffmpeg to encode videos with the hevc codec. - FallingSnow/h265ize
 * [Generate MPEG-TS from file with ffmpeg](https://medium.com/@eyevinntechnology/generate-mpeg-ts-from-file-with-ffmpeg-7561181e6369?source=userActivityShare-94bccb50d11-1560983471&_branch_match_id=670020142756633081)  - In this post I will describe how an MPEG-TS multicast stream can be generated with ffmpeg by looping an MP4 file and a Docker container…
 * [How to decode a video (memory file / byte string) and step through it frame by frame in python?](https://stackoverflow.com/questions/60558412/how-to-decode-a-video-memory-file-byte-string-and-step-through-it-frame-by-f)  - I am using python to do some basic image processing, and want to extend it to process a video frame by frame. I get the video as a blob from a server - .webm encoded - and have it in python as a b...
 * [How to generate a fmp4 hls live stream with FFMPEG](https://nomadyun.wordpress.com/2018/04/12/how-to-generate-a-fmp4-hls-live-stream-with-ffmpeg/)  - ffmpeg -re -stream_loop -1 -i voweb.mp4 -hls_fmp4_init_filename init.mp4 -vf “settb=AVTB,setpts=’trunc(PTS/1K)*1K+st\(1,trunc(RTCTIME/1K))-1K*trunc(ld(1)/1K)’,\ drawtext=fontfile=…
@@ -640,7 +643,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [TenPennyTV/worker-ffmpeg](https://github.com/TenPennyTV/worker-ffmpeg)  - Worker that is used to transcode video to supported formats and resolutions - TenPennyTV/worker-ffmpeg
 * [This gist will generate an Intel QSV-enabled FFmpeg build using the open source Intel Media SDK. Testbed used: Ubuntu 18.04LTS. A fallback is also provided for the intel vaapi driver where needed.](https://gist.github.com/SeanMollet/0eed16e80630ab67532890a9d42132af)  - This gist will generate an Intel QSV-enabled FFmpeg build using the open source Intel Media SDK. Testbed used: Ubuntu 18.04LTS. A fallback is also provided for the intel vaapi driver where needed. ...
 * [Understanding Rate Control Modes (x264, x265, vpx)](https://slhck.info/video/2017/03/01/rate-control.html)  - What is “rate control”? It’s what a video encoder does when it decides how many bits to spend for a given frame. The goal of (lossy) video encoding is to sav...
-* [VCDP/FFmpeg-patch](https://github.com/VCDP/FFmpeg-patch)  - This repository contains a collection of FFmpeg* patches and samples to enable CNN model based video analytics capabilities (such as object detection, classification, recognition) in FFmpeg* framew... [unmaintained]
+* [VCDP/FFmpeg-patch](https://github.com/VCDP/FFmpeg-patch)  - This repository contains a collection of FFmpeg* patches and samples to enable CNN model based video analytics capabilities (such as object detection, classification, recognition) in FFmpeg* framew...
 * [WritingMinds/ffmpeg-android-java](https://github.com/WritingMinds/ffmpeg-android-java)  - Android java library for FFmpeg binary compiled using https://github.com/writingminds/ffmpeg-android - WritingMinds/ffmpeg-android-java
 * [albanie/shot-detection-benchmarks: A comparison of ffmpeg, Shotdetect and PySceneDetect for shot transition detection](https://github.com/albanie/shot-detection-benchmarks)  - A comparison of ffmpeg, Shotdetect and PySceneDetect for shot transition detection - albanie/shot-detection-benchmarks
 * [bcoudurier/FFmbc](https://github.com/bcoudurier/FFmbc)  - FFmpeg customized for broadcast and professional usage - bcoudurier/FFmbc
@@ -648,6 +651,8 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [bramp/ffmpeg-cli-wrapper](https://github.com/bramp/ffmpeg-cli-wrapper)  - Java wrapper around the FFmpeg command line tool.
 * [cash2one/VideoTranscoding-Backend](https://github.com/cash2one/VideoTranscoding-Backend)  - This application transcode a video that you send on all formats what you want and diferent resolutions. - cash2one/VideoTranscoding-Backend
 * [compile and install latest ffmpeg source as pkg](https://gist.github.com/krzemienski/e51a0b7a6ba77e616f954e516783270c#file-compile-and-install-latest-ffmpeg-source-sh-L2)  - compile and install latest ffmpeg source as pkg. GitHub Gist: instantly share code, notes, and snippets.
+* [cuda/ubuntu16.04/ffmpeg-gpu/Dockerfile · master · nvidia / container-images / samples](https://gitlab.com/nvidia/container-images/samples/blob/master/cuda/ubuntu16.04/ffmpeg-gpu/Dockerfile)  - Sample Dockerfiles for Docker Hub images
+* [dschere/industrial-ffmpeg](https://github.com/dschere/industrial-ffmpeg)  - A high level transcoder using ffmpeg that in addition to transcoding provides real time stats, detection of bad video, integration with nginx for on demand video - dschere/industrial-ffmpeg
 * [ffmprovisr](https://amiaopensource.github.io/ffmprovisr)  - Cookbook of commonly used FFmpeg recipes with descriptions of how each command works and how to modify it to fit your needs
 * [fluent-ffmpeg/node-fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg)  - A fluent API to FFMPEG (http://www.ffmpeg.org). 
 * [git-developer/vaapi-video-converter](https://github.com/git-developer/vaapi-video-converter)  - A docker-based video converter that uses VAAPI-compatible hardware for transcoding - git-developer/vaapi-video-converter
@@ -679,6 +684,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [transitive-bullshit/awesome-ffmpeg](https://github.com/transitive-bullshit/awesome-ffmpeg)  - 👻 A curated list of awesome FFmpeg resources.
 * [unosquare/ffmediaelement](https://github.com/unosquare/ffmediaelement)  - FFME: The Advanced WPF MediaElement (based on FFmpeg) - unosquare/ffmediaelement
 * [videomorph-dev/videomorph](https://github.com/videomorph-dev/videomorph)  - A user-friendly Video Converter based on FFMPEG and writen in Python/PyQt5. - videomorph-dev/videomorph
+* [x264 FFmpeg Options Guide - Linux Encoding](https://sites.google.com/site/linuxencoding/x264-ffmpeg-mapping)  - 
 
 ## Audio
 *Audio libraries, tools, and examples.*
@@ -874,7 +880,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [vapoursynth/vapoursynth](https://github.com/vapoursynth/vapoursynth)  - A video processing framework with simplicity in mind - vapoursynth/vapoursynth
 * [video-dev/vtt.js](https://github.com/video-dev/vtt.js)  - A JavaScript implementation of the WebVTT specification - video-dev/vtt.js
 * [watson-developer-cloud/text-to-speech-nodejs](https://github.com/watson-developer-cloud/text-to-speech-nodejs)  - :speaker: Sample Node.js Application for the IBM Watson Text to Speech Service - watson-developer-cloud/text-to-speech-nodejs
-* [wangyoucao577/plot-av](https://github.com/wangyoucao577/plot-av)  - Plot Audio/Video streams for better insights.
 
 ## DRM
 *DRM tools, documentations, and resources.*
