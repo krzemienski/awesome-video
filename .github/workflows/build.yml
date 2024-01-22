@@ -38,6 +38,11 @@ jobs:
       DOCKER_PASSWORD:
       DOCKER_USERNAME:
       GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+      PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+      CUSTOM_DOMAIN: awesome.video
+      CONFIG_FILE: mkdocs.yml
+      EXTRA_PACKAGES: build-base
+      REQUIREMENTS: requirements.txt
     steps:
     - uses: actions/checkout@v3.5.0
     - name: run README.md gen
@@ -48,5 +53,5 @@ jobs:
       run: make site_link
     - name: run static site gen
       run: make site_build
-    - name: run static site deploy
-      run: make site_deploy
+    - name: Deploy docs
+      uses: mhausenblas/mkdocs-deploy-gh-pages@master
