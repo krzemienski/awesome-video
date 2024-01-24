@@ -56,7 +56,7 @@ jobs:
     - name: run database.json gen
       run: node .github/upgradeDb.js
     - name: install mkdoc build deps
-      run: apt-get update && apt-get -y install lsb-release unzip python3-pip python3-dev && pip3 install mkdocs mkdocs-material json-spec
+      run: sudo apt-get update && sudo apt-get -y install lsb-release unzip python3-pip python3-dev && pip3 install mkdocs mkdocs-material json-spec
     - name: run copy readme to docs for site gen
       run: cp README.md docs/index.md
     - name: run static site gen
