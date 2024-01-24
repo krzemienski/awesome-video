@@ -29,8 +29,7 @@ jobs:
   gen-awesome-video:
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
-    container:
-      image: python:3.7.12
+      image: krzemienski/ruby-node-python:latest
     needs:
     - awesomebot
     - json-validate
