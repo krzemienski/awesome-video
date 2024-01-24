@@ -29,8 +29,6 @@ jobs:
   gen-awesome-video:
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
-    container:
-      image: krzemienski/ruby-node-python:latest
     needs:
     - awesomebot
     - json-validate
@@ -44,6 +42,18 @@ jobs:
       EXTRA_PACKAGES: build-base
       REQUIREMENTS: requirements.txt
       GIT_DISCOVERY_ACROSS_FILESYSTEM: 1
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7
+    - name: Set up Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
     steps:
     - uses: actions/checkout@v4
     - name: run README.md gen
