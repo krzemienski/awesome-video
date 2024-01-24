@@ -55,7 +55,9 @@ jobs:
       run: ruby .github/convert.rb
     - name: run database.json gen
       run: node .github/upgradeDb.js
+    - name: run copy readme to docs for site gen
+      run: cp README.md docs/index.md
     - name: run static site gen
-      run: make site_build
+      run: mkdocs build
     - name: Deploy docs
       uses: mhausenblas/mkdocs-deploy-gh-pages@master
