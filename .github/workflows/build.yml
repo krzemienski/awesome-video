@@ -55,8 +55,6 @@ jobs:
       run: ruby .github/convert.rb
     - name: run database.json gen
       run: node .github/upgradeDb.js
-    - name: run copy readme to docs for site gen
-      run: make site_link
     - name: run static site gen
       run: make site_build
     - name: Deploy docs
