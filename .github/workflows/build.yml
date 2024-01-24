@@ -5,6 +5,12 @@ on:
     - master
 env:
   GH_TOKEN: xxxxd4ef
+  PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+  CUSTOM_DOMAIN: awesome.video
+  CONFIG_FILE: mkdocs.yml
+  EXTRA_PACKAGES: build-base
+  REQUIREMENTS: requirements.txt
+  GIT_DISCOVERY_ACROSS_FILESYSTEM: 1
 jobs:
   awesomebot:
     runs-on: ubuntu-latest
@@ -27,22 +33,11 @@ jobs:
     - name: run json validate
       run: json validate --schema-file=.github/schema.json --document-file=contents.json
   gen-awesome-video:
-    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
-      image: krzemienski/ruby-node-python:latest
     needs:
-    - awesomebot
-    - json-validate
-    env:
-      DOCKER_PASSWORD:
-      DOCKER_USERNAME:
-      GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-      PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-      CUSTOM_DOMAIN: awesome.video
-      CONFIG_FILE: mkdocs.yml
-      EXTRA_PACKAGES: build-base
-      REQUIREMENTS: requirements.txt
-      GIT_DISCOVERY_ACROSS_FILESYSTEM: 1
+      - awesomebot
+      - json-validate
+    steps:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
@@ -55,7 +50,6 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: 3.9
-    steps:
     - uses: actions/checkout@v4
     - name: run README.md gen
       run: ruby .github/convert.rb
