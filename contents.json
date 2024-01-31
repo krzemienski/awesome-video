@@ -4717,6 +4717,13 @@
             "homepage": "https://media-analyzer.pro",
             "description": "In-browser tool that helps to analyze the internal structure of MPEG-TS and MP4/MOV files",
             "title": "VTCLab Media Analyzer"
+        },
+        {
+    		"title": "json-to-ffmpeg",
+    		"category": "ffmpeg",
+    		"description": "Translate JSON into FFmpeg commands. Strongly typed schema provided.",
+    		"homepage": "https://github.com/pilotpirxie/json-to-ffmpeg",
+    		"tags": ["ffmpeg", "json", "utils"]
         }
     ]
 }
