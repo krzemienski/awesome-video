@@ -21,4 +21,4 @@ jobs:
     - name: install awesomebot
       run: gem install awesome_bot
     - name: run awesomebot
-      run: awesome_bot contents.json --allow-ssl --allow-redirect -a 403,503,429,404,500,443
+      run: awesome_bot contents.json --allow-ssl --allow-redirect
