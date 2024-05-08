@@ -187,6 +187,12 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Mile High Video 2019 Proceedings](https://mile-high.video/files/mhv2019)  - Mile High Video 2019 talks & presentations
 * [The Video Insiders](https://thevideoinsiders.simplecast.com/episodes)  - Video Insiders Podcast
 * [Video Coding Basics - How is this so efficient?](https://youtu.be/LDeL7-49qm4)  - An introduction to the basics of video coding
+* [RTC.ON 2023](https://www.youtube.com/playlist?list=PLSk21zn8fFZBUTg4AbMyVBripi2ldmjpF) - 2023 RTC.ON talks & presentations
+* [JanusCon 2019](https://www.youtube.com/playlist?list=PLkSq48W3Pn8n_PBOIRAiqhcCIsrgydzU_) - 2019 JanusCon talks & presentations
+* [CommCon 2023](https://www.youtube.com/playlist?list=PLvNS4EBAxmJLjMY3NAVoPSmIXWiUjrnKv) - 2023 CommCon talks & presentations
+* [CommCon 2021](https://www.youtube.com/playlist?list=PLvNS4EBAxmJJbvGW-PfXdXOSy9AjHjCLV) - 2021 CommCon talks & presentations
+* [CommCon 2020](https://www.youtube.com/playlist?list=PLvNS4EBAxmJLCLMNqvfe6eTQIWVDAPcP4) - 2020 CommCon talks & presentations
+* [CommCon 2019](https://www.youtube.com/playlist?list=PLvNS4EBAxmJKz6E6PLCqBq0eB-KKB6HR0) - 2019 CommCon talks & presentations
 
 ## HLS
 *HLS tools, libraries, and resources.*
@@ -944,8 +950,13 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 [back to top](#readme) 
 
 
-### Slack Groups
-[back to top](#readme) 
+### Slack/Discord/Other Groups
+
+* [Software Mansion Discord](https://discord.gg/nEZ8Rusc52) - Discord server where folks from SWM working on multimedia stuff reside.
+* [LiveKit Slack](https://join.slack.com/t/livekit-users/shared_invite/zt-28a400kyd-I0mPVUrxcZ5TEayIvmq9mw) - Slack where folks working on LiveKit reside.
+* [Gophers Slack, channel #pion](https://join.slack.com/t/gophers/shared_invite/zt-2gyed6bva-gl2F32VpT1WZvCpj4e7FtA) - Slack channel where folks working on Pion reside.
+* [Video-Dev Slack](https://www.video-dev.org/) - Slack for video engineers.
+* [discuss-webrtc](https://groups.google.com/g/discuss-webrtc) - Google Group for all webrtc-related questions.
 
 
 ## CDN
