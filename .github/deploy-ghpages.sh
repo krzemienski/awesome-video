@@ -14,6 +14,7 @@ siteSource="$1"
 if [ ! -d "$siteSource" ]
 then
     echo "Usage: $0 <site source dir>"
+	
     exit 1
 fi
 

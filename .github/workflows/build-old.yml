@@ -57,9 +57,9 @@ jobs:
       run: node .github/upgradeDb.js
     - name: install mkdoc build deps
       run: sudo apt-get update && sudo apt-get -y install lsb-release unzip python3-pip python3-dev && pip3 install mkdocs mkdocs-material json-spec
-    - name: run copy readme to docs for site gen
-      run: cp README.md docs/index.md
-    - name: run static site gen
-      run: mkdocs build
+    - name: use makefile to install all deps to ensure we have the same versions
+      run: make site_install
+    - name: use makefile to install all deps to ensure we have the same versions
+      run: make site_build
     - name: Deploy docs
       uses: mhausenblas/mkdocs-deploy-gh-pages@master

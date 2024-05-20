@@ -1,0 +1,87 @@
+name: build-deploy
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  GH_TOKEN: xxxxd4ef
+  PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+  CUSTOM_DOMAIN: awesome.video
+  GIT_DISCOVERY_ACROSS_FILESYSTEM: 1
+
+jobs:
+  awesomebot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+
+      - name: Install awesome_bot
+        run: gem install awesome_bot
+
+      - name: Run awesome_bot
+        run: awesome_bot contents.json --allow-ssl --allow-redirect -a 403,503
+
+  json-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Install json-spec
+        run: pip install json-spec
+
+      - name: Run JSON validate
+        run: json validate --schema-file=.github/schema.json --document-file=contents.json
+
+  deploy-awesome-video:
+    runs-on: ubuntu-latest
+    needs: [awesomebot, json-validate]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Run README.md gen
+        run: ruby .github/convert.rb
+
+      - name: Run database.json gen
+        run: node .github/upgradeDb.js
+
+      - name: Copy README to docs for site gen
+        run: cp README.md docs/index.md
+
+      - name: Run static site gen
+        run: mkdocs build
+
+      - name: Deploy new README
+        run: .github/deploy-readme.sh
+
+      - name: Deploy GitHub Pages
+        run: .github/deploy-ghpages.sh site

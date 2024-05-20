@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ $CIRCLE_BRANCH != "master" ]
+if [ "$GITHUB_REF" != "refs/heads/master" ]
 then
   exit
 fi
