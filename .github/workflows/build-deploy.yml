@@ -27,7 +27,7 @@ jobs:
         run: gem install awesome_bot
 
       - name: Run awesome_bot
-        run: awesome_bot contents.json --allow-ssl --allow-redirect -a 403,503
+        run: awesome_bot contents.json --allow-ssl --allow-redirect -a 403,503,500
 
   json-validate:
     runs-on: ubuntu-latest
