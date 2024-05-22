@@ -68,6 +68,9 @@ jobs:
         with:
           python-version: '3.9'
 
+      - name: Install required
+        run: pip install -r requirements.txt
+
       - name: Run README.md gen
         run: ruby .github/convert.rb
 
