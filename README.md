@@ -68,7 +68,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *An awesome list of learning video streaming resources.*
 
 * [3 Cases from a Video Expert: Encoding Basics](https://link.medium.com/z6IDbLDWO7)  - Introduction
-* [Adding Alternate Media to a Playlist | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/adding_alternate_media_to_a_playlist)  - 
 * [Back to Basics: Encoding Definition and Adaptive Bitrate](https://bitmovin.com/encoding-definition-bitrates/?utm_campaign=Newsletter&utm_medium=email&_hsenc=p2ANqtz-8MPFxhR7snQrxPYM7Bl3UTEMgOh5ZXoDQCHjLl9lkskqE0IfBhEuz3us39Br-lvA_CnyNmQl6L5wqO6iKOfAJ8HznenQ&_hsmi=79678208&utm_content=79677632&utm_source=hs_email&hsCtaTracking=b8eb0e0a-f292-435e-8b99-719b75d81412%7C367afa65-d810-4c2e-aa2c-c87e897a8942)  - 
 * [Creating A Production Ready Multi Bitrate HLS VOD stream - Peer5 P2P Docs](https://docs.peer5.com/guides/production-ready-hls-vod/)  - Peer5 documentation
 * [Creating a Master Playlist | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/creating_a_master_playlist#overview)  - 
@@ -83,7 +82,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Internet Video Streaming — ABR part 1](https://medium.com/@eyevinntechnology/internet-video-streaming-abr-part-1-b10964849e19?source=userActivityShare-94bccb50d11-1559723768&_branch_match_id=664736558865703297)  - Background
 * [Internet Video Streaming — ABR part 2](https://medium.com/@eyevinntechnology/internet-video-streaming-abr-part-2-dbce136b0d7c?source=userActivityShare-94bccb50d11-1559723862&_branch_match_id=664736952377004405)  - Background
 * [Introduction to HTTP Live Streaming: HLS on Android and More](https://www.toptal.com/apple/introduction-to-http-live-streaming-hls)  - This article explains how HTTP Live Streaming works and demonstrates how to create an HLS player in Android.
-* [Live Playlist (Sliding Window) Construction | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/live_playlist_sliding_window_construction)  - 
 * [Low Latency Live Streaming](https://docs.google.com/presentation/d/1ZwqWcweR5SqeMBRmJjSukWaHbpdPy-EPYvJCS23_n3U/edit?usp=sharing)  - Low Latency Live Streaming Apple LLHLS / CMAF Kevin Staunton-Lambert Solutions Architect R&D (July 2019) @kevleyski www.switch.tv
 * [OTT Content Delivery](https://medium.com/@eyevinntechnology/ott-content-delivery-b43a35ef24f6)  - Background
 * [OTT Content Delivery– Multi CDN](https://medium.com/@eyevinntechnology/ott-content-delivery-multi-cdn-8cd90ad2628a?source=userActivityShare-94bccb50d11-1560983307&_branch_match_id=670019455010399744)  - Background
@@ -95,7 +93,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Video Encoding — Compression and Resolutions](https://medium.com/@eyevinntechnology/chessboard-for-beginners-video-encoding-compression-and-resolutions-bcefe04fa639)  - Written by: Boris Asadanin, Streaming Media Consultant at Eyevinn Technology
 * [Video Tensorflow](https://docs.google.com/presentation/d/1NAqYWmFOwxJEacZCuPLdX0mRNRFPFgeRbsm22EaxerU/edit?usp=sharing)  - Using Tensorflow For Audience Measurement Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv
 * [Video and containers](http://neurocline.github.io/dev/2016/07/28/video-and-containers.html)  - NALU, Annex B, and Start Codes
-* [Video on Demand Playlist Construction | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/video_on_demand_playlist_construction)  - 
 * [WebAssembly (Wasm)](https://docs.google.com/presentation/d/1sonEk2neNVBcy8EzieUjWCNzj5SXN7dk-unkR_lpl8k/edit?usp=sharing)  - WebAssembly (Wasm) On the Edge Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv Wasm)
 * [WildFires](https://docs.google.com/presentation/d/1yiVEOq2rvtFynP1tLdJj7pBWkAEiE9g8BMaoryxRVrk/edit?usp=sharing)  - VOD2Live Kevin Staunton-Lambert Solutions Architect R&D @kevleyski Wild Fire! How video engineers can help save lives www.switch.tv
 * [alexgand/springer_free_books: Python script to download all Springer books released for free during the 2020 COVID-19 quarantine](https://github.com/alexgand/springer_free_books)  - Python script to download all Springer books released for free during the 2020 COVID-19 quarantine - alexgand/springer_free_books
@@ -104,8 +101,8 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [ffmpeg tutorial](http://www.dranger.com/ffmpeg/)  - 
 * [leandromoreira/video-containers-debugging-tools](https://github.com/leandromoreira/video-containers-debugging-tools)  - A set of command lines to debug video streaming files like mp4 (MPEG-4 Part 14), ts (MPEG-2 Part 1), fmp4 in Dash, HLS, or MSS, with or without DRM. - leandromoreira/video-containers-debugging-tools
 * [lhls-simple-live-platform](https://slides.com/jordicenzano/deck-973aed)  - You can build your own live platform just wiring up some open source tools, this is a demo video of https://github.com/jordicenzano/lhls-simple-live-platform
-* [matmoi/create-DASH-HLS](https://github.com/matmoi/create-DASH-HLS)  - A tutorial to generate fMp4 files compatible with dash and HLS - matmoi/create-DASH-HLS
 * [matmoi/create-DASH-HLS](https://github.com/matmoi/create-DASH-HLS/)  - A tutorial to generate fMp4 files compatible with dash and HLS - matmoi/create-DASH-HLS
+* [matmoi/create-DASH-HLS](https://github.com/matmoi/create-DASH-HLS)  - A tutorial to generate fMp4 files compatible with dash and HLS - matmoi/create-DASH-HLS
 * [mofo7777/Stackoverflow](https://github.com/mofo7777/Stackoverflow)  - All source codes I've provided on stackoverflow as an answer, usually under tag ms-media-foundation. Mediafoundation, audio, video, 3D, decoder, encoder. - mofo7777/Stackoverflow
 * [nickdesaulniers/netfix](https://github.com/nickdesaulniers/netfix)  - Let's build a Netflix. 
 
@@ -115,23 +112,9 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 
 * [Circles of Confusion](https://tech.ebu.ch/publicaions/circles-of-confusion)  - 2009-01-01. Roberts, Alan.
 * [Communicating Pictures](https://www.elsevier.com/books/communicating-pictures/bull/978-0-12-405906-1)  - 2014-06-20 (1st Edition). Bull, David.
-* [Data Broadcasting: Understanding the ATSC Data Broadcast Standard](https://www.amazon.com/dp/0071375902/)  - 2001-04-16 (1st Edition). Chernock, Richard; Crinon, Regis; Mick, John.
-* [Digital Television: MPEG-1, MPEG-2 and Principles of the DVB System](https://www.amazon.com/dp/0340691905/)  - 1997-07-11. Benoit, Herve.
-* [Digital Television: Technology and Standards](https://www.amazon.com/dp/0470147830/)  - 2007-09-17. Arnold, John; Frater, Michael; Pickering, Mark.
-* [Digital Video and HD: Algorithms and Interfaces](https://www.amazon.com/dp/0123919266/)  - 2012-02-07 (2nd Edition). Poynton, Charles.
 * [Fundamentals of Multimedia](https://www.amazon.com/Fundamentals-Multimedia-Texts-Computer-Science/dp/303062126X/)  - 2022-02-17 (3rd Edition). Ze-Nian Li (Author), Mark S. Drew (Author), Jiangchuan Liu.
-* [High Efficiency Video Coding (HEVC): Algorithms and Architectures (Integrated Circuits and Systems)](https://www.amazon.com/gp/product/3319068946/)  - 2014-09-03. Budagavi, Madhukar; Sze, Vivienne; Sullivan, Gary.
-* [High Efficiency Video Coding: Coding Tools and Specification (Signals and Communication Technology)](https://www.amazon.com/gp/product/3662442752/)  - 2014-10-08. Wien, Mathias.
-* [Introduction to Digital Audio Coding and Standards](https://www.amazon.com/dp/1402073577/)  - 2002-12-31. Bosi, Marina; Goldberg, Richard.
-* [Producing Streaming Video for Multiple Screen Delivery](https://www.amazon.com/gp/product/0976259540/)  - 2013-04-01. Ozer, Jan.
 * [The Good Parts of LibVLC](https://mfkl.gumroad.com/l/libvlc-good-parts)  - 2022-09-15. Finkel, Martin.
-* [The H.264 Advanced Video Compression Standard](https://www.amazon.de/-/en/Iain-Richardson/dp/0470516925)  - 2010-04-23. Richardson, Iain.
-* [The MPEG Handbook](https://www.amazon.com/dp/024080578X/)  - 2004-11-15 (2nd Edition). Watkinson, John.
-* [The MPEG-4 Book](https://www.amazon.com/MPEG-4-Book-Fernando-Pereira/dp/0130616214/)  - 2002-07-20. Ebrahimi, Touradj; Pereira, Fernando.
-* [Transporting Compressed Digital Video](https://www.amazon.com/dp/140207011X/)  - 2002-03-31. Chen, Xuemin.
 * [Video Compression Handbook](https://www.amazon.com/dp/0134866215/)  - 2018-07-03 (2nd Edition). Beach, Andy; Owen, Aaron.
-* [Video Demystified: A Handbook for the Digital Engineer](https://www.amazon.com/Video-Demystified-Handbook-Digital-Engineer/dp/0750683953)  - 2007-05-14. Jack, Keith.
-* [Video Encoding by the Numbers: Eliminate the Guesswork from your Streaming Video](https://www.amazon.com/Video-Encoding-Numbers-Eliminate-Guesswork/dp/0998453005/)  - 2016-12-28. Ozer, Jan.
 
 ### Reading
 *A list of reading articles, blogs, and newsletters for video streaming.*
@@ -143,9 +126,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Byte Down: Making Netflix’s Data Infrastructure Cost-Effective](https://netflixtechblog.com/byte-down-making-netflixs-data-infrastructure-cost-effective-fee7b3235032)  - 
 * [Demystifying HTML5 Video Player](https://medium.com/@eyevinntechnology/demystifying-html5-video-player-e480846328f0)  - In this post we will go under the hood of a HTML video player for video streaming. With the exception of Apple and their browser Safari, no…
 * [Design of scheduling and rate-adaptation algorithms for adaptive HTTP streaming · dispar.at Blog](https://dispar.at/blog/2017/07/08/design-of-scheduling-and-rate-adaptation-algorithms-for-adaptive-http-streaming/)  - Design of scheduling and rate-adaptation algorithms for adaptive HTTP streaming - Stephan Hesse
-* [Divide & Encode: How to Encode Videos Blazingly Fast | Part I - Need For Speed](https://tech.showmax.com/2019/01/divide-encode-1/)  - Here at Showmax, we’re addicted to speed and performance. In this post, I’ll go through a few techniques we used to improve the speed of our enc...
-* [Divide & Encode: How to Encode Videos Blazingly Fast | Part II - Under The Hood](https://tech.showmax.com/2019/03/divide-encode-2/)  - This is the second (and final) part of our blog mini-series about boosting encoding speed. In the first part we wrote about how we managed to ma...
-* [EBU.io - Engineering Blog](https://ebu.io/blog)  - 
 * [Extracting contextual information from video assets](https://medium.com/netflix-techblog/extracting-contextual-information-from-video-assets-ee9da25b6008)  - for an improved Netflix user experience
 * [FFmpeg Threads Command: How it Affects Quality and Performance](https://streaminglearningcenter.com/blogs/ffmpeg-command-threads-how-it-affects-quality-and-performance.html)  - So, I received an email from an acquaintance that read, “I was curious if there is actually any benefit to a “threads=” type custom command in x264. Specifically many streamers are buying 8 core/16 thread CPUs to encode as a standalone client capturing information from a video capture device.” I had an article on FFmpeg…
 * [HDMI 2.1: features, specs and news about the latest HDMI standard](https://www.whathifi.com/advice/what-hdmi-21-everything-you-need-to-know)  - The gateway to a super high-definition future is ever-nearing
@@ -155,13 +135,12 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Inside MPEG's Ambitious Plan to Launch 3 Video Codecs in 2020](https://www.streamingmedia.com/Articles/Editorial/Featured-Articles/Inside-MPEGs-Ambitious-Plan-to-Launch-3-Video-Codecs-in-2020-134694.aspx)  - The pace of innovation is getting faster and the demands on video codecs are getting greater. MPEG's three-part plan answers questions of royalties, licensing, and computational efficiency. Meet VVC, MPEG-5 Part 1 (EVC), and MPEG-5 Part 2 (LCEVC).
 * [Live Video Transmuxing/Transcoding: FFmpeg vs TwitchTranscoder, Part I](https://link.medium.com/iws08p9VO7)  - By: Jeff Gong, Software Engineer, jeffgon@twitch.tv Sahil Dhanju, Software Engineer Intern Chih-Chiang Lu, Senior Software Engineer…
 * [Live Video Transmuxing/Transcoding: FFmpeg vs TwitchTranscoder, Part II](https://link.medium.com/EYVMBQ3VO7)  - By: Jeff Gong, Software Engineer, jeffgon@twitch.tv Sahil Dhanju, Software Engineer Intern Chih-Chiang Lu, Senior Software Engineer…
-* [Pushing video bitrate to the limit](https://tech.showmax.com/2020/06/pushing-video-bitrate-to-the-limit/)  - When you subscribe to a VOD service, you expect the best visual quality possible. For our customers across Sub-Saharan Africa, it’s no different...
 * [Quantifying packaging overhead](https://mux.com/blog/quantifying-packaging-overhead-2)  - Mux makes adding video to your app or website as easy as making a single API call. But behind the scenes is a large multistep process to analyze and transform the video into something that can be easily consumed by a device. This process is commonly called a media “pipeline”
 * [Riot Games Keeps League of Legends Esports Rolling With Fully Cloud-Based Virtualized Workflow](https://www.sportsvideo.org/2020/03/27/riot-games-keeps-league-of-legends-esports-rolling-with-fully-cloud-based-virtualized-production-workflow/)  - Although the traditional sports world has come to a standstill due to the coronavirus pandemic, many major esports properties are soldiering on, hosting compe
 * [Running FFmpeg on AWS Lambda for 1.9% the cost of AWS Elastic Transcoder](https://intoli.com/blog/transcoding-on-aws-lambda/)  - A guide to building a transcoder using Exodus, FFmpeg, and AWS Lambda.
 * [Saving on Encoding and Streaming: Deploy Capped CRF – Streaming Learning Center](https://streaminglearningcenter.com/blogs/saving-encoding-streaming-deploy-capped-crf.html)  - This is the second in a five-part series on how to cut your encoding and streaming costs. The first article was Saving on Encoding: Adjust Encoding Configuration to Increase Capacity. Article summary: Capped CRF encoding is a single-pass encoding method that can save encoding costs compared to two-pass VBR. Capped CRF is also a simple per-title…
-* [Server-less Just-in-Time Packaging with AWS Fargate and Unified Origin by Unified Streaming](https://medium.com/@eyevinntechnology/server-less-just-in-time-packaging-with-aws-fargate-and-unified-origin-by-unified-streaming-c1682dc051ca?source=userActivityShare-94bccb50d11-1560983627&_branch_match_id=670020794794030328)  - In this blog article Jonas Rydholm Birmé describes how he created a server-less just-in-time packaging origin, using AWS ECS Fargate tasks…
 * [Server-less Just-in-Time Packaging with AWS Fargate and Unified Origin by Unified Streaming](https://medium.com/@eyevinntechnology/server-less-just-in-time-packaging-with-aws-fargate-and-unified-origin-by-unified-streaming-c1682dc051ca?source=userActivityShare-94bccb50d11-1559724204&_branch_match_id=664738392430917730)  - In this blog article Jonas Rydholm Birmé describes how he created a server-less just-in-time packaging origin, using AWS ECS Fargate tasks…
+* [Server-less Just-in-Time Packaging with AWS Fargate and Unified Origin by Unified Streaming](https://medium.com/@eyevinntechnology/server-less-just-in-time-packaging-with-aws-fargate-and-unified-origin-by-unified-streaming-c1682dc051ca?source=userActivityShare-94bccb50d11-1560983627&_branch_match_id=670020794794030328)  - In this blog article Jonas Rydholm Birmé describes how he created a server-less just-in-time packaging origin, using AWS ECS Fargate tasks…
 * [Streaming Live From the Battlefield: Military Video in 2019](https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=135141)  - Metadata and low-latency video create a tactical advantage in intelligence-gathering and decision making. Discover why HEVC is gaining momentum in the armed forces, and Android is preferred over iOS.
 * [The H.264 Sequence Parameter Set](https://www.cardinalpeak.com/the-h-264-sequence-parameter-set)  - [vc_row][vc_column][vc_column_text]This is a follow-up to my World’s Smallest H.264 Encoder post. I’ve received several emails asking about precise details of things in two entities in the H.264 bitstream: the Sequence Parameter Set (SPS) and the Picture Parameter Set (PPS). Both entities contain information that an H.264 decoder needs to decode the video data, for example,…
 * [The Netflix IMF Workflow](https://medium.com/netflix-techblog/the-netflix-imf-workflow-f45dd72ed700?source=userActivityShare-94bccb50d11-1568773157&_branch_match_id=702692448596112473)  - interesting architectural implications
@@ -187,12 +166,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Mile High Video 2019 Proceedings](https://mile-high.video/files/mhv2019)  - Mile High Video 2019 talks & presentations
 * [The Video Insiders](https://thevideoinsiders.simplecast.com/episodes)  - Video Insiders Podcast
 * [Video Coding Basics - How is this so efficient?](https://youtu.be/LDeL7-49qm4)  - An introduction to the basics of video coding
-* [RTC.ON 2023](https://www.youtube.com/playlist?list=PLSk21zn8fFZBUTg4AbMyVBripi2ldmjpF) - 2023 RTC.ON talks & presentations
-* [JanusCon 2019](https://www.youtube.com/playlist?list=PLkSq48W3Pn8n_PBOIRAiqhcCIsrgydzU_) - 2019 JanusCon talks & presentations
-* [CommCon 2023](https://www.youtube.com/playlist?list=PLvNS4EBAxmJLjMY3NAVoPSmIXWiUjrnKv) - 2023 CommCon talks & presentations
-* [CommCon 2021](https://www.youtube.com/playlist?list=PLvNS4EBAxmJJbvGW-PfXdXOSy9AjHjCLV) - 2021 CommCon talks & presentations
-* [CommCon 2020](https://www.youtube.com/playlist?list=PLvNS4EBAxmJLCLMNqvfe6eTQIWVDAPcP4) - 2020 CommCon talks & presentations
-* [CommCon 2019](https://www.youtube.com/playlist?list=PLvNS4EBAxmJKz6E6PLCqBq0eB-KKB6HR0) - 2019 CommCon talks & presentations
 
 ## HLS
 *HLS tools, libraries, and resources.*
@@ -329,7 +302,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [bmhayward/Transcode](https://github.com/bmhayward/Transcode)  - Tools to batch transcode and process videos. 
 * [bookyo/express-ffmpeg](https://github.com/bookyo/express-ffmpeg)  - nodejs ffmpeg video transcode webui，基于nodejs的云转码系统 https://www.efvcms.com - bookyo/express-ffmpeg
 * [cannonbeach/ott-packager](https://github.com/cannonbeach/ott-packager)  - OTT/ABR streaming encoder (H264/HEVC) and packager for DASH and HLS - cannonbeach/ott-packager
-* [cbsinteractive/transcode-orchestrator](https://github.com/cbsinteractive/transcode-orchestrator)  - Agnostic API orchestrating the transcoding of media assets across various cloud providers, previously https://github.com/cbsinteractive/video-transcoding-api - cbsinteractive/transcode-orchestrator
 * [chn-lee-yumi/distributed_ffmpeg_transcoding_cluster: 分布式FFMpeg转码集群。A FFMpeg transcoding cluster runs in variable CPUs, including ARM, x86, and others which can run linux. You can use it to run a RaspberryPi cluster.](https://github.com/chn-lee-yumi/distributed_ffmpeg_transcoding_cluster)  - 分布式FFMpeg转码集群。A FFMpeg transcoding cluster runs in variable CPUs, including ARM, x86, and others which can run linux. You can use it to run a RaspberryPi cluster. - chn-lee-yumi/distributed_ffmpeg_...
 * [cwinging/transcode](https://github.com/cwinging/transcode)  - python transcode server. 
 * [davidbt/djmediastreamer](https://github.com/davidbt/djmediastreamer)  - A Django project that allows you to catalog and stream your videos (using FFmpeg to add subtitles and transcode). - davidbt/djmediastreamer
@@ -352,12 +324,11 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [media-toolbox/avbroadcast: avbroadcast - republish media streams for mass consumption](https://github.com/media-toolbox/avbroadcast)  - avbroadcast - republish media streams for mass consumption - media-toolbox/avbroadcast
 * [mltframework/mlt](https://github.com/mltframework/mlt)  - MLT Multimedia Framework.
 * [monking/transcode-web-video](https://github.com/monking/transcode-web-video)  - Quickly transcode a source video to MP4, OGV, and WebM, with scale, bitrate, and screengrab options. - monking/transcode-web-video
-* [natsuite/NatReader-API](https://github.com/natsuite/NatReader-API)  - NatReader is a cross-platform video decoding API designed for transcoding applications. - natsuite/NatReader-API
 * [olaris / olaris-server](https://gitlab.com/olaris/olaris-server)  - GitLab.com
 * [ptrandev/swift-encoder](https://github.com/ptrandev/swift-encoder)  - A fire-and-forget shell script that encodes multiple video and audio files with ffmpeg. - ptrandev/swift-encoder
 * [quarkscript/media_works](https://github.com/quarkscript/media_works)  - Transcode video by ffmpeg with nvenc; normalize the volume; force dynamic range compression to the volume - quarkscript/media_works
-* [realeyes-media/demo-encoder](https://github.com/realeyes-media/demo-encoder)  - A nodejs encoding system based on ffmpeg and configured to write HLS streaming files to S3 - realeyes-media/demo-encoder
 * [realeyes-media/demo-encoder](https://github.com/realeyes-media/demo-encoder/)  - A nodejs encoding system based on ffmpeg and configured to write HLS streaming files to S3 - realeyes-media/demo-encoder
+* [realeyes-media/demo-encoder](https://github.com/realeyes-media/demo-encoder)  - A nodejs encoding system based on ffmpeg and configured to write HLS streaming files to S3 - realeyes-media/demo-encoder
 * [sambios/ffmpeg_transcoder](https://github.com/sambios/ffmpeg_transcoder)  - video transcode based on ffmpeg, support H264/HEVC and more. - sambios/ffmpeg_transcoder
 * [selsamman/react-native-transcode](https://github.com/selsamman/react-native-transcode)  - Video Transcoder for React Native. 
 * [senko/avtk](https://github.com/senko/avtk)  - 
@@ -468,7 +439,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 [back to top](#readme) 
 
 * [CTA | WAVE Project](https://cta.tech/Resources/Standards/WAVE-Project)  - The WAVE (Web Application Video Ecosystem) Project, hosted by the Consumer Technology Association (CTA)®, aims to improve how internet-delivered commercial video is handled on consumer electronics devices and to make it easier for content creators to distribute video to those devices.
-* [DASH Industry Forum | Catalyzing the adoption of MPEG-DASH](https://dashif.org/software)  - 
 * [Home | Streaming Video Alliance](https://www.streamingvideoalliance.org/)  - Making Streaming Video Better Streaming video is exploding in popularity. Consumers are watching more video online across a myriad of devices. But, the streaming experiences, across providers, can be wildly different from each other which ultimately hurts adoption. The problem is a lack of colla ...
 
 ### MPEG
@@ -492,7 +462,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [IvanoBilenchi/Adaptive-Video-Player](https://github.com/IvanoBilenchi/Adaptive-Video-Player)  - HLS player for iOS that supports manual selection for the quality of adaptive streams - IvanoBilenchi/Adaptive-Video-Player
 * [Samples players for dash.js](http://reference.dashif.org/dash.js/latest/samples/index.html)  - 
 * [adrg/libvlc-go](https://github.com/adrg/libvlc-go)  - Go bindings for libVLC and high-level media player interface.
-* [davidAgo4g/VideoPlayer-iOS](https://github.com/davidAgo4g/VideoPlayer-iOS)  - A library based on FFMPEG to play video files on iOS using OpenGLES and AudioQueue. Build with theos - davidAgo4g/VideoPlayer-iOS
 * [elements/packages/mux-player](https://github.com/muxinc/elements/tree/main/packages/mux-player)  - `<mux-player>` is the official Mux-flavored video player web component. The player UI is built on [Media Chrome](https://github.com/muxinc/media-chrome) and [`<mux-video>`](https://github.com/muxinc/elements/tree/main/packages/mux-video) drives the core video logic used to play Mux Video content.
 * [imoreapps/ffmpeg-avplayer-for-ios-tvos](https://github.com/imoreapps/ffmpeg-avplayer-for-ios-tvos)  - A tiny but powerful iOS and Apple TV OS av player framework that's based on the FFmpeg library. - imoreapps/ffmpeg-avplayer-for-ios-tvos
 * [lightspark/lightspark](https://github.com/lightspark/lightspark)  - An open source flash player implementation.
@@ -554,13 +523,9 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Roku app tools, libraries,and examples.*
 [back to top](#readme) 
 
-* [Audio and Video Support](https://developer.roku.com/docs/specs/streaming.md#AudioandVideoSupport-AdaptiveBitrateFormats)  - Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.
 * [CCecilia/roku-suite-desktop](https://github.com/CCecilia/roku-suite-desktop)  - Tool suite for Roku channel development.
 * [MediaBrowser/Emby.Roku](https://github.com/MediaBrowser/Emby.Roku)  - Emby for Roku. 
-* [Playing Video Examples](https://developer.roku.com/docs/developer-program/core-concepts/playing-videos.md#PlayingVideos-Examples)  - Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.
-* [Roku](https://developer.roku.com/docs/specs/streaming.md)  - Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.
 * [T-Pham/RokuJSONHelperNode](https://github.com/T-Pham/RokuJSONHelperNode)  - Roku SceneGraph JSON Helper.
-* [Video Node Docs](https://developer.roku.com/docs/references/scenegraph/media-playback-nodes/video.md)  - Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.
 * [XML + Code + Good times = RSG Application](https://medium.com/plexlabs/xml-code-good-times-rsg-application-b963f0cec01b)  - Written by John Zolezzi — April 6th 2018
 * [anachirino/bifserver](https://github.com/anachirino/bifserver)  - Server which creates and serves up BIF files for Roku players - anachirino/bifserver
 * [briandunnington/Redoku](https://github.com/briandunnington/Redoku)  - Redux for Roku.
@@ -646,7 +611,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Mozilla-Open-Lab-Etwas/Video-Transcoder](https://github.com/Mozilla-Open-Lab-Etwas/Video-Transcoder)  - FFMPEG Wasm Video Transcoder. 
 * [NVIDIA/nvidia-docker](https://github.com/NVIDIA/nvidia-docker)  - Build and run Docker containers leveraging NVIDIA GPUs - NVIDIA/nvidia-docker
 * [Saurabh702/ffmpeg-scale-benchmark](https://github.com/Saurabh702/ffmpeg-scale-benchmark)  - 
-* [TenPennyTV/worker-ffmpeg](https://github.com/TenPennyTV/worker-ffmpeg)  - Worker that is used to transcode video to supported formats and resolutions - TenPennyTV/worker-ffmpeg
 * [This gist will generate an Intel QSV-enabled FFmpeg build using the open source Intel Media SDK. Testbed used: Ubuntu 18.04LTS. A fallback is also provided for the intel vaapi driver where needed.](https://gist.github.com/SeanMollet/0eed16e80630ab67532890a9d42132af)  - This gist will generate an Intel QSV-enabled FFmpeg build using the open source Intel Media SDK. Testbed used: Ubuntu 18.04LTS. A fallback is also provided for the intel vaapi driver where needed. ...
 * [Understanding Rate Control Modes (x264, x265, vpx)](https://slhck.info/video/2017/03/01/rate-control.html)  - What is “rate control”? It’s what a video encoder does when it decides how many bits to spend for a given frame. The goal of (lossy) video encoding is to sav...
 * [VCDP/FFmpeg-patch](https://github.com/VCDP/FFmpeg-patch)  - This repository contains a collection of FFmpeg* patches and samples to enable CNN model based video analytics capabilities (such as object detection, classification, recognition) in FFmpeg* framew...
@@ -658,7 +622,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [cash2one/VideoTranscoding-Backend](https://github.com/cash2one/VideoTranscoding-Backend)  - This application transcode a video that you send on all formats what you want and diferent resolutions. - cash2one/VideoTranscoding-Backend
 * [compile and install latest ffmpeg source as pkg](https://gist.github.com/krzemienski/e51a0b7a6ba77e616f954e516783270c#file-compile-and-install-latest-ffmpeg-source-sh-L2)  - compile and install latest ffmpeg source as pkg. GitHub Gist: instantly share code, notes, and snippets.
 * [cuda/ubuntu16.04/ffmpeg-gpu/Dockerfile · master · nvidia / container-images / samples](https://gitlab.com/nvidia/container-images/samples/blob/master/cuda/ubuntu16.04/ffmpeg-gpu/Dockerfile)  - Sample Dockerfiles for Docker Hub images
-* [dschere/industrial-ffmpeg](https://github.com/dschere/industrial-ffmpeg)  - A high level transcoder using ffmpeg that in addition to transcoding provides real time stats, detection of bad video, integration with nginx for on demand video - dschere/industrial-ffmpeg
 * [ffmprovisr](https://amiaopensource.github.io/ffmprovisr)  - Cookbook of commonly used FFmpeg recipes with descriptions of how each command works and how to modify it to fit your needs
 * [fluent-ffmpeg/node-fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg)  - A fluent API to FFMPEG (http://www.ffmpeg.org). 
 * [git-developer/vaapi-video-converter](https://github.com/git-developer/vaapi-video-converter)  - A docker-based video converter that uses VAAPI-compatible hardware for transcoding - git-developer/vaapi-video-converter
@@ -821,7 +784,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Streaming video tools and resources to make life easier.*
 
 * [A Docker container with the video streaming tools you need](https://medium.com/@eyevinntechnology/a-docker-container-with-the-video-streaming-tools-you-need-b8319e98f36a)  - As a video streaming technician there are a number of tools that you find yourself using on a daily basis. Wouldn’t it be handy if all…
-* [AKSHAYUBHAT/DeepVideoAnalytics](https://github.com/AKSHAYUBHAT/DeepVideoAnalytics)  - A distributed visual search and visual data analytics platform. - AKSHAYUBHAT/DeepVideoAnalytics
 * [Comcast/eel](https://github.com/Comcast/eel)  - A simple proxy service to forward JSON events and transform or filter them along the way. - Comcast/eel
 * [Comcast/gots](https://github.com/Comcast/gots)  - MPEG Transport Stream handling in Go.
 * [Comcast/mamba](https://github.com/Comcast/mamba)  - Mamba is a Swift iOS, tvOS and macOS framework to parse, validate and write HTTP Live Streaming (HLS) data. - Comcast/mamba
@@ -832,9 +794,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Eyevinn/docker-serve](https://github.com/Eyevinn/docker-serve)  - A simple Python based HTTP server that sets CORS allow headers. Useful for streaming from files on local computer - Eyevinn/docker-serve
 * [Eyevinn/fmp4-js](https://github.com/Eyevinn/fmp4-js)  - A Javascript library to parse ISO Base Media File Format (MPEG-4 Part 12) - Eyevinn/fmp4-js
 * [Eyevinn/pseudo-live-playout](https://github.com/Eyevinn/pseudo-live-playout)  - Contribute to Eyevinn/pseudo-live-playout development by creating an account on GitHub.
-* [Eyevinn/streaming-analyzer](https://github.com/Eyevinn/streaming-analyzer)  - Analyze and visualize HTTP ABR streams.
 * [Eyevinn/toolbox](https://github.com/Eyevinn/toolbox)  - A set of Docker containers with Streaming tools.
-* [Eyevinn/vod-to-live.js](https://github.com/Eyevinn/vod-to-live.js)  - NPM library for HLS VOD to Live.
 * [IENT/YUView](https://github.com/IENT/YUView)  - YUView is a QT based, cross-platform YUV player with an advanced analytic toolset.
 * [Inca — Message Tracing and Loss Detection For Streaming Data @Netflix](https://link.medium.com/Lu3GnIPeg0)  - At Netflix, our real-time data infrastructure have embraced the multi-cluster Kafka architecture and Flink powered stream processing…
 * [Kthulu120/liquid_dl](https://github.com/Kthulu120/liquid_dl)  - Liquid-dl is a simple tool for utlities such as FFMPEG, youtube-dl, and scdl. It provides a simple framework with simple point and click options allowing users to just click on what they need and u...
@@ -899,7 +859,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [CrackerCat/video_decrypter](https://github.com/CrackerCat/video_decrypter)  - Decrypt video from a streaming site with MPEG-DASH Widevine DRM encryption. - CrackerCat/video_decrypter
 * [Creating a secure video-on-demand (VOD) platform using AWS](https://aws.amazon.com/blogs/media/creating-a-secure-video-on-demand-vod-platform-using-aws/)  - Authored by Chirag Oswal, Solution Architect, AWS, and Vikas Tiwari, Solution Architect Manager, AWS Video has become the primary means of Information sharing and learning. Customers are investing in innovative solutions to tap into the e-learning and video space. Video content is their IP and needs to be protected and securely delivered. Online video is a […]
 * [Deploying KeyOS with AWS Elemental Media Services](https://go.buydrm.com/thedrmblog/deploying-keyos-with-aws-elemental-media-services)  - In this post we provide an in-depth first party overview of the complex integration between the KeyOS Platform and the Elemental Media Services via the SPEKE API.
-* [DeployingKeyOSMulti-DRM_withTHEOPLayer_Webinar_Draft1](https://www.buydrm.com/sites/default/files/pdf/webinar/050217_DeployingKeyOSMulti-DRM_withTHEOPLayer_Webinar.pdf)  - 
 * [Digital Rights Management (DRM) – Everything you need to know](https://bitmovin.com/digital-rights-management-everything-to-know/)  - 
 * [Digital Rights Management (multi - drm) – aameer.github.io](https://aameer.github.io/articles/digital-rights-management-multi-drm)  - My Site
 * [Encryption & DRM with Multiple Keys — Unified Streaming](https://docs.unified-streaming.com/documentation/package/multiple-keys.html)  - DRM with multiple keys for Unified Packager
@@ -950,13 +909,8 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 [back to top](#readme) 
 
 
-### Slack/Discord/Other Groups
-
-* [Software Mansion Discord](https://discord.gg/nEZ8Rusc52) - Discord server where folks from SWM working on multimedia stuff reside.
-* [LiveKit Slack](https://join.slack.com/t/livekit-users/shared_invite/zt-28a400kyd-I0mPVUrxcZ5TEayIvmq9mw) - Slack where folks working on LiveKit reside.
-* [Gophers Slack, channel #pion](https://join.slack.com/t/gophers/shared_invite/zt-2gyed6bva-gl2F32VpT1WZvCpj4e7FtA) - Slack channel where folks working on Pion reside.
-* [Video-Dev Slack](https://www.video-dev.org/) - Slack for video engineers.
-* [discuss-webrtc](https://groups.google.com/g/discuss-webrtc) - Google Group for all webrtc-related questions.
+### Slack Groups
+[back to top](#readme) 
 
 
 ## CDN
@@ -966,7 +920,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [AWS CloudFront for Live Streaming](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/live-streaming.html)  - To use AWS Media Services with CloudFront to deliver live content to a global audience, follow the guidance included in this section.
 * [Amazon S3 | Fastly Help Guides](https://docs.fastly.com/en/guides/amazon-s3)  - 
 * [Edge Computing with Fastly CDN and Varnish VCL for Authenticated Requests - Endertech](https://endertech.com/blog/edge-computing-fastly-cdn-varnish-vcl-authenticated-requests)  - A brief explanation of how to use Fastly CDN and Varnish with authenticated requests to offload static file serving from the origin and edge caching.
-* [How to use DASH and HLS Adaptive Streaming with AWS S3 and Cloudfront](https://bitmovin.zendesk.com/hc/en-us/articles/115001609634-How-to-use-DASH-and-HLS-Adaptive-Streaming-with-AWS-S3-and-Cloudfront)  - Bitmovin integrates DASH and HLS adaptive streaming seamlessly into your AWS workflows. The Bitmovin encoding service could be configured to use an AWS S3 bucket as input and output for your DASH a...
 * [Lambda Edge Tutorial](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-edge-how-it-works-tutorial.html)  - This tutorial shows you how to get started with Lambda@Edge by helping you create and add a sample Node.js function that runs in CloudFront. The example that we walk through adds HTTP security headers to a response, which can improve security and privacy for a website. (That said, you don’t need a website for this walkthrough; we simply add security headers to a response when CloudFront retrieves a file.)
 * [Lambda@Edge Design Best Practices | Amazon Web Services](https://aws.amazon.com/blogs/networking-and-content-delivery/lambdaedge-design-best-practices/)  - Lambda@Edge transforms CloudFront into a highly programmable CDN with serverless compute capabilities closer to your viewers around the world. This blog is the first in a series that explains best practices associated with using Lambda@Edge functions to customize your content delivery.
 * [OTT Content Delivery– CDN Alternatives](https://medium.com/@eyevinntechnology/ott-content-delivery-cdn-alternatives-cafe75dab71d?source=userActivityShare-94bccb50d11-1560983135&_branch_match_id=670018733519578135)  - Introduction
@@ -979,7 +932,6 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Frequently Asked Questions on High Dynamic Range and Hybrid Log-Gamma](https://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_FAQ.pdf)  - FAQ regarding HDR by BBC R&D
 * [HLG vs PQ Systems for HDR Television](https://www.displaydaily.com/article/display-daily/hlg-vs-pq-systems-for-hdr-television)  - Article explaining hlg vs pq in depth.
 * [High Dynamic Range Television and Hybrid Log-Gamma - BBC R&D](https://www.bbc.co.uk/rd/projects/high-dynamic-range)  - BBC R&D HDR project page.
-* [Perceptual Quantiser (PQ) to Hybrid Log-Gamma (HLG) Transcoding](https://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_PQ_HLG_Transcode_v2.pdf)  - In depth break down on converting from pq to hlg
 * [Use of Look-Up Tables (LUTs) in FFmpeg](https://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_Use_of_LUTs_FFmpeg.pdf)  - How to use luts with ffmpeg for converting between differnt hdr encodes
 * [Vittorio Giovara - Color Me Intrigued: A Jaunt Through Color Technology in Video](https://www.youtube.com/watch?v=XMnvY7a4-As&feature=share)  - This talk aims to shed light on colorspaces - what they are, how and why they work, why we should care about handling edge cases properly. Starting with hist...
 * [bbc/qtff-parameter-editor](https://github.com/bbc/qtff-parameter-editor)  - QuickTime file parameter editor for modifying transfer function, colour primary and matrix characteristics.
