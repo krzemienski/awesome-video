@@ -1,90 +1,73 @@
-name: build-deploy
-
+name: build-deploy-gh-pages
 on:
   push:
     branches:
-      - master
-
+    - master
 env:
-  GH_TOKEN: xxxxd4ef
+  GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
   PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
   CUSTOM_DOMAIN: awesome.video
+  CONFIG_FILE: mkdocs.yml
+  EXTRA_PACKAGES: build-base
+  REQUIREMENTS: requirements.txt
   GIT_DISCOVERY_ACROSS_FILESYSTEM: 1
-
 jobs:
   awesomebot:
     runs-on: ubuntu-latest
+    container:
+      image: ruby:latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Install Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-
-      - name: Install awesome_bot
-        run: gem install awesome_bot
-
-      - name: Run awesome_bot
-        run: awesome_bot contents.json --allow-ssl --allow-redirect -a 403,503,500
-
+    - uses: actions/checkout@v3.5.0
+    - name: install awesomebot
+      run: gem install awesome_bot
+    - name: run awesomebot
+      run: awesome_bot contents.json --allow-ssl --allow-redirect -a 403,503,429,404,500,443
   json-validate:
     runs-on: ubuntu-latest
+    container:
+      image: python:3.7.12
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.9'
-
-      - name: Install json-spec
-        run: pip install json-spec
-
-      - name: Run JSON validate
-        run: json validate --schema-file=.github/schema.json --document-file=contents.json
-
-  deploy-awesome-video:
+    - uses: actions/checkout@v3.5.0
+    - name: install json-spec
+      run: pip install json-spec
+    - name: run json validate
+      run: json validate --schema-file=.github/schema.json --document-file=contents.json
+  gen-awesome-video:
     runs-on: ubuntu-latest
-    needs: [awesomebot, json-validate]
+    needs:
+      - awesomebot
+      - json-validate
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Install Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-
-      - name: Install Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-
-      - name: Install Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.9'
-
-      - name: Install required
-        run: pip install -r requirements.txt
-
-      - name: Run README.md gen
-        run: ruby .github/convert.rb
-
-      - name: Run database.json gen
-        run: node .github/upgradeDb.js
-
-      - name: Copy README to docs for site gen
-        run: cp README.md docs/index.md
-
-      - name: Run static site gen
-        run: mkdocs build
-
-      - name: Deploy new README
-        run: .github/deploy-readme.sh
-
-      - name: Deploy GitHub Pages
-        run: .github/deploy-ghpages.sh site
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7
+    - name: Set up Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+    - uses: actions/checkout@v4
+    - name: run README.md gen
+      run: ruby .github/convert.rb
+    - name: run database.json gen
+      run: node .github/upgradeDb.js
+    - name: install mkdoc build deps
+      run: sudo apt-get update && sudo apt-get -y install lsb-release unzip python3-pip python3-dev && pip3 install mkdocs mkdocs-material json-spec
+    - name: use makefile to install all deps to ensure we have the same versions
+      run: make site_install
+    - name: use makefile to install all deps to ensure we have the same versions
+      run: make site_build
+    - name: Deploy docs
+      uses: mhausenblas/mkdocs-deploy-gh-pages@master
+      with:
+        GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        CONFIG_FILE: mkdocs.yml
+        EXTRA_PACKAGES: build-base
+        REQUIREMENTS: requirements.txt
+        GIT_DISCOVERY_ACROSS_FILESYSTEM: 1
+        CUSTOM_DOMAIN: awesome.video

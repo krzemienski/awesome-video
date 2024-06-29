@@ -2,7 +2,7 @@ site_install:
 	pip install -r requirements.txt
 
 site_link:
-	ln -sf $(CURDIR)/README.md $(CURDIR)/docs/index.md
+	cp $(CURDIR)/README.md $(CURDIR)/docs/index.md
 
 site_preview: site_link
 	mkdocs serve
