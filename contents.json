@@ -4500,7 +4500,7 @@
             "category": "tools",
             "description": "Scan millions of files with ffmpeg and access the metadata as a SQLite database. Also, a CLI alternative to media browsers like Plex or Jellyfin",
             "title": "xk media library",
-            "homepage": "https://github.com/chapmanjacobd/library",
+            "homepage": "https://github.com/chapmanjacobd/library"
         }
     ]
 }
