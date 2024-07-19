@@ -6,19 +6,20 @@ repo_name: krzemienski/awesome-video
 repo_url: https://github.com/krzemienski/awesome-video
 theme:
   name: material
+  custom_dir: overrides
   palette:
     primary: red
     accent: pink
 extra:
   analytics:
     provider: google
-    property: G-383541848
+    property: G-VQCESB210D
   social:
-    - type: github
+    - icon: fontawesome/brands/github-alt
       link: https://github.com/krzemienski
-    - type: twitter
+    - icon: fontawesome/brands/twitter
       link: https://twitter.com/nkrzemienski
-    - type: linkedin
+    - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/krzemienski
 extra_css:
     - css/extra.css
