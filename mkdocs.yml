@@ -15,11 +15,11 @@ extra:
     provider: google
     property: G-VQCESB210D
   social:
-    - type: github
+    - icon: fontawesome/brands/github-alt
       link: https://github.com/krzemienski
-    - type: twitter
+    - icon: fontawesome/brands/twitter
       link: https://twitter.com/nkrzemienski
-    - type: linkedin
+    - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/krzemienski
 extra_css:
     - css/extra.css
