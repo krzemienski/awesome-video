@@ -4095,6 +4095,12 @@
             "category": "tools"
         },
         {
+            "description": "Self hostable platform that aims to simplify the complexities of video delivery. Transcode and package your media for online streaming with simple API calls and sane defaults, or craft dynamic HLS playlists on the fly with bumpers, ads and filters.",
+            "title": "matvp91/mixwave",
+            "homepage": "https://github.com/matvp91/mixwave",
+            "category": "tools"
+        },
+        {
             "description": "Tools to transcode, inspect and convert videos. ",
             "title": "donmelton/video_transcoding",
             "homepage": "https://github.com/donmelton/video_transcoding",
