@@ -42,6 +42,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 - [FFMPEG](#ffmpeg)
 - [Audio](#audio)
 - [Subtitles and Captions](#subtitles-and-captions)
+- [Dubbing](#dubbing)
 - [Ads](#ads)
 - [Vendors](#vendors)
   - [Dolby](#dolby)
@@ -719,6 +720,12 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [ttconv: subtitle/caption format converter](https://github.com/sandflow/ttconv)  - Converts EBU STL, IMSC/TTML/SMPTE-TT/EBU-TT-D and 608/SCC into IMSC, WebVTT and SRT
 * [wargarblgarbl/libgosubs](https://github.com/wargarblgarbl/libgosubs)  - 
 * [xinnjie/extract-subtitle](https://github.com/xinnjie/extract-subtitle)  - extract subtitles from video.
+
+## Dubbing
+
+*Automatic dubbing systems*
+
+* [jordimas/open-dubbing](https://github.com/jordimas/open-dubbing) - Open dubbing is an AI dubbing system uses machine learning models to automatically translate and synchronize audio dialogue into different languages.
 
 ## Ads
 *Ads in streaming video related libraries, tools, examples, and resources.*
