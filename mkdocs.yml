@@ -7,8 +7,8 @@ repo_url: https://github.com/krzemienski/awesome-video
 theme:
   name: material
   palette:
-    primary: red
-    accent: pink
+    primary: purple
+    accent: white
 extra:
   analytics:
     provider: google
