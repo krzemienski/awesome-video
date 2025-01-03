@@ -2884,11 +2884,6 @@
         },
         {
             "category": "mpeg",
-            "title": "MPEG future",
-            "homepage": "http://mpegfuture.org/"
-        },
-        {
-            "category": "mpeg",
             "title": "MPEG About",
             "homepage": "https://www.mpegstandards.org/about-mpeg/"
         },
@@ -4423,12 +4418,6 @@
             "title": "Understanding Rate Control Modes (x264, x265, vpx)",
             "homepage": "https://slhck.info/video/2017/03/01/rate-control.html",
             "category": "ffmpeg"
-        },
-        {
-            "description": "",
-            "title": "DASH-IF Live Media Ingest Protocol",
-            "homepage": "https://dashif-documents.azurewebsites.net/Ingest/master/DASH-IF-Ingest.pdf",
-            "category": "dash"
         },
         {
             "description": "Web app for validating CPIX documents. Contribute to Axinom/cpix-validator development by creating an account on GitHub.",
