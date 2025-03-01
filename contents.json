@@ -4496,6 +4496,240 @@
             "description": "Scan millions of files with ffmpeg and access the metadata as a SQLite database. Also, a CLI alternative to media browsers like Plex or Jellyfin",
             "title": "xk media library",
             "homepage": "https://github.com/chapmanjacobd/library"
-        }
+        },
+        {
+			"title": "Akamai Stream Validator",
+			"homepage": "https://players.akamai.com/stream-validator",
+			"category": "testing",
+			"description": "Akamai's Stream Validator is a tool designed to verify the integrity and compliance of streaming media, ensuring optimal playback across devices."
+		},
+		{
+			"title": "Dolby Stream Validator",
+			"homepage": "https://ott.dolby.com/OnDel_tools/validator/Start_Here.html",
+			"category": "testing",
+			"description": "Dolby's Stream Validator assesses streaming content for Dolby audio and video standards, ensuring high-quality media delivery."
+		},
+		{
+			"title": "Unified Streaming Validator",
+			"homepage": "https://validator.unified-streaming.com/",
+			"category": "testing",
+			"description": "Unified Streaming's Validator checks the compliance and quality of streaming content, supporting various streaming protocols."
+		},
+		{
+			"title": "Bitmovin Test Stream",
+			"homepage": "https://bitmovin.com/demos/stream-test",
+			"category": "testing",
+			"description": "Bitmovin's Test Player allows users to experience their HTML5 video player demo, showcasing adaptive streaming capabilities."
+		},
+		{
+			"title": "Eyevinn Stream Corruptor",
+			"homepage": "https://github.com/Eyevinn/streaming-onboarding/blob/master/Stream-Corruptor.md",
+			"category": "tools",
+			"description": "Eyevinn's Stream Corruptor is a tool designed to intentionally corrupt streaming media, useful for testing error resilience in players."
+		},
+		{
+			"title": "Apple HLS Tools",
+			"homepage": "https://developer.apple.com/documentation/http-live-streaming/using-apple-s-http-live-streaming-hls-tools",
+			"category": "tools",
+			"description": "Apple's HLS Tools assist developers in creating and validating HTTP Live Streaming (HLS) content for Apple devices."
+		},
+		{
+			"title": "Apple Reference Streams",
+			"homepage": "https://developer.apple.com/streaming/examples/",
+			"category": "hls",
+			"description": "Apple provides example streams demonstrating the features of HTTP Live Streaming (HLS) for testing and development purposes."
+		},
+		{
+			"title": "Eyevinn Streaming Samples",
+			"homepage": "https://github.com/eyevinn/http-streaming-samples",
+			"category": "hls",
+			"description": "A collection of HTTP streaming samples curated by Eyevinn, available for testing and development."
+		},
+		{
+			"title": "Mux HLS Streams",
+			"homepage": "https://test-streams.mux.dev/",
+			"category": "hls",
+			"description": "Mux offers a set of test HLS streams, primarily used by hls.js and hosted by Mux, for testing and development."
+		},
+		{
+			"title": "Axinom DRM Decoders",
+			"homepage": "https://tools.axinom.com/",
+			"category": "drm",
+			"description": "Axinom offers DRM tools for encoding and decoding, ensuring secure streaming media delivery."
+		},
+		{
+			"title": "Akamai Players",
+			"homepage": "https://players.akamai.com/players",
+			"category": "players",
+			"description": "Akamai provides a suite of media players optimized for high-quality streaming across various devices."
+		},
+		{
+			"title": "GPAC MP4Box",
+			"homepage": "https://github.com/gpac/gpac/wiki/mp4box",
+			"category": "encoding",
+			"description": "MP4Box is a multimedia packager from the GPAC framework, used for encoding and packaging media files."
+		},
+		{
+			"title": "Dashif Conformance",
+			"homepage": "https://conformance.dashif.org/",
+			"category": "specs-and-standards",
+			"description": "The DASH Industry Forum provides a conformance tool to validate MPEG-DASH content against the DASH standard."
+		},
+		{
+			"title": "Dashif Content Protection List",
+			"homepage": "https://dashif.org/identifiers/content_protection/",
+			"category": "specs-and-standards",
+			"description": "A list of content protection schemes recognized by the DASH Industry Forum for securing DASH streaming content."
+		},
+		{
+			"title": "MPEG DASH - ISO/IEC 23009-01",
+			"homepage": "https://www.iso.org/standard/83314.html",
+			"category": "specs-and-standards",
+			"description": "Defines both the metadata structure and associated media format(s)"
+		},
+		{
+			"title": "Apple HLS - IETF RFC8216",
+			"homepage": "https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis",
+			"category": "specs-and-standards",
+			"description": "Defines both the metadata structure and some client/server requirements"
+		},
+		{
+			"title": "MPEG ISOBMFF 'MP4' - ISO/IEC 14496-12",
+			"homepage": "https://www.iso.org/standard/83102.html",
+			"category": "specs-and-standards",
+			"description": "Defines the file format and structure"
+		},
+		{
+			"title": "MPEG Common media application format (CMAF) for segmented media - ISO/IEC 23000-19",
+			"homepage": "https://www.iso.org/standard/85623.html",
+			"category": "specs-and-standards",
+			"description": "Defines the file format and structure"
+		},
+		{
+			"title": "MPEG Event message track format for the ISO base media file format - ISO/IEC 23001-18",
+			"homepage": "https://www.iso.org/standard/82529.html",
+			"category": "specs-and-standards",
+			"description": "Defines the file format and structure"
+		},
+		{
+			"title": "AVC/h264 Video Coding Standard - ISO/IEC 14496-10",
+			"homepage": "https://www.iso.org/standard/83529.html",
+			"category": "specs-and-standards",
+			"description": "Defines the compressed video format for AVC/h264"
+		},
+		{
+			"title": "HEVC/h265 Video Coding Standard - ISO/IEC 23008-2",
+			"homepage": "https://www.iso.org/standard/85457.html",
+			"category": "specs-and-standards",
+			"description": "Defines the compressed video format HEVC/h265"
+		},
+		{
+			"title": "AAC Audio Coding Standard - ISO/IEC 14496-3",
+			"homepage": "https://www.iso.org/standard/76383.html",
+			"category": "specs-and-standards",
+			"description": "Defines the compressed audio format AAC"
+		},
+		{
+			"title": "MPEG-H Audio a Next Generation Audio (NGA) codec - ISO/IEC 23008-3",
+			"homepage": "https://www.iso.org/standard/83525.html",
+			"category": "specs-and-standards",
+			"description": "Defines the compressed audio format MPEG-H Audio a Next Generation Audio (NGA) codec"
+		},
+		{
+			"title": "AVC/HEVC in ISOBMFF - ISO/IEC 14496-15",
+			"homepage": "https://www.iso.org/standard/83336.html",
+			"category": "specs-and-standards",
+			"description": "Defines the carriage of AVC/HEVC in ISOBMFF"
+		},
+		{
+			"title": "TTML/WebVTT Coding of audio-visual objects - ISO/IEC 14496-30",
+			"homepage": "https://www.iso.org/standard/75394.html",
+			"category": "specs-and-standards",
+			"description": "Defines formatting for text tracks webvtt or ttml"
+		},
+		{
+			"title": "Common Encryption - ISO/IEC 23001-7",
+			"homepage": "https://iso.org/standard/84637.html",
+			"category": "specs-and-standards",
+			"description": "Defines encryption of media supported for receiving devices"
+		},
+		{
+			"title": "BBC R&D Adaptive Bitrate Test Media",
+			"homepage": "http://rdmedia.bbc.co.uk/",
+			"category": "testing",
+			"description": "The BBC Research & Development department offers MPEG-DASH test media for developers and researchers."
+		},
+		{
+			"title": "Dash IF Test Assets Database",
+			"homepage": "https://testassets.dashif.org/#testvector/list",
+			"category": "testing",
+			"description": "A database of test assets provided by the DASH Industry Forum for validating DASH implementations."
+		},
+		{
+			"title": "Dash Sequences GPAC Wiki",
+			"homepage": "https://github.com/gpac/gpac/wiki/dash-sequences",
+			"category": "dash",
+			"description": "The GPAC Wiki provides DASH sequences for conformance testing and validation."
+		},
+		{
+			"title": "MPEG DASH Sample Content Bento4",
+			"homepage": "http://www.bento4.com/developers/dash/dash-sample-content/",
+			"category": "dash",
+			"description": "Bento4 offers MPEG-DASH sample content for developers to test and validate their DASH implementations."
+		},
+		{
+			"title": "Epic Labs Video Comparator",
+			"homepage": "https://github.com/epiclabs-io/epic-video-comparator",
+			"category": "tools",
+			"description": "A tool by Epic Labs that allows for side-by-side video comparisons to assess quality differences."
+		},
+		{
+			"title": "M2amedia SCTE35 Dump for MPEGTS",
+			"homepage": "https://github.com/m2amedia/scte35dump",
+			"category": "tools",
+			"description": "M2A Media's tool for extracting SCTE-35 markers from MPEG-TS streams."
+		},
+		{
+			"title": "Middleman SCTE35 104 Parser",
+			"homepage": "https://tools.middleman.tv/scte35-parser",
+			"category": "tools",
+			"description": "A web-based tool to parse and decode SCTE-35 markers for ad insertion and broadcast signaling analysis."
+		},
+		{
+			"title": "ThreeFive SCTE35",
+			"homepage": "https://github.com/futzu/scte-35_threefive",
+			"category": "tools",
+			"description": "An SCTE-35 parser and decoder for analyzing ad markers in MPEG-TS streams, designed for broadcast workflows."
+		},
+		{
+			"title": "Thumbcoil Video Inspector",
+			"homepage": "https://thumb.co.il/",
+			"category": "tools",
+			"description": "Thumbcoil provides video stream analysis and debugging tools for inspecting transport streams, metadata, and codecs."
+		},
+		{
+			"title": "Chrome Media Internals",
+			"homepage": "chrome://media-internals",
+			"category": "tools",
+			"description": "A built-in Chrome tool that provides detailed logs and diagnostics for media playback and streaming issues."
+		},
+		{
+			"title": "Man in the Middle Proxy",
+			"homepage": "https://github.com/mitmproxy/mitmproxy",
+			"category": "tools",
+			"description": "An interactive HTTPS proxy that allows inspection, modification, and debugging of network traffic, useful for video streaming analysis."
+		},
+		{
+			"title": "Unified Streaming Demos",
+			"homepage": "https://demo.unified-streaming.com/",
+			"category": "tools",
+			"description": "A showcase of Unified Streaming's capabilities, including adaptive streaming formats and DRM-protected playback."
+		},
+		{
+			"title": "Unified Streaming Features Page",
+			"homepage": "https://demo.unified-streaming.com/k8s/features/stable/#!/mpd",
+			"category": "tools",
+			"description": "A demonstration of Unified Streaming's feature set, including on-the-fly packaging and multi-format support."
+		}
     ]
 }
