@@ -4686,7 +4686,7 @@
 		},
 		{
 			"title": "Chrome Media Internals",
-			"homepage": "chrome://media-internals",
+			"homepage": "https://developer.chrome.com/docs/devtools/media-panel/",
 			"category": "tools",
 			"description": "A built-in Chrome tool that provides detailed logs and diagnostics for media playback and streaming issues."
 		},
