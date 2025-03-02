@@ -2055,11 +2055,6 @@
         },
         {
             "category": "audio",
-            "homepage": "https://forum.audacityteam.org/viewtopic.php?t=63067",
-            "title": "ReplayGain - Audacity Forum"
-        },
-        {
-            "category": "audio",
             "homepage": "https://github.com/slhck/ffmpeg-normalize#examples",
             "description": "Audio Normalization for Python/ffmpeg.",
             "title": "slhck/ffmpeg-normalize"
@@ -3857,12 +3852,6 @@
         },
         {
             "description": "",
-            "title": "DASH Industry Forum | Catalyzing the adoption of MPEG-DASH",
-            "homepage": "https://dashif.org/identifiers/content_protection/",
-            "category": "dash"
-        },
-        {
-            "description": "",
             "title": "aom - Git at Google",
             "homepage": "https://aomedia.googlesource.com/aom/",
             "category": "av1"
@@ -4678,12 +4667,6 @@
 			"description": "Bento4 offers MPEG-DASH sample content for developers to test and validate their DASH implementations."
 		},
 		{
-			"title": "Epic Labs Video Comparator",
-			"homepage": "https://github.com/epiclabs-io/epic-video-comparator",
-			"category": "tools",
-			"description": "A tool by Epic Labs that allows for side-by-side video comparisons to assess quality differences."
-		},
-		{
 			"title": "M2amedia SCTE35 Dump for MPEGTS",
 			"homepage": "https://github.com/m2amedia/scte35dump",
 			"category": "tools",
@@ -4700,12 +4683,6 @@
 			"homepage": "https://github.com/futzu/scte-35_threefive",
 			"category": "tools",
 			"description": "An SCTE-35 parser and decoder for analyzing ad markers in MPEG-TS streams, designed for broadcast workflows."
-		},
-		{
-			"title": "Thumbcoil Video Inspector",
-			"homepage": "https://thumb.co.il/",
-			"category": "tools",
-			"description": "Thumbcoil provides video stream analysis and debugging tools for inspecting transport streams, metadata, and codecs."
 		},
 		{
 			"title": "Chrome Media Internals",
