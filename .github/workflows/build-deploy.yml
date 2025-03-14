@@ -3,6 +3,8 @@ on:
   push:
     branches:
     - master
+    paths-ignore:
+      - 'README.md'  # Ignore README.md changes to prevent infinite loops
 env:
   GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
   PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
@@ -51,17 +53,30 @@ jobs:
       with:
         python-version: 3.9
     - uses: actions/checkout@v4
-    - name: run README.md gen
+      with:
+        token: ${{ secrets.PERSONAL_TOKEN }}
+    - name: Generate README.md from contents.json
       run: ruby .github/convert.rb
-    - name: run database.json gen
+    - name: Commit README.md back to master if it changed
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        git add README.md
+        if git diff --cached --exit-code; then
+          echo "No changes to README.md"
+        else
+          git commit -m "[ci skip] Auto-update README.md from contents.json"
+          git push
+        fi
+    - name: Generate database.json
       run: node .github/upgradeDb.js
-    - name: install mkdoc build deps
+    - name: Install mkdocs build dependencies
       run: sudo apt-get update && sudo apt-get -y install lsb-release unzip python3-pip python3-dev && pip3 install mkdocs mkdocs-material pymdown-extensions mkdocs-minify-plugin json-spec
-    - name: use makefile to install all deps to ensure we have the same versions
+    - name: Install all dependencies via makefile
       run: make site_install
-    - name: use makefile to install all deps to ensure we have the same versions
+    - name: Build MkDocs site
       run: make site_build
-    - name: Deploy docs
+    - name: Deploy docs to GitHub Pages
       uses: mhausenblas/mkdocs-deploy-gh-pages@master
       with:
         GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}

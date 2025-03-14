@@ -13,37 +13,6 @@ theme:
   font:
     text: 'Menlo, DejaVu Sans Mono, Consolas, Lucida Console, monospace'
     code: 'Menlo, DejaVu Sans Mono, Consolas, Lucida Console, monospace'
-  features:
-    - navigation.instant
-    - navigation.tracking
-    - navigation.top
-    - navigation.sections
-    - navigation.expand
-    - navigation.indexes
-    - toc.integrate
-    - header.autohide
-    - search.highlight
-    - content.code.copy
-  icon:
-    repo: fontawesome/brands/github
-  logo: false
-  favicon: false
-markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - admonition
-  - tables
-  - toc:
-      permalink: true
-plugins:
-  - search
-  - minify:
-      minify_html: true
 extra:
   analytics:
     provider: google

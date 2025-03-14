@@ -145,40 +145,59 @@ def output_toc(data)
   categories = data['categories']
 
   parents, children = categories.partition { |category| category['parent'].nil? }
+  
+  # Use a nested list for the contents section
   parents.each do |parent|
     parent_id = parent['id']
     # Only include parent categories with projects or with children that have projects
     if has_projects_recursive(projects, categories, parent_id)
-      output << "- [#{parent['title']}](##{parent_id})\n"
-
-      children.sort_by { |category| category['id'] }
-        .select { |category| category['parent'] == parent_id }.each do |child|
-        child_id = child['id']
+      parent_children = children.select { |category| category['parent'] == parent_id }
+        .sort_by { |category| category['id'] }
+        .select { |category| has_projects_recursive(projects, categories, category['id']) }
+      
+      # If parent has child categories with projects, make it a list item with nested items
+      if parent_children.any?
+        output << "- **[#{parent['title']}](##{parent_id})**\n"
         
-        # Only include child categories with projects or with grandchildren that have projects
-        if has_projects_recursive(projects, categories, child_id)
-          output << "  - [#{child['title']}](##{child_id})\n"
-
-          children.sort_by { |category| category['id'] }
-            .select { |category| category['parent'] == child_id }.each do |grandchild|
-            grandchild_id = grandchild['id']
+        # Add child categories as nested list items
+        parent_children.each do |child|
+          child_id = child['id']
+          child_grandchildren = children.select { |category| category['parent'] == child_id }
+            .sort_by { |category| category['id'] }
+            .select { |category| has_projects_recursive(projects, categories, category['id']) }
+          
+          # If child has grandchildren with projects, make it a list item with nested items
+          if child_grandchildren.any?
+            output << "  - **[#{child['title']}](##{child_id})**\n"
             
-            # Only include grandchild categories with projects or with great-grandchildren that have projects
-            if has_projects_recursive(projects, categories, grandchild_id)
-              output << "    - [#{grandchild['title']}](##{grandchild_id})\n"
-
-              children.sort_by { |category| category['id'] }
-                .select { |category| category['parent'] == grandchild_id }.each do |great_grandchild|
-                great_grandchild_id = great_grandchild['id']
+            # Add grandchild categories as nested list items
+            child_grandchildren.each do |grandchild|
+              grandchild_id = grandchild['id']
+              grandchild_great_grandchildren = children.select { |category| category['parent'] == grandchild_id }
+                .sort_by { |category| category['id'] }
+                .select { |category| has_projects(projects, category['id']) }
+              
+              # If grandchild has great-grandchildren with projects, make it a list item with nested items
+              if grandchild_great_grandchildren.any?
+                output << "    - **[#{grandchild['title']}](##{grandchild_id})**\n"
                 
-                # Only include great-grandchild categories with projects
-                if has_projects(projects, great_grandchild_id)
-                  output << "      - [#{great_grandchild['title']}](##{great_grandchild_id})\n"
+                # Add great-grandchild categories as nested list items
+                grandchild_great_grandchildren.each do |great_grandchild|
+                  output << "      - [#{great_grandchild['title']}](##{great_grandchild['id']})\n"
                 end
+              else
+                # Grandchild has no children, so it's a simple list item
+                output << "    - [#{grandchild['title']}](##{grandchild_id})\n"
               end
             end
+          else
+            # Child has no grandchildren, so it's a simple list item
+            output << "  - [#{child['title']}](##{child_id})\n"
           end
         end
+      else
+        # Parent has no children, so it's a simple list item
+        output << "- [#{parent['title']}](##{parent_id})\n"
       end
     end
   end
