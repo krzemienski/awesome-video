@@ -17,10 +17,17 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.top
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.integrate
+    - header.autohide
     - search.highlight
     - content.code.copy
   icon:
     repo: fontawesome/brands/github
+  logo: false
+  favicon: false
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true

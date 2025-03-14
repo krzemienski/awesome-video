@@ -12,85 +12,115 @@ def output_linux(tags)
   ''
 end
 
-def output_projects(proj, id)
-  o = ''
-  # puts proj.inspect
-  proj.select {|p| p['category']==id }
-    .sort_by {|k,v| k['title']}
-    .each do |p|
-    o << "* [#{p['title'].force_encoding('utf-8')}](#{p['homepage']}) #{output_linux p['tags']} - #{p['description']}\n"
+def output_projects(projects, category_id)
+  output = ''
+  projects.select { |project| project['category'] == category_id }
+    .sort_by { |project| project['title'] }
+    .each do |project|
+    output << "* [#{project['title'].force_encoding('utf-8')}](#{project['homepage']}) #{output_linux project['tags']} - #{project['description']}\n"
   end
-  o
+  output
 end
 
-def output_content_category(c, indent)
-  toc = "\n"
+# Returns true if the category has any projects
+def has_projects(projects, category_id)
+  projects.any? { |project| project['category'] == category_id }
+end
+
+# Returns true if the category or any of its subcategories have projects
+def has_projects_recursive(projects, categories, category_id)
+  return true if has_projects(projects, category_id)
+  
+  # Check if any children have projects
+  children = categories.select { |category| category['parent'] == category_id }
+  children.each do |child|
+    return true if has_projects_recursive(projects, categories, child['id'])
+  end
+  
+  return false
+end
+
+def output_content_category(category, indent)
+  output = "\n"
 
   for i in 1..indent
-    toc << '#'
+    output << '#'
   end
 
-  toc << " #{c['title']}\n"
-  toc << "*#{c['description']}*\n" unless c['description'].nil?
-  toc << "[back to top](#readme) \n" if indent>2
-  toc << "\n"
+  output << " #{category['title']}\n"
+  output << "*#{category['description']}*\n" unless category['description'].nil?
+  output << "[back to top](#readme) \n" if indent > 2
+  output << "\n"
 
-  toc
+  output
 end
 
-def output_content(j)
-  toc = ''
+def output_content(data)
+  output = ''
 
-  projects = j['projects']
+  projects = data['projects']
+  categories = data['categories']
 
-  parents, children = j['categories'].partition { |c| c['parent'].nil? }
-  parents.each do |c|
-    id = c['id']
-    toc << output_content_category(c, 2)
-    toc << output_projects(projects, id)
+  parents, children = categories.partition { |category| category['parent'].nil? }
+  parents.each do |parent|
+    parent_id = parent['id']
+    # Only include parent categories with projects or that have children with projects
+    if has_projects_recursive(projects, categories, parent_id)
+      output << output_content_category(parent, 2)
+      output << output_projects(projects, parent_id)
 
-    children.sort_by {|k,v| k['id']}
-      .select {|c| c['parent']==id}.each do |c|
-      child_id = c['id']
+      children.sort_by { |category| category['id'] }
+        .select { |category| category['parent'] == parent_id }.each do |child|
+        child_id = child['id']
+        
+        # Only include child categories with projects or that have children with projects
+        if has_projects_recursive(projects, categories, child_id)
+          output << output_content_category(child, 3)
+          output << output_projects(projects, child_id)
 
-      toc << output_content_category(c, 3)
-      toc << output_projects(projects, child_id)
+          children.sort_by { |category| category['id'] }
+            .select { |category| category['parent'] == child_id }.each do |grandchild|
+            grandchild_id = grandchild['id']
+            
+            # Only include grandchild categories with projects or that have children with projects
+            if has_projects_recursive(projects, categories, grandchild_id)
+              output << output_content_category(grandchild, 4)
+              output << output_projects(projects, grandchild_id)
 
-      children.sort_by {|k,v| k['id']}
-        .select {|c| c['parent']==child_id}.each do |c|
-        child_id = c['id']
-
-        toc << output_content_category(c, 4)
-        toc << output_projects(projects, c['id'])
-
-        children.sort_by {|k,v| k['id']}
-          .select {|c| c['parent']==child_id}.each do |c|
-          child_id = c['id']
-
-          toc << output_content_category(c, 5)
-          toc << output_projects(projects, c['id'])
-        end 
+              children.sort_by { |category| category['id'] }
+                .select { |category| category['parent'] == grandchild_id }.each do |great_grandchild|
+                great_grandchild_id = great_grandchild['id']
+                
+                # Only include great-grandchild categories with projects
+                if has_projects(projects, great_grandchild_id)
+                  output << output_content_category(great_grandchild, 5)
+                  output << output_projects(projects, great_grandchild_id)
+                end
+              end
+            end
+          end
+        end
       end
     end
   end
 
-  toc
+  output
 end
 
-def output_header(j)
-  header       = j['header']
-  num_projects = j['projects'].count
+def output_header(data)
+  header = data['header']
+  num_projects = data['projects'].count
 
-  o = header
-   o << "\n\n"  
-  # o << output_table(num_projects)
-  # o
+  output = header
+  output << "\n\n"  
+  # output << output_table(num_projects)
+  output
 end
 
-def output_contributing(j)
-  o = "\n\n### Contributing\n\n"
-  o << j['header_contributing']
-  o
+def output_contributing(data)
+  output = "\n\n### Contributing\n\n"
+  output << data['header_contributing']
+  output
 end
 
 def output_table(num_projects)
@@ -99,53 +129,72 @@ def output_table(num_projects)
   date = DateTime.now
   date_display = date.strftime "%B %d, %Y"
 
-  o = "| Awesome | Linux | Projects | Updated\n| :-: | :-: | :-: | :-: | :-:\n"
-  o << '[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) | '
-  o << ' :penguin: | '
-  o << "#{num_projects} | "
-  o << date_display
+  output = "| Awesome | Linux | Projects | Updated\n| :-: | :-: | :-: | :-: | :-:\n"
+  output << '[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) | '
+  output << ' :penguin: | '
+  output << "#{num_projects} | "
+  output << date_display
 
-  o
+  output
 end
 
-def output_toc(j)
-  toc = "\n\n### Contents\n\n"
+def output_toc(data)
+  output = "\n\n### Contents\n\n"
 
-  parents, children = j['categories'].partition { |c| c['parent'].nil? }
-  parents.each do |c|
-    id = c['id']
-    toc << "- [#{c['title']}](##{id})\n"
+  projects = data['projects']
+  categories = data['categories']
 
-    children.sort_by {|k,v| k['id']}
-      .select {|c| c['parent']==id}.each do |c|
-      child_id = c['id']
-      toc << "  - [#{c['title']}](##{child_id})\n"
+  parents, children = categories.partition { |category| category['parent'].nil? }
+  parents.each do |parent|
+    parent_id = parent['id']
+    # Only include parent categories with projects or with children that have projects
+    if has_projects_recursive(projects, categories, parent_id)
+      output << "- [#{parent['title']}](##{parent_id})\n"
 
-      children.sort_by {|k,v| k['id']}
-        .select {|c| c['parent']==child_id}.each do |c|
-        child_id = c['id']
-        toc << "    - [#{c['title']}](##{c['id']})\n"
+      children.sort_by { |category| category['id'] }
+        .select { |category| category['parent'] == parent_id }.each do |child|
+        child_id = child['id']
+        
+        # Only include child categories with projects or with grandchildren that have projects
+        if has_projects_recursive(projects, categories, child_id)
+          output << "  - [#{child['title']}](##{child_id})\n"
 
-        children.sort_by {|k,v| k['id']}
-          .select {|c| c['parent']==child_id}.each do |c|
-          toc << "      - [#{c['title']}](##{c['id']})\n"
+          children.sort_by { |category| category['id'] }
+            .select { |category| category['parent'] == child_id }.each do |grandchild|
+            grandchild_id = grandchild['id']
+            
+            # Only include grandchild categories with projects or with great-grandchildren that have projects
+            if has_projects_recursive(projects, categories, grandchild_id)
+              output << "    - [#{grandchild['title']}](##{grandchild_id})\n"
+
+              children.sort_by { |category| category['id'] }
+                .select { |category| category['parent'] == grandchild_id }.each do |great_grandchild|
+                great_grandchild_id = great_grandchild['id']
+                
+                # Only include great-grandchild categories with projects
+                if has_projects(projects, great_grandchild_id)
+                  output << "      - [#{great_grandchild['title']}](##{great_grandchild_id})\n"
+                end
+              end
+            end
+          end
         end
       end
     end
   end
 
-  toc
+  output
 end
 
-def write_readme(j, filename)
-    output = output_header(j)
-    output << output_toc(j)
-    output << output_content(j)
-    output << output_contributing(j)
+def write_readme(data, filename)
+  output = output_header(data)
+  output << output_toc(data)
+  output << output_content(data)
+  output << output_contributing(data)
 
-    File.open(filename, 'w') { |f| f.write output}
-    puts "Wrote #{filename} :-)"
+  File.open(filename, 'w') { |file| file.write output }
+  puts "Wrote #{filename} :-)"
 end
 
-j = get_json()
-write_readme(j, README)
+data = get_json()
+write_readme(data, README)
