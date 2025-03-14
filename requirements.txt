@@ -1,3 +1,5 @@
 mkdocs
 mkdocs-material
 jinja2==3.0.3
+mkdocs-minify-plugin
+pymdown-extensions

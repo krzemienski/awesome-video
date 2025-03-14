@@ -56,7 +56,7 @@ jobs:
     - name: run database.json gen
       run: node .github/upgradeDb.js
     - name: install mkdoc build deps
-      run: sudo apt-get update && sudo apt-get -y install lsb-release unzip python3-pip python3-dev && pip3 install mkdocs mkdocs-material json-spec
+      run: sudo apt-get update && sudo apt-get -y install lsb-release unzip python3-pip python3-dev && pip3 install mkdocs mkdocs-material pymdown-extensions mkdocs-minify-plugin json-spec
     - name: use makefile to install all deps to ensure we have the same versions
       run: make site_install
     - name: use makefile to install all deps to ensure we have the same versions
