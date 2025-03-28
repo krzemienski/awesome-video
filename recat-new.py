@@ -5,17 +5,21 @@ import requests
 import time
 import argparse
 from openai import OpenAI
+import anthropic  # Import Anthropic client
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Command-line arguments
 def parse_args():
-    parser = argparse.ArgumentParser(description="Categorize projects using OpenAI Responses API.")
+    parser = argparse.ArgumentParser(description="Categorize projects using AI APIs.")
     parser.add_argument("--json-url", type=str, default=os.getenv("JSON_URL", "https://example.com/path-to-your-json.json"), help="URL to fetch the JSON data")
     parser.add_argument("--output", type=str, default=None, help="Output filename (default: auto-generated with timestamp)")
-    parser.add_argument("--api-key", type=str, default=os.getenv("OPENAI_API_KEY"), help="OpenAI API key")
-    parser.add_argument("--model", type=str, default=os.getenv("MODEL", "gpt-4.5-preview"), help="OpenAI GPT model to use")
+    parser.add_argument("--provider", type=str, choices=["openai", "anthropic"], default=os.getenv("AI_PROVIDER", "openai"), help="AI provider to use (openai or anthropic)")
+    parser.add_argument("--openai-key", type=str, default=os.getenv("OPENAI_API_KEY"), help="OpenAI API key")
+    parser.add_argument("--anthropic-key", type=str, default=os.getenv("ANTHROPIC_API_KEY"), help="Anthropic API key")
+    parser.add_argument("--openai-model", type=str, default=os.getenv("OPENAI_MODEL", "gpt-4o-mini"), help="OpenAI model to use")
+    parser.add_argument("--anthropic-model", type=str, default=os.getenv("ANTHROPIC_MODEL", "claude-3-5-haiku-20241022"), help="Anthropic model to use")
     parser.add_argument("--limit", type=int, default=None, help="Number of projects to categorize (for testing purposes)")
     return parser.parse_args()
 
@@ -35,8 +39,9 @@ def save_json(data, filename):
     logging.info("JSON data saved successfully")
 
 
-def categorize_project_with_responses(client, project_text, categories, model, project_title, project_index, total_projects):
-    logging.info(f"Categorizing project {project_index}/{total_projects}: '{project_title}'")
+def categorize_with_openai(client, project_text, categories, model, project_title, project_index, total_projects):
+    """Categorize projects using OpenAI's API"""
+    logging.info(f"Categorizing project {project_index}/{total_projects} with OpenAI: '{project_title}'")
 
     prompt = (
         "Categorize the following project into one of the provided categories. "
@@ -55,7 +60,7 @@ def categorize_project_with_responses(client, project_text, categories, model, p
 
     logging.debug(f"Prompt sent to OpenAI:\n{prompt}")
 
-    # Use chat.completions API instead of responses API
+    # Use chat.completions API
     response = client.chat.completions.create(
         model=model,
         messages=[
@@ -69,6 +74,54 @@ def categorize_project_with_responses(client, project_text, categories, model, p
     response_content = response.choices[0].message.content
     logging.debug(f"Raw response from OpenAI: {response_content}")
 
+    return parse_json_response(response_content)
+
+
+def categorize_with_anthropic(client, project_text, categories, model, project_title, project_index, total_projects):
+    """Categorize projects using Anthropic's API"""
+    logging.info(f"Categorizing project {project_index}/{total_projects} with Anthropic: '{project_title}'")
+
+    prompt = (
+        "Categorize the following project into one of the provided categories. "
+        "Provide a category_id, reason, and relevant tags.\n\n"
+        f"Project Text:\n{project_text}\n\n"
+        f"Categories:\n{json.dumps(categories, indent=2)}\n\n"
+        "Respond with a JSON object containing 'category_id', 'reason', and 'tags'.\n\n"
+        "Example of the expected response format:\n"
+        "{\n"
+        '  "category_id": "intro-learning",\n'
+        '  "reason": "This is a learning resource that provides educational material about video processing",\n'
+        '  "tags": ["tutorial", "education", "video"]\n'
+        "}\n\n"
+        "IMPORTANT: Return valid JSON only. Do not include any text before or after the JSON."
+    )
+
+    logging.debug(f"Prompt sent to Anthropic:\n{prompt}")
+
+    try:
+        response = client.messages.create(
+            model=model,
+            max_tokens=1000,
+            temperature=0.2,
+            system="You are a video technology categorization expert. Always respond with valid JSON.",
+            messages=[
+                {"role": "user", "content": prompt}
+            ]
+        )
+
+        # Extract the response text
+        response_content = response.content[0].text
+        logging.debug(f"Raw response from Anthropic: {response_content}")
+
+        return parse_json_response(response_content)
+
+    except Exception as e:
+        logging.error(f"Error in Anthropic API call: {e}")
+        raise
+
+
+def parse_json_response(response_content):
+    """Parse and extract JSON from AI response"""
     # Try to parse the JSON response, with error handling
     try:
         # Remove any markdown formatting if present
@@ -107,12 +160,26 @@ def categorize_project_with_responses(client, project_text, categories, model, p
 
 def main():
     args = parse_args()
+    provider = args.provider.lower()
 
-    if not args.api_key:
-        logging.error("OpenAI API key is required. Provide it via environment variable or command line.")
+    # Initialize the appropriate client based on provider
+    if provider == "openai":
+        if not args.openai_key:
+            logging.error("OpenAI API key is required. Provide it via --openai-key argument or OPENAI_API_KEY environment variable.")
+            return
+        client = OpenAI(api_key=args.openai_key)
+        model = args.openai_model
+        logging.info(f"Using OpenAI with model: {model}")
+    elif provider == "anthropic":
+        if not args.anthropic_key:
+            logging.error("Anthropic API key is required. Provide it via --anthropic-key argument or ANTHROPIC_API_KEY environment variable.")
+            return
+        client = anthropic.Anthropic(api_key=args.anthropic_key)
+        model = args.anthropic_model
+        logging.info(f"Using Anthropic with model: {model}")
+    else:
+        logging.error(f"Unsupported provider: {provider}")
         return
-
-    client = OpenAI(api_key=args.api_key)
 
     data = fetch_json_from_url(args.json_url)
     projects = data.get("projects", [])
@@ -182,11 +249,11 @@ def main():
 
     timestamp = int(time.time())
     num_projects = len(projects) if args.limit is None else min(args.limit, len(projects))
-    logging.info(f"Starting categorization of {num_projects} projects using model {args.model} with chat.completions API")
+    logging.info(f"Starting categorization of {num_projects} projects using {provider} with model {model}")
 
     # Generate output filename if not provided
     if args.output is None:
-        args.output = f"recategorized_projects_{args.model}_{timestamp}_{num_projects}.json"
+        args.output = f"recategorized_projects_{provider}_{model.replace('-', '_')}_{timestamp}_{num_projects}.json"
         logging.info(f"Auto-generated output filename: {args.output}")
 
     for idx, project in enumerate(projects[:num_projects], 1):
@@ -199,7 +266,11 @@ def main():
             continue
 
         try:
-            categorization_result = categorize_project_with_responses(client, project_text, categories, args.model, title, idx, num_projects)
+            # Call the appropriate categorization function based on provider
+            if provider == "openai":
+                categorization_result = categorize_with_openai(client, project_text, categories, model, title, idx, num_projects)
+            else:  # anthropic
+                categorization_result = categorize_with_anthropic(client, project_text, categories, model, title, idx, num_projects)
 
             # Save the reason and tags but replace category with the new category_id
             project["category"] = categorization_result["category_id"]
@@ -230,6 +301,10 @@ def main():
         "header": data.get("header", ""),
         "header_contributing": data.get("header_contributing", ""),
         "categories": categories,  # Use the new categories as the primary categories
+        "model_used": model,
+        "provider": provider,
+        "timestamp": timestamp,
+        "project_count": num_projects,
         "projects": projects[:num_projects]
     }
 
