@@ -1,0 +1,390 @@
+{
+  "title": "Awesome Video ",
+  "header": "# Awesome Video [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)\n \n<!-- \n\nPLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)\n\n -->\n\n",
+  "header_contributing": "Please take a quick look at the [contribution guidelines](https://github.com/krzemienski/awesome-video/blob/master/.github/CONTRIBUTING.md) first. If you see a package or project here that is no longer maintained or is not a good fit, please submit a pull request to improve this file. Thank you to all [contributors](https://github.com/krzemienski/awesome-video/graphs/contributors); you rock!!",
+  "categories": [
+    {
+      "title": "Intro & Learning",
+      "id": "intro-learning",
+      "description": "Fundamental concepts, history, and educational resources for video streaming."
+    },
+    {
+      "title": "Introduction",
+      "id": "introduction",
+      "description": "A high-level overview of video as a medium, its technical basics and creative impact.",
+      "parent": "intro-learning"
+    },
+    {
+      "title": "Learning Resources",
+      "id": "learning-resources",
+      "description": "Curated articles, books, courses, and talks offering in-depth knowledge of video streaming.",
+      "parent": "intro-learning"
+    },
+    {
+      "title": "Tutorials & Case Studies",
+      "id": "tutorials-case-studies",
+      "description": "Practical tutorials and real-world case studies demonstrating video streaming implementations.",
+      "parent": "intro-learning"
+    },
+    {
+      "title": "Protocols & Transport",
+      "id": "protocols-transport",
+      "description": "Resources covering the protocols and transport mechanisms that drive video delivery."
+    },
+    {
+      "title": "Adaptive Streaming",
+      "id": "adaptive-streaming",
+      "description": "Standards and tools for adaptive streaming, primarily focused on HLS and DASH.",
+      "parent": "protocols-transport"
+    },
+    {
+      "title": "HLS",
+      "id": "hls",
+      "description": "Dedicated resources, libraries, and tools for HTTP Live Streaming.",
+      "parent": "adaptive-streaming"
+    },
+    {
+      "title": "DASH",
+      "id": "dash",
+      "description": "Dedicated resources, libraries, and tools for Dynamic Adaptive Streaming over HTTP.",
+      "parent": "adaptive-streaming"
+    },
+    {
+      "title": "Transport Protocols",
+      "id": "transport-protocols",
+      "description": "Protocols that ensure reliable video transport such as RIST, SRT, and RTMP.",
+      "parent": "protocols-transport"
+    },
+    {
+      "title": "RIST",
+      "id": "rist",
+      "description": "Resources focused on the Reliable Internet Stream Transport protocol.",
+      "parent": "transport-protocols"
+    },
+    {
+      "title": "SRT",
+      "id": "srt",
+      "description": "Resources dedicated to the Secure Reliable Transport protocol.",
+      "parent": "transport-protocols"
+    },
+    {
+      "title": "RTMP",
+      "id": "rtmp",
+      "description": "Resources covering the Real-Time Messaging Protocol for video.",
+      "parent": "transport-protocols"
+    },
+    {
+      "title": "Encoding & Codecs",
+      "id": "encoding-codecs",
+      "description": "Technologies and tools for video encoding, transcoding, and codec implementation."
+    },
+    {
+      "title": "Encoding Tools",
+      "id": "encoding-tools",
+      "description": "Utilities and libraries (including FFMPEG-based solutions) for encoding and transcoding video.",
+      "parent": "encoding-codecs"
+    },
+    {
+      "title": "FFMPEG",
+      "id": "ffmpeg",
+      "description": "Resources, configurations, and scripts based on FFMPEG for video processing.",
+      "parent": "encoding-tools"
+    },
+    {
+      "title": "Other Encoders",
+      "id": "other-encoders",
+      "description": "Additional encoding libraries and tools beyond FFMPEG.",
+      "parent": "encoding-tools"
+    },
+    {
+      "title": "Codecs",
+      "id": "codecs",
+      "description": "Implementations and libraries for modern video codecs.",
+      "parent": "encoding-codecs"
+    },
+    {
+      "title": "HEVC",
+      "id": "hevc",
+      "description": "Resources and tools for the HEVC (H.265) codec.",
+      "parent": "codecs"
+    },
+    {
+      "title": "VP9",
+      "id": "vp9",
+      "description": "Libraries, tools, and examples for the VP9 codec.",
+      "parent": "codecs"
+    },
+    {
+      "title": "AV1",
+      "id": "av1",
+      "description": "Resources and implementations for the emerging AV1 codec.",
+      "parent": "codecs"
+    },
+    {
+      "title": "Players & Clients",
+      "id": "players-clients",
+      "description": "Software and hardware solutions for video playback across platforms."
+    },
+    {
+      "title": "Hardware Players",
+      "id": "hardware-players",
+      "description": "Dedicated players for devices like Roku, Smart TVs, and Chromecast.",
+      "parent": "players-clients"
+    },
+    {
+      "title": "Roku",
+      "id": "roku",
+      "description": "Tools, SDKs, and examples specific to Roku app development.",
+      "parent": "hardware-players"
+    },
+    {
+      "title": "Smart TVs",
+      "id": "smart-tv",
+      "description": "Player frameworks and SDKs tailored for Smart TV platforms.",
+      "parent": "hardware-players"
+    },
+    {
+      "title": "Chromecast",
+      "id": "chromecast",
+      "description": "Libraries and resources for developing Chromecast-enabled video apps.",
+      "parent": "hardware-players"
+    },
+    {
+      "title": "Mobile & Web Players",
+      "id": "mobile-web-players",
+      "description": "Playback solutions and SDKs for mobile devices and web browsers.",
+      "parent": "players-clients"
+    },
+    {
+      "title": "iOS/tvOS",
+      "id": "ios-tvos",
+      "description": "Tools and SDKs for video playback on Apple's iOS and tvOS platforms.",
+      "parent": "mobile-web-players"
+    },
+    {
+      "title": "Android",
+      "id": "android",
+      "description": "Player solutions and SDKs for Android devices and FireTV.",
+      "parent": "mobile-web-players"
+    },
+    {
+      "title": "Web Players",
+      "id": "web-players",
+      "description": "HTML5 and browser-based video players and frameworks.",
+      "parent": "mobile-web-players"
+    },
+    {
+      "title": "Media Tools",
+      "id": "media-tools",
+      "description": "Utilities to enhance and manage media content in video streaming workflows."
+    },
+    {
+      "title": "Audio & Subtitles",
+      "id": "audio-subtitles",
+      "description": "Libraries and tools for audio processing and subtitle/caption integration.",
+      "parent": "media-tools"
+    },
+    {
+      "title": "Audio",
+      "id": "audio",
+      "description": "Tools for processing and managing audio streams within video content.",
+      "parent": "audio-subtitles"
+    },
+    {
+      "title": "Subtitles & Captions",
+      "id": "subtitles-captions",
+      "description": "Libraries and utilities for creating and managing subtitles and closed captions.",
+      "parent": "audio-subtitles"
+    },
+    {
+      "title": "Ads & QoE",
+      "id": "ads-qoe",
+      "description": "Resources for integrating advertising and measuring quality of experience (QoE) in video streaming.",
+      "parent": "media-tools"
+    },
+    {
+      "title": "Advertising",
+      "id": "advertising",
+      "description": "Tools and platforms focused on video advertising and monetization strategies.",
+      "parent": "ads-qoe"
+    },
+    {
+      "title": "Quality & Testing",
+      "id": "quality-testing",
+      "description": "Solutions for assessing video quality and testing streaming performance.",
+      "parent": "ads-qoe"
+    },
+    {
+      "title": "Standards & Industry",
+      "id": "standards-industry",
+      "description": "Official specifications, standards, and industry resources shaping video streaming."
+    },
+    {
+      "title": "Specs & Standards",
+      "id": "specs-standards",
+      "description": "Documentation on official video streaming specifications, including MPEG standards and related forums.",
+      "parent": "standards-industry"
+    },
+    {
+      "title": "Official Specs",
+      "id": "official-specs",
+      "description": "Direct access to official technical specifications and standards documentation.",
+      "parent": "specs-standards"
+    },
+    {
+      "title": "MPEG & Forums",
+      "id": "mpeg-forums",
+      "description": "Resources covering MPEG standards and industry discussions about video technology.",
+      "parent": "specs-standards"
+    },
+    {
+      "title": "Vendors & HDR",
+      "id": "vendors-hdr",
+      "description": "Vendor-specific documentation and resources, including HDR guidelines and product specifications.",
+      "parent": "standards-industry"
+    },
+    {
+      "title": "Vendor Docs",
+      "id": "vendor-docs",
+      "description": "Technical documentation and support resources provided by industry vendors.",
+      "parent": "vendors-hdr"
+    },
+    {
+      "title": "HDR Guidelines",
+      "id": "hdr-guidelines",
+      "description": "Best practices and technical standards for implementing HDR in video streaming.",
+      "parent": "vendors-hdr"
+    },
+    {
+      "title": "Infrastructure & Delivery",
+      "id": "infrastructure-delivery",
+      "description": "Backend systems and cloud technologies that enable reliable video content delivery."
+    },
+    {
+      "title": "Streaming Servers",
+      "id": "streaming-servers",
+      "description": "Software platforms for hosting video origins, managing storage, and serving content.",
+      "parent": "infrastructure-delivery"
+    },
+    {
+      "title": "Origin Servers",
+      "id": "origin-servers",
+      "description": "Solutions for origin server management and content distribution.",
+      "parent": "streaming-servers"
+    },
+    {
+      "title": "Storage Solutions",
+      "id": "storage-solutions",
+      "description": "Systems designed to store and manage large volumes of video content.",
+      "parent": "streaming-servers"
+    },
+    {
+      "title": "Cloud & CDN",
+      "id": "cloud-cdn",
+      "description": "Cloud platforms and content delivery network (CDN) integrations that optimize video delivery.",
+      "parent": "infrastructure-delivery"
+    },
+    {
+      "title": "Cloud Platforms",
+      "id": "cloud-platforms",
+      "description": "Orchestration and cloud service providers (e.g., Kubernetes, AWS, GCP) for streaming infrastructures.",
+      "parent": "cloud-cdn"
+    },
+    {
+      "title": "CDN Integration",
+      "id": "cdn-integration",
+      "description": "Tools and resources for integrating CDNs with video streaming services.",
+      "parent": "cloud-cdn"
+    },
+    {
+      "title": "General Tools",
+      "id": "general-tools",
+      "description": "Miscellaneous utilities that streamline video processing and security workflows."
+    },
+    {
+      "title": "FFMPEG & Tools",
+      "id": "ffmpeg-tools",
+      "description": "A collection of FFMPEG-based scripts, libraries, and utilities for advanced video processing.",
+      "parent": "general-tools"
+    },
+    {
+      "title": "DRM",
+      "id": "drm",
+      "description": "Digital rights management solutions and resources to secure video content and manage licensing.",
+      "parent": "general-tools"
+    },
+    {
+      "title": "Community & Events",
+      "id": "community-events",
+      "description": "Resources and platforms that facilitate networking, collaboration, and industry events in video streaming."
+    },
+    {
+      "title": "Community Groups",
+      "id": "community-groups",
+      "description": "Online communities, forums, Slack channels, and meetups for video professionals.",
+      "parent": "community-events"
+    },
+    {
+      "title": "Online Forums",
+      "id": "online-forums",
+      "description": "Dedicated discussion boards and online communities focused on video streaming technology.",
+      "parent": "community-groups"
+    },
+    {
+      "title": "Slack & Meetups",
+      "id": "slack-meetups",
+      "description": "Resources for real-time chat groups and local meetup events in the video streaming community.",
+      "parent": "community-groups"
+    },
+    {
+      "title": "Events & Conferences",
+      "id": "events-conferences",
+      "description": "A comprehensive list of conferences, talks, webinars, and podcasts related to video streaming.",
+      "parent": "community-events"
+    },
+    {
+      "title": "Conferences",
+      "id": "conferences",
+      "description": "Major industry conferences and live events dedicated to video streaming.",
+      "parent": "events-conferences"
+    },
+    {
+      "title": "Podcasts & Webinars",
+      "id": "podcasts-webinars",
+      "description": "Recorded talks, webinars, and podcasts sharing insights on video streaming trends and technology.",
+      "parent": "events-conferences"
+    }
+  ],
+  "model_used": "gpt-4.5-preview",
+  "timestamp": 1743167552,
+  "project_count": 2,
+  "projects": [
+    {
+      "category": "ffmpeg",
+      "homepage": "https://github.com/transitive-bullshit/awesome-ffmpeg",
+      "description": "\ud83d\udc7b A curated list of awesome FFmpeg resources.",
+      "title": "transitive-bullshit/awesome-ffmpeg",
+      "tags": [
+        "ffmpeg",
+        "video-processing",
+        "encoding",
+        "resources",
+        "curated-list"
+      ]
+    },
+    {
+      "category": "hdr-guidelines",
+      "homepage": "https://4kmedia.org/",
+      "description": "Uncompressed 4K demos, samples, and trailers, to show off your new ultra-HD (2160p) HDR/HLG/Dolby Vision television or monitor.",
+      "title": "4K Media | Free Ultra-HD / HDR / HLG / Dolby Vision 4K Video Demos",
+      "tags": [
+        "4K",
+        "HDR",
+        "HLG",
+        "Dolby Vision",
+        "Ultra-HD",
+        "video demos"
+      ]
+    }
+  ]
+}
