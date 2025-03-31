@@ -565,6 +565,7 @@ class SearchAgent:
             - Official documentation or websites for tools
             - Specific tutorials or guides on reputable sites
             - Conference videos, blog posts, or technical articles
+            - Software download pages for specific tools
 
             Each resource you find should include:
             1. A clear, concise title
@@ -572,6 +573,8 @@ class SearchAgent:
             3. The URL of the resource (must be a DIRECT link to the content, not a search page)
             4. The category it belongs to
             5. Relevant tags (up to 5)
+
+            YOUR MOST IMPORTANT TASK IS TO FIND DIRECT URLs TO SPECIFIC RESOURCES, NOT SEARCH PAGES.
             """,
             tools=[WebSearchTool()]
         )
@@ -596,11 +599,19 @@ class SearchAgent:
                 - Specific documentation (e.g., "https://ffmpeg.org/documentation.html")
                 - Technical blog posts (e.g., "https://netflixtechblog.com/...")
                 - Specific tutorial pages (e.g., "https://www.coursename.com/specific-tutorial")
+                - Software tool websites (e.g., "https://www.blackmagicdesign.com/products/davinciresolve")
 
                 BAD examples (DO NOT INCLUDE THESE):
                 - Google search results (e.g., "https://www.google.com/search?q=...")
                 - YouTube search results (e.g., "https://www.youtube.com/results?search_query=...")
                 - Generic listings pages
+
+                FOLLOW THESE STEPS:
+                1. Search for '{search_term}'
+                2. For each search result, verify it leads to a SPECIFIC resource (not a search page)
+                3. Only include results with DIRECT URLs to content
+                4. Make sure the URL is to a specific page, not a general homepage
+                5. Extract the most valuable information about each resource
 
                 For each resource, provide:
                 1. Title
@@ -633,6 +644,7 @@ class SearchAgent:
 
                     logging.debug(f"Search completed in {time.time() - start_time:.2f}s")
                     print(f"  ✅ Search completed in {time.time() - start_time:.2f}s")
+                    logging.debug(f"Raw search result: {result.final_output[:500]}...")
                 except asyncio.TimeoutError:
                     logging.warning(f"Search timeout after {timeout}s")
                     print(f"  ⚠️ Search timeout after {timeout}s")
@@ -647,7 +659,8 @@ class SearchAgent:
                     # Look for array pattern if needed
                     if not json_text.strip().startswith('['):
                         import re
-                        json_pattern = r'(\[[\s\S]*\])'
+                        # More robust JSON extraction - finds arrays surrounded by square brackets
+                        json_pattern = r'(\[\s*\{[\s\S]*\}\s*\])'
                         matches = re.search(json_pattern, json_text)
                         if matches:
                             json_text = matches.group(1)
@@ -668,28 +681,83 @@ class SearchAgent:
                                 print(f"  ❌ No JSON-like structure found in response")
                                 continue  # Try the next attempt
 
+                    # Try to fix common JSON issues before parsing
+                    json_text = json_text.replace('\n', ' ').replace('\r', ' ')
+
+                    # Replace any trailing commas before a closing bracket (common JSON error)
+                    json_text = re.sub(r',\s*\]', ']', json_text)
+                    json_text = re.sub(r',\s*\}', '}', json_text)
+
                     resources = json.loads(json_text)
                     logging.info(f"Successfully parsed JSON with {len(resources)} resources")
 
-                    # Filter out search links and other invalid resources
+                    # Enhanced validation and filtering for resources
                     valid_resources = []
+                    invalid_count = 0
+                    search_url_count = 0
+
                     for resource in resources:
+                        if not isinstance(resource, dict):
+                            logging.warning(f"Skipping non-object resource: {resource}")
+                            invalid_count += 1
+                            continue
+
+                        # Skip resources without required fields
+                        if not all(key in resource for key in ["title", "url", "description"]):
+                            logging.warning(f"Resource missing required fields: {resource}")
+                            invalid_count += 1
+                            continue
+
                         url = resource.get("url", "").lower()
+                        title = resource.get("title", "Untitled")
+
                         if not url:
-                            logging.warning(f"Resource missing URL: {resource.get('title', 'Untitled')}")
+                            logging.warning(f"Resource missing URL: {title}")
+                            invalid_count += 1
                             continue
 
-                        # Skip generic search results
-                        if "google.com/search" in url or "youtube.com/results" in url:
+                        # Skip generic search results - expanded list of patterns
+                        search_patterns = [
+                            "google.com/search",
+                            "youtube.com/results",
+                            "bing.com/search",
+                            "search?q=",
+                            "search_query=",
+                            "amazon.com/s?",
+                            "search-results",
+                            "searchresults",
+                            "search.html"
+                        ]
+
+                        if any(pattern in url for pattern in search_patterns):
                             logging.warning(f"Skipping search result URL: {url}")
+                            search_url_count += 1
                             continue
 
-                        # Ensure URL seems legitimate
-                        if url.startswith(("http://", "https://")) and "." in url:
+                        # Ensure URL seems legitimate and well-formed
+                        if (url.startswith(("http://", "https://")) and
+                            "." in url and
+                            len(url) > 12 and  # Minimum reasonable URL length
+                            not url.endswith(("..", "."))):  # Avoid truncated URLs
+
+                            # Apply the current category to the resource
+                            resource["category"] = category
+
+                            # Ensure tags exist
+                            if "tags" not in resource or not resource["tags"]:
+                                resource["tags"] = [category]
+
                             valid_resources.append(resource)
-                            logging.debug(f"Valid resource found: {resource.get('title', 'Untitled')} - {url}")
+                            logging.debug(f"Valid resource found: {title} - {url}")
                         else:
-                            logging.warning(f"Invalid URL format: {url}")
+                            logging.warning(f"Invalid URL format: {url} for resource: {title}")
+                            invalid_count += 1
+
+                    # Log statistics about filtered resources
+                    logging.info(f"Found {len(valid_resources)} valid resources out of {len(resources)} total")
+                    logging.info(f"Filtered out {invalid_count} invalid resources and {search_url_count} search URLs")
+                    print(f"  📊 Found {len(valid_resources)} valid resources out of {len(resources)} total")
+                    print(f"  ⚠️ Filtered out {invalid_count} invalid and {search_url_count} search URLs")
 
                     resources = valid_resources
 
@@ -718,6 +786,11 @@ class SearchAgent:
                         logging.warning(f"No valid resources found in attempt {attempt} for '{search_term}'")
                         print(f"  ⚠️ No valid resources found in this attempt. Retrying...")
 
+                except json.JSONDecodeError as json_err:
+                    logging.error(f"JSON parsing error: {json_err}")
+                    print(f"  ❌ JSON parsing error: {json_err}")
+                    # Log the problematic text
+                    logging.debug(f"Problematic JSON text: {json_text[:200]}...")
                 except Exception as e:
                     logging.error(f"Error processing search results: {str(e)}", exc_info=True)
                     print(f"  ❌ Error processing results: {type(e).__name__}: {str(e)}")
@@ -1016,49 +1089,67 @@ class ResearchManager:
     async def _perform_searches(self, category, search_terms, time_limit):
         """Perform searches in parallel using asyncio tasks."""
         logging.info(f"Starting parallel searches for {len(search_terms)} terms in category '{category}'")
+        print(f"🔍 STARTING PARALLEL SEARCHES: {len(search_terms)} terms in category '{category}'")
 
         start_time = time.time()
         all_resources = []
 
-        # Create tasks for each search
-        tasks = []
-        for search_term in search_terms:
-            # Check if we're within the time limit
-            if time.time() - start_time > time_limit:
-                logging.warning(f"Time limit ({time_limit:.2f}s) reached for category '{category}'")
-                print(f"\n⚠️ Time limit reached for this category, stopping searches")
-                break
+        # Create search tasks and run them in parallel
+        search_tasks = []
+        for term in search_terms:
+            search_tasks.append(self._search(term, category, timeout=60))
 
-            # Create task
-            task = asyncio.create_task(
-                self._search(search_term, category, timeout=60)
+        try:
+            # Run all searches in parallel with overall time limit
+            remaining_time = max(5, time_limit - (time.time() - start_time))
+            results = await asyncio.wait_for(
+                asyncio.gather(*search_tasks, return_exceptions=True),
+                timeout=remaining_time
             )
-            tasks.append((search_term, task))
 
-        # Process tasks as they complete
-        for search_term, task in tasks:
-            try:
-                # Wait for the task with a timeout
-                remaining_time = max(1, time_limit - (time.time() - start_time))
-                resources = await asyncio.wait_for(task, timeout=remaining_time)
+            # Process results
+            for i, result in enumerate(results):
+                try:
+                    if isinstance(result, Exception):
+                        # Handle exception from task
+                        term = search_terms[i] if i < len(search_terms) else f"term-{i}"
+                        if isinstance(result, asyncio.TimeoutError):
+                            logging.warning(f"Search for '{term}' timed out")
+                            print(f"  ⚠️ Search for '{term}' timed out")
+                        else:
+                            logging.error(f"Error in search for '{term}': {str(result)}")
+                            print(f"  ❌ Error in search for '{term}': {type(result).__name__}: {str(result)}")
+                    else:
+                        # Process successful result
+                        term = search_terms[i] if i < len(search_terms) else f"term-{i}"
+                        resources = result or []  # Ensure we have a list even if None was returned
 
-                if resources:
-                    logging.info(f"Found {len(resources)} resources for '{search_term}'")
-                    all_resources.extend(resources)
+                        if resources:
+                            logging.info(f"Found {len(resources)} resources for '{term}'")
+                            print(f"  ✅ Found {len(resources)} resources for '{term}'")
+                            all_resources.extend(resources)
+                        else:
+                            logging.warning(f"No resources found for '{term}'")
+                            print(f"  ⚠️ No resources found for '{term}'")
+                except Exception as e:
+                    logging.error(f"Error processing result: {str(e)}", exc_info=True)
+                    print(f"  ❌ Error processing result: {str(e)}")
 
-                    # If we've met our minimum, move to the next category
-                    if len(all_resources) >= 10:  # Minimum threshold
-                        logging.info(f"Found sufficient resources ({len(all_resources)}), stopping search")
-                        print(f"\n✅ Found sufficient resources, stopping search for this category")
-                        break
-                else:
-                    logging.warning(f"No resources found for '{search_term}'")
-            except asyncio.TimeoutError:
-                logging.warning(f"Search for '{search_term}' timed out")
-                print(f"  ⚠️ Search for '{search_term}' timed out")
-            except Exception as e:
-                logging.error(f"Error searching for '{search_term}': {e}")
-                print(f"  ❌ Error during search for '{search_term}': {e}")
+        except asyncio.TimeoutError:
+            logging.warning(f"Overall search timeout after {time_limit:.2f}s for category '{category}'")
+            print(f"\n⚠️ Overall search timeout for category '{category}' after {time_limit:.2f}s")
+            print(f"  Some search tasks were cancelled")
+
+        except Exception as e:
+            logging.error(f"Unexpected error in parallel searches: {str(e)}", exc_info=True)
+            print(f"\n❌ Error in parallel searches: {str(e)}")
+
+        # Log results summary
+        search_time = time.time() - start_time
+        resource_count = len(all_resources)
+        logging.info(f"Completed {len(search_terms)} searches in {search_time:.2f}s, found {resource_count} resources")
+        print(f"\n📊 SEARCH SUMMARY: Completed {len(search_terms)} searches in {search_time:.2f}s")
+        print(f"  Found {resource_count} resources for category '{category}'")
 
         return all_resources
 
@@ -1068,10 +1159,38 @@ class ResearchManager:
         print(f"\n🔍 SEARCHING: '{search_term}' in category '{category}'")
 
         try:
-            resources = await self.search_agent.search(search_term, category, timeout=timeout)
+            # Enhance the search term to be more specific and effective
+            enhanced_term = f"{search_term} video technology resources"
+            logging.debug(f"Using enhanced search term: '{enhanced_term}'")
+
+            resources = await self.search_agent.search(enhanced_term, category, timeout=timeout)
+
+            # Validate returned resources
+            if resources:
+                # Check if all URLs are unique
+                urls = [r.get("url", "") for r in resources]
+                unique_urls = set(urls)
+
+                if len(unique_urls) < len(urls):
+                    logging.warning(f"Found {len(urls) - len(unique_urls)} duplicate URLs in search results")
+
+                # Check for invalid category assignments
+                for resource in resources:
+                    if resource.get("category") != category:
+                        logging.warning(f"Fixing incorrect category in resource: {resource.get('title')}")
+                        resource["category"] = category
+
+                # Additional logging
+                logging.info(f"Successfully found {len(resources)} resources for '{search_term}'")
+                print(f"  ✓ Found {len(resources)} valid resources")
+            else:
+                logging.warning(f"No resources found for '{search_term}'")
+                print(f"  ⚠️ No resources found")
+
             return resources
         except Exception as e:
-            logging.error(f"Search error: {e}")
+            logging.error(f"Search error for '{search_term}': {e}", exc_info=True)
+            print(f"  ❌ Search error: {type(e).__name__}: {str(e)}")
             return []
 
     async def _generate_ideas(self, category, existing_data, new_resources):
@@ -1129,33 +1248,77 @@ async def run_system_checks():
     try:
         web_search_agent = Agent(
             name="Search Tester",
-            instructions="You are a search agent for testing.",
+            instructions="""
+            You are a search agent for testing web search capability.
+            Your task is to search for a specific term and return ONE specific resource with a direct URL.
+            DO NOT return search result pages like Google or YouTube search URLs.
+            Only return a SINGLE direct URL to a specific website, tool, or resource related to video editing.
+            Return ONLY the direct URL with no other text or explanation.
+            """,
             tools=[WebSearchTool()]
         )
-        search_result = await Runner.run(web_search_agent, "Search for 'latest video editing software' and return one specific result with a direct URL (not a search page)")
-        if search_result.final_output and len(search_result.final_output) > 10:
-            # Check if it contains a valid URL
-            import re
-            url_pattern = r'https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+'
-            urls = re.findall(url_pattern, search_result.final_output)
+        search_prompt = "Search for 'ffmpeg video editing' and return ONLY a direct URL to the official FFmpeg website or documentation (not a search page)"
 
-            if urls and not any(('google.com/search' in url or 'youtube.com/results' in url) for url in urls):
-                results.append(("Web Search Tool", "PASS", f"Web search returned valid results with URLs"))
-                print("  ✅ Web Search: Working properly with direct URLs")
+        # Use asyncio with timeout to prevent hanging
+        try:
+            search_result = await asyncio.wait_for(
+                Runner.run(web_search_agent, search_prompt),
+                timeout=30  # 30 second timeout for test
+            )
+
+            if search_result.final_output and len(search_result.final_output.strip()) > 10:
+                # Extract URL using regex
+                import re
+                url_pattern = r'https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+'
+                urls = re.findall(url_pattern, search_result.final_output)
+
+                # Check if any valid URLs were found and they're not search pages
+                if urls:
+                    # Check if any URL is a search result
+                    search_patterns = [
+                        "google.com/search",
+                        "youtube.com/results",
+                        "bing.com/search",
+                        "search?q=",
+                        "search_query="
+                    ]
+
+                    valid_urls = []
+                    for url in urls:
+                        if not any(pattern in url.lower() for pattern in search_patterns):
+                            valid_urls.append(url)
+
+                    if valid_urls:
+                        # Found at least one valid direct URL
+                        example_url = valid_urls[0]
+                        results.append(("Web Search Tool", "PASS", f"Web search returned valid direct URL: {example_url}"))
+                        print(f"  ✅ Web Search: Working properly - found direct URL: {example_url}")
+                    else:
+                        # Only found search URLs
+                        results.append(("Web Search Tool", "WARNING", f"Web search only returned search page URLs"))
+                        print("  ⚠️ Web Search: Only returned search page URLs")
+                        print("    This will impact the script's ability to find valuable resources")
+                else:
+                    # No URLs found at all
+                    results.append(("Web Search Tool", "WARNING", "Web search didn't return any URLs"))
+                    print("  ⚠️ Web Search: Returned response without URLs")
+                    print("    Response: " + search_result.final_output[:100] + "...")
             else:
-                results.append(("Web Search Tool", "WARNING", f"Web search may only return search page URLs"))
-                print("  ⚠️ Web Search: May return search page URLs instead of direct resources")
-                print("    This will impact the script's ability to find valuable resources")
-        else:
-            results.append(("Web Search Tool", "WARNING", f"Web search returned limited results"))
-            print("  ⚠️ Web Search: Returned limited results")
-            print("    The script may struggle to find valuable resources")
+                # Empty or very short response
+                results.append(("Web Search Tool", "WARNING", f"Web search returned limited results: {search_result.final_output}"))
+                print("  ⚠️ Web Search: Returned limited results")
+                print("    The script may struggle to find valuable resources")
+        except asyncio.TimeoutError:
+            results.append(("Web Search Tool", "WARNING", "Web search timed out after 30 seconds"))
+            print("  ⚠️ Web Search: Test timed out after 30 seconds")
+            print("    This may indicate slow responses but the tool may still work")
     except Exception as e:
         results.append(("Web Search Tool", "FAIL", f"Error: {str(e)}"))
         checks_passed = False
         print(f"  ❌ Web Search: Failed: {str(e)}")
         print("    The web search functionality is CRITICAL for this script to work properly")
         print("    Without working web search, the script won't find any valuable resources")
+        logging.error(f"Web search check failed: {e}", exc_info=True)
 
     # Log results
     logging.info("System check results:")
@@ -1166,6 +1329,11 @@ async def run_system_checks():
             logging.warning(f"  ⚠ {check}: {message}")
         else:
             logging.error(f"  ✗ {check}: {message}")
+
+    if not checks_passed:
+        print("\n⚠️ Some critical checks failed. The script may not work properly.")
+    else:
+        print("\n✅ All critical checks passed. The script should work properly.")
 
     return checks_passed
 
