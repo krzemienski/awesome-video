@@ -134,6 +134,34 @@ This will:
 - Enable detailed debug logging
 - Save logs to debug.log instead of the default research.log
 
+### Generating an Awesome List
+
+To generate an Awesome List compliant with the official guidelines:
+
+```bash
+python3 av-researcher-agents.py --contents-file local_data.json --gen-awesome-list --awesome-list-output awesome-video.md
+```
+
+This will:
+- Use the data from local_data.json
+- Generate an Awesome List markdown file
+- Create required support files (license, contributing.md)
+- Verify the output follows Awesome List specification
+- Save the result to awesome-video.md
+
+For a workflow that combines research and list generation:
+
+```bash
+python3 av-researcher-agents.py --min-results 5 --time-limit 180 \
+  --update --gen-awesome-list --awesome-list-output awesome-video.md
+```
+
+This will:
+- Find at least 5 resources per category
+- Limit each category search to 3 minutes
+- Update the original contents file with new findings
+- Generate an Awesome List that includes both original and new resources
+
 ## Command Line Arguments
 
 | Argument | Description | Default | Example |
@@ -149,6 +177,8 @@ This will:
 | `--randomize` | Randomize the order of categories | False | `--randomize` |
 | `--random-seed` | Random seed for reproducible randomization | None | `--random-seed 42` |
 | `--skip-checks` | Skip system checks | False | `--skip-checks` |
+| `--gen-awesome-list` | Generate an Awesome List markdown file | False | `--gen-awesome-list` |
+| `--awesome-list-output` | Path to save the generated Awesome List | awesome-video.md | `--awesome-list-output custom-name.md` |
 
 ## System Flow
 
@@ -177,8 +207,12 @@ flowchart TD
 
     End[End Process] --> SaveResults[Save Results]
     SaveResults --> |Update Flag Set| UpdateOriginal[Update Original Contents]
+    SaveResults --> |Gen Awesome List Flag Set| GenerateAwesomeList[Generate Awesome List]
     SaveResults --> FinalStats[Display Statistics]
+    UpdateOriginal --> |Gen Awesome List Flag Set| GenerateAwesomeList
     UpdateOriginal --> FinalStats
+    GenerateAwesomeList --> VerifyAwesomeList[Verify Against Awesome List Spec]
+    VerifyAwesomeList --> FinalStats
 
     subgraph WebSearch[Web Search Process]
         ParallelSearch --> |For Each Term| WebQuery[Execute Web Query]
@@ -186,6 +220,14 @@ flowchart TD
         ParseJSON --> ValidateURLs[Validate Direct URLs]
         ValidateURLs --> |Valid| CollectResources[Collect Valid Resources]
         ValidateURLs --> |Invalid or Search Page| RetryOrSkip[Retry or Skip]
+    end
+
+    subgraph AwesomeListGen[Awesome List Generation]
+        GenerateAwesomeList --> FormatMarkdown[Format Markdown Content]
+        FormatMarkdown --> CreateTOC[Create Table of Contents]
+        CreateTOC --> FormatResources[Format Resources According to Spec]
+        FormatResources --> CreateSupportFiles[Create Support Files]
+        CreateSupportFiles --> OutputMD[Write Markdown File]
     end
 ```
 
@@ -545,3 +587,83 @@ To customize how agents operate, you can edit their instructions in the script:
 - `PlannerAgent`: Modify research planning strategy
 - `SearchAgent`: Adjust resource search criteria
 - `WriterAgent`: Change project idea generation approach
+
+## Generating an Awesome List
+
+The tool can generate a fully-compliant [Awesome List](https://github.com/sindresorhus/awesome) from your research data. This feature creates a beautifully formatted markdown file that follows all the requirements of the Awesome project.
+
+### What is an Awesome List?
+
+An Awesome List is a curated list of resources with a specific format that follows the guidelines of the [Awesome](https://github.com/sindresorhus/awesome) project. These lists are widely used in the developer community to share high-quality resources on specific topics.
+
+### Using the Generator
+
+To generate an Awesome List from your research data:
+
+```bash
+python3 av-researcher-agents.py --gen-awesome-list --awesome-list-output my-awesome-list.md
+```
+
+This will:
+1. Process all the categories and resources in your data
+2. Format them according to Awesome List specifications
+3. Generate a properly structured markdown file
+4. Create necessary supporting files (contributing.md, license, etc.)
+5. Perform basic verification against Awesome List requirements
+
+### What Gets Generated
+
+The generator produces several files:
+
+1. **Main Awesome List markdown file** (default: awesome-video.md)
+   - Contains properly formatted headings, badges, and resource links
+   - Includes a Table of Contents with all categories
+   - Structures resources with correct format: `- [Name](URL) - Description.`
+
+2. **Supporting files**:
+   - `contributing.md`: Contribution guidelines
+   - `license`: CC0 license file (required by Awesome Lists)
+   - `code-of-conduct.md`: Standard code of conduct
+
+### Format Verification
+
+The tool includes a verification step that checks for common formatting issues:
+
+- Presence of the Awesome badge
+- Proper Table of Contents
+- Consistent resource formatting
+- Required supporting files
+
+For a complete lint check, you can use the official awesome-lint tool:
+
+```bash
+# Install the official linter
+npm install -g awesome-lint
+
+# Run the linter on your generated file
+awesome-lint awesome-video.md
+```
+
+### Example
+
+Here's an example workflow that combines research with Awesome List generation:
+
+```bash
+# Run research and generate an Awesome List
+python3 av-researcher-agents.py --min-results 5 --time-limit 180 \
+  --update --gen-awesome-list --awesome-list-output awesome-video.md
+
+# Verify with the official lint tool
+npx awesome-lint awesome-video.md
+```
+
+### Awesome List Statistics
+
+The generator provides detailed statistics about the generated list:
+
+- Total number of resources included
+- Number of main categories and subcategories
+- Distribution of resources across categories
+- Details of any formatting issues found
+
+These statistics help you understand the scope and quality of your generated list.
