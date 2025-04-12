@@ -813,6 +813,7 @@ class ResearchManager:
         """Run the complete research process with the given parameters."""
         start_time = time.time()
         all_new_projects = []
+        unique_projects_found = 0  # Track unique projects for minimum threshold
 
         # PHASE 1: Planning
         logging.info("Starting research planning phase")
@@ -851,23 +852,57 @@ class ResearchManager:
             if len(priority_categories) > 5:
                 print(f"  ... and {len(priority_categories) - 5} more categories")
 
+        # Get existing projects to check for duplicates
+        existing_urls = set()
+        existing_titles = set()
+        for category in categories:
+            existing_projects = contents_data.get(category, [])
+            for p in existing_projects:
+                if "homepage" in p:
+                    existing_urls.add(p["homepage"].lower())
+                if "title" in p:
+                    existing_titles.add(p["title"].lower())
+
+        logging.info(f"Found {len(existing_urls)} existing URLs and {len(existing_titles)} existing titles to check for duplicates")
+
         # PHASE 2: Execute searches for each category
-        for category_index, category in enumerate(priority_categories):
+        category_index = 0
+        iterations = 0
+
+        # Continue until we find enough unique projects or hit the global timeout
+        while unique_projects_found < min_results:
             # Check global timeout
             if time.time() - start_time > global_timeout:
-                logging.warning(f"Global timeout ({global_timeout}s) reached after {category_index} categories")
+                logging.warning(f"Global timeout ({global_timeout}s) reached after {iterations} iterations")
                 print(f"\n⏱️ GLOBAL TIMEOUT REACHED: Script has been running for {(time.time() - start_time):.2f} seconds")
-                print(f"Completed {category_index}/{len(priority_categories)} categories")
+                print(f"Found {unique_projects_found}/{min_results} unique projects")
                 break
 
+            # If we've gone through all categories once and still need more projects, start over
+            if category_index >= len(priority_categories):
+                category_index = 0
+                iterations += 1
+                logging.info(f"Completed iteration {iterations} of all categories, continuing to find more projects")
+                print(f"\n🔄 COMPLETED ITERATION {iterations} OF ALL CATEGORIES")
+                print(f"   Still need {min_results - unique_projects_found} more unique projects")
+
+                # Optional: shuffle categories again each full iteration for more diversity
+                if randomize:
+                    random.shuffle(priority_categories)
+                    print(f"   Reshuffled category order for next iteration")
+
+            # Get current category
+            category = priority_categories[category_index]
             time_so_far = time.time() - start_time
             cat_title = categories_data.get(category, {}).get("title", category)
+
             logging.info(f"Researching category: {cat_title} ({category}) ({category_index+1}/{len(priority_categories)}) - Time elapsed: {time_so_far:.2f}s")
 
             print(f"\n{'='*70}")
             print(f"📌 CATEGORY {category_index+1}/{len(priority_categories)}: {cat_title} ({category})")
             print(f"{'='*70}")
             print(f"⏱️ Time elapsed: {time_so_far:.2f}s, {(global_timeout - time_so_far):.2f}s remaining until timeout")
+            print(f"📊 PROGRESS: {unique_projects_found}/{min_results} unique projects found")
 
             # Get category time limit
             category_start_time = time.time()
@@ -877,6 +912,7 @@ class ResearchManager:
             if category_time_limit < 30:
                 logging.warning(f"Insufficient time left for category '{category}', skipping")
                 print(f"⚠️ Less than 30 seconds of timeout remaining, skipping this category")
+                category_index += 1
                 continue
 
             print(f"⏱️ Time limit for this category: {category_time_limit:.2f}s")
@@ -908,11 +944,6 @@ class ResearchManager:
             seen_urls = set()
             unique_projects = []
 
-            # Get existing projects in this category to check for duplicates
-            existing_projects = contents_data.get(category, [])
-            existing_urls = {p.get("homepage", "").lower() for p in existing_projects}
-            existing_titles = {p.get("title", "").lower() for p in existing_projects}
-
             print(f"\n🔍 CHECKING FOR DUPLICATES IN {len(category_projects)} PROJECTS...")
             for project in category_projects:
                 url = project.get("homepage", "").lower()
@@ -930,7 +961,10 @@ class ResearchManager:
                 # Check if this is a duplicate within the new projects
                 if url and url not in seen_urls:
                     seen_urls.add(url)
+                    existing_urls.add(url)  # Add to existing URLs to prevent future duplicates
+                    existing_titles.add(title)  # Add to existing titles to prevent future duplicates
                     unique_projects.append(project)
+                    unique_projects_found += 1  # Increment unique projects counter
                     print(f"  ✅ UNIQUE: {project.get('title', 'Untitled')} - {url}")
                 else:
                     print(f"  ⚠️ DUPLICATE: {project.get('title', 'Untitled')} - {url}")
@@ -947,11 +981,24 @@ class ResearchManager:
                 print(f"\n⚠️ No unique projects found for category '{category}'")
 
             # Log progress
-            print(f"\n🔄 PROGRESS: {len(all_new_projects)} total projects so far")
+            print(f"\n🔄 PROGRESS: {unique_projects_found}/{min_results} unique projects found ({len(all_new_projects)} total)")
+
+            # Save intermediate results periodically (e.g., every 10 new unique projects)
+            if unique_projects_found % 10 == 0 and unique_projects_found > 0:
+                await save_intermediate_results(all_new_projects, final=False, output_dir=args.output_dir)
 
             category_time = time.time() - category_start_time
             logging.info(f"Finished category '{category}' in {category_time:.2f} seconds")
             print(f"⏱️ Category '{cat_title}' completed in {category_time:.2f} seconds")
+
+            # Check if we've reached our target
+            if unique_projects_found >= min_results:
+                logging.info(f"Reached target of {min_results} unique projects")
+                print(f"\n🎯 TARGET REACHED: Found {unique_projects_found} unique projects")
+                break
+
+            # Move to next category
+            category_index += 1
 
         # Return results
         return 0, all_new_projects
@@ -1385,6 +1432,112 @@ async def update_contents(original_filepath_or_url, new_projects, output_dir="."
         if is_remote:
             logging.error(f"Consider specifying a local output file instead of a remote URL")
         return None
+
+
+async def generate_combined_contents(original_filepath_or_url, new_projects, output_dir="."):
+    """Generate a combined contents file with both original and new projects.
+
+    Returns a tuple of:
+    - Path to the combined file
+    - Dictionary of projects added by category
+    - Dictionary of initial project counts by category
+    - Total projects count
+    """
+    logging.info(f"Generating combined contents with {len(new_projects)} new projects")
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+
+    # Determine output filename
+    if original_filepath_or_url.startswith(('http://', 'https://')):
+        output_filename = f"combined_contents_{timestamp}.json"
+    else:
+        basename = os.path.basename(original_filepath_or_url)
+        filename_without_ext, ext = os.path.splitext(basename)
+        output_filename = f"{filename_without_ext}_combined_{timestamp}{ext}"
+
+    output_filepath = os.path.join(output_dir, output_filename)
+
+    try:
+        # Load original contents
+        contents = await load_contents(original_filepath_or_url)
+
+        # Get categories and track initial counts
+        categories = contents.get("categories", [])
+        initial_counts = {}
+        for category in categories:
+            initial_counts[category] = len(contents.get(category, []))
+
+        # Track new projects by category
+        projects_by_category = {}
+        total_added = 0
+
+        # Get existing URLs and titles to avoid duplicates
+        existing_urls = {}
+        existing_titles = {}
+        for category in categories:
+            existing_urls[category] = set()
+            existing_titles[category] = set()
+
+            for item in contents.get(category, []):
+                if "homepage" in item:
+                    existing_urls[category].add(item["homepage"].lower())
+                if "title" in item:
+                    existing_titles[category].add(item["title"].lower())
+
+        # Add new projects, avoiding duplicates
+        for project in new_projects:
+            category = project.get("category")
+
+            # Handle list categories
+            if isinstance(category, list) and category:
+                category = category[0]
+
+            if category in contents:
+                url = project.get("homepage", "").lower()
+                title = project.get("title", "").lower()
+
+                # Skip if URL or title already exists in this category
+                if url in existing_urls.get(category, set()):
+                    logging.debug(f"Skipping duplicate URL: {url} in category {category}")
+                    continue
+
+                if title in existing_titles.get(category, set()):
+                    logging.debug(f"Skipping duplicate title: {title} in category {category}")
+                    continue
+
+                # Add the project
+                project_copy = project.copy()
+                contents[category].append(project_copy)
+
+                # Update tracking sets
+                if url:
+                    existing_urls[category].add(url)
+                if title:
+                    existing_titles[category].add(title)
+
+                # Track stats
+                if category not in projects_by_category:
+                    projects_by_category[category] = 0
+                projects_by_category[category] += 1
+                total_added += 1
+
+        # Count total projects
+        total_projects = 0
+        for category in categories:
+            total_projects += len(contents.get(category, []))
+
+        # Save the combined file
+        os.makedirs(output_dir, exist_ok=True)
+        with open(output_filepath, 'w') as f:
+            json.dump(contents, f, indent=JSON_INDENT)
+
+        logging.info(f"Combined contents saved to {output_filepath}")
+        logging.info(f"Added {total_added} new projects to {len(projects_by_category)} categories")
+
+        return output_filepath, projects_by_category, initial_counts, total_projects
+
+    except Exception as e:
+        logging.error(f"Error generating combined contents: {e}")
+        return None, None, None, None
 
 
 async def generate_awesome_list(contents_data, new_projects, output_file="awesome-video.md", output_dir="."):
