@@ -809,7 +809,7 @@ class ResearchManager:
         self.planner_agent = PlannerAgent()
         self.search_agent = SearchAgent()
 
-    async def run(self, contents_data, min_results=10, time_limit=300, global_timeout=14400, randomize=False, random_seed=None):
+    async def run(self, contents_data, min_results=10, time_limit=300, global_timeout=14400, randomize=False, random_seed=None, output_dir="."):
         """Run the complete research process with the given parameters."""
         start_time = time.time()
         all_new_projects = []
@@ -985,7 +985,7 @@ class ResearchManager:
 
             # Save intermediate results periodically (e.g., every 10 new unique projects)
             if unique_projects_found % 10 == 0 and unique_projects_found > 0:
-                await save_intermediate_results(all_new_projects, final=False, output_dir=args.output_dir)
+                await save_intermediate_results(all_new_projects, final=False, output_dir=output_dir)
 
             category_time = time.time() - category_start_time
             logging.info(f"Finished category '{category}' in {category_time:.2f} seconds")
@@ -1693,7 +1693,8 @@ async def main():
             time_limit=args.time_limit,
             global_timeout=args.global_timeout,
             randomize=args.randomize,
-            random_seed=args.random_seed
+            random_seed=args.random_seed,
+            output_dir=args.output_dir
         )
         research_time = time.time() - start_research_time
 
