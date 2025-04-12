@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Awesome Video Researcher
+Awesome Video Streaming & Encoding Researcher
 
 This script uses the OpenAI Agents SDK to find new resources and generate
-project ideas related to video creation and editing.
+project ideas related to video streaming, encoding, and processing for developers.
 """
 
 import argparse
@@ -15,8 +15,9 @@ import os
 import random
 import sys
 import time
-from typing import Dict, List, Any, Optional
-import re
+import traceback
+import textwrap
+from typing import Dict, List, Tuple, Any, Optional, Set, Union
 
 # Basic packages that should be installed by default
 import requests
@@ -53,6 +54,9 @@ except ImportError as e:
     except ImportError as e2:
         print(f"Alternative import failed: {e2}")
         sys.exit(1)
+
+# Import OpenAI SDK for agents
+from openai import OpenAI
 
 # Constants and configurations
 DEFAULT_CACHE_DIR = ".cache"
@@ -361,7 +365,7 @@ async def generate_optimized_search_terms(category, category_data, existing_data
             name="Search Term Generator",
             instructions=f"""
             You are a Search Term Generator specializing in creating effective search terms for finding
-            resources related to video creation and editing.
+            resources related to video streaming and encoding developer tools.
 
             Your task is to generate search terms that will help find valuable, specific resources
             in a given category. Your search terms should be diverse, specific, and effective.
@@ -371,7 +375,7 @@ async def generate_optimized_search_terms(category, category_data, existing_data
         # Create the prompt
         prompt = f"""
         I need to generate effective search terms for finding resources in the '{cat_title}' category
-        of a video creation and editing resource collection.
+        of a video streaming and encoding developer tools resource collection.
 
         CATEGORY INFORMATION:
         - ID: {category}
@@ -425,12 +429,12 @@ async def generate_optimized_search_terms(category, category_data, existing_data
 
         # Fallback to basic search terms
         basic_terms = [
-            f"best {cat_title} tools",
-            f"{cat_title} github repositories",
-            f"{cat_title} tutorials",
-            f"{cat_title} software",
-            f"advanced {cat_title} techniques",
-            f"{cat_title} for video"
+            f"best {cat_title} streaming tools",
+            f"{cat_title} encoding github repositories",
+            f"{cat_title} streaming API tutorials",
+            f"{cat_title} video codec software",
+            f"advanced {cat_title} streaming techniques",
+            f"{cat_title} video encoding libraries"
         ]
 
         print(f"  ⚠️ USING FALLBACK SEARCH TERMS:")
@@ -447,7 +451,7 @@ class PlannerAgent:
         self.agent = Agent(
             name="Research Planner",
             instructions="""
-            You are a Research Planner specializing in video creation and editing resources.
+            You are a Research Planner specializing in video streaming and encoding developer tools.
             Your task is to analyze existing data and create a structured research plan that will guide
             the search for new, valuable resources and project ideas.
 
@@ -495,7 +499,7 @@ class PlannerAgent:
 
         prompt = f"""
         I need to create a research plan to find new resources and generate project ideas
-        for video creation and editing. Here's what I already have:
+        for video streaming and encoding developer tools. Here's what I already have:
 
         Category Structure: {json.dumps(category_info, indent=2)}
 
@@ -509,7 +513,7 @@ class PlannerAgent:
         5. A structured approach to generating new project ideas
 
         IMPORTANT: Select a diverse range of categories - include some popular ones, some niche ones,
-        and make sure to cover different aspects of video creation and editing. Try to include both
+        and make sure to cover different aspects of video streaming and encoding developer tools. Try to include both
         technical and creative categories.
 
         Return your plan as a structured JSON format with the following keys:
@@ -550,7 +554,7 @@ class SearchAgent:
         self.agent = Agent(
             name="Resource Searcher",
             instructions="""
-            You are a Resource Searcher specializing in finding high-quality resources related to video creation and editing.
+            You are a Resource Searcher specializing in finding high-quality resources related to video streaming and encoding developer tools.
 
             Your task is to search for resources related to specific search terms and categorize them properly.
             Your results MUST ONLY include SPECIFIC resources with DIRECT URLs to valuable content.
@@ -591,7 +595,7 @@ class SearchAgent:
                 prompt = f"""
                 Search for valuable resources related to '{search_term}' in the category '{category}'.
 
-                Find 3-5 high-quality resources that would be valuable for people interested in video creation and editing.
+                Find 3-5 high-quality resources that would be valuable for people interested in video streaming and encoding developer tools.
                 The resources MUST be SPECIFIC with DIRECT URLs - not search results or generic listings.
 
                 GOOD examples:
@@ -816,7 +820,7 @@ class WriterAgent:
         self.agent = Agent(
             name="Project Idea Generator",
             instructions="""
-            You are a Project Idea Generator specializing in creative and practical project ideas for video creation and editing.
+            You are a Project Idea Generator specializing in creative and practical project ideas for video streaming and encoding developer tools.
 
             Your task is to generate unique, valuable project ideas based on existing projects and new resources.
             Each project idea should include:
@@ -853,7 +857,7 @@ class WriterAgent:
         Please generate 3 unique, practical, and creative project ideas that:
         1. Are relevant to the '{category}' category
         2. Build upon the existing projects and new resources
-        3. Offer clear value to someone interested in video creation/editing
+        3. Offer clear value to someone interested in video streaming and encoding developer tools
         4. Include a compelling title and detailed description
         5. Have relevant tags
 
@@ -990,11 +994,12 @@ class ResearchManager:
             if not category_search_terms:
                 cat_title = categories_data.get(category, {}).get("title", category)
                 category_search_terms = [
-                    f"best {cat_title} tools",
-                    f"{cat_title} software",
-                    f"{cat_title} tutorials",
-                    f"github {cat_title}",
-                    f"{cat_title} for video editing"
+                    f"best {cat_title} streaming tools",
+                    f"{cat_title} encoding github repositories",
+                    f"{cat_title} streaming API tutorials",
+                    f"{cat_title} video codec software",
+                    f"advanced {cat_title} streaming techniques",
+                    f"{cat_title} video encoding libraries"
                 ]
                 print(f"⚠️ Using default search terms for '{cat_title}'")
 
@@ -1252,12 +1257,12 @@ async def run_system_checks():
             You are a search agent for testing web search capability.
             Your task is to search for a specific term and return ONE specific resource with a direct URL.
             DO NOT return search result pages like Google or YouTube search URLs.
-            Only return a SINGLE direct URL to a specific website, tool, or resource related to video editing.
+            Only return a SINGLE direct URL to a specific website, tool, or resource related to video streaming or encoding.
             Return ONLY the direct URL with no other text or explanation.
             """,
             tools=[WebSearchTool()]
         )
-        search_prompt = "Search for 'ffmpeg video editing' and return ONLY a direct URL to the official FFmpeg website or documentation (not a search page)"
+        search_prompt = "Search for 'ffmpeg video streaming' and return ONLY a direct URL to the official FFmpeg website or documentation (not a search page)"
 
         # Use asyncio with timeout to prevent hanging
         try:
@@ -1338,8 +1343,10 @@ async def run_system_checks():
     return checks_passed
 
 
-async def save_intermediate_results(resources, project_ideas, final=False):
+async def save_intermediate_results(resources, project_ideas, final=False, output_dir="."):
     """Save intermediate results to a file."""
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+
     results = {
         "new_resources": resources,
         "new_project_ideas": project_ideas,
@@ -1365,15 +1372,24 @@ async def save_intermediate_results(resources, project_ideas, final=False):
             results["stats"]["ideas_by_category"][category] = 0
         results["stats"]["ideas_by_category"][category] += 1
 
-    filename = "new_projects.json" if final else f"intermediate_results_{int(time.time())}.json"
+    # Always include timestamp in filenames to avoid conflicts between parallel runs
+    if final:
+        filename = f"final_results_{timestamp}_{len(resources)}_resources.json"
+    else:
+        filename = f"intermediate_results_{timestamp}.json"
 
-    with open(filename, 'w') as f:
+    filepath = os.path.join(output_dir, filename)
+
+    # Ensure output directory exists
+    os.makedirs(output_dir, exist_ok=True)
+
+    with open(filepath, 'w') as f:
         json.dump(results, f, indent=JSON_INDENT)
 
-    logging.info(f"Saved {len(resources)} resources and {len(project_ideas)} project ideas to {filename}")
+    logging.info(f"Saved {len(resources)} resources and {len(project_ideas)} project ideas to {filepath}")
 
     if final:
-        print(f"\n📁 FINAL RESULTS SAVED TO: {filename}")
+        print(f"\n📁 FINAL RESULTS SAVED TO: {filepath}")
         print("\n📊 RESOURCE STATISTICS BY CATEGORY:")
         for category, count in results["stats"]["resources_by_category"].items():
             print(f"  • {category}: {count} resources")
@@ -1389,24 +1405,34 @@ async def save_intermediate_results(resources, project_ideas, final=False):
         for category, count in results["stats"]["ideas_by_category"].items():
             logging.info(f"  - {count} project ideas in category '{category}'")
     else:
-        print(f"\n📁 INTERMEDIATE RESULTS SAVED: {filename}")
+        print(f"\n📁 INTERMEDIATE RESULTS SAVED: {filepath}")
 
-    return filename
+    return filepath
 
 
-async def update_contents(original_filepath_or_url, new_resources, new_project_ideas):
+async def update_contents(original_filepath_or_url, new_resources, new_project_ideas, output_dir="."):
     """Update the original contents file or create a new file with the combined results."""
     logging.info(f"Updating contents with new findings")
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
     # For remote files, we can't update them directly
     is_remote = original_filepath_or_url.startswith(('http://', 'https://'))
 
     # Determine output file path
     if is_remote:
-        output_filepath = "updated_contents.json"
+        output_filename = f"updated_contents_{timestamp}.json"
+        output_filepath = os.path.join(output_dir, output_filename)
         logging.info(f"Remote URL detected, results will be saved to: {output_filepath}")
     else:
-        output_filepath = original_filepath_or_url
+        # Create a new timestamped file instead of overwriting
+        basename = os.path.basename(original_filepath_or_url)
+        filename_without_ext, ext = os.path.splitext(basename)
+        output_filename = f"{filename_without_ext}_updated_{timestamp}{ext}"
+        output_filepath = os.path.join(output_dir, output_filename)
+        logging.info(f"Local file detected, creating updated version at: {output_filepath}")
+
+    # Ensure output directory exists
+    os.makedirs(output_dir, exist_ok=True)
 
     try:
         # Load original contents
@@ -1446,8 +1472,8 @@ async def update_contents(original_filepath_or_url, new_resources, new_project_i
             final_counts[category] = len(contents.get(category, []))
 
         # Create a backup if this is a local file
-        if not is_remote:
-            backup_path = f"{output_filepath}.bak.{int(time.time())}"
+        if not is_remote and os.path.exists(original_filepath_or_url):
+            backup_path = f"{original_filepath_or_url}.bak.{timestamp}"
             logging.info(f"Creating backup of original file at {backup_path}")
             with open(backup_path, 'w') as f:
                 json.dump(contents, f, indent=JSON_INDENT)
@@ -1462,22 +1488,36 @@ async def update_contents(original_filepath_or_url, new_resources, new_project_i
         for category, count in resources_by_category.items():
             logging.info(f"  - Added {count} resources to '{category}' (now has {final_counts.get(category, 0)} items)")
 
-        return True
+        return output_filepath
     except Exception as e:
         logging.error(f"Error updating contents: {e}")
         if is_remote:
             logging.error(f"Consider specifying a local output file instead of a remote URL")
-        return False
+        return None
 
 
-async def generate_awesome_list(contents_data, new_resources, output_file="awesome-video.md"):
+async def generate_awesome_list(contents_data, new_resources, output_file="awesome-video.md", output_dir="."):
     """Generate an Awesome List markdown file following specifications from sindresorhus/awesome.
 
     This function creates a properly formatted markdown file that follows all the guidelines
     and best practices for Awesome Lists, ensuring it will pass awesome-lint validation.
     """
-    logging.info(f"Generating Awesome List markdown file: {output_file}")
-    print(f"\n📄 GENERATING AWESOME LIST: {output_file}")
+    logging.info(f"Generating Awesome List markdown file")
+
+    # Add timestamp to filename to prevent conflicts
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+
+    # Split the output filename into base and extension
+    filename_base, filename_ext = os.path.splitext(output_file)
+    timestamped_filename = f"{filename_base}_{timestamp}{filename_ext}"
+
+    # Create full path
+    output_path = os.path.join(output_dir, timestamped_filename)
+
+    # Ensure output directory exists
+    os.makedirs(output_dir, exist_ok=True)
+
+    print(f"\n📄 GENERATING AWESOME LIST: {output_path}")
 
     # Extract categories and resources
     categories = contents_data.get("categories", [])
@@ -1518,9 +1558,9 @@ async def generate_awesome_list(contents_data, new_resources, output_file="aweso
     lines = []
 
     # Add Awesome badge, title, and description
-    lines.append("# Awesome Video [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)")
+    lines.append("# Awesome Video Streaming & Encoding [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)")
     lines.append("")
-    lines.append("> A curated list of awesome tools, resources, and projects related to video creation, editing, and processing")
+    lines.append("> A curated list of awesome tools, resources, and projects related to video streaming, encoding, and processing for developers")
     lines.append("")
 
     # Add standard sections required by Awesome List spec
@@ -1632,7 +1672,7 @@ async def generate_awesome_list(contents_data, new_resources, output_file="aweso
 
     # Write the output file
     try:
-        with open(output_file, 'w') as f:
+        with open(output_path, 'w') as f:
             f.write('\n'.join(lines))
 
         # Create a basic contributing.md file if it doesn't exist
@@ -1670,11 +1710,11 @@ async def generate_awesome_list(contents_data, new_resources, output_file="aweso
                 f.write("The laws of most jurisdictions throughout the world automatically confer exclusive Copyright and Related Rights upon the creator and subsequent owner(s) of an original work of authorship.\n\n")
                 # Add more CC0 license content here
 
-        logging.info(f"Successfully generated Awesome List at {output_file}")
+        logging.info(f"Successfully generated Awesome List at {output_path}")
         logging.info(f"Included {resource_counter} resources across {len(top_level_categories)} main categories")
         logging.info(f"Created necessary support files: contributing.md, code-of-conduct.md, license")
 
-        print(f"  ✅ AWESOME LIST GENERATED: {output_file}")
+        print(f"  ✅ AWESOME LIST GENERATED: {output_path}")
         print(f"  📊 STATISTICS:")
         print(f"    • {resource_counter} total resources")
         print(f"    • {len(top_level_categories)} main categories")
@@ -1684,7 +1724,7 @@ async def generate_awesome_list(contents_data, new_resources, output_file="aweso
         print(f"    • code-of-conduct.md")
         print(f"    • license (CC0)")
 
-        return True
+        return output_path
     except Exception as e:
         logging.error(f"Error generating Awesome List: {e}")
         print(f"  ❌ ERROR: Could not generate Awesome List: {e}")
@@ -1758,110 +1798,164 @@ async def verify_awesome_list(filepath):
         return False, [f"Error during verification: {str(e)}"]
 
 
+async def generate_combined_contents(original_filepath_or_url, new_resources, output_dir="."):
+    """Generate a new contents.json file that combines original contents and new resources.
+
+    The filename includes timestamp and total project count.
+    """
+    logging.info(f"Generating combined contents file from {original_filepath_or_url} with {len(new_resources)} new resources")
+    print(f"\n📊 GENERATING COMBINED CONTENTS FILE...")
+
+    try:
+        # Load original contents
+        contents = await load_contents(original_filepath_or_url)
+
+        # Count initial items and categories
+        categories = contents.get("categories", [])
+        initial_project_count = 0
+        initial_counts = {}
+
+        for category in categories:
+            category_items = contents.get(category, [])
+            item_count = len(category_items)
+            initial_counts[category] = item_count
+            initial_project_count += item_count
+
+        logging.info(f"Original contents has {initial_project_count} total projects across {len(categories)} categories")
+
+        # Add new resources to their respective categories
+        resources_added = 0
+        resources_by_category = {}
+
+        for resource in new_resources:
+            category = resource.get("category")
+            if category in contents:
+                # Remove category from resource to match original format
+                resource_copy = resource.copy()
+                category_field = resource_copy.pop("category", None)
+
+                contents[category].append(resource_copy)
+                resources_added += 1
+
+                # Track additions by category
+                if category not in resources_by_category:
+                    resources_by_category[category] = 0
+                resources_by_category[category] += 1
+            else:
+                logging.warning(f"Category '{category}' not found in original contents, skipping resource: {resource.get('title', 'Untitled')}")
+
+        # Generate filename with timestamp and project count
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        total_projects = initial_project_count + resources_added
+        filename = f"contents_{timestamp}_{total_projects}_projects.json"
+        filepath = os.path.join(output_dir, filename)
+
+        # Write updated contents to file
+        with open(filepath, 'w') as f:
+            json.dump(contents, f, indent=JSON_INDENT)
+
+        logging.info(f"Successfully saved combined contents to {filepath}")
+        print(f"✅ COMBINED CONTENTS SAVED: {filepath}")
+        print(f"  • Original projects: {initial_project_count}")
+        print(f"  • New projects added: {resources_added}")
+        print(f"  • Total projects: {total_projects}")
+
+        return filepath, resources_by_category, initial_counts, total_projects
+
+    except Exception as e:
+        logging.error(f"Error generating combined contents: {e}")
+        print(f"❌ ERROR: Could not generate combined contents: {e}")
+        return None, {}, {}, 0
+
+
 async def main():
-    """Main async function to run the research script."""
+    parser = argparse.ArgumentParser(description="Video Research Assistant")
+    parser.add_argument("--contents", default="contents.json", help="Path to contents JSON file")
+    parser.add_argument("--min-results", type=int, default=10, help="Minimum number of new resources to find")
+    parser.add_argument("--time-limit", type=int, default=180, help="Time limit for each search in seconds")
+    parser.add_argument("--global-timeout", type=int, default=14400, help="Global timeout for the entire process in seconds")
+    parser.add_argument("--update", action="store_true", help="Update the contents file with new resources")
+    parser.add_argument("--gen-awesome-list", action="store_true", help="Generate an awesome list from the contents")
+    parser.add_argument("--verify", action="store_true", help="Verify an existing awesome list")
+    parser.add_argument("--awesome-file", default="awesome-video.md", help="Path to the awesome list file")
+    parser.add_argument("--randomize", action="store_true", help="Randomize the order of searches")
+    parser.add_argument("--random-seed", type=int, help="Seed for randomization")
+    parser.add_argument("--debug", action="store_true", help="Enable debug logging")
+    parser.add_argument("--output-dir", default=None, help="Directory to store output files")
+    parser.add_argument("--save-summary", action="store_true", help="Generate and save a research summary")
+    args = parser.parse_args()
+
     start_time = time.time()
 
-    # Parse arguments
-    DEFAULT_CONTENTS_URL = "https://hack-ski.s3.us-east-1.amazonaws.com/av/recategorized_projects_anthropic_claude_3_5_haiku_20241022_1743170712_1181.json"
-    parser = argparse.ArgumentParser(description="Awesome Video Researcher using OpenAI Agents SDK")
-    parser.add_argument("--contents-file", dest="contents_file", default=DEFAULT_CONTENTS_URL,
-                      help=f"Path to the contents.json file or URL to a remote JSON file (default: {DEFAULT_CONTENTS_URL})")
-    parser.add_argument("--update", action="store_true", help="Update contents with new findings")
-    parser.add_argument("--output", help="Path to save the output (if different from input)")
-    parser.add_argument("--debug", action="store_true", help="Enable debug logging")
-    parser.add_argument("--log-file", default="research.log", help="Path to the log file")
-    parser.add_argument("--min-results", type=int, default=10, help="Minimum number of results to find")
-    parser.add_argument("--time-limit", type=int, default=300, help="Maximum time in seconds to spend searching per category")
-    parser.add_argument("--global-timeout", type=int, default=14400, help="Maximum time in seconds for the entire script (default: 4 hours)")
-    parser.add_argument("--randomize", action="store_true", help="Randomize the order of categories to research")
-    parser.add_argument("--random-seed", type=int, help="Random seed for reproducible randomization")
-    parser.add_argument("--skip-checks", action="store_true", help="Skip system checks")
-    parser.add_argument("--gen-awesome-list", action="store_true", help="Generate an Awesome List markdown file following specifications")
-    parser.add_argument("--awesome-list-output", default="awesome-video.md", help="Path to save the generated Awesome List (default: awesome-video.md)")
-    args = parser.parse_args()
+    # Create a timestamped directory for outputs if not specified
+    if args.output_dir is None:
+        timestamp = datetime.datetime.now().strftime("%Y%m%d")
+        args.output_dir = f"research_results_{timestamp}"
+
+    # Create the output directory if it doesn't exist
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir, exist_ok=True)
+        print(f"\n📁 Created output directory: {args.output_dir}")
 
     # Setup logging
     log_level = logging.DEBUG if args.debug else logging.INFO
-    logger = setup_logging(log_level=log_level, log_file=args.log_file)
+    log_file = os.path.join(args.output_dir, "research.log")
+    logger = setup_logging(log_level=log_level, log_file=log_file)
 
     try:
         # Print banner
         print("\n" + "="*70)
-        print("🎬 AWESOME VIDEO RESEARCHER")
+        print("🎬 AWESOME VIDEO STREAMING & ENCODING RESEARCHER")
         print("="*70)
 
         # Log environment info
-        logger.info(f"Starting Awesome Video Researcher script using OpenAI Agents SDK")
+        logger.info(f"Starting Awesome Video Streaming & Encoding Researcher script using OpenAI Agents SDK")
         logger.info(f"Python version: {sys.version}")
         logger.info(f"OS: {os.name}")
         print(f"\n🚀 STARTING RESEARCH PROCESS")
-        print(f"  • Log file: {args.log_file}")
-        print(f"  • Contents source: {args.contents_file}")
-        print(f"  • Minimum results: {args.min_results}")
+        print(f"  • Log file: {log_file}")
+        print(f"  • Output directory: {args.output_dir}")
+        print(f"  • Target new resources: {args.min_results}")
         print(f"  • Time limit per category: {args.time_limit} seconds")
-        print(f"  • Global timeout: {args.global_timeout} seconds ({args.global_timeout/3600:.2f} hours)")
+        print(f"  • Global timeout: {args.global_timeout} seconds ({args.global_timeout/3600:.1f} hours)")
         if args.randomize:
             print(f"  • Category order: RANDOMIZED")
             if args.random_seed:
                 print(f"  • Random seed: {args.random_seed}")
 
         # Check for OpenAI API key
-        if not os.environ.get("OPENAI_API_KEY"):
+        if "OPENAI_API_KEY" not in os.environ:
             logger.error("OPENAI_API_KEY environment variable is not set")
             print("\n❌ ERROR: OPENAI_API_KEY environment variable is not set")
-            print("Please set it using: export OPENAI_API_KEY=your_api_key_here")
+            print("Please set it with: export OPENAI_API_KEY=your_api_key_here")
             return 1
 
         # Run system checks
-        if not args.skip_checks:
-            logger.info("Running system checks")
-            print("\n🔍 RUNNING SYSTEM CHECKS...")
-            try:
-                checks_passed = await run_system_checks()
-                if not checks_passed:
-                    logger.error("System checks failed, cannot proceed")
-                    print("\n❌ ERROR: System checks failed, cannot proceed without functional API")
-                    return 1
-                print("✅ System checks passed")
-            except Exception as e:
-                logger.error(f"Error during system checks: {e}")
-                print(f"\n❌ ERROR during system checks: {e}")
-                return 1
-        else:
-            logger.info("System checks skipped")
-            print("⚠️ System checks skipped")
+        system_check_passed = await run_system_checks()
+        if not system_check_passed:
+            logger.warning("System checks failed, proceeding with caution")
+            print("\n⚠️ System checks failed, proceeding with caution")
 
-        # Load contents
-        logger.info(f"Loading contents from {args.contents_file}")
+        # Load contents data
         try:
-            contents_data = await load_contents(args.contents_file)
+            contents_data = await load_contents(args.contents)
+            logger.info(f"Successfully loaded contents data from {args.contents}")
+            print(f"\n✅ Successfully loaded contents data from {args.contents}")
         except Exception as e:
-            logger.error(f"Error loading contents: {e}")
-            print(f"\n❌ ERROR loading contents: {e}")
+            logger.error(f"Error loading contents data: {e}")
+            print(f"\n❌ ERROR: Could not load contents data: {e}")
             return 1
 
-        # Get categories and existing data
-        categories = contents_data.get("categories", [])
-        if not categories:
-            logger.error("No categories found in contents file")
-            print(f"\n❌ ERROR: No categories found in contents file")
-            return 1
+        # Prepare for research
+        manager = ResearchManager()
 
-        logger.info(f"Found {len(categories)} categories")
-        print(f"\n📊 FOUND {len(categories)} CATEGORIES:")
-        for i, category in enumerate(categories[:10], 1):
-            item_count = len(contents_data.get(category, []))
-            cat_title = contents_data.get("_categories_data", {}).get(category, {}).get("title", category)
-            print(f"  {i}. {cat_title} ({category}): {item_count} items")
-        if len(categories) > 10:
-            print(f"  ... and {len(categories) - 10} more categories")
+        # Execute research
+        print(f"\n🔍 BEGINNING RESEARCH: Finding at least {args.min_results} new resources...")
+        logger.info(f"Starting research with minimum {args.min_results} results, time limit {args.time_limit}s per category")
 
-        # Initialize research manager
-        research_manager = ResearchManager()
-
-        # Run the research process
-        result_code, all_new_resources, all_project_ideas = await research_manager.run(
+        # Execute research process
+        start_research_time = time.time()
+        code, new_resources, project_ideas = await manager.run(
             contents_data,
             min_results=args.min_results,
             time_limit=args.time_limit,
@@ -1869,118 +1963,106 @@ async def main():
             randomize=args.randomize,
             random_seed=args.random_seed
         )
+        research_time = time.time() - start_research_time
 
-        if result_code != 0:
-            logger.error("Research process failed")
-            print("\n❌ ERROR: Research process failed")
-            return 1
+        # Save intermediate results
+        await save_intermediate_results(new_resources, project_ideas, final=True, output_dir=args.output_dir)
 
-        # Check if we had to stop due to timeout
-        total_time = time.time() - start_time
-        if total_time >= args.global_timeout:
-            logger.warning(f"Script stopped due to global timeout of {args.global_timeout} seconds")
-            print(f"\n⏱️ SCRIPT REACHED GLOBAL TIMEOUT LIMIT OF {args.global_timeout} SECONDS")
+        # Update contents file if requested
+        if args.update and new_resources:
+            logger.info(f"Updating contents with {len(new_resources)} new resources")
+            print(f"\n📝 UPDATING CONTENTS WITH {len(new_resources)} NEW RESOURCES...")
 
-        if not all_new_resources:
-            logger.warning("No resources found across all categories")
-            print("\n⚠️ WARNING: No resources were found in any category")
-            print("  This indicates there may be issues with the web search functionality")
-            print("  Or your API key may not have web search capabilities")
+            # Generate combined contents file
+            combined_file, resources_by_category, initial_counts, total_projects = await generate_combined_contents(
+                args.contents, new_resources, output_dir=args.output_dir
+            )
 
-        # Save final results even if empty
-        final_results_file = await save_intermediate_results(all_new_resources, all_project_ideas, final=True)
-        logger.info(f"Saved final results to {final_results_file}")
+            # Updated contents file
+            if combined_file:
+                logger.info(f"Contents update saved to {combined_file}")
+                print(f"✅ CONTENTS UPDATE SAVED: {combined_file}")
+            else:
+                logger.error("Failed to update contents file")
+                print("❌ Failed to update contents file")
 
-        # Update original contents if requested and if we found resources
-        output_file = args.output if args.output else args.contents_file
-        if args.update and all_new_resources:
-            logger.info(f"Updating contents with new findings")
-            print(f"\n🔄 UPDATING CONTENTS FILE WITH NEW FINDINGS")
-            try:
-                update_success = await update_contents(output_file, all_new_resources, all_project_ideas)
-                if update_success:
-                    logger.info(f"Successfully updated contents at {output_file}")
-                    print(f"✅ Successfully updated contents at {output_file}")
-                else:
-                    logger.error(f"Failed to update contents")
-                    print(f"❌ Failed to update contents")
-            except Exception as e:
-                logger.error(f"Error updating contents: {e}")
-                print(f"❌ Error updating contents: {e}")
+        # Generate awesome list if requested
+        if args.gen_awesome_list and (new_resources or args.update):
+            logger.info("Generating Awesome List")
+            print(f"\n📄 GENERATING AWESOME LIST...")
 
-        # Generate Awesome List if requested
-        if args.gen_awesome_list:
-            logger.info(f"Generating Awesome List from contents data")
-            print(f"\n📝 GENERATING AWESOME LIST")
-            try:
-                # Get the latest contents data including any updates
-                if args.update and all_new_resources:
-                    # Try to reload the updated contents if we just updated them
-                    try:
-                        updated_contents_data = await load_contents(output_file)
-                        contents_data = updated_contents_data
-                    except Exception as reload_error:
-                        logger.warning(f"Could not reload updated contents, using original data: {reload_error}")
+            # Determine input for awesome list - use combined file if available
+            awesome_input = combined_file if args.update and combined_file else args.contents
 
-                # Generate the awesome list
-                awesome_list_path = args.awesome_list_output
-                gen_success = await generate_awesome_list(contents_data, all_new_resources, awesome_list_path)
-
-                if gen_success:
-                    logger.info(f"Successfully generated Awesome List at {awesome_list_path}")
-
-                    # Verify the generated file
-                    valid, errors = await verify_awesome_list(awesome_list_path)
-
-                    if valid:
-                        logger.info(f"Awesome List verification passed")
-                        print(f"\n✅ AWESOME LIST READY: {awesome_list_path}")
-
-                        # Check if awesome-lint is installed
-                        try:
-                            import subprocess
-                            result = subprocess.run(["which", "npx"], capture_output=True, text=True)
-
-                            if result.returncode == 0:
-                                print(f"  To perform an official lint check, run: npx awesome-lint {awesome_list_path}")
-                            else:
-                                print(f"  To perform an official lint check, install Node.js and run:")
-                                print(f"    npm install -g npx")
-                                print(f"    npx awesome-lint {awesome_list_path}")
-                        except Exception as check_err:
-                            logger.warning(f"Could not check for npx/awesome-lint: {check_err}")
-                            print(f"  To perform an official lint check, ensure Node.js is installed and run:")
-                            print(f"    npx awesome-lint {awesome_list_path}")
+            if awesome_input:
+                try:
+                    # Load the most recent contents for the awesome list
+                    if awesome_input != args.contents:
+                        awesome_data = await load_contents(awesome_input)
                     else:
-                        logger.warning(f"Awesome List verification found issues: {errors}")
-                        print(f"\n⚠️ AWESOME LIST GENERATED WITH POTENTIAL ISSUES: {awesome_list_path}")
-                        print(f"  Please review the issues before submitting to awesome list collection")
-                else:
-                    logger.error(f"Failed to generate Awesome List")
-                    print(f"❌ Failed to generate Awesome List")
-            except Exception as e:
-                logger.error(f"Error generating Awesome List: {e}")
-                print(f"❌ Error generating Awesome List: {e}")
+                        awesome_data = contents_data
 
-        # Log statistics
-        elapsed_time = time.time() - start_time
-        logger.info(f"Research completed in {elapsed_time:.2f} seconds")
-        logger.info(f"Found {len(all_new_resources)} new resources and generated {len(all_project_ideas)} project ideas")
+                    # Generate the awesome list
+                    awesome_file = await generate_awesome_list(
+                        awesome_data, new_resources,
+                        output_file=args.awesome_file, output_dir=args.output_dir
+                    )
 
-        print("\n" + "="*70)
-        print("🎉 RESEARCH COMPLETED!")
-        print("="*70)
-        print(f"⏱️  Time taken: {elapsed_time:.2f} seconds ({elapsed_time/3600:.2f} hours)")
-        print(f"🔍 Found {len(all_new_resources)} new resources")
-        print(f"💡 Generated {len(all_project_ideas)} project ideas")
-        print(f"📁 Results saved to: {final_results_file}")
+                    if awesome_file:
+                        logger.info(f"Awesome List generated: {awesome_file}")
+                        print(f"✅ AWESOME LIST GENERATED: {awesome_file}")
 
-        # Add Awesome List statistics if generated
-        if args.gen_awesome_list:
-            print(f"📄 Awesome List saved to: {args.awesome_list_output}")
-            print(f"   Run 'npx awesome-lint {args.awesome_list_output}' to verify compliance")
+                        # Verify awesome list format
+                        if args.verify:
+                            valid, errors = await verify_awesome_list(awesome_file)
+                            if valid:
+                                logger.info("Awesome List verification passed")
+                            else:
+                                logger.warning(f"Awesome List verification found {len(errors)} issues")
+                except Exception as e:
+                    logger.error(f"Error generating Awesome List: {e}")
+                    print(f"❌ ERROR: Could not generate Awesome List: {e}")
 
-        print("="*70 + "\n")
+        # Generate research summary if requested
+        if args.save_summary:
+            logger.info("Generating research summary")
+            print(f"\n📊 GENERATING RESEARCH SUMMARY...")
+
+            combined_file_path = None
+            if 'combined_file' in locals() and combined_file:
+                combined_file_path = combined_file
+
+            resources_by_cat = None
+            if 'resources_by_category' in locals() and resources_by_category:
+                resources_by_cat = resources_by_category
+
+            init_counts = None
+            if 'initial_counts' in locals() and initial_counts:
+                init_counts = initial_counts
+
+            total_projs = None
+            if 'total_projects' in locals() and total_projects:
+                total_projs = total_projects
+
+            # Generate the summary
+            summary = await generate_research_summary(
+                contents_data, new_resources, project_ideas, research_time,
+                combined_file=combined_file_path,
+                new_resources_by_category=resources_by_cat,
+                initial_counts=init_counts,
+                total_projects=total_projs
+            )
+
+            # Save the summary to a file
+            summary_file = os.path.join(args.output_dir, f"research_summary_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt")
+            with open(summary_file, 'w') as f:
+                f.write(summary)
+
+            logger.info(f"Research summary saved to {summary_file}")
+            print(f"✅ RESEARCH SUMMARY SAVED: {summary_file}")
+
+            # Print summary to console
+            print("\n" + summary)
 
         return 0
     except Exception as e:
@@ -1998,5 +2080,162 @@ async def main():
         print(f"\n⏱️ TOTAL EXECUTION TIME: {elapsed_time:.2f} seconds ({elapsed_time/3600:.2f} hours)")
 
 
+async def generate_research_summary(original_contents_data, new_resources, project_ideas, research_time, combined_file=None, new_resources_by_category=None, initial_counts=None, total_projects=None):
+    """Generate a detailed summary report of the research process and findings.
+
+    The summary includes:
+    - Overall statistics (time taken, resources found, etc.)
+    - Breakdown by category of what new resources were added
+    - Analysis of which categories saw the most growth
+    - Overview of new project ideas
+
+    Returns a string containing the summary.
+    """
+    logging.info("Generating detailed research summary")
+    print("\n📊 GENERATING DETAILED RESEARCH SUMMARY...")
+
+    # Format time
+    hours, remainder = divmod(research_time, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    time_str = f"{int(hours)}h {int(minutes)}m {int(seconds)}s"
+
+    # Get categories from original data
+    categories = original_contents_data.get("categories", [])
+    categories_data = original_contents_data.get("_categories_data", {})
+
+    # Count new resources by category
+    if not new_resources_by_category:
+        new_resources_by_category = {}
+        for resource in new_resources:
+            category = resource.get("category", "uncategorized")
+            if category not in new_resources_by_category:
+                new_resources_by_category[category] = 0
+            new_resources_by_category[category] += 1
+
+    # Get original counts if not provided
+    if not initial_counts:
+        initial_counts = {}
+        for category in categories:
+            initial_counts[category] = len(original_contents_data.get(category, []))
+
+    # Calculate growth percentages
+    growth_percentages = {}
+    for category in categories:
+        if category in new_resources_by_category and category in initial_counts:
+            original = initial_counts[category]
+            new = new_resources_by_category[category]
+            if original > 0:
+                growth_percentages[category] = (new / original) * 100
+            else:
+                growth_percentages[category] = float('inf')  # Infinite growth from zero
+        else:
+            growth_percentages[category] = 0
+
+    # Sort categories by growth and addition count
+    sorted_by_growth = sorted(growth_percentages.items(), key=lambda x: x[1], reverse=True)
+    sorted_by_additions = sorted(new_resources_by_category.items(), key=lambda x: x[1], reverse=True)
+
+    # Start building summary text
+    summary_lines = []
+
+    # Header
+    summary_lines.append("=" * 80)
+    summary_lines.append("📊 DETAILED RESEARCH SUMMARY")
+    summary_lines.append("=" * 80)
+    summary_lines.append("")
+
+    # Overall statistics
+    summary_lines.append("📈 OVERALL STATISTICS")
+    summary_lines.append("-" * 40)
+    summary_lines.append(f"🕒 Total research time: {time_str}")
+    summary_lines.append(f"🔍 Total new resources found: {len(new_resources)}")
+    summary_lines.append(f"💡 Total new project ideas generated: {len(project_ideas)}")
+    if combined_file:
+        summary_lines.append(f"📁 Combined contents file: {combined_file}")
+        if total_projects:
+            summary_lines.append(f"📊 Total projects in combined file: {total_projects}")
+    summary_lines.append("")
+
+    # Breakdown by category
+    summary_lines.append("📋 NEW RESOURCES BY CATEGORY")
+    summary_lines.append("-" * 40)
+
+    # Show top categories with most new resources
+    if sorted_by_additions:
+        summary_lines.append("Top categories with most new resources:")
+        for i, (category, count) in enumerate(sorted_by_additions[:10], 1):
+            cat_title = categories_data.get(category, {}).get("title", category)
+            original = initial_counts.get(category, 0)
+            growth = growth_percentages.get(category, 0)
+            if growth == float('inf'):
+                growth_str = "∞"
+            else:
+                growth_str = f"{growth:.1f}%"
+            summary_lines.append(f"  {i}. {cat_title} ({category}): +{count} resources (from {original} to {original+count}, {growth_str} growth)")
+
+    summary_lines.append("")
+    summary_lines.append("Categories with highest growth percentage:")
+    for i, (category, growth) in enumerate(sorted_by_growth[:10], 1):
+        if growth > 0:
+            cat_title = categories_data.get(category, {}).get("title", category)
+            original = initial_counts.get(category, 0)
+            new = new_resources_by_category.get(category, 0)
+            if growth == float('inf'):
+                growth_str = "∞"
+            else:
+                growth_str = f"{growth:.1f}%"
+            summary_lines.append(f"  {i}. {cat_title} ({category}): {growth_str} growth (from {original} to {original+new})")
+
+    summary_lines.append("")
+
+    # Project idea overview
+    if project_ideas:
+        summary_lines.append("💡 PROJECT IDEAS OVERVIEW")
+        summary_lines.append("-" * 40)
+
+        # Count ideas by category
+        ideas_by_category = {}
+        for idea in project_ideas:
+            category = idea.get("category", "uncategorized")
+            if category not in ideas_by_category:
+                ideas_by_category[category] = []
+            ideas_by_category[category].append(idea)
+
+        # Sort categories by number of ideas
+        sorted_idea_categories = sorted(ideas_by_category.items(), key=lambda x: len(x[1]), reverse=True)
+
+        # Show top categories with most ideas
+        for i, (category, ideas) in enumerate(sorted_idea_categories[:5], 1):
+            cat_title = categories_data.get(category, {}).get("title", category)
+            summary_lines.append(f"{i}. {cat_title} ({category}): {len(ideas)} new project ideas")
+
+            # List the top 3 ideas for this category
+            for j, idea in enumerate(ideas[:3], 1):
+                title = idea.get("title", "Untitled Idea")
+                summary_lines.append(f"   {j}. {title}")
+
+            if len(ideas) > 3:
+                summary_lines.append(f"      ... and {len(ideas) - 3} more ideas")
+
+            summary_lines.append("")
+
+    # Conclusion
+    summary_lines.append("=" * 80)
+    summary_lines.append("🏁 RESEARCH SUMMARY COMPLETE")
+    summary_lines.append("=" * 80)
+
+    # Join all lines and return
+    summary = "\n".join(summary_lines)
+
+    # Log completion
+    logging.info("Research summary generated successfully")
+    print("✅ DETAILED RESEARCH SUMMARY GENERATED")
+
+    return summary
+
+
 if __name__ == "__main__":
     asyncio.run(main())
+
+
+# cd /Users/nick/Desktop/awesome-video && python3 av-researcher-agents.py --contents https://hack-ski.s3.us-east-1.amazonaws.com/av/recategorized_projects_anthropic_claude_3_5_haiku_20241022_1743170712_1181.json --min-results 1000 --global-timeout 18000 --time-limit 300 --randomize --gen-awesome-list --update --debug --output-dir "research_results_$(date +%Y%m%d)" --save-summary
