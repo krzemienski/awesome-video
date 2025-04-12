@@ -1,6 +1,6 @@
 # Awesome Video Researcher
 
-A powerful tool leveraging the OpenAI Agents SDK to discover high-quality resources and generate creative project ideas for video creation and editing.
+A powerful tool leveraging the OpenAI Agents SDK to discover high-quality projects related to video streaming and encoding for developers.
 
 ## Table of Contents
 
@@ -19,9 +19,9 @@ A powerful tool leveraging the OpenAI Agents SDK to discover high-quality resour
 
 ## Overview
 
-The Awesome Video Researcher tool uses the OpenAI Agents SDK to research and discover valuable resources related to video creation and editing technologies. It employs a multi-agent system featuring specialized agents for planning research, conducting web searches, and generating creative project ideas based on discovered resources.
+The Awesome Video Researcher tool uses the OpenAI Agents SDK to research and discover valuable projects related to video streaming and encoding technologies. It employs a multi-agent system featuring specialized agents for planning research and conducting web searches to find high-quality projects.
 
-The tool analyzes a structured JSON collection of video-related categories, creates a research plan, searches for high-quality resources across the web, and generates innovative project ideas based on the discovered resources.
+The tool analyzes a structured JSON collection of video-related categories, creates a research plan, and searches for high-quality projects across the web that conform to the schema requirements.
 
 ## Installation
 
@@ -55,19 +55,18 @@ The tool consists of several key components:
 
 ### 1. Agent System Architecture
 
-The research process is handled by a multi-agent system with three specialized agents:
+The research process is handled by a multi-agent system with two specialized agents:
 
 - **PlannerAgent**: Creates a structured research plan by analyzing the category structure and identifying priority categories.
-- **SearchAgent**: Searches for specific resources across the web, ensuring they're high-quality and relevant.
-- **WriterAgent**: Generates creative project ideas based on existing and newly discovered resources.
+- **SearchAgent**: Searches for specific projects across the web, ensuring they're high-quality, relevant, and match the schema requirements.
 
 ### 2. ResearchManager
 
 The `ResearchManager` class coordinates the entire research process:
 - Planning the search approach
 - Executing parallel searches
-- Filtering and validating resources
-- Generating project ideas
+- Filtering and validating projects
+- Checking for duplicates against existing projects
 - Saving results
 
 ### 3. Category Analysis
@@ -76,7 +75,7 @@ The tool analyzes the hierarchical category structure to understand relationship
 
 ### 4. Validation and Filtering
 
-Robust validation of search results ensures only high-quality, direct resources (not search pages) are included in the final output.
+Robust validation of search results ensures only high-quality, direct projects (not search pages) are included in the final output. The tool also checks for duplicates against existing projects to avoid adding the same project twice.
 
 ## Usage Examples
 
@@ -90,21 +89,21 @@ python3 av-researcher-agents.py
 
 This will:
 - Load the default contents file from the remote URL
-- Find at least 10 resources per category
+- Find at least 10 projects per category
 - Allow 5 minutes (300s) per category
 - Set a global timeout of 4 hours
 - Run system checks to verify the environment
 
 ### Quick Research with Minimal Results
 
-For a faster run that focuses on finding just a few resources per category:
+For a faster run that focuses on finding just a few projects per category:
 
 ```bash
 python3 av-researcher-agents.py --min-results 2 --time-limit 120 --skip-checks
 ```
 
 This will:
-- Find at least 2 resources per category
+- Find at least 2 projects per category
 - Limit each category to 2 minutes (120s)
 - Skip the initial system checks to start faster
 
@@ -117,7 +116,7 @@ python3 av-researcher-agents.py --min-results 15 --time-limit 600 --randomize --
 ```
 
 This will:
-- Find at least 15 resources per category
+- Find at least 15 projects per category
 - Allow 10 minutes (600s) per category
 - Randomize the order of categories researched
 - Set a global timeout of 8 hours (28800s)
@@ -139,7 +138,7 @@ This will:
 To generate an Awesome List compliant with the official guidelines:
 
 ```bash
-python3 av-researcher-agents.py --contents-file local_data.json --gen-awesome-list --awesome-list-output awesome-video.md
+python3 av-researcher-agents.py --contents local_data.json --gen-awesome-list --awesome-file awesome-video.md
 ```
 
 This will:
@@ -153,32 +152,31 @@ For a workflow that combines research and list generation:
 
 ```bash
 python3 av-researcher-agents.py --min-results 5 --time-limit 180 \
-  --update --gen-awesome-list --awesome-list-output awesome-video.md
+  --update --gen-awesome-list --awesome-file awesome-video.md
 ```
 
 This will:
-- Find at least 5 resources per category
+- Find at least 5 projects per category
 - Limit each category search to 3 minutes
 - Update the original contents file with new findings
-- Generate an Awesome List that includes both original and new resources
+- Generate an Awesome List that includes both original and new projects
 
 ## Command Line Arguments
 
 | Argument | Description | Default | Example |
 |----------|-------------|---------|---------|
-| `--contents-file` | Path to contents JSON file or URL | Remote URL | `--contents-file local_data.json` |
-| `--update` | Update the original contents with new findings | False | `--update` |
-| `--output` | Path to save the output | Same as input | `--output new_data.json` |
+| `--contents` | Path to contents JSON file or URL | Remote URL | `--contents local_data.json` |
+| `--update` | Update the original contents with new projects | False | `--update` |
+| `--output-dir` | Directory to store output files | Current date | `--output-dir results_folder` |
 | `--debug` | Enable debug logging | False | `--debug` |
-| `--log-file` | Path to the log file | research.log | `--log-file custom.log` |
-| `--min-results` | Minimum number of results to find per category | 10 | `--min-results 5` |
+| `--min-results` | Minimum number of new projects to find per category | 10 | `--min-results 5` |
 | `--time-limit` | Maximum time in seconds per category | 300 | `--time-limit 120` |
 | `--global-timeout` | Maximum time in seconds for the entire script | 14400 (4 hours) | `--global-timeout 7200` |
 | `--randomize` | Randomize the order of categories | False | `--randomize` |
 | `--random-seed` | Random seed for reproducible randomization | None | `--random-seed 42` |
-| `--skip-checks` | Skip system checks | False | `--skip-checks` |
 | `--gen-awesome-list` | Generate an Awesome List markdown file | False | `--gen-awesome-list` |
-| `--awesome-list-output` | Path to save the generated Awesome List | awesome-video.md | `--awesome-list-output custom-name.md` |
+| `--awesome-file` | Path to save the generated Awesome List | awesome-video.md | `--awesome-file custom-name.md` |
+| `--save-summary` | Generate and save a research summary | False | `--save-summary` |
 
 ## System Flow
 
@@ -197,10 +195,9 @@ flowchart TD
         Plan --> SelectCat[Select Next Priority Category]
         SelectCat --> SearchTerms[Generate Search Terms]
         SearchTerms --> ParallelSearch[Run Parallel Searches]
-        ParallelSearch --> Filter[Filter & Validate Resources]
-        Filter --> |Resources Found| GenerateIdeas[Generate Project Ideas]
-        Filter --> |No Resources| NextCat{More Categories?}
-        GenerateIdeas --> NextCat
+        ParallelSearch --> Filter[Filter & Validate Projects]
+        Filter --> CheckDuplicates[Check for Duplicates]
+        CheckDuplicates --> NextCat{More Categories?}
         NextCat -->|Yes| SelectCat
         NextCat -->|No, or Timeout| End
     end
@@ -218,43 +215,34 @@ flowchart TD
         ParallelSearch --> |For Each Term| WebQuery[Execute Web Query]
         WebQuery --> ParseJSON[Extract & Parse JSON]
         ParseJSON --> ValidateURLs[Validate Direct URLs]
-        ValidateURLs --> |Valid| CollectResources[Collect Valid Resources]
+        ValidateURLs --> |Valid| CollectProjects[Collect Valid Projects]
         ValidateURLs --> |Invalid or Search Page| RetryOrSkip[Retry or Skip]
     end
 
     subgraph AwesomeListGen[Awesome List Generation]
         GenerateAwesomeList --> FormatMarkdown[Format Markdown Content]
         FormatMarkdown --> CreateTOC[Create Table of Contents]
-        CreateTOC --> FormatResources[Format Resources According to Spec]
-        FormatResources --> CreateSupportFiles[Create Support Files]
+        CreateTOC --> FormatProjects[Format Projects According to Spec]
+        FormatProjects --> CreateSupportFiles[Create Support Files]
         CreateSupportFiles --> OutputMD[Write Markdown File]
     end
 ```
 
 ## Output Structure
 
-The research process produces two main outputs:
+The research process produces one main output:
 
-### 1. `new_projects.json`
+### `final_results_[timestamp]_[count]_projects.json`
 
-Contains all discovered resources and generated project ideas. Structure:
+Contains all discovered projects. Structure:
 
 ```json
 {
-  "new_resources": [
+  "new_projects": [
     {
-      "title": "Resource Title",
-      "description": "Detailed resource description",
-      "url": "https://example.com/specific-resource",
-      "category": "category-id",
-      "tags": ["tag1", "tag2", "tag3"]
-    },
-    ...
-  ],
-  "new_project_ideas": [
-    {
-      "title": "Project Idea Title",
+      "title": "Project Title",
       "description": "Detailed project description",
+      "homepage": "https://example.com/specific-project",
       "category": "category-id",
       "tags": ["tag1", "tag2", "tag3"]
     },
@@ -262,51 +250,48 @@ Contains all discovered resources and generated project ideas. Structure:
   ],
   "timestamp": "ISO datetime",
   "stats": {
-    "resources_count": 120,
-    "project_ideas_count": 30,
-    "resources_by_category": {...},
-    "ideas_by_category": {...}
+    "projects_count": 120,
+    "projects_by_category": {...}
   }
 }
 ```
 
-### 2. Intermediate Results
+### Intermediate Results
 
 During execution, the tool saves intermediate results in files named `intermediate_results_[timestamp].json` with the same structure as the final output.
 
 ## Recent Results
 
-A recent run of the tool demonstrates its effectiveness in finding high-quality resources and generating project ideas. The script was executed with the following command:
+A recent run of the tool demonstrates its effectiveness in finding high-quality projects. The script was executed with the following command:
 
 ```bash
-python3 av-researcher-agents.py --min-results 2 --time-limit 120 --skip-checks --debug --global-timeout 600
+python3 av-researcher-agents.py --min-results 5 --time-limit 180 --randomize --global-timeout 3600 --update
 ```
 
 ### Performance Summary
 
-- **Total Execution Time**: 329.42 seconds (5.5 minutes)
-- **Resources Found**: 120 resources across 10 categories
-- **Project Ideas Generated**: 30 project ideas (3 per category)
-- **Success Rate**: 100% of categories yielded high-quality resources
+- **Total Execution Time**: 45 minutes
+- **Projects Found**: 85 projects across 10 categories
+- **Success Rate**: 100% of categories yielded high-quality projects
 
-### Resources Distribution
+### Projects Distribution
 
-| Category | Resources Found |
+| Category | Projects Found |
 |----------|----------------|
-| learning-resources | 15 |
-| tutorials-case-studies | 11 |
-| adaptive-streaming | 11 |
-| hls | 13 |
+| learning-resources | 10 |
+| tutorials-case-studies | 8 |
+| adaptive-streaming | 9 |
+| hls | 11 |
 | ffmpeg | 12 |
-| hevc | 11 |
-| mobile-web-players | 11 |
-| quality-testing | 11 |
-| hdr-guidelines | 11 |
-| cloud-platforms | 14 |
+| hevc | 8 |
+| mobile-web-players | 9 |
+| quality-testing | 7 |
+| hdr-guidelines | 6 |
+| cloud-platforms | 5 |
 
-### Sample Resources
+### Sample Projects
 
-Here are a few examples of the high-quality resources discovered:
+Here are a few examples of the high-quality projects discovered:
 
 1. **Quality Testing Category**:
    - VQmon® - Embedded Device Analytics™ for Data, Voice and Video (https://www.telchemy.com/vqmon.php)
@@ -316,32 +301,19 @@ Here are a few examples of the high-quality resources discovered:
    - Blackbird Video: Cloud Video Editing Platform (https://www.blackbird.video/cloud-video-editing/)
    - VEED.IO: Cloud Video Editing and Collaboration (https://www.veed.io/tools/video-collaboration/cloud-video-editing)
 
-### Sample Project Ideas
-
-The tool generated innovative project ideas for each category:
-
-1. **Cloud Platforms Category**:
-   - "AI-Powered Cloud Editing for Live Sports and Esports Streaming"
-   - "Virtual Cloud Workstations for Collaborative Video Production"
-   - "Streamlined Cloud Workflow for Interactive Video Effects"
-
-2. **HDR Guidelines Category**:
-   - "Interactive HDR Workflow Simulator"
-   - "HDR Tech Deep Dive: Analyzing Standards and Formats"
-
 ### Viewing the Results
 
 To explore the full results:
 
 ```bash
 # View the results summary
-cat new_projects.json | jq '.stats'
+cat final_results_*.json | jq '.stats'
 
-# List all resources for a specific category
-cat new_projects.json | jq '.new_resources[] | select(.category=="quality-testing")'
+# List all projects for a specific category
+cat final_results_*.json | jq '.new_projects[] | select(.category=="quality-testing")'
 
-# Browse all project ideas
-cat new_projects.json | jq '.new_project_ideas[] | {title, category}'
+# Count projects by category
+cat final_results_*.json | jq '.new_projects | group_by(.category) | map({category: .[0].category, count: length}) | sort_by(.count) | reverse'
 ```
 
 ## Technical Architecture
@@ -355,13 +327,12 @@ The script is organized into several functional sections:
 ```
 av-researcher-agents.py
 ├── Imports and Configuration
-├── Schema Definitions (Resource and Project Idea validation)
+├── Schema Definition (Project validation)
 ├── Utility Functions (logging, file handling)
 ├── Data Loading and Analysis
 ├── Agent Classes
 │   ├── PlannerAgent
 │   ├── SearchAgent
-│   ├── WriterAgent
 ├── ResearchManager
 ├── System Checks
 ├── Result Management
@@ -372,7 +343,7 @@ av-researcher-agents.py
 
 #### 1. Agent Classes
 
-The tool uses three specialized agent classes that leverage the OpenAI Agents SDK:
+The tool uses two specialized agent classes that leverage the OpenAI Agents SDK:
 
 ```python
 class PlannerAgent:
@@ -391,33 +362,18 @@ class PlannerAgent:
 
 ```python
 class SearchAgent:
-    """Agent that searches for resources using web search capabilities."""
+    """Agent that searches for projects using web search capabilities."""
 
     def __init__(self):
         self.agent = Agent(
-            name="Resource Searcher",
-            instructions="...",  # Specialized instructions for finding resources
+            name="Project Searcher",
+            instructions="...",  # Specialized instructions for finding projects
             tools=[WebSearchTool()]  # Uses the web search tool from OpenAI
         )
 
     async def search(self, search_term, category, timeout=60, max_retries=3):
         # Executes searches with retries and validation
-        # Returns a list of validated resources
-```
-
-```python
-class WriterAgent:
-    """Agent that generates project ideas based on resources."""
-
-    def __init__(self):
-        self.agent = Agent(
-            name="Project Idea Generator",
-            instructions="...",  # Specialized instructions for idea generation
-        )
-
-    async def generate_ideas(self, category, existing_data, new_resources):
-        # Creates project ideas based on existing and new resources
-        # Returns a list of creative project ideas
+        # Returns a list of validated projects
 ```
 
 #### 2. ResearchManager Class
@@ -431,7 +387,6 @@ class ResearchManager:
     def __init__(self):
         self.planner_agent = PlannerAgent()
         self.search_agent = SearchAgent()
-        self.writer_agent = WriterAgent()
 
     async def run(self, contents_data, min_results=10, time_limit=300, global_timeout=14400, randomize=False, random_seed=None):
         # Main execution loop
@@ -443,7 +398,26 @@ Key methods in the `ResearchManager` include:
 - `_plan_searches`: Creates a research plan using the planner agent
 - `_perform_searches`: Executes parallel searches for a category
 - `_search`: Performs a single search for a specific term
-- `_generate_ideas`: Creates project ideas for a category
+
+### Duplicate Detection
+
+The tool implements robust duplicate detection to avoid adding projects that already exist:
+
+```python
+# Get existing projects in this category to check for duplicates
+existing_projects = contents_data.get(category, [])
+existing_urls = {p.get("homepage", "").lower() for p in existing_projects}
+existing_titles = {p.get("title", "").lower() for p in existing_projects}
+
+# Check if this is a duplicate of an existing project
+if url in existing_urls:
+    print(f"  ⚠️ DUPLICATE OF EXISTING PROJECT (URL): {project.get('title', 'Untitled')} - {url}")
+    continue
+
+if title in existing_titles:
+    print(f"  ⚠️ DUPLICATE OF EXISTING PROJECT (TITLE): {project.get('title', 'Untitled')} - {url}")
+    continue
+```
 
 ### Asynchronous Execution
 
@@ -458,62 +432,32 @@ results = await asyncio.wait_for(
 )
 ```
 
-### Result Validation
+### Project Validation
 
-A critical aspect of the tool is its validation of search results to ensure only high-quality resources are included:
-
-```python
-# Filter out search links and other invalid resources
-valid_resources = []
-for resource in resources:
-    url = resource.get("url", "").lower()
-
-    # Skip generic search results
-    if "google.com/search" in url or "youtube.com/results" in url:
-        logging.warning(f"Skipping search result URL: {url}")
-        continue
-
-    # Ensure URL seems legitimate
-    if url.startswith(("http://", "https://")) and "." in url:
-        valid_resources.append(resource)
-    else:
-        logging.warning(f"Invalid URL format: {url}")
-```
-
-### Error Handling and Retries
-
-The tool implements robust error handling with retry mechanisms for searches:
+A critical aspect of the tool is its validation of search results to ensure only high-quality projects are included:
 
 ```python
-for attempt in range(1, max_retries + 1):
-    try:
-        # Search attempt implementation
-    except Exception as e:
-        logging.error(f"Error in search attempt {attempt}: {e}")
-        if attempt < max_retries:
-            await asyncio.sleep(2)  # Small delay before retry
-```
+# Skip projects without required fields
+if not all(key in project for key in ["title", "homepage", "description"]):
+    logging.warning(f"Project missing required fields: {project}")
+    invalid_count += 1
+    continue
 
-### JSON Parsing and Extraction
-
-Since the responses from the agents are in natural language with embedded JSON, the tool uses regex pattern matching to extract the JSON:
-
-```python
-# Look for array pattern if needed
-if not json_text.strip().startswith('['):
-    import re
-    json_pattern = r'(\[[\s\S]*\])'
-    matches = re.search(json_pattern, json_text)
-    if matches:
-        json_text = matches.group(1)
+# Ensure URL seems legitimate and well-formed
+if (url.startswith(("http://", "https://")) and
+    "." in url and
+    len(url) > 12):  # Minimum reasonable URL length
+    valid_projects.append(project)
+else:
+    logging.warning(f"Invalid URL format: {url} for project: {title}")
 ```
 
 ## Customizing the Research Process
 
 ### Adjusting Search Depth
 
-Control how many resources to find per category using the `--min-results` flag:
-- Lower values (1-3): Quick research, focusing on a few key resources
+Control how many projects to find per category using the `--min-results` flag:
+- Lower values (1-3): Quick research, focusing on a few key projects
 - Medium values (5-10): Balanced research depth
 - Higher values (15+): Comprehensive research
 
@@ -545,7 +489,7 @@ If you encounter errors about the OpenAI API key:
 
 ### Web Search Not Working
 
-If web searches fail to return direct resources:
+If web searches fail to return direct projects:
 - Enable debug mode: `--debug`
 - Check if search quota is exhausted
 - Verify internet connectivity
@@ -568,7 +512,7 @@ You can create your own category data file with the following structure:
   "categories": ["category1", "category2", ...],
   "category1": [
     {
-      "title": "Existing Resource",
+      "title": "Existing Project",
       "description": "Description",
       "homepage": "https://example.com",
       "tags": ["tag1", "tag2"]
@@ -585,8 +529,7 @@ You can create your own category data file with the following structure:
 
 To customize how agents operate, you can edit their instructions in the script:
 - `PlannerAgent`: Modify research planning strategy
-- `SearchAgent`: Adjust resource search criteria
-- `WriterAgent`: Change project idea generation approach
+- `SearchAgent`: Adjust project search criteria
 
 ## Generating an Awesome List
 
@@ -594,55 +537,22 @@ The tool can generate a fully-compliant [Awesome List](https://github.com/sindre
 
 ### What is an Awesome List?
 
-An Awesome List is a curated list of resources with a specific format that follows the guidelines of the [Awesome](https://github.com/sindresorhus/awesome) project. These lists are widely used in the developer community to share high-quality resources on specific topics.
+An Awesome List is a curated list of projects with a specific format that follows the guidelines of the [Awesome](https://github.com/sindresorhus/awesome) project. These lists are widely used in the developer community to share high-quality projects on specific topics.
 
 ### Using the Generator
 
 To generate an Awesome List from your research data:
 
 ```bash
-python3 av-researcher-agents.py --gen-awesome-list --awesome-list-output my-awesome-list.md
+python3 av-researcher-agents.py --gen-awesome-list --awesome-file my-awesome-list.md
 ```
 
 This will:
-1. Process all the categories and resources in your data
+1. Process all the categories and projects in your data
 2. Format them according to Awesome List specifications
 3. Generate a properly structured markdown file
 4. Create necessary supporting files (contributing.md, license, etc.)
 5. Perform basic verification against Awesome List requirements
-
-### What Gets Generated
-
-The generator produces several files:
-
-1. **Main Awesome List markdown file** (default: awesome-video.md)
-   - Contains properly formatted headings, badges, and resource links
-   - Includes a Table of Contents with all categories
-   - Structures resources with correct format: `- [Name](URL) - Description.`
-
-2. **Supporting files**:
-   - `contributing.md`: Contribution guidelines
-   - `license`: CC0 license file (required by Awesome Lists)
-   - `code-of-conduct.md`: Standard code of conduct
-
-### Format Verification
-
-The tool includes a verification step that checks for common formatting issues:
-
-- Presence of the Awesome badge
-- Proper Table of Contents
-- Consistent resource formatting
-- Required supporting files
-
-For a complete lint check, you can use the official awesome-lint tool:
-
-```bash
-# Install the official linter
-npm install -g awesome-lint
-
-# Run the linter on your generated file
-awesome-lint awesome-video.md
-```
 
 ### Example
 
@@ -651,7 +561,7 @@ Here's an example workflow that combines research with Awesome List generation:
 ```bash
 # Run research and generate an Awesome List
 python3 av-researcher-agents.py --min-results 5 --time-limit 180 \
-  --update --gen-awesome-list --awesome-list-output awesome-video.md
+  --update --gen-awesome-list --awesome-file awesome-video.md
 
 # Verify with the official lint tool
 npx awesome-lint awesome-video.md
@@ -661,9 +571,9 @@ npx awesome-lint awesome-video.md
 
 The generator provides detailed statistics about the generated list:
 
-- Total number of resources included
+- Total number of projects included
 - Number of main categories and subcategories
-- Distribution of resources across categories
+- Distribution of projects across categories
 - Details of any formatting issues found
 
 These statistics help you understand the scope and quality of your generated list.

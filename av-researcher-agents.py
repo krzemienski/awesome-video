@@ -64,27 +64,16 @@ LOG_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 JSON_INDENT = 2
 
 # Schema definitions for validation
-RESOURCE_SCHEMA = {
+PROJECT_SCHEMA = {
     "type": "object",
     "properties": {
         "title": {"type": "string"},
+        "category": {"type": ["string", "array"], "items": {"type": "string"}},
         "description": {"type": "string"},
-        "url": {"type": "string", "format": "uri"},
-        "category": {"type": "string"},
+        "homepage": {"type": "string", "format": "uri"},
         "tags": {"type": "array", "items": {"type": "string"}}
     },
-    "required": ["title", "description", "url", "category"]
-}
-
-PROJECT_IDEA_SCHEMA = {
-    "type": "object",
-    "properties": {
-        "title": {"type": "string"},
-        "description": {"type": "string"},
-        "category": {"type": "string"},
-        "tags": {"type": "array", "items": {"type": "string"}}
-    },
-    "required": ["title", "description", "category"]
+    "required": ["title", "category", "homepage"]
 }
 
 
@@ -548,16 +537,16 @@ class PlannerAgent:
 
 
 class SearchAgent:
-    """Agent that searches for resources using web search capabilities."""
+    """Agent that searches for projects using web search capabilities."""
 
     def __init__(self):
         self.agent = Agent(
-            name="Resource Searcher",
+            name="Project Searcher",
             instructions="""
-            You are a Resource Searcher specializing in finding high-quality resources related to video streaming and encoding developer tools.
+            You are a Project Searcher specializing in finding high-quality projects and tools related to video streaming and encoding for developers.
 
-            Your task is to search for resources related to specific search terms and categorize them properly.
-            Your results MUST ONLY include SPECIFIC resources with DIRECT URLs to valuable content.
+            Your task is to search for projects related to specific search terms and categorize them properly.
+            Your results MUST ONLY include SPECIFIC projects with DIRECT URLs to valuable content.
 
             NEVER include:
             - Generic search result pages (like Google search links)
@@ -567,24 +556,25 @@ class SearchAgent:
             ONLY include:
             - GitHub repositories with specific tools or projects
             - Official documentation or websites for tools
-            - Specific tutorials or guides on reputable sites
-            - Conference videos, blog posts, or technical articles
-            - Software download pages for specific tools
+            - Specific software projects or libraries
+            - Open source toolkits and frameworks
+            - Streaming/encoding libraries
+            - Video processing tools
 
-            Each resource you find should include:
+            Each project you find should include:
             1. A clear, concise title
-            2. A detailed description explaining what the resource offers
-            3. The URL of the resource (must be a DIRECT link to the content, not a search page)
+            2. A detailed description explaining what the project offers
+            3. The homepage URL of the project (must be a DIRECT link to the content, not a search page)
             4. The category it belongs to
             5. Relevant tags (up to 5)
 
-            YOUR MOST IMPORTANT TASK IS TO FIND DIRECT URLs TO SPECIFIC RESOURCES, NOT SEARCH PAGES.
+            YOUR MOST IMPORTANT TASK IS TO FIND DIRECT URLs TO SPECIFIC PROJECTS, NOT SEARCH PAGES.
             """,
             tools=[WebSearchTool()]
         )
 
     async def search(self, search_term, category, timeout=60, max_retries=3):
-        """Search for resources related to the provided search term and category."""
+        """Search for projects related to the provided search term and category."""
         logging.info(f"Searching for: '{search_term}' in category '{category}'")
         print(f"\n🔍 SEARCHING: '{search_term}' in category '{category}'")
 
@@ -593,17 +583,16 @@ class SearchAgent:
                 print(f"  Attempt {attempt}/{max_retries}...")
 
                 prompt = f"""
-                Search for valuable resources related to '{search_term}' in the category '{category}'.
+                Search for valuable projects related to '{search_term}' in the category '{category}'.
 
-                Find 3-5 high-quality resources that would be valuable for people interested in video streaming and encoding developer tools.
-                The resources MUST be SPECIFIC with DIRECT URLs - not search results or generic listings.
+                Find 3-5 high-quality projects that would be valuable for people interested in video streaming and encoding developer tools.
+                The projects MUST be SPECIFIC with DIRECT URLs - not search results or generic listings.
 
                 GOOD examples:
                 - GitHub repositories (e.g., "https://github.com/username/project-name")
-                - Specific documentation (e.g., "https://ffmpeg.org/documentation.html")
-                - Technical blog posts (e.g., "https://netflixtechblog.com/...")
-                - Specific tutorial pages (e.g., "https://www.coursename.com/specific-tutorial")
-                - Software tool websites (e.g., "https://www.blackmagicdesign.com/products/davinciresolve")
+                - Specific software/tool homepages (e.g., "https://ffmpeg.org/")
+                - Libraries and frameworks (e.g., "https://videojs.com/")
+                - Specific software tool websites (e.g., "https://www.blackmagicdesign.com/products/davinciresolve")
 
                 BAD examples (DO NOT INCLUDE THESE):
                 - Google search results (e.g., "https://www.google.com/search?q=...")
@@ -612,23 +601,23 @@ class SearchAgent:
 
                 FOLLOW THESE STEPS:
                 1. Search for '{search_term}'
-                2. For each search result, verify it leads to a SPECIFIC resource (not a search page)
-                3. Only include results with DIRECT URLs to content
+                2. For each search result, verify it leads to a SPECIFIC project (not a search page)
+                3. Only include results with DIRECT URLs to the project homepage or repository
                 4. Make sure the URL is to a specific page, not a general homepage
-                5. Extract the most valuable information about each resource
+                5. Extract the most valuable information about each project
 
-                For each resource, provide:
+                For each project, provide:
                 1. Title
                 2. Description (explain what it offers and why it's valuable)
-                3. URL (direct link to content)
+                3. Homepage URL (direct link to the project)
                 4. Category: {category}
                 5. Tags (up to 5 relevant tags)
 
-                Return your findings as a JSON array of resource objects, each with the following structure:
+                Return your findings as a JSON array of project objects, each with the following structure:
                 {{
-                  "title": "Resource Title",
-                  "description": "Detailed resource description",
-                  "url": "https://example.com/specific-resource",
+                  "title": "Project Title",
+                  "description": "Detailed project description",
+                  "homepage": "https://example.com/specific-project",
                   "category": "{category}",
                   "tags": ["tag1", "tag2", "tag3"]
                 }}
@@ -692,31 +681,31 @@ class SearchAgent:
                     json_text = re.sub(r',\s*\]', ']', json_text)
                     json_text = re.sub(r',\s*\}', '}', json_text)
 
-                    resources = json.loads(json_text)
-                    logging.info(f"Successfully parsed JSON with {len(resources)} resources")
+                    projects = json.loads(json_text)
+                    logging.info(f"Successfully parsed JSON with {len(projects)} projects")
 
-                    # Enhanced validation and filtering for resources
-                    valid_resources = []
+                    # Enhanced validation and filtering for projects
+                    valid_projects = []
                     invalid_count = 0
                     search_url_count = 0
 
-                    for resource in resources:
-                        if not isinstance(resource, dict):
-                            logging.warning(f"Skipping non-object resource: {resource}")
+                    for project in projects:
+                        if not isinstance(project, dict):
+                            logging.warning(f"Skipping non-object project: {project}")
                             invalid_count += 1
                             continue
 
-                        # Skip resources without required fields
-                        if not all(key in resource for key in ["title", "url", "description"]):
-                            logging.warning(f"Resource missing required fields: {resource}")
+                        # Skip projects without required fields
+                        if not all(key in project for key in ["title", "homepage", "description"]):
+                            logging.warning(f"Project missing required fields: {project}")
                             invalid_count += 1
                             continue
 
-                        url = resource.get("url", "").lower()
-                        title = resource.get("title", "Untitled")
+                        url = project.get("homepage", "").lower()
+                        title = project.get("title", "Untitled")
 
                         if not url:
-                            logging.warning(f"Resource missing URL: {title}")
+                            logging.warning(f"Project missing URL: {title}")
                             invalid_count += 1
                             continue
 
@@ -744,51 +733,51 @@ class SearchAgent:
                             len(url) > 12 and  # Minimum reasonable URL length
                             not url.endswith(("..", "."))):  # Avoid truncated URLs
 
-                            # Apply the current category to the resource
-                            resource["category"] = category
+                            # Apply the current category to the project
+                            project["category"] = category
 
                             # Ensure tags exist
-                            if "tags" not in resource or not resource["tags"]:
-                                resource["tags"] = [category]
+                            if "tags" not in project or not project["tags"]:
+                                project["tags"] = [category]
 
-                            valid_resources.append(resource)
-                            logging.debug(f"Valid resource found: {title} - {url}")
+                            valid_projects.append(project)
+                            logging.debug(f"Valid project found: {title} - {url}")
                         else:
-                            logging.warning(f"Invalid URL format: {url} for resource: {title}")
+                            logging.warning(f"Invalid URL format: {url} for project: {title}")
                             invalid_count += 1
 
-                    # Log statistics about filtered resources
-                    logging.info(f"Found {len(valid_resources)} valid resources out of {len(resources)} total")
-                    logging.info(f"Filtered out {invalid_count} invalid resources and {search_url_count} search URLs")
-                    print(f"  📊 Found {len(valid_resources)} valid resources out of {len(resources)} total")
+                    # Log statistics about filtered projects
+                    logging.info(f"Found {len(valid_projects)} valid projects out of {len(projects)} total")
+                    logging.info(f"Filtered out {invalid_count} invalid projects and {search_url_count} search URLs")
+                    print(f"  📊 Found {len(valid_projects)} valid projects out of {len(projects)} total")
                     print(f"  ⚠️ Filtered out {invalid_count} invalid and {search_url_count} search URLs")
 
-                    resources = valid_resources
+                    projects = valid_projects
 
-                    # If we found valid resources, return them
-                    if resources:
-                        logging.info(f"Found {len(resources)} valid resources for '{search_term}'")
+                    # If we found valid projects, return them
+                    if projects:
+                        logging.info(f"Found {len(projects)} valid projects for '{search_term}'")
 
-                        # Enhanced logging for each resource found
-                        print(f"\n✅ FOUND {len(resources)} RESOURCES:")
-                        for i, resource in enumerate(resources, 1):
-                            title = resource.get("title", "Untitled")
-                            url = resource.get("url", "No URL")
-                            tags = ", ".join(resource.get("tags", []))
+                        # Enhanced logging for each project found
+                        print(f"\n✅ FOUND {len(projects)} PROJECTS:")
+                        for i, project in enumerate(projects, 1):
+                            title = project.get("title", "Untitled")
+                            url = project.get("homepage", "No URL")
+                            tags = ", ".join(project.get("tags", []))
 
                             print(f"  {i}. {title}")
                             print(f"     URL: {url}")
                             print(f"     Tags: {tags}")
 
                             # Detailed logging
-                            logging.info(f"Resource {i}: {title}")
+                            logging.info(f"Project {i}: {title}")
                             logging.info(f"  URL: {url}")
                             logging.info(f"  Tags: {tags}")
 
-                        return resources
+                        return projects
                     else:
-                        logging.warning(f"No valid resources found in attempt {attempt} for '{search_term}'")
-                        print(f"  ⚠️ No valid resources found in this attempt. Retrying...")
+                        logging.warning(f"No valid projects found in attempt {attempt} for '{search_term}'")
+                        print(f"  ⚠️ No valid projects found in this attempt. Retrying...")
 
                 except json.JSONDecodeError as json_err:
                     logging.error(f"JSON parsing error: {json_err}")
@@ -807,105 +796,10 @@ class SearchAgent:
             if attempt < max_retries:
                 await asyncio.sleep(2)
 
-        # If we reach here, we couldn't find valid resources after all retries
-        logging.warning(f"No valid resources found for '{search_term}' after {max_retries} attempts")
-        print(f"\n⚠️ Could not find valid resources for '{search_term}' after {max_retries} attempts")
+        # If we reach here, we couldn't find valid projects after all retries
+        logging.warning(f"No valid projects found for '{search_term}' after {max_retries} attempts")
+        print(f"\n⚠️ Could not find valid projects for '{search_term}' after {max_retries} attempts")
         return []
-
-
-class WriterAgent:
-    """Agent that generates project ideas based on resources."""
-
-    def __init__(self):
-        self.agent = Agent(
-            name="Project Idea Generator",
-            instructions="""
-            You are a Project Idea Generator specializing in creative and practical project ideas for video streaming and encoding developer tools.
-
-            Your task is to generate unique, valuable project ideas based on existing projects and new resources.
-            Each project idea should include:
-            1. A compelling title
-            2. A detailed description explaining the concept, approach, and value
-            3. The category it belongs to
-            4. Relevant tags (up to 5)
-            """
-        )
-
-    async def generate_ideas(self, category, existing_data, new_resources):
-        """Generate project ideas based on existing data and new resources."""
-        logging.info(f"Generating project ideas for category: '{category}'")
-        print(f"\n💡 GENERATING PROJECT IDEAS: Category '{category}'")
-
-        if not new_resources:
-            logging.warning(f"No new resources found for '{category}', skipping project idea generation")
-            print(f"  ⚠️ No new resources found for this category, skipping")
-            return []
-
-        # Create samples of existing data and new resources for context
-        sample_existing = [item for item in existing_data if item.get("category") == category]
-        sample_existing = sample_existing[:3] if len(sample_existing) > 3 else sample_existing
-
-        sample_new = new_resources[:3] if len(new_resources) > 3 else new_resources
-
-        prompt = f"""
-        Generate 3 creative project ideas for the '{category}' category based on existing projects and newly found resources.
-
-        Existing projects: {json.dumps(sample_existing)}
-
-        Newly found resources: {json.dumps(sample_new)}
-
-        Please generate 3 unique, practical, and creative project ideas that:
-        1. Are relevant to the '{category}' category
-        2. Build upon the existing projects and new resources
-        3. Offer clear value to someone interested in video streaming and encoding developer tools
-        4. Include a compelling title and detailed description
-        5. Have relevant tags
-
-        Return your ideas as a JSON array of project ideas, each with the following structure:
-        {{
-          "title": "Project Idea Title",
-          "description": "Detailed project description explaining the concept, approach, and value",
-          "category": "{category}",
-          "tags": ["tag1", "tag2", "tag3"]
-        }}
-        """
-
-        result = await Runner.run(self.agent, prompt)
-
-        # Extract JSON array from the response
-        try:
-            # Find JSON in the response
-            json_text = result.final_output
-            # Look for array pattern if needed
-            if not json_text.strip().startswith('['):
-                import re
-                json_pattern = r'(\[[\s\S]*\])'
-                matches = re.search(json_pattern, json_text)
-                if matches:
-                    json_text = matches.group(1)
-
-            project_ideas = json.loads(json_text)
-            logging.info(f"Generated {len(project_ideas)} project ideas for '{category}'")
-
-            # Enhanced logging for each project idea
-            print(f"\n💡 GENERATED {len(project_ideas)} PROJECT IDEAS:")
-            for i, idea in enumerate(project_ideas, 1):
-                title = idea.get("title", "Untitled")
-                tags = ", ".join(idea.get("tags", []))
-
-                print(f"  {i}. {title}")
-                print(f"     Tags: {tags}")
-
-                # Detailed logging
-                logging.info(f"Project Idea {i}: {title}")
-                logging.info(f"  Tags: {tags}")
-
-            return project_ideas
-        except Exception as e:
-            logging.error(f"Error parsing project ideas: {e}")
-            logging.debug(f"Raw output: {result.final_output}")
-            print(f"\n❌ ERROR: Failed to generate project ideas: {e}")
-            raise Exception(f"Failed to generate valid project ideas: {e}")
 
 
 class ResearchManager:
@@ -914,13 +808,11 @@ class ResearchManager:
     def __init__(self):
         self.planner_agent = PlannerAgent()
         self.search_agent = SearchAgent()
-        self.writer_agent = WriterAgent()
 
     async def run(self, contents_data, min_results=10, time_limit=300, global_timeout=14400, randomize=False, random_seed=None):
         """Run the complete research process with the given parameters."""
         start_time = time.time()
-        all_new_resources = []
-        all_project_ideas = []
+        all_new_projects = []
 
         # PHASE 1: Planning
         logging.info("Starting research planning phase")
@@ -932,7 +824,7 @@ class ResearchManager:
         except Exception as e:
             logging.error(f"Error creating research plan: {e}")
             print(f"\n❌ ERROR creating research plan: {e}")
-            return 1, [], []
+            return 1, []
 
         # Setup progress tracking
         categories = contents_data.get("categories", [])
@@ -996,9 +888,9 @@ class ResearchManager:
                 category_search_terms = [
                     f"best {cat_title} streaming tools",
                     f"{cat_title} encoding github repositories",
-                    f"{cat_title} streaming API tutorials",
+                    f"{cat_title} streaming API libraries",
                     f"{cat_title} video codec software",
-                    f"advanced {cat_title} streaming techniques",
+                    f"advanced {cat_title} streaming tools",
                     f"{cat_title} video encoding libraries"
                 ]
                 print(f"⚠️ Using default search terms for '{cat_title}'")
@@ -1010,57 +902,59 @@ class ResearchManager:
                 print(f"  • {term}")
 
             # Run searches in parallel using asyncio
-            category_resources = await self._perform_searches(category, category_search_terms, category_time_limit)
+            category_projects = await self._perform_searches(category, category_search_terms, category_time_limit)
 
             # Filter out duplicates
             seen_urls = set()
-            unique_resources = []
+            unique_projects = []
 
-            print(f"\n🔍 CHECKING FOR DUPLICATES IN {len(category_resources)} RESOURCES...")
-            for resource in category_resources:
-                url = resource.get("url", "")
+            # Get existing projects in this category to check for duplicates
+            existing_projects = contents_data.get(category, [])
+            existing_urls = {p.get("homepage", "").lower() for p in existing_projects}
+            existing_titles = {p.get("title", "").lower() for p in existing_projects}
+
+            print(f"\n🔍 CHECKING FOR DUPLICATES IN {len(category_projects)} PROJECTS...")
+            for project in category_projects:
+                url = project.get("homepage", "").lower()
+                title = project.get("title", "").lower()
+
+                # Check if this is a duplicate of an existing project
+                if url in existing_urls:
+                    print(f"  ⚠️ DUPLICATE OF EXISTING PROJECT (URL): {project.get('title', 'Untitled')} - {url}")
+                    continue
+
+                if title in existing_titles:
+                    print(f"  ⚠️ DUPLICATE OF EXISTING PROJECT (TITLE): {project.get('title', 'Untitled')} - {url}")
+                    continue
+
+                # Check if this is a duplicate within the new projects
                 if url and url not in seen_urls:
                     seen_urls.add(url)
-                    unique_resources.append(resource)
-                    print(f"  ✅ UNIQUE: {resource.get('title', 'Untitled')} - {url}")
+                    unique_projects.append(project)
+                    print(f"  ✅ UNIQUE: {project.get('title', 'Untitled')} - {url}")
                 else:
-                    print(f"  ⚠️ DUPLICATE: {resource.get('title', 'Untitled')} - {url}")
+                    print(f"  ⚠️ DUPLICATE: {project.get('title', 'Untitled')} - {url}")
 
-            # Check if we found any resources
-            if unique_resources:
-                logging.info(f"After filtering, {len(unique_resources)} unique resources for '{category}'")
-                print(f"\n📊 AFTER FILTERING DUPLICATES: {len(unique_resources)} unique resources for '{category}'")
+            # Check if we found any unique projects
+            if unique_projects:
+                logging.info(f"After filtering, {len(unique_projects)} unique projects for '{category}'")
+                print(f"\n📊 AFTER FILTERING DUPLICATES: {len(unique_projects)} unique projects for '{category}'")
 
                 # Add to overall collection
-                all_new_resources.extend(unique_resources)
-
-                # PHASE 4: Generate project ideas if we have resources
-                if time.time() - start_time <= global_timeout:
-                    try:
-                        project_ideas = await self._generate_ideas(category,
-                                                                  [item for item in contents_data.get(category, [])],
-                                                                  unique_resources)
-                        logging.info(f"Generated {len(project_ideas)} project ideas for '{category}'")
-                        all_project_ideas.extend(project_ideas)
-                    except Exception as e:
-                        logging.error(f"Error generating project ideas: {e}")
-                        print(f"\n⚠️ Error generating project ideas: {e}")
-                else:
-                    logging.warning("Global timeout reached before generating project ideas")
-                    print("\n⏱️ GLOBAL TIMEOUT REACHED: Skipping project idea generation")
+                all_new_projects.extend(unique_projects)
             else:
-                logging.warning(f"No resources found for category '{category}'")
-                print(f"\n⚠️ No resources found for category '{category}'")
+                logging.warning(f"No unique projects found for category '{category}'")
+                print(f"\n⚠️ No unique projects found for category '{category}'")
 
             # Log progress
-            print(f"\n🔄 PROGRESS: {len(all_new_resources)} total resources and {len(all_project_ideas)} ideas so far")
+            print(f"\n🔄 PROGRESS: {len(all_new_projects)} total projects so far")
 
             category_time = time.time() - category_start_time
             logging.info(f"Finished category '{category}' in {category_time:.2f} seconds")
             print(f"⏱️ Category '{cat_title}' completed in {category_time:.2f} seconds")
 
         # Return results
-        return 0, all_new_resources, all_project_ideas
+        return 0, all_new_projects
 
     async def _plan_searches(self, contents_data):
         """Create a research plan using the planner agent."""
@@ -1198,18 +1092,6 @@ class ResearchManager:
             print(f"  ❌ Search error: {type(e).__name__}: {str(e)}")
             return []
 
-    async def _generate_ideas(self, category, existing_data, new_resources):
-        """Generate project ideas using the writer agent."""
-        logging.info(f"Generating project ideas for category: '{category}'")
-        print(f"\n💡 GENERATING PROJECT IDEAS: Category '{category}'")
-
-        try:
-            project_ideas = await self.writer_agent.generate_ideas(category, existing_data, new_resources)
-            return project_ideas
-        except Exception as e:
-            logging.error(f"Error generating project ideas: {e}")
-            raise
-
 
 async def run_system_checks():
     """Run basic validation checks to ensure the system is ready to operate."""
@@ -1343,38 +1225,37 @@ async def run_system_checks():
     return checks_passed
 
 
-async def save_intermediate_results(resources, project_ideas, final=False, output_dir="."):
+async def save_intermediate_results(projects, final=False, output_dir="."):
     """Save intermediate results to a file."""
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
     results = {
-        "new_resources": resources,
-        "new_project_ideas": project_ideas,
+        "new_projects": projects,
         "timestamp": datetime.datetime.now().isoformat(),
         "stats": {
-            "resources_count": len(resources),
-            "project_ideas_count": len(project_ideas),
-            "resources_by_category": {},
-            "ideas_by_category": {}
+            "projects_count": len(projects),
+            "projects_by_category": {}
         }
     }
 
     # Calculate statistics
-    for resource in resources:
-        category = resource.get("category", "uncategorized")
-        if category not in results["stats"]["resources_by_category"]:
-            results["stats"]["resources_by_category"][category] = 0
-        results["stats"]["resources_by_category"][category] += 1
-
-    for idea in project_ideas:
-        category = idea.get("category", "uncategorized")
-        if category not in results["stats"]["ideas_by_category"]:
-            results["stats"]["ideas_by_category"][category] = 0
-        results["stats"]["ideas_by_category"][category] += 1
+    for project in projects:
+        category = project.get("category", "uncategorized")
+        if isinstance(category, list):
+            # Handle case where category is a list
+            main_category = category[0] if category else "uncategorized"
+            if main_category not in results["stats"]["projects_by_category"]:
+                results["stats"]["projects_by_category"][main_category] = 0
+            results["stats"]["projects_by_category"][main_category] += 1
+        else:
+            # Single category (string)
+            if category not in results["stats"]["projects_by_category"]:
+                results["stats"]["projects_by_category"][category] = 0
+            results["stats"]["projects_by_category"][category] += 1
 
     # Always include timestamp in filenames to avoid conflicts between parallel runs
     if final:
-        filename = f"final_results_{timestamp}_{len(resources)}_resources.json"
+        filename = f"final_results_{timestamp}_{len(projects)}_projects.json"
     else:
         filename = f"intermediate_results_{timestamp}.json"
 
@@ -1386,31 +1267,25 @@ async def save_intermediate_results(resources, project_ideas, final=False, outpu
     with open(filepath, 'w') as f:
         json.dump(results, f, indent=JSON_INDENT)
 
-    logging.info(f"Saved {len(resources)} resources and {len(project_ideas)} project ideas to {filepath}")
+    logging.info(f"Saved {len(projects)} projects to {filepath}")
 
     if final:
         print(f"\n📁 FINAL RESULTS SAVED TO: {filepath}")
-        print("\n📊 RESOURCE STATISTICS BY CATEGORY:")
-        for category, count in results["stats"]["resources_by_category"].items():
-            print(f"  • {category}: {count} resources")
-
-        print("\n📊 PROJECT IDEA STATISTICS BY CATEGORY:")
-        for category, count in results["stats"]["ideas_by_category"].items():
-            print(f"  • {category}: {count} project ideas")
+        print("\n📊 PROJECT STATISTICS BY CATEGORY:")
+        for category, count in results["stats"]["projects_by_category"].items():
+            print(f"  • {category}: {count} projects")
 
         # Log statistics
         logging.info("Final statistics:")
-        for category, count in results["stats"]["resources_by_category"].items():
-            logging.info(f"  - {count} resources in category '{category}'")
-        for category, count in results["stats"]["ideas_by_category"].items():
-            logging.info(f"  - {count} project ideas in category '{category}'")
+        for category, count in results["stats"]["projects_by_category"].items():
+            logging.info(f"  - {count} projects in category '{category}'")
     else:
         print(f"\n📁 INTERMEDIATE RESULTS SAVED: {filepath}")
 
     return filepath
 
 
-async def update_contents(original_filepath_or_url, new_resources, new_project_ideas, output_dir="."):
+async def update_contents(original_filepath_or_url, new_projects, output_dir="."):
     """Update the original contents file or create a new file with the combined results."""
     logging.info(f"Updating contents with new findings")
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -1445,26 +1320,42 @@ async def update_contents(original_filepath_or_url, new_resources, new_project_i
 
         logging.info(f"Original contents has categories: {list(initial_counts.keys())}")
 
-        # Add new resources to their respective categories
-        resources_added = 0
-        resources_by_category = {}
+        # Add new projects to their respective categories
+        projects_added = 0
+        projects_by_category = {}
 
-        for resource in new_resources:
-            category = resource.get("category")
-            if category in contents:
-                # Remove category from resource to match original format
-                resource_copy = resource.copy()
-                category_field = resource_copy.pop("category", None)
+        for project in new_projects:
+            category = project.get("category")
 
-                contents[category].append(resource_copy)
-                resources_added += 1
-
-                # Track additions by category
-                if category not in resources_by_category:
-                    resources_by_category[category] = 0
-                resources_by_category[category] += 1
+            # Handle case where category is a list
+            if isinstance(category, list) and len(category) > 0:
+                primary_category = category[0]
             else:
-                logging.warning(f"Category '{category}' not found in original contents, skipping resource: {resource.get('title', 'Untitled')}")
+                primary_category = category
+
+            if primary_category in contents:
+                # Remove category from project to match original format (if needed)
+                project_copy = project.copy()
+                if isinstance(project_copy.get("category"), list):
+                    # For list categories, just use the list in the format expected by schema
+                    pass
+                else:
+                    # For string categories, we don't need to remove it as schema expects it
+                    pass
+
+                # Ensure the project has all required fields according to the schema
+                if "homepage" in project_copy and "title" in project_copy:
+                    contents[primary_category].append(project_copy)
+                    projects_added += 1
+
+                    # Track additions by category
+                    if primary_category not in projects_by_category:
+                        projects_by_category[primary_category] = 0
+                    projects_by_category[primary_category] += 1
+                else:
+                    logging.warning(f"Project missing required fields: {project.get('title', 'Untitled')}")
+            else:
+                logging.warning(f"Category '{primary_category}' not found in original contents, skipping project: {project.get('title', 'Untitled')}")
 
         # Count final items
         final_counts = {}
@@ -1484,9 +1375,9 @@ async def update_contents(original_filepath_or_url, new_resources, new_project_i
 
         # Log results
         logging.info(f"Successfully saved updated contents to {output_filepath}")
-        logging.info(f"Added {resources_added} new resources:")
-        for category, count in resources_by_category.items():
-            logging.info(f"  - Added {count} resources to '{category}' (now has {final_counts.get(category, 0)} items)")
+        logging.info(f"Added {projects_added} new projects:")
+        for category, count in projects_by_category.items():
+            logging.info(f"  - Added {count} projects to '{category}' (now has {final_counts.get(category, 0)} items)")
 
         return output_filepath
     except Exception as e:
@@ -1496,7 +1387,7 @@ async def update_contents(original_filepath_or_url, new_resources, new_project_i
         return None
 
 
-async def generate_awesome_list(contents_data, new_resources, output_file="awesome-video.md", output_dir="."):
+async def generate_awesome_list(contents_data, new_projects, output_file="awesome-video.md", output_dir="."):
     """Generate an Awesome List markdown file following specifications from sindresorhus/awesome.
 
     This function creates a properly formatted markdown file that follows all the guidelines
@@ -1519,7 +1410,7 @@ async def generate_awesome_list(contents_data, new_resources, output_file="aweso
 
     print(f"\n📄 GENERATING AWESOME LIST: {output_path}")
 
-    # Extract categories and resources
+    # Extract categories and projects
     categories = contents_data.get("categories", [])
     categories_data = contents_data.get("_categories_data", {})
 
@@ -1529,8 +1420,8 @@ async def generate_awesome_list(contents_data, new_resources, output_file="aweso
         return False
 
     # Count items for logging
-    total_resources = 0
-    resource_counts = {}
+    total_projects = 0
+    project_counts = {}
     subcategory_counts = {}
 
     # Find top-level categories (those with no parent)
@@ -1542,339 +1433,27 @@ async def generate_awesome_list(contents_data, new_resources, output_file="aweso
             children = cat_data.get("children", [])
             subcategory_counts[cat_id] = len(children)
 
-    # Merge new resources with existing ones
+    # Merge new projects with existing ones
     for category in categories:
-        existing_resources = contents_data.get(category, [])
-        category_new_resources = [r for r in new_resources if r.get("category") == category]
+        existing_projects = contents_data.get(category, [])
+        category_new_projects = [p for p in new_projects if p.get("category") == category or
+                               (isinstance(p.get("category"), list) and category in p.get("category"))]
 
         # Keep track of counts
-        resource_counts[category] = len(existing_resources) + len(category_new_resources)
-        total_resources += resource_counts[category]
+        project_counts[category] = len(existing_projects) + len(category_new_projects)
+        total_projects += project_counts[category]
 
-    logging.info(f"Preparing to generate Awesome List with {total_resources} resources across {len(categories)} categories")
+    logging.info(f"Preparing to generate Awesome List with {total_projects} projects across {len(categories)} categories")
     logging.info(f"Found {len(top_level_categories)} top-level categories and {sum(subcategory_counts.values())} subcategories")
-
-    # Start generating the markdown content
-    lines = []
-
-    # Add Awesome badge, title, and description
-    lines.append("# Awesome Video Streaming & Encoding [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)")
-    lines.append("")
-    lines.append("> A curated list of awesome tools, resources, and projects related to video streaming, encoding, and processing for developers")
-    lines.append("")
-
-    # Add standard sections required by Awesome List spec
-    lines.append("## Contents")
-    lines.append("")
-
-    # Generate table of contents
-    for cat_id in top_level_categories:
-        cat_data = categories_data.get(cat_id, {})
-        cat_title = cat_data.get("title", cat_id)
-        lines.append(f"- [{cat_title}](#{cat_title.lower().replace(' ', '-').replace('/', '').replace('.', '').replace(':', '')})")
-
-        # Add subcategories to TOC if any
-        children = cat_data.get("children", [])
-        if children:
-            for child_id in children:
-                child_data = categories_data.get(child_id, {})
-                child_title = child_data.get("title", child_id)
-                lines.append(f"  - [{child_title}](#{child_title.lower().replace(' ', '-').replace('/', '').replace('.', '').replace(':', '')})")
-
-    # Add Contributing and License sections to TOC
-    lines.append("- [Contributing](#contributing)")
-    lines.append("")
-
-    # Generate content for each category
-    print(f"  📊 Organizing {total_resources} resources into {len(top_level_categories)} main categories")
-    resource_counter = 0
-
-    for cat_id in top_level_categories:
-        cat_data = categories_data.get(cat_id, {})
-        cat_title = cat_data.get("title", cat_id)
-        cat_description = cat_data.get("description", "")
-
-        # Add category heading and description
-        lines.append(f"## {cat_title}")
-        if cat_description:
-            lines.append("")
-            lines.append(cat_description)
-        lines.append("")
-
-        # Add resources directly in this category (if it's not just a parent category)
-        category_resources = contents_data.get(cat_id, [])
-        category_new_resources = [r for r in new_resources if r.get("category") == cat_id]
-        all_resources = category_resources + category_new_resources
-
-        if all_resources:
-            resource_counter += len(all_resources)
-            for resource in all_resources:
-                title = resource.get("title", "")
-                url = resource.get("url", resource.get("homepage", ""))
-                description = resource.get("description", "")
-
-                # Format according to Awesome List spec: "- [Name](URL) - Description."
-                # Ensure description starts with uppercase and ends with period
-                if description and not description.endswith(('.', '!', '?')):
-                    description = description + "."
-
-                if description and description[0].islower():
-                    description = description[0].upper() + description[1:]
-
-                if title and url:
-                    lines.append(f"- [{title}]({url}) - {description}")
-
-            lines.append("")
-
-        # Add subcategories and their resources
-        children = cat_data.get("children", [])
-        for child_id in children:
-            child_data = categories_data.get(child_id, {})
-            child_title = child_data.get("title", child_id)
-            child_description = child_data.get("description", "")
-
-            # Add subcategory heading and description
-            lines.append(f"### {child_title}")
-            if child_description:
-                lines.append("")
-                lines.append(child_description)
-            lines.append("")
-
-            # Add resources in this subcategory
-            child_resources = contents_data.get(child_id, [])
-            child_new_resources = [r for r in new_resources if r.get("category") == child_id]
-            all_child_resources = child_resources + child_new_resources
-
-            if all_child_resources:
-                resource_counter += len(all_child_resources)
-                for resource in all_child_resources:
-                    title = resource.get("title", "")
-                    url = resource.get("url", resource.get("homepage", ""))
-                    description = resource.get("description", "")
-
-                    # Format according to Awesome List spec
-                    if description and not description.endswith(('.', '!', '?')):
-                        description = description + "."
-
-                    if description and description[0].islower():
-                        description = description[0].upper() + description[1:]
-
-                    if title and url:
-                        lines.append(f"- [{title}]({url}) - {description}")
-
-                lines.append("")
-
-    # Add Contributing section
-    lines.append("## Contributing")
-    lines.append("")
-    lines.append("Contributions welcome! Read the [contribution guidelines](contributing.md) first.")
-    lines.append("")
-
-    # Write the output file
-    try:
-        with open(output_path, 'w') as f:
-            f.write('\n'.join(lines))
-
-        # Create a basic contributing.md file if it doesn't exist
-        if not os.path.exists("contributing.md"):
-            with open("contributing.md", 'w') as f:
-                f.write("# Contribution Guidelines\n\n")
-                f.write("Please note that this project is released with a [Contributor Code of Conduct](code-of-conduct.md). By participating in this project you agree to abide by its terms.\n\n")
-                f.write("## Adding to this list\n\n")
-                f.write("Please ensure your pull request adheres to the following guidelines:\n\n")
-                f.write("- Search previous suggestions before making a new one, as yours may be a duplicate.\n")
-                f.write("- Make sure the resource is useful before submitting.\n")
-                f.write("- Make an individual pull request for each suggestion.\n")
-                f.write("- Use title-casing (AP style).\n")
-                f.write("- Use the following format: `[Name](link) - Description.`\n")
-                f.write("- Start the description with a capital and end with a full stop.\n")
-                f.write("- Check your spelling and grammar.\n")
-                f.write("- Make sure your text editor is set to remove trailing whitespace.\n")
-                f.write("- The pull request and commit should have a useful title.\n")
-                f.write("- The body of your commit message should contain a link to the resource.\n\n")
-                f.write("Thank you for your suggestions!\n")
-
-        # Create a code-of-conduct.md file if it doesn't exist
-        if not os.path.exists("code-of-conduct.md"):
-            with open("code-of-conduct.md", 'w') as f:
-                f.write("# Contributor Covenant Code of Conduct\n\n")
-                f.write("## Our Pledge\n\n")
-                f.write("In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone.\n\n")
-                # Add more standard code of conduct content here
-
-        # Create a license file (CC0) if it doesn't exist
-        if not os.path.exists("license"):
-            with open("license", 'w') as f:
-                f.write("CC0 1.0 Universal\n\n")
-                f.write("Statement of Purpose\n\n")
-                f.write("The laws of most jurisdictions throughout the world automatically confer exclusive Copyright and Related Rights upon the creator and subsequent owner(s) of an original work of authorship.\n\n")
-                # Add more CC0 license content here
-
-        logging.info(f"Successfully generated Awesome List at {output_path}")
-        logging.info(f"Included {resource_counter} resources across {len(top_level_categories)} main categories")
-        logging.info(f"Created necessary support files: contributing.md, code-of-conduct.md, license")
-
-        print(f"  ✅ AWESOME LIST GENERATED: {output_path}")
-        print(f"  📊 STATISTICS:")
-        print(f"    • {resource_counter} total resources")
-        print(f"    • {len(top_level_categories)} main categories")
-        print(f"    • {sum(subcategory_counts.values())} subcategories")
-        print(f"  📝 CREATED SUPPORTING FILES:")
-        print(f"    • contributing.md")
-        print(f"    • code-of-conduct.md")
-        print(f"    • license (CC0)")
-
-        return output_path
-    except Exception as e:
-        logging.error(f"Error generating Awesome List: {e}")
-        print(f"  ❌ ERROR: Could not generate Awesome List: {e}")
-        return False
-
-
-async def verify_awesome_list(filepath):
-    """Perform basic validation checks on the generated Awesome List markdown file.
-
-    While this doesn't replace running awesome-lint, it checks for common
-    issues that might cause awesome-lint to fail.
-    """
-    logging.info(f"Verifying Awesome List compliance: {filepath}")
-    print(f"\n🔍 VERIFYING AWESOME LIST: {filepath}")
-
-    verification_errors = []
-
-    try:
-        with open(filepath, 'r') as f:
-            content = f.read()
-            lines = content.splitlines()
-
-        # Check for required elements
-        if not any(line.startswith("# Awesome") for line in lines):
-            verification_errors.append("Missing 'Awesome' in the main title")
-
-        if not any("[![Awesome]" in line and "https://awesome.re" in line for line in lines):
-            verification_errors.append("Missing Awesome badge after main heading")
-
-        if not any(line == "## Contents" for line in lines):
-            verification_errors.append("Missing Table of Contents section")
-
-        if not any(line == "## Contributing" for line in lines):
-            verification_errors.append("Missing Contributing section")
-
-        # Check for list item format consistency
-        resource_lines = [line for line in lines if line.startswith("- [")]
-
-        for line in resource_lines:
-            # Check if line follows format: "- [Name](URL) - Description."
-            if not re.match(r"^- \[[^\]]+\]\([^)]+\) - .+[\.!?]$", line):
-                verification_errors.append(f"Invalid resource format: {line[:50]}...")
-
-        # Verify support files exist
-        if not os.path.exists("contributing.md"):
-            verification_errors.append("Missing contributing.md file")
-
-        if not os.path.exists("license") and not os.path.exists("LICENSE"):
-            verification_errors.append("Missing license file")
-
-        # Log verification results
-        if verification_errors:
-            logging.warning(f"Found {len(verification_errors)} issues with Awesome List format")
-            print(f"  ⚠️ FOUND {len(verification_errors)} FORMATTING ISSUES:")
-            for error in verification_errors:
-                logging.warning(f"  - {error}")
-                print(f"    • {error}")
-
-            return False, verification_errors
-        else:
-            logging.info("Awesome List validation successful")
-            print(f"  ✅ AWESOME LIST FORMAT VALIDATION SUCCESSFUL")
-
-            # Recommend running awesome-lint
-            print(f"  ℹ️ For complete validation, run: npx awesome-lint {filepath}")
-            return True, []
-
-    except Exception as e:
-        logging.error(f"Error verifying Awesome List: {e}")
-        print(f"  ❌ ERROR: Could not verify Awesome List: {e}")
-        return False, [f"Error during verification: {str(e)}"]
-
-
-async def generate_combined_contents(original_filepath_or_url, new_resources, output_dir="."):
-    """Generate a new contents.json file that combines original contents and new resources.
-
-    The filename includes timestamp and total project count.
-    """
-    logging.info(f"Generating combined contents file from {original_filepath_or_url} with {len(new_resources)} new resources")
-    print(f"\n📊 GENERATING COMBINED CONTENTS FILE...")
-
-    try:
-        # Load original contents
-        contents = await load_contents(original_filepath_or_url)
-
-        # Count initial items and categories
-        categories = contents.get("categories", [])
-        initial_project_count = 0
-        initial_counts = {}
-
-        for category in categories:
-            category_items = contents.get(category, [])
-            item_count = len(category_items)
-            initial_counts[category] = item_count
-            initial_project_count += item_count
-
-        logging.info(f"Original contents has {initial_project_count} total projects across {len(categories)} categories")
-
-        # Add new resources to their respective categories
-        resources_added = 0
-        resources_by_category = {}
-
-        for resource in new_resources:
-            category = resource.get("category")
-            if category in contents:
-                # Remove category from resource to match original format
-                resource_copy = resource.copy()
-                category_field = resource_copy.pop("category", None)
-
-                contents[category].append(resource_copy)
-                resources_added += 1
-
-                # Track additions by category
-                if category not in resources_by_category:
-                    resources_by_category[category] = 0
-                resources_by_category[category] += 1
-            else:
-                logging.warning(f"Category '{category}' not found in original contents, skipping resource: {resource.get('title', 'Untitled')}")
-
-        # Generate filename with timestamp and project count
-        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-        total_projects = initial_project_count + resources_added
-        filename = f"contents_{timestamp}_{total_projects}_projects.json"
-        filepath = os.path.join(output_dir, filename)
-
-        # Write updated contents to file
-        with open(filepath, 'w') as f:
-            json.dump(contents, f, indent=JSON_INDENT)
-
-        logging.info(f"Successfully saved combined contents to {filepath}")
-        print(f"✅ COMBINED CONTENTS SAVED: {filepath}")
-        print(f"  • Original projects: {initial_project_count}")
-        print(f"  • New projects added: {resources_added}")
-        print(f"  • Total projects: {total_projects}")
-
-        return filepath, resources_by_category, initial_counts, total_projects
-
-    except Exception as e:
-        logging.error(f"Error generating combined contents: {e}")
-        print(f"❌ ERROR: Could not generate combined contents: {e}")
-        return None, {}, {}, 0
 
 
 async def main():
     parser = argparse.ArgumentParser(description="Video Research Assistant")
     parser.add_argument("--contents", default="contents.json", help="Path to contents JSON file")
-    parser.add_argument("--min-results", type=int, default=10, help="Minimum number of new resources to find")
+    parser.add_argument("--min-results", type=int, default=10, help="Minimum number of new projects to find")
     parser.add_argument("--time-limit", type=int, default=180, help="Time limit for each search in seconds")
     parser.add_argument("--global-timeout", type=int, default=14400, help="Global timeout for the entire process in seconds")
-    parser.add_argument("--update", action="store_true", help="Update the contents file with new resources")
+    parser.add_argument("--update", action="store_true", help="Update the contents file with new projects")
     parser.add_argument("--gen-awesome-list", action="store_true", help="Generate an awesome list from the contents")
     parser.add_argument("--verify", action="store_true", help="Verify an existing awesome list")
     parser.add_argument("--awesome-file", default="awesome-video.md", help="Path to the awesome list file")
@@ -1915,7 +1494,7 @@ async def main():
         print(f"\n🚀 STARTING RESEARCH PROCESS")
         print(f"  • Log file: {log_file}")
         print(f"  • Output directory: {args.output_dir}")
-        print(f"  • Target new resources: {args.min_results}")
+        print(f"  • Target new projects: {args.min_results}")
         print(f"  • Time limit per category: {args.time_limit} seconds")
         print(f"  • Global timeout: {args.global_timeout} seconds ({args.global_timeout/3600:.1f} hours)")
         if args.randomize:
@@ -1950,12 +1529,12 @@ async def main():
         manager = ResearchManager()
 
         # Execute research
-        print(f"\n🔍 BEGINNING RESEARCH: Finding at least {args.min_results} new resources...")
-        logger.info(f"Starting research with minimum {args.min_results} results, time limit {args.time_limit}s per category")
+        print(f"\n🔍 BEGINNING RESEARCH: Finding at least {args.min_results} new projects...")
+        logger.info(f"Starting research with minimum {args.min_results} projects, time limit {args.time_limit}s per category")
 
         # Execute research process
         start_research_time = time.time()
-        code, new_resources, project_ideas = await manager.run(
+        code, new_projects = await manager.run(
             contents_data,
             min_results=args.min_results,
             time_limit=args.time_limit,
@@ -1966,16 +1545,16 @@ async def main():
         research_time = time.time() - start_research_time
 
         # Save intermediate results
-        await save_intermediate_results(new_resources, project_ideas, final=True, output_dir=args.output_dir)
+        await save_intermediate_results(new_projects, final=True, output_dir=args.output_dir)
 
         # Update contents file if requested
-        if args.update and new_resources:
-            logger.info(f"Updating contents with {len(new_resources)} new resources")
-            print(f"\n📝 UPDATING CONTENTS WITH {len(new_resources)} NEW RESOURCES...")
+        if args.update and new_projects:
+            logger.info(f"Updating contents with {len(new_projects)} new projects")
+            print(f"\n📝 UPDATING CONTENTS WITH {len(new_projects)} NEW PROJECTS...")
 
             # Generate combined contents file
-            combined_file, resources_by_category, initial_counts, total_projects = await generate_combined_contents(
-                args.contents, new_resources, output_dir=args.output_dir
+            combined_file, projects_by_category, initial_counts, total_projects = await generate_combined_contents(
+                args.contents, new_projects, output_dir=args.output_dir
             )
 
             # Updated contents file
@@ -1987,7 +1566,7 @@ async def main():
                 print("❌ Failed to update contents file")
 
         # Generate awesome list if requested
-        if args.gen_awesome_list and (new_resources or args.update):
+        if args.gen_awesome_list and (new_projects or args.update):
             logger.info("Generating Awesome List")
             print(f"\n📄 GENERATING AWESOME LIST...")
 
@@ -2004,7 +1583,7 @@ async def main():
 
                     # Generate the awesome list
                     awesome_file = await generate_awesome_list(
-                        awesome_data, new_resources,
+                        awesome_data, new_projects,
                         output_file=args.awesome_file, output_dir=args.output_dir
                     )
 
@@ -2032,9 +1611,9 @@ async def main():
             if 'combined_file' in locals() and combined_file:
                 combined_file_path = combined_file
 
-            resources_by_cat = None
-            if 'resources_by_category' in locals() and resources_by_category:
-                resources_by_cat = resources_by_category
+            projects_by_cat = None
+            if 'projects_by_category' in locals() and projects_by_category:
+                projects_by_cat = projects_by_category
 
             init_counts = None
             if 'initial_counts' in locals() and initial_counts:
@@ -2046,9 +1625,9 @@ async def main():
 
             # Generate the summary
             summary = await generate_research_summary(
-                contents_data, new_resources, project_ideas, research_time,
+                contents_data, new_projects, research_time,
                 combined_file=combined_file_path,
-                new_resources_by_category=resources_by_cat,
+                new_projects_by_category=projects_by_cat,
                 initial_counts=init_counts,
                 total_projects=total_projs
             )
@@ -2080,14 +1659,13 @@ async def main():
         print(f"\n⏱️ TOTAL EXECUTION TIME: {elapsed_time:.2f} seconds ({elapsed_time/3600:.2f} hours)")
 
 
-async def generate_research_summary(original_contents_data, new_resources, project_ideas, research_time, combined_file=None, new_resources_by_category=None, initial_counts=None, total_projects=None):
+async def generate_research_summary(original_contents_data, new_projects, research_time, combined_file=None, new_projects_by_category=None, initial_counts=None, total_projects=None):
     """Generate a detailed summary report of the research process and findings.
 
     The summary includes:
-    - Overall statistics (time taken, resources found, etc.)
-    - Breakdown by category of what new resources were added
+    - Overall statistics (time taken, projects found, etc.)
+    - Breakdown by category of what new projects were added
     - Analysis of which categories saw the most growth
-    - Overview of new project ideas
 
     Returns a string containing the summary.
     """
@@ -2103,14 +1681,17 @@ async def generate_research_summary(original_contents_data, new_resources, proje
     categories = original_contents_data.get("categories", [])
     categories_data = original_contents_data.get("_categories_data", {})
 
-    # Count new resources by category
-    if not new_resources_by_category:
-        new_resources_by_category = {}
-        for resource in new_resources:
-            category = resource.get("category", "uncategorized")
-            if category not in new_resources_by_category:
-                new_resources_by_category[category] = 0
-            new_resources_by_category[category] += 1
+    # Count new projects by category
+    if not new_projects_by_category:
+        new_projects_by_category = {}
+        for project in new_projects:
+            category = project.get("category", "uncategorized")
+            if isinstance(category, list) and category:
+                category = category[0]
+
+            if category not in new_projects_by_category:
+                new_projects_by_category[category] = 0
+            new_projects_by_category[category] += 1
 
     # Get original counts if not provided
     if not initial_counts:
@@ -2121,9 +1702,9 @@ async def generate_research_summary(original_contents_data, new_resources, proje
     # Calculate growth percentages
     growth_percentages = {}
     for category in categories:
-        if category in new_resources_by_category and category in initial_counts:
+        if category in new_projects_by_category and category in initial_counts:
             original = initial_counts[category]
-            new = new_resources_by_category[category]
+            new = new_projects_by_category[category]
             if original > 0:
                 growth_percentages[category] = (new / original) * 100
             else:
@@ -2133,7 +1714,7 @@ async def generate_research_summary(original_contents_data, new_resources, proje
 
     # Sort categories by growth and addition count
     sorted_by_growth = sorted(growth_percentages.items(), key=lambda x: x[1], reverse=True)
-    sorted_by_additions = sorted(new_resources_by_category.items(), key=lambda x: x[1], reverse=True)
+    sorted_by_additions = sorted(new_projects_by_category.items(), key=lambda x: x[1], reverse=True)
 
     # Start building summary text
     summary_lines = []
@@ -2148,8 +1729,7 @@ async def generate_research_summary(original_contents_data, new_resources, proje
     summary_lines.append("📈 OVERALL STATISTICS")
     summary_lines.append("-" * 40)
     summary_lines.append(f"🕒 Total research time: {time_str}")
-    summary_lines.append(f"🔍 Total new resources found: {len(new_resources)}")
-    summary_lines.append(f"💡 Total new project ideas generated: {len(project_ideas)}")
+    summary_lines.append(f"🔍 Total new projects found: {len(new_projects)}")
     if combined_file:
         summary_lines.append(f"📁 Combined contents file: {combined_file}")
         if total_projects:
@@ -2157,12 +1737,12 @@ async def generate_research_summary(original_contents_data, new_resources, proje
     summary_lines.append("")
 
     # Breakdown by category
-    summary_lines.append("📋 NEW RESOURCES BY CATEGORY")
+    summary_lines.append("📋 NEW PROJECTS BY CATEGORY")
     summary_lines.append("-" * 40)
 
-    # Show top categories with most new resources
+    # Show top categories with most new projects
     if sorted_by_additions:
-        summary_lines.append("Top categories with most new resources:")
+        summary_lines.append("Top categories with most new projects:")
         for i, (category, count) in enumerate(sorted_by_additions[:10], 1):
             cat_title = categories_data.get(category, {}).get("title", category)
             original = initial_counts.get(category, 0)
@@ -2171,7 +1751,7 @@ async def generate_research_summary(original_contents_data, new_resources, proje
                 growth_str = "∞"
             else:
                 growth_str = f"{growth:.1f}%"
-            summary_lines.append(f"  {i}. {cat_title} ({category}): +{count} resources (from {original} to {original+count}, {growth_str} growth)")
+            summary_lines.append(f"  {i}. {cat_title} ({category}): +{count} projects (from {original} to {original+count}, {growth_str} growth)")
 
     summary_lines.append("")
     summary_lines.append("Categories with highest growth percentage:")
@@ -2179,7 +1759,7 @@ async def generate_research_summary(original_contents_data, new_resources, proje
         if growth > 0:
             cat_title = categories_data.get(category, {}).get("title", category)
             original = initial_counts.get(category, 0)
-            new = new_resources_by_category.get(category, 0)
+            new = new_projects_by_category.get(category, 0)
             if growth == float('inf'):
                 growth_str = "∞"
             else:
@@ -2187,37 +1767,6 @@ async def generate_research_summary(original_contents_data, new_resources, proje
             summary_lines.append(f"  {i}. {cat_title} ({category}): {growth_str} growth (from {original} to {original+new})")
 
     summary_lines.append("")
-
-    # Project idea overview
-    if project_ideas:
-        summary_lines.append("💡 PROJECT IDEAS OVERVIEW")
-        summary_lines.append("-" * 40)
-
-        # Count ideas by category
-        ideas_by_category = {}
-        for idea in project_ideas:
-            category = idea.get("category", "uncategorized")
-            if category not in ideas_by_category:
-                ideas_by_category[category] = []
-            ideas_by_category[category].append(idea)
-
-        # Sort categories by number of ideas
-        sorted_idea_categories = sorted(ideas_by_category.items(), key=lambda x: len(x[1]), reverse=True)
-
-        # Show top categories with most ideas
-        for i, (category, ideas) in enumerate(sorted_idea_categories[:5], 1):
-            cat_title = categories_data.get(category, {}).get("title", category)
-            summary_lines.append(f"{i}. {cat_title} ({category}): {len(ideas)} new project ideas")
-
-            # List the top 3 ideas for this category
-            for j, idea in enumerate(ideas[:3], 1):
-                title = idea.get("title", "Untitled Idea")
-                summary_lines.append(f"   {j}. {title}")
-
-            if len(ideas) > 3:
-                summary_lines.append(f"      ... and {len(ideas) - 3} more ideas")
-
-            summary_lines.append("")
 
     # Conclusion
     summary_lines.append("=" * 80)
