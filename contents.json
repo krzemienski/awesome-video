@@ -30644,8 +30644,9 @@
       "tags": [
         "m3u8",
         "hls",
-        "code",
-        "vs code"
+        "vs code",
+        "vscode",
+        "extension"
       ]
     },
     {
@@ -30657,7 +30658,10 @@
       ],
       "tags": [
         "scte35",
+        "scte-35",
         "javascript",
+        "JS",
+        "TypeScript",
         "parsing"
       ]
     }
