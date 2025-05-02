@@ -30621,17 +30621,17 @@
       ]
     },
     {
-      "title": "wabiloo/mpd-inspector",
-      "homepage": "https://github.com/wabiloo/mpd-inspector",
-      "description": "MPEG-DASH MPD parser and inspector for Python",
+      "title": "M3U8/HLS in VS Code",
+      "homepage": "https://marketplace.visualstudio.com/items?itemName=wabiloo.m3u8-hls-vscode",
+      "description": "Visual Studio Code extension for syntax highlighting and tools to work with M3U8 files (HLS)",
       "category": [
-        "dash"
+        "hls"
       ],
       "tags": [
-        "mpd",
-        "dash",
-        "parser",
-        "python"
+        "m3u8",
+        "hls",
+        "code",
+        "vs code"
       ]
     }
   ],
