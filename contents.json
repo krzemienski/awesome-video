@@ -30619,6 +30619,20 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "wabiloo/mpd-inspector",
+      "homepage": "https://github.com/wabiloo/mpd-inspector",
+      "description": "MPEG-DASH MPD parser and inspector for Python",
+      "category": [
+        "dash"
+      ],
+      "tags": [
+        "mpd",
+        "dash",
+        "parser",
+        "python"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
