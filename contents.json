@@ -30648,7 +30648,19 @@
         "vs code"
       ]
     },
-    
+    {
+      "title": "wabiloo/scte35-js-annotated",
+      "homepage": "https://github.com/wabiloo/scte35-js-annotated",
+      "description": "A fork of the Comcast SCTE-35 library for JavaScript, adding human-readable annotations",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "scte35",
+        "javascript",
+        "parsing"
+      ]
+    }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
 }
