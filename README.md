@@ -251,7 +251,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [antiboredom/videogrep](https://github.com/antiboredom/videogrep)  - automatic video supercuts with python. 
 * [bmhayward/Transcode](https://github.com/bmhayward/Transcode)  - Tools to batch transcode and process videos. 
 * [flavioribeiro/video-thumbnail-generator](https://github.com/flavioribeiro/video-thumbnail-generator)  - :camera: Generate thumbnail sprites from videos.
-* [rendi-api/ffmpeg-cheatsheet](https://github.com/rendi-api/ffmpeg-cheatsheet)  - FFmpeg Cheatsheet for Video Automation.
+* [rendi-api/ffmpeg-cheatsheet](https://github.com/rendi-api/ffmpeg-cheatsheet)  - FFmpeg cheat sheet for video automation.
 
 ### Color Grading & Correction Tools
 *Tools for color grading and correction in video.*
