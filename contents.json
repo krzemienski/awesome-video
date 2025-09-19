@@ -13418,9 +13418,9 @@
       "category": [
         "hls"
       ],
-      "description": "Parser and generator of M3U8-playlists for Apple HLS. Library for Go language. :cinema: - grafov/m3u8",
-      "homepage": "https://github.com/grafov/m3u8",
-      "title": "grafov/m3u8",
+      "description": "Parser and generator of M3U8-playlists for Apple HLS. Library for Go language. :cinema: - eyevinn/hls-m3u8",
+      "homepage": "https://github.com/Eyevinn/hls-m3u8",
+      "title": "eyevinn/hls-m3u8",
       "tags": [
         "library",
         "go",
