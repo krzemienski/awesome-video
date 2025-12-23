@@ -1333,6 +1333,22 @@
       ]
     },
     {
+      "title": "Muxide",
+      "description": "Muxide is a high-performance MP4 muxing and demuxing library written in Rust. It provides fast, memory-efficient processing of MP4 containers with support for fragmented MP4, streaming, and advanced video processing features. Perfect for applications requiring low-latency video manipulation and streaming.",
+      "homepage": "https://github.com/Michael-A-Kuykendall/muxide",
+      "category": [
+        "general-tools"
+      ],
+      "tags": [
+        "mp4",
+        "muxing",
+        "demuxing",
+        "video-processing",
+        "rust",
+        "streaming"
+      ]
+    },
+    {
       "title": "Nimble Streamer DRM",
       "description": "Nimble Streamer is a media server that supports Digital Rights Management (DRM) for various encryption providers, including Widevine, PlayReady, and FairPlay. It offers features like live streaming encryption, DVR encryption, and VOD content encryption, ensuring secure content delivery across multiple platforms.",
       "homepage": "https://softvelum.com/nimble/drm/",
