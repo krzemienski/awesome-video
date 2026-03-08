@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "GeiserX/JellySubtitles",
+      "description": "Docker-based tool that automatically downloads subtitles for Jellyfin media libraries, monitoring your library and fetching missing subtitles from OpenSubtitles and other providers.",
+      "homepage": "https://github.com/GeiserX/JellySubtitles",
+      "category": [
+        "subtitles-captions"
+      ],
+      "tags": [
+        "subtitles",
+        "Jellyfin",
+        "Docker",
+        "OpenSubtitles",
+        "automation"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
