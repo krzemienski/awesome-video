@@ -30619,6 +30619,23 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "GeiserX/jellyfin-encoder",
+      "description": "Docker-based automatic HEVC/AV1 transcoding service for Jellyfin libraries with NVIDIA and Intel hardware acceleration.",
+      "homepage": "https://github.com/GeiserX/jellyfin-encoder",
+      "category": [
+        "ffmpeg"
+      ],
+      "tags": [
+        "ffmpeg",
+        "docker",
+        "transcoding",
+        "jellyfin",
+        "hevc",
+        "av1",
+        "hardware-acceleration"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
