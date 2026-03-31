@@ -316,6 +316,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 [back to top](#readme) 
 
 * [mifi/lossless-cut](https://github.com/mifi/lossless-cut)  - A tool or resource for trimming-cutting-tools.
+* [sjkelleyjr/trimmr](https://github.com/sjkelleyjr/trimmr)  - Open-source browser editor for trimming and exporting GIFs and short videos with local-only processing.
 
 ## Video Encoding, Transcoding & Packaging Tools
 *Tools for encoding, transcoding, and packaging video content.*
