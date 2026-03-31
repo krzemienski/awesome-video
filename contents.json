@@ -30621,9 +30621,9 @@
       ]
     },
     {
-      "title": "jelly-subtitles",
+      "title": "WhisperSubs",
       "description": "Jellyfin plugin for local AI-powered subtitle generation using Whisper, with all processing on your server.",
-      "homepage": "https://github.com/GeiserX/jelly-subtitles",
+      "homepage": "https://github.com/GeiserX/whisper-subs",
       "category": [
         "subtitles-captions"
       ],
