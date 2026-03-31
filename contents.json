@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "WhisperSubs",
+      "description": "Jellyfin plugin for local AI-powered subtitle generation using Whisper, with all processing on your server.",
+      "homepage": "https://github.com/GeiserX/whisper-subs",
+      "category": [
+        "subtitles-captions"
+      ],
+      "tags": [
+        "subtitles",
+        "Whisper",
+        "AI",
+        "Jellyfin",
+        "speech-to-text"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
