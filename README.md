@@ -558,6 +558,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [alfg/docker-nginx-rtmp](https://github.com/alfg/docker-nginx-rtmp)  - 🐋 A Dockerfile for nginx-rtmp-module + FFmpeg from source with basic settings for streaming HLS. Built on Alpine Linux. - alfg/docker-nginx-rtmp
 * [ebu/dtt2ip](https://github.com/ebu/dtt2ip)  - Broadcast to IP conversion for Wifi indoor coverage - ebu/dtt2ip
 * [ireader/media-server](https://github.com/ireader/media-server)  - RTSP/RTP/RTMP/FLV/HLS/MPEG-TS/MPEG-PS/MPEG-DASH/MP4/fMP4 - ireader/media-server
+* [nilstate/icey](https://github.com/nilstate/icey)  - Real-time media stack and lightweight libwebrtc alternative for RTSP ingest, media processing, signaling, TURN, and browser delivery, built in C++20.
 * [librist](https://code.videolan.org/rist/librist)  - A library that can be used to easily add the RIST protocol to your application.
 * [njh/dvbshout](https://github.com/njh/dvbshout)  - dvbshout takes an MPEG transport stream from a DVB card, extracts audio channels from stream, and sends the audio to an Icecast / Shoutcast server and/or a RTP multicast packet stream. - njh/dvbshout
 
