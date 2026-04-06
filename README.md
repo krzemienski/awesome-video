@@ -277,7 +277,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Complete software suites for non-linear video editing.*
 [back to top](#readme) 
 
-* [jliljebl/flowblade](https://github.com/jliljebl/flowblade)  - A tool or resource for non-linear-editing-suites.
+* [jliljebl/flowblade](https://github.com/jliljebl/flowblade)  - A tool or resource for non-linear editing suites.
 * [Tight Studio](https://tight.studio/)  - Screen recorder and video editor for macOS with auto-zoom, captions, AI voiceover, and background music. Uses WebGPU for GPU-accelerated compositing.
 
 ### Subtitle & Caption Tools
