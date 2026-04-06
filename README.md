@@ -278,6 +278,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 [back to top](#readme) 
 
 * [jliljebl/flowblade](https://github.com/jliljebl/flowblade)  - A tool or resource for non-linear-editing-suites.
+* [Tight Studio](https://tight.studio/)  - Screen recorder and video editor for macOS with auto-zoom, captions, AI voiceover, and background music. Uses WebGPU for GPU-accelerated compositing.
 
 ### Subtitle & Caption Tools
 *Tools for working with subtitles and captions in video.*
