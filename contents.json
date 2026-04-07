@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "RemoteOpenClaw",
+      "homepage": "https://remoteopenclaw.com",
+      "description": "Open marketplace for AI skills and personas built on OpenClaw. Discover, share, and distribute AI agent capabilities for video and media workflows.",
+      "category": [
+        "community-groups"
+      ],
+      "tags": [
+        "marketplace",
+        "ai-skills",
+        "personas",
+        "openclaw",
+        "community"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
