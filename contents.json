@@ -30619,6 +30619,25 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "category": [
+        "dash",
+        "hevc"
+      ],
+      "homepage": "https://github.com/privaloops/hevc.js",
+      "description": "HEVC/H.265 decoder in WebAssembly with a drop-in dash.js plugin. Transcodes HEVC to H.264 client-side via WebCodecs for browsers without native HEVC support.",
+      "title": "privaloops/hevc.js",
+      "tags": [
+        "webassembly",
+        "hevc",
+        "h265",
+        "dash",
+        "transcoding",
+        "javascript",
+        "wasm",
+        "video-codec"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
