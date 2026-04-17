@@ -645,6 +645,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Dash-Industry-Forum/dash-live-source-simulator](https://github.com/Dash-Industry-Forum/dash-live-source-simulator)  - DASH live source simulator providing reference live content. - Dash-Industry-Forum/dash-live-source-simulator
 * [Dash-Industry-Forum/dash.js](https://github.com/Dash-Industry-Forum/dash.js)  - A reference client implementation for the playback of MPEG DASH via Javascript and compliant browsers. - Dash-Industry-Forum/dash.js
 * [Dash-Industry-Forum/media-tools](https://github.com/Dash-Industry-Forum/media-tools)  - A collection of tools for analyzing, handling, and creating media and media containers - Dash-Industry-Forum/media-tools
+* [privaloops/hevc.js](https://github.com/privaloops/hevc.js)  - HEVC/H.265 decoder in WebAssembly with a drop-in dash.js plugin. Transcodes HEVC to H.264 client-side via WebCodecs for browsers without native HEVC support.
 * [Eyevinn/docker-2dash](https://github.com/Eyevinn/docker-2dash)  - A Docker container to pre-package MPEG DASH on demand content - Eyevinn/docker-2dash
 * [Eyevinn/docker-dash-packager](https://github.com/Eyevinn/docker-dash-packager)  - Open source MPEG DASH packager for live and VOD.
 * [MPEG DASH Sample Content Bento4](http://www.bento4.com/developers/dash/dash-sample-content/)  - Bento4 offers MPEG-DASH sample content for developers to test and validate their DASH implementations.
