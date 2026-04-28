@@ -771,6 +771,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [vt-vl-lab/FGVC](https://github.com/vt-vl-lab/FGVC)  - [ECCV 2020] Flow-edge Guided Video Completion . 
 
 ### Audio Analysis & Processing
+- [remove-audio.com](https://remove-audio.com) - Free browser-based tool to remove audio from video files. Local processing via WebAssembly, no uploads, no signup. Supports MP4, MOV, MKV, AVI, WEBM. Batch up to 20 clips.
 *Tools for analyzing and processing audio in video.*
 [back to top](#readme) 
 
