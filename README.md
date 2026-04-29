@@ -1279,6 +1279,8 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 *Resources and tools related to cross-platform media tools.*
 [back to top](#readme) 
 
+* [Cyber Collector](https://t.me/cybercollectorbot)  - Telegram bot for downloading videos from TikTok, Instagram, YouTube, X and Facebook. No signup required. - https://cybercollector.hitkey.io
+
 * [haiwen/seafile](https://github.com/haiwen/seafile)  - High performance file syncing and sharing, with also Markdown WYSIWYG editing, Wiki, file label and other knowledge management features. - haiwen/seafile
 * [mar10/wsgidav](https://github.com/mar10/wsgidav)  - A generic and extendable WebDAV server based on WSGI - mar10/wsgidav
 * [superpoweredSDK/Low-Latency-Android-iOS-Linux-Windows-tvOS-macOS-Interactive-Audio-Platform](https://github.com/superpoweredSDK/Low-Latency-Android-iOS-Linux-Windows-tvOS-macOS-Interactive-Audio-Platform)  - 🇸Superpowered Audio, Networking and Cryptographics SDKs. High performance and cross platform on Android, iOS, macOS, tvOS, Linux, Windows and modern web browsers. - superpoweredSDK/Low-Latency-Andr...
