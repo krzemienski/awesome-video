@@ -744,6 +744,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [soldiermoth/hlsq](https://github.com/soldiermoth/hlsq)  - A CLI for adding some color to your HLS manifests along with some basic filtering
 * [tjenkinson/mock-hls-server](https://github.com/tjenkinson/mock-hls-server)  - Fake a live/event HLS stream from a VOD one. Useful for testing. - tjenkinson/mock-hls-server
 * [tozastation/HLS-Streaming](https://github.com/tozastation/HLS-Streaming)  - HLSを使ってみたです．. 
+* [Vidora](https://chromewebstore.google.com/detail/vidora-pro-video-download/pjnnoldljndmfifpnfmbpbehklaaboje)  - Chrome MV3 extension that downloads HLS streams including AES-128 encrypted ones, with external audio rendition support (Apple-style HLS). Vimeo and Bunny CDN out of the box, all processing local.
 * [yuhuili-lab/Tide](https://github.com/yuhuili-lab/Tide)  - Simple m3u8 and MPEG-DASH MPD video downloader using libcurl - yuhuili-lab/Tide
 * [zhaiweiwei/nginx-hls](https://github.com/zhaiweiwei/nginx-hls)  - Contribute to zhaiweiwei/nginx-hls development by creating an account on GitHub.
 
