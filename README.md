@@ -1211,6 +1211,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 [back to top](#readme) 
 
 * [videolan/dav1d](https://code.videolan.org/videolan/dav1d)  - dav1d is the fastest AV1 decoder on all platforms.
+* [stukenov/rav2d](https://github.com/stukenov/rav2d)  - Memory-safe AV2 video decoder in Rust, ported from dav2d. Assembly DSP via FFI, all C decoder logic in safe Rust.
 
 ## DRM, Security & Content Protection
 *Resources and tools related to drm, security & content protection.*
