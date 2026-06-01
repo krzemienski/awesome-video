@@ -383,7 +383,7 @@ PLEASE DO NOT UPDATE THIS FILE, UPDATE CONTENTS.JSON INSTEAD. THANK YOU :-)
 * [Correcting for audio/video sync issues with the ffmpeg program’s ITSOFFSET switch](https://wjwoodrow.wordpress.com/2013/02/04/correcting-for-audiovideo-sync-issues-with-the-ffmpeg-programs-itsoffset-switch/)  - The ffmpeg program has numerous “switches” that help to adjust and convert audio and video files. Some of them are not explained very well in the documentation, and many websites have c…
 * [Encode HDR with VP9](https://developers.google.com/media/vp9/hdr-encoding)  - Hands on tutorial of using ffmpeg to do hdr encoding
 * [FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg)  - Mirror of git://source.ffmpeg.org/ffmpeg.git.
-* [FFmpeg Download](https://ffmpeg.download) - Simple ffmpeg downloader with binaries for different OSs, licenses, versions, etc.
+* [FFmpeg Download](https://ffmpeg.download) - Simple FFmpeg downloader with binaries for different OSs, licenses, versions, etc.
 * [FallingSnow/h265ize](https://github.com/FallingSnow/h265ize)  - A node utility utilizing ffmpeg to encode videos with the hevc codec. - FallingSnow/h265ize
 * [Generate MPEG-TS from file with ffmpeg](https://medium.com/@eyevinntechnology/generate-mpeg-ts-from-file-with-ffmpeg-7561181e6369?source=userActivityShare-94bccb50d11-1560983471&_branch_match_id=670020142756633081)  - In this post I will describe how an MPEG-TS multicast stream can be generated with ffmpeg by looping an MP4 file and a Docker container…
 * [GeoHaber/Video-Transcode](https://github.com/GeoHaber/Video-Transcode)  - ffmpeg H264 H265 HEVC MPEG Video Trans-code Image-Matrix Collage - GeoHaber/Video-Transcode
