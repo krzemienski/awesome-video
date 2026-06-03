@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "Rendobar",
+      "description": "Rendobar is a serverless API for running FFmpeg jobs in the cloud without managing infrastructure. It gives developers and AI agents a REST API, typed SDK, CLI, MCP tools, webhooks, and a free tier for video transcoding and media processing.",
+      "homepage": "https://rendobar.com",
+      "category": [
+        "infrastructure-delivery"
+      ],
+      "tags": [
+        "FFmpeg API",
+        "video transcoding",
+        "serverless",
+        "SDK",
+        "developer tools"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
