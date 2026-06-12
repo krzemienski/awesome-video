@@ -1347,6 +1347,7 @@
 - [estliberitas/node-thumbnails-webvtt](https://github.com/estliberitas/node-thumbnails-webvtt) - Video thumbnail generator generating WebVTT spec file - estliberitas/node-thumbnails-webvtt.
 - [shawnsky/extract-subtitles](https://github.com/shawnsky/extract-subtitles) - Extract Subtitles From Video.
 - [statsbiblioteket/tv-subtitle-extraction](https://github.com/statsbiblioteket/tv-subtitle-extraction) - System for extraction of subtitles from TV broadcasts. - statsbiblioteket/tv-subtitle-extraction.
+- [SubLingo](https://sublingo.cc) - Free in-browser tool to translate SRT and VTT subtitles into 100+ languages while keeping every timecode exact, plus SRT/VTT conversion, timing shift, FPS, and cleanup utilities.
 
 #### Subtitles & Captions
 
