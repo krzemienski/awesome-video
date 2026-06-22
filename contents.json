@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "Hyperserve",
+      "description": "Video backend API for developers. Upload any format, transcode to MP4 at configurable resolutions with optional thumbnails, and deliver via global CDN.",
+      "homepage": "https://hyperserve.io",
+      "category": [
+        "infrastructure-delivery"
+      ],
+      "tags": [
+        "video API",
+        "transcoding",
+        "video hosting",
+        "cloud video platform",
+        "developer tools"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
