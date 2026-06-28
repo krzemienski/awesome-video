@@ -1695,6 +1695,7 @@ The solution supports:
 - [estliberitas/node-thumbnails-webvtt](https://github.com/estliberitas/node-thumbnails-webvtt) - Video thumbnail generator generating WebVTT spec file - estliberitas/node-thumbnails-webvtt.
 - [shawnsky/extract-subtitles](https://github.com/shawnsky/extract-subtitles) - Extract Subtitles From Video.
 - [statsbiblioteket/tv-subtitle-extraction](https://github.com/statsbiblioteket/tv-subtitle-extraction) - System for extraction of subtitles from TV broadcasts. - statsbiblioteket/tv-subtitle-extraction.
+- [TimedSubs](https://timedsubs.com/en/tools/subtitle-checker) - Browser-local SRT/VTT checker with safe line-wrap repair.
 
 #### Subtitles & Captions
 
