@@ -30619,6 +30619,51 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "wabiloo/mpd-inspector",
+      "homepage": "https://github.com/wabiloo/mpd-inspector",
+      "description": "MPEG-DASH MPD parser and inspector for Python",
+      "category": [
+        "dash"
+      ],
+      "tags": [
+        "mpd",
+        "dash",
+        "parser",
+        "python"
+      ]
+    },
+    {
+      "title": "M3U8/HLS in VS Code",
+      "homepage": "https://marketplace.visualstudio.com/items?itemName=wabiloo.m3u8-hls-vscode",
+      "description": "Visual Studio Code extension for syntax highlighting and tools to work with M3U8 files (HLS)",
+      "category": [
+        "hls"
+      ],
+      "tags": [
+        "m3u8",
+        "hls",
+        "vs code",
+        "vscode",
+        "extension"
+      ]
+    },
+    {
+      "title": "wabiloo/scte35-js-annotated",
+      "homepage": "https://github.com/wabiloo/scte35-js-annotated",
+      "description": "A fork of the Comcast SCTE-35 library for JavaScript, adding human-readable annotations",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "scte35",
+        "scte-35",
+        "javascript",
+        "JS",
+        "TypeScript",
+        "parsing"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
