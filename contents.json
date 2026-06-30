@@ -13310,6 +13310,19 @@
     },
     {
       "category": [
+        "ffmpeg"
+      ],
+      "description": "Media processing API where running FFmpeg commands is one of several features, alongside captions, watermarking, transcoding, and metadata extraction. Runs over REST with a Node SDK and CLI.",
+      "homepage": "https://rendobar.com/ffmpeg",
+      "title": "Rendobar",
+      "tags": [
+        "ffmpeg",
+        "api",
+        "transcoding"
+      ]
+    },
+    {
+      "category": [
         "encoding-tools"
       ],
       "description": "FFME: The Advanced WPF MediaElement (based on FFmpeg) - unosquare/ffmediaelement",
