@@ -1564,6 +1564,8 @@ The solution supports:
 
 ### Ads & QoE
 
+- [rtblint](https://github.com/aleksUIX/rtblint) - An open-source OpenRTB bid request validator and linter, checking requests against the IAB Tech Lab OpenRTB spec (2.0 through 3.0) for malformed JSON, missing fields, and type mismatches. Ships as a free browser tester, a Rust CLI, and an MCP server for AI agents.
+
 #### Quality & Testing
 
 - [bavc/qctools](https://github.com/bavc/qctools) - A tool or resource for quality-analysis-metrics.
