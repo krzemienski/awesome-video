@@ -989,6 +989,7 @@
 - [Audio Transcriber](https://github.com/shinobizero/audio_transcriber) - Transcodes audio & video files to text, supports MP3, M4A, WAV, MP4, MKV, AVI, MPG & MPEG. No Online API's. Python 3.
 - [FGVC](https://github.com/vt-vl-lab/FGVC) - (ECCV 2020) Flow-edge Guided Video Completion.
 - [FlashVSR](https://github.com/OpenImagingLab/FlashVSR) - CVPR 2026 real-time diffusion-based streaming video super-resolution using one-step, locality-constrained sparse attention with a tiny conditional decoder.
+- [FunClip](https://github.com/modelscope/FunClip) - Open-source tool for AI-assisted video clipping and subtitle generation with FunASR transcription, SRT export, and LLM-assisted clip selection.
 - [Jukebox](https://github.com/openai/jukebox) - Code for the paper "Jukebox: A Generative Model for Music".
 - [SimpleVQA](https://github.com/sunwei925/SimpleVQA) - Deep-learning no-reference video quality assessment for user-generated content, in PyTorch with SlowFast feature extraction.
 - [Smart City Sample](https://github.com/OpenVisualCloud/Smart-City-Sample) - The smart city reference pipeline shows how to integrate various media building blocks, with analytics powered by the OpenVINO™ Toolkit, for traffic or stadium sensing, analytics and management tas..
