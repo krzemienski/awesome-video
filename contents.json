@@ -30619,6 +30619,20 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "CreateFaceless",
+      "homepage": "https://createfaceless.com/en",
+      "description": "Generates faceless YouTube Shorts from script to visuals, voiceover, captions, cover, metadata, and exportable MP4 without requiring editing experience.",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "AI",
+        "faceless video",
+        "video generation",
+        "YouTube Shorts"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
