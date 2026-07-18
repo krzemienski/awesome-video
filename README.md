@@ -10,28 +10,28 @@
 
 - [Encoding & Codecs](#encoding--codecs)
   - [Next-Generation Codecs AV1 VVC](#next-generation-codecs-av1-vvc)
+  - [Encoding Tools](#encoding-tools)
   - [Hardware Accelerated Transcoding](#hardware-accelerated-transcoding)
   - [Multi-format Packaging Tools](#multi-format-packaging-tools)
+  - [Codecs](#codecs)
   - [Comparative Analysis of Codecs](#comparative-analysis-of-codecs)
   - [Benchmarking & Performance Tools for Codecs](#benchmarking--performance-tools-for-codecs)
   - [Real-Time Encoding Solutions](#real-time-encoding-solutions)
-  - [Cloud-Based Encoding Solutions](#cloud-based-encoding-solutions)
-  - [Codecs](#codecs)
-  - [Open Source Encoder Projects](#open-source-encoder-projects)
   - [Scripting & Automation Tools](#scripting--automation-tools)
   - [Software Codecs](#software-codecs)
   - [Hardware Codecs & Acceleration](#hardware-codecs--acceleration)
   - [Containerization & Packaging Tools](#containerization--packaging-tools)
   - [Software Transcoding Tools](#software-transcoding-tools)
-  - [Encoding Tools](#encoding-tools)
+  - [Open Source Encoder Projects](#open-source-encoder-projects)
+  - [Cloud-Based Encoding Solutions](#cloud-based-encoding-solutions)
   - [FFmpeg-Based Tools](#ffmpeg-based-tools)
 - [Media Tools](#media-tools)
   - [Ads & QoE](#ads--qoe)
-  - [Subtitle & Caption Tools](#subtitle--caption-tools)
+  - [Audio & Subtitles](#audio--subtitles)
   - [Metadata Extraction & Management](#metadata-extraction--management)
-  - [VMAF PSNR SSIM Tools](#vmaf-psnr-ssim-tools)
-  - [Audio Analysis & Processing](#audio-analysis--processing)
   - [Batch Processing & Automation](#batch-processing--automation)
+  - [Subtitle & Caption Tools](#subtitle--caption-tools)
+  - [VMAF PSNR SSIM Tools](#vmaf-psnr-ssim-tools)
   - [Color Science & Histogram Analysis](#color-science--histogram-analysis)
   - [Scene Detection & Segmentation](#scene-detection--segmentation)
   - [AI & Machine Learning Tools](#ai--machine-learning-tools)
@@ -39,20 +39,22 @@
   - [Effects & Compositing Tools](#effects--compositing-tools)
   - [Non-linear Editing Suites](#non-linear-editing-suites)
   - [Conversion & Format Tools](#conversion--format-tools)
-  - [Audio & Subtitles](#audio--subtitles)
+  - [Audio Analysis & Processing](#audio-analysis--processing)
   - [Quality Analysis & Metrics](#quality-analysis--metrics)
   - [Video Analytics & Benchmarking](#video-analytics--benchmarking)
 - [Protocols & Transport](#protocols--transport)
-  - [HLS Manifest Parsers & Generators](#hls-manifest-parsers--generators)
+  - [Adaptive Streaming](#adaptive-streaming)
   - [Low-Latency Streaming Tools](#low-latency-streaming-tools)
   - [Adaptive Bitrate Algorithms & Tools](#adaptive-bitrate-algorithms--tools)
   - [DASH Manifest Tools](#dash-manifest-tools)
   - [CMAF & fMP4 Packaging](#cmaf--fmp4-packaging)
+  - [HLS Manifest Parsers & Generators](#hls-manifest-parsers--generators)
   - [Transport Protocols](#transport-protocols)
   - [HLS Tools](#hls-tools)
   - [DASH Tools](#dash-tools)
-  - [Adaptive Streaming](#adaptive-streaming)
 - [Players & Clients](#players--clients)
+  - [Mobile & Web Players](#mobile--web-players)
+  - [Hardware Players](#hardware-players)
   - [Frameworks & UI Components](#frameworks--ui-components)
   - [Set-top Box Players](#set-top-box-players)
   - [Mobile Players](#mobile-players)
@@ -61,28 +63,13 @@
   - [Desktop Players](#desktop-players)
   - [Smart TV Players](#smart-tv-players)
   - [Embedded Players](#embedded-players)
-  - [Mobile & Web Players](#mobile--web-players)
-  - [Hardware Players](#hardware-players)
-- [Infrastructure & Delivery](#infrastructure--delivery)
-  - [Streaming Analytics & Monitoring](#streaming-analytics--monitoring)
-  - [Multi-CDN Management](#multi-cdn-management)
-  - [Live Streaming Servers](#live-streaming-servers)
-  - [VOD Streaming Servers](#vod-streaming-servers)
-  - [Streaming Servers](#streaming-servers)
-  - [Peer-to-Peer Streaming Solutions](#peer-to-peer-streaming-solutions)
-  - [Cloud & CDN](#cloud--cdn)
-  - [Edge Computing & Caching Solutions](#edge-computing--caching-solutions)
-  - [CDN Integration & Distribution](#cdn-integration--distribution)
-  - [RTMPRTSPHTTP Protocol Servers](#rtmprtsphttp-protocol-servers)
 - [General Tools](#general-tools)
   - [Command-line Utilities & Wrappers](#command-line-utilities--wrappers)
-  - [API Libraries & SDKs](#api-libraries--sdks)
-  - [Build Scripts & Automation](#build-scripts--automation)
   - [DRM Testing & Validation Tools](#drm-testing--validation-tools)
   - [Widevine FairPlay PlayReady Integrations](#widevine-fairplay-playready-integrations)
-  - [Logging & Debugging Tools](#logging--debugging-tools)
   - [Test Content & Sample Streams](#test-content--sample-streams)
   - [FFMPEG & Tools](#ffmpeg--tools)
+  - [API Libraries & SDKs](#api-libraries--sdks)
   - [DRM Solutions & Implementations](#drm-solutions--implementations)
   - [Independent & Hobbyist Projects](#independent--hobbyist-projects)
   - [Case Studies & Best Practices in DRM](#case-studies--best-practices-in-drm)
@@ -91,21 +78,34 @@
   - [Research Projects & Academic Resources](#research-projects--academic-resources)
   - [Performance & Monitoring Tools](#performance--monitoring-tools)
   - [Encryption Tools for Streaming](#encryption-tools-for-streaming)
-  - [Cross-Platform Media Tools](#cross-platform-media-tools)
   - [DRM](#drm)
+  - [Logging & Debugging Tools](#logging--debugging-tools)
+  - [Build Scripts & Automation](#build-scripts--automation)
+  - [Cross-Platform Media Tools](#cross-platform-media-tools)
   - [Docker & Containerization Tools](#docker--containerization-tools)
 - [Standards & Industry](#standards--industry)
   - [Specs & Standards](#specs--standards)
   - [Closed Captioning & Subtitling Standards](#closed-captioning--subtitling-standards)
-  - [Video Codec Specifications](#video-codec-specifications)
   - [DRM & Content Protection Standards](#drm--content-protection-standards)
-  - [Industry Forums & Standards Bodies](#industry-forums--standards-bodies)
   - [Best Practices & Guidelines](#best-practices--guidelines)
   - [Vendors & HDR](#vendors--hdr)
+  - [Video Codec Specifications](#video-codec-specifications)
   - [Adaptive Streaming Standards](#adaptive-streaming-standards)
+  - [Industry Forums & Standards Bodies](#industry-forums--standards-bodies)
 - [Community & Events](#community--events)
   - [Events & Conferences](#events--conferences)
   - [Community Groups](#community-groups)
+- [Infrastructure & Delivery](#infrastructure--delivery)
+  - [Multi-CDN Management](#multi-cdn-management)
+  - [Live Streaming Servers](#live-streaming-servers)
+  - [Streaming Servers](#streaming-servers)
+  - [Peer-to-Peer Streaming Solutions](#peer-to-peer-streaming-solutions)
+  - [Cloud & CDN](#cloud--cdn)
+  - [Streaming Analytics & Monitoring](#streaming-analytics--monitoring)
+  - [Edge Computing & Caching Solutions](#edge-computing--caching-solutions)
+  - [VOD Streaming Servers](#vod-streaming-servers)
+  - [CDN Integration & Distribution](#cdn-integration--distribution)
+  - [RTMPRTSPHTTP Protocol Servers](#rtmprtsphttp-protocol-servers)
 - [Intro & Learning](#intro--learning)
   - [Learning Resources](#learning-resources)
   - [Encoding & Transcoding Guides](#encoding--transcoding-guides)
@@ -144,7 +144,7 @@
 - [FFmpeg iOS](https://sourceforge.net/projects/ffmpeg-ios) - Precompiled FFmpeg libraries tailored for iOS development. These libraries enable developers to incorporate robust video processing capabilities into iOS applications, supporting a wide range of codecs and formats essential for video streaming and encoding tasks.
 - [FFmpeg-apple-arm64-build](https://github.com/Vargol/ffmpeg-apple-arm64-build) - A build script for FFmpeg targeting the latest open-source video codecs running on macOS using Apple's M1 processor.
 - [Gmmlib](https://github.com/intel/gmmlib) - Intel/gmmlib - A GitHub repository for video/multimedia development.
-- [H.264 profiles and levels | Inside & Outside MediaCoder](https://blog.mediacoderhq.com/h264-profiles-and-levels)
+- [H.264 profiles and levels | Inside & Outside MediaCoder](https://blog.mediacoderhq.com/h264-profiles-and-levels) - Explains H.264 encoding profiles and levels, helping developers choose appropriate settings for compatibility and quality.
 - [HandBrake Web](https://github.com/TheNickOfTime/handbrake-web) - A self-hosted platform to use HandBrake on headless devices via a bespoke web interface. It allows users to harness the processing power of multiple devices to work on a single queue, facilitating efficient video transcoding workflows.
 - [IHMC Video Codecs](https://github.com/ihmcrobotics/ihmc-video-codecs) - A Java library providing support for H.264 and MJPEG encoding and decoding, as well as MP4 support. It utilizes native code for efficient video processing and includes automatic downloading of the OpenH264 library, ensuring compliance with licensing requirements.
 - [Improving Our Video Encodes for Legacy Devices](https://netflixtechblog.com/improving-our-video-encodes-for-legacy-devices-9f39f7774850) - A Netflix Tech Blog post describing techniques to ensure Netflix content remains compatible and efficient on older or less powerful devices, through specialized encoding profiles and optimizations.
@@ -227,267 +227,6 @@
 - [VVCEasy](https://github.com/MartinEesmaa/VVCEasy) - Ready-to-use prebuilt VVC (H.266) binaries and players for Windows, macOS, Linux, FreeBSD, Haiku, Android, and WebAssembly. Includes vvdec, vvenc, uvg266 encoders/decoders, and FFmpeg builds with VVC support.
 - [x266 - Next Generation VVC/H.266 Encoder by MulticoreWare](https://multicorewareinc.com/what-we-do/audio-video-solutions/x266-vvc-encoder) - Open-source VVC/H.266 compliant encoder built on top of x265, featuring HDR/WCG support, 360° video encoding, and SDR video. Developed for achieving twice the coding efficiency of HEVC.
 
-### Hardware Accelerated Transcoding
-
-- [FFmpeg-rockchip — Rockchip MPP+RGA FFmpeg Fork](https://github.com/nyanmisaka/ffmpeg-rockchip) - FFmpeg fork with async zero-copy Rockchip MPP + RGA integration, exposing h264_rkmpp/hevc_rkmpp/vp9_rkmpp codecs for full hardware transcode.
-- [GMAT — NVIDIA GPU media processing toolkit](https://github.com/NVIDIA/GMAT) - NVIDIA datacenter GPU video/image processing and transcode toolkit (formerly FFmpeg-gpu-demo) with smart decode and HEIF via NVENC/NVDEC.
-- [go-livepeer — decentralized GPU transcoding](https://github.com/livepeer/go-livepeer) - Go implementation of the Livepeer protocol with Broadcaster/Orchestrator/Transcoder roles enabling split-farm remote multi-GPU video transcoding over streaming RPC.
-- [Granite — Vulkan engine with zero-copy GPU video decode](https://github.com/Themaister/Granite) - Vulkan rendering engine with GPU video decode to RGB with no memory round-trip (ffmpeg_decode), by Hans-Kristian Arntzen.
-- [Hardware-Assisted Video Transcoding At Dailymotion](https://medium.com/dailymotion/hardware-assisted-video-transcoding-at-dailymotion-66cd2db448ae) - What if you could save time, power consumption and therefore money, while still keeping a decent quality for your converted video ?
-- [HWEncoderX](https://github.com/MacRimi/HWEncoderX) - Docker container for automatic H.265 video transcoding using GPU hardware acceleration (VAAPI for Intel/AMD, NVENC for NVIDIA, Intel Quick Sync). Includes Telegram notifications, quality optimization, and constant monitoring of input directories.
-- [NVEnc / NVEncC — NVENC transcode CLI](https://github.com/rigaya/NVEnc) - Actively maintained NVENC-based transcoding CLI (NVEncC) supporting H.264/HEVC/AV1 with low-latency mode and rich hardware filtering.
-- [Vaapi Video Converter](https://github.com/git-developer/vaapi-video-converter) - A docker-based video converter that uses VAAPI-compatible hardware for transcoding.
-
-#### FFmpeg
-
-- [CUDA GPU Accelerated h264/h265/HEVC Video Encoding with FFmpeg](https://ntown.at/de/knowledgebase/cuda-gpu-accelerated-h264-h265-hevc-video-encoding-with-ffmpeg) - How to use CUDA GPU hardware encoding with FFmpeg to encode h264 and h264 HEVC movies in high quality and highspeed with our optimized parameter settings.
-- [Is it possible to get FFmpeg to use hardware acceleration for HEVC transcoding on macOS?](https://superuser.com/questions/1295957/ffmpeg-and-hardware-acceleration-of-hevc-transcoding-on-mac) - I have a MacBook Pro with a Kaby Lake processor running macOS High Sierra (10.12). Is it possibe somehow to setup FFmpeg to utilize hardware encoding of HEVC with toolbox, instead of libx265?
-
-### Multi-format Packaging Tools
-
-- [GPAC](https://github.com/gpac/gpac) - Main code repository.
-- [HLS To Dash](https://github.com/Eyevinn/hls-to-dash) - Open source packager and tools to rewrap live HLS to live MPEG DASH.
-- [mediagoom/mg — static MP4→DASH/HLS packager](https://github.com/mediagoom/mg) - Node static packager converting MP4 into MPEG-DASH and HLS.
-- [OTT Packager](https://github.com/cannonbeach/ott-packager) - OTT/ABR streaming encoder (H264/HEVC) and packager for DASH and HLS.
-- [Python FFmpeg Video Streaming (aminyazdanpanah)](https://github.com/aminyazdanpanah/python-ffmpeg-video-streaming) - Package media content for online streaming(DASH and HLS) using FFmpeg.
-- [Transcode Web Video](https://github.com/monking/transcode-web-video) - Quickly transcode a source video to MP4, OGV, and WebM, with scale, bitrate, and screengrab options.
-- [VideoTranscoding Backend](https://github.com/cash2one/VideoTranscoding-Backend) - This application transcode a video that you send on all formats what you want and diferent resolutions.
-
-### Comparative Analysis of Codecs
-
-- [A Large-Scale Comparison of x264, x265, and libvpx](https://medium.com/netflix-techblog/a-large-scale-comparison-of-x264-x265-and-libvpx-a-sneak-peek-2e81e88f8b0f)
-- [Audio Codec Benchmark](https://github.com/cmpute/audio-codec-benchmark) - Comprehensive Python-based quantitative comparison tool for lossless and lossy audio codecs. Benchmarks compression ratio, bitrate, encoding/decoding speed across multiple formats including FLAC, Opus, Vorbis, AAC, and more.
-- [Benchmarking Conventional and Learned Video Codecs (Low-Delay)](https://arxiv.org/abs/2408.05042) - Academic study benchmarking VVC VTM, JVET ECM, libaom AV1, AVM and neural DCVC codecs in low-delay config with BD-rate on PSNR/SSIM/VMAF.
-- [Block-Partitioning Strategies for Accelerated Multi-rate Encoding in Adaptive VVC Streaming](https://arxiv.org/pdf/2510.14645) - 2025 arXiv paper on VVC encoder speed/efficiency techniques specifically for adaptive bitrate streaming ladders.
-- [codec-compare (WebM Project)](https://github.com/webmproject/codec-compare) - Official WebM Project static front-end visualization framework for aggregating and presenting codec performance comparison data (AV1/AVIF/WebP).
-- [codec-comparisons (Kim2091)](https://github.com/Kim2091/codec-comparisons) - Active repo testing NVENC, QuickSync, AMF, and CPU encoders at matched bitrates for visual quality comparison.
-- [codec-eval](https://github.com/imazen/codec-eval) - Rust codec comparison harness computing SSIMULACRA2 and Butteraugli for dual-metric artifact analysis across encoders.
-- [Evaluation of Hardware-based Video Encoders on Modern GPUs for UHD Live-Streaming](https://arxiv.org/html/2511.18686v1) - 2025 paper benchmarking NVENC, QuickSync, and AMF hardware encoders on modern GPUs for UHD live streaming.
-- [MainConcept Codec Comparison Tool](https://www.mainconcept.com/codec-comparison-tool) - Professional HEVC/H.265 and AVC/H.264 video encoding quality evaluation tool integrated with FFmpeg. Includes VMAF and PSNR metric generation, supports objective quality analysis and performance benchmarking for transcoding workflows.
-- [Performance Comparison of VVC, AV1, HEVC, and AVC for High Resolutions](https://www.mdpi.com/2079-9292/13/5/953) - Open-access 2024 journal paper with direct BD-rate/complexity comparison of VVC, AV1, HEVC, and AVC at high resolutions.
-- [Reducing AV1 Decoder Complexity and Energy Consumption via Encoder Parameter Tuning](https://arxiv.org/html/2510.12380) - 2025 empirical study (Google/YouTube-backed) on tuning AV1 encoder parameters to reduce decoder-side complexity and energy use.
-- [SINRG-Lab/Video-Codec-Evaluation](https://github.com/SINRG-Lab/Video-Codec-Evaluation) - FFmpeg pipeline computing MS-SSIM/PSNR/VMAF for H264/H265/VP9/AV1 with RD-plot analysis via a plotter script.
-
-### Benchmarking & Performance Tools for Codecs
-
-- [aom_analyzer](https://github.com/rainliu/aom_analyzer) - CLI AV1 bitstream analyzer for inspecting sequence, frame, tile, and superblock structure of AOM AV1 streams.
-- [av1parser](https://github.com/yohhoy/av1parser) - Rust AV1 bitstream parser that dissects OBU/header structure for low-level stream inspection (not a full decoder).
-- [FAU-LMS/bjontegaard — BD-Rate Python Library](https://github.com/FAU-LMS/bjontegaard) - Pip-installable BD-rate calculator with cubic-spline/PCHIP/Akima interpolation plus RCD plots; PCHIP matches Excel to 10 decimals.
-- [IENT/RDPlot — Rate-Distortion Plotting Tool](https://github.com/IENT/RDPlot) - Qt GUI that parses encoder logs from reference software (HM/VTM/etc) and plots rate-distortion curves.
-- [Proryanator/encoder-benchmark — Realtime HW Encode Benchmark](https://github.com/Proryanator/encoder-benchmark) - Rust tool benchmarking real-time hardware encode fps, with permutor-cli automating bitrate/resolution/fps/quality permutation testing.
-- [tdaede/rd_tool — AWCY Encode Backend](https://github.com/tdaede/rd_tool) - Encode/decode/metrics job-distribution backend for Are We Compressed Yet, distributing codec RD tests over worker cores.
-- [Transcoding Performance Trial](https://github.com/2501world/transcoding-performance-trial) - Runs FFmpeg transcoding processes simultaneously and measures CPU performance.
-- [Video Processing Benchmarks and Research](https://videoprocessing.github.io) - Comprehensive video codec benchmarking and research platform with ML-based optimization methods, stereoscopic quality assessment, and codec comparison studies. Includes research on x264/x265 preset optimization and video quality metrics analysis.
-- [xiph/awcy — Are We Compressed Yet?](https://github.com/xiph/awcy) - Distributed encode/decode + BD-rate + VMAF codec comparison harness used by AOM for AV1 (libaom, SVT-AV1, rav1e), with comparative reports and dataset management.
-
-### Real-Time Encoding Solutions
-
-- [ABR Broadcaster](https://github.com/jkarthic-akamai/ABR-Broadcaster) - A real time encoder for Adaptive Bitrate Broadcast.
-- [go-transcode](https://github.com/m1k1o/go-transcode) - On-demand HTTP transcoding origin for live inputs and static files with NVIDIA GPU acceleration via Docker.
-- [Gstreamill](https://github.com/i4tv/gstreamill) - Encoder with hls output based on gstreamer.
-- [hls_transcoder (Rust)](https://github.com/RustLangLatam/hls_transcoder) - Rust library building GStreamer pipelines to transcode to HLS with hardware (NVENC) and software (x264) support.
-- [Live Video Transmuxing/Transcoding: FFmpeg vs TwitchTranscoder, Part 2](https://blog.twitch.tv/live-video-transmuxing-transcoding-ffmpeg-vs-twitchtranscoder-part-ii-4973f475f8a3?source=userActivityShare-94bccb50d11-1561003748&_branch_match_id=670105191114382351&gi=fd8d504494f4)
-- [Live Video Transmuxing/Transcoding: FFmpeg vs TwitchTranscoder, Part I](https://blog.twitch.tv/en/2017/10/10/live-video-transmuxing-transcoding-f-fmpeg-vs-twitch-transcoder-part-i-489c1c125f28)
-- [LiveForge](https://github.com/im-pingo/liveforge) - Go single-binary multi-protocol live media server supporting RTMP/RTSP/SRT/WHIP/WHEP/HLS/LL-HLS/DASH ingest and delivery.
-- [open-streamer](https://github.com/ntt0601zcoder/open-streamer) - Go live streaming server with in-process libavcodec ABR transcoding and full-GPU pipeline (NVDEC→scale_cuda→NVENC), 1×decode + N×encode fan-out to HLS/DASH.
-- [RTSP Stream](https://github.com/Roverr/rtsp-stream) - Out of box solution for RTSP - HLS live stream transcoding. Makes RTSP easy to play in browsers.
-- [StreamPack - Multiprotocol live streaming broadcaster libraries for Android](https://github.com/ThibaultBee/StreamPack) - StreamPack is a lightweight, high-performance toolkit for building streaming video processing pipelines on Android. It provides reusable components for frame sources, transformations, encoding, and output, making it easy to develop efficient real-time video applications with a modular and composable architecture.
-
-### Cloud-Based Encoding Solutions
-
-- [Cloud Transcoder](https://github.com/xyk2/cloud-transcoder) - Transcoding long (>1 hour) videos quickly and cost-effectively on GCP to adaptive HLS and MP4 mezzanine files. Up to 40x $ savings.
-- [Gcloud Node Video Transcoding](https://github.com/diego3g/gcloud-node-video-transcoding) - Transcode Google Cloud Storage video files with Node.js and FFmpeg.
-- [Hybrik Samples](https://github.com/hybrik/hybrik-samples) - Sample job JSON files and API integration scripts for Dolby Hybrik, a cloud-based media transcoding and QC platform. The repo demonstrates transcode presets, analysis/QC jobs, and workflow automation against the Hybrik API.
-- [Running FFmpeg on AWS Lambda for 1.9% the cost of AWS Elastic Transcoder](https://intoli.com/blog/transcoding-on-aws-lambda) - A guide to building a transcoder using Exodus, FFmpeg, and AWS Lambda.
-- [Server-less Just-in-Time Packaging with AWS Fargate and Unified Origin by Unified Streaming](https://medium.com/@eyevinntechnology/server-less-just-in-time-packaging-with-aws-fargate-and-unified-origin-by-unified-streaming-c1682dc051ca?source=userActivityShare-94bccb50d11-1559724204&_branch_match_id=664738392430917730) - In this blog article Jonas Rydholm Birmé describes how he created a server-less just-in-time packaging origin, using AWS ECS Fargate tasks.
-- [Server-less Video Backend](https://medium.com/@eyevinntechnology/server-less-video-backend-1a142d1d2ba) - In this blog post by Jonas Rydholm Birmé he describes how a completely server-less video backend on AWS would look like.
-- [Snickers](https://github.com/snickers/snickers) - An open source alternative to the video cloud encoding services.
-- [Video Transcoder](https://github.com/andressspinetti/video-transcoder) - AWS S3 + Lambda + Transcode.
-- [Video Transcoding API](https://github.com/video-dev/video-transcoding-api) - Agnostic API to transcode media assets across different cloud services.
-
-#### Subtitles & Captions
-
-- [CCExtractor](https://ccextractor.org) - De-facto standard open-source tool for extracting CEA-608/708 closed captions and subtitles from media files and streams.
-- [DVB captions in media convert](https://docs.aws.amazon.com/mediaconvert/latest/ug/dvb-sub-output-captions.html) - ** If your output captions are DVB-Sub, set them up in your outputs according to the following information.
-- [Live Streaming with Automated Multi-Language Subtitling (AWS Labs)](https://github.com/awslabs/live-streaming-with-automated-multi-language-subtitling) - Reference architecture chaining MediaLive → Lambda@Edge (WebVTT injection) → MediaPackage with Transcribe Streaming + Translate for live multi-language captions.
-- [pyvideotrans — video translation/dubbing pipeline](https://github.com/jianchang512/pyvideotrans) - End-to-end pipeline: ASR → subtitle translation → multi-role dubbing → audio-video re-sync, offline or via API models.
-
-#### Cloud Platforms
-
-- [Riot Games Keeps League of Legends Esports Rolling With Fully Cloud-Based Virtualized Workflow](https://www.sportsvideo.org/2020/03/27/riot-games-keeps-league-of-legends-esports-rolling-with-fully-cloud-based-virtualized-production-workflow) - Although the traditional sports world has come to a standstill due to the coronavirus pandemic, many major esports organizations are still going strong, hosting competitions remotely. Riot Games keeps League of Legends esports rolling with a fully cloud-based, virtualized production workflow.
-
-### Codecs
-
-- [Cisco OpenH264](https://github.com/cisco/openh264) - An open source H.264 (AVC) encoder and decoder library by Cisco, provided under a license that allows free use (Cisco covers MPEG LA licensing for binaries).
-- [Daala Codec (Xiph)](https://xiph.org/daala) - An experimental video codec from the Xiph.Org Foundation that aimed to achieve next-generation compression (the effort preceded and influenced AV1). Daala introduced novel techniques like lapped transforms and per-pixel entropy coding. Its codebase is open and served as a sandbox for ideas that made it into AV1.
-- [FFV1 Codec](https://ffmpeg.org/~michael/ffv1.html) - FFmpeg's FFV1 is a lossless intra-frame video codec. It's open, extremely efficient for archiving video, and is defined in an ongoing standardization (supported by archival institutions).
-- [libde265](https://github.com/strukturag/libde265) - An open source H.265/HEVC video decoder written in C. libde265 can be used to decode HEVC bitstreams in software and is often integrated into players or frameworks needing HEVC support.
-- [libvpx (VP8/VP9 Codec Library)](https://github.com/webmproject/libvpx) - The reference implementation of VP8 and VP9 video codecs (WebM Project). libvpx provides encoding and decoding for VP8/VP9, which are open and royalty-free codecs.
-- [VVdeC (Fraunhofer VVC Decoder)](https://github.com/fraunhoferhhi/vvdec) - An open source Versatile Video Coding (H.266/VVC) software decoder by Fraunhofer HHI. VVdeC supports Main10 profile and can decode 4K/8K content in real-time with optimizations.
-- [XVC Codec (Divideon)](https://github.com/divideon/xvc) - XVC is a proprietary but openly documented video codec by Divideon that claims high compression efficiency. An open source evaluation implementation was released for research purposes. XVC serves as a modern codec design to compare against standards like HEVC and AV1 in compression efficiency research.
-
-#### AV1
-
-- [AV1 Codec](https://docs.google.com/presentation/d/12_Vewc0SDpB1FycflfT4us9eipRCy0HWJVSaDMDifRs/edit?usp=sharing) - Working with the AV1 Codec Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv.
-- [grav1synth — AV1 Grain Synthesis Analyzer/Editor](https://github.com/rust-av/grav1synth) - Rust tool to extract, strip, and estimate film-grain synthesis tables from encoded AV1 files by comparing source vs denoised diffs.
-- [SVT-AV1](https://github.com/AOMediaCodec/SVT-AV1) - An open-source AV1 encoder and decoder from the Scalable Video Technology project. SVT-AV1 is optimized for performance and multi-threading, enabling faster AV1 encoding.
-- [VersatileFilmGrain (InterDigital)](https://github.com/InterDigitalInc/VersatileFilmGrain) - Software model of hardware-friendly film grain synthesis supporting MPEG FGC SEI and AOM/AV1 parameters, from InterDigital R&D.
-
-#### VP9
-
-- [ASWF Encoding Guidelines: Encode VP9](https://academysoftwarefoundation.github.io/EncodingGuidelines/EncodeVP9.html) - Academy Software Foundation's community encoding guide for VP9, including 10-bit/HDR workflow guidance.
-- [Google: VP9 Settings for VOD](https://developers.google.com/media/vp9/settings/vod) - Google's per-resolution bitrate/CRF/tile-columns recommendation table for VP9 VOD encoding.
-- [SVT-VP9](https://github.com/OpenVisualCloud/SVT-VP9) - Intel's Scalable Video Technology implementation of the VP9 codec. SVT-VP9 is an open source VP9 encoder/decoder designed to leverage multi-core processors for faster encoding of VP9 videos.
-- [WebM Project: VP9 Encoding Guide (FFmpeg)](https://wiki.webmproject.org/ffmpeg/vp9-encoding-guide) - Official WebM project wiki guide to encoding VP9 via FFmpeg, covering CQ/CBR modes, tiling, and row-mt options.
-
-#### HEVC
-
-- [Kvazaar HEVC Encoder](https://github.com/ultravideo/kvazaar) - An open source HEVC encoder developed by Tampere University. Kvazaar is aimed at academic research and ultra HD content encoding, offering a modular codebase for experimentation with HEVC encoding algorithms while achieving competitive performance.
-- [OpenHEVC Decoder](https://github.com/OpenHEVC/openHEVC) - An open source high-performance HEVC decoder. OpenHEVC was developed to provide a fast HEVC/H.265 software decoding solution and has been integrated into projects like VLC. It supports real-time decoding of 1080p and higher resolutions on typical PC hardware.
-- [SVT-HEVC](https://github.com/OpenVisualCloud/SVT-HEVC) - An open source high-performance HEVC encoder from Intel (Scalable Video Technology for HEVC). SVT-HEVC is optimized for speed and latency, allowing real-time encoding of HD/UHD content on multi-core CPUs.
-
-### Open Source Encoder Projects
-
-- [multicoreware / x265 / wiki / Home — Bitbucket](https://bitbucket.org/multicoreware/x265_git/wiki/Home)
-- [Rav1e](https://github.com/xiph/rav1e) - The fastest and safest AV1 encoder.
-- [Video Compression Motion Estimation Block Video Encoder](https://github.com/AK1194/Video-Compression-motion-estimation-block-video-encoder) - This repository is about video compression, and more specifically about the motion estimation block (ME block) of a video encoder. It is a research project for developing an efficient motion estima..
-- [x265 Documentation — x265  documentation](https://x265.readthedocs.io/en/master)
-
-#### AV1
-
-- [aom-av1-lavish — tuned aomenc fork](https://github.com/Clybius/aom-av1-lavish) - Fork of libaom/aomenc hyper-tuned for perceptual fidelity using butteraugli, VMAF and SSIMULACRA2 rate-distortion optimization.
-- [Introducing SVT-AV1: a scalable open-source AV1 framework](https://medium.com/netflix-techblog/introducing-svt-av1-a-scalable-open-source-av1-framework-c726cce3103a) - By Andrey Norkin, Joel Sole, Kyle Swanson, Mariana Afonso, Anush Moorthy, Anne Aaron.
-- [rav1d — memory-safe AV1 decoder in Rust](https://github.com/memorysafety/rav1d) - A Rust port of the dav1d AV1 decoder by ISRG/Prossimo, providing a memory-safe, performance-competitive decoder for the AV1 codec.
-- [rav1e_js](https://github.com/rust-av/rav1e_js) - JavaScript/WebAssembly bindings for the rav1e AV1 encoder, enabling in-browser AV1 encoding.
-- [SVT-AV1-PSY — psychovisual SVT-AV1 fork](https://github.com/psy-ex/svt-av1-psy) - Community fork of SVT-AV1 adding psychovisual fidelity enhancements (perceptual tuning, metrics) that are being upstreamed to the mainline encoder.
-- [SVT-AV1-PSYEX](https://github.com/BlueSwordM/svt-av1-psyex) - Actively-maintained fork of SVT-AV1 with psychovisual tuning; improves default perceptual quality settings. Successor to the discontinued psy-ex fork.
-- [SVT-AV1: an open-source AV1 encoder and decoder](https://netflixtechblog.com/svt-av1-an-open-source-av1-encoder-and-decoder-ad295d9b5ca2) - By Andrey Norkin, Joel Sole, Mariana Afonso, Kyle Swanson, Agata Opalach, Anush Moorthy, Anne Aaron.
-- [wav1c — Wondrous AV1 Coder](https://github.com/rafaelcaricio/wav1c) - Spec-compliant AV1 encoder written from scratch in safe Rust with zero dependencies; usable as a library, via C FFI, WebAssembly, or as an FFmpeg plugin, with HDR10/10-bit support.
-
-### Scripting & Automation Tools
-
-- [Av1an](https://github.com/rust-av/Av1an) - Cross-platform CLI chunked-encoding framework enabling parallel per-scene encoding for AV1, VP9, HEVC, and H.264 with per-scene quality targeting.
-- [Av1an](https://github.com/master-of-zen/Av1an) - Cross-platform command-line AV1 encode toolkit. Contribute to master-of-zen/Av1an development by creating an account on GitHub.
-- [Batch Py Remux](https://github.com/ZaifSenpai/Batch-Py-Remux) - Convert mkv video to hevc (h.265).
-- [Batch Python FFmpeg Tutorial](https://github.com/Azure-Samples/batch-python-ffmpeg-tutorial) - A Python application that uses Batch to process media files in parallel with the FFmpeg open-source tool.
-- [Distributed FFmpeg Transcoding Cluster](https://github.com/chn-lee-yumi/distributed_ffmpeg_transcoding_cluster) - 分布式FFmpeg转码集群。A FFmpeg transcoding cluster runs in variable CPUs, including ARM, x86, and others which can run linux. You can use it to run a RaspberryPi cluster.
-- [Other Video Transcoding](https://github.com/donmelton/other_video_transcoding) - Other tools to transcode videos.
-- [Pyup Transcoder](https://github.com/sw360cab/pyup-transcoder) - A Python-based software to transcode videos and upload files to a remote server or S3-bucket.
-- [Scalable, Parallel Video Transcoding on Ubuntu](https://blog.dustinkirkland.com/2014/07/scalable-parallel-video-transcoding-on.html) - Transcoding video is a very resource intensive process. It can take many minutes to process a small, 30-second clip, or even hours to p..
-- [Transcode (cwinging)](https://github.com/cwinging/transcode) - Python transcode server.
-- [TranscodeVideo](https://github.com/Ponyboy47/TranscodeVideo) - A Swift wrapper around the transcode-video command.
-- [Video Utils](https://github.com/kwodzicki/video_utils) - Python package containing many tools useful for converting video files to h264/h265 encoded MP4 or MKV files.
-
-#### FFmpeg
-
-- [ab-av1](https://github.com/alexheretic/ab-av1) - CLI tool for AV1 (and x264/x265) re-encoding using fast VMAF sampling plus automatic CRF binary search to hit a target quality. Wraps FFmpeg/svt-av1/vmaf.
-- [FFmpeg Nvidia Adaptive VOD Transcoder](https://github.com/SmurfManX/ffmpeg-nvidia-adaptive-vod-transcoder) - Bash script which will detect video new file in folder and transcode it to adaprive bitrate.
-
-#### FFmpeg
-
-- [Swift Encoder](https://github.com/ptrandev/swift-encoder) - A fire-and-forget shell script that encodes multiple video and audio files with FFmpeg.
-
-### Software Codecs
-
-- [Dav1d (videolan)](https://code.videolan.org/videolan/dav1d) - Dav1d is the fastest AV1 decoder on all platforms.
-- [descriptinc/prores-software-decoder — Real-Time Software ProRes Decoder](https://github.com/descriptinc/prores-software-decoder) - Real-time software decoder/demo for Apple ProRes, enabling ProRes playback without hardware VideoToolbox support.
-- [exhale](https://github.com/dtseto/exhale) - Open-source USAC / xHE-AAC (Extended HE-AAC) encoder converting WAVE to MPEG-4 ISO/IEC 23003-3, mono/stereo/multichannel at medium-high bitrates.
-- [libxaac](https://github.com/ittiam-systems/libxaac) - Ittiam Extended HE-AAC full encoder and decoder supporting AAC-LC, HE-AACv1/v2 object types.
-- [OpenVVC](https://openvvc.github.io) - Open-source (LGPLv2.1) real-time software VVC/H.266 decoder library with frame and tile parallelism, RPR support.
-- [uavs3e — AVS3-P2 Video Encoder](https://github.com/uavs3/uavs3e) - Open-source baseline encoder for the Chinese AVS3-P2 video standard; SSE4/AVX2 optimized, 10-bit, competitive with AV1/VVC on fidelity.
-- [V-Nova LCEVCdec — MPEG-5 LCEVC Decoder SDK](https://github.com/v-novaltd/LCEVCdec) - V-Nova's official open-source MPEG-5 LCEVC (Low Complexity Enhancement Video Coding) decoder SDK, with CPU and experimental Vulkan GPU decode pipelines.
-- [V-Nova LCEVCdecJS — LCEVC Web Decoder](https://github.com/v-novaltd/LCEVCdecJS) - JavaScript/WebGL MPEG-5 LCEVC decoder for browser video playback, enabling LCEVC enhancement layer rendering on the web.
-
-### Hardware Codecs & Acceleration
-
-- [Intel libvpl — oneVPL Dispatcher](https://github.com/intel/libvpl) - OneVPL dispatcher library for Intel Quick Sync Video hardware encode/decode, the successor to Media SDK.
-- [Intel Vaapi Driver](https://github.com/intel/intel-vaapi-driver) - VA-API user mode driver for Intel GEN Graphics family.
-- [Intel vpl-gpu-rt — oneVPL GPU Runtime](https://github.com/intel/vpl-gpu-rt) - OneVPL GPU runtime implementing Intel QSV hardware encode/decode on modern Intel GPUs.
-- [Khronos Vulkan-Video-Samples](https://github.com/KhronosGroup/Vulkan-Video-Samples) - Official Khronos sample apps for end-to-end all-Vulkan hardware decode/encode of H.264/H.265/AV1/VP9, vendor-neutral across drivers.
-- [Libva](https://github.com/intel/libva) - An implementation for VA-API (Video Acceleration API).
-- [NETINT Libxcoder — Quadra VPU driver/API](https://github.com/NETINT-Technologies/netint_libxcoder) - Driver and API (Libxcoder) for NETINT Quadra VPUs, with encode/decode/transcode demo tools for ASIC-based hardware video processing.
-- [NVIDIA NvPipe — Low-Latency GPU Video Compression](https://github.com/NVIDIA/NvPipe) - C++ library for zero-latency hardware video compression, aimed at interactive remoting/streaming using NVENC/NVDEC.
-- [NVIDIA vk_video_samples](https://github.com/nvpro-samples/vk_video_samples) - NVIDIA Vulkan Video samples usable as customizable decode/encode libraries for hardware-accelerated video pipelines.
-- [nvidia-video-codec-rs — Rust NVENC/NVDEC Bindings](https://github.com/rust-av/nvidia-video-codec-rs) - Rust bindings for the NVIDIA Video Codec SDK, providing hardware encode and decode from Rust.
-- [Rockchip MPP — Media Process Platform](https://github.com/rockchip-linux/mpp) - Official hardware encode/decode library for Rockchip SoCs (RK3288/3399/3588), decoding H.265/H.264/VP9/AV1 and encoding H.265/H.264/VP8/MJPEG.
-- [Xilinx/AMD Video SDK — Alveo U30 / VT1](https://github.com/Xilinx/video-sdk) - AMD/Xilinx Video SDK for Alveo U30 and AWS VT1 FPGA transcoding, exposing FFmpeg, GStreamer and the XMA C API for hardware-accelerated encode/decode.
-
-### Containerization & Packaging Tools
-
-- [Alpine Node Video Multitool](https://github.com/realeyes-media/alpine-node-video-multitool) - Contribute to realeyes-media/alpine-node-video-multitool development by creating an account on GitHub.
-- [Bento4 | Fast, Modern Tools and C++ Class Library for all your MP4 and DASH media format needs](https://www.bento4.com)
-- [CDN Transcode Sample](https://github.com/OpenVisualCloud/CDN-Transcode-Sample) - Media transcoding is a key function for live video broadcasting, streaming, and video on demand use cases in a CDN network. The CDN Transcode sample (not a finished product) provides a reference pi..
-- [Dlb Mp4base](https://github.com/DolbyLaboratories/dlb_mp4base) - The Dolby MP4 streaming muxer (dlb_mp4base) is a software implementation of a muxer of fragmented or unfragmented ISO base media file format (mp4). It supports muxing of Dolby Digital (AC-3), Dolby..
-- [Dlb Mp4demux](https://github.com/DolbyLaboratories/dlb_mp4demux) - The Dolby MP4 streaming demuxer (dlb_mp4demux) is a software implementation of a demuxer of fragmented or unfragmented ISO base media file format (mp4). It supports demuxing of Dolby Digital (AC-3)..
-- [Dlb Mp4demux (ShaoWeiguo)](https://github.com/ShaoWeiguo/dlb_mp4demux) - The Dolby MP4 streaming demuxer (dlb_mp4demux) is a software implementation of a demuxer of fragmented or unfragmented ISO base media file format (mp4). It supports demuxing of Dolby Digital (AC-3)..
-- [Docker HEVC](https://github.com/Eyevinn/docker-hevc) - Docker container to create HEVC streaming packages.
-- [Gots](https://github.com/Comcast/gots) - MPEG Transport Stream handling in Go.
-- [GPAC MP4Box](https://github.com/gpac/gpac/wiki/mp4box) - MP4Box is a multimedia packager from the GPAC framework, used for encoding and packaging media files.
-- [Imf Conversion](https://github.com/DSRCorporation/imf-conversion) - NF IMF media conversion utility allows to handle flat file creation from a specified CPL within the IMF package.
-- [lieff/minimp4 — Single-Header C MP4 Mux/Demux](https://github.com/lieff/minimp4) - Minimalistic single-header C library for MP4 mux/demux with fragmented-MP4 mode.
-- [Mixwave](https://github.com/matvp91/mixwave) - Self hostable platform that aims to simplify the complexities of video delivery. Transcode and package your media for online streaming with simple API calls and sane defaults, or craft dynamic HLS playlists on the fly with bumpers, ads and filters.
-- [Mp4parser](https://github.com/sannies/mp4parser) - A Java API to read, write and create MP4 files. Contribute to sannies/mp4parser development by creating an account on GitHub.
-- [muxide — Pure-Rust MP4 Muxer](https://github.com/Michael-A-Kuykendall/muxide) - Pure-Rust zero-dependency MP4 muxer (no FFmpeg) supporting H.264/H.265/AV1/AAC/Opus with fragment mode.
-- [Openfaas Transcode](https://github.com/cpitkin/openfaas-transcode) - Pipeline.
-- [Shaka Packager – opensource.google](https://opensource.google/projects/shaka-packager) - Learn about all our projects.
-- [shiguredo/mp4-rs — Sans-I/O Rust MP4 Mux/Demux](https://github.com/shiguredo/mp4-rs) - Zero-dependency, sans-I/O Rust MP4 mux/demux with Fmp4SegmentMuxer and Demuxer, no_std capable; actively maintained.
-- [The Netflix IMF Workflow](https://medium.com/netflix-techblog/the-netflix-imf-workflow-f45dd72ed700?source=userActivityShare-94bccb50d11-1568773157&_branch_match_id=702692448596112473) - Interesting architectural implications.
-- [Transcoder](https://github.com/Vilsol/Transcoder) - Docker container to transcode videos in mounted volume to H265 using FFmpeg.
-- [Ts2mpa](https://github.com/njh/ts2mpa) - A simple tool to extract MPEG Audio from a MPEG-2 Transport Stream.
-- [tsMuxer](https://github.com/justdan96/tsMuxer) - A transport stream muxer for remuxing/muxing elementary streams, EVO/VOB/MPG, MKV/MKA, MP4/MOV, TS, M2TS to TS to M2TS. Supported video codecs H.264/AVC, H.265/HEVC, VC-1, MPEG2. Support..
-
-#### Audio
-
-- [EBU ADM Renderer (EAR)](https://github.com/ebu/ebu_adm_renderer) - EBU's reference implementation of ADM rendering (Tech 3388) in Python, shipping ear-utils CLI tools including dump_axml, dump_chna, ambix_to_bwf, and make_test_bwf.
-- [fdk-aac](https://github.com/mstorsjo/fdk-aac) - Standalone Fraunhofer FDK AAC codec library (from Android AOSP) supporting AAC-LC/HE-AAC/HE-AACv2/LD/ELD encode and decode, commonly paired with FFmpeg's --enable-libfdk-aac.
-- [iamf-tools (AOM)](https://github.com/AOMediaCodec/iamf-tools) - Alliance for Open Media's Immersive Audio Model and Formats encoder/tools, CLI-encoding WAV or ADM-BWF into the IAMF container - an open alternative to Atmos/MPEG-H object audio.
-- [libadm](https://github.com/irt-open-source/libadm) - C++11 library to parse, create, and write ITU-R BS.2076 Audio Definition Model (ADM) XML, pairing with libbw64 for BW64/BWF file I/O - a building block for object-based/Atmos-adjacent audio packaging.
-- [opus-tools](https://github.com/xiph/opus-tools) - Xiph's official CLI tools for encoding, inspecting, and decoding Opus audio (opusenc, opusdec, opusinfo).
-
-#### FFmpeg
-
-- [cuda/ubuntu16.04/FFmpeg-gpu/Dockerfile · master · nvidia / container-images / samples](https://gitlab.com/nvidia/container-images/samples/blob/master/cuda/ubuntu16.04/ffmpeg-gpu/Dockerfile) - Sample Dockerfiles for Docker Hub images.
-- [FFmpeg](https://github.com/jrottenberg/ffmpeg) - Docker build for FFmpeg on Ubuntu / Alpine / CentOS 7 / Scratch.
-- [VP9 Dash](https://github.com/Eyevinn/vp9-dash) - FFmpeg wrapper script to create VP9 MPEG-DASH packages.
-
-#### Origin Servers
-
-- [Docker Jit Capture](https://github.com/Eyevinn/docker-jit-capture) - A Docker container for an open source Just-In-Time Capture Origin.
-
-### Software Transcoding Tools
-
-- [Av1transcoder](https://github.com/luziferius/av1transcoder) - Transcode video files to the AV1 format using FFmpeg and libaom-av1.
-- [Codem Transcode](https://github.com/madebyhiro/codem-transcode) - Offline video transcoder written in Node.js.
-- [Django Video Transcoding](https://github.com/just-work/django-video-transcoding) - Simple video transcoding application for Django Framework.
-- [dolby-encoding-engine/plugins at master · DolbyLaboratories/dolby-encoding-engine](https://github.com/DolbyLaboratories/dolby-encoding-engine/tree/master/plugins) - Contribute to DolbyLaboratories/dolby-encoding-engine development by creating an account on GitHub.
-- [Fantastic Transcoder](https://github.com/ClearSlide/Fantastic-Transcoder) - A video transcoder which utilizes massively parallel compute to achieve ludicrous conversion speeds.
-- [MediaMolder - FFmpeg for the AI era](https://github.com/MediaMolder/mediamolder) - A rewrite of the interface and orchestration layers of FFmpeg. Includes...
-* Graphical user interface that makes it easy to visualize, edit, validate and run your graph
-* Jobs defined in JSON files
-* Import any FFmpeg command-line
-* Real-time encoding control system - dynamically optimizes encoder settings to maintain real-time frame rates
-* Open Telemetry / Prometheus metrics 
-* Add custom Go processing nodes
-* Integrations with AI engines, including...
-   * Whisper speech to text
-   * Vidi 2.5 multimodal scene understanding
-   * TwelveLabs multimodal video understanding and embedding
-   * YOLOv8 object detection and classification
-   * YOLOv8 face detection and alignment with SFace Embedding
-* Custom motion-compensated scene detector
-* Go port of PySceneDetect (5 scene detection algorithms)
-* Integrated support of LibRAW (decoding, processing of camera RAW formats)
-* Simple video sequence editor
-* Support for remote or distributed execution.
-- [Node Transcoding](https://github.com/benvanik/node-transcoding) - Node.js video transcoding library.
-- [NotEnoughAV1Encodes](https://github.com/Alkl58/NotEnoughAV1Encodes) - GUI Handler for AV1 Encoders (aomenc, rav1e & svt-av1).
-- [Rate Control Tests](https://github.com/slhck/rate-control-tests) - Tests for different rate control modes in x264. Contribute to slhck/rate-control-tests development by creating an account on GitHub.
-- [React Native Transcode](https://github.com/selsamman/react-native-transcode) - Video Transcoder for React Native.
-- [Transcode (kees)](https://github.com/kees/transcode) - Video Transcoding Tools.
-- [transcode2H265](https://github.com/amaurypm/transcode2H265) - Unattended video transcoder to H265 and ACC codecs, in MKV containers.
-- [Video Transcoding](https://github.com/donmelton/video_transcoding) - Tools to transcode, inspect and convert videos.
-- [Vireo](https://github.com/twitter/vireo) - A lightweight and versatile video processing library written in C++11.
-
 ### Encoding Tools
 
 - [Adobe Media Encoder (AME) Guide](https://helpx.adobe.com/media-encoder/user-guide.html) - User guide for Adobe Media Encoder, a tool that automates batch transcoding and export from Adobe's video apps. Useful resource for understanding batch encoding settings for various formats and how to optimize output for different platforms.
@@ -497,7 +236,7 @@
 - [Avidemux](http://avidemux.sourceforge.net) - A simple, free video editor for cutting, filtering, and encoding tasks, supporting many file types and codecs.
 - [AviSynth+](https://avs-plus.net) - An improved version of the classic AviSynth frameserver. AviSynth+ allows video processing and filtering through scripting, enabling complex edits and conversions on Windows with high performance.
 - [Avtk](https://github.com/senko/avtk)
-- [avTranscoder](https://github.com/avTranscoder/avTranscoder) - C++ API for LibAV / FFmpeg.d.
+- [avTranscoder](https://github.com/avTranscoder/avTranscoder) - C++ wrapper providing a high-level API around FFmpeg and LibAV for video transcoding tasks.
 - [ButtleOFX](https://github.com/ButtleOFX/ButtleOFX) - An open source nodal video compositing software built on top of OpenFX. It provides a user-friendly interface to apply and connect video effects (an experimental alternative to commercial compositors).
 - [Cinelerra GG Infinity](https://cinelerra-gg.org) - A robust open source non-linear editor for Linux, derived from the long-running Cinelerra project. Cinelerra GG Infinity offers professional-grade editing, compositing, and audio features for advanced users on Linux.
 - [CloudTranscode](https://github.com/bfansports/CloudTranscode) - Distributed videos and images encoding/transcoding using Amazon SFN, FFmpeg and ImageMagic.
@@ -523,9 +262,9 @@
 - [Liquid Dl](https://github.com/Kthulu120/liquid_dl) - Liquid-dl is a simple tool for utlities such as FFmpeg, YouTube-dl, and scdl. It provides a simple framework with simple point and click options allowing users to just click on what they need and u..
 - [Lossless Cut](https://github.com/mifi/lossless-cut)
 - [Manifesto](https://github.com/gitfu/manifesto) - An HLS tool for creating multiple variants, a master.m3u8 file, and converting 608 captions to segmented webvtt subtitles via FFmpeg.
-- [Mlt](https://github.com/mltframework/mlt) - Multimedia Framework.
+- [Mlt](https://github.com/mltframework/mlt) - Cross-platform multimedia framework for video editing, processing, and playback applications.
 - [MLT Framework](https://www.mltframework.org) - An open source multimedia framework for video editing applications. MLT provides a toolkit for developers to build editors (used by Kdenlive, Shotcut) with support for a range of effects and transitions.
-- [Moviepy](https://github.com/Zulko/moviepy)
+- [Moviepy (GitHub)](https://github.com/Zulko/moviepy)
 - [MP4Box JS](https://github.com/gpac/mp4box.js) - JavaScript version of GPAC's MP4Box tool.
 - [Mp4Composer-android](https://github.com/MasayukiSuda/Mp4Composer-android) - An Android library to compose and edit MP4 videos using MediaCodec, supporting filters, scaling, trimming, transcoding, cropping, time scaling, and rotation.
 - [mp4ff](https://github.com/edgeware/mp4ff) - A Golang library and set of tools for parsing and writing MP4 (ISO BMFF) files, including support for fragmented MP4 and progressive MP4.
@@ -563,32 +302,304 @@
 
 #### FFmpeg
 
+- [ab-av1](https://github.com/alexheretic/ab-av1) - CLI tool for AV1 (and x264/x265) re-encoding using fast VMAF sampling plus automatic CRF binary search to hit a target quality. Wraps FFmpeg/svt-av1/vmaf.
+- [Alpine Bento FFmpeg](https://github.com/realeyes-media/alpine-bento-ffmpeg) - Alpine Linux with FFmpeg, Bento, and PM2.
+- [Awesome FFmpeg](https://github.com/transitive-bullshit/awesome-ffmpeg) - A curated list of awesome FFmpeg resources.
+- [AWS Lambda FFmpeg](https://github.com/binoculars/aws-lambda-ffmpeg) - An S3-triggered Amazon Web Services Lambda function that runs your choice of FFmpeg 🎬 commands on a file  🎥 and uploads the outputs to a bucket.
+- [Can FFmpeg extract closed caption data](https://stackoverflow.com/questions/3169910/can-ffmpeg-extract-closed-caption-data) - I am currently using FFmpeg to convert videos in various formats to flv files. One request has also come up and that is to get closed caption info out o the file as well. Does anyone have any exper..
+- [compile and install latest FFmpeg source as pkg](https://gist.github.com/krzemienski/e51a0b7a6ba77e616f954e516783270c#file-compile-and-install-latest-ffmpeg-source-sh-L2) - GitHub Gist: instantly share code, notes, and snippets.
+- [cuda/ubuntu16.04/FFmpeg-gpu/Dockerfile · master · nvidia / container-images / samples](https://gitlab.com/nvidia/container-images/samples/blob/master/cuda/ubuntu16.04/ffmpeg-gpu/Dockerfile) - Sample Dockerfiles for Docker Hub images.
 - [Docker FFmpeg](https://github.com/linuxserver/docker-ffmpeg) - Linuxserver/docker-FFmpeg - A GitHub repository for video/multimedia development.
+- [Encode HDR with VP9](https://developers.google.com/media/vp9/hdr-encoding) - Hands on tutorial of using FFmpeg to do hdr encoding.
+- [FFCommand Engine](https://github.com/ColorlabMD/FFCommand_Engine) - Create and execute FFmpeg commands.
+- [FFmbc](https://github.com/bcoudurier/FFmbc) - FFmpeg customized for broadcast and professional usage.
+- [FFmpeg (FFmpeg)](https://github.com/FFmpeg/FFmpeg) - Mirror of git://source.FFmpeg.org/FFmpeg.git.
+- [FFmpeg (GitHub)](https://github.com/jrottenberg/ffmpeg) - Docker build for FFmpeg on Ubuntu / Alpine / CentOS 7 / Scratch.
+- [FFmpeg and how to use it wrong](https://videoblerg.wordpress.com/2017/11/10/ffmpeg-and-how-to-use-it-wrong) - I've been in the streaming media industry since 2008 and have seen a lot of misinformation regarding both FFmpeg and libx264. In this post I hope to help shed some light on what does and does..
 - [FFmpeg AutoGen (C#)](https://github.com/Ruslan-B/FFmpeg.AutoGen) - A set of auto-generated P/Invoke bindings for FFmpeg libraries. FFmpeg.AutoGen allows .NET developers to directly use FFmpeg's C API in C# for advanced media processing tasks.
+- [FFmpeg AWS Lambda Layer](https://github.com/serverlesspub/ffmpeg-aws-lambda-layer) - FFmpeg/FFprobe AWS Lambda layer.
+- [FFmpeg Batch Converter (Windows)](https://ffmpeg-batch.sourceforge.io) - A Windows front-end that allows batch processing with FFmpeg. Users can queue up multiple files with presets for conversion or processing, automating repetitive FFmpeg tasks without writing a script.
+- [FFmpeg Bitrate Stats](https://github.com/slhck/ffmpeg-bitrate-stats) - Calculate bitrate statistics using FFmpeg.
+- [FFmpeg Build Script](https://github.com/markus-perl/ffmpeg-build-script) - An easy way to build a static FFmpeg on macOS and Linux with non-free codecs included.
+- [FFmpeg CLI Wrapper](https://github.com/bramp/ffmpeg-cli-wrapper) - Java wrapper around the FFmpeg command line tool.
+- [FFmpeg Debug Qp](https://github.com/slhck/ffmpeg-debug-qp) - FFmpeg Debug Script for QP Values.
+- [FFmpeg iOS Build Script](https://github.com/kewlbear/FFmpeg-iOS-build-script) - Shell scripts to build FFmpeg for iOS and tvOS.
+- [FFmpeg JS](https://github.com/Kagami/ffmpeg.js) - Port of FFmpeg with Emscripten.
+- [FFmpeg Libvpx HDR Static](https://github.com/id3as/ffmpeg-libvpx-HDR-static) - A script to build a static binary of FFmpeg optimised for libvpx (HDR 10bit) encoding.
+- [FFmpeg Nvidia Adaptive VOD Transcoder](https://github.com/SmurfManX/ffmpeg-nvidia-adaptive-vod-transcoder) - Bash script which will detect video new file in folder and transcode it to adaprive bitrate.
+- [FFmpeg Patch](https://github.com/VCDP/FFmpeg-patch) - This repository contains a collection of FFmpeg* patches and samples to enable CNN model based video analytics capabilities (such as object detection, classification, recognition) in FFmpeg* framew..
+- [FFmpeg Python (kkroening)](https://github.com/kkroening/ffmpeg-python)
 - [FFmpeg Scale Benchmark](https://github.com/Saurabh702/ffmpeg-scale-benchmark) - Saurabh702/FFmpeg-scale-benchmark - A GitHub repository for video/multimedia development.
+- [FFmpeg Threads Command: How it Affects Quality and Performance](https://streaminglearningcenter.com/blogs/ffmpeg-command-threads-how-it-affects-quality-and-performance.html) - So, I received an email from an acquaintance that read, "I was curious if there is actually any benefit to a "threads=" type custom command in x264. Specifically many streamers are buying 8 core/16 thread CPUs to encode as a standalone client capturing information from a video capture device." I had an article on FFmpeg..
+- [FFmpeg Transcoder](https://github.com/sambios/ffmpeg_transcoder) - Video transcode based on FFmpeg, support H264/HEVC and more.
 - [FFmpeg Verbose Logging](https://ffmpeg.org/ffmpeg.html#Generic-Options) - Using FFmpeg's `-loglevel` and debug options can aid in troubleshooting encoding/decoding issues. Documentation on log levels (quiet, panic, error, info, verbose, debug) and flags (like `-report` to write logs to file) helps developers enable detailed logs to inspect what FFmpeg is doing under the hood when processing media.
 - [FFmpeg Wiki: Filtering Guide](https://trac.ffmpeg.org/wiki/FilteringGuide) - Documentation on using FFmpeg's filtering system, demonstrating how to chain video filters (scale, crop, overlay, etc.) and audio filters for processing media with examples.
 - [FFmpeg Wiki: H.264 Encoding Guide](https://trac.ffmpeg.org/wiki/Encode/H.264) - A comprehensive guide on the FFmpeg Wiki detailing how to encode video to H.264 using FFmpeg. It covers recommended settings, presets, CRF usage, and quality considerations.
 - [FFmpeg Wiki: H.265 (HEVC) Encoding Guide](https://trac.ffmpeg.org/wiki/Encode/H.265) - An FFmpeg Wiki guide for encoding video to H.265/HEVC. It describes how to use x265 via FFmpeg, including tuning parameters, bitrate vs quality (CRF), and preset trade-offs.
+- [FFmpeg Windows Build Helpers](https://github.com/rdp/ffmpeg-windows-build-helpers) - Helper script for cross compiling some media tools for windows, like customizable FFmpeg.exe (with or without non-free components, etc), and some other bonuses like mplayer, mp4box, mxf, etc. - rdp..
 - [FFmpeg-go](https://github.com/u2takey/ffmpeg-go) - A Golang binding for FFmpeg that enables developers to generate and run FFmpeg commands programmatically in Go.
+- [FFmpeg-REST — FFmpeg REST API with job queue](https://github.com/crisog/ffmpeg-rest) - FFmpeg REST API (Node/Hono/BullMQ) with async jobs, stateless and S3-compatible storage modes.
+- [FFmpeg-suite-rs](https://github.com/RustNSparks/ffmpeg-suite-rs) - Async builder-pattern Rust wrapper over the FFmpeg CLI with crates for transcoding/filtering, ffprobe inspection, and ffplay playback, plus VAAPI/NVENC/QSV hardware acceleration.
+- [FFmpeg.WebAssembly-st — single-thread FFmpeg.WebAssembly](https://github.com/NikolayMakhonin/ffmpeg.wasm-st) - Single-thread FFmpeg.WebAssembly variant for browser and node, avoiding SharedArrayBuffer/COOP-COEP requirements.
+- [Ffmpeg4java](https://github.com/nextbreakpoint/ffmpeg4java) - A JNI wrapper of FFmpeg library.
+- [ffmprovisr](https://amiaopensource.github.io/ffmprovisr) - Cookbook of commonly used FFmpeg recipes with descriptions of how each command works and how to modify it to fit your needs.
+- [Ffmpy](https://github.com/Ch00k/ffmpy)
+- [Generate MPEG-TS from file with FFmpeg](https://medium.com/@eyevinntechnology/generate-mpeg-ts-from-file-with-ffmpeg-7561181e6369?source=userActivityShare-94bccb50d11-1560983471&_branch_match_id=670020142756633081) - In this post I will describe how an MPEG-TS multicast stream can be generated with FFmpeg by looping an MP4 file and a Docker container.
 - [GMF (Go Media Framework)](https://github.com/3d0c/gmf) - A Go binding for FFmpeg that simplifies working with multimedia in Go, providing high-level access to FFmpeg's decoding and encoding functionality.
+- [H265ize](https://github.com/FallingSnow/h265ize) - A node utility utilizing FFmpeg to encode videos with the hevc codec.
+- [Imageio FFmpeg](https://github.com/imageio/imageio-ffmpeg) - Python wrapper around FFmpeg for video processing. Simplifies FFmpeg integration in Python applications.
 - [jrottenberg/FFmpeg Docker Images](https://hub.docker.com/r/jrottenberg/ffmpeg) - A popular Docker image repository for FFmpeg maintained by the community. These images package FFmpeg (with various codecs enabled) for easy use in CI pipelines or cloud deployments, simplifying environment setup for video processing tasks.
+- [Loop file and generate multiple video bitrates muxed in MPEG-TS with FFmpeg](https://medium.com/@eyevinntechnology/loop-file-and-generate-multiple-video-bitrates-muxed-in-mpeg-ts-with-ffmpeg-85658d0b74bb?source=userActivityShare-94bccb50d11-1560983383&_branch_match_id=670019768959110835) - In a previous post I described how an MPEG-TS multicast stream can be generated with FFmpeg by looping an MP4 file. In this post I will.
+- [Node FFmpeg Stream](https://github.com/phaux/node-ffmpeg-stream) - Node.js bindings to FFmpeg command, exposing stream based API.
+- [Node Fluent FFmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg) - A fluent API to FFmpeg (HTTP://www.FFmpeg.org).
+- [PyFFmpeg](https://pypi.org/project/pyffmpeg) - A Python wrapper for FFmpeg, allowing the composition and execution of FFmpeg commands through a fluent Python interface.
+- [Python FFmpeg](https://github.com/jonghwanhyeon/python-ffmpeg) - A Python interface for FFmpeg using asyncio.
+- [rsmpeg](https://github.com/larksuite/rsmpeg) - Rust crate exposing the FFmpeg libav C API safely; actively maintained with FFmpeg 6/7 support for building multimedia apps.
+- [serverless-FFmpeg — AWS Lambda transcoding](https://github.com/adghayes/serverless-ffmpeg) - AWS Lambda function for event-driven FFmpeg transcoding, configurable per-input/output CLI options.
+- [Sffmpeg](https://github.com/pyke369/sffmpeg) - Full-featured static FFmpeg build helper.
+- [spireav — graph-based Go transcoding library](https://github.com/spiretechnology/spireav) - Go transcoding library to build FFmpeg filter graphs programmatically and monitor progress.
+- [Swift Encoder](https://github.com/ptrandev/swift-encoder) - A fire-and-forget shell script that encodes multiple video and audio files with FFmpeg.
+- [This gist will generate an Intel QSV-enabled FFmpeg build using the open source Intel Media SDK. Testbed used: Ubuntu 18.04LTS. A fallback is also provided for the intel vaapi driver where needed.](https://gist.github.com/SeanMollet/0eed16e80630ab67532890a9d42132af)
+- [Transcoding](https://github.com/AlvianPrasetya/transcoding) - FFmpeg transcoders benchmark. Contribute to AlvianPrasetya/transcoding development by creating an account on GitHub.
+- [Transcoding FFmpeg](https://github.com/LordCrainer/transcoding_ffmpeg) - Transcoding video usando FFmpeg.
+- [Use of Look-Up Tables (LUTs) in FFmpeg](https://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_Use_of_LUTs_FFmpeg.pdf) - How to use luts with FFmpeg for converting between differnt hdr encodes.
+- [Useful FFmpeg Commands](https://github.com/mitio/useful-ffmpeg-commands) - A collection of FFmpeg commands taken from practice.
+- [VP9 Dash](https://github.com/Eyevinn/vp9-dash) - FFmpeg wrapper script to create VP9 MPEG-DASH packages.
+- [x264 FFmpeg Options Guide - Linux Encoding](https://sites.google.com/site/linuxencoding/x264-ffmpeg-mapping)
 - [Xabe.FFmpeg](https://github.com/tomaszzmuda/Xabe.FFmpeg) - A .NET Standard wrapper for FFmpeg, enabling developers to compose and execute FFmpeg commands in C# with a fluent interface.
+
+### Hardware Accelerated Transcoding
+
+- [FFmpeg-rockchip — Rockchip MPP+RGA FFmpeg Fork](https://github.com/nyanmisaka/ffmpeg-rockchip) - FFmpeg fork with async zero-copy Rockchip MPP + RGA integration, exposing h264_rkmpp/hevc_rkmpp/vp9_rkmpp codecs for full hardware transcode.
+- [GMAT — NVIDIA GPU media processing toolkit](https://github.com/NVIDIA/GMAT) - NVIDIA datacenter GPU video/image processing and transcode toolkit (formerly FFmpeg-gpu-demo) with smart decode and HEIF via NVENC/NVDEC.
+- [go-livepeer — decentralized GPU transcoding](https://github.com/livepeer/go-livepeer) - Go implementation of the Livepeer protocol with Broadcaster/Orchestrator/Transcoder roles enabling split-farm remote multi-GPU video transcoding over streaming RPC.
+- [Granite — Vulkan engine with zero-copy GPU video decode](https://github.com/Themaister/Granite) - Vulkan rendering engine with GPU video decode to RGB with no memory round-trip (ffmpeg_decode), by Hans-Kristian Arntzen.
+- [Hardware-Assisted Video Transcoding At Dailymotion](https://medium.com/dailymotion/hardware-assisted-video-transcoding-at-dailymotion-66cd2db448ae) - What if you could save time, power consumption and therefore money, while still keeping a decent quality for your converted video ?
+- [HWEncoderX](https://github.com/MacRimi/HWEncoderX) - Docker container for automatic H.265 video transcoding using GPU hardware acceleration (VAAPI for Intel/AMD, NVENC for NVIDIA, Intel Quick Sync). Includes Telegram notifications, quality optimization, and constant monitoring of input directories.
+- [NVEnc / NVEncC — NVENC transcode CLI](https://github.com/rigaya/NVEnc) - Actively maintained NVENC-based transcoding CLI (NVEncC) supporting H.264/HEVC/AV1 with low-latency mode and rich hardware filtering.
+- [Vaapi Video Converter](https://github.com/git-developer/vaapi-video-converter) - A docker-based video converter that uses VAAPI-compatible hardware for transcoding.
 
 #### FFmpeg
 
-- [Awesome FFmpeg](https://github.com/transitive-bullshit/awesome-ffmpeg) - A curated list of awesome FFmpeg resources.
-- [AWS Lambda FFmpeg](https://github.com/binoculars/aws-lambda-ffmpeg) - An S3-triggered Amazon Web Services Lambda function that runs your choice of FFmpeg 🎬 commands on a file  🎥 and uploads the outputs to a bucket.
-- [FFmpeg (FFmpeg)](https://github.com/FFmpeg/FFmpeg) - Mirror of git://source.FFmpeg.org/FFmpeg.git.
-- [FFmpeg Batch Converter (Windows)](https://ffmpeg-batch.sourceforge.io) - A Windows front-end that allows batch processing with FFmpeg. Users can queue up multiple files with presets for conversion or processing, automating repetitive FFmpeg tasks without writing a script.
-- [FFmpeg Build Script](https://github.com/markus-perl/ffmpeg-build-script) - An easy way to build a static FFmpeg on macOS and Linux with non-free codecs included.
-- [FFmpeg CLI Wrapper](https://github.com/bramp/ffmpeg-cli-wrapper) - Java wrapper around the FFmpeg command line tool.
-- [FFmpeg iOS Build Script](https://github.com/kewlbear/FFmpeg-iOS-build-script) - Shell scripts to build FFmpeg for iOS and tvOS.
-- [FFmpeg JS](https://github.com/Kagami/ffmpeg.js) - Port of FFmpeg with Emscripten.
-- [FFmpeg Python (kkroening)](https://github.com/kkroening/ffmpeg-python)
-- [Ffmpy](https://github.com/Ch00k/ffmpy)
-- [H265ize](https://github.com/FallingSnow/h265ize) - A node utility utilizing FFmpeg to encode videos with the hevc codec.
-- [PyFFmpeg](https://pypi.org/project/pyffmpeg) - A Python wrapper for FFmpeg, allowing the composition and execution of FFmpeg commands through a fluent Python interface.
+- [CUDA GPU Accelerated h264/h265/HEVC Video Encoding with FFmpeg](https://ntown.at/de/knowledgebase/cuda-gpu-accelerated-h264-h265-hevc-video-encoding-with-ffmpeg) - How to use CUDA GPU hardware encoding with FFmpeg to encode h264 and h264 HEVC movies in high quality and highspeed with our optimized parameter settings.
+- [Is it possible to get FFmpeg to use hardware acceleration for HEVC transcoding on macOS?](https://superuser.com/questions/1295957/ffmpeg-and-hardware-acceleration-of-hevc-transcoding-on-mac) - I have a MacBook Pro with a Kaby Lake processor running macOS High Sierra (10.12). Is it possibe somehow to setup FFmpeg to utilize hardware encoding of HEVC with toolbox, instead of libx265?
+
+### Multi-format Packaging Tools
+
+- [GPAC](https://github.com/gpac/gpac) - Multimedia framework for MP4, DASH, and HLS packaging, streaming, and playback with MPEG-4 Systems support.
+- [HLS To Dash](https://github.com/Eyevinn/hls-to-dash) - Open source packager and tools to rewrap live HLS to live MPEG DASH.
+- [mediagoom/mg — static MP4→DASH/HLS packager](https://github.com/mediagoom/mg) - Node static packager converting MP4 into MPEG-DASH and HLS.
+- [OTT Packager](https://github.com/cannonbeach/ott-packager) - OTT/ABR streaming encoder (H264/HEVC) and packager for DASH and HLS.
+- [Python FFmpeg Video Streaming (aminyazdanpanah)](https://github.com/aminyazdanpanah/python-ffmpeg-video-streaming) - Package media content for online streaming(DASH and HLS) using FFmpeg.
+- [Transcode Web Video](https://github.com/monking/transcode-web-video) - Quickly transcode a source video to MP4, OGV, and WebM, with scale, bitrate, and screengrab options.
+- [VideoTranscoding Backend](https://github.com/cash2one/VideoTranscoding-Backend) - This application transcode a video that you send on all formats what you want and diferent resolutions.
+
+### Codecs
+
+- [Cisco OpenH264](https://github.com/cisco/openh264) - An open source H.264 (AVC) encoder and decoder library by Cisco, provided under a license that allows free use (Cisco covers MPEG LA licensing for binaries).
+- [Daala Codec (Xiph)](https://xiph.org/daala) - An experimental video codec from the Xiph.Org Foundation that aimed to achieve next-generation compression (the effort preceded and influenced AV1). Daala introduced novel techniques like lapped transforms and per-pixel entropy coding. Its codebase is open and served as a sandbox for ideas that made it into AV1.
+- [FFV1 Codec](https://ffmpeg.org/~michael/ffv1.html) - FFmpeg's FFV1 is a lossless intra-frame video codec. It's open, extremely efficient for archiving video, and is defined in an ongoing standardization (supported by archival institutions).
+- [libde265](https://github.com/strukturag/libde265) - An open source H.265/HEVC video decoder written in C. libde265 can be used to decode HEVC bitstreams in software and is often integrated into players or frameworks needing HEVC support.
+- [libvpx (VP8/VP9 Codec Library)](https://github.com/webmproject/libvpx) - The reference implementation of VP8 and VP9 video codecs (WebM Project). libvpx provides encoding and decoding for VP8/VP9, which are open and royalty-free codecs.
+- [VVdeC (Fraunhofer VVC Decoder)](https://github.com/fraunhoferhhi/vvdec) - An open source Versatile Video Coding (H.266/VVC) software decoder by Fraunhofer HHI. VVdeC supports Main10 profile and can decode 4K/8K content in real-time with optimizations.
+- [XVC Codec (Divideon)](https://github.com/divideon/xvc) - XVC is a proprietary but openly documented video codec by Divideon that claims high compression efficiency. An open source evaluation implementation was released for research purposes. XVC serves as a modern codec design to compare against standards like HEVC and AV1 in compression efficiency research.
+
+#### AV1
+
+- [aom-av1-lavish — tuned aomenc fork](https://github.com/Clybius/aom-av1-lavish) - Fork of libaom/aomenc hyper-tuned for perceptual fidelity using butteraugli, VMAF and SSIMULACRA2 rate-distortion optimization.
+- [AV1 Codec](https://docs.google.com/presentation/d/12_Vewc0SDpB1FycflfT4us9eipRCy0HWJVSaDMDifRs/edit?usp=sharing) - Working with the AV1 Codec Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv.
+- [AV1 decoder model](https://norkin.org/research/av1_decoder_model) - Description of the AV1 decoder model.
+- [grav1synth — AV1 Grain Synthesis Analyzer/Editor](https://github.com/rust-av/grav1synth) - Rust tool to extract, strip, and estimate film-grain synthesis tables from encoded AV1 files by comparing source vs denoised diffs.
+- [Introducing SVT-AV1: a scalable open-source AV1 framework](https://medium.com/netflix-techblog/introducing-svt-av1-a-scalable-open-source-av1-framework-c726cce3103a) - By Andrey Norkin, Joel Sole, Kyle Swanson, Mariana Afonso, Anush Moorthy, Anne Aaron.
+- [Jean-Marc Valin — Core Coding Tools in AV1 (paper)](https://www.jmvalin.ca/papers/AV1_tools.pdf) - Free technical paper on AV1 core coding tools (partition trees, MV referencing) by the Opus/Daala codec engineer.
+- [rav1d — memory-safe AV1 decoder in Rust](https://github.com/memorysafety/rav1d) - A Rust port of the dav1d AV1 decoder by ISRG/Prossimo, providing a memory-safe, performance-competitive decoder for the AV1 codec.
+- [rav1e_js](https://github.com/rust-av/rav1e_js) - JavaScript/WebAssembly bindings for the rav1e AV1 encoder, enabling in-browser AV1 encoding.
+- [SVT-AV1](https://github.com/AOMediaCodec/SVT-AV1) - An open-source AV1 encoder and decoder from the Scalable Video Technology project. SVT-AV1 is optimized for performance and multi-threading, enabling faster AV1 encoding.
+- [SVT-AV1-PSY — psychovisual SVT-AV1 fork](https://github.com/psy-ex/svt-av1-psy) - Community fork of SVT-AV1 adding psychovisual fidelity enhancements (perceptual tuning, metrics) that are being upstreamed to the mainline encoder.
+- [SVT-AV1-PSYEX](https://github.com/BlueSwordM/svt-av1-psyex) - Actively-maintained fork of SVT-AV1 with psychovisual tuning; improves default perceptual quality settings. Successor to the discontinued psy-ex fork.
+- [SVT-AV1: an open-source AV1 encoder and decoder](https://netflixtechblog.com/svt-av1-an-open-source-av1-encoder-and-decoder-ad295d9b5ca2) - By Andrey Norkin, Joel Sole, Mariana Afonso, Kyle Swanson, Agata Opalach, Anush Moorthy, Anne Aaron.
+- [VersatileFilmGrain (InterDigital)](https://github.com/InterDigitalInc/VersatileFilmGrain) - Software model of hardware-friendly film grain synthesis supporting MPEG FGC SEI and AOM/AV1 parameters, from InterDigital R&D.
+- [wav1c — Wondrous AV1 Coder](https://github.com/rafaelcaricio/wav1c) - Spec-compliant AV1 encoder written from scratch in safe Rust with zero dependencies; usable as a library, via C FFI, WebAssembly, or as an FFmpeg plugin, with HDR10/10-bit support.
+
+#### VP9
+
+- [ASWF Encoding Guidelines: Encode VP9](https://academysoftwarefoundation.github.io/EncodingGuidelines/EncodeVP9.html) - Academy Software Foundation's community encoding guide for VP9, including 10-bit/HDR workflow guidance.
+- [Google: VP9 Settings for VOD](https://developers.google.com/media/vp9/settings/vod) - Google's per-resolution bitrate/CRF/tile-columns recommendation table for VP9 VOD encoding.
+- [SVT-VP9](https://github.com/OpenVisualCloud/SVT-VP9) - Intel's Scalable Video Technology implementation of the VP9 codec. SVT-VP9 is an open source VP9 encoder/decoder designed to leverage multi-core processors for faster encoding of VP9 videos.
+- [WebM Project: VP9 Encoding Guide (FFmpeg)](https://wiki.webmproject.org/ffmpeg/vp9-encoding-guide) - Official WebM project wiki guide to encoding VP9 via FFmpeg, covering CQ/CBR modes, tiling, and row-mt options.
+
+#### HEVC
+
+- [Guide to HEVC/H.265 Encoding and Playback](https://www.techspot.com/article/1131-hevc-h256-enconding-playback) - HEVC's main advantage over H.264 is that it offers roughly double the compression ratio for the same quality. This means that a video file encoded with HEVC can occupy half the space of its H.264 equivalent with no noticeable change in quality, or the same amount of space with improved quality.
+- [HEVC DRM Market Update](https://go.buydrm.com/thedrmblog/hevc-drm-market-update) - Since time eternal, the streaming industry has toiled with and extolled the virtues of CODECs and their key enablement of the entire digital video experience. Now comes the latest candy in the increasingly large bowl, H.265 (MPEG-H Part 2) or as it's more commonly known. HEVC.
+- [HEVC/H.265 Video Coding Standard: Part 1](https://www.youtube.com/watch?v=TLNkK5C1KN8&feature=youtu.be) - Dr. Dan Grois, Benjamin Bross, Dr. Detlev Marpe and Karsten Sühring HEVC/H.265 Video Coding Standart including the Range Extensions Scalable Extensions and M..
+- [HEVC/H.265 Video Coding Standard: Part 2](https://www.youtube.com/watch?v=V6a1AW5xyAw&feature=youtu.be) - Dr. Dan Grois, Benjamin Bross, Dr. Detlev Marpe and Karsten Sühring HEVC/H.265 Video Coding Standart including the Range Extensions Scalable Extensions and M..
+- [HEVC/h265 Video Coding Standard - ISO/IEC 23008-2](https://www.iso.org/standard/85457.html) - Defines the compressed video format HEVC/h265.
+- [Kvazaar HEVC Encoder](https://github.com/ultravideo/kvazaar) - An open source HEVC encoder developed by Tampere University. Kvazaar is aimed at academic research and ultra HD content encoding, offering a modular codebase for experimentation with HEVC encoding algorithms while achieving competitive performance.
+- [OpenHEVC Decoder](https://github.com/OpenHEVC/openHEVC) - An open source high-performance HEVC decoder. OpenHEVC was developed to provide a fast HEVC/H.265 software decoding solution and has been integrated into projects like VLC. It supports real-time decoding of 1080p and higher resolutions on typical PC hardware.
+- [Standardization of High Efficiency Video Coding (HEVC)](https://youtu.be/p6dLZfs0jTY) - Jens-Rainer Ohm, Institute of Communication Engineering, RWTH Aachen University, DE.
+- [SVT-HEVC](https://github.com/OpenVisualCloud/SVT-HEVC) - An open source high-performance HEVC encoder from Intel (Scalable Video Technology for HEVC). SVT-HEVC is optimized for speed and latency, allowing real-time encoding of HD/UHD content on multi-core CPUs.
+- [The Market Significance of Apple's Adopting HEVC: Here's What I Think](https://www.linkedin.com/pulse/market-significance-apples-adopting-hevc-heres-what-i-jan-ozer) - At the recent World Wide Developer's Conference (WWDC), Apple announced that the next versions of Safari, iOS, and tvOS will support HLS with HEVC encoded video. This puts Apple firmly in the HEVC camp, with the Alliance for Open Media camp (Amazon, Cisco, Intel, Google, Microsoft, Mozilla, Netflix,.
+
+### Comparative Analysis of Codecs
+
+- [A Large-Scale Comparison of x264, x265, and libvpx](https://medium.com/netflix-techblog/a-large-scale-comparison-of-x264-x265-and-libvpx-a-sneak-peek-2e81e88f8b0f) - Netflix's technical analysis comparing encoding efficiency and performance across x264, x265, and libvpx codecs.
+- [Audio Codec Benchmark](https://github.com/cmpute/audio-codec-benchmark) - Comprehensive Python-based quantitative comparison tool for lossless and lossy audio codecs. Benchmarks compression ratio, bitrate, encoding/decoding speed across multiple formats including FLAC, Opus, Vorbis, AAC, and more.
+- [Benchmarking Conventional and Learned Video Codecs (Low-Delay)](https://arxiv.org/abs/2408.05042) - Academic study benchmarking VVC VTM, JVET ECM, libaom AV1, AVM and neural DCVC codecs in low-delay config with BD-rate on PSNR/SSIM/VMAF.
+- [Block-Partitioning Strategies for Accelerated Multi-rate Encoding in Adaptive VVC Streaming](https://arxiv.org/pdf/2510.14645) - 2025 arXiv paper on VVC encoder speed/efficiency techniques specifically for adaptive bitrate streaming ladders.
+- [codec-compare (WebM Project)](https://github.com/webmproject/codec-compare) - Official WebM Project static front-end visualization framework for aggregating and presenting codec performance comparison data (AV1/AVIF/WebP).
+- [codec-comparisons (Kim2091)](https://github.com/Kim2091/codec-comparisons) - Active repo testing NVENC, QuickSync, AMF, and CPU encoders at matched bitrates for visual quality comparison.
+- [codec-eval](https://github.com/imazen/codec-eval) - Rust codec comparison harness computing SSIMULACRA2 and Butteraugli for dual-metric artifact analysis across encoders.
+- [Evaluation of Hardware-based Video Encoders on Modern GPUs for UHD Live-Streaming](https://arxiv.org/html/2511.18686v1) - 2025 paper benchmarking NVENC, QuickSync, and AMF hardware encoders on modern GPUs for UHD live streaming.
+- [MainConcept Codec Comparison Tool](https://www.mainconcept.com/codec-comparison-tool) - Professional HEVC/H.265 and AVC/H.264 video encoding quality evaluation tool integrated with FFmpeg. Includes VMAF and PSNR metric generation, supports objective quality analysis and performance benchmarking for transcoding workflows.
+- [Performance Comparison of VVC, AV1, HEVC, and AVC for High Resolutions](https://www.mdpi.com/2079-9292/13/5/953) - Open-access 2024 journal paper with direct BD-rate/complexity comparison of VVC, AV1, HEVC, and AVC at high resolutions.
+- [Reducing AV1 Decoder Complexity and Energy Consumption via Encoder Parameter Tuning](https://arxiv.org/html/2510.12380) - 2025 empirical study (Google/YouTube-backed) on tuning AV1 encoder parameters to reduce decoder-side complexity and energy use.
+- [SINRG-Lab/Video-Codec-Evaluation](https://github.com/SINRG-Lab/Video-Codec-Evaluation) - FFmpeg pipeline computing MS-SSIM/PSNR/VMAF for H264/H265/VP9/AV1 with RD-plot analysis via a plotter script.
+
+### Benchmarking & Performance Tools for Codecs
+
+- [aom_analyzer](https://github.com/rainliu/aom_analyzer) - CLI AV1 bitstream analyzer for inspecting sequence, frame, tile, and superblock structure of AOM AV1 streams.
+- [av1parser](https://github.com/yohhoy/av1parser) - Rust AV1 bitstream parser that dissects OBU/header structure for low-level stream inspection (not a full decoder).
+- [FAU-LMS/bjontegaard — BD-Rate Python Library](https://github.com/FAU-LMS/bjontegaard) - Pip-installable BD-rate calculator with cubic-spline/PCHIP/Akima interpolation plus RCD plots; PCHIP matches Excel to 10 decimals.
+- [IENT/RDPlot — Rate-Distortion Plotting Tool](https://github.com/IENT/RDPlot) - Qt GUI that parses encoder logs from reference software (HM/VTM/etc) and plots rate-distortion curves.
+- [Proryanator/encoder-benchmark — Realtime HW Encode Benchmark](https://github.com/Proryanator/encoder-benchmark) - Rust tool benchmarking real-time hardware encode fps, with permutor-cli automating bitrate/resolution/fps/quality permutation testing.
+- [tdaede/rd_tool — AWCY Encode Backend](https://github.com/tdaede/rd_tool) - Encode/decode/metrics job-distribution backend for Are We Compressed Yet, distributing codec RD tests over worker cores.
+- [Transcoding Performance Trial](https://github.com/2501world/transcoding-performance-trial) - Runs FFmpeg transcoding processes simultaneously and measures CPU performance.
+- [Video Processing Benchmarks and Research](https://videoprocessing.github.io) - Comprehensive video codec benchmarking and research platform with ML-based optimization methods, stereoscopic quality assessment, and codec comparison studies. Includes research on x264/x265 preset optimization and video quality metrics analysis.
+- [xiph/awcy — Are We Compressed Yet?](https://github.com/xiph/awcy) - Distributed encode/decode + BD-rate + VMAF codec comparison harness used by AOM for AV1 (libaom, SVT-AV1, rav1e), with comparative reports and dataset management.
+
+### Real-Time Encoding Solutions
+
+- [ABR Broadcaster](https://github.com/jkarthic-akamai/ABR-Broadcaster) - A real time encoder for Adaptive Bitrate Broadcast.
+- [go-transcode](https://github.com/m1k1o/go-transcode) - On-demand HTTP transcoding origin for live inputs and static files with NVIDIA GPU acceleration via Docker.
+- [Gstreamill](https://github.com/i4tv/gstreamill) - Encoder with hls output based on gstreamer.
+- [hls_transcoder (Rust)](https://github.com/RustLangLatam/hls_transcoder) - Rust library building GStreamer pipelines to transcode to HLS with hardware (NVENC) and software (x264) support.
+- [Live Video Transmuxing/Transcoding: FFmpeg vs TwitchTranscoder, Part 2](https://blog.twitch.tv/live-video-transmuxing-transcoding-ffmpeg-vs-twitchtranscoder-part-ii-4973f475f8a3?source=userActivityShare-94bccb50d11-1561003748&_branch_match_id=670105191114382351&gi=fd8d504494f4)
+- [Live Video Transmuxing/Transcoding: FFmpeg vs TwitchTranscoder, Part I](https://blog.twitch.tv/en/2017/10/10/live-video-transmuxing-transcoding-f-fmpeg-vs-twitch-transcoder-part-i-489c1c125f28)
+- [LiveForge](https://github.com/im-pingo/liveforge) - Go single-binary multi-protocol live media server supporting RTMP/RTSP/SRT/WHIP/WHEP/HLS/LL-HLS/DASH ingest and delivery.
+- [open-streamer](https://github.com/ntt0601zcoder/open-streamer) - Go live streaming server with in-process libavcodec ABR transcoding and full-GPU pipeline (NVDEC→scale_cuda→NVENC), 1×decode + N×encode fan-out to HLS/DASH.
+- [RTSP Stream](https://github.com/Roverr/rtsp-stream) - Out of box solution for RTSP - HLS live stream transcoding. Makes RTSP easy to play in browsers.
+- [StreamPack - Multiprotocol live streaming broadcaster libraries for Android](https://github.com/ThibaultBee/StreamPack) - StreamPack is a lightweight, high-performance toolkit for building streaming video processing pipelines on Android. It provides reusable components for frame sources, transformations, encoding, and output, making it easy to develop efficient real-time video applications with a modular and composable architecture.
+
+### Scripting & Automation Tools
+
+- [Av1an](https://github.com/master-of-zen/Av1an) - Cross-platform command-line AV1 encode toolkit. Contribute to master-of-zen/Av1an development by creating an account on GitHub.
+- [Av1an (GitHub)](https://github.com/rust-av/Av1an) - Cross-platform CLI chunked-encoding framework enabling parallel per-scene encoding for AV1, VP9, HEVC, and H.264 with per-scene quality targeting.
+- [Batch Py Remux](https://github.com/ZaifSenpai/Batch-Py-Remux) - Convert mkv video to hevc (h.265).
+- [Batch Python FFmpeg Tutorial](https://github.com/Azure-Samples/batch-python-ffmpeg-tutorial) - A Python application that uses Batch to process media files in parallel with the FFmpeg open-source tool.
+- [Distributed FFmpeg Transcoding Cluster](https://github.com/chn-lee-yumi/distributed_ffmpeg_transcoding_cluster) - 分布式FFmpeg转码集群。A FFmpeg transcoding cluster runs in variable CPUs, including ARM, x86, and others which can run linux. You can use it to run a RaspberryPi cluster.
+- [Other Video Transcoding](https://github.com/donmelton/other_video_transcoding) - Other tools to transcode videos.
+- [Pyup Transcoder](https://github.com/sw360cab/pyup-transcoder) - A Python-based software to transcode videos and upload files to a remote server or S3-bucket.
+- [Scalable, Parallel Video Transcoding on Ubuntu](https://blog.dustinkirkland.com/2014/07/scalable-parallel-video-transcoding-on.html) - Transcoding video is a very resource intensive process. It can take many minutes to process a small, 30-second clip, or even hours to p..
+- [Transcode (cwinging)](https://github.com/cwinging/transcode) - Python-based transcoding server by cwinging for handling video conversion tasks.
+- [TranscodeVideo](https://github.com/Ponyboy47/TranscodeVideo) - A Swift wrapper around the transcode-video command.
+- [Video Utils](https://github.com/kwodzicki/video_utils) - Python package containing many tools useful for converting video files to h264/h265 encoded MP4 or MKV files.
+
+### Software Codecs
+
+- [Dav1d (videolan)](https://code.videolan.org/videolan/dav1d) - Dav1d is the fastest AV1 decoder on all platforms.
+- [descriptinc/prores-software-decoder — Real-Time Software ProRes Decoder](https://github.com/descriptinc/prores-software-decoder) - Real-time software decoder/demo for Apple ProRes, enabling ProRes playback without hardware VideoToolbox support.
+- [exhale](https://github.com/dtseto/exhale) - Open-source USAC / xHE-AAC (Extended HE-AAC) encoder converting WAVE to MPEG-4 ISO/IEC 23003-3, mono/stereo/multichannel at medium-high bitrates.
+- [libxaac](https://github.com/ittiam-systems/libxaac) - Ittiam Extended HE-AAC full encoder and decoder supporting AAC-LC, HE-AACv1/v2 object types.
+- [OpenVVC](https://openvvc.github.io) - Open-source (LGPLv2.1) real-time software VVC/H.266 decoder library with frame and tile parallelism, RPR support.
+- [uavs3e — AVS3-P2 Video Encoder](https://github.com/uavs3/uavs3e) - Open-source baseline encoder for the Chinese AVS3-P2 video standard; SSE4/AVX2 optimized, 10-bit, competitive with AV1/VVC on fidelity.
+- [V-Nova LCEVCdec — MPEG-5 LCEVC Decoder SDK](https://github.com/v-novaltd/LCEVCdec) - V-Nova's official open-source MPEG-5 LCEVC (Low Complexity Enhancement Video Coding) decoder SDK, with CPU and experimental Vulkan GPU decode pipelines.
+- [V-Nova LCEVCdecJS — LCEVC Web Decoder](https://github.com/v-novaltd/LCEVCdecJS) - JavaScript/WebGL MPEG-5 LCEVC decoder for browser video playback, enabling LCEVC enhancement layer rendering on the web.
+
+### Hardware Codecs & Acceleration
+
+- [Intel libvpl — oneVPL Dispatcher](https://github.com/intel/libvpl) - OneVPL dispatcher library for Intel Quick Sync Video hardware encode/decode, the successor to Media SDK.
+- [Intel Vaapi Driver](https://github.com/intel/intel-vaapi-driver) - VA-API user mode driver for Intel GEN Graphics family.
+- [Intel vpl-gpu-rt — oneVPL GPU Runtime](https://github.com/intel/vpl-gpu-rt) - OneVPL GPU runtime implementing Intel QSV hardware encode/decode on modern Intel GPUs.
+- [Khronos Vulkan-Video-Samples](https://github.com/KhronosGroup/Vulkan-Video-Samples) - Official Khronos sample apps for end-to-end all-Vulkan hardware decode/encode of H.264/H.265/AV1/VP9, vendor-neutral across drivers.
+- [Libva](https://github.com/intel/libva) - An implementation for VA-API (Video Acceleration API).
+- [NETINT Libxcoder — Quadra VPU driver/API](https://github.com/NETINT-Technologies/netint_libxcoder) - Driver and API (Libxcoder) for NETINT Quadra VPUs, with encode/decode/transcode demo tools for ASIC-based hardware video processing.
+- [NVIDIA NvPipe — Low-Latency GPU Video Compression](https://github.com/NVIDIA/NvPipe) - C++ library for zero-latency hardware video compression, aimed at interactive remoting/streaming using NVENC/NVDEC.
+- [NVIDIA vk_video_samples](https://github.com/nvpro-samples/vk_video_samples) - NVIDIA Vulkan Video samples usable as customizable decode/encode libraries for hardware-accelerated video pipelines.
+- [nvidia-video-codec-rs — Rust NVENC/NVDEC Bindings](https://github.com/rust-av/nvidia-video-codec-rs) - Rust bindings for the NVIDIA Video Codec SDK, providing hardware encode and decode from Rust.
+- [Rockchip MPP — Media Process Platform](https://github.com/rockchip-linux/mpp) - Official hardware encode/decode library for Rockchip SoCs (RK3288/3399/3588), decoding H.265/H.264/VP9/AV1 and encoding H.265/H.264/VP8/MJPEG.
+- [Xilinx/AMD Video SDK — Alveo U30 / VT1](https://github.com/Xilinx/video-sdk) - AMD/Xilinx Video SDK for Alveo U30 and AWS VT1 FPGA transcoding, exposing FFmpeg, GStreamer and the XMA C API for hardware-accelerated encode/decode.
+
+### Containerization & Packaging Tools
+
+- [Alpine Node Video Multitool](https://github.com/realeyes-media/alpine-node-video-multitool) - Contribute to realeyes-media/alpine-node-video-multitool development by creating an account on GitHub.
+- [Bento4 | Fast, Modern Tools and C++ Class Library for all your MP4 and DASH media format needs](https://www.bento4.com)
+- [CDN Transcode Sample (GitHub)](https://github.com/OpenVisualCloud/CDN-Transcode-Sample) - Media transcoding is a key function for live video broadcasting, streaming, and video on demand use cases in a CDN network. The CDN Transcode sample (not a finished product) provides a reference pi..
+- [Dlb Mp4base](https://github.com/DolbyLaboratories/dlb_mp4base) - The Dolby MP4 streaming muxer (dlb_mp4base) is a software implementation of a muxer of fragmented or unfragmented ISO base media file format (mp4). It supports muxing of Dolby Digital (AC-3), Dolby..
+- [Dlb Mp4demux](https://github.com/DolbyLaboratories/dlb_mp4demux) - The Dolby MP4 streaming demuxer (dlb_mp4demux) is a software implementation of a demuxer of fragmented or unfragmented ISO base media file format (mp4). It supports demuxing of Dolby Digital (AC-3)..
+- [Dlb Mp4demux (ShaoWeiguo)](https://github.com/ShaoWeiguo/dlb_mp4demux) - The Dolby MP4 streaming demuxer (dlb_mp4demux) is a software implementation of a demuxer of fragmented or unfragmented ISO base media file format (mp4). It supports demuxing of Dolby Digital (AC-3)..
+- [Docker HEVC](https://github.com/Eyevinn/docker-hevc) - Docker container to create HEVC streaming packages.
+- [Gots](https://github.com/Comcast/gots) - MPEG Transport Stream handling in Go.
+- [GPAC MP4Box](https://github.com/gpac/gpac/wiki/mp4box) - MP4Box is a multimedia packager from the GPAC framework, used for encoding and packaging media files.
+- [Imf Conversion](https://github.com/DSRCorporation/imf-conversion) - NF IMF media conversion utility allows to handle flat file creation from a specified CPL within the IMF package.
+- [lieff/minimp4 — Single-Header C MP4 Mux/Demux](https://github.com/lieff/minimp4) - Minimalistic single-header C library for MP4 mux/demux with fragmented-MP4 mode.
+- [Mixwave](https://github.com/matvp91/mixwave) - Self hostable platform that aims to simplify the complexities of video delivery. Transcode and package your media for online streaming with simple API calls and sane defaults, or craft dynamic HLS playlists on the fly with bumpers, ads and filters.
+- [Mp4parser](https://github.com/sannies/mp4parser) - A Java API to read, write and create MP4 files. Contribute to sannies/mp4parser development by creating an account on GitHub.
+- [muxide — Pure-Rust MP4 Muxer](https://github.com/Michael-A-Kuykendall/muxide) - Pure-Rust zero-dependency MP4 muxer (no FFmpeg) supporting H.264/H.265/AV1/AAC/Opus with fragment mode.
+- [Openfaas Transcode](https://github.com/cpitkin/openfaas-transcode) - Serverless video transcoding pipeline built on OpenFaaS for function-as-a-service deployments.
+- [Shaka Packager – opensource.google](https://opensource.google/projects/shaka-packager) - Google's open-source media packaging tool for creating DASH and HLS content with encryption support.
+- [shiguredo/mp4-rs — Sans-I/O Rust MP4 Mux/Demux](https://github.com/shiguredo/mp4-rs) - Zero-dependency, sans-I/O Rust MP4 mux/demux with Fmp4SegmentMuxer and Demuxer, no_std capable; actively maintained.
+- [The Netflix IMF Workflow](https://medium.com/netflix-techblog/the-netflix-imf-workflow-f45dd72ed700?source=userActivityShare-94bccb50d11-1568773157&_branch_match_id=702692448596112473) - Interesting architectural implications.
+- [Transcoder (GitHub)](https://github.com/Vilsol/Transcoder) - Docker container to transcode videos in mounted volume to H265 using FFmpeg.
+- [Ts2mpa](https://github.com/njh/ts2mpa) - A simple tool to extract MPEG Audio from a MPEG-2 Transport Stream.
+- [tsMuxer](https://github.com/justdan96/tsMuxer) - A transport stream muxer for remuxing/muxing elementary streams, EVO/VOB/MPG, MKV/MKA, MP4/MOV, TS, M2TS to TS to M2TS. Supported video codecs H.264/AVC, H.265/HEVC, VC-1, MPEG2. Support..
+
+#### Origin Servers
+
+- [Docker Jit Capture](https://github.com/Eyevinn/docker-jit-capture) - A Docker container for an open source Just-In-Time Capture Origin.
+
+### Software Transcoding Tools
+
+- [Av1transcoder](https://github.com/luziferius/av1transcoder) - Transcode video files to the AV1 format using FFmpeg and libaom-av1.
+- [Codem Transcode](https://github.com/madebyhiro/codem-transcode) - Offline video transcoder written in Node.js.
+- [Django Video Transcoding](https://github.com/just-work/django-video-transcoding) - Simple video transcoding application for Django Framework.
+- [dolby-encoding-engine/plugins at master · DolbyLaboratories/dolby-encoding-engine](https://github.com/DolbyLaboratories/dolby-encoding-engine/tree/master/plugins) - Contribute to DolbyLaboratories/dolby-encoding-engine development by creating an account on GitHub.
+- [Fantastic Transcoder](https://github.com/ClearSlide/Fantastic-Transcoder) - A video transcoder which utilizes massively parallel compute to achieve ludicrous conversion speeds.
+- [MediaMolder - FFmpeg for the AI era](https://github.com/MediaMolder/mediamolder) - A rewrite of the interface and orchestration layers of FFmpeg. Includes...
+* Graphical user interface that makes it easy to visualize, edit, validate and run your graph
+* Jobs defined in JSON files
+* Import any FFmpeg command-line
+* Real-time encoding control system - dynamically optimizes encoder settings to maintain real-time frame rates
+* Open Telemetry / Prometheus metrics 
+* Add custom Go processing nodes
+* Integrations with AI engines, including...
+   * Whisper speech to text
+   * Vidi 2.5 multimodal scene understanding
+   * TwelveLabs multimodal video understanding and embedding
+   * YOLOv8 object detection and classification
+   * YOLOv8 face detection and alignment with SFace Embedding
+* Custom motion-compensated scene detector
+* Go port of PySceneDetect (5 scene detection algorithms)
+* Integrated support of LibRAW (decoding, processing of camera RAW formats)
+* Simple video sequence editor
+* Support for remote or distributed execution.
+- [Node Transcoding](https://github.com/benvanik/node-transcoding) - Node.js video transcoding library.
+- [NotEnoughAV1Encodes](https://github.com/Alkl58/NotEnoughAV1Encodes) - GUI Handler for AV1 Encoders (aomenc, rav1e & svt-av1).
+- [Rate Control Tests](https://github.com/slhck/rate-control-tests) - Tests for different rate control modes in x264. Contribute to slhck/rate-control-tests development by creating an account on GitHub.
+- [React Native Transcode](https://github.com/selsamman/react-native-transcode) - Video Transcoder for React Native.
+- [Transcode (kees)](https://github.com/kees/transcode) - Collection of command-line tools for video format conversion and transcoding operations.
+- [transcode2H265](https://github.com/amaurypm/transcode2H265) - Unattended video transcoder to H265 and ACC codecs, in MKV containers.
+- [Video Transcoding](https://github.com/donmelton/video_transcoding) - Tools to transcode, inspect and convert videos.
+- [Vireo](https://github.com/twitter/vireo) - A lightweight and versatile video processing library written in C++11.
+
+### Open Source Encoder Projects
+
+- [multicoreware / x265 / wiki / Home — Bitbucket](https://bitbucket.org/multicoreware/x265_git/wiki/Home)
+- [Rav1e](https://github.com/xiph/rav1e) - The fastest and safest AV1 encoder.
+- [Video Compression Motion Estimation Block Video Encoder](https://github.com/AK1194/Video-Compression-motion-estimation-block-video-encoder) - This repository is about video compression, and more specifically about the motion estimation block (ME block) of a video encoder. It is a research project for developing an efficient motion estima..
+- [x265 Documentation — x265  documentation](https://x265.readthedocs.io/en/master)
+
+### Cloud-Based Encoding Solutions
+
+- [Cloud Transcoder](https://github.com/xyk2/cloud-transcoder) - Transcoding long (>1 hour) videos quickly and cost-effectively on GCP to adaptive HLS and MP4 mezzanine files. Up to 40x $ savings.
+- [Gcloud Node Video Transcoding](https://github.com/diego3g/gcloud-node-video-transcoding) - Transcode Google Cloud Storage video files with Node.js and FFmpeg.
+- [Hybrik Samples](https://github.com/hybrik/hybrik-samples) - Sample job JSON files and API integration scripts for Dolby Hybrik, a cloud-based media transcoding and QC platform. The repo demonstrates transcode presets, analysis/QC jobs, and workflow automation against the Hybrik API.
+- [Running FFmpeg on AWS Lambda for 1.9% the cost of AWS Elastic Transcoder](https://intoli.com/blog/transcoding-on-aws-lambda) - A guide to building a transcoder using Exodus, FFmpeg, and AWS Lambda.
+- [Server-less Just-in-Time Packaging with AWS Fargate and Unified Origin by Unified Streaming](https://medium.com/@eyevinntechnology/server-less-just-in-time-packaging-with-aws-fargate-and-unified-origin-by-unified-streaming-c1682dc051ca?source=userActivityShare-94bccb50d11-1559724204&_branch_match_id=664738392430917730) - In this blog article Jonas Rydholm Birmé describes how he created a server-less just-in-time packaging origin, using AWS ECS Fargate tasks.
+- [Server-less Video Backend](https://medium.com/@eyevinntechnology/server-less-video-backend-1a142d1d2ba) - In this blog post by Jonas Rydholm Birmé he describes how a completely server-less video backend on AWS would look like.
+- [Snickers](https://github.com/snickers/snickers) - An open source alternative to the video cloud encoding services.
+- [Video Transcoder](https://github.com/andressspinetti/video-transcoder) - Serverless transcoding solution using AWS S3 for storage, Lambda for compute, and MediaConvert or Elastic Transcoder.
+- [Video Transcoding API](https://github.com/video-dev/video-transcoding-api) - Agnostic API to transcode media assets across different cloud services.
 
 ### FFmpeg-Based Tools
 
@@ -604,25 +615,6 @@
 - [Video Transcode](https://github.com/GeoHaber/Video-Transcode) - FFmpeg H264 H265 HEVC MPEG Video Trans-code Image-Matrix Collage.
 - [Video Transcoder (Mozilla-Open-Lab-Etwas)](https://github.com/Mozilla-Open-Lab-Etwas/Video-Transcoder) - FFmpeg WebAssembly Video Transcoder.
 - [Videomorph](https://github.com/videomorph-dev/videomorph) - A user-friendly Video Converter based on FFmpeg and writen in Python/PyQt5.
-
-#### FFmpeg
-
-- [Can FFmpeg extract closed caption data](https://stackoverflow.com/questions/3169910/can-ffmpeg-extract-closed-caption-data) - I am currently using FFmpeg to convert videos in various formats to flv files. One request has also come up and that is to get closed caption info out o the file as well. Does anyone have any exper..
-- [Encode HDR with VP9](https://developers.google.com/media/vp9/hdr-encoding) - Hands on tutorial of using FFmpeg to do hdr encoding.
-- [FFCommand Engine](https://github.com/ColorlabMD/FFCommand_Engine) - Create and execute FFmpeg commands.
-- [FFmbc](https://github.com/bcoudurier/FFmbc) - FFmpeg customized for broadcast and professional usage.
-- [FFmpeg AWS Lambda Layer](https://github.com/serverlesspub/ffmpeg-aws-lambda-layer) - FFmpeg/FFprobe AWS Lambda layer.
-- [FFmpeg Libvpx HDR Static](https://github.com/id3as/ffmpeg-libvpx-HDR-static) - A script to build a static binary of FFmpeg optimised for libvpx (HDR 10bit) encoding.
-- [FFmpeg Transcoder](https://github.com/sambios/ffmpeg_transcoder) - Video transcode based on FFmpeg, support H264/HEVC and more.
-- [ffmprovisr](https://amiaopensource.github.io/ffmprovisr) - Cookbook of commonly used FFmpeg recipes with descriptions of how each command works and how to modify it to fit your needs.
-- [Generate MPEG-TS from file with FFmpeg](https://medium.com/@eyevinntechnology/generate-mpeg-ts-from-file-with-ffmpeg-7561181e6369?source=userActivityShare-94bccb50d11-1560983471&_branch_match_id=670020142756633081) - In this post I will describe how an MPEG-TS multicast stream can be generated with FFmpeg by looping an MP4 file and a Docker container.
-- [Loop file and generate multiple video bitrates muxed in MPEG-TS with FFmpeg](https://medium.com/@eyevinntechnology/loop-file-and-generate-multiple-video-bitrates-muxed-in-mpeg-ts-with-ffmpeg-85658d0b74bb?source=userActivityShare-94bccb50d11-1560983383&_branch_match_id=670019768959110835) - In a previous post I described how an MPEG-TS multicast stream can be generated with FFmpeg by looping an MP4 file. In this post I will.
-- [Node FFmpeg Stream](https://github.com/phaux/node-ffmpeg-stream) - Node.js bindings to FFmpeg command, exposing stream based API.
-- [Node Fluent FFmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg) - A fluent API to FFmpeg (HTTP://www.FFmpeg.org).
-- [Python FFmpeg](https://github.com/jonghwanhyeon/python-ffmpeg) - A Python interface for FFmpeg using asyncio.
-- [Transcoding FFmpeg](https://github.com/LordCrainer/transcoding_ffmpeg) - Transcoding video usando FFmpeg.
-- [Use of Look-Up Tables (LUTs) in FFmpeg](https://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_Use_of_LUTs_FFmpeg.pdf) - How to use luts with FFmpeg for converting between differnt hdr encodes.
-- [Useful FFmpeg Commands](https://github.com/mitio/useful-ffmpeg-commands) - A collection of FFmpeg commands taken from practice.
 
 #### FFmpeg
 
@@ -721,7 +713,7 @@
 - [ShortGPT](https://github.com/RayVentura/ShortGPT) - An experimental AI framework to automate the creation of YouTube Shorts or TikTok videos. ShortGPT can generate video content (scenes, subtitles, etc.) using generative AI models.
 - [SIMID](https://github.com/InteractiveAdvertisingBureau/SIMID) - Secure Interactive Media Interface Definition (SIMID) is a project by the Interactive Advertising Bureau (IAB) that defines a standard for interactive video ads. It aims to provide a secure and consistent framework for interactive media ads across different platforms, enhancing user engagement and ad performance.
 - [SimpleVideoCutter](https://github.com/bartekmotyl/simple-video-cutter) - A straightforward Windows tool for browsing and cutting segments from video files without re-encoding. It provides a preview and easy selection of in/out points to extract clips quickly.
-- [Snowmix - The Swiss Army Knife of Open Source Live Video Mixing.](https://snowmix.sourceforge.io)
+- [Snowmix - The Swiss Army Knife of Open Source Live Video Mixing.](https://snowmix.sourceforge.io) - Open source live video mixing software for combining multiple video sources and creating real-time composites.
 - [SoX (Sound eXchange)](http://sox.sourceforge.net) - SoX is a command-line utility for audio manipulation and processing. It supports various audio formats and provides a range of effects, making it useful for developers needing to process audio within video projects.
 - [SponsorBlock](https://github.com/ajayyy/SponsorBlock) - An open source browser extension to skip sponsor segments in YouTube videos.
 - [SpotLink](https://www.tvtechnology.com/news/free-opensource-software-introduced-for-dynamic-ad-insertion) - An open-source software for dynamic ad insertion in VOD, IPTV, broadband video, and network DVRs, connecting SCTE 130-compliant dynamic ad insertion systems to broadband ad servers using the IAB's VAST standard.
@@ -744,7 +736,7 @@
 - [truex-ad-renderer-web-integration](https://github.com/socialvibe/truex-ad-renderer-web-integration) - Documentation and resources for integrating true(X)'s CTV web ad renderer, providing guidelines for implementing interactive ad experiences in connected TV environments.
 - [Tube Archivist](https://www.tubearchivist.com) - A self-hosted YouTube archival and library management application. It lets you subscribe to channels, automatically download videos, and index them with search and tags for offline access.
 - [Type Studio](https://topai.tools/s/automated-video-subtitling-) - An online video text converter and editor tool that can transcribe video text automatically, support multiple languages, and export in various formats. It simplifies the process of adding subtitles to videos by providing automatic transcription and editing features, making it valuable for content creators aiming to enhance accessibility and engagement.
-- [Unison](https://github.com/bcpierce00/unison) - File synchronizer.
+- [Unison](https://github.com/bcpierce00/unison) - File synchronization tool useful for keeping video assets and media files in sync across multiple servers or locations.
 - [Untrunc](https://github.com/ponchio/untrunc) - A tool to recover and repair corrupted video files (e.g., missing headers) by reconstructing them using a reference file of the same format.
 - [v4l (Go Video4Linux)](https://pkg.go.dev/github.com/korandiz/v4l) - A Go library providing bindings to Video4Linux2 (V4L2) APIs, enabling video capture and camera control in Linux from Go applications.
 - [VAST 4.0 Sample Tags](https://github.com/InteractiveAdvertisingBureau/VAST_Samples) - The Interactive Advertising Bureau (IAB) provides sample VAST 4.0 tags to help developers understand and implement the latest standards in video ad serving. These samples are valuable resources for testing and ensuring compliance with VAST 4.0 specifications.
@@ -775,7 +767,7 @@
 - [Eyevinn SGAI Ad Proxy](https://github.com/Eyevinn/sgai-ad-proxy) - Experimental HTTP proxy implementing Server Guided Ad Insertion (SGAI), compatible with AVPlayer and HLS.js 1.6+.
 - [Eyevinn test-adserver](https://github.com/Eyevinn/test-adserver) - Test ad-server generating predictable VAST responses/mock creatives for validating SSAI stitching and CSAI impression tracking.
 - [HLS-SCTE35-monitoring](https://github.com/ggouzi/HLS-SCTE35-monitoring) - Script that polls HLS renditions and parses SCTE-35 ad markers across manifest variants for consistency checking.
-- [OpenQoE](https://github.com/openqoe) - Self-hosted, Apache 2.0 QoE monitoring stack with JS SDKs for major players, tracking startup time, rebuffering, and errors with Grafana dashboards.
+- [OpenQoE (GitHub)](https://github.com/openqoe) - Self-hosted, Apache 2.0 QoE monitoring stack with JS SDKs for major players, tracking startup time, rebuffering, and errors with Grafana dashboards.
 - [VideoPerformanceAnalysis](https://github.com/FangfanLi/VideoPerformanceAnalysis) - Python/Selenium scripts extracting QoE metrics (time-to-start-playing, rebuffer count, buffering time fraction) from YouTube playback.
 - [vmap-js](https://github.com/dailymotion/vmap-js) - Pure JavaScript VMAP 1.0.1 parser with Node and browser builds, from Dailymotion.
 
@@ -792,67 +784,135 @@
 
 #### Quality & Testing
 
+- [Akamai Stream Validator](https://players.akamai.com/stream-validator) - Akamai's Stream Validator is a tool designed to verify the integrity and compliance of streaming media, ensuring optimal playback across devices.
+- [Artillery Plugin HLS](https://github.com/artilleryio/artillery-plugin-hls) - Load test HTTP Live Streaming (HLS) servers with Artillery 🎥.
+- [Automated Channel Testing](https://github.com/rokudev/automated-channel-testing) - Roku Automated Channel Testing: Selenium-based WebDriver + Robot Framework + Samples.
+- [Automated Testing on Devices](https://medium.com/netflix-techblog/automated-testing-on-devices-fc5a39f47e24) - Key concepts and infrastructure.
+- [AVRate](https://github.com/Telecommunication-Telemedia-Assessment/AVRate) - An open source modular Audio/Visual subjective evaluation test interface.
+- [bdr-ssimu2](https://github.com/gianni-rosato/bdr-ssimu2) - Python/matplotlib tool computing SSIMULACRA2 BD-rate curves with average and harmonic-mean plots and temporal subsampling.
 - [Big Buck Bunny (4K UHD Demo)](https://peach.blender.org) - A short animated film by the Blender Foundation (2008). It's open content and commonly used as demo video footage for testing 4K, HDR, and high-bitrate video setups.
+- [butteraugli (Rust port)](https://github.com/imazen/butteraugli) - Pure Rust port of Butteraugli from libjxl with XYB color, visual masking, and multi-scale bands, validated to within 0.001% of the reference.
 - [CAMBI: A Banding Artifact Detector](https://netflixtechblog.com/cambi-a-banding-artifact-detector-ea0f291a4dd8) - Netflix Tech Blog article introducing CAMBI (Contrast-Aware Multi-scale Banding Index), a metric Netflix developed to automatically detect banding artifacts in video content.
 - [CMCD Spec, Validator & Analyzer (CTA-WAVE)](https://github.com/cta-wave/common-media-client-data) - Official CTA-5004 Common Media Client Data spec repo including a CMCDv1 validator library and analyzer tool underlying QoE synthetic-test tooling.
+- [CMCD-DASH — CMCD-aware dash.js PoC](https://github.com/NUStreaming/CMCD-DASH) - Proof-of-concept CMCD-aware dash.js player + HTTP server performing bandwidth allocation via CMCD data (NUS).
+- [cmcd-toolkit — CMCD v2 collector & analysis](https://github.com/qualabs/cmcd-toolkit) - CMCD v2 collector for ingesting/analyzing Common Media Client Data beacons locally or on cloud, with a dash.js beacon module.
 - [Content Delivery Video Library (CDVL)](https://www.cdvl.org) - An online library of test video content and sequences provided for researchers and developers to evaluate video processing and streaming techniques (various resolutions, formats, and scenarios).
 - [Conviva Streaming Performance Index (Report)](https://www.conviva.com/state-of-streaming) - Conviva regularly publishes 'State of Streaming' reports which provide analytics on streaming quality (startup times, rebuffer rates, bitrate) across the industry. These reports are valuable to understand trends and the importance of monitoring QoE at scale.
+- [Dolby Stream Validator](https://ott.dolby.com/OnDel_tools/validator/Start_Here.html) - Dolby's Stream Validator assesses streaming content for Dolby audio and video standards, ensuring high-quality media delivery.
+- [Eyevinn hls-monitor](https://github.com/eyevinn/hls-monitor) - Service monitoring one or more HLS streams for errors and inconsistencies (media-sequence issues, discontinuities, stale manifests) with a Prometheus /metrics endpoint and Grafana dashboards.
+- [Eyevinn Stream Corruptor](https://github.com/Eyevinn/streaming-onboarding/blob/master/Stream-Corruptor.md) - Eyevinn's Stream Corruptor is a tool designed to intentionally corrupt streaming media, useful for testing error resilience in players.
+- [fast-ssim2 — SIMD Rust SSIMULACRA2](https://github.com/imazen/fast-ssim2) - Fast SIMD Rust implementation of the SSIMULACRA2 perceptual image/video quality metric.
+- [Fluster](https://github.com/fluendo/fluster) - Testing framework for decoders conformance.
 - [HLS Stream Health Monitoring Tool](https://github.com/imsanthosh/HLS-Stream-health-monitoring-tool) - HLS stream health monitoring utility tool provides an report of live HLS stream. This utility tool checks the all available bitrate streams and generates the report in HTML file format. HTML file i..
 - [ITU-T P.1203 reference implementation](https://github.com/itu-p1203/itu-p1203) - Official Python reference implementation of the ITU-T P.1203 HTTP adaptive streaming QoE model (modes 0-3), outputting per-second and integrated MOS scores.
-- [Qctools](https://github.com/bavc/qctools)
+- [montevideo-tech/cmcd-validator](https://github.com/montevideo-tech/cmcd-validator) - Node library validating player CMCD (CTA-5004) in real time across queries/headers/JSON, tested against Video.js/Dash.js/Hls.js/Shaka.
+- [psy-ex/metrics](https://github.com/psy-ex/metrics) - Perceptual video metrics toolkit computing SSIMULACRA2, Butteraugli, CVVDP, weighted XPSNR, VMAF NEG, SSIM, and PSNR via helper scripts.
+- [Qctools (GitHub)](https://github.com/bavc/qctools)
+- [R4WG20 QoE Metrics](https://github.com/cta-wave/R4WG20-QoE-Metrics) - Issue tracking repository for the R4-Wg20 QoE Initiative.
 - [Sintel (Open Movie)](https://durian.blender.org) - A 15-minute open source animated film (2010) by Blender Institute. It's frequently used for benchmarking video encoders and playback devices (available in 4K and various formats).
+- [ssimu2xpsnr_plotter](https://github.com/gianni-rosato/ssimu2xpsnr_plotter) - Bash tool that encodes x264/x265/SVT-AV1/VVenC across CRF values, measures XPSNR and SSIMULACRA2, and plots rate-distortion curves.
 - [Stb-tester](https://github.com/stb-tester/stb-tester) - An automation tool for testing set-top boxes and video devices. stb-tester uses a Raspberry Pi with a capture card to run automated tests (via video analysis and remote control input) on HDMI outputs.
 - [Streaming Video Experimentation at Netflix](https://netflixtechblog.com/streaming-video-experimentation-at-netflix-visualizing-practical-optimization-834152da60a5) - Netflix Tech Blog article explaining how Netflix conducts A/B testing and experimentation on streaming video quality and features to optimize QoE for its users at scale.
 - [Streamsim](https://github.com/VQEG/streamsim) - VQEG/streamsim - A GitHub repository for video/multimedia development.
+- [Test Engine Live Tools](https://github.com/ebu/test-engine-live-tools) - Small tools and scripts for the EBU test engine platform.
+- [Test Engine Ondemand](https://github.com/ebu/test-engine-ondemand) - EBU's on-demand test engine for validating broadcast and streaming workflows against technical specifications.
 - [Toward a Better Quality Metric for the Video Community](https://netflixtechblog.com/toward-a-better-quality-metric-for-the-video-community-7f94ba0d008) - Netflix Tech Blog article discussing the need for improved video quality metrics beyond existing ones like PSNR or SSIM, and how metrics like VMAF were developed to better reflect human perception.
+- [Toward A Practical Perceptual Video Quality Metric](https://medium.com/netflix-techblog/toward-a-practical-perceptual-video-quality-metric-653f208b9652) - Measuring video quality accurately at scale.
+- [Unified Streaming Validator](https://validator.unified-streaming.com) - Unified Streaming's Validator checks the compliance and quality of streaming content, supporting various streaming protocols.
 - [Vaapi Fits](https://github.com/intel/vaapi-fits) - Intel/vaapi-fits - A GitHub repository for video/multimedia development.
+- [Video Bench — How measure your video quality easily](https://medium.com/@jnoduq/video-bench-how-measure-your-video-quality-easily-85a0feb8f6e2) - Guide to using automated tools for measuring and benchmarking video quality metrics in encoding workflows.
+- [Video Quality Assessment](https://medium.com/@eyevinntechnology/video-quality-assessment-34abd35f96c0?source=userActivityShare-94bccb50d11-1560983815&_branch_match_id=670021582869771680) - In Eyevinn's initiative to share our knowledge around quality we continue with addressing video quality assessment; from both a subjective..
+- [Videobench](https://github.com/JNoDuq/videobench) - Command-line tool for analyzing video quality using VMAF, PSNR, and bitrate measurements.
+- [VMAF](https://github.com/Netflix/vmaf) - Perceptual video quality assessment based on multi-method fusion.
+- [VMAF: The Journey Continues](https://medium.com/netflix-techblog/vmaf-the-journey-continues-44b51ee9ed12) - By Zhi Li, Christos Bampis, Julie Novak, Anne Aaron, Kyle Swanson, Anush Moorthy and Jan De Cock.
 - [VQEG P.1203 Software Tools Page](https://vqeg.github.io/software-tools/quality%20analysis/itu-p1203) - Video Quality Experts Group's index of ITU-T P.1203/.1/.2 QoE model implementations (video and audio quality modules).
+- [VQEG Tools and Subjective Labs Setup](https://vqeg.github.io/software-tools) - Providing the video quality research community with a wide variety of software tools and guidance in order to facilitate research.
+- [VQMT](https://github.com/Rolinh/VQMT) - Video Quality Measurement Tool. Fast implementations of the following objective image quality metrics: PSNR, SSIM, MS-SSIM, VIFp, PSNR-HVS and PSNR-HVS-M.
+- [Wisual](https://github.com/MarcAntoine-Arnaud/wisual) - Web for Visual Quality Assessment.
 
-### Subtitle & Caption Tools
+### Audio & Subtitles
 
-- [AutoSub](https://github.com/abhirooptalasila/AutoSub) - A CLI application to generate subtitle file (.srt) for any video file using Mozilla DeepSpeech.
-- [Autosub (BingLingGroup)](https://github.com/BingLingGroup/autosub) - Command-line utility to transcribe/translate from video/audio/subtitles to subtitles.
-- [AutoSubSync](https://github.com/denizsafak/AutoSubSync) - Subtitle auto-sync GUI wrapping ffsubsync/autosubsync/alass; can sync against a reference subtitle instead of the video.
-- [Cea Extractor](https://github.com/Comcast/cea-extractor) - Parsing and display logic for CEA-608 caption data in fragmented MP4 files.
-- [Extract Subtitles](https://github.com/shawnsky/extract-subtitles) - From Video.
-- [Node Thumbnails Webvtt](https://github.com/estliberitas/node-thumbnails-webvtt) - Video thumbnail generator generating WebVTT spec file.
-- [Serverless Subtitles](https://github.com/awslabs/serverless-subtitles) - Can handle a video input, extract the sound, transcript it and generate different subtitle files for your video.
-- [subgen — Whisper Auto-Subtitles for Media Servers](https://github.com/McCloudS/subgen) - Auto-subtitle generator using Whisper (stable-ts + faster-whisper) for Jellyfin/Plex/Emby/Bazarr, CPU or CUDA.
-- [Subs Extract](https://github.com/cessen/subs_extract) - Extracts per-sentence subtitles + audio from a subtitle file + video file.
-- [subsai](https://github.com/absadiki/subsai) - Subtitle generation tool with WebUI, CLI, and Python API using faster-whisper; exports srt/ass/ssa/sub/JSON/txt/vtt with translation support.
-- [subtp](https://github.com/mochi-neko/subtp) - Rust parser for SRT and WebVTT with round-trip parse/render of cues, comments, styles, and regions.
-- [TV Subtitle Extraction](https://github.com/statsbiblioteket/tv-subtitle-extraction) - System for extraction of subtitles from TV broadcasts.
-- [vidstack/captions — Lightweight JS Caption Parser/Renderer](https://github.com/vidstack/captions) - Modern ~5kB JS library parsing and rendering VTT/SRT/SSA captions, with server-side support, VTT-region rollup captions, and CSS styling.
-- [whisper-subtitle-generator](https://github.com/giakinh0823/whisper-subtitle-generator) - Cross-platform GUI for batch subtitle generation with SRT/VTT/JSON export, translation, and GPU acceleration. MIT.
-- [WhisperTimeSync — Transcript-to-Whisper Subtitle Aligner](https://github.com/EtienneAb3d/WhisperTimeSync) - Aligns an existing accurate transcript over Whisper timestamps to produce SRT with both good text and good timing.
+- [ffsubsync](https://github.com/smacke/ffsubsync) - A tool to automatically synchronize subtitles with video by analyzing audio tracks. It uses speech detection to align subtitle timing via FFmpeg and machine learning.
+- [Gaupol](https://otsaloma.io/gaupol) - An open source subtitle editor for text-based subtitle files, featuring timing adjustment, translation support, and built-in video preview (Linux).
 
 #### Subtitles & Captions
 
+- [Aegisub](https://www.aegisub.org) - A free, cross-platform open source tool for creating and modifying subtitles (advanced subtitle editor supporting ASS/SSA formats).
 - [AutoSubtitle — Whisper subtitle GUI with burn-in](https://github.com/Linwei-Chen/AutoSubtitle) - PyQt5 GUI that generates bilingual subtitles using faster-whisper and Silero VAD with LLM translation and FFmpeg burn-in/hardcode.
 - [Caption Inspector](https://github.com/Comcast/caption-inspector) - A reference decoder for Closed Captions (CEA-608 and CEA-708).
-- [Ccextractor](https://github.com/CCExtractor/ccextractor) - Official version maintained by the core team.
+- [CCExtractor](https://ccextractor.org) - De-facto standard open-source tool for extracting CEA-608/708 closed captions and subtitles from media files and streams.
+- [Ccextractor (GitHub)](https://github.com/CCExtractor/ccextractor) - CCExtractor - Official version maintained by the core team.
+- [CEA-608/708 Closed Captioning Standards](https://en.wikipedia.org/wiki/CEA-708) - The EIA-608 and EIA-708 standards define how closed captions are encoded in analog and digital television signals in the US. They are crucial for broadcast TV and cable, and understanding these can help when dealing with caption extraction or embedding in video files (e.g., in MPEG-2 or ATSC streams).
 - [Cea608 JS](https://github.com/Dash-Industry-Forum/cea608.js) - A JavaScript project designed to extract CEA-608 captions.
-- [Extract Subtitle](https://github.com/xinnjie/extract-subtitle) - S from video.
+- [Closed Captioning and Subtitling Products - MacCaption and CaptionMaker Overview - Telestream](https://www.telestream.net/captioning/overview.htm?utm_campaign=partners&utm_source=itunespartner.apple.com&utm_medium=text_link) - Telestream Closed Captioning: MacCaption and CaptionMaker allow you to easily author, edit, create subtitles, and encode and repurpose video captions for television, web and mobile delivery.
+- [DVB captions in media convert](https://docs.aws.amazon.com/mediaconvert/latest/ug/dvb-sub-output-captions.html) - ** If your output captions are DVB-Sub, set them up in your outputs according to the following information.
+- [EBU-TT Live Interoperability Toolkit](https://ebu.github.io/ebu-tt-live-toolkit)
+- [Extract Subtitle](https://github.com/xinnjie/extract-subtitle) - Tool to extract embedded subtitle tracks from video files for separate processing or storage.
+- [go-astisub](https://github.com/asticode/go-astisub) - A Golang library for manipulating subtitles (supports formats like SRT, WebVTT, SSA/ASS, etc.), useful for automated subtitle processing.
+- [IMSC 1.0.1 Text test content](https://github.com/w3c/IMSC-1.0.1_Text_TestContent)
+- [IMSC 1.1 Image test content](https://github.com/w3c/IMSC-1.1_Image_TestContent)
+- [IMSC 1.1 Text test content](https://github.com/w3c/IMSC-1.1_Text_TestContent)
+- [IMSC HRM validator](https://github.com/sandflow/imscHRM) - Validator for the IMSC Hypothetical Render Model (HRM), which constrains TTML document complexity.
+- [IMSC Specification](https://www.w3.org/TR/ttml-imsc1.1)
 - [IMSC validator](https://apps.sandflow.com/imscV)
 - [imscED — IMSC subtitle/caption editor](https://github.com/IRT-Open-Source/imsced) - IMSC (TTML) subtitle/caption editor built on imscJS, with a Video Image Burner REST service for IMSC burn-in.
 - [imscJS: IMSC/TTML/SMPTE-TT/EBU-TT-D renderer](https://github.com/sandflow/imscJS) - Renders IMSC/TTML/SMPTE-TT/EBU-TT-D subtitles and captions to HTML.
 - [Libcaption](https://github.com/szatmary/libcaption) - Free open-source CEA608 / CEA708 closed-caption encoder/decoder.
+- [Libgosubs](https://github.com/wargarblgarbl/libgosubs)
+- [Live Streaming with Automated Multi-Language Subtitling (AWS Labs)](https://github.com/awslabs/live-streaming-with-automated-multi-language-subtitling) - Reference architecture chaining MediaLive → Lambda@Edge (WebVTT injection) → MediaPackage with Transcribe Streaming + Translate for live multi-language captions.
+- [Netflix Timed Text Style Guide (English)](https://partnerhelp.netflixstudios.com/hc/en-us/articles/215758617-Timed-Text-Style-Guide-General-Requirements) - Netflix's style guide for subtitles and captions outlines the editorial and formatting standards for timed text on their platform. It's a comprehensive resource for best practices in captioning (e.g., line length, timing, speaker labels) that is often referenced industry-wide.
+- [Node Webvtt](https://github.com/osk/node-webvtt) - Parse WebVTT files, segments and generates HLS playlists for them.
 - [Pycaption](https://github.com/pbs/pycaption) - Python module to read/write popular video caption formats.
 - [Pycaption CLI](https://github.com/jnorton001/pycaption-cli) - A command line interface for the pycaption module.
 - [Pysub Parser](https://github.com/federicocalendino/pysub-parser) - Utility to extract the text and timestamps of a subtitle file (.srt, .ssa, .sub, .txt).
+- [pyvideotrans — video translation/dubbing pipeline](https://github.com/jianchang512/pyvideotrans) - End-to-end pipeline: ASR → subtitle translation → multi-role dubbing → audio-video re-sync, offline or via API models.
 - [SCF — Subtitling Conversion Framework (EBU)](https://github.com/IRT-Open-Source/scf) - IRT's Subtitling Conversion Framework converting between EBU STL, EBU-TT Part 1 (Tech 3350/3360) and EBU-TT-D (Tech 3380) with strict conformance via XSLT and Python.
 - [stable-ts](https://github.com/jianfch/stable-ts) - Whisper-based transcription with forced alignment and audio indexing, including a mode that loads audio in 30s chunks for near-streaming subtitle generation.
 - [STL2TTML — EBU STL to TTML/WebVTT converter](https://github.com/hurdlea/STL2TTML) - Java tool converting EBU STL (Tech 3264) binary subtitle files to TTML and WebVTT for streaming delivery.
 - [STRCleaner](https://github.com/Marcos-A/STRCleaner) - Script that extracts all the text from a subtitles file ignoring time indications, HTML tags and other alien info.
 - [subconv — SCC (CEA-608) to WebVTT converter](https://github.com/yol/subconv) - Ruby library converting SCC (EIA-608/CEA-608) caption files to WebVTT; niche 608 conversion path.
+- [Subtitle Composer](https://github.com/maxrd2/subtitlecomposer) - A Qt-based subtitle editor for KDE/Linux that supports multiple subtitle formats and provides tools for timing, text editing, and translation.
+- [Subtitle Edit](https://github.com/SubtitleEdit/subtitleedit) - A free, open source subtitle editor that supports over 200 subtitle formats, with tools for sync, translation, and conversion.
+- [Subtitle Workshop XE](https://subworkshop.sourceforge.io) - One of the oldest and popular freeware tools for subtitle editing. Subtitle Workshop XE is a modern update that supports a variety of subtitle formats, offering spell check, timing adjustment, and format conversion in a user-friendly environment.
+- [Subtitles](https://github.com/active-video/subtitles) - AV Platform MPEG DASH subtitles.
 - [The ultimate guide to CCs](https://www.3playmedia.com/resources/popular-topics/closed-captioning)
 - [ttconv: subtitle/caption format converter](https://github.com/sandflow/ttconv) - Converts EBU STL, IMSC/TTML/SMPTE-TT/EBU-TT-D and 608/SCC into IMSC, WebVTT and SRT.
+- [TTML/WebVTT Coding of audio-visual objects - ISO/IEC 14496-30](https://www.iso.org/standard/75394.html) - Defines formatting for text tracks webvtt or ttml.
 - [Vtt JS](https://github.com/video-dev/vtt.js) - A JavaScript implementation of the WebVTT specification.
+- [Web Video Text Tracks Format (WebVTT)](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API) - A format for displaying timed text tracks (such as subtitles or captions) using the track element.
+- [Web Video Text Tracks Format (WebVTT) (W3C)](https://www.w3.org/TR/webvtt1) - The W3C recommendation for WebVTT, a text format for captioning and subtitling web video. It defines the syntax for caption files used in HTML5 video.
 - [Webvtt Py](https://github.com/glut23/webvtt-py) - Read, write and segment WebVTT caption files in Python.
 - [Webvtt Ruby](https://github.com/opencoconut/webvtt-ruby) - Parser and segmenter.
 - [whisper-vtt2srt — AI transcript WebVTT→SRT cleaner](https://github.com/jorcelinojunior/whisper-vtt2srt) - Zero-dependency CLI/Python tool converting Whisper WebVTT to clean SRT, fixing karaoke-accumulation and filtering glitches.
 - [Whisper-WebUI — subtitle generation UI](https://github.com/jhj0517/Whisper-WebUI) - Gradio UI generating subtitles from files/YouTube/mic using faster-whisper; outputs SRT/WebVTT, translation (NLLB/DeepL), Silero VAD, diarization.
 - [WhisperX](https://github.com/m-bain/whisperx) - ASR pipeline producing word-level timestamps via wav2vec2 forced alignment plus speaker diarization, useful for accurate subtitle cue timing.
+
+#### Audio
+
+- [AAC Audio Coding Standard - ISO/IEC 14496-3](https://www.iso.org/standard/76383.html) - Defines the compressed audio format AAC.
+- [aubio](https://github.com/aubio/aubio) - C library with Python bindings for audio/music analysis: onset detection, pitch tracking, tempo/beat detection, and MIDI-from-audio conversion.
+- [Audio Loudness  |  Conversational Actions  |  Google Developers](https://developers.google.com/assistant/tools/audio-loudness)
+- [Audio normalization with FFmpeg using loudnorm (ebur128) filter](https://bytesandbones.wordpress.com/2017/03/16/audio-nomalization-with-ffmpeg-using-loudnorm-ebur128-filter)
+- [AudioSeal — localized audio watermarking](https://github.com/facebookresearch/audioseal) - Meta's localized sample-level audio watermarking with fast detector, robust to compression/re-encoding; MIT with weights.
+- [audiowmark — robust audio watermarking](https://github.com/swesterfeld/audiowmark) - Robust blind audio watermarking that survives mp3/ogg re-encoding at ≥128kbit/s, with tunable strength.
+- [Cavern — object-based audio engine (Atmos render)](https://github.com/VoidXH/Cavern) - Object-based audio engine and codec pack: Dolby Atmos rendering, HRTF, room correction, unlimited objects (C#).
+- [EBU ADM Renderer (EAR)](https://github.com/ebu/ebu_adm_renderer) - EBU's reference implementation of ADM rendering (Tech 3388) in Python, shipping ear-utils CLI tools including dump_axml, dump_chna, ambix_to_bwf, and make_test_bwf.
+- [Essentia](https://github.com/MTG/essentia) - C++ audio/music analysis library with a large algorithm set for spectral/tonal/rhythm descriptors, Python bindings, and an essentia.js WebAssembly port.
+- [fdk-aac](https://github.com/mstorsjo/fdk-aac) - Standalone Fraunhofer FDK AAC codec library (from Android AOSP) supporting AAC-LC/HE-AAC/HE-AACv2/LD/ELD encode and decode, commonly paired with FFmpeg's --enable-libfdk-aac.
+- [How to Set Audio Levels for Video](https://www.premiumbeat.com/blog/how-to-set-audio-levels-for-video) - Bad sound can easily ruin good footage. Use these tips when it comes time to set audio levels for video and film projects.
+- [iamf-tools (AOM)](https://github.com/AOMediaCodec/iamf-tools) - Alliance for Open Media's Immersive Audio Model and Formats encoder/tools, CLI-encoding WAV or ADM-BWF into the IAMF container - an open alternative to Atmos/MPEG-H object audio.
+- [libadm](https://github.com/irt-open-source/libadm) - C++11 library to parse, create, and write ITU-R BS.2076 Audio Definition Model (ADM) XML, pairing with libbw64 for BW64/BWF file I/O - a building block for object-based/Atmos-adjacent audio packaging.
+- [libebur128](https://github.com/jiixyj/libebur128) - An open source C library implementing the EBU R128 loudness standard. It can be used to measure and normalize audio loudness (LUFS) for broadcast compliance.
+- [libspatialaudio — VideoLAN spatial audio renderer](https://github.com/videolabs/libspatialaudio) - Spatial audio renderer supporting ADM objects, Higher-Order Ambisonics and IAMF; from VideoLAN, actively maintained.
+- [loudgain](https://github.com/ghedo/loudgain) - CLI ReplayGain/R128Gain-style loudness tagger built on libebur128.
+- [loudgain — ReplayGain 2.0 / EBU R128 CLI normalizer](https://github.com/Moonbase59/loudgain) - CLI loudness normalizer implementing ReplayGain 2.0 on EBU R128/BS.1770 with non-destructive tagging for FLAC/Opus/AAC and more.
+- [Low Latency Android iOS Linux Windows tvOS macOS Interactive Audio Platform](https://github.com/superpoweredSDK/Low-Latency-Android-iOS-Linux-Windows-tvOS-macOS-Interactive-Audio-Platform) - Superpowered Audio, Networking and Cryptographics SDKs. High performance and cross platform on Android, iOS, macOS, tvOS, Linux, Windows and modern web browsers.
+- [normalizing Audio](https://www.learndigitalaudio.com/normalize-audio)
+- [opus-tools](https://github.com/xiph/opus-tools) - Xiph's official CLI tools for encoding, inspecting, and decoding Opus audio (opusenc, opusdec, opusinfo).
+- [pyAudioAnalysis — Python Audio Analysis Library](https://github.com/tyiannak/pyAudioAnalysis) - Python library for audio segmentation, silence removal via dynamic thresholding, spectral features, and classification.
+- [pyloudnorm](https://github.com/csteinmetz1/pyloudnorm) - Pure-Python loudness measurement and normalization library with no FFmpeg dependency.
+- [RNNoise](https://github.com/xiph/rnnoise) - Xiph's RNN-based real-time noise suppression library for speech, operating on 16-bit 48kHz PCM with a CLI example included.
+- [sdroege/ebur128 — Rust EBU R128 Loudness Library](https://github.com/sdroege/ebur128) - Rust port of libebur128 for loudness measurement, passing EBU-TECH 3341/3342, C-ABI compatible.
 
 ### Metadata Extraction & Management
 
@@ -867,7 +927,7 @@
 - [IMFTool — IMF CPL editor with IMSC subtitles](https://github.com/IMFTool/IMFTool) - Open-source editor for IMF (Interoperable Master Format) Composition Playlists with IMSC1 text-profile subtitle decode/render/preview.
 - [Isoviewer](https://github.com/sannies/isoviewer) - GUI application to have closer look ISO 14496-12 and other MP4 files.
 - [M2amedia SCTE35 Dump for MPEGTS](https://github.com/m2amedia/scte35dump) - M2A Media's tool for extracting SCTE-35 markers from MPEG-TS streams.
-- [MediaInfo](https://github.com/MediaArea/MediaInfo) - Convenient unified display of the most relevant technical and tag data for video and audio files.
+- [MediaInfo (GitHub)](https://github.com/MediaArea/MediaInfo) - Convenient unified display of the most relevant technical and tag data for video and audio files.
 - [mediameta](https://github.com/Vaiz/mediameta) - Rust native-first media metadata extraction library (creation date, resolution) with optional external-tool fallback via feature flag.
 - [metadata — Rust FFmpeg-backed media metadata parser](https://github.com/zmwangx/metadata) - Rust CLI (FFmpeg-backed) parsing and formatting media metadata for human consumption; MediaInfo/ffprobe alternative.
 - [Mp4analyser](https://github.com/essential61/mp4analyser) - Mp4 file analyser written in Python.
@@ -886,6 +946,32 @@
 - [VTCLab Media Analyzer](https://media-analyzer.pro) - In-browser tool that helps to analyze the internal structure of MPEG-TS and MP4/MOV files.
 - [xk media library](https://github.com/chapmanjacobd/library) - Scan millions of files with FFmpeg and access the metadata as a SQLite database. Also, a CLI alternative to media browsers like Plex or Jellyfin.
 
+### Batch Processing & Automation
+
+- [FFmpeg Batch AV Converter](https://github.com/eibols/ffmpeg_batch) - Drag-and-drop FFmpeg batch converter GUI running parallel processes up to the CPU thread count.
+- [How to decode a video (memory file / byte string) and step through it frame by frame in Python?](https://stackoverflow.com/questions/60558412/how-to-decode-a-video-memory-file-byte-string-and-step-through-it-frame-by-f) - I am using Python to do some basic image processing, and want to extend it to process a video frame by frame. I get the video as a blob from a server - .webm encoded - and have it in Python as a b..
+- [Transcode (bmhayward)](https://github.com/bmhayward/Transcode) - Tools to batch transcode and process videos.
+- [Video Thumbnail Generator](https://github.com/flavioribeiro/video-thumbnail-generator) - Generate thumbnail sprites from videos.
+- [Videogrep](https://github.com/antiboredom/videogrep) - Automatic video supercuts with Python.
+
+### Subtitle & Caption Tools
+
+- [AutoSub](https://github.com/abhirooptalasila/AutoSub) - A CLI application to generate subtitle file (.srt) for any video file using Mozilla DeepSpeech.
+- [Autosub (BingLingGroup)](https://github.com/BingLingGroup/autosub) - Command-line utility to transcribe/translate from video/audio/subtitles to subtitles.
+- [AutoSubSync](https://github.com/denizsafak/AutoSubSync) - Subtitle auto-sync GUI wrapping ffsubsync/autosubsync/alass; can sync against a reference subtitle instead of the video.
+- [Cea Extractor](https://github.com/Comcast/cea-extractor) - Parsing and display logic for CEA-608 caption data in fragmented MP4 files.
+- [Extract Subtitles](https://github.com/shawnsky/extract-subtitles) - Utility to extract subtitle streams from video containers into separate text-based subtitle files.
+- [Node Thumbnails Webvtt](https://github.com/estliberitas/node-thumbnails-webvtt) - Video thumbnail generator generating WebVTT spec file.
+- [Serverless Subtitles](https://github.com/awslabs/serverless-subtitles) - Can handle a video input, extract the sound, transcript it and generate different subtitle files for your video.
+- [subgen — Whisper Auto-Subtitles for Media Servers](https://github.com/McCloudS/subgen) - Auto-subtitle generator using Whisper (stable-ts + faster-whisper) for Jellyfin/Plex/Emby/Bazarr, CPU or CUDA.
+- [Subs Extract](https://github.com/cessen/subs_extract) - Extracts per-sentence subtitles + audio from a subtitle file + video file.
+- [subsai](https://github.com/absadiki/subsai) - Subtitle generation tool with WebUI, CLI, and Python API using faster-whisper; exports srt/ass/ssa/sub/JSON/txt/vtt with translation support.
+- [subtp](https://github.com/mochi-neko/subtp) - Rust parser for SRT and WebVTT with round-trip parse/render of cues, comments, styles, and regions.
+- [TV Subtitle Extraction](https://github.com/statsbiblioteket/tv-subtitle-extraction) - System for extraction of subtitles from TV broadcasts.
+- [vidstack/captions — Lightweight JS Caption Parser/Renderer](https://github.com/vidstack/captions) - Modern ~5kB JS library parsing and rendering VTT/SRT/SSA captions, with server-side support, VTT-region rollup captions, and CSS styling.
+- [whisper-subtitle-generator](https://github.com/giakinh0823/whisper-subtitle-generator) - Cross-platform GUI for batch subtitle generation with SRT/VTT/JSON export, translation, and GPU acceleration. MIT.
+- [WhisperTimeSync — Transcript-to-Whisper Subtitle Aligner](https://github.com/EtienneAb3d/WhisperTimeSync) - Aligns an existing accurate transcript over Whisper timestamps to produce SRT with both good text and good timing.
+
 ### VMAF PSNR SSIM Tools
 
 - [Collection of VMAF Resources](https://streaminglearningcenter.com/blogs/collection-of-vmaf-resources.html) - A colleague asked for some resources relating to VMAF. Rather than answer in an email I thought I would create a post around it. Some of these are from Netflix, most from me (Jan Ozer). I've broken the items into three groups; Computing VMAF, Using VMAF, and About VMAF. I hope you find this collection useful...
@@ -898,43 +984,6 @@
 - [turbo-metrics](https://github.com/Gui-Yom/turbo-metrics) - CUDA GPU-accelerated video quality metrics: XPSNR, Butteraugli, VMAF, and CAMBI banding detection.
 - [Vship — GPU visual fidelity metrics](https://github.com/Line-fr/Vship) - GPU-accelerated (HIP/CUDA) implementation of visual quality metrics SSIMULACRA2, Butteraugli and ColorVideoVDP for fast perceptual video comparison.
 
-#### Quality & Testing
-
-- [bdr-ssimu2](https://github.com/gianni-rosato/bdr-ssimu2) - Python/matplotlib tool computing SSIMULACRA2 BD-rate curves with average and harmonic-mean plots and temporal subsampling.
-- [butteraugli (Rust port)](https://github.com/imazen/butteraugli) - Pure Rust port of Butteraugli from libjxl with XYB color, visual masking, and multi-scale bands, validated to within 0.001% of the reference.
-- [fast-ssim2 — SIMD Rust SSIMULACRA2](https://github.com/imazen/fast-ssim2) - Fast SIMD Rust implementation of the SSIMULACRA2 perceptual image/video quality metric.
-- [psy-ex/metrics](https://github.com/psy-ex/metrics) - Perceptual video metrics toolkit computing SSIMULACRA2, Butteraugli, CVVDP, weighted XPSNR, VMAF NEG, SSIM, and PSNR via helper scripts.
-- [ssimu2xpsnr_plotter](https://github.com/gianni-rosato/ssimu2xpsnr_plotter) - Bash tool that encodes x264/x265/SVT-AV1/VVenC across CRF values, measures XPSNR and SSIMULACRA2, and plots rate-distortion curves.
-- [Videobench](https://github.com/JNoDuq/videobench) - VMAF PSNR Bitrate Analyzer.
-- [VMAF](https://github.com/Netflix/vmaf) - Perceptual video quality assessment based on multi-method fusion.
-- [VMAF: The Journey Continues](https://medium.com/netflix-techblog/vmaf-the-journey-continues-44b51ee9ed12) - By Zhi Li, Christos Bampis, Julie Novak, Anne Aaron, Kyle Swanson, Anush Moorthy and Jan De Cock.
-
-### Audio Analysis & Processing
-
-- [Audio Offset Finder](https://github.com/bbc/audio-offset-finder) - Find the offset of an audio file within another audio file.
-- [FFmpeg Normalize](https://github.com/slhck/ffmpeg-normalize#examples) - Audio Normalization for Python/FFmpeg.
-
-#### Audio
-
-- [Audio Loudness  |  Conversational Actions  |  Google Developers](https://developers.google.com/assistant/tools/audio-loudness)
-- [Audio normalization with FFmpeg using loudnorm (ebur128) filter](https://bytesandbones.wordpress.com/2017/03/16/audio-nomalization-with-ffmpeg-using-loudnorm-ebur128-filter)
-- [AudioSeal — localized audio watermarking](https://github.com/facebookresearch/audioseal) - Meta's localized sample-level audio watermarking with fast detector, robust to compression/re-encoding; MIT with weights.
-- [audiowmark — robust audio watermarking](https://github.com/swesterfeld/audiowmark) - Robust blind audio watermarking that survives mp3/ogg re-encoding at ≥128kbit/s, with tunable strength.
-- [Cavern — object-based audio engine (Atmos render)](https://github.com/VoidXH/Cavern) - Object-based audio engine and codec pack: Dolby Atmos rendering, HRTF, room correction, unlimited objects (C#).
-- [libspatialaudio — VideoLAN spatial audio renderer](https://github.com/videolabs/libspatialaudio) - Spatial audio renderer supporting ADM objects, Higher-Order Ambisonics and IAMF; from VideoLAN, actively maintained.
-- [loudgain — ReplayGain 2.0 / EBU R128 CLI normalizer](https://github.com/Moonbase59/loudgain) - CLI loudness normalizer implementing ReplayGain 2.0 on EBU R128/BS.1770 with non-destructive tagging for FLAC/Opus/AAC and more.
-- [normalizing Audio](https://www.learndigitalaudio.com/normalize-audio)
-- [pyAudioAnalysis — Python Audio Analysis Library](https://github.com/tyiannak/pyAudioAnalysis) - Python library for audio segmentation, silence removal via dynamic thresholding, spectral features, and classification.
-- [sdroege/ebur128 — Rust EBU R128 Loudness Library](https://github.com/sdroege/ebur128) - Rust port of libebur128 for loudness measurement, passing EBU-TECH 3341/3342, C-ABI compatible.
-
-### Batch Processing & Automation
-
-- [FFmpeg Batch AV Converter](https://github.com/eibols/ffmpeg_batch) - Drag-and-drop FFmpeg batch converter GUI running parallel processes up to the CPU thread count.
-- [How to decode a video (memory file / byte string) and step through it frame by frame in Python?](https://stackoverflow.com/questions/60558412/how-to-decode-a-video-memory-file-byte-string-and-step-through-it-frame-by-f) - I am using Python to do some basic image processing, and want to extend it to process a video frame by frame. I get the video as a blob from a server - .webm encoded - and have it in Python as a b..
-- [Transcode (bmhayward)](https://github.com/bmhayward/Transcode) - Tools to batch transcode and process videos.
-- [Video Thumbnail Generator](https://github.com/flavioribeiro/video-thumbnail-generator) - Generate thumbnail sprites from videos.
-- [Videogrep](https://github.com/antiboredom/videogrep) - Automatic video supercuts with Python.
-
 ### Color Science & Histogram Analysis
 
 - [dovi_meta](https://github.com/saindriches/dovi_meta) - CLI that creates Dolby Vision XML metadata from an encoded deliverable's binary RPU.
@@ -942,7 +991,7 @@
 - [HDR-Multi-Tool — HDR10+/Dolby Vision Metadata GUI](https://github.com/jessielw/HDR-Multi-Tool) - GUI for parsing HDR10+ and Dolby Vision dynamic metadata from MKV/TS/MP4/HEVC inputs.
 - [libplacebo](https://github.com/haasn/libplacebo) - GPU-based video rendering library (from mpv's algorithms) with dynamic HDR tone mapping, scene-change detection, gamut mapping, and native Dolby Vision Profile 5; powers FFmpeg's vf_libplacebo and VLC.
 - [obs-color-monitor](https://github.com/norihiro/obs-color-monitor) - Vectorscope, waveform, and histogram monitoring plugin for OBS Studio.
-- [OpenColorIO](https://github.com/AcademySoftwareFoundation/OpenColorIO) - Academy Software Foundation's industry-standard color management framework for color space transforms and display transforms, used by Nuke, Blender, Krita, and major VFX pipelines.
+- [OpenColorIO (GitHub)](https://github.com/AcademySoftwareFoundation/OpenColorIO) - Academy Software Foundation's industry-standard color management framework for color space transforms and display transforms, used by Nuke, Blender, Krita, and major VFX pipelines.
 - [quietvoid/dovi_tool — Dolby Vision RPU Metadata Tool](https://github.com/quietvoid/dovi_tool) - Rust CLI to extract, edit, and generate Dolby Vision RPU metadata (profiles 4/5/7/8) and plot L1/L2/L8 levels.
 - [quietvoid/hdr10plus_tool — HDR10+ Metadata Extractor](https://github.com/quietvoid/hdr10plus_tool) - Rust CLI to extract HDR10+ dynamic metadata from HEVC to JSON, plot brightness graphs, and compute Samsung scene info.
 - [scopes_plusplus](https://github.com/MindStudioOfficial/scopes_plusplus) - C++23 realtime video waveform/vectorscope/analyzer using ImGui, OpenGL, and OpenCL.
@@ -951,7 +1000,7 @@
 ### Scene Detection & Segmentation
 
 - [AutoShot](https://github.com/wentaozhu/AutoShot) - CVPR-NAS 2023 shot boundary detection model with a NAS-optimized architecture and the new SHOT dataset (853 videos, 11,606 annotations).
-- [Comskip](https://github.com/erikkaashoek/Comskip) - A free commercial detector.
+- [Comskip](https://github.com/erikkaashoek/Comskip) - Tool for automatically detecting and marking commercial breaks in recorded video content.
 - [Katna](https://github.com/keplerlab/katna) - Pip-installable MIT library for automated keyframe extraction (LUV color-diff), video compression, and smart image cropping.
 - [LMSKE — Keyframe Extraction for Video Summarization](https://github.com/ttharden/Keyframe-Extraction-for-video-summarization) - Large-model sequential keyframe extraction pipeline combining TransNetV2 shot segmentation, CLIP features, and adaptive clustering.
 - [MKV-Chapter-Maker — auto chapters via black/silence/scene](https://github.com/optio50/MKV-Chapter-Maker) - Automatically generates MKV chapters using black-frame, silence or scene detection and writes them via mkvpropedit without re-encoding.
@@ -966,7 +1015,7 @@
 
 ### AI & Machine Learning Tools
 
-- [Ad Insertion Sample](https://github.com/OpenVisualCloud/Ad-Insertion-Sample) - The ad-insertion reference pipeline shows how to integrate various media building blocks, with analytics powered by the OpenVINO™ Toolkit, for intelligent server-side ad insertion. - OpenVisualClou..
+- [Ad Insertion Sample (GitHub)](https://github.com/OpenVisualCloud/Ad-Insertion-Sample) - The ad-insertion reference pipeline shows how to integrate various media building blocks, with analytics powered by the OpenVINO™ Toolkit, for intelligent server-side ad insertion. - OpenVisualClou..
 - [Audio Transcriber](https://github.com/shinobizero/audio_transcriber) - Transcodes audio & video files to text, supports MP3, M4A, WAV, MP4, MKV, AVI, MPG & MPEG. No Online API's. Python 3.
 - [FGVC](https://github.com/vt-vl-lab/FGVC) - (ECCV 2020) Flow-edge Guided Video Completion .
 - [FlashVSR](https://github.com/OpenImagingLab/FlashVSR) - CVPR 2026 real-time diffusion-based streaming video super-resolution using one-step, locality-constrained sparse attention with a tiny conditional decoder.
@@ -976,10 +1025,6 @@
 - [Upscale-A-Video](https://github.com/sczhou/Upscale-A-Video) - CVPR 2024 temporal-consistent diffusion model for real-world video super-resolution.
 - [Video TensorFlow](https://docs.google.com/presentation/d/1NAqYWmFOwxJEacZCuPLdX0mRNRFPFgeRbsm22EaxerU/edit?usp=sharing) - Using TensorFlow For Audience Measurement Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv.
 - [Videocr](https://github.com/apm1467/videocr) - Extract hardcoded subtitles from videos using machine learning.
-
-#### FFmpeg
-
-- [FFmpeg Patch](https://github.com/VCDP/FFmpeg-patch) - This repository contains a collection of FFmpeg* patches and samples to enable CNN model based video analytics capabilities (such as object detection, classification, recognition) in FFmpeg* framew..
 
 ### Color Grading & Correction Tools
 
@@ -994,7 +1039,7 @@
 
 - [Anime4K](https://github.com/bloc97/Anime4K) - A High-Quality Real Time Upscaler for Anime Video.
 - [BasicSR — image/video restoration toolbox](https://github.com/xinntao/BasicSR) - Open-source PyTorch toolbox for image/video super-resolution and restoration implementing EDSR, RCAN, ESRGAN, EDVR, BasicVSR and SwinIR.
-- [Natron](https://github.com/NatronGitHub/Natron) - Open-source node-graph video compositor comparable to After Effects/Nuke, GPLv2, cross-platform, supports the OpenFX plugin standard.
+- [Natron (GitHub)](https://github.com/NatronGitHub/Natron) - Open-source node-graph video compositor comparable to After Effects/Nuke, GPLv2, cross-platform, supports the OpenFX plugin standard.
 - [openfx-misc — OpenFX Plugin Set](https://github.com/NatronGitHub/openfx-misc) - Collection of OpenFX (OFX) plugins - Merge, Roto, keyers, generators, retiming - compatible with any OFX host.
 - [Practical-RIFE — real-time frame interpolation](https://github.com/hzwer/Practical-RIFE) - Actively maintained, deployment-focused fork of RIFE (real-time intermediate flow estimation) for arbitrary-timestep video frame interpolation.
 - [rife-ncnn-vulkan — RIFE interpolation via Vulkan](https://github.com/nihui/rife-ncnn-vulkan) - PyTorch-free, cross-platform RIFE frame-interpolation CLI using ncnn and Vulkan for concurrent CPU+GPU processing.
@@ -1018,27 +1063,10 @@
 - [unifi-protect-remux](https://github.com/petergeneric/unifi-protect-remux) - Niche true-remux tool converting proprietary Ubiquiti UniFi Protect .ubv camera format to MP4 without re-encoding.
 - [wo-video-converter](https://github.com/thurti/wo-video-converter) - Offline browser-based video converter powered by FFmpeg-WebAssembly, no server upload required.
 
-### Audio & Subtitles
+### Audio Analysis & Processing
 
-- [ffsubsync](https://github.com/smacke/ffsubsync) - A tool to automatically synchronize subtitles with video by analyzing audio tracks. It uses speech detection to align subtitle timing via FFmpeg and machine learning.
-- [Gaupol](https://otsaloma.io/gaupol) - An open source subtitle editor for text-based subtitle files, featuring timing adjustment, translation support, and built-in video preview (Linux).
-
-#### Subtitles & Captions
-
-- [Aegisub](https://www.aegisub.org) - A free, cross-platform open source tool for creating and modifying subtitles (advanced subtitle editor supporting ASS/SSA formats).
-- [CEA-608/708 Closed Captioning Standards](https://en.wikipedia.org/wiki/CEA-708) - The EIA-608 and EIA-708 standards define how closed captions are encoded in analog and digital television signals in the US. They are crucial for broadcast TV and cable, and understanding these can help when dealing with caption extraction or embedding in video files (e.g., in MPEG-2 or ATSC streams).
-- [Closed Captioning and Subtitling Products - MacCaption and CaptionMaker Overview - Telestream](https://www.telestream.net/captioning/overview.htm?utm_campaign=partners&utm_source=itunespartner.apple.com&utm_medium=text_link) - Telestream Closed Captioning: MacCaption and CaptionMaker allow you to easily author, edit, create subtitles, and encode and repurpose video captions for television, web and mobile delivery.
-- [go-astisub](https://github.com/asticode/go-astisub) - A Golang library for manipulating subtitles (supports formats like SRT, WebVTT, SSA/ASS, etc.), useful for automated subtitle processing.
-- [Libgosubs](https://github.com/wargarblgarbl/libgosubs)
-- [Netflix Timed Text Style Guide (English)](https://partnerhelp.netflixstudios.com/hc/en-us/articles/215758617-Timed-Text-Style-Guide-General-Requirements) - Netflix's style guide for subtitles and captions outlines the editorial and formatting standards for timed text on their platform. It's a comprehensive resource for best practices in captioning (e.g., line length, timing, speaker labels) that is often referenced industry-wide.
-- [Subtitle Composer](https://github.com/maxrd2/subtitlecomposer) - A Qt-based subtitle editor for KDE/Linux that supports multiple subtitle formats and provides tools for timing, text editing, and translation.
-- [Subtitle Edit](https://github.com/SubtitleEdit/subtitleedit) - A free, open source subtitle editor that supports over 200 subtitle formats, with tools for sync, translation, and conversion.
-- [Subtitle Workshop XE](https://subworkshop.sourceforge.io) - One of the oldest and popular freeware tools for subtitle editing. Subtitle Workshop XE is a modern update that supports a variety of subtitle formats, offering spell check, timing adjustment, and format conversion in a user-friendly environment.
-- [Web Video Text Tracks Format (WebVTT)](https://www.w3.org/TR/webvtt1) - The W3C recommendation for WebVTT, a text format for captioning and subtitling web video. It defines the syntax for caption files used in HTML5 video.
-
-#### Audio
-
-- [libebur128](https://github.com/jiixyj/libebur128) - An open source C library implementing the EBU R128 loudness standard. It can be used to measure and normalize audio loudness (LUFS) for broadcast compliance.
+- [Audio Offset Finder](https://github.com/bbc/audio-offset-finder) - Find the offset of an audio file within another audio file.
+- [FFmpeg Normalize](https://github.com/slhck/ffmpeg-normalize#examples) - Audio Normalization for Python/FFmpeg.
 
 ### Quality Analysis & Metrics
 
@@ -1047,42 +1075,11 @@
 - [Software Tools](https://github.com/VQEG/software-tools) - VQEG's Software and Tools Website.
 - [The Challenge to Maintain and Translate Creative Visual Ideas to Everyone’s Viewing Devices](https://medium.com/@eyevinntechnology/the-challenge-to-maintain-and-translate-creative-visual-ideas-to-everyones-viewing-devices-a88e1a841439) - Many articles have already been posted drawing conclusions on what went wrong with the visual quality of a very popular TV show that was..
 
-#### Quality & Testing
-
-- [AVRate](https://github.com/Telecommunication-Telemedia-Assessment/AVRate) - An open source modular Audio/Visual subjective evaluation test interface.
-- [Dolby Stream Validator](https://ott.dolby.com/OnDel_tools/validator/Start_Here.html) - Dolby's Stream Validator assesses streaming content for Dolby audio and video standards, ensuring high-quality media delivery.
-- [R4WG20 QoE Metrics](https://github.com/cta-wave/R4WG20-QoE-Metrics) - Issue tracking repository for the R4-Wg20 QoE Initiative.
-- [Test Engine Live Tools](https://github.com/ebu/test-engine-live-tools) - Small tools and scripts for the EBU test engine platform.
-- [Toward A Practical Perceptual Video Quality Metric](https://medium.com/netflix-techblog/toward-a-practical-perceptual-video-quality-metric-653f208b9652) - Measuring video quality accurately at scale.
-- [Unified Streaming Validator](https://validator.unified-streaming.com) - Unified Streaming's Validator checks the compliance and quality of streaming content, supporting various streaming protocols.
-- [Video Bench — How measure your video quality easily](https://medium.com/@jnoduq/video-bench-how-measure-your-video-quality-easily-85a0feb8f6e2)
-- [Video Quality Assessment](https://medium.com/@eyevinntechnology/video-quality-assessment-34abd35f96c0?source=userActivityShare-94bccb50d11-1560983815&_branch_match_id=670021582869771680) - In Eyevinn's initiative to share our knowledge around quality we continue with addressing video quality assessment; from both a subjective..
-- [VQEG Tools and Subjective Labs Setup](https://vqeg.github.io/software-tools) - Providing the video quality research community with a wide variety of software tools and guidance in order to facilitate research.
-- [VQMT](https://github.com/Rolinh/VQMT) - Video Quality Measurement Tool. Fast implementations of the following objective image quality metrics: PSNR, SSIM, MS-SSIM, VIFp, PSNR-HVS and PSNR-HVS-M.
-- [Wisual](https://github.com/MarcAntoine-Arnaud/wisual) - Web for Visual Quality Assessment.
-
-#### FFmpeg
-
-- [FFmpeg Debug Qp](https://github.com/slhck/ffmpeg-debug-qp) - FFmpeg Debug Script for QP Values.
-
 ### Video Analytics & Benchmarking
 
 - [DVB Inspector](https://sourceforge.net/projects/dvbinspector) - Download DVB Inspector for free. DVB transport stream analyzer written in java. DVB Inspector is a java program to analyze captured DVB-streams. It is not a real time tool that can interact with PC-TV DVB hardware directly.
 - [Promising Initial Results with AV1 Testing - Streaming Learning Center](https://streaminglearningcenter.com/blogs/promising-initial-results-with-av1-testing.html) - I began testing AV1 early this week. Briefly, my tests involve 16 ten-second clips in four genres (movies, sports, animations, gaming) and an "other" category (music video, nature video). I've completed the first set of tests with FFmpeg 4.3, benchmarking x264, x265, and the latest version of the Alliance for Open Media AV1 codec,..
 - [Stream Analyzer - ts analyzer, stream validation, ETSI TR 101 290 | Elecard: Video Compression Guru](https://www.elecard.com/products/video-analysis/stream-analyzer) - Professional Video Analysis Tool For Syntax Analysis Of Encoded Media Streams. Operates With MPEG-2 PS/TS, VES and MP4 Files. Automation, batch execution via Command Line Interface. Check your multiplexer.
-
-#### FFmpeg
-
-- [Transcoding](https://github.com/AlvianPrasetya/transcoding) - FFmpeg transcoders benchmark. Contribute to AlvianPrasetya/transcoding development by creating an account on GitHub.
-
-#### Quality & Testing
-
-- [Fluster](https://github.com/fluendo/fluster) - Testing framework for decoders conformance.
-- [Test Engine Ondemand](https://github.com/ebu/test-engine-ondemand) - EBU on-demand test engine.
-
-#### FFmpeg
-
-- [FFmpeg Bitrate Stats](https://github.com/slhck/ffmpeg-bitrate-stats) - Calculate bitrate statistics using FFmpeg.
 
 ## Protocols & Transport
 
@@ -1165,34 +1162,134 @@
 - [Wowza: Streaming Protocols Overview](https://www.wowza.com/blog/streaming-protocols) - An overview of traditional and emerging video streaming protocols, including RTMP, RTSP, HLS, MPEG-DASH, and WebRTC. The resource discusses the advantages and limitations of each protocol, providing insights into their latency, scalability, and compatibility, which is valuable for developers in the video streaming domain.
 - [YouTube Live Streaming Ingestion Protocol Comparison](https://developers.google.com/youtube/v3/live/guides/ingestion-protocol-comparison) - This official guide from YouTube provides a detailed comparison of various ingestion protocols supported by YouTube Live Streaming, including RTMP, RTMPS, HLS, and DASH. It outlines the encryption status, supported video codecs, and suitability for different streaming scenarios, offering valuable insights for developers choosing the appropriate protocol for live streaming.
 
-### HLS Manifest Parsers & Generators
+### Adaptive Streaming
 
-- [hls_m3u8](https://github.com/sile/hls_m3u8) - Rust RFC 8216 m3u8 parser and generator with full HLS v7 support.
-- [hls-parser (kuu)](https://github.com/kuu/hls-parser) - JavaScript library to read and write HLS playlists with Low-Latency HLS support.
-- [M3U8 Parser](https://github.com/videojs/m3u8-parser)
-- [Manifestparser](https://github.com/Eyevinn/manifestparser)
-- [Middleman SCTE35 104 Parser](https://tools.middleman.tv/scte35-parser) - A web-based tool to parse and decode SCTE-35 markers for ad insertion and broadcast signaling analysis.
-- [Open M3U8](https://github.com/iheartradio/open-m3u8) - Open Source m3u8 Parser.
-- [Scte35 JS](https://github.com/Comcast/scte35-js) - A SCTE 35 Parser for JavaScript.
-- [Vast Info](https://github.com/Eyevinn/vast-info) - Parse a VAST or VMAP to show valuable information in a readable format.
-- [video-manifest-parser](https://github.com/gumlet/video-manifest-parser) - TypeScript library for manipulating both DASH MPD and HLS M3U8 manifests via a unified editor API (addStream, toString).
+- [AWS Stale Playlist Detector](https://github.com/awslabs/aws-stale-playlist-detector) - The Stale Playlist Detector (SPD) is a tool to monitor live HLS origin endpoints for changing playlists. The Stale Playlist Detector (SPD) will use data in the top-level playlist, the child playlis..
+- [BOLA: Near-Optimal Bitrate Adaptation for Online Videos](https://arxiv.org/pdf/1601.06748.pdf) - Academic paper presenting the BOLA algorithm for adaptive bitrate selection in video streaming players.
+- [CMAF for Low Latency Streaming – Bitmovin](https://bitmovin.com/cmaf-low-latency.html) - A detailed blog explaining how CMAF enables low-latency streaming. Bitmovin covers the technical aspects of chunked CMAF, the changes required in players and CDNs, and results from tests using their encoder and player in low-latency mode.
+- [CTA WAVE Low Latency Service Guidelines](https://cta.tech/Research-Standards/Standards/CTA-WAVE) - Guidelines from the CTA WAVE (Web Application Video Ecosystem) project focusing on low-latency streaming service implementation, including Low-Latency DASH and HLS considerations.
+- [Dl](https://github.com/schedules/dl) - Node.js DASH and HLS downloader.
+- [HTTP Streaming](https://github.com/videojs/http-streaming) - HLS, DASH, and future HTTP streaming protocols library for video.js.
+- [Pensieve (Adaptive Bitrate AI Algorithm)](https://github.com/hongzimao/pensieve) - A research system that uses reinforcement learning to generate adaptive bitrate (ABR) algorithms. Pensieve learned an ABR algorithm that can outperform traditional heuristics under certain conditions.
+- [Puffer (Stanford Live Streaming Research)](https://puffer.stanford.edu) - A free live TV streaming research study by Stanford University that uses volunteer viewers to train and evaluate new adaptive streaming algorithms in real-world conditions.
 
 #### HLS
 
+- [507_hls_authoring_for_airplay_2.](https://devstreaming-cdn.apple.com/videos/wwdc/2019/507fk9wyls0np6piwk/507/507_hls_authoring_for_airplay_2_video.pdf)
+- [510_validating_http_live_streams.](https://devstreaming-cdn.apple.com/videos/wwdc/2016/510ndmh9wkcvzneegv2/510/510_validating_http_live_streams.pdf)
+- [515_hls_authoring_update](https://devstreaming-cdn.apple.com/videos/wwdc/2017/515vy4sl7iu70/515/515_hls_authoring_update.pdf)
+- [Advances in HTTP Live Streaming - WWDC 2017 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2017/504) - HTTP Live Streaming allows you to stream live and on-demand content to global audiences. Learn about great new features and enhancements..
+- [Apple HLS - IETF RFC8216](https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis) - Defines both the metadata structure and some client/server requirements.
+- [Apple HLS Tools](https://developer.apple.com/documentation/http-live-streaming/using-apple-s-http-live-streaming-hls-tools) - Apple's HLS Tools assist developers in creating and validating HTTP Live Streaming (HLS) content for Apple devices.
+- [Apple Reference Streams](https://developer.apple.com/streaming/examples) - Apple provides example streams demonstrating the features of HTTP Live Streaming (HLS) for testing and development purposes.
+- [Apple Technical Note TN2224 - HLS Best Practices](https://developer.apple.com/library/archive/technotes/tn2224/_index.html) - An Apple Technical Note detailing best practices for HTTP Live Streaming. It covers how to encode media, segment files, set up playlists, and deliver HLS streams efficiently.
+- [Content Protection for HLS with AES-128 Encryption](https://www.theoplayer.com/blog/content-protection-for-hls-with-aes-128-encryption) - We will outline the most popular method for content protection with the HTTP Live Streaming (HLS) protocol: AES-128 content encryption.
+- [Creating a Master Playlist | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/creating_a_master_playlist#overview)
+- [draft-pantos-hls-rfc8216bis-00 - HTTP Live Streaming 2nd Edition](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis-00#section-5.1)
 - [Eyevinn/hls-m3u8 — Go HLS Manifest Library](https://github.com/Eyevinn/hls-m3u8) - Go HLS m3u8 parse+generate library, an actively maintained replacement for the archived grafov/m3u8.
+- [Go Ts Segmenter](https://github.com/jordicenzano/go-ts-segmenter) - Live TS segmenter and HLS manifest creation in Go.
 - [gohlslib — Go HLS client & muxer library](https://github.com/bluenviron/gohlslib) - Pure-Go HLS library (from MediaMTX project) with client and muxer; outputs MPEG-TS, fMP4, or LL-HLS, supports AV1/VP9/H265/H264/Opus/AAC.
+- [GoHLStreamer — on-the-fly MP4→HLS from object storage](https://github.com/ftp27/GoHLStreamer) - Go server converting MP4 to HLS on-the-fly, loading source from object storage (Appwrite/DigitalOcean Spaces).
+- [Guide to Mobile Video Streaming with HLS](https://mux.com/blog/mobile-hls-guide) - HTTP Live Streaming, also known as HLS, is the most common format used today for streaming video. If you're building a video streaming application today, you should probably use HLS. Apple created the HLS standard in 2009, and it is the required streaming format for iOS devices. Since then, Android.
+- [HEVC in HLS: 10 Key Questions for Streaming Video Developers](https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=122637&PageNum=2) - Many who heard that Apple is adding support for HEVC playback in HTTP Live Streaming were left with more questions than answers. Here's what developers need to know.
+- [HLS | Bento4](https://www.bento4.com/developers/hls)
+- [HLS Analyzer](https://github.com/epiclabs-io/hls-analyzer) - Analyzer for HTTP Live Streams (HLS) content.
+- [HLS Authoring Specification for Apple Devices | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/hls_authoring_specification_for_apple_devices)
+- [HLS Cutsegment](https://github.com/Eyevinn/hls-cutsegment) - A web app that lets you insert a cut into a segment, which is then cut into two new segments.
+- [HLS Downloader](https://github.com/denex/hls-downloader) - Download all video files from HLS (HTTP Live Streaming) VoD (Video on Demand) m3u8 playlist for local playback.
+- [HLS Downloader Chrome Extension](https://github.com/puemos/hls-downloader-chrome-extension) - Google Chrome Extension for sniffing and downloading HTTP Live streams (HLS).
+- [HLS Fetch](https://github.com/osklil/hls-fetch) - Download and decrypt videos served by the HTTP Live Streaming (HLS) protocol.
+- [HLS Get](https://github.com/SoulMelody/hls-get) - An asynchronous terminal-based hls video stream (m3u8) downloader & combiner, with AES-128 decryption support.
+- [HLS JS](https://github.com/video-dev/hls.js) - JavaScript HLS client using Media Source Extension.
 - [HLS Origin Scripts](https://github.com/Eyevinn/hls-origin-scripts) - Scripts to manipulate HLS manifests at origin or edge server.
 - [HLS Playlist Parser](https://github.com/Eyevinn/hls-playlist-parser) - A JavaScript library to parse Hls playlists.
+- [HLS Relay](https://github.com/Eyevinn/hls-relay) - Script to pull HLS stream from one origin and push to another origin.
+- [HLS Server](https://github.com/t-mullen/hls-server) - Middleware for serving HTTP Live Streaming (HLS) compatible media streams.
+- [HLS Streaming](https://github.com/tozastation/HLS-Streaming) - Implementation or example project by tozastation demonstrating HTTP Live Streaming delivery.
+- [HLS Ts Analyzer](https://github.com/Eyevinn/hls-ts-analyzer) - Example implementation of hls-ts.js library.
 - [HLS Ts JS](https://github.com/Eyevinn/hls-ts-js) - HLS MPEG-TS parser library in JavaScript.
+- [HLS VOD](https://github.com/mifi/hls-vod) - HTTP Live Streaming with on-the-fly encoding of any video file for Web/Apple TV/iPhone/iPad/iPod.
+- [hls-vod-too — on-demand HLS with partial transcode](https://github.com/kmxz/hls-vod-too) - Node on-demand HLS VOD server that transcodes only played segments, with instant seek and a shared transcode cache.
+- [HLSCachingReverseProxyServer](https://github.com/StyleShare/HLSCachingReverseProxyServer) - A simple local reverse proxy server for HLS segment cache.
+- [Hlsclient](https://github.com/globocom/hlsclient) - Python-based HLS client library from Globo for downloading and processing adaptive streaming video content.
+- [HLSCore](https://github.com/fcanas/HLSCore) - A collection of Swift packages for working with HLS.
+- [Hlsdl](https://github.com/selsta/hlsdl) - C program to download VoD HLS (.m3u8) files.
+- [HLSDownloader](https://github.com/qi-shun-wang/HLSDownloader) - Download Crypted HLS with server key and play video as local playing on iOS device.
+- [Hlsdownloader (nmrony)](https://github.com/nmrony/hlsdownloader) - Downloads HLS Playlist file and TS chunks.
+- [Hlsdownloader CLI](https://github.com/nmrony/hlsdownloader-cli) - Downloads HLS Playlist file and TS chunks using Terminal.
+- [HLSion](https://github.com/r-plus/HLSion) - HTTP Live Streaming (HLS) download manager to offline playback.
+- [Hlsq](https://github.com/soldiermoth/hlsq) - A CLI for adding some color to your HLS manifests along with some basic filtering.
+- [Hlstools](https://github.com/muxinc/hlstools)
+- [HTTPLiveStreamingTools](https://github.com/creeveliu/HTTPLiveStreamingTools) - Latest Apple HLS tools copy from Apple Developer Center.
+- [Introducing Low-Latency HLS - WWDC 2019 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2019/502) - Since its introduction in 2009, HTTP Live Streaming (HLS) has enabled the delivery of countless live and on‐demand audio and video..
+- [M3U8](https://github.com/globocom/m3u8) - Python library from Globo for parsing and generating M3U8 playlists used in HLS streaming workflows.
+- [M3U8 (grafov)](https://github.com/grafov/m3u8) - Parser and generator of M3U8-playlists for Apple HLS. Library for Go language. :cinema:.
 - [M3U8 Parser (carlanton)](https://github.com/carlanton/m3u8-parser) - HLS compliant m3u8 parser for Java.
 - [m3u8-rs (shiguredo) — Rust M3U8 parser/builder](https://github.com/shiguredo/m3u8-rs) - Zero-dependency Rust M3U8 parser and builder supporting multivariant and media playlists.
+- [M3U8Parser](https://github.com/M3U8Kit/M3U8Parser) - A light weight M3U8 parser. Support X-Key & X-Session-Key.
 - [Mamba](https://github.com/Comcast/mamba) - A Swift iOS, tvOS and macOS framework to parse, validate and write HTTP Live Streaming (HLS) data.
+- [Mediasegmenter](https://github.com/iliya-gr/mediasegmenter) - Command-line tool for segmenting media files into HLS-compatible chunks for adaptive streaming delivery.
+- [Mock HLS Server](https://github.com/tjenkinson/mock-hls-server) - Fake a live/event HLS stream from a VOD one. Useful for testing.
+- [Morsel](https://github.com/krad/morsel) - Swift library for creating HLS playlists and fragmented mp4 files.  Works on Linux and iOS.
+- [Mux HLS Streams](https://test-streams.mux.dev) - Mux offers a set of test HLS streams, primarily used by hls.js and hosted by Mux, for testing and development.
+- [NGINX Audio Track For HLS Module](https://github.com/flavioribeiro/nginx-audio-track-for-hls-module) - Nginx module that generates audio track for HTTP Live Streaming (HLS) streams on the fly.
+- [NGINX HLS](https://github.com/zhaiweiwei/nginx-hls) - Contribute to zhaiweiwei/nginx-hls development by creating an account on GitHub.
+- [NGINX HLS Analyzer](https://github.com/openHPI/nginx-hls-analyzer) - Fork of fmsloganalyzer to adapt it for HLS streaming analyzes with nginx.
+- [NGINX VOD Module Fmp4 HLS](https://github.com/flavioribeiro/nginx-vod-module-fmp4-hls) - Play fragmented mp4's on HLS using nginx-vod-module.
+- [Protocol Extension for Low-Latency HLS (Preliminary Specification) | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/protocol_extension_for_low-latency_hls_preliminary_specification#3291001)
+- [RFC 8216: HTTP Live Streaming (HLS)](https://datatracker.ietf.org/doc/html/rfc8216) - The IETF RFC that specifies HTTP Live Streaming (HLS), defining the playlist format (M3U8) and media segment structure for Apple's streaming protocol.
 - [rutgersc/m3u8-rs — Rust HLS Manifest Parser](https://github.com/rutgersc/m3u8-rs) - Active nom-based Rust parser for HLS m3u8 playlists (master and media).
 - [swift-hls-kit — pure Swift HLS library](https://github.com/atelier-socle/swift-hls-kit) - Pure Swift HLS library to parse/generate/validate M3U8 with LL-HLS, MV-HEVC, SCTE-35 and HLS Interstitials injection.
+- [Video Downloader](https://github.com/shrimpgo/video-downloader) - Helper to download HLS videos.
+- [wasp-hls](https://github.com/peaBerberian/wasp-hls) - HLS media player built in Rust/WebAssembly running inside a Web Worker to reduce main-thread load during playback.
 
-#### Subtitles & Captions
+#### DASH
 
-- [Node Webvtt](https://github.com/osk/node-webvtt) - Parse WebVTT files, segments and generates HLS playlists for them.
+- [BBC R&D Adaptive Bitrate Test Media](https://rdmedia.bbc.co.uk) - The BBC Research & Development department offers MPEG-DASH test media for developers and researchers.
+- [Combine Mpd](https://github.com/nickdesaulniers/combine-mpd) - Combine MPEG DASH MPD manifest files.
+- [Dash](https://github.com/djvergad/dash) - An MPEG/DASH client-server module for simulating rate adaptation mechanisms over HTTP/TCP.
+- [Dash DRM](https://github.com/shengbinmeng/dash-drm) - Example implementations demonstrating MPEG-DASH playback with DRM protection schemes.
+- [DASH IF Conformance](https://github.com/Dash-Industry-Forum/DASH-IF-Conformance) - This repository provides the source code for MPEG-DASH/DASH-IF Conformance Software/Validator. It has been extended according to further standards, such as CMAF, DVB-DASH, HbbTV, and CTA WAVE. - Da..
+- [Dash IF Test Assets Database](https://testassets.dashif.org/#testvector/list) - A database of test assets provided by the DASH Industry Forum for validating DASH implementations.
+- [Dash JavaScript Player](https://reference.dashif.org/dash.js/latest/samples/dash-if-reference-player/index.html) - Reference implementation player for MPEG-DASH using dash.js library, useful for testing and compliance verification.
+- [Dash JS](https://github.com/Dash-Industry-Forum/dash.js) - A reference client implementation for the playback of MPEG DASH via JavaScript and compliant browsers.
+- [Dash Live Source Simulator](https://github.com/Dash-Industry-Forum/dash-live-source-simulator) - Providing reference live content.
+- [Dash Proxy](https://github.com/tchakabam/dash-proxy) - Experimental MPEG-DASH media gateway - proxy on-the-fly modified MP4 segment metadata.
+- [Dash Proxy (Viblast)](https://github.com/Viblast/dash-proxy) - Easy downloading and mirroring of MPEG-DASH streams.
+- [Dash Sequences GPAC Wiki](https://github.com/gpac/gpac/wiki/dash-sequences) - The GPAC Wiki provides DASH sequences for conformance testing and validation.
+- [Dash Server](https://github.com/theolampert/dash-server) - Small, command-line HTTP/2 file server for serving MPEG-DASH content.
+- [DASH Timeline Validator](https://github.com/globocom/dash_timeline_validator) - Ruby-based tool to validate MPEG-DASH MPD manifests for presentation timeline errors. Checks segment duration drift, advised timeline accuracy, and optionally verifies actual segment durations match manifest declarations. Helps identify buffering issues before deployment.
+- [Dash Validator JS](https://github.com/Eyevinn/dash-validator-js) - MPEG DASH validator JS library.
+- [DASH-IF Conformance Tool](https://github.com/Dash-Industry-Forum/Conformance-Software) - An official tool by the DASH Industry Forum to validate MPEG-DASH MPD files and segment formats. It checks for spec compliance and common issues in DASH content, helpful for anyone generating DASH streams.
+- [DASH-IF IOPs](https://dashif.org/guidelines)
+- [DASH-IF Test Vectors](https://github.com/Dash-Industry-Forum/Test-Vectors) - Official DASH Industry Forum test vectors repository (catalog at testassets.dashif.org) for MPEG-DASH interoperability testing.
+- [dash-mpd-cli](https://github.com/emarsden/dash-mpd-cli) - Commandline application for downloading media content from a DASH MPD manifest.
+- [dash-mpd-rs](https://github.com/emarsden/dash-mpd-rs) - Rust library for parsing, serializing and downloading media content from a DASH MPD file.
+- [Dashencrypt](https://github.com/castlabs/dashencrypt) - DASH fragmenter/segmenter and encrypter. Contribute to castlabs/dashencrypt development by creating an account on GitHub.
+- [Dashif Conformance](https://conformance.dashif.org) - The DASH Industry Forum provides a conformance tool to validate MPEG-DASH content against the DASH standard.
+- [Docker 2dash](https://github.com/Eyevinn/docker-2dash) - A Docker container to pre-package MPEG DASH on demand content.
+- [Docker Dash Packager](https://github.com/Eyevinn/docker-dash-packager) - Open source MPEG DASH packager for live and VOD.
+- [edgeware/mp4ff — Go fMP4 Parser/Writer & Segmenter](https://github.com/unki2aut/go-mpd) - Go library to parse and generate MPEG-DASH MPD manifests, actively maintained.
+- [Generate MPEG DASH content encrypted with MPEG CENC ClearKey · Dash-Industry-Forum/dash.js Wiki](https://github.com/Dash-Industry-Forum/dash.js/wiki/Generate-MPEG-DASH-content-encrypted-with-MPEG-CENC-ClearKey) - A reference client implementation for the playback of MPEG DASH via JavaScript and compliant browsers.
+- [Go Dash](https://github.com/zencoder/go-dash) - A Go library for generating MPEG-DASH manifests.
+- [Ingest](https://github.com/Dash-Industry-Forum/Ingest) - Dash-Industry-Forum/Ingest - A GitHub repository for video/multimedia development.
+- [ISO/IEC 23009-1:2019](https://www.iso.org/standard/75485.html) - Information technology - Dynamic adaptive streaming over HTTP (DASH) - Part 1: Media presentation description and segment formats.
+- [ISO/IEC 23009-1:2019 (MPEG-DASH)](https://www.iso.org/standard/75440.html) - The ISO/IEC standard for Dynamic Adaptive Streaming over HTTP (DASH). It defines the MPD manifest format and segment formats for adaptive bitrate streaming.
+- [ISOSegmentValidator](https://github.com/Dash-Industry-Forum/ISOSegmentValidator) - Contribute to Dash-Industry-Forum/ISOSegmentValidator development by creating an account on GitHub.
+- [Libdash (GitHub)](https://github.com/bitmovin/libdash) - MPEG-DASH Access Library - Official ISO/IEC MPEG-DASH Reference Implementation.
+- [mp4dash | Bento4](https://www.bento4.com/documentation/mp4dash)
+- [Mpd Parser](https://github.com/videojs/mpd-parser) - Contribute to videojs/mpd-parser development by creating an account on GitHub.
+- [Mpd Tools](https://github.com/carlanton/mpd-tools) - Java utilities for parsing and manipulating DASH Media Presentation Description files.
+- [MPEG DASH - ISO/IEC 23009-01](https://www.iso.org/standard/83314.html) - Defines both the metadata structure and associated media format(s).
+- [MPEG DASH Downloader](https://github.com/mahbubcseju/MPEG-DASH-Downloader) - Contribute to mahbubcseju/MPEG-DASH-Downloader development by creating an account on GitHub.
+- [MPEG-DASH MPD Python Library](https://github.com/MPEGGroup/DASHSchema) - A Python implementation of the MPEG-DASH schema and tools to validate or create MPD files. It aligns with the official XML schemas for DASH, helping generate standard-compliant manifests for testing or production.
+- [MPEGDASH iOS Player](https://github.com/MPEGDASHPlayer/MPEGDASH-iOS-Player) - The MPEG-DASH Player iOS Application.
+- [Opus Dash](https://github.com/webmproject/opus-dash) - Specification for Encapsulating Opus Audio in ISO-BMFF Container.
+- [Python Mpegdash](https://github.com/caststack/python-mpegdash) - MPEG-DASH MPD(Media Presentation Description) Parser.
+- [Python-mpegdash — Python MPD parser](https://github.com/sangwonl/python-mpegdash) - Zero-dependency Python MPEG-DASH MPD parser using stdlib XML.
+- [Samples players for dash.js](https://reference.dashif.org/dash.js/latest/samples/index.html) - Collection of sample players demonstrating dash.js features and implementation patterns for MPEG-DASH streaming.
+- [The structure of an MPEG-DASH MPD](https://www.brendanlong.com/the-structure-of-an-mpeg-dash-mpd.html) - The MPEG-DASH Media Presentation Description (MPD) is an XML document containing information about media segments, their relationships and information necessary to choose between them, and other metadata that may be needed by clients. In this post, I describe the most important pieces of the MPD, starting from the top level (Periods) and going to the bottom (Segments).
+- [Videojs Contrib Dash](https://github.com/videojs/videojs-contrib-dash) - Video.js plugin for supporting the MPEG-DASH playback through a video.js player.
 
 ### Low-Latency Streaming Tools
 
@@ -1248,19 +1345,6 @@
 - [manifestor — Go HLS+DASH manifest toolkit](https://github.com/alanzng/manifestor) - Zero-dependency Go library to parse/filter/build/transform HLS and DASH manifests; ships as library, HTTP proxy and CLI.
 - [mpegdash (Python MPD parser/generator)](https://pypi.org/project/mpegdash) - Stdlib-only Python library (minidom-based) to parse and generate MPEG-DASH MPD manifests, maintained by JWPlayer.
 
-#### DASH
-
-- [Combine Mpd](https://github.com/nickdesaulniers/combine-mpd) - Combine MPEG DASH MPD manifest files.
-- [DASH Timeline Validator](https://github.com/globocom/dash_timeline_validator) - Ruby-based tool to validate MPEG-DASH MPD manifests for presentation timeline errors. Checks segment duration drift, advised timeline accuracy, and optionally verifies actual segment durations match manifest declarations. Helps identify buffering issues before deployment.
-- [Dash Validator JS](https://github.com/Eyevinn/dash-validator-js) - MPEG DASH validator JS library.
-- [dash-mpd-rs](https://github.com/emarsden/dash-mpd-rs) - Rust library for parsing, serializing and downloading media content from a DASH MPD file.
-- [edgeware/mp4ff — Go fMP4 Parser/Writer & Segmenter](https://github.com/unki2aut/go-mpd) - Go library to parse and generate MPEG-DASH MPD manifests, actively maintained.
-- [Go Dash](https://github.com/zencoder/go-dash) - A Go library for generating MPEG-DASH manifests.
-- [Mpd Parser](https://github.com/videojs/mpd-parser) - Contribute to videojs/mpd-parser development by creating an account on GitHub.
-- [Mpd Tools](https://github.com/carlanton/mpd-tools) - DASH MPD tools for Java.
-- [Python Mpegdash](https://github.com/caststack/python-mpegdash) - MPEG-DASH MPD(Media Presentation Description) Parser.
-- [Python-mpegdash — Python MPD parser](https://github.com/sangwonl/python-mpegdash) - Zero-dependency Python MPEG-DASH MPD parser using stdlib XML.
-
 ### CMAF & fMP4 Packaging
 
 - [abema/go-mp4 — low-level MP4 box library (Go)](https://github.com/abema/go-mp4) - Go library for low-level reading and writing of ISOBMFF/MP4 boxes via io.ReadSeeker, enabling direct construction of any atom for fMP4/CMAF workflows.
@@ -1277,6 +1361,18 @@
 - [mp4ff (Eyevinn)](https://github.com/Eyevinn/mp4ff) - Go library and CLI tools (mp4ff-info, mp4ff-encrypt, mp4ff-decrypt) for fragmented MP4/CMAF inspection and manipulation.
 - [mp4parse-rust — Firefox ISOBMFF parser](https://github.com/mozilla/mp4parse-rust) - Battle-tested Rust ISOBMFF/MP4 demux parser used in Firefox for safe media container parsing.
 
+### HLS Manifest Parsers & Generators
+
+- [hls_m3u8](https://github.com/sile/hls_m3u8) - Rust RFC 8216 m3u8 parser and generator with full HLS v7 support.
+- [hls-parser (kuu)](https://github.com/kuu/hls-parser) - JavaScript library to read and write HLS playlists with Low-Latency HLS support.
+- [M3U8 Parser](https://github.com/videojs/m3u8-parser) - M3U8 playlist parser from the Video.js project. Core utility for handling HLS manifests in JavaScript.
+- [Manifestparser](https://github.com/Eyevinn/manifestparser) - JavaScript library from Eyevinn for parsing HLS and DASH manifest files in video applications.
+- [Middleman SCTE35 104 Parser](https://tools.middleman.tv/scte35-parser) - A web-based tool to parse and decode SCTE-35 markers for ad insertion and broadcast signaling analysis.
+- [Open M3U8](https://github.com/iheartradio/open-m3u8) - Open-source parser for m3u8 playlist files by iHeartRadio. Essential for HLS streaming implementations.
+- [Scte35 JS](https://github.com/Comcast/scte35-js) - A SCTE 35 Parser for JavaScript.
+- [Vast Info](https://github.com/Eyevinn/vast-info) - Parse a VAST or VMAP to show valuable information in a readable format.
+- [video-manifest-parser](https://github.com/gumlet/video-manifest-parser) - TypeScript library for manipulating both DASH MPD and HLS M3U8 manifests via a unified editor API (addStream, toString).
+
 ### Transport Protocols
 
 - [NGINX-RTMP Module](https://github.com/arut/nginx-rtmp-module) - An Nginx module that adds RTMP streaming server capabilities to Nginx. It supports streaming live content via RTMP and can also be used to create HLS/DASH streams from RTMP input.
@@ -1286,8 +1382,12 @@
 
 - [FFmpeg RIST Protocol Documentation](https://ffmpeg.org/ffmpeg-protocols.html#rist) - Official FFmpeg docs for the rist:// muxer/demuxer, covering rist_profile, buffer_size, encryption, and secret options.
 - [GStreamer RIST Plugin Documentation](https://gstreamer.freedesktop.org/documentation/rist/index.html) - Official GStreamer plugin reference for ristsink/ristsrc/ristrtxsend/ristrtxreceive elements implementing TR-06-1 Simple Profile and partial TR-06-2 Main Profile (RTP header extensions, null-TS restore).
+- [RIST Forum](https://www.rist.tv) - Manage the Reliable Internet Stream Transport (RIST), for transporting live video over unmanaged networks.
+- [RIST Forum: 2025 RIST vs SRT Comparison](https://www.rist.tv/articles-and-deep-dives/2025-rist-vs-srt-comparison) - RIST Forum's own 2025 technical writeup on protocol divergence points between RIST and SRT 1.5, covering bonding convergence and interoperability/governance tradeoffs.
+- [RIST Forum: Latest Updates to SRT and RIST](https://www.rist.tv/articles-and-deep-dives/2023/1/9/the-latest-updates-to-srt-and-rist) - RIST Forum tracking protocol evolution, referencing TR-06-4 Part 3 ancillary features spec.
 - [RIST Installer for Windows](https://github.com/tsduck/rist-installer) - Scripts to build libRIST (Reliable Internet Stream Transport) installers for Windows. Provides easy installation of the open-source RIST protocol implementation and tools for reliable low-latency video transport over unmanaged networks.
 - [RIST with GStreamer (RidgeRun Wiki)](https://developer.ridgerun.com/wiki/index.php/Reliable_Internet_Stream_Transport_%28RIST%29_with_GStreamer) - Technical walkthrough with working gst-launch pipeline examples for RIST sender/receiver and bonding via multiple bonding-addresses.
+- [VSF Technical Recommendations Index](https://vsf.tv/technical-recommendations) - Official Video Services Forum index linking all TR-06-x RIST specification PDFs (Simple/Main/Advanced profiles and extensions).
 
 #### SRT
 
@@ -1311,45 +1411,12 @@
 - [HLS To MP4](https://github.com/egg-bread/hls-to-mp4) - Download HLS videos as MP4 (WebVTT for caption download optional).
 - [hlsvalidator](https://github.com/ferpart/hlsvalidator) - Go application wrapping Apple's mediastreamvalidator for concurrent HLS validation with JSON/HTML reports.
 - [M3U8 Dl](https://github.com/excalibur-kvrv/m3u8-dl) - A CLI m3u8-downloader program to parse .m3u8 playlist file and download mpeg2-ts video files, concat them and convert it to mp4 using FFmpeg.
-- [M3U8 Downloader](https://github.com/huzhenjie/m3u8_downloader)
+- [M3U8 Downloader](https://github.com/huzhenjie/m3u8_downloader) - Tool for downloading video streams from m3u8 playlists. Utility for HLS content retrieval and testing.
 - [M3U8 Downloader (lcy0321)](https://github.com/lcy0321/m3u8-downloader) - Download the ts files according to the given m3u8 file.
 - [NGINX HLS Module](https://github.com/rounce/nginx-hls-module) - Smooth Streaming Module fork.
 - [Node Video Lib](https://github.com/gkozlenko/node-video-lib) - Node.js Video Library / MP4 & FLV parser / MP4 builder / HLS muxer.
 - [Tide](https://github.com/yuhuili-lab/Tide) - Simple m3u8 and MPEG-DASH MPD video downloader using libcurl.
 - [VOD To Live](https://github.com/Eyevinn/vod-to-live) - A Python library to generate Live HLS from VOD.
-
-#### HLS
-
-- [507_hls_authoring_for_airplay_2.](https://devstreaming-cdn.apple.com/videos/wwdc/2019/507fk9wyls0np6piwk/507/507_hls_authoring_for_airplay_2_video.pdf)
-- [510_validating_http_live_streams.](https://devstreaming-cdn.apple.com/videos/wwdc/2016/510ndmh9wkcvzneegv2/510/510_validating_http_live_streams.pdf)
-- [515_hls_authoring_update](https://devstreaming-cdn.apple.com/videos/wwdc/2017/515vy4sl7iu70/515/515_hls_authoring_update.pdf)
-- [Apple HLS Tools](https://developer.apple.com/documentation/http-live-streaming/using-apple-s-http-live-streaming-hls-tools) - Apple's HLS Tools assist developers in creating and validating HTTP Live Streaming (HLS) content for Apple devices.
-- [Creating a Master Playlist | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/example_playlists_for_http_live_streaming/creating_a_master_playlist#overview)
-- [Go Ts Segmenter](https://github.com/jordicenzano/go-ts-segmenter) - Live TS segmenter and HLS manifest creation in Go.
-- [HEVC in HLS: 10 Key Questions for Streaming Video Developers](https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=122637&PageNum=2) - Many who heard that Apple is adding support for HEVC playback in HTTP Live Streaming were left with more questions than answers. Here's what developers need to know.
-- [HLS | Bento4](https://www.bento4.com/developers/hls)
-- [HLS Fetch](https://github.com/osklil/hls-fetch) - Download and decrypt videos served by the HTTP Live Streaming (HLS) protocol.
-- [HLS Relay](https://github.com/Eyevinn/hls-relay) - Script to pull HLS stream from one origin and push to another origin.
-- [HLS Streaming](https://github.com/tozastation/HLS-Streaming)
-- [HLS Ts Analyzer](https://github.com/Eyevinn/hls-ts-analyzer) - Example implementation of hls-ts.js library.
-- [HLSCore](https://github.com/fcanas/HLSCore) - A collection of Swift packages for working with HLS.
-- [Hlsdl](https://github.com/selsta/hlsdl) - C program to download VoD HLS (.m3u8) files.
-- [HLSDownloader](https://github.com/qi-shun-wang/HLSDownloader) - Download Crypted HLS with server key and play video as local playing on iOS device.
-- [Hlsdownloader (nmrony)](https://github.com/nmrony/hlsdownloader) - Downloads HLS Playlist file and TS chunks.
-- [HLSion](https://github.com/r-plus/HLSion) - HTTP Live Streaming (HLS) download manager to offline playback.
-- [Hlsq](https://github.com/soldiermoth/hlsq) - A CLI for adding some color to your HLS manifests along with some basic filtering.
-- [Introducing Low-Latency HLS - WWDC 2019 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2019/502) - Since its introduction in 2009, HTTP Live Streaming (HLS) has enabled the delivery of countless live and on‐demand audio and video..
-- [Mock HLS Server](https://github.com/tjenkinson/mock-hls-server) - Fake a live/event HLS stream from a VOD one. Useful for testing.
-- [Morsel](https://github.com/krad/morsel) - Swift library for creating HLS playlists and fragmented mp4 files.  Works on Linux and iOS.
-- [Mux HLS Streams](https://test-streams.mux.dev) - Mux offers a set of test HLS streams, primarily used by hls.js and hosted by Mux, for testing and development.
-- [NGINX HLS](https://github.com/zhaiweiwei/nginx-hls) - Contribute to zhaiweiwei/nginx-hls development by creating an account on GitHub.
-- [NGINX HLS Analyzer](https://github.com/openHPI/nginx-hls-analyzer) - Fork of fmsloganalyzer to adapt it for HLS streaming analyzes with nginx.
-- [Protocol Extension for Low-Latency HLS (Preliminary Specification) | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/protocol_extension_for_low-latency_hls_preliminary_specification#3291001)
-- [Video Downloader](https://github.com/shrimpgo/video-downloader) - Helper to download HLS videos.
-
-#### Quality & Testing
-
-- [Artillery Plugin HLS](https://github.com/artilleryio/artillery-plugin-hls) - Load test HTTP Live Streaming (HLS) servers with Artillery 🎥.
 
 #### FFmpeg
 
@@ -1361,73 +1428,6 @@
 - [Media Tools (Dash-Industry-Forum)](https://github.com/Dash-Industry-Forum/media-tools) - A collection of tools for analyzing, handling, and creating media and media containers.
 - [MP4 To Mpegdash Py](https://github.com/stultus/mp4-to-mpegdash-py) - Python Script to convert a MP4 file into onDemand MPEG-DASH.
 - [pydash2hls](https://github.com/hyugogirubato/pydash2hls) - Python DASH-to-HLS converter for local or remote manifests, with optional SAMPLE-AES key embedding.
-
-#### DASH
-
-- [Dash](https://github.com/djvergad/dash) - An MPEG/DASH client-server module for simulating rate adaptation mechanisms over HTTP/TCP.
-- [Dash DRM](https://github.com/shengbinmeng/dash-drm) - Demos of MPEG-DASH and DRM.
-- [DASH IF Conformance](https://github.com/Dash-Industry-Forum/DASH-IF-Conformance) - This repository provides the source code for MPEG-DASH/DASH-IF Conformance Software/Validator. It has been extended according to further standards, such as CMAF, DVB-DASH, HbbTV, and CTA WAVE. - Da..
-- [Dash JS](https://github.com/Dash-Industry-Forum/dash.js) - A reference client implementation for the playback of MPEG DASH via JavaScript and compliant browsers.
-- [Dash Live Source Simulator](https://github.com/Dash-Industry-Forum/dash-live-source-simulator) - Providing reference live content.
-- [Dash Proxy](https://github.com/tchakabam/dash-proxy) - Experimental MPEG-DASH media gateway - proxy on-the-fly modified MP4 segment metadata.
-- [Dash Proxy (Viblast)](https://github.com/Viblast/dash-proxy) - Easy downloading and mirroring of MPEG-DASH streams.
-- [Dash Sequences GPAC Wiki](https://github.com/gpac/gpac/wiki/dash-sequences) - The GPAC Wiki provides DASH sequences for conformance testing and validation.
-- [Dash Server](https://github.com/theolampert/dash-server) - Small, command-line HTTP/2 file server for serving MPEG-DASH content.
-- [dash-mpd-cli](https://github.com/emarsden/dash-mpd-cli) - Commandline application for downloading media content from a DASH MPD manifest.
-- [Dashencrypt](https://github.com/castlabs/dashencrypt) - DASH fragmenter/segmenter and encrypter. Contribute to castlabs/dashencrypt development by creating an account on GitHub.
-- [Docker 2dash](https://github.com/Eyevinn/docker-2dash) - A Docker container to pre-package MPEG DASH on demand content.
-- [Docker Dash Packager](https://github.com/Eyevinn/docker-dash-packager) - Open source MPEG DASH packager for live and VOD.
-- [ISOSegmentValidator](https://github.com/Dash-Industry-Forum/ISOSegmentValidator) - Contribute to Dash-Industry-Forum/ISOSegmentValidator development by creating an account on GitHub.
-- [Libdash](https://github.com/bitmovin/libdash) - MPEG-DASH Access Library - Official ISO/IEC MPEG-DASH Reference Implementation.
-- [mp4dash | Bento4](https://www.bento4.com/documentation/mp4dash)
-- [MPEG DASH Downloader](https://github.com/mahbubcseju/MPEG-DASH-Downloader) - Contribute to mahbubcseju/MPEG-DASH-Downloader development by creating an account on GitHub.
-- [The structure of an MPEG-DASH MPD](https://www.brendanlong.com/the-structure-of-an-mpeg-dash-mpd.html) - The MPEG-DASH Media Presentation Description (MPD) is an XML document containing information about media segments, their relationships and information necessary to choose between them, and other metadata that may be needed by clients. In this post, I describe the most important pieces of the MPD, starting from the top level (Periods) and going to the bottom (Segments).
-- [Videojs Contrib Dash](https://github.com/videojs/videojs-contrib-dash) - Video.js plugin for supporting the MPEG-DASH playback through a video.js player.
-
-#### Subtitles & Captions
-
-- [Subtitles](https://github.com/active-video/subtitles) - AV Platform MPEG DASH subtitles.
-
-### Adaptive Streaming
-
-- [AWS Stale Playlist Detector](https://github.com/awslabs/aws-stale-playlist-detector) - The Stale Playlist Detector (SPD) is a tool to monitor live HLS origin endpoints for changing playlists. The Stale Playlist Detector (SPD) will use data in the top-level playlist, the child playlis..
-- [BOLA: Near-Optimal Bitrate Adaptation for Online Videos](https://arxiv.org/pdf/1601.06748.pdf)
-- [CMAF for Low Latency Streaming – Bitmovin](https://bitmovin.com/cmaf-low-latency.html) - A detailed blog explaining how CMAF enables low-latency streaming. Bitmovin covers the technical aspects of chunked CMAF, the changes required in players and CDNs, and results from tests using their encoder and player in low-latency mode.
-- [CTA WAVE Low Latency Service Guidelines](https://cta.tech/Research-Standards/Standards/CTA-WAVE) - Guidelines from the CTA WAVE (Web Application Video Ecosystem) project focusing on low-latency streaming service implementation, including Low-Latency DASH and HLS considerations.
-- [Dl](https://github.com/schedules/dl) - Node.js DASH and HLS downloader.
-- [HTTP Streaming](https://github.com/videojs/http-streaming) - HLS, DASH, and future HTTP streaming protocols library for video.js.
-- [Pensieve (Adaptive Bitrate AI Algorithm)](https://github.com/hongzimao/pensieve) - A research system that uses reinforcement learning to generate adaptive bitrate (ABR) algorithms. Pensieve learned an ABR algorithm that can outperform traditional heuristics under certain conditions.
-- [Puffer (Stanford Live Streaming Research)](https://puffer.stanford.edu) - A free live TV streaming research study by Stanford University that uses volunteer viewers to train and evaluate new adaptive streaming algorithms in real-world conditions.
-
-#### DASH
-
-- [Dash JavaScript Player](https://reference.dashif.org/dash.js/latest/samples/dash-if-reference-player/index.html)
-- [DASH-IF Conformance Tool](https://github.com/Dash-Industry-Forum/Conformance-Software) - An official tool by the DASH Industry Forum to validate MPEG-DASH MPD files and segment formats. It checks for spec compliance and common issues in DASH content, helpful for anyone generating DASH streams.
-- [Ingest](https://github.com/Dash-Industry-Forum/Ingest) - Dash-Industry-Forum/Ingest - A GitHub repository for video/multimedia development.
-- [ISO/IEC 23009-1:2019 (MPEG-DASH)](https://www.iso.org/standard/75440.html) - The ISO/IEC standard for Dynamic Adaptive Streaming over HTTP (DASH). It defines the MPD manifest format and segment formats for adaptive bitrate streaming.
-- [MPEG-DASH MPD Python Library](https://github.com/MPEGGroup/DASHSchema) - A Python implementation of the MPEG-DASH schema and tools to validate or create MPD files. It aligns with the official XML schemas for DASH, helping generate standard-compliant manifests for testing or production.
-- [Samples players for dash.js](https://reference.dashif.org/dash.js/latest/samples/index.html)
-
-#### HLS
-
-- [Apple Technical Note TN2224 - HLS Best Practices](https://developer.apple.com/library/archive/technotes/tn2224/_index.html) - An Apple Technical Note detailing best practices for HTTP Live Streaming. It covers how to encode media, segment files, set up playlists, and deliver HLS streams efficiently.
-- [HLS Analyzer](https://github.com/epiclabs-io/hls-analyzer) - Analyzer for HTTP Live Streams (HLS) content.
-- [HLS Cutsegment](https://github.com/Eyevinn/hls-cutsegment) - A web app that lets you insert a cut into a segment, which is then cut into two new segments.
-- [HLS Downloader](https://github.com/denex/hls-downloader) - Download all video files from HLS (HTTP Live Streaming) VoD (Video on Demand) m3u8 playlist for local playback.
-- [HLS Downloader Chrome Extension](https://github.com/puemos/hls-downloader-chrome-extension) - Google Chrome Extension for sniffing and downloading HTTP Live streams (HLS).
-- [HLS Get](https://github.com/SoulMelody/hls-get) - An asynchronous terminal-based hls video stream (m3u8) downloader & combiner, with AES-128 decryption support.
-- [HLS VOD](https://github.com/mifi/hls-vod) - HTTP Live Streaming with on-the-fly encoding of any video file for Web/Apple TV/iPhone/iPad/iPod.
-- [Hlsclient](https://github.com/globocom/hlsclient)
-- [Hlsdownloader CLI](https://github.com/nmrony/hlsdownloader-cli) - Downloads HLS Playlist file and TS chunks using Terminal.
-- [Hlstools](https://github.com/muxinc/hlstools)
-- [HTTPLiveStreamingTools](https://github.com/creeveliu/HTTPLiveStreamingTools) - Latest Apple HLS tools copy from Apple Developer Center.
-- [M3U8](https://github.com/globocom/m3u8)
-- [M3U8 (grafov)](https://github.com/grafov/m3u8) - Parser and generator of M3U8-playlists for Apple HLS. Library for Go language. :cinema:.
-- [M3U8Parser](https://github.com/M3U8Kit/M3U8Parser) - A light weight M3U8 parser. Support X-Key & X-Session-Key.
-- [Mediasegmenter](https://github.com/iliya-gr/mediasegmenter) - HLS media segmenter.
-- [NGINX Audio Track For HLS Module](https://github.com/flavioribeiro/nginx-audio-track-for-hls-module) - Nginx module that generates audio track for HTTP Live Streaming (HLS) streams on the fly.
-- [NGINX VOD Module Fmp4 HLS](https://github.com/flavioribeiro/nginx-vod-module-fmp4-hls) - Play fragmented mp4's on HLS using nginx-vod-module.
-- [RFC 8216: HTTP Live Streaming (HLS)](https://datatracker.ietf.org/doc/html/rfc8216) - The IETF RFC that specifies HTTP Live Streaming (HLS), defining the playlist format (M3U8) and media segment structure for Apple's streaming protocol.
 
 ## Players & Clients
 
@@ -1471,8 +1471,8 @@
 - [GOM Player](https://www.gomlab.com/gomplayer-media-player) - A popular free media player for Windows with built-in support for many codecs and a user-friendly interface.
 - [Hardware Video Streaming](https://github.com/bmegli/hardware-video-streaming) - A meta repository encompassing several projects focused on hardware-accelerated video encoding and streaming. It includes components like HVE (Hardware Video Encoder), MLSP (Minimal Latency Streaming Protocol), NHVD (Network Hardware Video Decoder), and NHVE (Network Hardware Video Encoder). These tools facilitate efficient video streaming with low latency, leveraging hardware acceleration for improved performance.
 - [HVD - Hardware Video Decoder](https://github.com/bmegli/hardware-video-decoder) - HVD is a C library that provides a simple zero-copy interface to FFmpeg for hardware-accelerated video decoding. It supports multiple technologies and is designed for efficient video processing, making it valuable for developers working on performance-critical video applications.
-- [Iina](https://github.com/iina/iina) - The modern video player for macOS.
 - [IINA](https://iina.io) - A modern, open source macOS media player built on mpv. IINA features a sleek UI, gesture support, and wide format compatibility.
+- [Iina (GitHub)](https://github.com/iina/iina) - The modern video player for macOS.
 - [ijkplayer](https://github.com/bilibili/ijkplayer) - An open source cross-platform media player library based on FFmpeg. ijkplayer is widely used on Android and iOS for its stable performance and was originally developed by Bilibili.
 - [Invidious](https://github.com/iv-org/invidious) - An open source, alternative front-end for YouTube that is privacy-respecting. It streams YouTube content without ads or tracking, and supports lightweight instances.
 - [IVB - Interactive Video Builder](https://github.com/kleftodimos/IVB-An-interactive-video-builder-that-supports-learning-analytics) - IVB is an open-source interactive video builder that supports learning analytics. It allows educators and developers to create interactive video-based learning environments using open-source technologies. IVB integrates with MediaElement, an open-source HTML5 video player, to provide a seamless video playback experience.
@@ -1499,7 +1499,7 @@
 - [MiSTer FPGA](https://github.com/MiSTer-devel/Main_MiSTer) - An open-source project that aims to recreate various classic computers, game consoles, and arcade machines using modern FPGA-based hardware. It allows software and video game images to run as they would on original hardware, using peripherals such as mice, keyboards, joysticks, and other game controllers. MiSTer provides a versatile platform for enthusiasts interested in retro computing and gaming.
 - [MPlayer](http://www.mplayerhq.hu) - One of the original open source media players for UNIX-like systems, known for its wide codec support and command-line interface. MPlayer can play virtually any format and was the basis for mpv and many other players.
 - [mpv](https://mpv.io) - A free, open-source, and cross-platform media player that supports a wide variety of media file formats, audio and video codecs, and subtitle types. Designed for the command line, it offers powerful scripting capabilities for extensive customization. mpv provides high-quality video output with support for OpenGL, Vulkan, and D3D11, and leverages hardware decoding APIs for efficient playback.
-- [Mpv](https://github.com/mpv-player/mpv) - Command line video player.
+- [Mpv (GitHub)](https://github.com/mpv-player/mpv) - Lightweight command-line video player supporting wide format compatibility and advanced playback features.
 - [MPV Media Player](https://www.opensourcealternative.to/project/mpv) - A free, open-source, and cross-platform media player designed for the command line. MPV supports a wide variety of media file formats, audio and video codecs, and subtitle types. It offers powerful scripting capabilities for extensive customization, high-quality video output with support for OpenGL, Vulkan, and D3D11, and GPU video decoding across platforms.
 - [mpv.net](https://github.com/stax76/mpv.net) - A modern Windows user interface for the mpv media player, adding a GUI and settings dialog to the powerful mpv core.
 - [Muvi Flex Mobile SDKs](https://www.muvi.com/flex/mobile-sdk) - Muvi Flex offers Mobile SDKs for Android and iOS, providing features like DRM and non-DRM content streaming, subtitle support, multiple video resolutions, customizable subtitle fonts, colors, and sizes, watermarking, adaptive bitrate streaming, and minimal coding requirements. These SDKs enable developers to deliver seamless video playback experiences in their mobile applications.
@@ -1551,6 +1551,137 @@
 - [µPlayer](https://liliputing.com/hardware-accelerated-video-playback-now-possible-on-the-pinephon) - A simple GTK4-based video player application that leverages the latest version of GStreamer to support hardware-accelerated video playback. It's available as a Flatpak and can be installed on devices like the Librem 5 and potentially other Linux phones, providing an efficient and user-friendly media playback experience.
 - [µPlayer: Lightweight Video Player for Linux Phones](https://source.puri.sm/Librem5/mplayer) - ΜPlayer is a lightweight video player designed for Linux-based smartphones like the PinePhone and Librem 5. It utilizes GStreamer for hardware-accelerated video playback, ensuring smooth performance on devices with limited resources. µPlayer features a simple GTK4 interface and supports a wide range of video formats.
 
+### Mobile & Web Players
+
+- [Able Player](https://ableplayer.github.io/ableplayer) - A fully accessible, cross-browser HTML5 media player library that supports captions, audio descriptions, and sign language tracks, designed to be inclusive for users with disabilities.
+- [Android Oembed Video](https://github.com/TalbotGooday/Android-Oembed-Video) - An Android library for parsing and playing video links (YouTube, Vimeo, etc.) within a WebView without requiring official APIs, using oEmbed.
+- [Deskreen](https://github.com/pavlobu/deskreen) - An open source application that turns any device with a web browser into a secondary screen for your computer by streaming your desktop over WebRTC in real-time.
+- [Enhancer for YouTube](https://www.mrfdev.com/enhancer-for-youtube) - A browser extension that adds a variety of features to enhance the YouTube watching experience (ad control, playback speed, themes, etc.).
+- [Epic Video Comparator](https://github.com/epiclabs-io/epic-video-comparator) - JavaScript library which implements a video comparator component: two overlaped and synchronized video players each one playing an independent source.
+- [Google Media Framework iOS](https://github.com/googleads/google-media-framework-ios) - The Google Media Framework (GMF) is a lightweight media player designed to make video playback and integration with the Google IMA SDK on iOS easier.
+- [React Native Video](https://github.com/react-native-video/react-native-video) - A React Native component for video playback that supports both iOS and Android using native player APIs.
+- [ReactPlayer](https://github.com/cookpete/react-player) - A React component for playing a variety of URLs, including YouTube, Vimeo, SoundCloud, and many more.
+- [streamlit-WebRTC](https://github.com/whitphx/streamlit-webrtc) - A Streamlit component that enables real-time video/audio streams in web apps. It allows building interactive computer vision or conferencing apps by integrating WebRTC with Streamlit.
+- [Video Speed Controller (Chrome Extension)](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk) - A popular browser extension that allows users to speed up or slow down video playback on any website with HTML5 video.
+
+#### Web Players
+
+- [ABR Player Chrome](https://github.com/Eyevinn/abr-player-chrome) - Chrome extension that uses Eyevinn HTML player to be able to play HLS and MPEG-DASH natively.
+- [afterglow](https://afterglowplayer.com) - An open source HTML5 video player that builds on top of Video.js, offering a simpler integration (just adding data attributes to video tags) and a default aesthetic out-of-the-box. afterglow aims to make including a responsive, skinnable video player on websites quick and easy.
+- [Chimee](https://github.com/Chimeejs/chimee) - A video player framework aims to bring wonderful experience on browser.
+- [Clappr](https://github.com/clappr/clappr) - An open source HTML5 video player that supports custom plugins and playback of various formats.
+- [Docker Html5player](https://github.com/Eyevinn/docker-html5player) - A Docker containerized HTML5 player based on Shaka Player.
+- [DPlayer (GitHub)](https://github.com/MoePlayer/DPlayer) - Wow, such a lovely HTML5 danmaku video player.
+- [elements/packages/mux-player](https://github.com/muxinc/elements/tree/main/packages/mux-player) - `<mux-player>` is the official Mux-flavored video player web component. The player UI is built on (Media Chrome)(HTTPS://GitHub.com/muxinc/media-chrome) and (`<mux-video>`)(HTTPS://GitHub.com/muxinc/elements/tree/main/packages/mux-video) drives the core video logic used to play Mux Video content.
+- [Flowplayer](https://flowplayer.com) - A lightweight HTML5 video player known for fast performance and plugin support, historically used as an open source web player.
+- [HJPlayer](https://github.com/huajiaofrontend/HJPlayer) - TypeScript HTML5 video player supporting FLV and HLS playback via Media Source Extensions.
+- [Indigo Player](https://github.com/matvp91/indigo-player) - Highly extensible, modern, JavaScript video player. Handles MPEG-Dash / HLS / MPEG-4 and is built on top of the HTML5 video element.
+- [jPlayer](https://jplayer.org) - A jQuery-based media library that can be used to build web audio and video players. jPlayer abstracts the HTML5 <video> and <audio> elements and provides a consistent API, with a Flash fallback (for older browsers) and skinnable UI via CSS.
+- [JSMpeg](https://github.com/phoboslab/jsmpeg) - Pure-JavaScript MPEG-TS demuxer and MPEG1/MP2 decoder with WebGL rendering, ~50ms low-latency WebSocket streaming in ~20kb.
+- [JW Player (Free Version)](https://www.jwplayer.com) - A popular embeddable web video player with a free tier, originally an open source project, offering HLS and DASH support and extensive customization.
+- [Media Element Syncer](https://github.com/tjenkinson/media-element-syncer) - Synchronise two or more HTML5 media elements.
+- [media-chrome — web components for player UI](https://github.com/muxinc/media-chrome) - Framework-agnostic custom elements for building audio/video player controls; works with any playback engine (hls.js, dash.js, native video, YouTube).
+- [Mediaelement](https://github.com/mediaelement/mediaelement) - HTML5 <audio> or <video> player with support for MP4, WebM, and MP3 as well as HLS, Dash, YouTube, Facebook, SoundCloud and others with a common HTML5 MediaElement API,..
+- [Plyr (GitHub)](https://github.com/sampotts/plyr) - A simple HTML5, YouTube and Vimeo player.
+- [Projekktor](https://www.projekktor.com) - An open source HTML5 video player from the early 2010s. Projekktor provided a unified player with plugin support to handle both HTML5 and Flash fallback in an era of transition. While development has slowed, it remains a piece of the open source player history.
+- [Replay](https://github.com/vimond/replay) - A React video player facilitating adaptive stream playback with custom UI and a React-friendly API.
+- [Shaka Player](https://github.com/shaka-project/shaka-player) - An open source JavaScript library for adaptive video streaming, providing a DASH and HLS player with Widevine DRM support for HTML5 browsers.
+- [svelte-video-player — Svelte 5 streaming player component](https://github.com/meigo/svelte-video-player) - Svelte 5 video player component with HLS/DASH streaming, subtitles, PiP, quality selection and Media Session API; hls.js lazy-loaded on m3u8 detection.
+- [video-react](https://github.com/video-react/video-react) - A web video player built for the HTML5 world using React.
+- [Videogular](https://github.com/videogular/videogular) - The HTML5 video player for AngularJS.
+
+#### Android
+
+- [awesome_video_player — Flutter HLS/DASH/DRM player](https://github.com/nateshmbhat/awesome_video_player) - Maintained Flutter video player (better_player fork) with HLS/DASH, DRM (Widevine/FairPlay/EZDRM), subtitles and multi-audio.
+- [DKVideoPlayer](https://github.com/Doikki/DKVideoPlayer) - An Android video player library wrapping MediaPlayer, ExoPlayer, and IJKPlayer with features like preload, list playback, floating window, and more.
+- [ExoMedia](https://github.com/brianwernick/ExoMedia) - Android media playback library wrapping ExoPlayer/Media3 to simplify audio/video setup, with HLS support; available on Maven Central.
+- [ExoPlayer](https://exoplayer.dev) - An open source, application-level media player for Android by Google. ExoPlayer provides an easy way to play adaptive streaming content (DASH, HLS, SmoothStreaming) with features like DRM support and custom renderers.
+- [ExoPlayer (GitHub)](https://github.com/google/ExoPlayer) - ExoPlayer is an application level media player for Android.
+- [GPUVideo-android](https://github.com/MasayukiSuda/GPUVideo-android) - An Android library that applies GPU-accelerated video filters to videos, integrates with ExoPlayer, and supports video recording with Camera2.
+- [GSYVideoPlayer](https://github.com/CarGuo/GSYVideoPlayer) - An open source video player library for Android, offering multiple playback engines (ExoPlayer, IjkPlayer etc.), gesture controls, and rich features for building video apps.
+- [HLS with Widevine for Android - Taku Semba - Medium](https://medium.com/@takusemba/hls-with-widevine-for-android-de3f41027ed2) - As of the version of 2.6.0, ExoPlayer started supporting Widevine + HLS playback. WideVine is the one of the DRM schemes defined by Google.
+- [HybridMediaPlayer](https://github.com/mkaflowski/HybridMediaPlayer) - Android music and video player. Uses ExoPlayer 2 and MediaPlayer for lower APIs and makes using ExoMediaPlayer easier. If you need advanced options such as handling Chromecast it is delivered by Ex..
+- [lcevc-androidx-media — LCEVC Playback for AndroidX Media3](https://github.com/v-novaltd/lcevc-androidx-media) - Fork of AndroidX Media3 (ExoPlayer) adding MPEG-5 LCEVC playback support via a decoder_lcevc module.
+- [mpv-android](https://github.com/mpv-android/mpv-android) - An Android port of the mpv media player. It leverages mpv's core for high quality video playback on Android devices, supporting hardware decoding and gesture controls.
+- [VideoPlayView](https://github.com/MarcinMoskala/VideoPlayView) - A custom Android view that integrates a video player with a loader and placeholder image, enabling quick embedding of video playback in Android apps.
+- [VLC Android](https://code.videolan.org/videolan/vlc-android) - VLC for Android, Android TV and ChromeOS.
+
+#### iOS/tvOS
+
+- [Adaptive Video Player](https://github.com/IvanoBilenchi/Adaptive-Video-Player) - HLS player for iOS that supports manual selection for the quality of adaptive streams.
+- [BMPlayer](https://github.com/BrikerMan/BMPlayer) - A video player for iOS, based on AVPlayer, support the horizontal, vertical screen. support adjust volume, brightness and seek by slide, support subtitles.
+- [DLGPlayer](https://github.com/DeviLeo/DLGPlayer) - A media player for iOS based on FFmpeg 4.0.
+- [FFEngine Framework](https://github.com/xiewei-wayne/FFEngine.framework) - A high performance player sdk for iOS based on FFmpeg.
+- [FFmpeg Avplayer For iOS tvOS](https://github.com/imoreapps/ffmpeg-avplayer-for-ios-tvos) - A tiny but powerful iOS and Apple TV OS av player framework that's based on the FFmpeg library.
+- [HTY360Player](https://github.com/hanton/HTY360Player) - Open Source iOS 360 Degree Panorama Video Player.
+- [iOS 360 Videos](https://github.com/nytimes/ios-360-videos) - NYT360Video plays 360-degree video streamed from an AVPlayer on iOS.
+- [LFLiveKit](https://github.com/LaiFengiOS/LFLiveKit) - An open source iOS live streaming framework that supports RTMP broadcasting with H.264 (GPU) and AAC encoding.
+- [MHVideoPhotoGallery](https://github.com/mariohahn/MHVideoPhotoGallery) - An iOS Photo and Video Gallery component that supports playing videos and viewing photos in a gallery interface.
+- [MobilePlayer](https://github.com/mobileplayer/mobileplayer-ios) - A powerful and completely customizable media player for iOS, with playback controls and easy integration.
+- [ModernAVPlayer](https://github.com/noreasonprojects/ModernAVPlayer) - A persistence AVPlayer wrapper.
+- [Periscope VideoViewController](https://github.com/gontovnik/Periscope-VideoViewController) - An iOS video view controller that mimics Periscope's fast rewind control for quick scrubbing through video playback.
+- [Player](https://github.com/piemonte/Player) - ▶️ video player in Swift, simple way to play and stream media on iOS/tvOS.
+- [PryntTrimmerView](https://github.com/HHK1/PryntTrimmerView) - An iOS UI component that provides a video trimming interface, allowing users to select and cut segments of a video with a visual timeline.
+- [RTMP Video Player For iOS](https://github.com/xiewei-wayne/rtmp-video-player-for-ios) - Based on FFEngine framework, a rtmp video player for apple iOS devices.
+- [SGPlayer](https://github.com/libobjc/SGPlayer) - A powerful media play framework for iOS, macOS, and tvOS.
+- [SJVideoPlayer](https://github.com/changsanjiang/SJVideoPlayer) - An open source media player library for iOS that provides a customizable player interface. It supports multiple backends (AVPlayer, IJKPlayer, etc.) and features like gesture controls and picture-in-picture.
+- [Srgmediaplayer Apple](https://github.com/SRGSSR/srgmediaplayer-apple) - An advanced media player library, simple and reliable.
+- [SUCacheLoader](https://github.com/DaMingShen/SUCacheLoader) - iOS library for caching video content during streaming to reduce bandwidth and improve playback performance.
+- [Swift-YouTube-Player](https://github.com/gilesvangruisen/Swift-YouTube-Player) - A Swift library for embedding and controlling YouTube videos in iOS applications via a WKWebView.
+- [TVVLCPlayer](https://github.com/kodlian/TVVLCPlayer) - Lets you integrate easily a powerfull video player with playback control views to your tvOS apps.
+- [URLSessionHLSDownload](https://github.com/dhairav/URLSessionHLSDownload) - A swift 3 implementation for downloading HLS content and play it back using native AVPlayer.
+- [VersaPlayer](https://github.com/josejuanqm/VersaPlayer) - A versatile video player for iOS, macOS, and tvOS, built on AVPlayer with support for customization and plugins.
+- [VGPlayer](https://github.com/VeinGuo/VGPlayer) - A simple iOS video player by Vein.
+- [Videoplayback iOS](https://github.com/ustwo/videoplayback-ios) - Swift AVPlayer wrapper using the VIPER architecture. Currently a work in progress.
+- [VIMediaCache](https://github.com/vitoziv/VIMediaCache) - Cache media file while play media using AVPlayer.
+- [Vimeo PlayerKit](https://github.com/vimeo/PlayerKit) - An open source iOS video player framework by Vimeo for easily integrating Vimeo videos and playback functionalities into apps.
+- [VLC iOS](https://code.videolan.org/videolan/vlc-ios) - VLC for iOS is the official port of VLC on the iOS/tvOS platforms.
+
+### Hardware Players
+
+- [Bifserver](https://github.com/anachirino/bifserver) - Server which creates and serves up BIF files for Roku players.
+- [Bigscreen Player](https://github.com/bbc/bigscreen-player) - Simplified media playback for bigscreen devices.
+- [SegmentIO Brightscript](https://github.com/gabek/SegmentIO-Brightscript) - A BrightScript interface to SegmentIO event tracking.
+
+#### Roku
+
+- [Amplitude Brightscript](https://github.com/gabek/Amplitude-Brightscript) - A Brightscript (Roku) library for submitting analytics to Amplitude.
+- [BrighterScript](https://github.com/rokucommunity/brighterscript) - Superset language of BrightScript adding types, classes, and modern features, compiles to standard BrightScript; also serves as LSP backend for editor tooling.
+- [Brighterscript Formatter](https://github.com/RokuCommunity/brighterscript-formatter) - A code formatter for BrighterScript (and BrightScript).
+- [Brightscript JSON](https://github.com/chrishoffman/brightscript-json) - JSON parser for Roku's proprietary Brightscript language.
+- [Brightscript State Machine](https://github.com/schtanislau/brightscript-state-machine) - State management for Roku channel.
+- [BrightWebSocket — WebSocket client for Roku SceneGraph](https://github.com/SuitestAutomation/BrightWebSocket) - RFC 6455 WebSocket client library for Roku SceneGraph, running in a separate task.
+- [Brs Testbed](https://github.com/sjbarag/brs-testbed) - A simple, buildable Roku channel that executes arbitrary BrightScript files.
+- [brs-engine — BrightScript Simulation Engine](https://github.com/lvcabral/brs-engine) - Run Roku BrightScript/SceneGraph apps in the browser and Node.js, with filesystem/registry/remote simulation and a Micro Debugger.
+- [bslint](https://github.com/rokucommunity/bslint) - Static-analysis linter for BrightScript/BrighterScript with CLI usage (npx bslint), supports --fix and --checkUsage flags.
+- [dd-sdk-roku — Datadog SDK for Roku](https://github.com/DataDog/dd-sdk-roku) - Datadog client-side telemetry SDK for Roku apps (BrightScript + SceneGraph).
+- [Emby Roku](https://github.com/MediaBrowser/Emby.Roku) - Official Roku client application for the Emby media server platform for streaming personal video libraries.
+- [eslint-plugin-roku](https://github.com/RokuRoad/eslint-plugin-roku) - ESLint parser and plugin for linting Roku BrightScript source files.
+- [Jasmine Roku](https://github.com/veeta-tv/jasmine-roku) - Example Jasmine tests using node-roku-test for verifying Roku channel behavior.
+- [Network Benchmark](https://github.com/exegersha/network-benchmark) - Proof of concept. Roku app implementing network layer using scene graph nodes.
+- [RAF4RSG Sample](https://github.com/rokudev/RAF4RSG-sample) - Sample demonstrating the Roku Advertising Framework in SceneGraph.
+- [Redoku](https://github.com/briandunnington/Redoku) - Roku application or development tool by Brian Dunnington for video streaming on Roku devices.
+- [Roact](https://github.com/briandunnington/Roact) - Roku development library by Brian Dunnington for building video streaming channels and applications.
+- [Roku Framework](https://github.com/karimkawambwa/roku-framework) - Roku app framework to make app creation easier and structured. Under construction.
+- [Roku Framework Example](https://github.com/karimkawambwa/roku-framework-example) - This is a project to show how the boku-framework by Karim Kawambwa is used.
+- [Roku Lib](https://github.com/dphang/roku-lib) - Collection of utility functions and helpers for Roku channel development and video streaming apps.
+- [Roku Libs](https://github.com/juliomalves/roku-libs) - BrightScript Utility Libraries.
+- [Roku Suite Desktop](https://github.com/CCecilia/roku-suite-desktop) - Tool suite for Roku channel development.
+- [roku-debug](https://github.com/rokucommunity/roku-debug) - Debug Adapter Protocol server and socket wrapper around Roku's BrightScript debug protocol, for editor integration.
+- [roku-deploy](https://github.com/rokucommunity/roku-deploy) - Node.js npm module for zipping, signing, and deploying Roku channel packages to devices.
+- [RokuFramework](https://github.com/mrkjffrsn/RokuFramework) - Open source framework for developing Roku channels with reusable components for video streaming applications.
+- [RokuJSONHelperNode](https://github.com/T-Pham/RokuJSONHelperNode) - SceneGraph component library for parsing and handling JSON data in Roku channel development.
+- [rooibos](https://github.com/rokucommunity/rooibos) - Unit test framework for BrightScript/SceneGraph apps, a rewrite of Roku's official framework with code coverage support.
+- [Rooibos (georgejecook)](https://github.com/georgejecook/rooibos) - Simple, flexible, fun brightscript test framework for roku scenegraph apps.
+- [Samples](https://github.com/rokudev/samples) - Collection of sample channels for side-loading on your Roku device.
+- [SceneGraphDeveloperExtensions](https://github.com/rokudev/SceneGraphDeveloperExtensions) - Contribute to rokudev/SceneGraphDeveloperExtensions development by creating an account on GitHub.
+- [TribalScale/rmock — BrightScript Mocking Library](https://github.com/TribalScale/rmock) - Mock library for BrightScript that works with the official Roku test framework and others for unit testing.
+- [Ukor](https://github.com/willowtreeapps/ukor) - A Roku build tool with support for build flavors.
+- [Unit Testing Framework](https://github.com/rokudev/unit-testing-framework) - Tool for automating and testing Roku channels.
+- [Videoplayer Channel](https://github.com/rokudev/videoplayer-channel) - SceneGraph version of the SDK1 VideoPlayer Channel.
+- [Vscode Brightscript Language](https://github.com/rokucommunity/vscode-brightscript-language) - A Visual Studio Code extension for Roku's BrightScript language.
+- [Zype Roku Scenegraph](https://github.com/zype/zype-roku-scenegraph) - Contribute to zype/zype-roku-scenegraph development by creating an account on GitHub.
+
 ### Frameworks & UI Components
 
 - [Channel Engine Multiview](https://github.com/Eyevinn/channel-engine-multiview) - A multiview frontend for Eyevinn Channel Engine.
@@ -1559,15 +1690,7 @@
 - [Rocute — Roku UI component library](https://github.com/willowtreeapps/rocute) - UI component library for Roku SceneGraph: styled components, animations, screensavers.
 - [Streamlab](https://vimond.github.io/streamlab) - Multi-format stream test tool for the browser. Brings convenience to verifying, inspecting, and troubleshooting adaptive streams and video files. A common interface on top of Shaka Player, HLS.js, and Rx-Player.
 - [switch media universal player](https://www.switch.tv/mediahq/universal-player)
-- [Vapoursynth](https://github.com/vapoursynth/vapoursynth) - A video processing framework with simplicity in mind.
-
-#### Web Players
-
-- [elements/packages/mux-player](https://github.com/muxinc/elements/tree/main/packages/mux-player) - `<mux-player>` is the official Mux-flavored video player web component. The player UI is built on (Media Chrome)(HTTPS://GitHub.com/muxinc/media-chrome) and (`<mux-video>`)(HTTPS://GitHub.com/muxinc/elements/tree/main/packages/mux-video) drives the core video logic used to play Mux Video content.
-- [Media Element Syncer](https://github.com/tjenkinson/media-element-syncer) - Synchronise two or more HTML5 media elements.
-- [media-chrome — web components for player UI](https://github.com/muxinc/media-chrome) - Framework-agnostic custom elements for building audio/video player controls; works with any playback engine (hls.js, dash.js, native video, YouTube).
-- [svelte-video-player — Svelte 5 streaming player component](https://github.com/meigo/svelte-video-player) - Svelte 5 video player component with HLS/DASH streaming, subtitles, PiP, quality selection and Media Session API; hls.js lazy-loaded on m3u8 detection.
-- [Videogular](https://github.com/videogular/videogular) - The HTML5 video player for AngularJS.
+- [Vapoursynth (GitHub)](https://github.com/vapoursynth/vapoursynth) - A video processing framework with simplicity in mind.
 
 ### Set-top Box Players
 
@@ -1590,34 +1713,6 @@
 - [react-native-video — React Native video component](https://github.com/TheWidlarzGroup/react-native-video) - Community-maintained React Native <Video> component with DRM, offline, HLS/DASH support; v7 new-architecture in development.
 - [ZFPlayer](https://github.com/renzifeng/ZFPlayer) - Support customization of any player SDK and control layer.
 
-#### Android
-
-- [awesome_video_player — Flutter HLS/DASH/DRM player](https://github.com/nateshmbhat/awesome_video_player) - Maintained Flutter video player (better_player fork) with HLS/DASH, DRM (Widevine/FairPlay/EZDRM), subtitles and multi-audio.
-- [ExoMedia](https://github.com/brianwernick/ExoMedia) - Android media playback library wrapping ExoPlayer/Media3 to simplify audio/video setup, with HLS support; available on Maven Central.
-- [ExoPlayer](https://github.com/google/ExoPlayer) - An application level media player for Android.
-- [HybridMediaPlayer](https://github.com/mkaflowski/HybridMediaPlayer) - Android music and video player. Uses ExoPlayer 2 and MediaPlayer for lower APIs and makes using ExoMediaPlayer easier. If you need advanced options such as handling Chromecast it is delivered by Ex..
-- [lcevc-androidx-media — LCEVC Playback for AndroidX Media3](https://github.com/v-novaltd/lcevc-androidx-media) - Fork of AndroidX Media3 (ExoPlayer) adding MPEG-5 LCEVC playback support via a decoder_lcevc module.
-- [VLC Android](https://code.videolan.org/videolan/vlc-android) - VLC for Android, Android TV and ChromeOS.
-
-#### iOStvOS
-
-- [Srgmediaplayer Apple](https://github.com/SRGSSR/srgmediaplayer-apple) - An advanced media player library, simple and reliable.
-
-#### iOS/tvOS
-
-- [FFEngine Framework](https://github.com/xiewei-wayne/FFEngine.framework) - A high performance player sdk for iOS based on FFmpeg.
-- [FFmpeg Avplayer For iOS tvOS](https://github.com/imoreapps/ffmpeg-avplayer-for-ios-tvos) - A tiny but powerful iOS and Apple TV OS av player framework that's based on the FFmpeg library.
-- [iOS 360 Videos](https://github.com/nytimes/ios-360-videos) - NYT360Video plays 360-degree video streamed from an AVPlayer on iOS.
-- [Player](https://github.com/piemonte/Player) - ▶️ video player in Swift, simple way to play and stream media on iOS/tvOS.
-- [RTMP Video Player For iOS](https://github.com/xiewei-wayne/rtmp-video-player-for-ios) - Based on FFEngine framework, a rtmp video player for apple iOS devices.
-- [VGPlayer](https://github.com/VeinGuo/VGPlayer) - A simple iOS video player by Vein.
-- [Videoplayback iOS](https://github.com/ustwo/videoplayback-ios) - Swift AVPlayer wrapper using the VIPER architecture. Currently a work in progress.
-- [VIMediaCache](https://github.com/vitoziv/VIMediaCache) - Cache media file while play media using AVPlayer.
-
-#### DASH
-
-- [MPEGDASH iOS Player](https://github.com/MPEGDASHPlayer/MPEGDASH-iOS-Player) - The MPEG-DASH Player iOS Application.
-
 ### Browser Extensions
 
 - [Bitmovin MP4Inspector](https://github.com/bitmovin/MP4Inspector) - Chrome extension that hooks SourceBuffer.appendBuffer to inspect MP4 bytes pushed into MSE SourceBuffers and surface stream irregularities.
@@ -1627,37 +1722,20 @@
 - [nas-extension (native adaptive streaming)](https://github.com/Palethorn/nas-extension) - Browser extension that forces native HLS/MPEG-DASH playback by injecting hls.js/dash.js into pages lacking adaptive streaming support.
 - [stream-detector browser extension](https://github.com/54ac/stream-detector) - Firefox/Chrome extension that tracks HLS/HDS/DASH/Smooth Streaming manifests on a page and emits ready-to-use yt-dlp/FFmpeg/streamlink commands.
 
-#### Web Players
-
-- [ABR Player Chrome](https://github.com/Eyevinn/abr-player-chrome) - Chrome extension that uses Eyevinn HTML player to be able to play HLS and MPEG-DASH natively.
-
 ### Web Players
 
 - [Akamai Players](https://players.akamai.com/players) - Akamai provides a suite of media players optimized for high-quality streaming across various devices.
-- [AV1 Player](https://github.com/Eyevinn/av1-player)
+- [AV1 Player](https://github.com/Eyevinn/av1-player) - Video player specifically for AV1 codec playback. Helps developers test and deploy AV1 streaming content.
 - [Eyevinn Player](https://github.com/Eyevinn/eyevinn-player) - Throttled video player to test video streams.
 - [OTT Multiview](https://github.com/Eyevinn/ott-multiview) - This is a web based multiview screen for HLS and MPEG-DASH streams based on hls.js and Shaka Player.
 - [Phils Players](https://github.com/GeneticGenesis/phils-players) - A collection of video players with vaguely simple GUIs for video engineers.
 - [vvdecWebPlayer](https://github.com/fraunhoferhhi/vvdecWebPlayer) - Fraunhofer HHI WebAssembly VVC/H.266 web player that decodes and plays raw bitstreams, MP4, and DASH-segmented MP4 in-browser.
 
-#### HLS
-
-- [HLS JS](https://github.com/video-dev/hls.js) - JavaScript HLS client using Media Source Extension.
-- [wasp-hls](https://github.com/peaBerberian/wasp-hls) - HLS media player built in Rust/WebAssembly running inside a Web Worker to reduce main-thread load during playback.
-
-#### Web Players
-
-- [Docker Html5player](https://github.com/Eyevinn/docker-html5player) - A Docker containerized HTML5 player based on Shaka Player.
-- [HJPlayer](https://github.com/huajiaofrontend/HJPlayer) - TypeScript HTML5 video player supporting FLV and HLS playback via Media Source Extensions.
-- [JSMpeg](https://github.com/phoboslab/jsmpeg) - Pure-JavaScript MPEG-TS demuxer and MPEG1/MP2 decoder with WebGL rendering, ~50ms low-latency WebSocket streaming in ~20kb.
-- [Mediaelement](https://github.com/mediaelement/mediaelement) - HTML5 <audio> or <video> player with support for MP4, WebM, and MP3 as well as HLS, Dash, YouTube, Facebook, SoundCloud and others with a common HTML5 MediaElement API,..
-- [Plyr](https://github.com/sampotts/plyr) - A simple HTML5, YouTube and Vimeo player.
-
 ### Desktop Players
 
 - [HWAcceleratedVP9Player](https://github.com/rinsuki/HWAcceleratedVP9Player) - Hardware Accelerated VP9 Player in macOS 11.0 Big Sur beta 4+.
 - [KSPlayer](https://github.com/kingslay/KSPlayer) - Swift media player framework for iOS/macOS/tvOS/visionOS on AVPlayer+FFmpeg with HLG, HDR10, HDR10+, Dolby Vision, Dolby Atmos, and text/image subtitle support.
-- [mpv.net](https://github.com/mpvnet-player/mpv.net) - Modern mpv-based Windows media player with a customizable GUI, themes, and extension support built on the mpv engine.
+- [mpv.net (GitHub)](https://github.com/mpvnet-player/mpv.net) - Modern mpv-based Windows media player with a customizable GUI, themes, and extension support built on the mpv engine.
 - [Ruffle](https://github.com/ruffle-rs/ruffle) - A Flash Player emulator written in Rust.
 - [VLC](https://github.com/videolan/vlc) - Media player - All pull requests are ignored, please follow HTTPS://wiki.videolan.org/Sending_Patches_VLC/.
 - [VTM Decoder VLC Plugin](https://github.com/InterDigitalInc/VTMDecoder_VLCPlugin) - VVC (H.266) video decoder plugin for VLC Media Player based on a multithreaded VTM decoder implementation. Includes TS demux plugin with VVC stream format support. Enables VVC playback in VLC with configurable threading and hurry-up mode.
@@ -1665,7 +1743,7 @@
 ### Smart TV Players
 
 - [Lightning-TV RN Multi-TV App Sample](https://github.com/lightning-tv/react-native-multi-tv-app-sample) - React Native TV sample app targeting Android TV, Fire TV, tvOS, and web, with drawer nav, content grid, hero header, and a video player; built with Expo.
-- [Tal](https://github.com/bbc/tal) - TV Application Layer.
+- [Tal](https://github.com/bbc/tal) - BBC's TV Application Layer framework for building smart TV apps. Cross-platform TV development toolkit.
 
 #### Smart TVs
 
@@ -1675,17 +1753,6 @@
 - [Moonfin Smart TV Client](https://github.com/Moonfin-Client/Smart-TV) - Premium Jellyfin and Emby client for Samsung Tizen and LG webOS Smart TVs. Built with Enact/Sandstone framework, featuring native video pipelines, hardware decoding (H.264, HEVC, HDR10, Dolby Vision), PGS/ASS subtitle rendering with libass, and unified multi-server library mode.
 - [react-tv](https://github.com/raphamorim/react-tv) - React renderer and packager for building low-memory TV apps on webOS, Tizen, and Orsay.
 - [Samsung/TizenTVApps — Tizen TV Sample Apps](https://github.com/Samsung/TizenTVApps) - Official Samsung tutorial and sample apps for the Tizen TV web platform (HTML5/JS/CSS).
-
-#### Roku
-
-- [Brightscript State Machine](https://github.com/schtanislau/brightscript-state-machine) - State management for Roku channel.
-- [brs-engine — BrightScript Simulation Engine](https://github.com/lvcabral/brs-engine) - Run Roku BrightScript/SceneGraph apps in the browser and Node.js, with filesystem/registry/remote simulation and a Micro Debugger.
-- [RAF4RSG Sample](https://github.com/rokudev/RAF4RSG-sample) - Sample demonstrating the Roku Advertising Framework in SceneGraph.
-- [Samples](https://github.com/rokudev/samples) - Collection of sample channels for side-loading on your Roku device.
-- [SceneGraphDeveloperExtensions](https://github.com/rokudev/SceneGraphDeveloperExtensions) - Contribute to rokudev/SceneGraphDeveloperExtensions development by creating an account on GitHub.
-- [TribalScale/rmock — BrightScript Mocking Library](https://github.com/TribalScale/rmock) - Mock library for BrightScript that works with the official Roku test framework and others for unit testing.
-- [Videoplayer Channel](https://github.com/rokudev/videoplayer-channel) - SceneGraph version of the SDK1 VideoPlayer Channel.
-- [Zype Roku Scenegraph](https://github.com/zype/zype-roku-scenegraph) - Contribute to zype/zype-roku-scenegraph development by creating an account on GitHub.
 
 #### Chromecast
 
@@ -1702,388 +1769,6 @@
 - [Python-mpv](https://github.com/jaseg/python-mpv) - Python libmpv wrapper designed for embedding into other applications, disables GUI chrome by default.
 - [Shaka Player Embedded (google)](https://github.com/google/shaka-player-embedded) - Shaka Player in a C++ Framework.
 
-### Mobile & Web Players
-
-- [Able Player](https://ableplayer.github.io/ableplayer) - A fully accessible, cross-browser HTML5 media player library that supports captions, audio descriptions, and sign language tracks, designed to be inclusive for users with disabilities.
-- [Android Oembed Video](https://github.com/TalbotGooday/Android-Oembed-Video) - An Android library for parsing and playing video links (YouTube, Vimeo, etc.) within a WebView without requiring official APIs, using oEmbed.
-- [Deskreen](https://github.com/pavlobu/deskreen) - An open source application that turns any device with a web browser into a secondary screen for your computer by streaming your desktop over WebRTC in real-time.
-- [Enhancer for YouTube](https://www.mrfdev.com/enhancer-for-youtube) - A browser extension that adds a variety of features to enhance the YouTube watching experience (ad control, playback speed, themes, etc.).
-- [Epic Video Comparator](https://github.com/epiclabs-io/epic-video-comparator) - JavaScript library which implements a video comparator component: two overlaped and synchronized video players each one playing an independent source.
-- [Google Media Framework iOS](https://github.com/googleads/google-media-framework-ios) - The Google Media Framework (GMF) is a lightweight media player designed to make video playback and integration with the Google IMA SDK on iOS easier.
-- [React Native Video](https://github.com/react-native-video/react-native-video) - A React Native component for video playback that supports both iOS and Android using native player APIs.
-- [ReactPlayer](https://github.com/cookpete/react-player) - A React component for playing a variety of URLs, including YouTube, Vimeo, SoundCloud, and many more.
-- [streamlit-WebRTC](https://github.com/whitphx/streamlit-webrtc) - A Streamlit component that enables real-time video/audio streams in web apps. It allows building interactive computer vision or conferencing apps by integrating WebRTC with Streamlit.
-- [Video Speed Controller (Chrome Extension)](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk) - A popular browser extension that allows users to speed up or slow down video playback on any website with HTML5 video.
-
-#### Android
-
-- [DKVideoPlayer](https://github.com/Doikki/DKVideoPlayer) - An Android video player library wrapping MediaPlayer, ExoPlayer, and IJKPlayer with features like preload, list playback, floating window, and more.
-- [ExoPlayer](https://exoplayer.dev) - An open source, application-level media player for Android by Google. ExoPlayer provides an easy way to play adaptive streaming content (DASH, HLS, SmoothStreaming) with features like DRM support and custom renderers.
-- [GPUVideo-android](https://github.com/MasayukiSuda/GPUVideo-android) - An Android library that applies GPU-accelerated video filters to videos, integrates with ExoPlayer, and supports video recording with Camera2.
-- [GSYVideoPlayer](https://github.com/CarGuo/GSYVideoPlayer) - An open source video player library for Android, offering multiple playback engines (ExoPlayer, IjkPlayer etc.), gesture controls, and rich features for building video apps.
-- [mpv-android](https://github.com/mpv-android/mpv-android) - An Android port of the mpv media player. It leverages mpv's core for high quality video playback on Android devices, supporting hardware decoding and gesture controls.
-- [VideoPlayView](https://github.com/MarcinMoskala/VideoPlayView) - A custom Android view that integrates a video player with a loader and placeholder image, enabling quick embedding of video playback in Android apps.
-
-#### iOStvOS
-
-- [LFLiveKit](https://github.com/LaiFengiOS/LFLiveKit) - An open source iOS live streaming framework that supports RTMP broadcasting with H.264 (GPU) and AAC encoding.
-- [MHVideoPhotoGallery](https://github.com/mariohahn/MHVideoPhotoGallery) - An iOS Photo and Video Gallery component that supports playing videos and viewing photos in a gallery interface.
-- [MobilePlayer](https://github.com/mobileplayer/mobileplayer-ios) - A powerful and completely customizable media player for iOS, with playback controls and easy integration.
-- [Periscope VideoViewController](https://github.com/gontovnik/Periscope-VideoViewController) - An iOS video view controller that mimics Periscope's fast rewind control for quick scrubbing through video playback.
-- [PryntTrimmerView](https://github.com/HHK1/PryntTrimmerView) - An iOS UI component that provides a video trimming interface, allowing users to select and cut segments of a video with a visual timeline.
-- [SJVideoPlayer](https://github.com/changsanjiang/SJVideoPlayer) - An open source media player library for iOS that provides a customizable player interface. It supports multiple backends (AVPlayer, IJKPlayer, etc.) and features like gesture controls and picture-in-picture.
-- [Swift-YouTube-Player](https://github.com/gilesvangruisen/Swift-YouTube-Player) - A Swift library for embedding and controlling YouTube videos in iOS applications via a WKWebView.
-- [VersaPlayer](https://github.com/josejuanqm/VersaPlayer) - A versatile video player for iOS, macOS, and tvOS, built on AVPlayer with support for customization and plugins.
-- [Vimeo PlayerKit](https://github.com/vimeo/PlayerKit) - An open source iOS video player framework by Vimeo for easily integrating Vimeo videos and playback functionalities into apps.
-
-#### Web Players
-
-- [afterglow](https://afterglowplayer.com) - An open source HTML5 video player that builds on top of Video.js, offering a simpler integration (just adding data attributes to video tags) and a default aesthetic out-of-the-box. afterglow aims to make including a responsive, skinnable video player on websites quick and easy.
-- [Chimee](https://github.com/Chimeejs/chimee) - A video player framework aims to bring wonderful experience on browser.
-- [Clappr](https://github.com/clappr/clappr) - An open source HTML5 video player that supports custom plugins and playback of various formats.
-- [DPlayer](https://github.com/MoePlayer/DPlayer) - Wow, such a lovely HTML5 danmaku video player.
-- [Flowplayer](https://flowplayer.com) - A lightweight HTML5 video player known for fast performance and plugin support, historically used as an open source web player.
-- [Indigo Player](https://github.com/matvp91/indigo-player) - Highly extensible, modern, JavaScript video player. Handles MPEG-Dash / HLS / MPEG-4 and is built on top of the HTML5 video element.
-- [jPlayer](https://jplayer.org) - A jQuery-based media library that can be used to build web audio and video players. jPlayer abstracts the HTML5 <video> and <audio> elements and provides a consistent API, with a Flash fallback (for older browsers) and skinnable UI via CSS.
-- [JW Player (Free Version)](https://www.jwplayer.com) - A popular embeddable web video player with a free tier, originally an open source project, offering HLS and DASH support and extensive customization.
-- [Projekktor](https://www.projekktor.com) - An open source HTML5 video player from the early 2010s. Projekktor provided a unified player with plugin support to handle both HTML5 and Flash fallback in an era of transition. While development has slowed, it remains a piece of the open source player history.
-- [Replay](https://github.com/vimond/replay) - A React video player facilitating adaptive stream playback with custom UI and a React-friendly API.
-- [Shaka Player](https://github.com/shaka-project/shaka-player) - An open source JavaScript library for adaptive video streaming, providing a DASH and HLS player with Widevine DRM support for HTML5 browsers.
-- [video-react](https://github.com/video-react/video-react) - A web video player built for the HTML5 world using React.
-
-#### iOS/tvOS
-
-- [Adaptive Video Player](https://github.com/IvanoBilenchi/Adaptive-Video-Player) - HLS player for iOS that supports manual selection for the quality of adaptive streams.
-- [BMPlayer](https://github.com/BrikerMan/BMPlayer) - A video player for iOS, based on AVPlayer, support the horizontal, vertical screen. support adjust volume, brightness and seek by slide, support subtitles.
-- [DLGPlayer](https://github.com/DeviLeo/DLGPlayer) - A media player for iOS based on FFmpeg 4.0.
-- [HTY360Player](https://github.com/hanton/HTY360Player) - Open Source iOS 360 Degree Panorama Video Player.
-- [ModernAVPlayer](https://github.com/noreasonprojects/ModernAVPlayer) - A persistence AVPlayer wrapper.
-- [SGPlayer](https://github.com/libobjc/SGPlayer) - A powerful media play framework for iOS, macOS, and tvOS.
-- [SUCacheLoader](https://github.com/DaMingShen/SUCacheLoader)
-- [TVVLCPlayer](https://github.com/kodlian/TVVLCPlayer) - Lets you integrate easily a powerfull video player with playback control views to your tvOS apps.
-- [URLSessionHLSDownload](https://github.com/dhairav/URLSessionHLSDownload) - A swift 3 implementation for downloading HLS content and play it back using native AVPlayer.
-- [VLC iOS](https://code.videolan.org/videolan/vlc-ios) - VLC for iOS is the official port of VLC on the iOS/tvOS platforms.
-
-### Hardware Players
-
-- [Bifserver](https://github.com/anachirino/bifserver) - Server which creates and serves up BIF files for Roku players.
-- [Bigscreen Player](https://github.com/bbc/bigscreen-player) - Simplified media playback for bigscreen devices.
-- [SegmentIO Brightscript](https://github.com/gabek/SegmentIO-Brightscript) - A BrightScript interface to SegmentIO event tracking.
-
-#### Roku
-
-- [Amplitude Brightscript](https://github.com/gabek/Amplitude-Brightscript) - A Brightscript (Roku) library for submitting analytics to Amplitude.
-- [Brightscript JSON](https://github.com/chrishoffman/brightscript-json) - JSON parser for Roku's proprietary Brightscript language.
-- [Emby Roku](https://github.com/MediaBrowser/Emby.Roku)
-- [Network Benchmark](https://github.com/exegersha/network-benchmark) - Proof of concept. Roku app implementing network layer using scene graph nodes.
-- [Redoku](https://github.com/briandunnington/Redoku)
-- [Roact](https://github.com/briandunnington/Roact)
-- [Roku Framework](https://github.com/karimkawambwa/roku-framework) - Roku app framework to make app creation easier and structured. Under construction.
-- [Roku Framework Example](https://github.com/karimkawambwa/roku-framework-example) - This is a project to show how the boku-framework by Karim Kawambwa is used.
-- [Roku Lib](https://github.com/dphang/roku-lib) - Some useful Roku utilities.
-- [Roku Libs](https://github.com/juliomalves/roku-libs) - BrightScript Utility Libraries.
-- [Roku Suite Desktop](https://github.com/CCecilia/roku-suite-desktop) - Tool suite for Roku channel development.
-- [RokuFramework](https://github.com/mrkjffrsn/RokuFramework) - An opensource Roku framework.
-- [Rooibos (georgejecook)](https://github.com/georgejecook/rooibos) - Simple, flexible, fun brightscript test framework for roku scenegraph apps.
-
-## Infrastructure & Delivery
-
-- [Amazon CloudFront Streaming Tutorials](https://aws.amazon.com/cloudfront/streaming) - Amazon CloudFront offers detailed tutorials and best practices for implementing video streaming workflows using their CDN services. These resources guide developers through setting up scalable, distributed architectures for ingesting, storing, processing, and delivering video content efficiently.
-- [Ant Media Server](https://antmedia.io) - A highly scalable real-time video streaming platform that supports live and on-demand streaming with ultra-low latency. It offers compatibility with various cloud networks, including AWS, Azure, GCP, and Oracle Cloud, and provides SDKs for multiple platforms to facilitate broad audience reach.
-- [Apache Traffic Control](https://trafficcontrol.apache.org) - An open source CDN control plane originally contributed by Comcast. Apache Traffic Control can create a CDN with edge cache servers (like Apache Traffic Server) and provides tooling to manage content delivery, making it useful for building an edge caching infrastructure for video.
-- [Apache Traffic Server](https://trafficserver.apache.org) - An open source HTTP/1.1 and HTTP/2 caching proxy server that can be used as an edge cache in video streaming content delivery networks (CDNs) to improve scalability.
-- [API.video](https://api.video) - A cloud-based video platform that allows developers to integrate video functionalities into their applications seamlessly. It offers services for video uploading, hosting, transcoding, and delivery, enabling on-demand and live-streaming capabilities. The platform is designed for scalability and ease of use, making it suitable for developers looking to incorporate video features without managing complex infrastructure.
-- [Ateme](https://www.ateme.com) - A multinational company specializing in video compression, CDN/streaming, cloud recording, and advertising. They develop software for video compression based on standards like MPEG2, H.264/AVC, H.265/HEVC, AV1, and H.266/VVC. Ateme's solutions are used by content providers, broadcasters, and streaming providers for delivery over various networks, offering tools for efficient video processing and delivery.
-- [Ateme KYRION](https://www.ateme.com/products/kyrion) - Ateme's KYRION is a high-quality, ultra-low-latency encoding and decoding appliance. It is designed for live video delivery, providing broadcasters and service providers with reliable and efficient solutions for real-time content distribution.
-- [Ateme NEA](https://www.ateme.com/products/nea) - Ateme's NEA is a software suite that provides origin, packaging, storage, analytics, and CDN capabilities. It enables efficient content delivery over various networks, including cable, satellite, IPTV, terrestrial, and OTT, supporting formats like MPEG2-TS, HLS, and DASH.
-- [Ateme PILOT](https://www.ateme.com/products/pilot) - Ateme's PILOT is a management and operations software suite that facilitates the deployment and monitoring of video delivery services. It offers tools for resource management, service orchestration, and operational analytics, ensuring optimal performance and reliability.
-- [AVideo CDN Storage](https://github.com/WWBN/AVideo/wiki/CDN-Storage) - AVideo offers a CDN Storage solution that automatically replicates video files globally, ensuring low latency and high throughput for video streaming. It provides infinite scalability, strategic positioning of data, and direct CDN integration, making it valuable for developers seeking efficient content delivery.
-- [AWS CDN Video Streaming Service](https://github.com/Shereefo/AWS-CDN-Video-Streaming-Service) - This project leverages Amazon S3, Amazon CloudFront, and React to build a scalable and efficient video streaming service. It allows users to view a variety of streaming content through a web-based interface, ensuring optimized security, performance, and reliability through AWS's global network of data centers.
-- [AWS Elemental Media Services](https://aws.amazon.com/media) - Offer a suite of cloud-based solutions for video processing and delivery, including live and on-demand streaming. These services enable scalable, secure, and cost-effective video workflows, making them valuable for developers building video streaming and encoding applications.
-- [AWS Elemental MediaConnect](https://aws.amazon.com/mediaconnect/features) - A reliable, secure, and flexible transport service for live video that enables broadcasters and content owners to build live video workflows and securely share live content with partners and customers. It supports a range of protocols for video delivery, including Zixi, RIST, SRT, RTP, and RTP with FEC, facilitating high-quality video sharing and real-time monitoring.
-- [AWS Elemental MediaConvert](https://aws.amazon.com/mediaconvert) - A file-based video transcoding service that allows for the conversion of content into different formats to ensure compatibility across multiple playback devices. It provides comprehensive cloud-based video processing solutions, including encoding, transcoding, packaging, and live streaming services.
-- [AWS Elemental MediaLive](https://aws.amazon.com/medialive) - A cloud-based live video processing service that enables users to encode live video streams for broadcast and streaming to various devices. It integrates seamlessly with other AWS services to create a comprehensive video processing pipeline in the cloud.
-- [AWS Elemental MediaPackage](https://aws.amazon.com/mediapackage) - A video origination and just-in-time packaging service that allows users to securely and reliably deliver live and on-demand video content to a wide range of devices. It supports multiple delivery formats, content protection mechanisms, and integrates with other AWS services to build scalable video workflows.
-- [AWS Elemental MediaTailor](https://aws.amazon.com/mediatailor) - A content personalization and monetization service that allows users to serve targeted ads to viewers while maintaining broadcast-quality streaming. It supports server-side ad insertion, ensuring a seamless viewing experience across devices, and integrates with other AWS services for comprehensive video workflows.
-- [AWS Media & Entertainment Cloud Solutions](https://aws.amazon.com/media/resources) - AWS offers a range of cloud solutions tailored for media and entertainment, including OTT video workflows, live sports workflows, machine learning and analytics for media, and monetization of video workflows. These solutions enable developers to build secure, scalable, and integrated video streaming infrastructures, focusing on innovation rather than infrastructure management.
-- [AWS Media Services](https://aws.amazon.com/media-services) - Offer a suite of cloud-based services that enable the creation, transformation, and delivery of digital content. These services include AWS Elemental MediaConnect for live video transport, AWS Elemental MediaConvert for file-based video transcoding, and AWS Elemental MediaLive for live video processing. They provide scalable and flexible solutions for video streaming and encoding, allowing developers to build and adapt video workflows quickly without the overhead of managing physical infrastructure.
-- [BemTV](https://github.com/streamroot/bemtv) - An open-source P2P library tailored for the HTTP Live Streaming (HLS) protocol. It introduces a hybrid CDN/P2P architecture for live video broadcasts over the internet, leveraging WebRTC to decentralize delivery. This approach reduces the number of requests to CDN servers, thereby decreasing transmission costs and enhancing system scalability. BemTV is valuable for developers exploring peer-to-peer solutions to scale live video streaming without external plugins.
-- [Bitmovin](https://bitmovin.com) - Cloud-based video encoding and player solutions, offering high-quality streaming experiences with support for various codecs and formats. It enables efficient video workflows with features like adaptive streaming and analytics.
-- [Bitmovin CDN Output](https://developer.bitmovin.com/encoding/docs/bitmovin-cdn-output) - Bitmovin's Content Delivery Network (CDN) simplifies content distribution by automatically distributing your encoded content globally. It removes the need to set up your own output storage, enabling fast and efficient delivery to viewers without additional effort.
-- [Bitmovin Encoding API](https://bitmovin.com/encoding) - Bitmovin's Encoding API offers cloud-based video encoding services that support a wide range of codecs and formats. It provides high-speed encoding with features like per-title encoding, multi-codec streaming, and DRM integration. This API is designed for developers seeking efficient and scalable video encoding solutions in the cloud.
-- [Bitmovin Streams](https://bitmovin.com/video-streaming-apis-sdks-ovps-explained) - A cloud-based video streaming solution that simplifies the process of uploading, encoding, and delivering on-demand and live video content. It features a customizable player, in-depth analytics, and content protection mechanisms, providing developers with an end-to-end streaming infrastructure.
-- [Bitmovin Video Encoding API](https://bitmovin.com/video-encoding) - Bitmovin offers a cloud-based video encoding solution that supports HEVC and VP9 live streaming with up to 60FPS and 4K resolution. It provides containerized video encoding using Docker and Kubernetes, ensuring scalability and flexibility for developers. The platform is known for its in-house development, ease of integration, and high customizability, making it suitable for enterprise-level applications.
-- [Bitmovin Video Streaming APIs and SDKs](https://bitmovin.com/blog/video-streaming-apis-sdks-ovps-explained) - Bitmovin provides video streaming APIs and SDKs that offer comprehensive functionality across encoding, playback, and analytics. Their solutions support per-title encoding, allowing customized settings for each video to ensure high-quality viewing experiences and efficient data usage. Bitmovin's VOD and Live encoders can be deployed on various cloud infrastructures, providing flexibility and cost efficiency. They also offer customizable HTML5 players and SDKs for different platforms.
-- [BlazingCDN](https://blazingcdn.com) - A cloud-based content delivery network optimized for video streaming. It provides low-latency, high-speed delivery of video content to a global audience, ensuring a smooth streaming experience. The platform supports various video formats and integrates with existing video platforms, making it a valuable resource for developers seeking efficient content distribution solutions.
-- [BlazingCDN Integration Best Practices](https://blog.blazingcdn.com/en-us/best-practices-for-cdn-integration-with-existing-it-systems) - BlazingCDN offers a detailed blog post outlining best practices for integrating CDNs with existing IT systems. The article emphasizes seamless integration and configuration, including DNS setup, cache rules, load balancing, and security measures. This resource is beneficial for developers aiming to enhance video streaming services through effective CDN integration.
-- [Brightcove](https://www.brightcove.com) - A cloud-based video platform that provides on-demand and live video streaming, with an emphasis on monetization and marketing. It offers tools for generating followers, driving brand awareness, producing pipeline, increasing income, and interacting with employees.
-- [Brightcove Open Source Projects](https://general.support.brightcove.com/general/brightcove-open-source-projects.html) - A collection of open-source tools and libraries developed by Brightcove to enhance video streaming capabilities. These projects include API wrappers, troubleshooting scripts, and sample applications, providing developers with resources to integrate and manage video content effectively.
-- [Byte Down: Making Netflix’s Data Infrastructure Cost-Effective](https://netflixtechblog.com/byte-down-making-netflixs-data-infrastructure-cost-effective-fee7b3235032)
-- [BytePlus Live](https://www.byteplus.com/en/topic/86429?title=top-10-tools-for-video-streaming-api-in-2024-byteplus-live-leads-the-pack) - A comprehensive toolkit for creating seamless, scalable video streaming applications. Key features include low-latency video transmission, cross-platform compatibility, adaptive bitrate streaming, advanced analytics and monitoring, and robust security features. BytePlus Live is designed to help developers and SMBs deliver high-quality, real-time video experiences efficiently.
-- [CDN Transcode Sample](https://www.intel.com/content/www/us/en/developer/articles/technical/cdn-transcode-sample-powered-by-open-visual-cloud.html) - Powered by Open Visual Cloud, demonstrates how to integrate media transcoding and streaming services optimized for Intel® Xeon® processors. It utilizes an FFmpeg-based media transcoding stack and an NGINX-based streaming and web hosting stack. This sample is beneficial for developers aiming to build efficient and scalable video streaming solutions with CDN integration.
-- [CDN Video Streaming](https://github.com/shaowenwei/cdn-video-streaming) - This project delves into video streaming via CDN, focusing on implementing adaptive bitrate selection, DNS load balancing, and an HTTP proxy server to stream video efficiently. It provides insights into building a video CDN, making it a valuable resource for developers aiming to enhance their understanding of video content distribution and CDN integration.
-- [CDN Video Uploader and Transcoder](https://github.com/SoftUni/CDN-Video-Uploader) - A tool designed for transcoding and uploading videos to a CDN network for HLS video streaming. It supports various input formats and resolutions, utilizes hardware-accelerated video transcoding, and automates the upload process to the target CDN.
-- [cdnjs](https://cdnjs.com) - A free and open-source content delivery network (CDN) hosted by Cloudflare. It serves over 4,000 JavaScript and CSS libraries, which are stored publicly on GitHub. cdnjs is included in millions of websites, making it the second most popular CDN for JavaScript. It is maintained by the community and sponsored by companies like DigitalOcean, Algolia, Heroku, Atlassian, Sentry, and Lean20.
-- [ClipBucket](https://github.com/arslancb/clipbucket) - An open source video sharing platform (YouTube-like) allowing users to upload, manage, and stream video content on their own server.
-- [Cloud-Based Video Streaming](https://github.com/spatil36/Cloud-Based-Video-Streaming) - This project demonstrates the development of a secure, on-demand video streaming platform using AWS services. It includes a React-based frontend, AWS Cognito for user management, and AWS Media Package for video processing, offering a comprehensive solution for building scalable video streaming applications.
-- [Cloudinary](https://cloudinary.com) - An AI-powered cloud platform that automates the creation, management, and delivery of video with AI and machine learning, accelerating video workflows at scale. It offers features such as multiple-source fetches, uploads, auto-tagging, advanced search, transcription, format and codec selection, content-aware cropping, effects, previews, and thumbnails.
-- [Cloudinary Cloud Video Streaming](https://cloudinary.com/glossary/cloud-video-streaming) - Cloudinary provides cloud-based video streaming services that enable efficient storage and delivery of video content over the internet. It offers features like API access, live streaming, transcoding, and video analytics, allowing developers to integrate and manage video streaming capabilities seamlessly.
-- [Cloudinary Video API](https://cloudinary.com/video_api) - Cloudinary provides a cloud-based video content management solution with APIs for uploading, storing, transcoding, and delivering videos. It offers real-time video manipulation, customizable video players, live streaming capabilities, and AI-based video tagging and transcription, simplifying video workflows for developers.
-- [Cloudinary Video CDN](https://cloudinary.com/guides/web-performance/video-cdn-why-you-need-it-and-top-5-video-cdns) - Cloudinary provides a comprehensive Video CDN solution that enhances video delivery through features like adaptive bitrate streaming, video prefetching for live events, and optimized video formats for various devices. It also offers advanced capabilities such as dynamic overlays, allowing developers to add text, images, or other videos over the main video stream, facilitating personalized and interactive content delivery.
-- [Cloudinary Video Management Platform](https://cloudinary.com/blog/introducing_the_complete_video_solution_for_web_and_mobile_developers) - Cloudinary offers a comprehensive cloud-based video content management solution for developers. It provides APIs and UI widgets for video upload, real-time video transcoding and manipulation via CDN delivery URLs, a customizable video player with user engagement analytics, live video streaming directly from web and mobile apps, and AI-based video tagging and transcription. This platform simplifies the video workflow for web and mobile developers while enhancing the end-user experience.
-- [Coconut Video Encoding API](https://www.coconut.co/features/coconut-api) - A scalable and flexible video encoding API that integrates seamlessly into any existing platform. Coconut harnesses cloud technology to provide a powerful solution for video encoding, supporting multiple regions to ensure low latency.
-- [Dacast Video Streaming Platform](https://www.dacast.com) - Dacast is a comprehensive video streaming platform that integrates with top-tier CDNs to provide reliable and high-quality video delivery. It offers features like video hosting, monetization options, and robust security protocols. Dacast's user-friendly interface and API access make it a valuable tool for developers looking to implement video streaming solutions with CDN support.
-- [datarhei Restreamer](https://datarhei.com) - An open-source video streaming server that provides a simple yet powerful solution for live streaming. It features a fully documented API, making it easy to integrate into various projects. Restreamer is suitable for both personal and commercial applications.
-- [Dionysia](https://github.com/dionysia-dev/dionysia) - A live streaming platform based on open-source software. It integrates various open-source projects to create a seamless experience for video developers, supporting multiple ingest protocols, customizable transcoding profiles, and adaptive bitrate streaming.
-- [DTube](https://d.tube) - A decentralized video platform built on Blockchain (Steem/LBRY), offering an alternative to YouTube where videos are distributed via a peer-to-peer network and Blockchain stores metadata and rewards.
-- [Dynamic Adaptive Streaming over HTTP (DASH)](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) - Also known as MPEG-DASH, is an international standard for adaptive bitrate streaming over HTTP. It enables high-quality streaming of media content by breaking the content into small segments and delivering them over HTTP. DASH is codec-agnostic and supports various container formats, making it versatile for different streaming scenarios. It allows for adaptive bitrate streaming, adjusting the quality of the media stream in real-time based on network conditions and device capabilities, ensuring a smooth viewing experience for users.
-- [Example Project: Video Streaming Platform](https://docs.osaas.io/osaas.wiki/Example-Project%3A-Video-Streaming-Platform.html) - An example of a Video on Demand (VOD) streaming platform built with open web services in Eyevinn Open Source Cloud. It includes a VOD preparation pipeline, orchestrator, database, and a simple web application.
-- [Eyevinn Live Encoding](https://github.com/Eyevinn/live-encoding) - An open-source live encoder based on FFmpeg and Shaka packager. It supports live transcoding to HLS and optionally MPEG-DASH, providing an origin for CDN shield to pull streams as well as push to CDN origin. It's a valuable tool for setting up live streaming infrastructures.
-- [Fastly CDN](https://www.fastly.com) - Fastly is a real-time content delivery network that offers advanced features for video streaming, including instant purging, real-time analytics, and edge computing capabilities. Its integration with video platforms allows for low-latency streaming and efficient content delivery. Fastly's programmable edge platform enables developers to customize content delivery and optimize performance for their specific needs.
-- [Flussonic Media Server](https://flussonic.com/flussonic-media-server) - A multi-purpose software solution for launching high-load video streaming services of any scale. It delivers video to millions of viewers worldwide and offers features like live streaming, recording, transcoding, and access authorization.
-- [Galene](https://galene.org) - A simple self-hosted SFU (Selective Forwarding Unit) for videoconferencing. Galene is lightweight and supports multiple rooms and groups with direct browser clients (using WebRTC).
-- [Google Cloud Media Supply Chain Solutions](https://cloud.google.com/blog/products/media-entertainment/how-cloud-enables-the-media-supply-chain) - Google Cloud offers comprehensive solutions for building cloud-native broadcast media supply chains. These solutions enable media companies to streamline operations, reduce costs, and deliver engaging content to global audiences. Key features include AI integration, scalability, and a focus on openness and efficiency.
-- [Google Cloud Video Services C++ Client Library](https://googleapis.github.io/google-cloud-cpp/google/cloud/video) - An idiomatic C++ client library for Google Cloud's video services, including Live Stream API, Transcoder API, and Video Stitcher API. This library enables developers to integrate live video streaming, video file transcoding, and dynamic content generation into their applications.
-- [Google Media Transcoder](https://cloud.google.com/transcoder) - A cloud-based service that provides scalable and efficient video transcoding capabilities. It supports a wide range of input and output formats, enabling developers to deliver high-quality video content across various devices and platforms.
-- [HLS.js P2P Engine](https://github.com/cdnbye/hlsjs-p2p-engine) - A hls.js plugin to offload bandwidth from expensive traditional CDNs，while also maximizing a user's viewing experience.
-- [hlsjs-p2p-engine](https://cdnbye.github.io/hlsjs-p2p-engine) - Enhances video streaming scalability by implementing WebRTC data channels to create a peer-to-peer (P2P) network overlaying existing CDNs or origin servers. Compatible with hls.js, it supports both live and VOD streams over the HLS protocol and integrates seamlessly with popular HTML5 players like video.js, JWPlayer, and Flowplayer. This approach reduces server load and bandwidth costs while improving streaming performance, offering developers an innovative solution for efficient and scalable video delivery.
-- [HTTP Live Streaming (HLS)](https://en.wikipedia.org/wiki/HTTP_Live_Streaming) - An HTTP-based adaptive bitrate streaming protocol developed by Apple Inc. It allows for the delivery of live and on-demand content by breaking the media into small segments and serving them over HTTP. HLS supports encryption and secure key distribution, providing a simple DRM system. It is widely supported across various devices and platforms, making it a popular choice for streaming media content. HLS enables adaptive bitrate streaming, adjusting the quality of the stream based on network conditions and device capabilities to provide a seamless viewing experience.
-- [HunyuanVideo: A Systematic Framework For Large Video Generative Models](https://github.com/Tencent/HunyuanVideo) - HunyuanVideo is an open-source video foundation model that demonstrates performance in video generation comparable to, or even surpassing, leading closed-source models. It encompasses a comprehensive framework integrating data curation, advanced architectural design, progressive model scaling and training, and efficient infrastructure tailored for large-scale model training and inference. HunyuanVideo aims to bridge the gap between closed-source and open-source communities, empowering individuals to experiment with their ideas and fostering a more dynamic video generation ecosystem.
-- [IBM Cloud Video](https://www.ibm.com/cloud/video) - An end-to-end platform providing seamless live and on-demand video content delivery across multiple platforms, including employee communications and virtual conferences. With advanced AI capabilities, it enhances viewer engagement and optimizes video performance in real time.
-- [ImageKit Video CDN](https://imagekit.io/guides/video-cdn) - ImageKit offers a Video CDN solution that includes features like dynamic overlays, allowing developers to add text, images, or other videos over the main video stream. This capability enables personalized and interactive content delivery, enhancing user engagement and experience.
-- [Intel Cloud Streaming](https://github.com/intel/cloud-streaming) - A comprehensive suite of software, drivers, and utilities to set up streaming and video encoding services in the cloud. It enables remote access to Android and Windows cloud instances, providing tools for screen capture, encoding, and streaming.
-- [jsDelivr](https://www.jsdelivr.com) - A free, open-source CDN that allows developers to host and load code and other resources from repositories on GitHub, npm, and the WordPress theme and plugin directories. It supports loading specific versions of software packages or the latest available versions. jsDelivr can also minify JavaScript, CSS, or SVG files to reduce loading times. It is powered by multiple CDN providers, including Cloudflare, Fastly, and BunnyCDN, ensuring high availability and performance.
-- [Kaltura](https://corp.kaltura.com) - A comprehensive video platform offering solutions for webinars, virtual events, enterprise video content management, educational technology, and Cloud TV. It provides tools such as video portals, LMS and CMS extensions, virtual event and webinar platforms, and TV streaming apps, making it valuable for developers seeking versatile video streaming and encoding solutions.
-- [Kaltura Community Edition](https://github.com/kaltura/server) - The open source edition of the Kaltura video platform, which offers video content management, transcoding, and streaming services that can be self-hosted.
-- [Kaltura Platform Install Packages](https://github.com/kaltura/platform-install-packages) - Official deployment packages to install the Kaltura platform on server or cluster environments using native OS package managers. Kaltura provides a comprehensive video platform for managing, publishing, and distributing video content.
-- [Live Low-Latency Cloud-based Adaptive Video Streaming Evaluation Framework](https://github.com/cd-athena/LLL-CAdViSE) - This open-source framework allows for the evaluation of adaptive video streaming in cloud environments. It supports testing multiple media players under different network conditions, providing insights into performance and quality of experience metrics.
-- [LiveAPI](https://liveapi.com) - A robust API for building live and on-demand video streaming applications. It provides features such as video upload, encoding, adaptive bitrate streaming, and global CDN delivery. LiveAPI simplifies the complexities of video streaming by handling encoding, storage, and delivery, making it a valuable resource for developers aiming to integrate video streaming capabilities into their applications.
-- [Livepeer](https://livepeer.org) - A decentralized live video streaming platform and network built on Blockchain. Livepeer provides an open source protocol for scalable, affordable live streaming.
-- [MediaCMS](https://mediacms.io) - An open source video and media CMS for building a YouTube-like platform. It supports uploading, transcoding, and managing video content with a modern UI.
-- [MediaMTX](https://github.com/bluenviron/mediamtx) - A free, open-source media server supporting real-time video streaming, RTSP, RTMP, HLS, and WebRTC. It enables the management and streaming of video from various sources, including RTSP cameras, with low-latency performance.
-- [MediaPlatform Video Delivery Services](https://www.mediaplatform.com/platforms/video-delivery-services) - MediaPlatform offers enterprise video delivery solutions that optimize live and on-demand video streaming across corporate networks. Their services include eCDN (Enterprise Content Delivery Network) for efficient video caching and delivery, Smartpath for rules-based distribution, and integration with various peering and WAN optimization technologies. These solutions ensure high-quality video experiences with minimal network impact, making them valuable for organizations looking to enhance their internal video communications.
-- [Microsoft Rocket: Hybrid Edge + Cloud Video Analytics Platform](https://www.microsoft.com/en-us/research/video/microsoft-rocket-hybrid-edge-cloud-video-analytics-platform) - An extensible software stack developed by Microsoft Research that leverages both edge and cloud computing for scalable video analytics. Rocket is designed to facilitate real-time analysis of live camera streams, making it suitable for applications like security surveillance and traffic planning.
-- [NGINX with nginx-rtmp-module](https://nginx.org) - Nginx, combined with the nginx-rtmp-module, provides a powerful solution for live video streaming. This setup supports HTTP Live Streaming (HLS) in live mode, enabling efficient and scalable live video delivery. It's widely used for setting up live streaming servers due to its performance and flexibility.
-- [NodeTube](https://github.com/mayeaux/nodetube) - An open-source self-hosted online video platform (YouTube alternative) supporting video/audio upload, livestreaming, and monetization.
-- [OblivCDN: A Practical Privacy-preserving CDN with Oblivious Content Access](https://arxiv.org/abs/2501.07262) - OblivCDN is a privacy-preserving system designed for seamless integration with existing real-world Internet-CDN infrastructure. It adapts Range ORAM primitives to optimize memory and disk seeks when accessing contiguous blocks of CDN content, preserving both content confidentiality and user access pattern hiding features. OblivCDN eliminates the need for trusted hardware on edge servers, enhancing compatibility with networks containing legacy devices. In real-world streaming evaluations, it demonstrated remarkable performance, downloading a 256 MB video in just 5.6 seconds.
-- [Open Source Cloud by Eyevinn Technology](https://www.osaas.io) - A service that allows users to launch open-source video streaming and encoding tools in the cloud without the need to build, deploy, maintain, or host them. Open Source Cloud provides full code transparency and contributes back to the open-source community, offering a sustainable model for utilizing open-source software.
-- [Open Visual Cloud](https://github.imc.re/OpenVisualCloud) - A collection of open-source projects optimized for media, analytics, and graphics software stacks, including Dockerfiles, SVT-HEVC encoder, and smart city reference pipelines.
-- [Opencast](https://github.com/opencast/opencast) - An open source enterprise video capture and distribution system, commonly used by educational institutions to manage lecture recordings, process videos, and distribute them to students.
-- [OpenVisualCloud](https://github.com/OpenVisualCloud) - An open-source project that provides optimized media, analytics, and graphics software stacks. It offers Dockerfiles for various media processing tasks, including transcoding and streaming, making it valuable for developers building cloud-based video solutions.
-- [Overcast](https://www.overcasthq.com) - A Video Content-as-a-Service platform that automates complex video tasks using AI and ML. It offers customizable workflows using cloud applications, enabling efficient video content management and distribution.
-- [P2P CDN SDK for JavaScript](https://github.com/vadootvpeer/p2p-cdn-sdk-javascript) - A free JavaScript SDK that reduces video streaming costs by up to 90% and improves scalability by 6x using WebRTC-based peer-to-peer technology. It supports major players like Hls.js, Shaka Player, and Video.js, and both HLS and DASH streaming protocols.
-- [P2P Media Loader](https://github.com/Novage/p2p-media-loader) - An open-source engine designed for peer-to-peer streaming of live and on-demand video directly within web browsers. By leveraging WebRTC, it reduces the load on traditional CDNs and enhances scalability, making it a valuable tool for developers aiming to optimize video delivery and reduce infrastructure costs.
-- [Panopto Video Cloud Platform](https://www.panopto.com/features/video-cms/video-cloud) - Panopto's Video Cloud Platform provides secure storage and management of video content, enabling organizations to host private, internal videos with ease. It offers features like elastic scaling, regional hosting options, and intelligent video content delivery, ensuring optimal playback across devices. This platform is particularly beneficial for enterprises looking to manage and deliver video content efficiently.
-- [PeerTube](https://joinpeertube.org) - A decentralized video sharing platform powered by ActivityPub and peer-to-peer (BitTorrent) directly in the browser, as a federated alternative to centralized sites.
-- [Qencode Cloud Video Services](https://cloud.qencode.com) - Qencode offers a suite of cloud-based video services, including video transcoding, live streaming, media storage, and content delivery. Their APIs allow developers to transcode videos into various formats and codecs, launch high-quality live streams globally, and manage media storage efficiently. The platform also provides a customizable HTML5 video player and features like per-title encoding to optimize file sizes using AI-powered video optimization.
-- [Red5 Media Server](https://www.red5.net/open-source-live-streaming) - Red5 is a free, open-source media streaming server implemented in Java. It provides services similar to Adobe Flash Media Server, including streaming video and audio, recording client streams, and support for various protocols like RTMP, RTMPT, RTMPS, and RTMPE.
-- [Red5 Pro](https://www.red5.net) - A streaming server that leverages cloud infrastructure to dynamically meet scaling needs, avoiding the massive infrastructure costs associated with traditional CDNs. It offers sub-500 millisecond latency for live broadcasts and is suitable for developers requiring scalable and low-latency streaming solutions.
-- [Secure Video Streaming with Signed URLs](https://github.com/KHAOUITI-Apps/CDN) - A tutorial-based project that guides you through building a YouTube-like video streaming system using Spring Boot, securing video access with signed URLs. It implements token-based authentication to ensure secure and time-limited access to video streams.
-- [Storm Streaming Server](https://www.stormstreaming.com) - A fully scalable live video streaming software available for on-premise deployment. It is designed to manage mass concurrent streams with thousands of online viewers, offering ultra-low latency and easy integration with existing websites or applications. Storm Streaming Server is ideal for organizations with dedicated hardware and network infrastructure.
-- [Streamline: End-to-End Live Streaming System](https://github.com/streamlinevideo/streamline) - A reference system for end-to-end live streaming video, covering capture, encoding, packaging, uplink, origin, CDN, and player. It utilizes commodity hardware and free software to provide a high-quality live streaming solution.
-- [SuperStreamer](https://github.com/matvp91/superstreamer) - An open, scalable, online streaming setup that provides an all-in-one toolkit from ingest to adaptive video playback. Built for developers in need of video tooling, SuperStreamer offers a comprehensive solution for setting up and managing video streaming infrastructure.
-- [Telestream Cloud Services](https://www.telestream.net/telestream-cloud) - Telestream offers cloud-based media processing services, including Vantage Gateway, Vantage Cloud, Qualify, and Timed Text Speech. These services provide unmatched format support, dynamic job orchestration, automated quality control, and auto-transcription capabilities. Developers can leverage these tools to ingest and output content in various broadcast and OTT streaming formats, scale workflows dynamically, and ensure content quality and compliance.
-- [Terraform AWS Media Services Modules](https://registry.terraform.io/modules/terraform-aws-modules/mediaConvert/aws/latest) - Terraform modules and examples for deploying AWS MediaConvert and MediaLive as infrastructure-as-code. This helps automate the provisioning of cloud encoding and live streaming resources, demonstrating best practices for treating video pipelines as code.
-- [Unified Origin](https://www.unified-streaming.com/products/unified-origin) - A software solution that enables streaming of live and on-demand content using various protocols, including MPEG-DASH. It supports integration with CDNs and offers features like DRM support and adaptive bitrate streaming. This project is beneficial for developers aiming to deliver high-quality streaming experiences across multiple devices.
-- [Vadootv P2P CDN SDK for JavaScript](https://github.imc.re/vadootvpeer/p2p-cdn-sdk-javascript) - Vadootv offers a peer-to-peer (P2P) CDN SDK for JavaScript that significantly reduces video streaming costs and enhances scalability. By utilizing WebRTC technology, it distributes the load among users, decreasing server costs by up to 90% and improving scalability by sixfold. The SDK supports major players like Hls.js, Shaka Player, and Video.js, and is compatible with both HLS and DASH streaming protocols. This solution is ideal for developers seeking to optimize video delivery through P2P networks.
-- [VdoCipher](https://www.vdocipher.com) - A secure video streaming solution with DRM encryption to prevent unauthorized downloads and piracy. It provides a cloud-based platform for hosting, streaming, and protecting video content, ensuring secure delivery to viewers.
-- [Video on Demand on AWS Foundation](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/solution-overview.html) - This AWS solution provides a customizable architecture to build a video-on-demand workflow. It automatically provisions the necessary AWS services to create a scalable, distributed video-on-demand system, facilitating efficient video processing and delivery.
-- [Video Streaming Studio](https://github.com/TianYao12/Video-Streaming-Studio) - A video streaming platform similar to Netflix, allowing users to upload and watch videos. It utilizes React.js, Express.js, MongoDB, Amazon S3, and CloudFront CDN for efficient video delivery and storage.
-- [Video Streaming via CDN](https://github.com/andrewwong97/video-streaming-cdn) - This project implements adaptive bitrate selection, DNS load balancing, and an HTTP proxy server to stream video at high bit rates from the closest server to a given client. It includes components like miProxy (an HTTP proxy), a nameserver for DNS load balancing, and utilizes Mininet for network simulation.
-- [Video Streaming via CDN by heaventourist](https://github.com/heaventourist/Video-Streaming-via-CDN) - This project focuses on implementing adaptive bitrate selection, DNS load balancing, and an HTTP proxy server to stream video at high bitrates from the closest server to a given client. The HTTP proxy accepts connections from web browsers, modifies video chunk requests, resolves the web server's DNS name, opens a connection with the resulting IP address, forwards the modified request to the server, and returns the unmodified video chunks to the browser. The DNS server implements load balancing using round-robin and geographic distance methods.
-- [Video-Streaming-Service](https://github.com/hetjagani/Video-Streaming-Service) - This project presents a cloud computing-based video streaming service with a REST API implemented using the Spring framework. It features a load balancer to distribute requests across multiple servers and utilizes SQLite for database management, providing a scalable and efficient solution for video delivery.
-- [Vimeo](https://vimeo.com) - An American video hosting, sharing, and services provider focusing on the delivery of high-definition video across a range of devices. It provides tools for video creation, editing, and broadcasting, as well as enterprise software solutions for video professionals.
-- [Visual Cloud](https://en.wikipedia.org/wiki/Visual_Cloud) - Refers to the implementation of visual computing applications that rely on cloud computing architectures, cloud-scale processing and storage, and ubiquitous broadband connectivity. It encompasses services such as media processing, enhancement, and delivery, leveraging cloud infrastructure to provide scalable and efficient solutions for video streaming and encoding. This approach allows for optimized infrastructure tailored to visual computing application requirements.
-- [VStream](https://github.com/Benj-Qu/VStream) - A project focused on video streaming via CDN, implementing adaptive bitrate selection, DNS load balancing, and an HTTP proxy server. It provides a comprehensive setup for streaming video at high bitrates from the closest server to a client, including a round-robin load balancer and geographic distance load balancer. This project is beneficial for developers looking to understand and implement efficient video streaming solutions using CDN technologies.
-- [WebRTC](https://webrtc.org) - (Web Real-Time Communication) is a free and open-source project that provides web browsers and mobile applications with real-time communication capabilities via simple APIs. It enables audio and video communication to work inside web pages without the need for plugins, facilitating peer-to-peer data sharing.
-- [Wowza](https://www.wowza.com) - A robust cloud video streaming platform built for businesses of all sizes. It offers a range of features that allow you to deliver high-quality video content without interruptions. With patented software designed specifically for live streaming, Wowza ensures flawless performance even during peak traffic conditions.
-- [Wowza CDN Integration Overview](https://www.wowza.com/blog/how-do-content-delivery-networks-cdns-work) - Wowza offers a comprehensive overview of how Content Delivery Networks (CDNs) work, focusing on their integration with video streaming services. The resource explains the benefits of using CDNs, such as reduced latency and improved scalability, and provides insights into load balancing and real-time analytics. This guide is valuable for developers aiming to enhance their video streaming infrastructure through CDN integration.
-- [Wowza Streaming Cloud](https://www.wowza.com/products/streaming-cloud) - A robust cloud-based platform designed for live and on-demand video streaming. It offers features like adaptive bitrate streaming, cloud transcoding, and low-latency delivery, making it suitable for businesses aiming to reach global audiences with high-quality video content.
-- [Wowza Streaming Engine](https://www.wowza.com/products/streaming-engine) - A robust and customizable media server software that supports live and on-demand streaming. It offers support for various streaming protocols, including HLS, and provides features like real-time transcoding, adaptive bitrate streaming, and content security. It's suitable for developers looking to build scalable and reliable streaming solutions.
-- [YouPHPTube (AVideo)](https://github.com/WWBN/AVideo) - An open source, self-hosted video sharing website platform (formerly YouPHPTube). It supports user accounts, video uploads, streaming, and plugins for features like live broadcasting and advertisement.
-- [YuJa Enterprise Video Platform](https://www.yuja.com/video-cms/video-cloud) - YuJa offers an Enterprise Video Platform that serves as a comprehensive Video Content Management System (VCMS). It enables organizations to securely store, organize, and access media across platforms. Key features include automatic transcoding, deep branding capabilities, search-inside-video functionality, and secure content protection, making it a valuable resource for developers focusing on video infrastructure and delivery.
-
-### Streaming Analytics & Monitoring
-
-- [aws-samples/cloudfront-cmcd-realtime-dashboard](https://github.com/aws-samples/cloudfront-cmcd-realtime-dashboard) - Grafana dashboard enriching CloudFront logs with CMCD fields (bl/mtp/br/tb) for real-time QoE monitoring.
-- [Inca — Message Tracing and Loss Detection For Streaming Data @Netflix](https://medium.com/@NetflixTechBlog/inca-message-tracing-and-loss-detection-for-streaming-data-netflix-de4836fc38c9) - At Netflix, our real-time data infrastructure have embraced the multi-cluster Kafka architecture and Flink powered stream processing..
-- [NUStreaming/CMSD-DASH — CMSD in dash.js](https://github.com/NUStreaming/CMSD-DASH) - NUS implementation of CMSD in dash.js from the Mile-High Video paper on server-data-driven adaptation.
-- [OpenQoE](https://openqoe.dev) - Open-source video QoE monitoring platform with a JS SDK for HTML5/Video.js/hls.js/dash.js/Shaka, Cloudflare Worker ingestion, and Prometheus + Grafana dashboards tracking startup time, rebuffering, errors, and engagement.
-- [OpenQoE — Open-Source Video QoE Analytics](https://github.com/openqoe/openqoe-dev) - Apache-2.0 three-tier QoE stack: JS beaconing SDK (HTML5/Video.js/HLS.js/dash.js/Shaka) → Cloudflare Worker ingest → Prometheus/Grafana dashboards tracking startup time, rebuffer, errors, engagement.
-- [realeyes-media/cta-wave-cmcd-lib — CMCD SDK](https://github.com/realeyes-media/cta-wave-cmcd-lib) - CMCD SDK with examples for Android/Kotlin and TS/JS, including hls.js and ExoPlayer CMCDManager implementations.
-- [SCTE-104/35 and Beyond: A Look at Ad Insertion in an OTT World](https://www.tvtechnology.com/opinions/scte10435-and-beyond-a-look-at-ad-insertion-in-an-ott-world) - Ad Insertion is a very important part of many video delivery systems because of the monetization aspect-it generates revenue!
-- [switch media adease](https://www.switch.tv/mediahq/adease)
-- [ThreeFive SCTE35](https://github.com/futzu/scte-35_threefive) - An SCTE-35 parser and decoder for analyzing ad markers in MPEG-TS streams, designed for broadcast workflows.
-- [Understanding Real-time Bidding for AVOD Services](https://medium.com/@eyevinntechnology/understanding-real-time-bidding-for-avod-services-861ebfa8bd13) - We have in previous blog articles described the principles behind server-side ad-insertion and described some of the challenges with it as..
-- [unifiedstreaming/origin-cmsd — CMSD Server PoC](https://github.com/unifiedstreaming/origin-cmsd) - Varnish-based proof-of-concept implementing CMSD (Common Media Server Data) at the origin/CDN.
-
-#### Quality & Testing
-
-- [Akamai Stream Validator](https://players.akamai.com/stream-validator) - Akamai's Stream Validator is a tool designed to verify the integrity and compliance of streaming media, ensuring optimal playback across devices.
-- [CMCD-DASH — CMCD-aware dash.js PoC](https://github.com/NUStreaming/CMCD-DASH) - Proof-of-concept CMCD-aware dash.js player + HTTP server performing bandwidth allocation via CMCD data (NUS).
-- [cmcd-toolkit — CMCD v2 collector & analysis](https://github.com/qualabs/cmcd-toolkit) - CMCD v2 collector for ingesting/analyzing Common Media Client Data beacons locally or on cloud, with a dash.js beacon module.
-- [Eyevinn hls-monitor](https://github.com/eyevinn/hls-monitor) - Service monitoring one or more HLS streams for errors and inconsistencies (media-sequence issues, discontinuities, stale manifests) with a Prometheus /metrics endpoint and Grafana dashboards.
-- [Eyevinn Stream Corruptor](https://github.com/Eyevinn/streaming-onboarding/blob/master/Stream-Corruptor.md) - Eyevinn's Stream Corruptor is a tool designed to intentionally corrupt streaming media, useful for testing error resilience in players.
-- [montevideo-tech/cmcd-validator](https://github.com/montevideo-tech/cmcd-validator) - Node library validating player CMCD (CTA-5004) in real time across queries/headers/JSON, tested against Video.js/Dash.js/Hls.js/Shaka.
-
-### Multi-CDN Management
-
-- [cdnselector — Multi-CDN Switching/Failover Server](https://github.com/cdnexperts/cdnselector) - Deployable multi-CDN switch/failover server for HTTP streaming, routing by geo/network/response-time/device with instant failover and backup CDN warming.
-- [DASH content steering server (Go)](https://github.com/maxutility2011/dash_content_steering_server) - Standalone open-source MPEG-DASH content steering server in Go, working with the dash.js reference client to switch players between substitutable CDN sources.
-- [DASH-IF Content Steering](https://github.com/Dash-Industry-Forum/Content-Steering) - DASH Industry Forum's official specification repository and reference material for content steering, the standard for steering DASH/HLS players between substitutable content/CDN sources.
-- [Implementing HLS/DASH Content Steering at Scale (Reznik, IBC 2023)](https://www.reznik.org/papers/IBC2023-Implementing-HLS-DASH-Content-Steering-at-Scale.pdf) - IBC 2023 technical paper by Yuriy Reznik describing a stateless edge design for implementing HLS/DASH content steering for multi-CDN delivery at scale.
-- [Multi-Regional Multi-CDN Content Steering (ACM Mile-High Video 2025)](https://dl.acm.org/doi/10.1145/3715675.3715791) - Academic paper on the HLS/DASH Content Steering standard for optimizing multi-regional multi-CDN video delivery.
-- [OTT Content Delivery– Multi CDN](https://medium.com/@eyevinntechnology/ott-content-delivery-multi-cdn-8cd90ad2628a?source=userActivityShare-94bccb50d11-1560983307&_branch_match_id=670019455010399744)
-- [PIRA: Pan-CDN Intra-video Resource Adaptation for Short Video Streaming](https://arxiv.org/html/2510.18606) - 2025 arXiv paper on intra-video session pan-CDN segment/range selection jointly optimizing QoE and cost for short-video streaming.
-- [SVTA Open Caching reference code](https://opencaching.svta.org/open-caching-code) - MIT-licensed reference code and OpenAPI descriptions for SVTA Open Caching, built on IETF CDNI (RFC 8006/8007/8008/8804) plus SVA extensions.
-- [SVTA: Architectures for Multi-CDN Switching](https://www.svta.org/project/architectures-for-multi-cdn-switching) - Streaming Video Technology Alliance industry-consortium project documenting multi-CDN switching architectures including client-side steering and RUM-based selection.
-- [videojs-cmcd — CMCD plugin for Video.js](https://github.com/montevideo-tech/videojs-cmcd) - Video.js 8.4.0+ plugin that adds Common Media Client Data (CMCD, CTA-5004) reporting to player media requests for QoE analytics and multi-CDN telemetry.
-
-### Live Streaming Servers
-
-- [Avbroadcast](https://github.com/media-toolbox/avbroadcast) - Republish media streams for mass consumption.
-- [How To Setup NGINX For HLS Video Streaming On CentOS 7](https://dev.to/samuyi/how-to-setup-nginx-for-hls-video-streaming-on-centos-7-3jb8) - How to live stream videos with Nginx.
-- [lhls-simple-live-platform](https://slides.com/jordicenzano/deck-973aed) - You can build your own live platform just wiring up some open source tools, this is a demo video of HTTPS://GitHub.com/jordicenzano/lhls-simple-live-platform.
-- [livego — Go RTMP/HLS/HTTP-FLV live server](https://github.com/gwuhaolin/livego) - Simple live streaming server in Go: RTMP ingest, HLS and HTTP-FLV output.
-- [LiveKit](https://github.com/livekit/livekit) - End-to-end stack for WebRTC with a powerful SFU server, client SDKs, and cloud infrastructure. Supports scalable video conferencing, live streaming, and real-time communication with features like adaptive streaming, recording, ingress/egress, and comprehensive APIs for multiple platforms.
-- [nginx-ts-module — NGINX live HLS/DASH origin](https://github.com/arut/nginx-ts-module) - NGINX module turning the server into a live origin: MPEG-TS over HTTP in, HLS and DASH manifests/segments out.
-- [OBS Studio](https://github.com/obsproject/obs-studio) - Free and open source software for live streaming and screen recording.
-- [Open Broadcaster Software | OBS](https://obsproject.com) - OBS (Open Broadcaster Software) is free and open source software for video recording and live streaming. Stream to Twitch, YouTube and many other providers or record your own videos with high quality H264 / AAC encoding.
-- [OvenMediaEngine — Sub-Second Live Streaming Server](https://github.com/OvenMediaLabs/OvenMediaEngine) - Open-source sub-second latency live streaming server supporting WebRTC and LL-HLS ingest/egress.
-- [PlayoutAutomation](https://github.com/jaskie/PlayoutAutomation) - Television broadcast automation system.
-- [PyLivestream](https://github.com/scivision/PyLivestream) - Pure Python FFmpeg-based live video / audio streaming to YouTube, Facebook, Periscope, Twitch, and more.
-- [Stream New](https://github.com/muxinc/stream.new) - The repo for HTTPS://stream.new.
-- [xiu](https://github.com/harlanc/xiu) - Pure-Rust live media server supporting RTMP clustering, RTSP, WebRTC (WHIP/WHEP), HTTP-FLV, and HLS in one binary.
-
-### VOD Streaming Servers
-
-- [9 Best Home Server Apps to Automate Media Management](https://www.smarthomebeginner.com/best-home-server-apps) - These are top 9 best home server apps to automate media management, so you get the latest Movies, Music and TV Shows in the best quality available.
-- [Channel Engine](https://github.com/Eyevinn/channel-engine) - OTT TV Channel Engine.
-- [Creating a secure video-on-demand (VOD) platform using AWS](https://aws.amazon.com/blogs/media/creating-a-secure-video-on-demand-vod-platform-using-aws) - Authored by Chirag Oswal, Solution Architect, AWS, and Vikas Tiwari, Solution Architect Manager, AWS Video has become the primary means of Information sharing and learning. Customers are investing in innovative solutions to tap into the e-learning and video space. Video content is their IP and needs to be protected and securely delivered. Online video is a (...).
-- [Djmediastreamer](https://github.com/davidbt/djmediastreamer) - A Django project that allows you to catalog and stream your videos (using FFmpeg to add subtitles and transcode).
-- [Marsha](https://github.com/openfun/marsha) - A self-hosted opensource LTI video provider.
-- [olaris / olaris-server](https://gitlab.com/olaris/olaris-server)
-- [Pseudo Live Playout](https://github.com/Eyevinn/pseudo-live-playout) - Contribute to Eyevinn/pseudo-live-playout development by creating an account on GitHub.
-- [Streama](https://github.com/streamaserver/streama) - Self hosted streaming media server. HTTPS://docs.streama-project.com/.
-- [switch media live2vod](https://www.switch.tv/mediahq/live2vod)
-- [switch media mediahq](https://www.switch.tv/mediahq)
-- [Tube](https://github.com/prologic/tube) - A YouTube-like (without censorship and features you don't need!) Video Sharing App written in Go which also supports automatic transcoding to MP4 H.265 AAC, multiple collections and R..
-- [Unified Streaming Demos](https://demo.unified-streaming.com) - A showcase of Unified Streaming's capabilities, including adaptive streaming formats and DRM-protected playback.
-- [Unified Streaming Features Page](https://demo.unified-streaming.com/k8s/features/stable/#!/mpd) - A demonstration of Unified Streaming's feature set, including on-the-fly packaging and multi-format support.
-- [VOD on AWS](https://s3.amazonaws.com/solutions-reference/video-on-demand-on-aws/latest/video-on-demand-on-aws.pdf)
-- [VOD2Live](https://docs.google.com/presentation/d/1Ua76BBaZKtTmaZrlfM_eG0vwz0ZAqPIjreCSfB4qFQQ/edit?usp=sharing) - Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv.
-
-#### HLS
-
-- [GoHLStreamer — on-the-fly MP4→HLS from object storage](https://github.com/ftp27/GoHLStreamer) - Go server converting MP4 to HLS on-the-fly, loading source from object storage (Appwrite/DigitalOcean Spaces).
-- [HLS Server](https://github.com/t-mullen/hls-server) - Middleware for serving HTTP Live Streaming (HLS) compatible media streams.
-- [hls-vod-too — on-demand HLS with partial transcode](https://github.com/kmxz/hls-vod-too) - Node on-demand HLS VOD server that transcodes only played segments, with instant seek and a shared transcode cache.
-
-### Streaming Servers
-
-- [Ant Media Server](https://github.com/ant-media/Ant-Media-Server) - Supports RTMP, RTSP, WebRTC and Adaptive Bitrate. It can also record videos in MP4, HLS and FLV.
-- [BLSS](https://github.com/gnolizuh/BLSS) - NGINX-based Live Media Streaming Server.
-- [CasparCG](https://github.com/CasparCG/server) - A professional open source graphics and video playback server used in TV broadcasting for overlaying graphics, playing videos, and mixing live inputs on multiple outputs.
-- [CasparCG](https://casparcg.com) - An open source broadcast graphics and video playout server. CasparCG is used to deliver layered videos, images, and templates to professional broadcast environments in real-time.
-- [Docker NGINX RTMP](https://github.com/alfg/docker-nginx-rtmp) - A Dockerfile for nginx-rtmp-module + FFmpeg from source with basic settings for streaming HLS. Built on Alpine Linux.
-- [DVBlast — lightweight MPEG-TS demux & streamer](https://github.com/gfto/dvblast) - Lightweight, stable MPEG-2/TS demultiplexer and streamer supporting DVB-S/S2/C/T and ASI inputs with RTP/TS output and CAM descrambling for 24/7 IPTV.
-- [go2rtc](https://github.com/AlexxIT/go2rtc) - A flexible high-performance streaming server written in Go that can ingest RTSP, WebRTC, RTMP, HTTP-FLV, and LL-HLS and output streams to multiple protocols (commonly used for home camera streaming).
-- [Gohls](https://github.com/shimberger/gohls) - A server that exposes a directory for video streaming via web interface.
-- [Icecast](https://icecast.org) - An open source streaming media server primarily for audio streaming (Ogg/Opus), which can also deliver video in formats like Ogg/Theora. Commonly used for internet radio and basic video streams.
-- [Janus WebRTC Server](https://janus.conf.meetecho.com) - An open source, general-purpose WebRTC server (SFU and gateway). Janus is modular and can support video conferencing, streaming, and SIP/RTSP/WebRTC interop through its plugin architecture.
-- [Janus WebRTC Server](https://github.com/meetecho/janus-gateway) - An open source WebRTC server (SFU and gateway) that allows the creation of videoconferencing, streaming, and other real-time multimedia applications.
-- [Jellyfin](https://jellyfin.org) - An open source media server and client solution, providing streaming of video (and other media) to a variety of devices as a self-hosted alternative to Plex.
-- [Kaltura nginx-vod-module](https://github.com/kaltura/nginx-vod-module) - An NGINX module for Video on Demand streaming that enables MP4 repackaging and dynamic adaptive streaming (HLS/DASH) support on Nginx servers.
-- [Kurento Media Server](https://www.kurento.org) - An open source WebRTC media server with advanced capabilities like mixing, transcoding, and computer vision integration. Kurento allows building videoconferencing, broadcasting, and augmented video applications by handling streams on the server side.
-- [MistServer](https://mistserver.org) - An open source streaming media server that supports multiple protocols (HLS, RTMP, WebRTC, etc.). It focuses on easy setup and compatibility with any device.
-- [Nimble Streamer](https://wmspanel.com/nimble) - A lightweight, free live streaming server supporting HLS, DASH, RTMP, SRT, and more, often used for low-latency streaming and transmuxing in production workflows.
-- [OvenMediaEngine](https://github.com/AirenSoft/OvenMediaEngine) - A real-time streaming server with sub-second latency support. OvenMediaEngine offers WebRTC and Low Latency DASH/HLS for interactive live streaming.
-- [Owncast](https://owncast.online) - A self-hosted live video streaming server with a built-in chat. Owncast enables anyone to set up a live stream akin to Twitch, but on their own infrastructure.
-- [RTSP Simple Server](https://github.com/aler9/rtsp-simple-server) - A simple, ready-to-use RTSP streaming server written in Go. It supports publishing and reading streams via RTSP and can also re-distribute via other protocols.
-- [Srs](https://github.com/ossrs/srs) - A simple live streaming cluster, a simple joy.
-- [Tvheadend — Linux TV streaming server](https://github.com/tvheadend/tvheadend) - Leading open-source Linux TV streaming server and DVR supporting ATSC, DVB, IPTV and SAT>IP inputs, a common backend for set-top box clients.
-- [video-server — Go RTSP→HLS/MSE restream origin](https://github.com/LdDl/video-server) - Go server connecting to a set of RTSP sources and providing HLS/MSE streams; restream origin.
-- [ZLMediaKit](https://github.com/ZLMediaKit/ZLMediaKit) - A high-performance C++ media server framework supporting WebRTC, RTSP, RTMP, HTTP-FLV, HLS, WebSocket streaming, and SRT, for building streaming server/client applications.
-
-#### Storage Solutions
-
-- [Rclone](https://github.com/rclone/rclone) - Rsync for cloud storage - Google Drive, Amazon Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Cloudfiles, Google Cloud Storage, Yandex Files.
-- [Swift](https://github.com/openstack/swift) - OpenStack Storage (Swift).
-
-### Peer-to-Peer Streaming Solutions
-
-- [Owncast P2P (owncast-p2p)](https://github.com/cdnbye/owncast-p2p) - Owncast fork adding P2P HLS delivery via SwarmCloud for self-hosted live streaming with peer-assisted bandwidth offload.
-- [P2P Streaming](https://github.com/Fizik0/p2p-streaming) - Open source WebRTC-based engine for P2P live/VOD streaming directly in a browser page, no plugin required.
-- [PeerTube](https://github.com/Chocobozzz/PeerTube) - ActivityPub-federated video hosting platform using WebRTC P2P in-browser delivery to offload server bandwidth, including live streaming support.
-- [QUANTEEC](https://quanteec.com) - A production-ready plugin that enables hybrid P2P CDN delivery to reduce delivery costs and improve QoE during peaks. 
-The QUANTEEC SDK connects users to share data directly with each other, relieving dependence on CDN, rendering delivery more robust and suppressing over-deployments at peak levels.
-Every user becomes a delivery node for others. Quanteec chases resources where they are available to avoid deploying more infrastructures.
-- [simple-peer - Simple WebRTC video, voice, and data channels](https://github.com/feross/simple-peer) - Simple WebRTC library for video, voice, and data channels with a concise API. Supports dynamic stream addition, Node.js usage via wrtc, and works in browsers without configuration. Powers many P2P projects including file sharing and video chat applications.
-- [Stealthy Peers: WebRTC P2P Streaming Security Analysis](https://arxiv.org/pdf/2212.02740) - Academic security analysis of WebRTC peer-assisted video streaming (P2P CDN offload architectures).
-- [WebRTC-cdn](https://github.com/AgustinSRG/webrtc-cdn) - Live media CDN over WebRTC: multi-node cluster coordinated via Redis Pub/Sub (Go, Docker) with WHIP/WHEP-style ingest and egress across nodes.
-- [Wifibroadcast – Analog-like transmission of live video data](https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data) - Wifibroadcast is a project aimed at the live transmission of HD video (and other) data using wifi radios. One prominent use case is to transmit camera images for a first person view (FPV) of remote..
-
-### Cloud & CDN
-
-- [Cloudflare Stream Live: Engineering Deep-Dive](https://blog.cloudflare.com/stream-live) - Engineering post on distributed live ingest architecture vs legacy single-region ingest, covering LL-HLS latency, WHIP/WHEP, and SRT support.
-- [DIY-Streaming-CDN](https://github.com/richtertoralf/DIY-Streaming-CDN) - Reference architecture and OSS stack (OBS + nginx + load balancer) for building a self-hosted livestream CDN.
-- [Fastly — Video Cache Prefetch with Compute@Edge](https://www.fastly.com/blog/video-cache-prefetch-with-compute-edge) - Technical writeup on an edge-compute (WebAssembly) pattern that prefetches upcoming video segments at the edge to cut origin round-trips.
-- [How Cloudflare Streams Video (Engineering)](https://blog.cloudflare.com/how-cloudflare-streams) - Engineering deep-dive on Cloudflare Stream's architecture: tus resumable upload protocol, encoding pipeline, dynamic underutilized-datacenter delivery, manifest-based ABR.
-- [Unified Streaming — Origin Shield Cache Recommendations](https://docs.unified-streaming.com/best-practice/caching/recommendations/shield-cache.html) - Technical doc on the origin shield caching pattern for video streaming to reduce origin load in multi-CDN setups.
-- [Varnish — Caching Video (official docs)](https://docs.varnish-software.com/book/cdn/caching-video) - Official technical guide on caching HLS/DASH segments and manifests with Varnish, including VCL snippets for TTL and live-segment expiry handling.
-
-#### Cloud Platforms
-
-- [Netflix Titus (Container orchestration for video)](https://netflix.github.io/titus) - Netflix's open source container management platform that runs video processing workloads among others. While not video-specific, Titus is key to how Netflix deploys and scales encoding and other batch jobs in a containerized fashion, ensuring efficient resource usage.
-
-### Edge Computing & Caching Solutions
-
-- [Edge Computing with Fastly CDN and Varnish VCL for Authenticated Requests - Endertech](https://endertech.com/blog/edge-computing-fastly-cdn-varnish-vcl-authenticated-requests) - A brief explanation of how to use Fastly CDN and Varnish with authenticated requests to offload static file serving from the origin and edge caching.
-- [EdgeCDN-X Open Source CDN](https://github.com/EdgeCDN-X) - EdgeCDN-X Is an open source CDN built on top of Kubernetes with ingress-nginx and CoreDNS for routing. ArgoCD is used for fast config distribution towards the edges. 
-
-The solution supports:
-- Static upstreams
-- S3 Origins
-- URL Signatures
-- Static IP Prefix routing
-- Geo routing
-- Active health-checks towards edges
-- Prometheus alert based edge exclusions.
-- [Lambda Edge Tutorial](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-edge-how-it-works-tutorial.html) - This tutorial shows you how to get started with Lambda@Edge by helping you create and add a sample Node.js function that runs in CloudFront. The example that we walk through adds HTTP security headers to a response, which can improve security and privacy for a website. (That said, you don't need a website for this walkthrough; we simply add security headers to a response when CloudFront retrieves a file.).
-- [Lambda@Edge Design Best Practices | Amazon Web Services](https://aws.amazon.com/blogs/networking-and-content-delivery/lambdaedge-design-best-practices) - Lambda@Edge transforms CloudFront into a highly programmable CDN with serverless compute capabilities closer to your viewers around the world. This blog is the first in a series that explains best practices associated with using Lambda@Edge functions to customize your content delivery.
-- [NGINX Cache Slice: Byte-Range Video Caching](https://blog.nginx.org/blog/smart-efficient-byte-range-caching-nginx) - Official NGINX blog explaining the slice module, which splits files into cacheable pieces so byte-range requests fill cache incrementally - purpose-built for HTML5 video pseudostreaming.
-- [RasoulNik/VoD — RL-based Edge Caching](https://github.com/RasoulNik/VoD) - Research repo implementing reinforcement-learning-based edge caching for VOD, with an nginx edge node and ML cache-eviction policy.
-
-#### HLS
-
-- [HLSCachingReverseProxyServer](https://github.com/StyleShare/HLSCachingReverseProxyServer) - A simple local reverse proxy server for HLS segment cache.
-
-### CDN Integration & Distribution
-
-- [Adxchange Engine](https://github.com/Eyevinn/adxchange-engine) - Eyevinn Adxchange Engine is a microservice placed between the server-side ad-insertion component and the adserver or SSP.
-- [AWS CloudFront for Live Streaming](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/live-streaming.html) - To use AWS Media Services with CloudFront to deliver live content to a global audience, follow the guidance included in this section.
-- [AWS CloudFront Live failover](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html) - You can set up CloudFront with origin failover for scenarios that require high availability. To get started, create an origin group in which you designate a primary origin for CloudFront plus a second origin that CloudFront automatically switches to when the primary origin returns specific HTTP status code failure responses.
-- [NGINX S3 Proxy](https://github.com/coopernurse/nginx-s3-proxy) - Nginx compiled with aws-auth support, suitable for S3 reverse proxy usage.
-- [OTT Content Delivery– CDN Alternatives](https://medium.com/@eyevinntechnology/ott-content-delivery-cdn-alternatives-cafe75dab71d?source=userActivityShare-94bccb50d11-1560983135&_branch_match_id=670018733519578135)
-- [This is How I Reduced My CloudFront Bills by 80%](https://medium.com/faun/this-is-how-i-reduced-my-cloudfront-bills-by-80-a7b0dfb24128) - If you are using S3 and CloudFront to host your content and noticed that your bills are increasing, read this!
-- [Understanding Server-Side Dynamic Ad Insertion](https://medium.com/@eyevinntechnology/understanding-server-side-dynamic-ad-insertion-d7ed90e34aa2) - In this post we're explaining the principles behind Server-Side Dynamic Ad Insertion technology. If you are already familiar with video..
-- [Vmapproxy](https://github.com/Eyevinn/vmapproxy) - A simple VMAP / VAST proxy.
-
-#### CDN Integration
-
-- [Amazon S3 | Fastly Help Guides](https://docs.fastly.com/en/guides/amazon-s3)
-
-### RTMPRTSPHTTP Protocol Servers
-
-- [Create your own video streaming server with Linux](https://opensource.com/article/19/1/basic-live-video-streaming-server) - Using Nginx to create a streaming server using RTMP and nginx.
-- [Dtt2ip](https://github.com/ebu/dtt2ip) - Broadcast to IP conversion for Wifi indoor coverage.
-- [Dvbshout](https://github.com/njh/dvbshout) - Takes an MPEG transport stream from a DVB card, extracts audio channels from stream, and sends the audio to an Icecast / Shoutcast server and/or a RTP multicast packet stream.
-- [librist](https://code.videolan.org/rist/librist) - A library that can be used to easily add the RIST protocol to your application.
-- [Media Server](https://github.com/ireader/media-server) - RTSP/RTP/RTMP/FLV/HLS/MPEG-TS/MPEG-PS/MPEG-DASH/MP4/fMP4.
-- [Red5 Server](https://github.com/Red5/red5-server)
-- [SRT Open Source project](https://github.com/Haivision/srt)
-- [Streaming With SRT Protocol in OBS](https://obsproject.com/wiki/Streaming-With-SRT-Protocol)
-
 ## General Tools
 
 - [AutoVideo](https://github.com/datamllab/autovideo) - A Python system designed for automated video action recognition. It features a modular infrastructure, an extensive list of primitives for pipeline construction, data-driven tuners for pipeline optimization, and an easy-to-use graphical user interface. This tool is valuable for developers working on video analysis and understanding tasks.
@@ -2093,7 +1778,7 @@ The solution supports:
 - [bento4.mp4encrypt](https://www.bento4.com/documentation/mp4encrypt) - Part of the Bento4 suite, mp4encrypt is a command-line utility to apply DRM encryption (e.g., Common Encryption) to MP4 files. It's used to encrypt media files for DASH (cenc) or HLS (sample AES) and is essential for preparing content protection in adaptive streaming workflows.
 - [Bitmovin Player Web SDK](https://developer.bitmovin.com/playback/docs/streaming-drm-protected-content-with-bitmovin-player-web-sdk) - A powerful video player that supports streaming DRM-protected content. It provides comprehensive documentation and examples for integrating DRM systems like Widevine, PlayReady, and FairPlay, facilitating secure and seamless playback across various devices and platforms.
 - [BONES: Near-Optimal Neural-Enhanced Video Streaming](https://github.com/UMass-LIDS/bones) - BONES is a Neural-Enhanced Streaming (NES) control algorithm that jointly manages network and computational resources to maximize the quality of experience (QoE) for users. It formulates NES as a Lyapunov optimization problem and solves it online with near-optimal performance. BONES increases QoE by 5% to 20% over state-of-the-art algorithms with minimal overhead, making it a significant advancement in video streaming technology.
-- [BuyDRM_KeyOS_PlatformOverview_FUUGO_062118](https://go.buydrm.com/hubfs/BuyDRM_KeyOS_Content_Protection_in_DASH_DASHIF_Workshop_Comcast_August2018-1.pdf)
+- [BuyDRM_KeyOS_PlatformOverview_FUUGO_062118](https://go.buydrm.com/hubfs/BuyDRM_KeyOS_Content_Protection_in_DASH_DASHIF_Workshop_Comcast_August2018-1.pdf) - BuyDRM presentation covering KeyOS content protection implementation in DASH workflows and architecture.
 - [cinelerra-cv](https://github.com/cinelerra-cv-team/cinelerra-cv) - An advanced non-linear video editing and compositing software for Linux. It provides a comprehensive suite of tools for video processing, making it suitable for developers seeking a robust video editing platform.
 - [Coconut DRM and AES Encryption](https://www.coconut.co/features/drm) - Coconut provides a video transcoding API that includes DRM and AES encryption features, supporting Google Widevine, Apple FairPlay, and Microsoft PlayReady to protect premium video content.
 - [DeepFaceLab](https://github.com/iperov/DeepFaceLab) - The leading software for creating deepfakes. It's an open source toolkit that allows users to swap faces in videos using machine learning, with support for multiple models and GPU acceleration.
@@ -2134,7 +1819,7 @@ The solution supports:
 - [PallyCon Multi-DRM Cloud](https://aws.amazon.com/marketplace/solutions/media-entertainment/drm) - By INKA Entworks is a SaaS solution that simplifies DRM licensing services for online video providers. It integrates with AWS Media Services, offering DRM license management, API integration for HTML5 and mobile players, and cloud-based forensic watermarking for enhanced content security.
 - [PallyCon Multi-DRM Integration Samples](https://github.com/inka-pallycon/html5-player-drm-samples) - A collection of sample projects demonstrating the integration of PallyCon Multi-DRM services with various HTML5 players. These samples are valuable for developers looking to implement multi-DRM solutions in their web-based video applications.
 - [Process Home Videos](https://github.com/mtlynch/process-home-videos) - A collection of helper scripts designed to process home videos and upload them to MediaGoblin. The scripts include functionalities for converting CSV metadata to YAML, rendering scenes by extracting clips based on metadata, and publishing processed videos to a MediaGoblin instance. This project is valuable for automating the organization and sharing of personal video collections.
-- [Pssh box](https://raw.githubusercontent.com/google/shaka-packager/master/packager/tools/pssh/pssh-box.py)
+- [Pssh box](https://raw.githubusercontent.com/google/shaka-packager/master/packager/tools/pssh/pssh-box.py) - Python utility for parsing and generating PSSH boxes used in content protection and multi-DRM workflows.
 - [PyTorchVideo](https://pytorchvideo.org) - A deep learning library designed for video understanding tasks. It offers modular and efficient components for video classification, detection, and self-supervised learning, facilitating the development of advanced video analysis models.
 - [Qencode Digital Rights Management](https://cloud.qencode.com/drm) - Qencode offers a comprehensive DRM solution integrated with their video transcoding and live streaming services. It supports multiple DRM systems, providing developers with tools to protect video content effectively.
 - [QUANTEEC Digital Rights Management](https://web.archive.org/web/20260122131732/https://doc.quanteec.com/advanced-topics/drm) - QUANTEEC provides a plugin that enables DRM-protected playback by encrypting video data on the server side and decrypting it on the player side. It is compatible with various players and DRM systems, facilitating secure video streaming.
@@ -2166,62 +1851,6 @@ The solution supports:
 - [Jaffree](https://github.com/kokorin/Jaffree) - Java FFmpeg and ffprobe command-line wrapper.
 - [Streamlink](https://github.com/streamlink/streamlink) - A CLI utility which pipes video streams from various services into a video player.
 
-#### Roku
-
-- [Brighterscript Formatter](https://github.com/RokuCommunity/brighterscript-formatter) - A code formatter for BrighterScript (and BrightScript).
-- [Brs Testbed](https://github.com/sjbarag/brs-testbed) - A simple, buildable Roku channel that executes arbitrary BrightScript files.
-- [bslint](https://github.com/rokucommunity/bslint) - Static-analysis linter for BrightScript/BrighterScript with CLI usage (npx bslint), supports --fix and --checkUsage flags.
-
-### API Libraries & SDKs
-
-- [BrightWebSocket](https://github.com/rolandoislas/BrightWebSocket) - RFC 6455 WebSocket Library for the Roku.
-- [Hybrik API Reference](https://docs.hybrik.com/api/v1/HybrikAPI.html?#getting-started)
-- [rust-ac-FFmpeg](https://github.com/angelcam/rust-ac-ffmpeg) - Safe minimal Rust bindings to libav with no bindgen dependency, supporting FFmpeg 4-7.
-- [stainless-FFmpeg](https://github.com/nomalab/stainless-ffmpeg) - Rust FFmpeg wrapper for building and running media processing graphs efficiently.
-- [XML + Code + Good times = RSG Application](https://medium.com/plexlabs/xml-code-good-times-rsg-application-b963f0cec01b) - Written by John Zolezzi - April 6th 2018.
-
-#### FFmpeg
-
-- [FFmpeg-REST — FFmpeg REST API with job queue](https://github.com/crisog/ffmpeg-rest) - FFmpeg REST API (Node/Hono/BullMQ) with async jobs, stateless and S3-compatible storage modes.
-- [FFmpeg-suite-rs](https://github.com/RustNSparks/ffmpeg-suite-rs) - Async builder-pattern Rust wrapper over the FFmpeg CLI with crates for transcoding/filtering, ffprobe inspection, and ffplay playback, plus VAAPI/NVENC/QSV hardware acceleration.
-- [FFmpeg.WebAssembly-st — single-thread FFmpeg.WebAssembly](https://github.com/NikolayMakhonin/ffmpeg.wasm-st) - Single-thread FFmpeg.WebAssembly variant for browser and node, avoiding SharedArrayBuffer/COOP-COEP requirements.
-- [Imageio FFmpeg](https://github.com/imageio/imageio-ffmpeg) - FFmpeg wrapper for Python.
-- [rsmpeg](https://github.com/larksuite/rsmpeg) - Rust crate exposing the FFmpeg libav C API safely; actively maintained with FFmpeg 6/7 support for building multimedia apps.
-- [spireav — graph-based Go transcoding library](https://github.com/spiretechnology/spireav) - Go transcoding library to build FFmpeg filter graphs programmatically and monitor progress.
-
-#### Roku
-
-- [BrighterScript](https://github.com/rokucommunity/brighterscript) - Superset language of BrightScript adding types, classes, and modern features, compiles to standard BrightScript; also serves as LSP backend for editor tooling.
-- [BrightWebSocket — WebSocket client for Roku SceneGraph](https://github.com/SuitestAutomation/BrightWebSocket) - RFC 6455 WebSocket client library for Roku SceneGraph, running in a separate task.
-- [RokuJSONHelperNode](https://github.com/T-Pham/RokuJSONHelperNode) - Roku SceneGraph JSON Helper.
-- [rooibos](https://github.com/rokucommunity/rooibos) - Unit test framework for BrightScript/SceneGraph apps, a rewrite of Roku's official framework with code coverage support.
-- [Vscode Brightscript Language](https://github.com/rokucommunity/vscode-brightscript-language) - A Visual Studio Code extension for Roku's BrightScript language.
-
-#### FFmpeg
-
-- [Ffmpeg4java](https://github.com/nextbreakpoint/ffmpeg4java) - A JNI wrapper of FFmpeg library.
-
-#### Quality & Testing
-
-- [Automated Channel Testing](https://github.com/rokudev/automated-channel-testing) - Roku Automated Channel Testing: Selenium-based WebDriver + Robot Framework + Samples.
-
-### Build Scripts & Automation
-
-- [AutoConfigShellScript](https://github.com/sunhailin-Leo/AutoConfigShellScript) - Automatically compile and configure FFmpeg, Python 3.7.2(default), PyAV, OpenCV, Keras, TensorFlow(CPU Mode) and other relative environment.
-
-#### FFmpeg
-
-- [compile and install latest FFmpeg source as pkg](https://gist.github.com/krzemienski/e51a0b7a6ba77e616f954e516783270c#file-compile-and-install-latest-ffmpeg-source-sh-L2) - GitHub Gist: instantly share code, notes, and snippets.
-- [FFmpeg Windows Build Helpers](https://github.com/rdp/ffmpeg-windows-build-helpers) - Helper script for cross compiling some media tools for windows, like customizable FFmpeg.exe (with or without non-free components, etc), and some other bonuses like mplayer, mp4box, mxf, etc. - rdp..
-- [serverless-FFmpeg — AWS Lambda transcoding](https://github.com/adghayes/serverless-ffmpeg) - AWS Lambda function for event-driven FFmpeg transcoding, configurable per-input/output CLI options.
-- [Sffmpeg](https://github.com/pyke369/sffmpeg) - Full-featured static FFmpeg build helper.
-- [This gist will generate an Intel QSV-enabled FFmpeg build using the open source Intel Media SDK. Testbed used: Ubuntu 18.04LTS. A fallback is also provided for the intel vaapi driver where needed.](https://gist.github.com/SeanMollet/0eed16e80630ab67532890a9d42132af)
-
-#### Roku
-
-- [roku-deploy](https://github.com/rokucommunity/roku-deploy) - Node.js npm module for zipping, signing, and deploying Roku channel packages to devices.
-- [Ukor](https://github.com/willowtreeapps/ukor) - A Roku build tool with support for build flavors.
-
 ### DRM Testing & Validation Tools
 
 - [Axinom Public Test Vectors - Multi-DRM Test Content](https://github.com/Axinom/public-test-vectors) - Public test vectors for adaptive streaming playback and multi-DRM scenarios. Includes working license servers for Widevine, FairPlay, PlayReady, and Clear Key testing with pre-generated license tokens and various test configurations.
@@ -2248,24 +1877,6 @@ The solution supports:
 - [Video Decrypter](https://github.com/CrackerCat/video_decrypter) - Decrypt video from a streaming site with MPEG-DASH Widevine DRM encryption.
 - [widevine-license-proxy-server-Node.js](https://github.com/WINOFFRG/widevine-license-proxy-server-nodejs) - Node/Express reverse proxy for Widevine license acquisition, adding rate limiting, auth, and caching layers.
 
-#### Android
-
-- [HLS with Widevine for Android - Taku Semba - Medium](https://medium.com/@takusemba/hls-with-widevine-for-android-de3f41027ed2) - As of the version of 2.6.0, ExoPlayer started supporting Widevine + HLS playback. WideVine is the one of the DRM schemes defined by Google.
-
-### Logging & Debugging Tools
-
-- [Chrome Media Internals](https://developer.chrome.com/docs/devtools/media-panel) - A built-in Chrome tool that provides detailed logs and diagnostics for media playback and streaming issues.
-- [Man in the Middle Proxy](https://github.com/mitmproxy/mitmproxy) - An interactive HTTPS proxy that allows inspection, modification, and debugging of network traffic, useful for video streaming analysis.
-- [Video Containers Debugging Tools](https://github.com/leandromoreira/video-containers-debugging-tools) - A set of command lines to debug video streaming files like mp4 (MPEG-4 Part 14), ts (MPEG-2 Part 1), fmp4 in Dash, HLS, or MSS, with or without DRM.
-
-#### Roku
-
-- [dd-sdk-roku — Datadog SDK for Roku](https://github.com/DataDog/dd-sdk-roku) - Datadog client-side telemetry SDK for Roku apps (BrightScript + SceneGraph).
-- [eslint-plugin-roku](https://github.com/RokuRoad/eslint-plugin-roku) - ESLint parser and plugin for linting Roku BrightScript source files.
-- [Jasmine Roku](https://github.com/veeta-tv/jasmine-roku) - Example Jasmine tests using node-roku-test for verifying Roku channel behavior.
-- [roku-debug](https://github.com/rokucommunity/roku-debug) - Debug Adapter Protocol server and socket wrapper around Roku's BrightScript debug protocol, for editor integration.
-- [Unit Testing Framework](https://github.com/rokudev/unit-testing-framework) - Tool for automating and testing Roku channels.
-
 ### Test Content & Sample Streams
 
 - [240pTestSuite_HCFR — Display Test Patterns](https://github.com/danmons/240pTestSuite_HCFR) - 240p Test Suite HCFR patterns for geometry, luminance, gamma, latency, and display calibration.
@@ -2284,16 +1895,6 @@ The solution supports:
 - [Xiph.org :: Test Media](https://media.xiph.org)
 - [Xiph.org derf's Test Media Collection](https://media.xiph.org/video/derf) - Xiph's canonical uncompressed Y4M SD/HD test sequences (akiyo, foreman, CrowdRun, ParkJoy) used across compression research.
 
-#### DASH
-
-- [BBC R&D Adaptive Bitrate Test Media](https://rdmedia.bbc.co.uk) - The BBC Research & Development department offers MPEG-DASH test media for developers and researchers.
-- [Dash IF Test Assets Database](https://testassets.dashif.org/#testvector/list) - A database of test assets provided by the DASH Industry Forum for validating DASH implementations.
-- [DASH-IF Test Vectors](https://github.com/Dash-Industry-Forum/Test-Vectors) - Official DASH Industry Forum test vectors repository (catalog at testassets.dashif.org) for MPEG-DASH interoperability testing.
-
-#### HLS
-
-- [Apple Reference Streams](https://developer.apple.com/streaming/examples) - Apple provides example streams demonstrating the features of HTTP Live Streaming (HLS) for testing and development purposes.
-
 ### FFmpeg & Tools
 
 - [CodenameGogh](https://github.com/eliemichel/CodenameGogh) - Node-based (nodal) graphical interface to the FFmpeg transcoder for visually building conversion pipelines.
@@ -2307,12 +1908,20 @@ The solution supports:
 - [video-compress (FFmpeg.WebAssembly)](https://github.com/addyosmani/video-compress) - React + FFmpeg.WebAssembly in-browser video compression with real-time preview and no server uploads.
 - [Videomass](https://github.com/jeanslack/Videomass) - Cross-platform FFmpeg GUI in Python3/wxPython with multitasking transcoding, running on Linux/macOS/Windows/FreeBSD.
 
+### API Libraries & SDKs
+
+- [BrightWebSocket](https://github.com/rolandoislas/BrightWebSocket) - RFC 6455 WebSocket Library for the Roku.
+- [Hybrik API Reference](https://docs.hybrik.com/api/v1/HybrikAPI.html?#getting-started)
+- [rust-ac-FFmpeg](https://github.com/angelcam/rust-ac-ffmpeg) - Safe minimal Rust bindings to libav with no bindgen dependency, supporting FFmpeg 4-7.
+- [stainless-FFmpeg](https://github.com/nomalab/stainless-ffmpeg) - Rust FFmpeg wrapper for building and running media processing graphs efficiently.
+- [XML + Code + Good times = RSG Application](https://medium.com/plexlabs/xml-code-good-times-rsg-application-b963f0cec01b) - Written by John Zolezzi - April 6th 2018.
+
 ### DRM Solutions & Implementations
 
 - [Axinom DRM Decoders](https://tools.axinom.com) - Axinom offers DRM tools for encoding and decoding, ensuring secure streaming media delivery.
 - [Deploying KeyOS with AWS Elemental Media Services](https://go.buydrm.com/thedrmblog/deploying-keyos-with-aws-elemental-media-services) - In this post we provide an in-depth first party overview of the complex integration between the KeyOS Platform and the Elemental Media Services via the SPEKE API.
 - [Digital Rights Management (DRM) – Everything you need to know](https://bitmovin.com/digital-rights-management-everything-to-know)
-- [Digital Rights Management (multi - drm) – aameer.GitHub.io](https://aameer.github.io/articles/digital-rights-management-multi-drm)
+- [Digital Rights Management (multi - drm) – aameer.GitHub.io](https://aameer.github.io/articles/digital-rights-management-multi-drm) - Article explaining multi-DRM concepts and implementation strategies for cross-platform protected video delivery.
 - [Play your own DRM content on ExoPlayer - Taku Semba - Medium](https://medium.com/@takusemba/play-your-own-drm-content-on-exoplayer-e8ed73d5864c) - Digital rights management, or you could just refer to it as DRM, is a way of controlling what users can do with some sort of digital.
 - [RivaGAN](https://github.com/DAI-Lab/RivaGAN) - Robust video watermarking with non-differentiable adversaries, recovering payload after redistribution (MIT).
 - [TheDRMBlog | CENC](https://go.buydrm.com/thedrmblog/topic/cenc) - CENC | The DRM Blog - Your New Official Source for Everything DRM.
@@ -2332,10 +1941,6 @@ The solution supports:
 - [The Hitchhiker's Guide to DRM](https://ottverse.com/hitchhikers-guide-to-drm-2) - A gentle guide to the world of Digital Rights Management. It includes a technology overview of AES, EME, CDM, CENC, Keys, and then explores popular DRM technologies such as Google Widevine, Apple FairPlay, Microsoft PlayReady, and finally, Multi-DRM.
 - [Using DRM with Key Rotation (Unified Streaming docs)](https://docs.unified-streaming.com/documentation/drm/key-rotation.html) - Official technical reference on CPIX ContentKeyPeriod/ContentKeyPeriodList spec detail and VOD vs live static/dynamic CPIX origin distinctions.
 
-#### HEVC
-
-- [HEVC DRM Market Update](https://go.buydrm.com/thedrmblog/hevc-drm-market-update) - Since time eternal, the streaming industry has toiled with and extolled the virtues of CODECs and their key enablement of the entire digital video experience. Now comes the latest candy in the increasingly large bowl, H.265 (MPEG-H Part 2) or as it's more commonly known. HEVC.
-
 ### Specialized Utility Scripts
 
 - [Binary to base64: Convert between bytes and base64 — Cryptii](https://cryptii.com/pipes/binary-to-base64) - Base64 encoding schemes are used when binary data needs to be stored or transferred as textual data. Therefore 64 characters are chosen that are both members of a subset common to most encodings (ASCII), and also printable.
@@ -2348,7 +1953,7 @@ The solution supports:
 ### Community & Collaboration Platforms
 
 - [Codec Wiki (x266.mov)](https://wiki.x266.mov/docs/video/AV1) - Community-maintained wiki covering AV1/HEVC/VVC codec internals, encoder settings, and tuning guides.
-- [Community events of the VideoLAN non-profit organization](https://www.videolan.org/videolan/events)
+- [Community events of the VideoLAN non-profit organization](https://www.videolan.org/videolan/events) - Event listings for the VideoLAN non-profit organization. Community calendar for VLC and open video development.
 - [The Top 656 Video Open Source Projects](https://awesomeopensource.com/projects/video) - Browse The Most Popular 656 Video Open Source Projects.
 
 ### Research Projects & Academic Resources
@@ -2356,7 +1961,7 @@ The solution supports:
 - [ByteDance NEVC — Neural Video Coding](https://github.com/bytedance/NEVC) - ByteDance's open-source neural video coding implementation (EHVC, ACM MM 2025) with code.
 - [Convex Hull Prediction Methods: Design, Eval & Comparison](https://arxiv.org/html/2310.15163) - Survey and benchmark of convex-hull bitrate-ladder prediction methods for per-title encoding (ACM TOMM 2025).
 - [GIViC — Generative Implicit Video Compression (ICCV 2025)](https://arxiv.org/pdf/2503.19604) - ICCV 2025 paper on Generative Implicit Video Compression, using implicit neural representations with generative priors for video coding.
-- [High Dynamic Range Television and Hybrid Log-Gamma - BBC R&D](https://www.bbc.co.uk/rd/projects/high-dynamic-range) - BBC R&D HDR project page.
+- [High Dynamic Range Television and Hybrid Log-Gamma - BBC R&D](https://www.bbc.co.uk/rd/projects/high-dynamic-range) - BBC R&D's project page on HDR television and Hybrid Log-Gamma. Resource for HDR workflow development.
 - [Microsoft DCVC — Deep Contextual Video Compression](https://github.com/microsoft/DCVC) - Neural video codec research line from Microsoft Research (DCVC, DCVC-RT), CVPR 2024/2025 papers with open-source code and pretrained checkpoints.
 - [NVRC — Neural Video Representation Codec (NeurIPS 2024)](https://github.com/hmkx/NVRC) - First INR-based neural video codec to beat VTM (random-access) on long sequences; NeurIPS 2024 code release.
 - [REVISION: Roadmap on Adaptive Video Streaming Optimization](https://arxiv.org/abs/2409.06051) - Survey/roadmap of ABR optimization techniques by Tashtarian & Timmerer (Alpen-Adria Universität Klagenfurt, ATHENA group).
@@ -2371,10 +1976,6 @@ The solution supports:
 - [streamsurfer](https://github.com/grafov/streamsurfer) - Go tool that probes HTTP video streams (HLS) for errors in a health-check style, successor to the Python hlsprobe tool.
 - [video-quality-tools (LCMApps)](https://github.com/LCMApps/video-quality-tools) - Node.js tools wrapping ffprobe to detect fps/bitrate drops and GOP structure changes in real time on live streams.
 
-#### Quality & Testing
-
-- [Automated Testing on Devices](https://medium.com/netflix-techblog/automated-testing-on-devices-fc5a39f47e24) - Key concepts and infrastructure.
-
 ### Encryption Tools for Streaming
 
 - [Advanced Encryption Techniques: ContentProtection Tags for MPDs and PSSH Boxes for DASH.](https://go.buydrm.com/thedrmblog/advanced_encryption_techniques) - In this installment of TheDRMBlog we take an in-depth look at Advanced Encryption Techniques.
@@ -2385,35 +1986,28 @@ The solution supports:
 - [Encryption & DRM with Multiple Keys — Unified Streaming](https://docs.unified-streaming.com/documentation/package/multiple-keys.html) - DRM with multiple keys for Unified Packager.
 - [Secure HLS streaming using DRM encryption](https://www.wowza.com/docs/how-to-secure-apple-hls-streaming-using-drm-encryption) - Protect live and on-demand HLS streaming using DRM encryption in Wowza Streaming Engine.
 
-#### DASH
+### DRM
 
-- [Generate MPEG DASH content encrypted with MPEG CENC ClearKey · Dash-Industry-Forum/dash.js Wiki](https://github.com/Dash-Industry-Forum/dash.js/wiki/Generate-MPEG-DASH-content-encrypted-with-MPEG-CENC-ClearKey) - A reference client implementation for the playback of MPEG DASH via JavaScript and compliant browsers.
+- [Common Encryption (CENC) Standard](https://www.iso.org/standard/68042.html) - The ISO/IEC 23001-7 standard for Common Encryption in ISO base media file format files. CENC allows a single video file to be encrypted once and used with multiple DRM systems (Widevine, PlayReady, etc.) by defining a common encryption scheme and signaling, forming the basis of DRM interoperability in DASH and HLS fMP4.
+- [EZDRM + Bento4 Open Source DRM Guide](https://www.ezdrm.com/Documentation/EZDRM%20Bento%204%20Open%20Source%20v1.0.pdf) - Guide for implementing DRM workflows using EZDRM service with Bento4 open-source packaging tools.
+- [Integrate BuyDRM for a Multi-DRM workflow](https://bitmovin.com/integrate-buydrm-multi-drm-system) - Integration guide for connecting Bitmovin encoding and playback services with BuyDRM multi-DRM platform.
+- [Microsoft PlayReady Documentation](https://learn.microsoft.com/playready) - Microsoft's documentation for PlayReady DRM, including whitepapers and implementation guidance for integrating PlayReady content protection.
+- [Widevine DRM Documentation (Google)](https://developers.google.com/widevine) - Official documentation for Google Widevine DRM, detailing integration of content protection on various platforms and browsers using Widevine Modular DRM.
 
-#### HLS
+### Logging & Debugging Tools
 
-- [Content Protection for HLS with AES-128 Encryption](https://www.theoplayer.com/blog/content-protection-for-hls-with-aes-128-encryption) - We will outline the most popular method for content protection with the HTTP Live Streaming (HLS) protocol: AES-128 content encryption.
+- [Chrome Media Internals](https://developer.chrome.com/docs/devtools/media-panel) - A built-in Chrome tool that provides detailed logs and diagnostics for media playback and streaming issues.
+- [Man in the Middle Proxy](https://github.com/mitmproxy/mitmproxy) - An interactive HTTPS proxy that allows inspection, modification, and debugging of network traffic, useful for video streaming analysis.
+- [Video Containers Debugging Tools](https://github.com/leandromoreira/video-containers-debugging-tools) - A set of command lines to debug video streaming files like mp4 (MPEG-4 Part 14), ts (MPEG-2 Part 1), fmp4 in Dash, HLS, or MSS, with or without DRM.
+
+### Build Scripts & Automation
+
+- [AutoConfigShellScript](https://github.com/sunhailin-Leo/AutoConfigShellScript) - Automatically compile and configure FFmpeg, Python 3.7.2(default), PyAV, OpenCV, Keras, TensorFlow(CPU Mode) and other relative environment.
 
 ### Cross-Platform Media Tools
 
 - [Text To Speech Node.js](https://github.com/watson-developer-cloud/text-to-speech-nodejs) - Sample Node.js Application for the IBM Watson Text to Speech Service.
 - [Wsgidav](https://github.com/mar10/wsgidav) - A generic and extendable WebDAV server based on WSGI.
-
-#### Audio
-
-- [aubio](https://github.com/aubio/aubio) - C library with Python bindings for audio/music analysis: onset detection, pitch tracking, tempo/beat detection, and MIDI-from-audio conversion.
-- [Essentia](https://github.com/MTG/essentia) - C++ audio/music analysis library with a large algorithm set for spectral/tonal/rhythm descriptors, Python bindings, and an essentia.js WebAssembly port.
-- [loudgain](https://github.com/ghedo/loudgain) - CLI ReplayGain/R128Gain-style loudness tagger built on libebur128.
-- [Low Latency Android iOS Linux Windows tvOS macOS Interactive Audio Platform](https://github.com/superpoweredSDK/Low-Latency-Android-iOS-Linux-Windows-tvOS-macOS-Interactive-Audio-Platform) - Superpowered Audio, Networking and Cryptographics SDKs. High performance and cross platform on Android, iOS, macOS, tvOS, Linux, Windows and modern web browsers.
-- [pyloudnorm](https://github.com/csteinmetz1/pyloudnorm) - Pure-Python loudness measurement and normalization library with no FFmpeg dependency.
-- [RNNoise](https://github.com/xiph/rnnoise) - Xiph's RNN-based real-time noise suppression library for speech, operating on 16-bit 48kHz PCM with a CLI example included.
-
-### DRM
-
-- [Common Encryption (CENC) Standard](https://www.iso.org/standard/68042.html) - The ISO/IEC 23001-7 standard for Common Encryption in ISO base media file format files. CENC allows a single video file to be encrypted once and used with multiple DRM systems (Widevine, PlayReady, etc.) by defining a common encryption scheme and signaling, forming the basis of DRM interoperability in DASH and HLS fMP4.
-- [EZDRM + Bento4 Open Source DRM Guide](https://www.ezdrm.com/Documentation/EZDRM%20Bento%204%20Open%20Source%20v1.0.pdf)
-- [Integrate BuyDRM for a Multi-DRM workflow](https://bitmovin.com/integrate-buydrm-multi-drm-system)
-- [Microsoft PlayReady Documentation](https://learn.microsoft.com/playready) - Microsoft's documentation for PlayReady DRM, including whitepapers and implementation guidance for integrating PlayReady content protection.
-- [Widevine DRM Documentation (Google)](https://developers.google.com/widevine) - Official documentation for Google Widevine DRM, detailing integration of content protection on various platforms and browsers using Widevine Modular DRM.
 
 ### Docker & Containerization Tools
 
@@ -2421,18 +2015,6 @@ The solution supports:
 - [Docker Bento4](https://github.com/alfg/docker-bento4) - A dockerized Bento4 from source. Built on Alpine Linux.
 - [JRE FFmpeg Apline](https://github.com/silencecorner/jre-ffmpeg-apline) - Dockerfile (jre8)(HTTPS://GitHub.com/fabric8io-images/java) and (FFmpeg)(HTTPS://hub.docker.com/r/jrottenberg/FFmpeg).
 - [Toolbox](https://github.com/Eyevinn/toolbox) - A set of Docker containers with Streaming tools.
-
-#### Cloud Platforms
-
-- [Nvidia Docker](https://github.com/NVIDIA/nvidia-docker) - Build and run Docker containers leveraging NVIDIA GPUs.
-
-#### Storage Solutions
-
-- [Minio](https://github.com/minio/minio) - A high performance object storage server compatible with Amazon S3 APIs.
-
-#### FFmpeg
-
-- [Alpine Bento FFmpeg](https://github.com/realeyes-media/alpine-bento-ffmpeg) - Alpine Linux with FFmpeg, Bento, and PM2.
 
 ## Standards & Industry
 
@@ -2548,7 +2130,7 @@ The solution supports:
 - [Versatile Video Coding Standard: A Review](https://arxiv.org/abs/2106.14245) - A comprehensive review paper detailing the Versatile Video Coding (VVC) standard, covering coding tools, consumer deployment, and implementation aspects. This resource is beneficial for developers and researchers interested in the technical details and applications of VVC.
 - [VESA DisplayHDR Standard](https://vesa.org/featured-articles/vesa-defines-new-standard-to-help-speed-pc-industry-adoption-of%E2%80%A8high-dynamic-range-technology-in-laptop-and-desktop-monitor-displays) - The Video Electronics Standards Association (VESA) has defined the DisplayHDR standard, the industry's first open HDR specification with a transparent testing methodology. This standard specifies HDR quality levels, including luminance, color gamut, bit depth, and rise time, to facilitate the adoption of HDR in laptop and desktop monitors. It establishes three distinct levels of HDR system performance to cater to various market needs.
 - [Video Electronics Standards Association (VESA)](https://www.vesa.org) - VESA is a technical standards organization for computer display standards. It has issued several widely used standards, including DisplayHDR, DisplayPort, and the Flat Display Mounting Interface. VESA's standards are crucial for ensuring compatibility and performance across various display technologies and devices.
-- [Video Quality Experts Group (VQEG)](https://www.its.bldrdoc.gov/vqeg/vqeg-home.aspx)
+- [Video Quality Experts Group (VQEG)](https://www.its.bldrdoc.gov/vqeg/vqeg-home.aspx) - International standards group focused on video quality assessment methodologies and research.
 - [Video Services Forum (VSF)](https://www.vsf.tv) - VSF is an international association dedicated to interoperability, quality metrics, and education for media networking technologies. It provides forums to identify issues and promotes interoperability by contributing to the development of standards.
 - [W3C Audiovisual Media Formats for Browsers Community Group](https://github.com/w3c/avmedia-formats-cg) - This GitHub repository is the official space for the W3C Audiovisual Media Formats for Browsers Community Group. The group focuses on discussing and developing support for modern audiovisual formats within the W3C framework, aiming to synchronize open and proprietary solutions to enhance web-based media experiences.
 - [W3C Media & Entertainment Interest Group](https://www.w3.org/blog/news/archives/9075) - A World Wide Web Consortium group focused on media and entertainment. It examines use cases and requirements for web technologies in the media industry (like streaming, broadcasting integration, etc.) and often produces recommendations or liaisons with other standards (like W3C for HTML5 media, or CTA WAVE).
@@ -2560,7 +2142,7 @@ The solution supports:
 ### Specs & Standards
 
 - [CMAF Specification (ISO/IEC 23000-19:2018)](https://www.iso.org/standard/71975.html) - The Common Media Application Format (CMAF) standard defines a container format (based on fragmented MP4) for segmented media delivery that can be used for both HLS and DASH. Understanding CMAF is key to creating streams that work across different streaming protocols with a single media file format.
-- [DASH-IF IOP v3.2 Change Summary (vs v3.1)](https://dashif.org/docs/DASH-IF-IOP-v3.2-diff-3.1.pdf)
+- [DASH-IF IOP v3.2 Change Summary (vs v3.1)](https://dashif.org/docs/DASH-IF-IOP-v3.2-diff-3.1.pdf) - Document detailing changes between DASH-IF Interoperability Points versions 3.1 and 3.2 for implementers.
 - [Encrypted Media Extensions (W3C Recommendation)](https://www.w3.org/TR/encrypted-media) - The W3C specification for Encrypted Media Extensions (EME), which defines a browser API for playback of encrypted content using content decryption modules (CDMs).
 - [How Do I Become an ANSI Member](https://www.ansi.org/membership/how_to_join/how_3)
 - [ISO/IEC 14496-12 (MPEG-4 Part 12) ISO Base Media File Format](https://www.iso.org/standard/74428.html) - The ISO base media file format standard (used by MP4, MOV, etc.), defining the general structure for time-based media files. It's a foundation for MP4 and fragmented MP4 (CMAF).
@@ -2572,11 +2154,18 @@ The solution supports:
 #### Official Specs
 
 - [AV1 Bitstream & Decoding Specification (1.0.0 with Errata 1)](https://aomediacodec.github.io/av1-spec/av1-spec.pdf) - The official bitstream and decoding process specification for the AOMedia Video 1 (AV1) codec. Defines how AV1 video is encoded bit-by-bit and decoded.
+- [AVC/HEVC in ISOBMFF - ISO/IEC 14496-15](https://www.iso.org/standard/83336.html) - Defines the carriage of AVC/HEVC in ISOBMFF.
 - [CTA-WAVE Common Media Server Data (CMSD)](https://github.com/cta-wave/common-media-server-data) - CTA-WAVE specification repo for Common Media Server Data (CMSD), the server-to-client counterpart of CMCD.
+- [latest HLS Spec](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis-08)
 
 #### MPEG & Forums
 
+- [Inside MPEG's Ambitious Plan to Launch 3 Video Codecs in 2020](https://www.streamingmedia.com/Articles/Editorial/Featured-Articles/Inside-MPEGs-Ambitious-Plan-to-Launch-3-Video-Codecs-in-2020-134694.aspx) - The pace of innovation is getting faster and the demands on video codecs are getting greater. MPEG's three-part plan answers questions of royalties, licensing, and computational efficiency. Meet VVC, MPEG-5 Part 1 (EVC), and MPEG-5 Part 2 (LCEVC).
 - [Moving Picture Experts Group (MPEG)](https://mpeg.chiariglione.org) - The official forum that develops international standards for compression, decompression, processing and coded representation of moving pictures, audio, and their combination (e.g., MPEG-2, MPEG-4, DASH).
+- [MPEG About](https://www.mpegstandards.org/about-mpeg)
+- [MPEG home page](https://www.mpegstandards.org)
+- [MPEG Meetings](https://www.mpegstandards.org/meetings)
+- [MPEG: What Happened?](https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=141678) - At the end of last month, MPEG co-founder Leonardo Chiariglione announced the 'MPEG is closed.' That's not quite true, but it is undergoing a reorganization. So what does that mean for the organization and the new codec standards it is bringing out this year?
 
 ### Closed Captioning & Subtitling Standards
 
@@ -2584,91 +2173,17 @@ The solution supports:
 - [ETSI EN 300 743: DVB Subtitling Systems](https://www.etsi.org/deliver/etsi_en/300700_300799/300743/01.06.01_20/en_300743v010601a.pdf) - Official DVB bitmap subtitling standard covering region/CLUT/object composition for broadcast PES-based subtitle delivery.
 - [FAB ESUB-XF Specification (EBU-STL Successor)](https://www.fab-online.com/pdf/ESUB-XF.pdf) - European Subtitle Exchange Format spec mapping legacy EBU-STL (Tech 3264) into XML.
 
-#### Subtitles & Captions
-
-- [EBU-TT Live Interoperability Toolkit](https://ebu.github.io/ebu-tt-live-toolkit)
-- [IMSC 1.0.1 Text test content](https://github.com/w3c/IMSC-1.0.1_Text_TestContent)
-- [IMSC 1.1 Image test content](https://github.com/w3c/IMSC-1.1_Image_TestContent)
-- [IMSC 1.1 Text test content](https://github.com/w3c/IMSC-1.1_Text_TestContent)
-- [IMSC HRM validator](https://github.com/sandflow/imscHRM) - Validator for the IMSC Hypothetical Render Model (HRM), which constrains TTML document complexity.
-- [IMSC Specification](https://www.w3.org/TR/ttml-imsc1.1)
-- [TTML/WebVTT Coding of audio-visual objects - ISO/IEC 14496-30](https://www.iso.org/standard/75394.html) - Defines formatting for text tracks webvtt or ttml.
-- [Web Video Text Tracks Format (WebVTT)](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API) - A format for displaying timed text tracks (such as subtitles or captions) using the track element.
-
-### Video Codec Specifications
-
-- [AVC/h264 Video Coding Standard - ISO/IEC 14496-10](https://www.iso.org/standard/83529.html) - Defines the compressed video format for AVC/h264.
-- [FFV1](https://github.com/FFmpeg/FFV1) - Lossless video codec specification.
-- [HDMI 2.1: features, specs and news about the latest HDMI standard](https://www.whathifi.com/advice/what-hdmi-21-everything-you-need-to-know) - The gateway to a super high-definition future is ever-nearing.
-- [ISO Base Media File Format Reference Software](https://github.com/MPEGGroup/isobmff)
-- [MPEG Event message track format for the ISO base media file format - ISO/IEC 23001-18](https://www.iso.org/standard/82529.html) - Defines the file format and structure.
-- [MPEG High Efficiency Image File Format (HEIF)](https://nokiatech.github.io/heif)
-- [MPEG ISOBMFF 'MP4' - ISO/IEC 14496-12](https://www.iso.org/standard/83102.html) - Defines the file format and structure.
-- [MPEG point cloud compression](https://mpeg-pcc.org)
-- [MPEG-H Audio a Next Generation Audio (NGA) codec - ISO/IEC 23008-3](https://www.iso.org/standard/83525.html) - Defines the compressed audio format MPEG-H Audio a Next Generation Audio (NGA) codec.
-- [The H.264 Sequence Parameter Set](https://www.cardinalpeak.com/the-h-264-sequence-parameter-set) - This is a follow-up to my World's Smallest H.264 Encoder post. I've received several emails asking about precise details of things in two entities in the H.264 bitstream: the Sequence Parameter Set (SPS) and the Picture Parameter Set (PPS). Both entities contain information that an H.264 decoder needs to decode the video data, for example,..
-- [Video Coding - BBC R&D](https://www.bbc.co.uk/rd/projects/video-coding) - BBC video encoding R&D home page.
-- [VP9 Bitstream & Decoding Process Specification v0.6](https://storage.googleapis.com/downloads.webmproject.org/docs/vp9/vp9-bitstream-specification-v0.6-20160331-draft.pdf) - Official Google draft bitstream and decoding process specification for VP9.
-
-#### AV1
-
-- [AV1 decoder model](https://norkin.org/research/av1_decoder_model) - Description of the AV1 decoder model.
-- [Jean-Marc Valin — Core Coding Tools in AV1 (paper)](https://www.jmvalin.ca/papers/AV1_tools.pdf) - Free technical paper on AV1 core coding tools (partition trees, MV referencing) by the Opus/Daala codec engineer.
-
-#### Official Specs
-
-- [AVC/HEVC in ISOBMFF - ISO/IEC 14496-15](https://www.iso.org/standard/83336.html) - Defines the carriage of AVC/HEVC in ISOBMFF.
-
-#### Audio
-
-- [AAC Audio Coding Standard - ISO/IEC 14496-3](https://www.iso.org/standard/76383.html) - Defines the compressed audio format AAC.
-
-#### HEVC
-
-- [HEVC/H.265 Video Coding Standard: Part 1](https://www.youtube.com/watch?v=TLNkK5C1KN8&feature=youtu.be) - Dr. Dan Grois, Benjamin Bross, Dr. Detlev Marpe and Karsten Sühring HEVC/H.265 Video Coding Standart including the Range Extensions Scalable Extensions and M..
-- [HEVC/H.265 Video Coding Standard: Part 2](https://www.youtube.com/watch?v=V6a1AW5xyAw&feature=youtu.be) - Dr. Dan Grois, Benjamin Bross, Dr. Detlev Marpe and Karsten Sühring HEVC/H.265 Video Coding Standart including the Range Extensions Scalable Extensions and M..
-- [HEVC/h265 Video Coding Standard - ISO/IEC 23008-2](https://www.iso.org/standard/85457.html) - Defines the compressed video format HEVC/h265.
-- [Standardization of High Efficiency Video Coding (HEVC)](https://youtu.be/p6dLZfs0jTY) - Jens-Rainer Ohm, Institute of Communication Engineering, RWTH Aachen University, DE.
-- [The Market Significance of Apple's Adopting HEVC: Here's What I Think](https://www.linkedin.com/pulse/market-significance-apples-adopting-hevc-heres-what-i-jan-ozer) - At the recent World Wide Developer's Conference (WWDC), Apple announced that the next versions of Safari, iOS, and tvOS will support HLS with HEVC encoded video. This puts Apple firmly in the HEVC camp, with the Alliance for Open Media camp (Amazon, Cisco, Intel, Google, Microsoft, Mozilla, Netflix,.
-
-#### MPEG & Forums
-
-- [Inside MPEG's Ambitious Plan to Launch 3 Video Codecs in 2020](https://www.streamingmedia.com/Articles/Editorial/Featured-Articles/Inside-MPEGs-Ambitious-Plan-to-Launch-3-Video-Codecs-in-2020-134694.aspx) - The pace of innovation is getting faster and the demands on video codecs are getting greater. MPEG's three-part plan answers questions of royalties, licensing, and computational efficiency. Meet VVC, MPEG-5 Part 1 (EVC), and MPEG-5 Part 2 (LCEVC).
-
 ### DRM & Content Protection Standards
 
 - [Common Encryption - ISO/IEC 23001-7](https://iso.org/standard/84637.html) - Defines encryption of media supported for receiving devices.
 - [CTA-5001-C: WAVE Content Specification](https://cdn.cta.tech/cta/media/media/resources/standards/pdfs/cta-5001-c_final.pdf) - Official CTA WAVE spec mandating cenc/cbcs CMAF encryption schemes for interoperable streaming devices.
 - [Dashif Content Protection List](https://dashif.org/identifiers/content_protection) - A list of content protection schemes recognized by the DASH Industry Forum for securing DASH streaming content.
-- [Encrypted Media](https://github.com/w3c/encrypted-media) - Extensions.
+- [Encrypted Media](https://github.com/w3c/encrypted-media) - W3C specification for Encrypted Media Extensions (EME) API enabling playback of protected content in web browsers.
 - [HDCP on HDMI Specification Rev 2.3](https://www.digital-cp.com/sites/default/files/specifications/HDCP%20on%20HDMI%20Specification%20Rev2_3.pdf) - Official Digital Content Protection LLC specification covering HDCP authentication, revocation, and encryption over HDMI.
 - [HDCP Specifications Index](https://www.digital-cp.com/hdcp-specifications) - Official hub for all HDCP specification variants (HDMI, DisplayPort, HDBaseT, WHDI) plus errata, from the licensing authority.
 - [MPEG-B Part 7: Common Encryption (CENC) overview](https://www.mpeg.org/standards/MPEG-B/7) - MPEG's own free overview page for ISO/IEC 23001-7 Common Encryption, explaining cenc/cbc1/cens/cbcs schemes.
 - [PlayReady — Content Encryption Modes (official docs)](https://learn.microsoft.com/en-us/playready/packaging/content-encryption-modes) - Official Microsoft doc detailing PlayReady's cenc/cbcs content encryption mode support.
 - [PlayReady — License and Policies (official docs)](https://learn.microsoft.com/en-us/playready/overview/license-and-policies) - Official Microsoft technical documentation on PlayReady license/challenge flow, Compliance Rules, and XMR rights spec.
-
-### Industry Forums & Standards Bodies
-
-- [Awesome Broadcasting](https://github.com/ebu/awesome-broadcasting) - A curated list of amazingly awesome open source resources related to broadcast technologies.
-- [CTA | WAVE Project](https://cta.tech/Resources/Standards/WAVE-Project) - The WAVE (Web Application Video Ecosystem) Project, hosted by the Consumer Technology Association (CTA)®, aims to improve how internet-delivered commercial video is handled on consumer electronics devices and to make it easier for content creators to distribute video to those devices.
-- [EBU Evaluations of Multichannel Audio Codecs](https://tech.ebu.ch/docs/tech/tech3324.pdf)
-- [Home | Streaming Video Alliance](https://www.streamingvideoalliance.org) - Making Streaming Video Better Streaming video is exploding in popularity. Consumers are watching more video online across a myriad of devices. But, the streaming experiences, across providers, can be wildly different from each other which ultimately hurts adoption. The problem is a lack of colla ..
-- [Official Registration Authority for the ISOBMFF family of standards](https://mp4ra.org)
-- [SRT Alliance](https://www.srtalliance.org) - Home page for the SRT protocol.
-
-#### RIST
-
-- [RIST Forum](https://www.rist.tv) - Manage the Reliable Internet Stream Transport (RIST), for transporting live video over unmanaged networks.
-- [RIST Forum: 2025 RIST vs SRT Comparison](https://www.rist.tv/articles-and-deep-dives/2025-rist-vs-srt-comparison) - RIST Forum's own 2025 technical writeup on protocol divergence points between RIST and SRT 1.5, covering bonding convergence and interoperability/governance tradeoffs.
-- [RIST Forum: Latest Updates to SRT and RIST](https://www.rist.tv/articles-and-deep-dives/2023/1/9/the-latest-updates-to-srt-and-rist) - RIST Forum tracking protocol evolution, referencing TR-06-4 Part 3 ancillary features spec.
-- [VSF Technical Recommendations Index](https://vsf.tv/technical-recommendations) - Official Video Services Forum index linking all TR-06-x RIST specification PDFs (Simple/Main/Advanced profiles and extensions).
-
-#### MPEG & Forums
-
-- [MPEG About](https://www.mpegstandards.org/about-mpeg)
-- [MPEG home page](https://www.mpegstandards.org)
-- [MPEG Meetings](https://www.mpegstandards.org/meetings)
-- [MPEG: What Happened?](https://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=141678) - At the end of last month, MPEG co-founder Leonardo Chiariglione announced the 'MPEG is closed.' That's not quite true, but it is undergoing a reorganization. So what does that mean for the organization and the new codec standards it is bringing out this year?
 
 ### Best Practices & Guidelines
 
@@ -2685,7 +2200,7 @@ The solution supports:
 #### HDR Guidelines
 
 - [AV1 HDR10+ Metadata Handling Specification (AOMediaCodec)](https://github.com/AOMediaCodec/av1-hdr10plus) - Official AOM repo specifying HDR10+ dynamic metadata handling for AV1, with Bikeshed spec source and conformance test suite.
-- [Frequently Asked Questions on High Dynamic Range and Hybrid Log-Gamma](https://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_FAQ.pdf) - FAQ regarding HDR by BBC R&D.
+- [Frequently Asked Questions on High Dynamic Range and Hybrid Log-Gamma](https://downloads.bbc.co.uk/rd/pubs/papers/HDR/BBC_HDRTV_FAQ.pdf) - BBC R&D guide answering common questions about HDR and HLG technology. Technical reference for HDR implementation.
 - [ITU-R BT.2100-3 — Image Parameter Values for HDR-TV](https://www.itu.int/dms_pubrec/itu-r/rec/bt/R-REC-BT.2100-3-202502-I!!PDF-E.pdf) - Latest (Feb 2025) official ITU-R recommendation defining PQ and HLG transfer functions and HDR-TV image parameters for production/exchange.
 - [Report ITU-R BT.2408-5 — Operational Practices for HDR TV Production](https://www.itu.int/dms_pub/itu-r/opb/rep/R-REP-BT.2408-5-2022-PDF-E.pdf) - Official ITU-R guidance report on HDR TV production operational practices: gamma/exposure handling, best-practice workflows.
 - [Subjective Comparison of Three Tone Mapping Algorithms for HDR-to-SDR](https://www.mdpi.com/2079-9292/14/12/2428) - 2025 peer-reviewed paper comparing clip, Reinhard, and Hable-class tone mapping operators for HDR-to-SDR conversion.
@@ -2702,6 +2217,21 @@ The solution supports:
 - [Dolby Vision Profile 8/9 FAQ](https://professionalsupport.dolby.com/s/article/Dolby-Vision-Profile-20-FAQ?language=en_US) - Official Dolby FAQ with profile-specific engineering detail on Dolby Vision Profile 8 and 9.
 - [Dolby Vision Profiles and Levels Explained](https://professionalsupport.dolby.com/s/article/What-is-Dolby-Vision-Profile?language=en_US) - Official Dolby technical support article breaking down Dolby Vision profiles 0-9, cross-compatible base layers (HDR10/HLG/SDR fallback via VUI metadata).
 
+### Video Codec Specifications
+
+- [AVC/h264 Video Coding Standard - ISO/IEC 14496-10](https://www.iso.org/standard/83529.html) - Defines the compressed video format for AVC/h264.
+- [FFV1](https://github.com/FFmpeg/FFV1) - Lossless video codec specification.
+- [HDMI 2.1: features, specs and news about the latest HDMI standard](https://www.whathifi.com/advice/what-hdmi-21-everything-you-need-to-know) - The gateway to a super high-definition future is ever-nearing.
+- [ISO Base Media File Format Reference Software](https://github.com/MPEGGroup/isobmff)
+- [MPEG Event message track format for the ISO base media file format - ISO/IEC 23001-18](https://www.iso.org/standard/82529.html) - Defines the file format and structure.
+- [MPEG High Efficiency Image File Format (HEIF)](https://nokiatech.github.io/heif)
+- [MPEG ISOBMFF 'MP4' - ISO/IEC 14496-12](https://www.iso.org/standard/83102.html) - Defines the file format and structure.
+- [MPEG point cloud compression](https://mpeg-pcc.org)
+- [MPEG-H Audio a Next Generation Audio (NGA) codec - ISO/IEC 23008-3](https://www.iso.org/standard/83525.html) - Defines the compressed audio format MPEG-H Audio a Next Generation Audio (NGA) codec.
+- [The H.264 Sequence Parameter Set](https://www.cardinalpeak.com/the-h-264-sequence-parameter-set) - This is a follow-up to my World's Smallest H.264 Encoder post. I've received several emails asking about precise details of things in two entities in the H.264 bitstream: the Sequence Parameter Set (SPS) and the Picture Parameter Set (PPS). Both entities contain information that an H.264 decoder needs to decode the video data, for example,..
+- [Video Coding - BBC R&D](https://www.bbc.co.uk/rd/projects/video-coding) - BBC video encoding R&D home page.
+- [VP9 Bitstream & Decoding Process Specification v0.6](https://storage.googleapis.com/downloads.webmproject.org/docs/vp9/vp9-bitstream-specification-v0.6-20160331-draft.pdf) - Official Google draft bitstream and decoding process specification for VP9.
+
 ### Adaptive Streaming Standards
 
 - [AV1 Rtp Spec](https://github.com/AOMediaCodec/av1-rtp-spec) - Current draft (HTML): HTTPS://aomediacodec.GitHub.io/av1-rtp-spec/.
@@ -2711,72 +2241,37 @@ The solution supports:
 - [SCTE](https://github.com/jamesfining/scte) - Python library to work with SCTE standards.
 - [The Real-Time Messaging Protocol Explained](https://www.wowza.com/blog/rtmp-streaming-real-time-messaging-protocol)
 
-#### HLS
+### Industry Forums & Standards Bodies
 
-- [Apple HLS - IETF RFC8216](https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis) - Defines both the metadata structure and some client/server requirements.
-- [draft-pantos-hls-rfc8216bis-00 - HTTP Live Streaming 2nd Edition](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis-00#section-5.1)
-- [HLS Authoring Specification for Apple Devices | Apple Developer Documentation](https://developer.apple.com/documentation/http_live_streaming/hls_authoring_specification_for_apple_devices)
-
-#### DASH
-
-- [DASH-IF IOPs](https://dashif.org/guidelines)
-- [Dashif Conformance](https://conformance.dashif.org) - The DASH Industry Forum provides a conformance tool to validate MPEG-DASH content against the DASH standard.
-- [ISO/IEC 23009-1:2019](https://www.iso.org/standard/75485.html) - Information technology - Dynamic adaptive streaming over HTTP (DASH) - Part 1: Media presentation description and segment formats.
-- [MPEG DASH - ISO/IEC 23009-01](https://www.iso.org/standard/83314.html) - Defines both the metadata structure and associated media format(s).
-- [Opus Dash](https://github.com/webmproject/opus-dash) - Specification for Encapsulating Opus Audio in ISO-BMFF Container.
-
-#### Official Specs
-
-- [latest HLS Spec](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis-08)
+- [Awesome Broadcasting](https://github.com/ebu/awesome-broadcasting) - A curated list of amazingly awesome open source resources related to broadcast technologies.
+- [CTA | WAVE Project](https://cta.tech/Resources/Standards/WAVE-Project) - The WAVE (Web Application Video Ecosystem) Project, hosted by the Consumer Technology Association (CTA)®, aims to improve how internet-delivered commercial video is handled on consumer electronics devices and to make it easier for content creators to distribute video to those devices.
+- [EBU Evaluations of Multichannel Audio Codecs](https://tech.ebu.ch/docs/tech/tech3324.pdf)
+- [Home | Streaming Video Alliance](https://www.streamingvideoalliance.org) - Making Streaming Video Better Streaming video is exploding in popularity. Consumers are watching more video online across a myriad of devices. But, the streaming experiences, across providers, can be wildly different from each other which ultimately hurts adoption. The problem is a lack of colla ..
+- [Official Registration Authority for the ISOBMFF family of standards](https://mp4ra.org)
+- [SRT Alliance](https://www.srtalliance.org) - Home page for the SRT protocol.
 
 ## Community & Events
 
+### Events & Conferences
+
 - [2025 NAB Show: CineCentral](https://www.tvtechnology.com/features/2025-nab-show-cinecentral-fuses-tools-and-technique) - The 2025 NAB Show's CineCentral focuses on the interplay between tools and techniques in storytelling across media formats. It offers hands-on education through live demos, expert-led training, and interactive workshops, covering topics like scene blocking, emotional camera work, and technical skills essential for video production.
 - [ACM Mile-High Video 2025](https://www.mile-high.video/technical-program) - Conference features a comprehensive technical program covering topics such as CDN-based video streaming, content-adaptive encoding, video enhancement, AI-generated content, and film grain technology. It includes presentations, panels, and discussions led by industry experts.
-- [AOSP and AAOS Meetup Archive](https://aospandaaos.github.io/meetup.html) - A comprehensive archive of meetings focused on the Android Open Source Project (AOSP) and Android Automotive OS (AAOS). The archive includes slides and videos from various talks, providing valuable insights into Android development and related technologies.
-- [Apple Developer Forums - Media Technologies](https://developer.apple.com/forums/topics/media-technologies/streaming) - Apple's Developer Forums offer a dedicated section for Media Technologies, including streaming. Developers can engage in discussions about HTTP Live Streaming (HLS), AVFoundation, and other Apple media technologies, making it a crucial resource for those developing on Apple platforms.
-- [Atlanta Tech Resources](https://github.com/citizen00147/atlanta-tech-resources) - A curated collection of groups, events, and opportunities for developers in the Atlanta, GA area. This repository serves as a comprehensive guide to active tech meetups, affordable conventions, and networking opportunities, making it easier for developers to connect and collaborate.
-- [Awesome Tech Communities](https://github.com/MartinRosenberg/Awesome-Tech-Communities) - A curated list of tech communities across various regions, including those focused on video technology. This resource helps developers find and connect with local and global tech groups, fostering collaboration and knowledge sharing.
-- [Bay Area Tech Meetups](https://github.com/elizabethsiegle/Bay_Area_tech_meetups) - A comprehensive list of tech meetups in the San Francisco Bay Area, covering topics like mobile development, iOS, AI, and more. It provides details on meetup topics, locations, and schedules, aiding developers in finding relevant community events.
-- [Bitmovin Community Site](https://bitmovin.com/blog/video-technology-developers) - Bitmovin's community site offers a wealth of public projects, open and solved questions, forums, and hundreds of resources for video technology developers. It's an excellent location to exchange information with peers and share opinions about Bitmovin's products and video streaming technologies.
-- [BOS Video Technology Meetup](https://www.meetup.com/bos-video-technology) - In Boston is for individuals interested in the technology behind video playback, storage, and delivery. Topics include HTML5 video, streaming, transcoding, codecs, advertising, open standards, and CDNs. The group focuses on the engineering aspects of video technology.
 - [Brightcove Global Streaming Technology Summit 2023](https://webinar.brightcovegallery.com/bcovkorea2023-en) - Held on December 14, 2023, focused on how media companies in South Korea can expand their global footprint using the latest streaming technologies. The event featured discussions on the global FAST market, choosing the right streaming solutions, and the importance of streaming technology for global success.
-- [Canon Video Forums](https://community.usa.canon.com/t5/Video/ct-p/videosolutions) - Provide a platform for discussions related to Canon's video products, including camcorders, professional video equipment, and video accessories. Users can seek advice, share experiences, and discuss technical aspects, making it a valuable community for developers and professionals working with Canon's video technology.
-- [CNCF Community Groups](https://github.com/cncf/communitygroups) - Managed by the Cloud Native Computing Foundation, this repository organizes community groups (formerly meetups) focused on cloud-native technologies. It offers resources for organizing and participating in community events, including training sessions and support for event management.
-- [Codec Developers - Google Groups](https://groups.google.com/a/webmproject.org/g/codec-devel) - The Codec Developers Google Group is a mailing list for discussions related to codec development, including topics on libvpx and AV1. It's a platform for developers to share information, ask questions, and collaborate on codec-related projects.
-- [ConferenceXP](https://github.com/conferencexp/conferencexp) - An open-source video conferencing and collaboration platform developed by Microsoft Research. It supports low-latency, high-fidelity conferencing applications and is optimized for multicast networks, making it suitable for academic, government, and research networks.
-- [Creative COW](https://creativecow.net) - A website of support communities for digital video, video editing, and media production professionals in broadcasting, motion graphics, visual effects, and film. It provides over 60 online support discussion forums spanning a wide range of professional video tools and software, along with over 1,000 free text and video tutorials, podcasts, and other resources for video professionals.
 - [Demuxed 2017](https://www.youtube.com/watch?v=PSdhW-R9u6s&list=PLkyaYNWEKcOfntbMd6KtHhF7qpL9hj6of) - 2017 Demuxed talks & presentations.
+- [Demuxed 2018](https://www.youtube.com/watch?v=bfK_f7GBA8s&list=PLkyaYNWEKcOfARqEht42i1P4kBemzEV2V) - 2018  Demuxed talks & presentations.
+- [Demuxed 2019](https://m.youtube.com/playlist?list=PLkyaYNWEKcOf_C_6W45abNvXMb40xUUqh) - 2019 Demuxed talks & presentations.
+- [Demuxed 2021](https://www.youtube.com/playlist?list=PLkyaYNWEKcOfD1GYFxFbZXDP03XM-cZPg) - 2021 Demuxed talks & presentations.
+- [Demuxed 2022](https://www.youtube.com/playlist?list=PLkyaYNWEKcOf98lZxnCcL6y7ZIVU3oSYO) - 2022 Demuxed talks & presentations.
 - [Demuxed 2024](https://2024.demuxed.com) - Demuxed is a conference for video engineers focusing on video technology, encompassing topics from encoding to delivery and playback. Originating from the SF Video Technology meetup, it aims to create a community for engineers building the technology powering video. The event features discussions on various aspects of video engineering and is organized by a community-led group with support from Mux.
-- [Denver Video Technology Meetup](https://www.meetup.com/Denver-Digital-Video) - For individuals interested in the technology behind video and video publishing, focusing on software development. Topics include video streaming, transcoding, codecs, and open standards, emphasizing the software aspects of video technology.
-- [Digital Video Forum – The Digital FAQ](https://www.digitalfaq.com/forum/video) - The Digital Video Forum on The Digital FAQ website offers discussions on DVD and Blu-ray creation, video hardware repair, videography, and blank media. It includes sub-forums for project planning, workflows, capturing, editing, encoding, and authoring, providing a comprehensive resource for developers and professionals in video streaming and encoding.
-- [Digital Video Information Network (DVinfo.net)](https://www.dvinfo.net) - DVinfo.net is a platform offering forums and resources focused on digital video technology, including discussions on video cameras, editing software, and production techniques. It's a valuable resource for developers seeking information on video streaming and encoding technologies.
-- [Digital Video Talk Forum](https://www.dpreview.com/forums/1045) - Hosted by Digital Photography Review, this forum is dedicated to discussions on digital video capture and processing, encompassing topics from digital still cameras to camcorders. It's a valuable resource for sharing knowledge and troubleshooting video-related issues.
-- [Digital Video Talk Forum on DPReview](https://www.dpreview.com/forums/1009) - A community where videographers and video editors discuss topics related to videography, video editing, and equipment. It's a valuable platform for sharing knowledge and seeking advice on video production.
-- [Doom9's Forum](https://forum.doom9.org) - A longstanding community dedicated to digital audio and video manipulation. It hosts discussions on various video encoding tools and codecs, including x264, AviSynth, and MeGUI. The forum is frequented by developers and enthusiasts, making it a rich resource for technical insights and support.
-- [Doom9's Forum - Video Encoding Section](https://forum.doom9.org/forumdisplay.php?f=17) - An online forum dedicated to discussions on digital audio and video manipulation, including video encoding. It serves as a hub for major video encoding tools and technologies, offering a wealth of information and community support.
-- [DV Info Net Forums](https://www.dvinfo.net/forum) - A community dedicated to digital video production, covering topics such as camera systems, editing software, and production techniques. It provides a platform for professionals and enthusiasts to share knowledge, ask questions, and discuss the latest developments in video technology.
-- [DVXuser Forums](https://www.dvxuser.com) - DVXuser is a forum community focused on digital video production, covering topics from camera equipment to editing software. It's a valuable resource for developers interested in video streaming and encoding, offering discussions and insights from industry professionals.
 - [Future of Video: Business of Streaming](https://www.parksassociates.com/event/future-of-video) - Scheduled for November 18-20, 2025, in Marina del Rey, California, this conference covers key topics in connected entertainment and video services. It includes an interactive research workshop on consumer viewing habits and offers multiple sponsorship opportunities for brand promotion within the streaming video industry.
 - [GITEX Asia 2025](https://gitexasia.com) - A technology conference and exhibition tailored to the Asian market, bringing together businesses, governments, and innovators to explore new technologies influencing the digital world. The event features over 500 speakers addressing topics such as AI, machine learning, 5G, and smart cities.
 - [Google Cloud Next 2025](https://www.itpro.com/cloud/live/google-cloud-next-2025-all-the-news-and-updates-live) - A conference highlighting Google's advancements in cloud computing and AI, with sessions relevant to video technology developers. The 2025 event introduced new AI tools and infrastructure improvements beneficial for video streaming and encoding applications.
-- [Hybrid Meetup Platform](https://github.com/montevideo-tech/hybrid-meetup-platform) - An open-source project designed to host and run hybrid meetups for the video community. Built by video developers for video developers, it leverages WebRTC technology to facilitate seamless virtual and in-person interactions.
 - [InfoComm 2025](https://www.infocommshow.org/infocomm-2025) - A premier event for audiovisual professionals, featuring a wide range of sessions and exhibits on topics such as automated conference and collaboration solutions, integrating pro video and audio management solutions, and optimizing Zoom Room deployments with Logitech hardware. The event provides opportunities for hands-on education, networking, and exploring the latest innovations in the AV industry.
-- [Kaltura Community Forums](https://forum.kaltura.org/c/community-forums/21) - Provide a platform for developers and users to discuss various aspects of Kaltura's video technology, including APIs, SDKs, and server management. It's a valuable resource for troubleshooting, sharing best practices, and staying updated on Kaltura's offerings.
-- [Level1Techs Forums - Encoding/Compression Video and Audio Mega Thread](https://forum.level1techs.com/t/encoding-compression-video-and-audio-mega-thread/210653) - This mega thread on the Level1Techs Forums is dedicated to discussions about video and audio encoding/compression. It covers various topics, including tools, techniques, and best practices, serving as a valuable resource for developers interested in video streaming and encoding technologies.
-- [Los Angeles Video Technology](https://www.meetup.com/los-angeles-video-technology) - A Los Angeles-based meetup for those interested in the technology behind video and video publishing, covering topics like HTML5 video, streaming, transcoding, codecs, advertising, open standards, virtual reality, 360-degree video, and HDR. The group focuses on the engineering side, offering a platform for developers to exchange ideas and knowledge.
-- [MacRumors Forums - Digital Video Section](https://forums.macrumors.com/forums/digital-video.80) - The MacRumors Forums host a dedicated section for digital video discussions, where users share tips, resources, and experiences related to video technology, including forums for learning about video technologies and recommended forums for digital video.
 - [Microsoft Build 2025](https://build.microsoft.com) - An annual conference by Microsoft aimed at software engineers and web developers, covering topics including video technology. The 2025 event offers sessions on Windows, Azure, and other Microsoft technologies pertinent to video streaming and encoding.
-- [MonteVIDEO Tech Meetup](https://montevideotech.dev) - A community of engineers, developers, and enthusiasts passionate about video technology. The meetup offers events like 'Mate Talks' and 'Summer Camp,' focusing on collaboration, knowledge sharing, and cultural exchange within the video tech community. Topics include video engineering, product design, and development.
 - [Montevideo Video Tech Summer Camp](https://www.qualabs.com/community) - An annual event organized by Qualabs, bringing together video technology professionals for discussions on industry trends, technical challenges, and cultural experiences. The event offers opportunities to learn from experts, share ideas, and build a strong community among video developers.
-- [Movie Studio Zen Forum - Technology Forums](https://www.moviestudiozen.com/forum/technology-forums) - The Technology Forums on Movie Studio Zen provide discussions about computer hardware and electronic equipment used in video production, such as graphics cards, CPUs, cameras, and microphones. It's a community-driven platform for sharing knowledge and troubleshooting video technology-related issues.
 - [NAB Show 2025](https://www.tvtechnology.com/features/welcome-to-the-2025-nab-show-where-the-future-is-now) - Themed 'Welcome to the Future,' is a pivotal event in the media and entertainment industry, showcasing the integration of advanced technologies like AI and cloud computing. It features over 500 speakers and exhibits emphasizing trends such as artificial intelligence, cloud virtualization, the creator economy, sports, and streaming. Highlights include a Sports Summit, hands-on activities with tech giants, and insights into emerging streaming monetization models.
-- [OBS Forums](https://obsproject.com/forum) - Dedicated to discussions around Open Broadcaster Software (OBS), a popular open-source software for video recording and live streaming. The forums include topics on video encoding, hardware compatibility, and troubleshooting, providing a collaborative space for developers and users to share knowledge and solutions.
-- [P2P Audiovisual Resource Pages and Links](https://wiki.p2pfoundation.net/P2P_Audiovisual_Resource_Pages_and_Links) - A comprehensive collection of software and resources for audio and video players, aggregators, web TV, codecs, editing tools, and 3D applications. This resource is valuable for developers seeking tools and information on video streaming and encoding technologies.
-- [Resource Pages and Links to the P2P Audiovisual Net](https://wiki.p2pfoundation.net/Resource_Pages_and_Links_to_the_P2P_Audiovisual_Net) - An extensive list of tools and resources related to online media, remix culture, and technologies like DRM, P2P, and RSS TV. This resource is beneficial for developers interested in the broader context of video streaming and encoding within the P2P framework.
 - [RIST Forum Events](https://www.rist.tv/events) - The RIST Forum hosts various events showcasing and demonstrating RIST interoperability and benefits. These events include webinars, conferences, and exhibitions focused on the Reliable Internet Stream Transport (RIST) protocol, which is essential for secure and reliable transportation of live video over unmanaged networks.
 - [SEGMENTS:2023 by Streaming Video Technology Alliance](https://www.businesswire.com/news/home/20230516005279/en/Streaming-Video-Technology-Alliance-Introduces-New-Industry-Conference-SEGMENTS2023) - SEGMENTS:2023, introduced by the Streaming Video Technology Alliance, was a one-day public conference held on May 16, 2023, in New Orleans. The event provided a comprehensive walkthrough of the streaming video workflow, covering topics from content ingestion to analytics, and featured speakers from over 25 companies discussing challenges and best practices in operating streaming services.
-- [SF Video Technology Meetup](https://www.meetup.com/sf-video-technology) - In San Francisco caters to those interested in the technology behind video and video publishing. Discussions cover HTML5 video, streaming, transcoding, codecs, advertising, and open standards, with a focus on engineering rather than creative aspects.
 - [SIGGRAPH 2025](https://www.siggraph.org) - An annual conference on computer graphics and interactive techniques, featuring presentations on the latest research, technologies, and applications in the field. It includes a trade show, educational courses, and panel discussions relevant to video technology professionals.
 - [Silicon Valley Video Summit 2025](https://svgplay.sportsvideo.org/silicon-valley-video-summit-2025) - An annual exchange of enterprise media know-how, focusing on how video is transforming enterprise communication. The event features sessions on topics like live television production, AI in media creation, virtual production, and immersive experiences. It brings together corporate video producers, technologists, and industry leaders to discuss the latest trends and technologies in video production.
 - [SMPTE Events](https://www.smpte.org/events) - The Society of Motion Picture and Television Engineers (SMPTE) offers a range of events including webcasts, courses, and conferences focused on media and entertainment technology. These events cover topics like high dynamic range, imaging system fundamentals, and the latest industry standards.
@@ -2791,27 +2286,13 @@ The solution supports:
 - [Streaming Video Technology Alliance Q1 2025 Member Meeting](https://www.svta.org/2025/03/07/streaming-video-technology-alliance-tucson-first-quarterly-member-meeting-2025) - The Streaming Video Technology Alliance (SVTA) convened for its Q1 2025 Member Meeting in Tucson, Arizona. The event featured working group sessions, industry presentations, and networking opportunities. Notably, a special project was launched to support NASA's streaming from the moon and beyond, and new members including BBC, EBU, NASA, and Setplex were announced.
 - [Streaming+ at NATPE Global 2025](https://global.natpe.com/2025/streamingplus) - Streaming+ is a dedicated conference strand at NATPE Global 2025 that delves into pressing issues and challenges surrounding the OTT business, content, and consumer experience. The event features keynotes, panel discussions, and networking opportunities with thought leaders and changemakers transforming the streaming industry.
 - [SVTA STREAMups](https://www.svta.org/streaming-video-alliance-streamups-and-meetups) - Streaming Video Technology Alliance (SVTA) organizes STREAMups, which are industry meetups bringing together professionals to discuss critical technical challenges in video streaming. These events foster collaboration and innovation within the video technology community.
-- [Tech Meetups](https://github.com/thisdot/tech-meetups) - A curated list of various tech meetups covering a wide range of topics, including video technology. This resource helps developers find and participate in relevant community events to enhance their skills and network.
 - [The Video Consortium Gatherings and Workshops](https://videoconsortium.org/events) - The Video Consortium hosts industry screenings, happy hours, and professional development workshops for filmmakers. These gatherings are designed to foster community, provide learning opportunities, and support filmmakers in their professional growth.
-- [Twitch Developer Forums](https://discuss.dev.twitch.com) - Provide a platform for developers to discuss and collaborate on Twitch's API, Extensions, and other developer products. It includes categories for announcements, API discussions, and game development integrations, serving as a central hub for developers building on the Twitch platform.
 - [TwitchCon](https://www.twitchcon.com) - A semi-annual convention organized by Twitch Interactive, focusing on the culture of livestreaming, entertainment, esports, and internet culture. It provides opportunities for industry professionals, streamers, and fans to meet, discover new products, and trial upcoming games.
 - [TwitchCon 2025](https://en.wikipedia.org/wiki/TwitchCon) - TwitchCon is a semi-annual convention organized by Twitch Interactive, focusing on livestreaming, entertainment, esports, and internet culture. The 2025 events are scheduled for May 31 - June 1 in Rotterdam and October 17-19 in San Diego, marking the 10th anniversary of TwitchCon. The convention allows community members to meet streamers, discover new products, and trial upcoming games.
 - [VidCon](https://vidcon.com) - An annual convention for influencers, fans, executives, and online brands, primarily featuring prominent video stars from across the internet. Founded by veteran YouTube creators John and Hank Green, VidCon has expanded internationally with events in Singapore, Abu Dhabi, Mexico City, Australia, and São Paulo. The convention includes panels, workshops, and meet-and-greets, focusing on online video content creation and community building.
 - [VidCon 2025](https://en.wikipedia.org/wiki/VidCon) - VidCon is an annual convention for influencers, fans, executives, and online brands, featuring prominent video stars from across the internet. The 2025 event is scheduled for June 19-21 at the Anaheim Convention Center in California, offering a platform for networking and learning about online video trends.
-- [Video Tech NYC](https://www.meetup.com/video-tech-nyc) - A meetup group in New York City for individuals interested in the technology behind video and online video publishing, covering topics like HTML5 video, streaming, transcoding, codecs, advertising, open standards, video testing pipelines, VR/360, and analytics. The focus is on the engineering aspects, though creatives are also welcome.
-- [Videography](https://www.reddit.com/r/Videography) - R/Videography is a subreddit dedicated to videography discussions, where members share insights, ask questions, and provide feedback on video projects. It's a dynamic community suitable for developers interested in video streaming and encoding tools, offering real-world experiences and advice.
-- [VideoHelp Forum](https://forum.videohelp.com) - A comprehensive platform covering a wide range of topics related to video technology, including video conversion, editing, authoring, and capturing. It serves as a valuable resource for developers and enthusiasts seeking advice, tutorials, and discussions on various video-related tools and techniques.
-- [Videomaker Community](https://www.videomaker.com/l/connect) - Videomaker's community offers forums and resources for videographers of all skill levels. It provides discussions on video production techniques, equipment reviews, and post-production tips, serving as a valuable platform for learning and networking.
 - [VideoTech 2023 Conference](https://vtconf.com/en/archive/2023) - VideoTech 2023 was a conference on video technologies held online from November 16-17 and in Moscow from November 20-21, 2023. The event featured a diverse lineup of speakers from companies like VK, Yandex, and Huawei, covering topics related to video technology advancements and industry trends.
 - [VideoTech 2025](https://vtconf.com/en) - A conference for video technology enthusiasts scheduled for September 2025 in Moscow and online. It covers topics from video production to distribution, including encoding, decoding, delivery, and the application of ML and AI in video technologies. The event aims to develop a professional community of engineers in the field.
-- [Wowza Community](https://community.wowza.com) - A comprehensive forum for users of Wowza's streaming solutions, including Wowza Streaming Engine and Wowza Video. It offers sections for troubleshooting, developer discussions, and product announcements, making it a valuable resource for developers working with Wowza's tools.
-
-### Events & Conferences
-
-- [Demuxed 2018](https://www.youtube.com/watch?v=bfK_f7GBA8s&list=PLkyaYNWEKcOfARqEht42i1P4kBemzEV2V) - 2018  Demuxed talks & presentations.
-- [Demuxed 2019](https://m.youtube.com/playlist?list=PLkyaYNWEKcOf_C_6W45abNvXMb40xUUqh) - 2019 Demuxed talks & presentations.
-- [Demuxed 2021](https://www.youtube.com/playlist?list=PLkyaYNWEKcOfD1GYFxFbZXDP03XM-cZPg) - 2021 Demuxed talks & presentations.
-- [Demuxed 2022](https://www.youtube.com/playlist?list=PLkyaYNWEKcOf98lZxnCcL6y7ZIVU3oSYO) - 2022 Demuxed talks & presentations.
 
 #### Podcasts & Webinars
 
@@ -2828,9 +2309,48 @@ The solution supports:
 
 ### Community Groups
 
+- [AOSP and AAOS Meetup Archive](https://aospandaaos.github.io/meetup.html) - A comprehensive archive of meetings focused on the Android Open Source Project (AOSP) and Android Automotive OS (AAOS). The archive includes slides and videos from various talks, providing valuable insights into Android development and related technologies.
+- [Apple Developer Forums - Media Technologies](https://developer.apple.com/forums/topics/media-technologies/streaming) - Apple's Developer Forums offer a dedicated section for Media Technologies, including streaming. Developers can engage in discussions about HTTP Live Streaming (HLS), AVFoundation, and other Apple media technologies, making it a crucial resource for those developing on Apple platforms.
+- [Atlanta Tech Resources](https://github.com/citizen00147/atlanta-tech-resources) - A curated collection of groups, events, and opportunities for developers in the Atlanta, GA area. This repository serves as a comprehensive guide to active tech meetups, affordable conventions, and networking opportunities, making it easier for developers to connect and collaborate.
+- [Awesome Tech Communities](https://github.com/MartinRosenberg/Awesome-Tech-Communities) - A curated list of tech communities across various regions, including those focused on video technology. This resource helps developers find and connect with local and global tech groups, fostering collaboration and knowledge sharing.
+- [Bay Area Tech Meetups](https://github.com/elizabethsiegle/Bay_Area_tech_meetups) - A comprehensive list of tech meetups in the San Francisco Bay Area, covering topics like mobile development, iOS, AI, and more. It provides details on meetup topics, locations, and schedules, aiding developers in finding relevant community events.
+- [Bitmovin Community Site](https://bitmovin.com/blog/video-technology-developers) - Bitmovin's community site offers a wealth of public projects, open and solved questions, forums, and hundreds of resources for video technology developers. It's an excellent location to exchange information with peers and share opinions about Bitmovin's products and video streaming technologies.
+- [BOS Video Technology Meetup](https://www.meetup.com/bos-video-technology) - In Boston is for individuals interested in the technology behind video playback, storage, and delivery. Topics include HTML5 video, streaming, transcoding, codecs, advertising, open standards, and CDNs. The group focuses on the engineering aspects of video technology.
+- [Canon Video Forums](https://community.usa.canon.com/t5/Video/ct-p/videosolutions) - Provide a platform for discussions related to Canon's video products, including camcorders, professional video equipment, and video accessories. Users can seek advice, share experiences, and discuss technical aspects, making it a valuable community for developers and professionals working with Canon's video technology.
+- [CNCF Community Groups](https://github.com/cncf/communitygroups) - Managed by the Cloud Native Computing Foundation, this repository organizes community groups (formerly meetups) focused on cloud-native technologies. It offers resources for organizing and participating in community events, including training sessions and support for event management.
+- [Codec Developers - Google Groups](https://groups.google.com/a/webmproject.org/g/codec-devel) - The Codec Developers Google Group is a mailing list for discussions related to codec development, including topics on libvpx and AV1. It's a platform for developers to share information, ask questions, and collaborate on codec-related projects.
+- [ConferenceXP](https://github.com/conferencexp/conferencexp) - An open-source video conferencing and collaboration platform developed by Microsoft Research. It supports low-latency, high-fidelity conferencing applications and is optimized for multicast networks, making it suitable for academic, government, and research networks.
+- [Creative COW](https://creativecow.net) - A website of support communities for digital video, video editing, and media production professionals in broadcasting, motion graphics, visual effects, and film. It provides over 60 online support discussion forums spanning a wide range of professional video tools and software, along with over 1,000 free text and video tutorials, podcasts, and other resources for video professionals.
+- [Denver Video Technology Meetup](https://www.meetup.com/Denver-Digital-Video) - For individuals interested in the technology behind video and video publishing, focusing on software development. Topics include video streaming, transcoding, codecs, and open standards, emphasizing the software aspects of video technology.
+- [Digital Video Forum – The Digital FAQ](https://www.digitalfaq.com/forum/video) - The Digital Video Forum on The Digital FAQ website offers discussions on DVD and Blu-ray creation, video hardware repair, videography, and blank media. It includes sub-forums for project planning, workflows, capturing, editing, encoding, and authoring, providing a comprehensive resource for developers and professionals in video streaming and encoding.
+- [Digital Video Information Network (DVinfo.net)](https://www.dvinfo.net) - DVinfo.net is a platform offering forums and resources focused on digital video technology, including discussions on video cameras, editing software, and production techniques. It's a valuable resource for developers seeking information on video streaming and encoding technologies.
+- [Digital Video Talk Forum](https://www.dpreview.com/forums/1045) - Hosted by Digital Photography Review, this forum is dedicated to discussions on digital video capture and processing, encompassing topics from digital still cameras to camcorders. It's a valuable resource for sharing knowledge and troubleshooting video-related issues.
+- [Digital Video Talk Forum on DPReview](https://www.dpreview.com/forums/1009) - A community where videographers and video editors discuss topics related to videography, video editing, and equipment. It's a valuable platform for sharing knowledge and seeking advice on video production.
+- [Doom9's Forum](https://forum.doom9.org) - A longstanding community dedicated to digital audio and video manipulation. It hosts discussions on various video encoding tools and codecs, including x264, AviSynth, and MeGUI. The forum is frequented by developers and enthusiasts, making it a rich resource for technical insights and support.
+- [Doom9's Forum - Video Encoding Section](https://forum.doom9.org/forumdisplay.php?f=17) - An online forum dedicated to discussions on digital audio and video manipulation, including video encoding. It serves as a hub for major video encoding tools and technologies, offering a wealth of information and community support.
+- [DV Info Net Forums](https://www.dvinfo.net/forum) - A community dedicated to digital video production, covering topics such as camera systems, editing software, and production techniques. It provides a platform for professionals and enthusiasts to share knowledge, ask questions, and discuss the latest developments in video technology.
+- [DVXuser Forums](https://www.dvxuser.com) - DVXuser is a forum community focused on digital video production, covering topics from camera equipment to editing software. It's a valuable resource for developers interested in video streaming and encoding, offering discussions and insights from industry professionals.
 - [FFmpeg Mailing Lists & IRC (Official)](https://ffmpeg.org/mailing-list-faq.html) - Official FFmpeg community channels: FFmpeg-devel (patch review), FFmpeg-user (help), libav-user mailing lists, plus IRC channel info.
+- [Hybrid Meetup Platform](https://github.com/montevideo-tech/hybrid-meetup-platform) - An open-source project designed to host and run hybrid meetups for the video community. Built by video developers for video developers, it leverages WebRTC technology to facilitate seamless virtual and in-person interactions.
+- [Kaltura Community Forums](https://forum.kaltura.org/c/community-forums/21) - Provide a platform for developers and users to discuss various aspects of Kaltura's video technology, including APIs, SDKs, and server management. It's a valuable resource for troubleshooting, sharing best practices, and staying updated on Kaltura's offerings.
+- [Level1Techs Forums - Encoding/Compression Video and Audio Mega Thread](https://forum.level1techs.com/t/encoding-compression-video-and-audio-mega-thread/210653) - This mega thread on the Level1Techs Forums is dedicated to discussions about video and audio encoding/compression. It covers various topics, including tools, techniques, and best practices, serving as a valuable resource for developers interested in video streaming and encoding technologies.
+- [Los Angeles Video Technology](https://www.meetup.com/los-angeles-video-technology) - A Los Angeles-based meetup for those interested in the technology behind video and video publishing, covering topics like HTML5 video, streaming, transcoding, codecs, advertising, open standards, virtual reality, 360-degree video, and HDR. The group focuses on the engineering side, offering a platform for developers to exchange ideas and knowledge.
+- [MacRumors Forums - Digital Video Section](https://forums.macrumors.com/forums/digital-video.80) - The MacRumors Forums host a dedicated section for digital video discussions, where users share tips, resources, and experiences related to video technology, including forums for learning about video technologies and recommended forums for digital video.
+- [MonteVIDEO Tech Meetup](https://montevideotech.dev) - A community of engineers, developers, and enthusiasts passionate about video technology. The meetup offers events like 'Mate Talks' and 'Summer Camp,' focusing on collaboration, knowledge sharing, and cultural exchange within the video tech community. Topics include video engineering, product design, and development.
+- [Movie Studio Zen Forum - Technology Forums](https://www.moviestudiozen.com/forum/technology-forums) - The Technology Forums on Movie Studio Zen provide discussions about computer hardware and electronic equipment used in video production, such as graphics cards, CPUs, cameras, and microphones. It's a community-driven platform for sharing knowledge and troubleshooting video technology-related issues.
+- [OBS Forums](https://obsproject.com/forum) - Dedicated to discussions around Open Broadcaster Software (OBS), a popular open-source software for video recording and live streaming. The forums include topics on video encoding, hardware compatibility, and troubleshooting, providing a collaborative space for developers and users to share knowledge and solutions.
+- [P2P Audiovisual Resource Pages and Links](https://wiki.p2pfoundation.net/P2P_Audiovisual_Resource_Pages_and_Links) - A comprehensive collection of software and resources for audio and video players, aggregators, web TV, codecs, editing tools, and 3D applications. This resource is valuable for developers seeking tools and information on video streaming and encoding technologies.
+- [Resource Pages and Links to the P2P Audiovisual Net](https://wiki.p2pfoundation.net/Resource_Pages_and_Links_to_the_P2P_Audiovisual_Net) - An extensive list of tools and resources related to online media, remix culture, and technologies like DRM, P2P, and RSS TV. This resource is beneficial for developers interested in the broader context of video streaming and encoding within the P2P framework.
+- [SF Video Technology Meetup](https://www.meetup.com/sf-video-technology) - In San Francisco caters to those interested in the technology behind video and video publishing. Discussions cover HTML5 video, streaming, transcoding, codecs, advertising, and open standards, with a focus on engineering rather than creative aspects.
 - [SVT-AV1 GitHub Discussions](https://github.com/AOMediaCodec/SVT-AV1/discussions) - De facto community hub for SVT-AV1 encoder development, tuning, and troubleshooting discussion.
+- [Tech Meetups](https://github.com/thisdot/tech-meetups) - A curated list of various tech meetups covering a wide range of topics, including video technology. This resource helps developers find and participate in relevant community events to enhance their skills and network.
+- [Twitch Developer Forums](https://discuss.dev.twitch.com) - Provide a platform for developers to discuss and collaborate on Twitch's API, Extensions, and other developer products. It includes categories for announcements, API discussions, and game development integrations, serving as a central hub for developers building on the Twitch platform.
 - [Video Dev — video engineers community hub](https://www.video-dev.org) - Community hub for video engineers with an open-source focus, gateway to the video-dev Slack and events like Demuxed.
+- [Video Tech NYC](https://www.meetup.com/video-tech-nyc) - A meetup group in New York City for individuals interested in the technology behind video and online video publishing, covering topics like HTML5 video, streaming, transcoding, codecs, advertising, open standards, video testing pipelines, VR/360, and analytics. The focus is on the engineering aspects, though creatives are also welcome.
+- [Videography](https://www.reddit.com/r/Videography) - R/Videography is a subreddit dedicated to videography discussions, where members share insights, ask questions, and provide feedback on video projects. It's a dynamic community suitable for developers interested in video streaming and encoding tools, offering real-world experiences and advice.
+- [VideoHelp Forum](https://forum.videohelp.com) - A comprehensive platform covering a wide range of topics related to video technology, including video conversion, editing, authoring, and capturing. It serves as a valuable resource for developers and enthusiasts seeking advice, tutorials, and discussions on various video-related tools and techniques.
+- [Videomaker Community](https://www.videomaker.com/l/connect) - Videomaker's community offers forums and resources for videographers of all skill levels. It provides discussions on video production techniques, equipment reviews, and post-production tips, serving as a valuable platform for learning and networking.
+- [Wowza Community](https://community.wowza.com) - A comprehensive forum for users of Wowza's streaming solutions, including Wowza Streaming Engine and Wowza Video. It offers sections for troubleshooting, developer discussions, and product announcements, making it a valuable resource for developers working with Wowza's tools.
 
 #### Slack & Meetups
 
@@ -2840,6 +2360,288 @@ The solution supports:
 
 - [r/AV1 Subreddit](https://www.reddit.com/r/AV1) - Active community for AV1 codec news, encoder benchmarks, and settings discussion.
 - [Reddit r/videostreaming](https://www.reddit.com/r/videostreaming) - A subreddit dedicated to video streaming technology. Community members share knowledge, ask questions, and discuss streaming protocols, encoding settings, and tools.
+
+## Infrastructure & Delivery
+
+- [Amazon CloudFront Streaming Tutorials](https://aws.amazon.com/cloudfront/streaming) - Amazon CloudFront offers detailed tutorials and best practices for implementing video streaming workflows using their CDN services. These resources guide developers through setting up scalable, distributed architectures for ingesting, storing, processing, and delivering video content efficiently.
+- [Ant Media Server](https://antmedia.io) - A highly scalable real-time video streaming platform that supports live and on-demand streaming with ultra-low latency. It offers compatibility with various cloud networks, including AWS, Azure, GCP, and Oracle Cloud, and provides SDKs for multiple platforms to facilitate broad audience reach.
+- [Apache Traffic Control](https://trafficcontrol.apache.org) - An open source CDN control plane originally contributed by Comcast. Apache Traffic Control can create a CDN with edge cache servers (like Apache Traffic Server) and provides tooling to manage content delivery, making it useful for building an edge caching infrastructure for video.
+- [Apache Traffic Server](https://trafficserver.apache.org) - An open source HTTP/1.1 and HTTP/2 caching proxy server that can be used as an edge cache in video streaming content delivery networks (CDNs) to improve scalability.
+- [API.video](https://api.video) - A cloud-based video platform that allows developers to integrate video functionalities into their applications seamlessly. It offers services for video uploading, hosting, transcoding, and delivery, enabling on-demand and live-streaming capabilities. The platform is designed for scalability and ease of use, making it suitable for developers looking to incorporate video features without managing complex infrastructure.
+- [Ateme](https://www.ateme.com) - A multinational company specializing in video compression, CDN/streaming, cloud recording, and advertising. They develop software for video compression based on standards like MPEG2, H.264/AVC, H.265/HEVC, AV1, and H.266/VVC. Ateme's solutions are used by content providers, broadcasters, and streaming providers for delivery over various networks, offering tools for efficient video processing and delivery.
+- [Ateme KYRION](https://www.ateme.com/products/kyrion) - Ateme's KYRION is a high-quality, ultra-low-latency encoding and decoding appliance. It is designed for live video delivery, providing broadcasters and service providers with reliable and efficient solutions for real-time content distribution.
+- [Ateme NEA](https://www.ateme.com/products/nea) - Ateme's NEA is a software suite that provides origin, packaging, storage, analytics, and CDN capabilities. It enables efficient content delivery over various networks, including cable, satellite, IPTV, terrestrial, and OTT, supporting formats like MPEG2-TS, HLS, and DASH.
+- [Ateme PILOT](https://www.ateme.com/products/pilot) - Ateme's PILOT is a management and operations software suite that facilitates the deployment and monitoring of video delivery services. It offers tools for resource management, service orchestration, and operational analytics, ensuring optimal performance and reliability.
+- [AVideo CDN Storage](https://github.com/WWBN/AVideo/wiki/CDN-Storage) - AVideo offers a CDN Storage solution that automatically replicates video files globally, ensuring low latency and high throughput for video streaming. It provides infinite scalability, strategic positioning of data, and direct CDN integration, making it valuable for developers seeking efficient content delivery.
+- [AWS CDN Video Streaming Service](https://github.com/Shereefo/AWS-CDN-Video-Streaming-Service) - This project leverages Amazon S3, Amazon CloudFront, and React to build a scalable and efficient video streaming service. It allows users to view a variety of streaming content through a web-based interface, ensuring optimized security, performance, and reliability through AWS's global network of data centers.
+- [AWS Elemental Media Services](https://aws.amazon.com/media) - Offer a suite of cloud-based solutions for video processing and delivery, including live and on-demand streaming. These services enable scalable, secure, and cost-effective video workflows, making them valuable for developers building video streaming and encoding applications.
+- [AWS Elemental MediaConnect](https://aws.amazon.com/mediaconnect/features) - A reliable, secure, and flexible transport service for live video that enables broadcasters and content owners to build live video workflows and securely share live content with partners and customers. It supports a range of protocols for video delivery, including Zixi, RIST, SRT, RTP, and RTP with FEC, facilitating high-quality video sharing and real-time monitoring.
+- [AWS Elemental MediaConvert](https://aws.amazon.com/mediaconvert) - A file-based video transcoding service that allows for the conversion of content into different formats to ensure compatibility across multiple playback devices. It provides comprehensive cloud-based video processing solutions, including encoding, transcoding, packaging, and live streaming services.
+- [AWS Elemental MediaLive](https://aws.amazon.com/medialive) - A cloud-based live video processing service that enables users to encode live video streams for broadcast and streaming to various devices. It integrates seamlessly with other AWS services to create a comprehensive video processing pipeline in the cloud.
+- [AWS Elemental MediaPackage](https://aws.amazon.com/mediapackage) - A video origination and just-in-time packaging service that allows users to securely and reliably deliver live and on-demand video content to a wide range of devices. It supports multiple delivery formats, content protection mechanisms, and integrates with other AWS services to build scalable video workflows.
+- [AWS Elemental MediaTailor](https://aws.amazon.com/mediatailor) - A content personalization and monetization service that allows users to serve targeted ads to viewers while maintaining broadcast-quality streaming. It supports server-side ad insertion, ensuring a seamless viewing experience across devices, and integrates with other AWS services for comprehensive video workflows.
+- [AWS Media & Entertainment Cloud Solutions](https://aws.amazon.com/media/resources) - AWS offers a range of cloud solutions tailored for media and entertainment, including OTT video workflows, live sports workflows, machine learning and analytics for media, and monetization of video workflows. These solutions enable developers to build secure, scalable, and integrated video streaming infrastructures, focusing on innovation rather than infrastructure management.
+- [AWS Media Services](https://aws.amazon.com/media-services) - Offer a suite of cloud-based services that enable the creation, transformation, and delivery of digital content. These services include AWS Elemental MediaConnect for live video transport, AWS Elemental MediaConvert for file-based video transcoding, and AWS Elemental MediaLive for live video processing. They provide scalable and flexible solutions for video streaming and encoding, allowing developers to build and adapt video workflows quickly without the overhead of managing physical infrastructure.
+- [BemTV](https://github.com/streamroot/bemtv) - An open-source P2P library tailored for the HTTP Live Streaming (HLS) protocol. It introduces a hybrid CDN/P2P architecture for live video broadcasts over the internet, leveraging WebRTC to decentralize delivery. This approach reduces the number of requests to CDN servers, thereby decreasing transmission costs and enhancing system scalability. BemTV is valuable for developers exploring peer-to-peer solutions to scale live video streaming without external plugins.
+- [Bitmovin](https://bitmovin.com) - Cloud-based video encoding and player solutions, offering high-quality streaming experiences with support for various codecs and formats. It enables efficient video workflows with features like adaptive streaming and analytics.
+- [Bitmovin CDN Output](https://developer.bitmovin.com/encoding/docs/bitmovin-cdn-output) - Bitmovin's Content Delivery Network (CDN) simplifies content distribution by automatically distributing your encoded content globally. It removes the need to set up your own output storage, enabling fast and efficient delivery to viewers without additional effort.
+- [Bitmovin Encoding API](https://bitmovin.com/encoding) - Bitmovin's Encoding API offers cloud-based video encoding services that support a wide range of codecs and formats. It provides high-speed encoding with features like per-title encoding, multi-codec streaming, and DRM integration. This API is designed for developers seeking efficient and scalable video encoding solutions in the cloud.
+- [Bitmovin Streams](https://bitmovin.com/video-streaming-apis-sdks-ovps-explained) - A cloud-based video streaming solution that simplifies the process of uploading, encoding, and delivering on-demand and live video content. It features a customizable player, in-depth analytics, and content protection mechanisms, providing developers with an end-to-end streaming infrastructure.
+- [Bitmovin Video Encoding API](https://bitmovin.com/video-encoding) - Bitmovin offers a cloud-based video encoding solution that supports HEVC and VP9 live streaming with up to 60FPS and 4K resolution. It provides containerized video encoding using Docker and Kubernetes, ensuring scalability and flexibility for developers. The platform is known for its in-house development, ease of integration, and high customizability, making it suitable for enterprise-level applications.
+- [Bitmovin Video Streaming APIs and SDKs](https://bitmovin.com/blog/video-streaming-apis-sdks-ovps-explained) - Bitmovin provides video streaming APIs and SDKs that offer comprehensive functionality across encoding, playback, and analytics. Their solutions support per-title encoding, allowing customized settings for each video to ensure high-quality viewing experiences and efficient data usage. Bitmovin's VOD and Live encoders can be deployed on various cloud infrastructures, providing flexibility and cost efficiency. They also offer customizable HTML5 players and SDKs for different platforms.
+- [BlazingCDN](https://blazingcdn.com) - A cloud-based content delivery network optimized for video streaming. It provides low-latency, high-speed delivery of video content to a global audience, ensuring a smooth streaming experience. The platform supports various video formats and integrates with existing video platforms, making it a valuable resource for developers seeking efficient content distribution solutions.
+- [BlazingCDN Integration Best Practices](https://blog.blazingcdn.com/en-us/best-practices-for-cdn-integration-with-existing-it-systems) - BlazingCDN offers a detailed blog post outlining best practices for integrating CDNs with existing IT systems. The article emphasizes seamless integration and configuration, including DNS setup, cache rules, load balancing, and security measures. This resource is beneficial for developers aiming to enhance video streaming services through effective CDN integration.
+- [Brightcove](https://www.brightcove.com) - A cloud-based video platform that provides on-demand and live video streaming, with an emphasis on monetization and marketing. It offers tools for generating followers, driving brand awareness, producing pipeline, increasing income, and interacting with employees.
+- [Brightcove Open Source Projects](https://general.support.brightcove.com/general/brightcove-open-source-projects.html) - A collection of open-source tools and libraries developed by Brightcove to enhance video streaming capabilities. These projects include API wrappers, troubleshooting scripts, and sample applications, providing developers with resources to integrate and manage video content effectively.
+- [Byte Down: Making Netflix’s Data Infrastructure Cost-Effective](https://netflixtechblog.com/byte-down-making-netflixs-data-infrastructure-cost-effective-fee7b3235032) - Netflix engineering blog post describing strategies for reducing data infrastructure costs in large-scale video operations.
+- [BytePlus Live](https://www.byteplus.com/en/topic/86429?title=top-10-tools-for-video-streaming-api-in-2024-byteplus-live-leads-the-pack) - A comprehensive toolkit for creating seamless, scalable video streaming applications. Key features include low-latency video transmission, cross-platform compatibility, adaptive bitrate streaming, advanced analytics and monitoring, and robust security features. BytePlus Live is designed to help developers and SMBs deliver high-quality, real-time video experiences efficiently.
+- [CDN Transcode Sample](https://www.intel.com/content/www/us/en/developer/articles/technical/cdn-transcode-sample-powered-by-open-visual-cloud.html) - Powered by Open Visual Cloud, demonstrates how to integrate media transcoding and streaming services optimized for Intel® Xeon® processors. It utilizes an FFmpeg-based media transcoding stack and an NGINX-based streaming and web hosting stack. This sample is beneficial for developers aiming to build efficient and scalable video streaming solutions with CDN integration.
+- [CDN Video Streaming](https://github.com/shaowenwei/cdn-video-streaming) - This project delves into video streaming via CDN, focusing on implementing adaptive bitrate selection, DNS load balancing, and an HTTP proxy server to stream video efficiently. It provides insights into building a video CDN, making it a valuable resource for developers aiming to enhance their understanding of video content distribution and CDN integration.
+- [CDN Video Uploader and Transcoder](https://github.com/SoftUni/CDN-Video-Uploader) - A tool designed for transcoding and uploading videos to a CDN network for HLS video streaming. It supports various input formats and resolutions, utilizes hardware-accelerated video transcoding, and automates the upload process to the target CDN.
+- [cdnjs](https://cdnjs.com) - A free and open-source content delivery network (CDN) hosted by Cloudflare. It serves over 4,000 JavaScript and CSS libraries, which are stored publicly on GitHub. cdnjs is included in millions of websites, making it the second most popular CDN for JavaScript. It is maintained by the community and sponsored by companies like DigitalOcean, Algolia, Heroku, Atlassian, Sentry, and Lean20.
+- [ClipBucket](https://github.com/arslancb/clipbucket) - An open source video sharing platform (YouTube-like) allowing users to upload, manage, and stream video content on their own server.
+- [Cloud-Based Video Streaming](https://github.com/spatil36/Cloud-Based-Video-Streaming) - This project demonstrates the development of a secure, on-demand video streaming platform using AWS services. It includes a React-based frontend, AWS Cognito for user management, and AWS Media Package for video processing, offering a comprehensive solution for building scalable video streaming applications.
+- [Cloudinary](https://cloudinary.com) - An AI-powered cloud platform that automates the creation, management, and delivery of video with AI and machine learning, accelerating video workflows at scale. It offers features such as multiple-source fetches, uploads, auto-tagging, advanced search, transcription, format and codec selection, content-aware cropping, effects, previews, and thumbnails.
+- [Cloudinary Cloud Video Streaming](https://cloudinary.com/glossary/cloud-video-streaming) - Cloudinary provides cloud-based video streaming services that enable efficient storage and delivery of video content over the internet. It offers features like API access, live streaming, transcoding, and video analytics, allowing developers to integrate and manage video streaming capabilities seamlessly.
+- [Cloudinary Video API](https://cloudinary.com/video_api) - Cloudinary provides a cloud-based video content management solution with APIs for uploading, storing, transcoding, and delivering videos. It offers real-time video manipulation, customizable video players, live streaming capabilities, and AI-based video tagging and transcription, simplifying video workflows for developers.
+- [Cloudinary Video CDN](https://cloudinary.com/guides/web-performance/video-cdn-why-you-need-it-and-top-5-video-cdns) - Cloudinary provides a comprehensive Video CDN solution that enhances video delivery through features like adaptive bitrate streaming, video prefetching for live events, and optimized video formats for various devices. It also offers advanced capabilities such as dynamic overlays, allowing developers to add text, images, or other videos over the main video stream, facilitating personalized and interactive content delivery.
+- [Cloudinary Video Management Platform](https://cloudinary.com/blog/introducing_the_complete_video_solution_for_web_and_mobile_developers) - Cloudinary offers a comprehensive cloud-based video content management solution for developers. It provides APIs and UI widgets for video upload, real-time video transcoding and manipulation via CDN delivery URLs, a customizable video player with user engagement analytics, live video streaming directly from web and mobile apps, and AI-based video tagging and transcription. This platform simplifies the video workflow for web and mobile developers while enhancing the end-user experience.
+- [Coconut Video Encoding API](https://www.coconut.co/features/coconut-api) - A scalable and flexible video encoding API that integrates seamlessly into any existing platform. Coconut harnesses cloud technology to provide a powerful solution for video encoding, supporting multiple regions to ensure low latency.
+- [Dacast Video Streaming Platform](https://www.dacast.com) - Dacast is a comprehensive video streaming platform that integrates with top-tier CDNs to provide reliable and high-quality video delivery. It offers features like video hosting, monetization options, and robust security protocols. Dacast's user-friendly interface and API access make it a valuable tool for developers looking to implement video streaming solutions with CDN support.
+- [datarhei Restreamer](https://datarhei.com) - An open-source video streaming server that provides a simple yet powerful solution for live streaming. It features a fully documented API, making it easy to integrate into various projects. Restreamer is suitable for both personal and commercial applications.
+- [Dionysia](https://github.com/dionysia-dev/dionysia) - A live streaming platform based on open-source software. It integrates various open-source projects to create a seamless experience for video developers, supporting multiple ingest protocols, customizable transcoding profiles, and adaptive bitrate streaming.
+- [DTube](https://d.tube) - A decentralized video platform built on Blockchain (Steem/LBRY), offering an alternative to YouTube where videos are distributed via a peer-to-peer network and Blockchain stores metadata and rewards.
+- [Dynamic Adaptive Streaming over HTTP (DASH)](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) - Also known as MPEG-DASH, is an international standard for adaptive bitrate streaming over HTTP. It enables high-quality streaming of media content by breaking the content into small segments and delivering them over HTTP. DASH is codec-agnostic and supports various container formats, making it versatile for different streaming scenarios. It allows for adaptive bitrate streaming, adjusting the quality of the media stream in real-time based on network conditions and device capabilities, ensuring a smooth viewing experience for users.
+- [Example Project: Video Streaming Platform](https://docs.osaas.io/osaas.wiki/Example-Project%3A-Video-Streaming-Platform.html) - An example of a Video on Demand (VOD) streaming platform built with open web services in Eyevinn Open Source Cloud. It includes a VOD preparation pipeline, orchestrator, database, and a simple web application.
+- [Eyevinn Live Encoding](https://github.com/Eyevinn/live-encoding) - An open-source live encoder based on FFmpeg and Shaka packager. It supports live transcoding to HLS and optionally MPEG-DASH, providing an origin for CDN shield to pull streams as well as push to CDN origin. It's a valuable tool for setting up live streaming infrastructures.
+- [Fastly CDN](https://www.fastly.com) - Fastly is a real-time content delivery network that offers advanced features for video streaming, including instant purging, real-time analytics, and edge computing capabilities. Its integration with video platforms allows for low-latency streaming and efficient content delivery. Fastly's programmable edge platform enables developers to customize content delivery and optimize performance for their specific needs.
+- [Flussonic Media Server](https://flussonic.com/flussonic-media-server) - A multi-purpose software solution for launching high-load video streaming services of any scale. It delivers video to millions of viewers worldwide and offers features like live streaming, recording, transcoding, and access authorization.
+- [Galene](https://galene.org) - A simple self-hosted SFU (Selective Forwarding Unit) for videoconferencing. Galene is lightweight and supports multiple rooms and groups with direct browser clients (using WebRTC).
+- [Google Cloud Media Supply Chain Solutions](https://cloud.google.com/blog/products/media-entertainment/how-cloud-enables-the-media-supply-chain) - Google Cloud offers comprehensive solutions for building cloud-native broadcast media supply chains. These solutions enable media companies to streamline operations, reduce costs, and deliver engaging content to global audiences. Key features include AI integration, scalability, and a focus on openness and efficiency.
+- [Google Cloud Video Services C++ Client Library](https://googleapis.github.io/google-cloud-cpp/google/cloud/video) - An idiomatic C++ client library for Google Cloud's video services, including Live Stream API, Transcoder API, and Video Stitcher API. This library enables developers to integrate live video streaming, video file transcoding, and dynamic content generation into their applications.
+- [Google Media Transcoder](https://cloud.google.com/transcoder) - A cloud-based service that provides scalable and efficient video transcoding capabilities. It supports a wide range of input and output formats, enabling developers to deliver high-quality video content across various devices and platforms.
+- [HLS.js P2P Engine](https://github.com/cdnbye/hlsjs-p2p-engine) - A hls.js plugin to offload bandwidth from expensive traditional CDNs，while also maximizing a user's viewing experience.
+- [hlsjs-p2p-engine](https://cdnbye.github.io/hlsjs-p2p-engine) - Enhances video streaming scalability by implementing WebRTC data channels to create a peer-to-peer (P2P) network overlaying existing CDNs or origin servers. Compatible with hls.js, it supports both live and VOD streams over the HLS protocol and integrates seamlessly with popular HTML5 players like video.js, JWPlayer, and Flowplayer. This approach reduces server load and bandwidth costs while improving streaming performance, offering developers an innovative solution for efficient and scalable video delivery.
+- [HTTP Live Streaming (HLS)](https://en.wikipedia.org/wiki/HTTP_Live_Streaming) - An HTTP-based adaptive bitrate streaming protocol developed by Apple Inc. It allows for the delivery of live and on-demand content by breaking the media into small segments and serving them over HTTP. HLS supports encryption and secure key distribution, providing a simple DRM system. It is widely supported across various devices and platforms, making it a popular choice for streaming media content. HLS enables adaptive bitrate streaming, adjusting the quality of the stream based on network conditions and device capabilities to provide a seamless viewing experience.
+- [HunyuanVideo: A Systematic Framework For Large Video Generative Models](https://github.com/Tencent/HunyuanVideo) - HunyuanVideo is an open-source video foundation model that demonstrates performance in video generation comparable to, or even surpassing, leading closed-source models. It encompasses a comprehensive framework integrating data curation, advanced architectural design, progressive model scaling and training, and efficient infrastructure tailored for large-scale model training and inference. HunyuanVideo aims to bridge the gap between closed-source and open-source communities, empowering individuals to experiment with their ideas and fostering a more dynamic video generation ecosystem.
+- [IBM Cloud Video](https://www.ibm.com/cloud/video) - An end-to-end platform providing seamless live and on-demand video content delivery across multiple platforms, including employee communications and virtual conferences. With advanced AI capabilities, it enhances viewer engagement and optimizes video performance in real time.
+- [ImageKit Video CDN](https://imagekit.io/guides/video-cdn) - ImageKit offers a Video CDN solution that includes features like dynamic overlays, allowing developers to add text, images, or other videos over the main video stream. This capability enables personalized and interactive content delivery, enhancing user engagement and experience.
+- [Intel Cloud Streaming](https://github.com/intel/cloud-streaming) - A comprehensive suite of software, drivers, and utilities to set up streaming and video encoding services in the cloud. It enables remote access to Android and Windows cloud instances, providing tools for screen capture, encoding, and streaming.
+- [jsDelivr](https://www.jsdelivr.com) - A free, open-source CDN that allows developers to host and load code and other resources from repositories on GitHub, npm, and the WordPress theme and plugin directories. It supports loading specific versions of software packages or the latest available versions. jsDelivr can also minify JavaScript, CSS, or SVG files to reduce loading times. It is powered by multiple CDN providers, including Cloudflare, Fastly, and BunnyCDN, ensuring high availability and performance.
+- [Kaltura](https://corp.kaltura.com) - A comprehensive video platform offering solutions for webinars, virtual events, enterprise video content management, educational technology, and Cloud TV. It provides tools such as video portals, LMS and CMS extensions, virtual event and webinar platforms, and TV streaming apps, making it valuable for developers seeking versatile video streaming and encoding solutions.
+- [Kaltura Community Edition](https://github.com/kaltura/server) - The open source edition of the Kaltura video platform, which offers video content management, transcoding, and streaming services that can be self-hosted.
+- [Kaltura Platform Install Packages](https://github.com/kaltura/platform-install-packages) - Official deployment packages to install the Kaltura platform on server or cluster environments using native OS package managers. Kaltura provides a comprehensive video platform for managing, publishing, and distributing video content.
+- [Live Low-Latency Cloud-based Adaptive Video Streaming Evaluation Framework](https://github.com/cd-athena/LLL-CAdViSE) - This open-source framework allows for the evaluation of adaptive video streaming in cloud environments. It supports testing multiple media players under different network conditions, providing insights into performance and quality of experience metrics.
+- [LiveAPI](https://liveapi.com) - A robust API for building live and on-demand video streaming applications. It provides features such as video upload, encoding, adaptive bitrate streaming, and global CDN delivery. LiveAPI simplifies the complexities of video streaming by handling encoding, storage, and delivery, making it a valuable resource for developers aiming to integrate video streaming capabilities into their applications.
+- [Livepeer](https://livepeer.org) - A decentralized live video streaming platform and network built on Blockchain. Livepeer provides an open source protocol for scalable, affordable live streaming.
+- [MediaCMS](https://mediacms.io) - An open source video and media CMS for building a YouTube-like platform. It supports uploading, transcoding, and managing video content with a modern UI.
+- [MediaMTX](https://github.com/bluenviron/mediamtx) - A free, open-source media server supporting real-time video streaming, RTSP, RTMP, HLS, and WebRTC. It enables the management and streaming of video from various sources, including RTSP cameras, with low-latency performance.
+- [MediaPlatform Video Delivery Services](https://www.mediaplatform.com/platforms/video-delivery-services) - MediaPlatform offers enterprise video delivery solutions that optimize live and on-demand video streaming across corporate networks. Their services include eCDN (Enterprise Content Delivery Network) for efficient video caching and delivery, Smartpath for rules-based distribution, and integration with various peering and WAN optimization technologies. These solutions ensure high-quality video experiences with minimal network impact, making them valuable for organizations looking to enhance their internal video communications.
+- [Microsoft Rocket: Hybrid Edge + Cloud Video Analytics Platform](https://www.microsoft.com/en-us/research/video/microsoft-rocket-hybrid-edge-cloud-video-analytics-platform) - An extensible software stack developed by Microsoft Research that leverages both edge and cloud computing for scalable video analytics. Rocket is designed to facilitate real-time analysis of live camera streams, making it suitable for applications like security surveillance and traffic planning.
+- [NGINX with nginx-rtmp-module](https://nginx.org) - Nginx, combined with the nginx-rtmp-module, provides a powerful solution for live video streaming. This setup supports HTTP Live Streaming (HLS) in live mode, enabling efficient and scalable live video delivery. It's widely used for setting up live streaming servers due to its performance and flexibility.
+- [NodeTube](https://github.com/mayeaux/nodetube) - An open-source self-hosted online video platform (YouTube alternative) supporting video/audio upload, livestreaming, and monetization.
+- [OblivCDN: A Practical Privacy-preserving CDN with Oblivious Content Access](https://arxiv.org/abs/2501.07262) - OblivCDN is a privacy-preserving system designed for seamless integration with existing real-world Internet-CDN infrastructure. It adapts Range ORAM primitives to optimize memory and disk seeks when accessing contiguous blocks of CDN content, preserving both content confidentiality and user access pattern hiding features. OblivCDN eliminates the need for trusted hardware on edge servers, enhancing compatibility with networks containing legacy devices. In real-world streaming evaluations, it demonstrated remarkable performance, downloading a 256 MB video in just 5.6 seconds.
+- [Open Source Cloud by Eyevinn Technology](https://www.osaas.io) - A service that allows users to launch open-source video streaming and encoding tools in the cloud without the need to build, deploy, maintain, or host them. Open Source Cloud provides full code transparency and contributes back to the open-source community, offering a sustainable model for utilizing open-source software.
+- [Open Visual Cloud](https://github.imc.re/OpenVisualCloud) - A collection of open-source projects optimized for media, analytics, and graphics software stacks, including Dockerfiles, SVT-HEVC encoder, and smart city reference pipelines.
+- [Opencast (GitHub)](https://github.com/opencast/opencast) - An open source enterprise video capture and distribution system, commonly used by educational institutions to manage lecture recordings, process videos, and distribute them to students.
+- [OpenVisualCloud](https://github.com/OpenVisualCloud) - An open-source project that provides optimized media, analytics, and graphics software stacks. It offers Dockerfiles for various media processing tasks, including transcoding and streaming, making it valuable for developers building cloud-based video solutions.
+- [Overcast](https://www.overcasthq.com) - A Video Content-as-a-Service platform that automates complex video tasks using AI and ML. It offers customizable workflows using cloud applications, enabling efficient video content management and distribution.
+- [P2P CDN SDK for JavaScript](https://github.com/vadootvpeer/p2p-cdn-sdk-javascript) - A free JavaScript SDK that reduces video streaming costs by up to 90% and improves scalability by 6x using WebRTC-based peer-to-peer technology. It supports major players like Hls.js, Shaka Player, and Video.js, and both HLS and DASH streaming protocols.
+- [P2P Media Loader](https://github.com/Novage/p2p-media-loader) - An open-source engine designed for peer-to-peer streaming of live and on-demand video directly within web browsers. By leveraging WebRTC, it reduces the load on traditional CDNs and enhances scalability, making it a valuable tool for developers aiming to optimize video delivery and reduce infrastructure costs.
+- [Panopto Video Cloud Platform](https://www.panopto.com/features/video-cms/video-cloud) - Panopto's Video Cloud Platform provides secure storage and management of video content, enabling organizations to host private, internal videos with ease. It offers features like elastic scaling, regional hosting options, and intelligent video content delivery, ensuring optimal playback across devices. This platform is particularly beneficial for enterprises looking to manage and deliver video content efficiently.
+- [PeerTube](https://joinpeertube.org) - A decentralized video sharing platform powered by ActivityPub and peer-to-peer (BitTorrent) directly in the browser, as a federated alternative to centralized sites.
+- [Qencode Cloud Video Services](https://cloud.qencode.com) - Qencode offers a suite of cloud-based video services, including video transcoding, live streaming, media storage, and content delivery. Their APIs allow developers to transcode videos into various formats and codecs, launch high-quality live streams globally, and manage media storage efficiently. The platform also provides a customizable HTML5 video player and features like per-title encoding to optimize file sizes using AI-powered video optimization.
+- [Red5 Media Server](https://www.red5.net/open-source-live-streaming) - Red5 is a free, open-source media streaming server implemented in Java. It provides services similar to Adobe Flash Media Server, including streaming video and audio, recording client streams, and support for various protocols like RTMP, RTMPT, RTMPS, and RTMPE.
+- [Red5 Pro](https://www.red5.net) - A streaming server that leverages cloud infrastructure to dynamically meet scaling needs, avoiding the massive infrastructure costs associated with traditional CDNs. It offers sub-500 millisecond latency for live broadcasts and is suitable for developers requiring scalable and low-latency streaming solutions.
+- [Secure Video Streaming with Signed URLs](https://github.com/KHAOUITI-Apps/CDN) - A tutorial-based project that guides you through building a YouTube-like video streaming system using Spring Boot, securing video access with signed URLs. It implements token-based authentication to ensure secure and time-limited access to video streams.
+- [Storm Streaming Server](https://www.stormstreaming.com) - A fully scalable live video streaming software available for on-premise deployment. It is designed to manage mass concurrent streams with thousands of online viewers, offering ultra-low latency and easy integration with existing websites or applications. Storm Streaming Server is ideal for organizations with dedicated hardware and network infrastructure.
+- [Streamline: End-to-End Live Streaming System](https://github.com/streamlinevideo/streamline) - A reference system for end-to-end live streaming video, covering capture, encoding, packaging, uplink, origin, CDN, and player. It utilizes commodity hardware and free software to provide a high-quality live streaming solution.
+- [SuperStreamer](https://github.com/matvp91/superstreamer) - An open, scalable, online streaming setup that provides an all-in-one toolkit from ingest to adaptive video playback. Built for developers in need of video tooling, SuperStreamer offers a comprehensive solution for setting up and managing video streaming infrastructure.
+- [Telestream Cloud Services](https://www.telestream.net/telestream-cloud) - Telestream offers cloud-based media processing services, including Vantage Gateway, Vantage Cloud, Qualify, and Timed Text Speech. These services provide unmatched format support, dynamic job orchestration, automated quality control, and auto-transcription capabilities. Developers can leverage these tools to ingest and output content in various broadcast and OTT streaming formats, scale workflows dynamically, and ensure content quality and compliance.
+- [Terraform AWS Media Services Modules](https://registry.terraform.io/modules/terraform-aws-modules/mediaConvert/aws/latest) - Terraform modules and examples for deploying AWS MediaConvert and MediaLive as infrastructure-as-code. This helps automate the provisioning of cloud encoding and live streaming resources, demonstrating best practices for treating video pipelines as code.
+- [Unified Origin](https://www.unified-streaming.com/products/unified-origin) - A software solution that enables streaming of live and on-demand content using various protocols, including MPEG-DASH. It supports integration with CDNs and offers features like DRM support and adaptive bitrate streaming. This project is beneficial for developers aiming to deliver high-quality streaming experiences across multiple devices.
+- [Vadootv P2P CDN SDK for JavaScript](https://github.imc.re/vadootvpeer/p2p-cdn-sdk-javascript) - Vadootv offers a peer-to-peer (P2P) CDN SDK for JavaScript that significantly reduces video streaming costs and enhances scalability. By utilizing WebRTC technology, it distributes the load among users, decreasing server costs by up to 90% and improving scalability by sixfold. The SDK supports major players like Hls.js, Shaka Player, and Video.js, and is compatible with both HLS and DASH streaming protocols. This solution is ideal for developers seeking to optimize video delivery through P2P networks.
+- [VdoCipher](https://www.vdocipher.com) - A secure video streaming solution with DRM encryption to prevent unauthorized downloads and piracy. It provides a cloud-based platform for hosting, streaming, and protecting video content, ensuring secure delivery to viewers.
+- [Video on Demand on AWS Foundation](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/solution-overview.html) - This AWS solution provides a customizable architecture to build a video-on-demand workflow. It automatically provisions the necessary AWS services to create a scalable, distributed video-on-demand system, facilitating efficient video processing and delivery.
+- [Video Streaming Studio](https://github.com/TianYao12/Video-Streaming-Studio) - A video streaming platform similar to Netflix, allowing users to upload and watch videos. It utilizes React.js, Express.js, MongoDB, Amazon S3, and CloudFront CDN for efficient video delivery and storage.
+- [Video Streaming via CDN](https://github.com/andrewwong97/video-streaming-cdn) - This project implements adaptive bitrate selection, DNS load balancing, and an HTTP proxy server to stream video at high bit rates from the closest server to a given client. It includes components like miProxy (an HTTP proxy), a nameserver for DNS load balancing, and utilizes Mininet for network simulation.
+- [Video Streaming via CDN by heaventourist](https://github.com/heaventourist/Video-Streaming-via-CDN) - This project focuses on implementing adaptive bitrate selection, DNS load balancing, and an HTTP proxy server to stream video at high bitrates from the closest server to a given client. The HTTP proxy accepts connections from web browsers, modifies video chunk requests, resolves the web server's DNS name, opens a connection with the resulting IP address, forwards the modified request to the server, and returns the unmodified video chunks to the browser. The DNS server implements load balancing using round-robin and geographic distance methods.
+- [Video-Streaming-Service](https://github.com/hetjagani/Video-Streaming-Service) - This project presents a cloud computing-based video streaming service with a REST API implemented using the Spring framework. It features a load balancer to distribute requests across multiple servers and utilizes SQLite for database management, providing a scalable and efficient solution for video delivery.
+- [Vimeo](https://vimeo.com) - An American video hosting, sharing, and services provider focusing on the delivery of high-definition video across a range of devices. It provides tools for video creation, editing, and broadcasting, as well as enterprise software solutions for video professionals.
+- [Visual Cloud](https://en.wikipedia.org/wiki/Visual_Cloud) - Refers to the implementation of visual computing applications that rely on cloud computing architectures, cloud-scale processing and storage, and ubiquitous broadband connectivity. It encompasses services such as media processing, enhancement, and delivery, leveraging cloud infrastructure to provide scalable and efficient solutions for video streaming and encoding. This approach allows for optimized infrastructure tailored to visual computing application requirements.
+- [VStream](https://github.com/Benj-Qu/VStream) - A project focused on video streaming via CDN, implementing adaptive bitrate selection, DNS load balancing, and an HTTP proxy server. It provides a comprehensive setup for streaming video at high bitrates from the closest server to a client, including a round-robin load balancer and geographic distance load balancer. This project is beneficial for developers looking to understand and implement efficient video streaming solutions using CDN technologies.
+- [WebRTC](https://webrtc.org) - (Web Real-Time Communication) is a free and open-source project that provides web browsers and mobile applications with real-time communication capabilities via simple APIs. It enables audio and video communication to work inside web pages without the need for plugins, facilitating peer-to-peer data sharing.
+- [Wowza](https://www.wowza.com) - A robust cloud video streaming platform built for businesses of all sizes. It offers a range of features that allow you to deliver high-quality video content without interruptions. With patented software designed specifically for live streaming, Wowza ensures flawless performance even during peak traffic conditions.
+- [Wowza CDN Integration Overview](https://www.wowza.com/blog/how-do-content-delivery-networks-cdns-work) - Wowza offers a comprehensive overview of how Content Delivery Networks (CDNs) work, focusing on their integration with video streaming services. The resource explains the benefits of using CDNs, such as reduced latency and improved scalability, and provides insights into load balancing and real-time analytics. This guide is valuable for developers aiming to enhance their video streaming infrastructure through CDN integration.
+- [Wowza Streaming Cloud](https://www.wowza.com/products/streaming-cloud) - A robust cloud-based platform designed for live and on-demand video streaming. It offers features like adaptive bitrate streaming, cloud transcoding, and low-latency delivery, making it suitable for businesses aiming to reach global audiences with high-quality video content.
+- [Wowza Streaming Engine](https://www.wowza.com/products/streaming-engine) - A robust and customizable media server software that supports live and on-demand streaming. It offers support for various streaming protocols, including HLS, and provides features like real-time transcoding, adaptive bitrate streaming, and content security. It's suitable for developers looking to build scalable and reliable streaming solutions.
+- [YouPHPTube (AVideo)](https://github.com/WWBN/AVideo) - An open source, self-hosted video sharing website platform (formerly YouPHPTube). It supports user accounts, video uploads, streaming, and plugins for features like live broadcasting and advertisement.
+- [YuJa Enterprise Video Platform](https://www.yuja.com/video-cms/video-cloud) - YuJa offers an Enterprise Video Platform that serves as a comprehensive Video Content Management System (VCMS). It enables organizations to securely store, organize, and access media across platforms. Key features include automatic transcoding, deep branding capabilities, search-inside-video functionality, and secure content protection, making it a valuable resource for developers focusing on video infrastructure and delivery.
+
+### Multi-CDN Management
+
+- [cdnselector — Multi-CDN Switching/Failover Server](https://github.com/cdnexperts/cdnselector) - Deployable multi-CDN switch/failover server for HTTP streaming, routing by geo/network/response-time/device with instant failover and backup CDN warming.
+- [DASH content steering server (Go)](https://github.com/maxutility2011/dash_content_steering_server) - Standalone open-source MPEG-DASH content steering server in Go, working with the dash.js reference client to switch players between substitutable CDN sources.
+- [DASH-IF Content Steering](https://github.com/Dash-Industry-Forum/Content-Steering) - DASH Industry Forum's official specification repository and reference material for content steering, the standard for steering DASH/HLS players between substitutable content/CDN sources.
+- [Implementing HLS/DASH Content Steering at Scale (Reznik, IBC 2023)](https://www.reznik.org/papers/IBC2023-Implementing-HLS-DASH-Content-Steering-at-Scale.pdf) - IBC 2023 technical paper by Yuriy Reznik describing a stateless edge design for implementing HLS/DASH content steering for multi-CDN delivery at scale.
+- [Multi-Regional Multi-CDN Content Steering (ACM Mile-High Video 2025)](https://dl.acm.org/doi/10.1145/3715675.3715791) - Academic paper on the HLS/DASH Content Steering standard for optimizing multi-regional multi-CDN video delivery.
+- [OTT Content Delivery– Multi CDN](https://medium.com/@eyevinntechnology/ott-content-delivery-multi-cdn-8cd90ad2628a?source=userActivityShare-94bccb50d11-1560983307&_branch_match_id=670019455010399744) - Eyevinn article explaining multi-CDN strategies and architectures for OTT video content distribution.
+- [PIRA: Pan-CDN Intra-video Resource Adaptation for Short Video Streaming](https://arxiv.org/html/2510.18606) - 2025 arXiv paper on intra-video session pan-CDN segment/range selection jointly optimizing QoE and cost for short-video streaming.
+- [SVTA Open Caching reference code](https://opencaching.svta.org/open-caching-code) - MIT-licensed reference code and OpenAPI descriptions for SVTA Open Caching, built on IETF CDNI (RFC 8006/8007/8008/8804) plus SVA extensions.
+- [SVTA: Architectures for Multi-CDN Switching](https://www.svta.org/project/architectures-for-multi-cdn-switching) - Streaming Video Technology Alliance industry-consortium project documenting multi-CDN switching architectures including client-side steering and RUM-based selection.
+- [videojs-cmcd — CMCD plugin for Video.js](https://github.com/montevideo-tech/videojs-cmcd) - Video.js 8.4.0+ plugin that adds Common Media Client Data (CMCD, CTA-5004) reporting to player media requests for QoE analytics and multi-CDN telemetry.
+
+### Live Streaming Servers
+
+- [Avbroadcast](https://github.com/media-toolbox/avbroadcast) - Republish media streams for mass consumption.
+- [How To Setup NGINX For HLS Video Streaming On CentOS 7](https://dev.to/samuyi/how-to-setup-nginx-for-hls-video-streaming-on-centos-7-3jb8) - How to live stream videos with Nginx.
+- [lhls-simple-live-platform](https://slides.com/jordicenzano/deck-973aed) - You can build your own live platform just wiring up some open source tools, this is a demo video of HTTPS://GitHub.com/jordicenzano/lhls-simple-live-platform.
+- [livego — Go RTMP/HLS/HTTP-FLV live server](https://github.com/gwuhaolin/livego) - Simple live streaming server in Go: RTMP ingest, HLS and HTTP-FLV output.
+- [LiveKit](https://github.com/livekit/livekit) - End-to-end stack for WebRTC with a powerful SFU server, client SDKs, and cloud infrastructure. Supports scalable video conferencing, live streaming, and real-time communication with features like adaptive streaming, recording, ingress/egress, and comprehensive APIs for multiple platforms.
+- [nginx-ts-module — NGINX live HLS/DASH origin](https://github.com/arut/nginx-ts-module) - NGINX module turning the server into a live origin: MPEG-TS over HTTP in, HLS and DASH manifests/segments out.
+- [OBS Studio](https://github.com/obsproject/obs-studio) - Free and open source software for live streaming and screen recording.
+- [Open Broadcaster Software | OBS](https://obsproject.com) - OBS (Open Broadcaster Software) is free and open source software for video recording and live streaming. Stream to Twitch, YouTube and many other providers or record your own videos with high quality H264 / AAC encoding.
+- [OvenMediaEngine — Sub-Second Live Streaming Server](https://github.com/OvenMediaLabs/OvenMediaEngine) - Open-source sub-second latency live streaming server supporting WebRTC and LL-HLS ingest/egress.
+- [PlayoutAutomation](https://github.com/jaskie/PlayoutAutomation) - Television broadcast automation system.
+- [PyLivestream](https://github.com/scivision/PyLivestream) - Pure Python FFmpeg-based live video / audio streaming to YouTube, Facebook, Periscope, Twitch, and more.
+- [Stream New](https://github.com/muxinc/stream.new) - The repo for HTTPS://stream.new.
+- [xiu](https://github.com/harlanc/xiu) - Pure-Rust live media server supporting RTMP clustering, RTSP, WebRTC (WHIP/WHEP), HTTP-FLV, and HLS in one binary.
+
+### Streaming Servers
+
+- [Ant Media Server (GitHub)](https://github.com/ant-media/Ant-Media-Server) - Ant Media Server supports RTMP, RTSP, WebRTC and Adaptive Bitrate. It can also record videos in MP4, HLS and FLV.
+- [BLSS](https://github.com/gnolizuh/BLSS) - NGINX-based Live Media Streaming Server.
+- [CasparCG](https://casparcg.com) - An open source broadcast graphics and video playout server. CasparCG is used to deliver layered videos, images, and templates to professional broadcast environments in real-time.
+- [CasparCG (GitHub)](https://github.com/CasparCG/server) - A professional open source graphics and video playback server used in TV broadcasting for overlaying graphics, playing videos, and mixing live inputs on multiple outputs.
+- [Docker NGINX RTMP](https://github.com/alfg/docker-nginx-rtmp) - A Dockerfile for nginx-rtmp-module + FFmpeg from source with basic settings for streaming HLS. Built on Alpine Linux.
+- [DVBlast — lightweight MPEG-TS demux & streamer](https://github.com/gfto/dvblast) - Lightweight, stable MPEG-2/TS demultiplexer and streamer supporting DVB-S/S2/C/T and ASI inputs with RTP/TS output and CAM descrambling for 24/7 IPTV.
+- [go2rtc](https://github.com/AlexxIT/go2rtc) - A flexible high-performance streaming server written in Go that can ingest RTSP, WebRTC, RTMP, HTTP-FLV, and LL-HLS and output streams to multiple protocols (commonly used for home camera streaming).
+- [Gohls](https://github.com/shimberger/gohls) - A server that exposes a directory for video streaming via web interface.
+- [Icecast](https://icecast.org) - An open source streaming media server primarily for audio streaming (Ogg/Opus), which can also deliver video in formats like Ogg/Theora. Commonly used for internet radio and basic video streams.
+- [Janus WebRTC Server](https://janus.conf.meetecho.com) - An open source, general-purpose WebRTC server (SFU and gateway). Janus is modular and can support video conferencing, streaming, and SIP/RTSP/WebRTC interop through its plugin architecture.
+- [Janus WebRTC Server (GitHub)](https://github.com/meetecho/janus-gateway) - An open source WebRTC server (SFU and gateway) that allows the creation of videoconferencing, streaming, and other real-time multimedia applications.
+- [Jellyfin](https://jellyfin.org) - An open source media server and client solution, providing streaming of video (and other media) to a variety of devices as a self-hosted alternative to Plex.
+- [Kaltura nginx-vod-module](https://github.com/kaltura/nginx-vod-module) - An NGINX module for Video on Demand streaming that enables MP4 repackaging and dynamic adaptive streaming (HLS/DASH) support on Nginx servers.
+- [Kurento Media Server](https://www.kurento.org) - An open source WebRTC media server with advanced capabilities like mixing, transcoding, and computer vision integration. Kurento allows building videoconferencing, broadcasting, and augmented video applications by handling streams on the server side.
+- [MistServer](https://mistserver.org) - An open source streaming media server that supports multiple protocols (HLS, RTMP, WebRTC, etc.). It focuses on easy setup and compatibility with any device.
+- [Nimble Streamer](https://wmspanel.com/nimble) - A lightweight, free live streaming server supporting HLS, DASH, RTMP, SRT, and more, often used for low-latency streaming and transmuxing in production workflows.
+- [OvenMediaEngine](https://github.com/AirenSoft/OvenMediaEngine) - A real-time streaming server with sub-second latency support. OvenMediaEngine offers WebRTC and Low Latency DASH/HLS for interactive live streaming.
+- [Owncast](https://owncast.online) - A self-hosted live video streaming server with a built-in chat. Owncast enables anyone to set up a live stream akin to Twitch, but on their own infrastructure.
+- [RTSP Simple Server](https://github.com/aler9/rtsp-simple-server) - A simple, ready-to-use RTSP streaming server written in Go. It supports publishing and reading streams via RTSP and can also re-distribute via other protocols.
+- [Srs](https://github.com/ossrs/srs) - A simple live streaming cluster, a simple joy.
+- [Tvheadend — Linux TV streaming server](https://github.com/tvheadend/tvheadend) - Leading open-source Linux TV streaming server and DVR supporting ATSC, DVB, IPTV and SAT>IP inputs, a common backend for set-top box clients.
+- [video-server — Go RTSP→HLS/MSE restream origin](https://github.com/LdDl/video-server) - Go server connecting to a set of RTSP sources and providing HLS/MSE streams; restream origin.
+- [ZLMediaKit](https://github.com/ZLMediaKit/ZLMediaKit) - A high-performance C++ media server framework supporting WebRTC, RTSP, RTMP, HTTP-FLV, HLS, WebSocket streaming, and SRT, for building streaming server/client applications.
+
+#### Storage Solutions
+
+- [Minio](https://github.com/minio/minio) - A high performance object storage server compatible with Amazon S3 APIs.
+- [Rclone](https://github.com/rclone/rclone) - Rsync for cloud storage - Google Drive, Amazon Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Cloudfiles, Google Cloud Storage, Yandex Files.
+- [Swift](https://github.com/openstack/swift) - OpenStack object storage system commonly used for storing and serving large video files at scale.
+
+### Peer-to-Peer Streaming Solutions
+
+- [Owncast P2P (owncast-p2p)](https://github.com/cdnbye/owncast-p2p) - Owncast fork adding P2P HLS delivery via SwarmCloud for self-hosted live streaming with peer-assisted bandwidth offload.
+- [P2P Streaming](https://github.com/Fizik0/p2p-streaming) - Open source WebRTC-based engine for P2P live/VOD streaming directly in a browser page, no plugin required.
+- [PeerTube (GitHub)](https://github.com/Chocobozzz/PeerTube) - ActivityPub-federated video hosting platform using WebRTC P2P in-browser delivery to offload server bandwidth, including live streaming support.
+- [QUANTEEC](https://quanteec.com) - A production-ready plugin that enables hybrid P2P CDN delivery to reduce delivery costs and improve QoE during peaks. 
+The QUANTEEC SDK connects users to share data directly with each other, relieving dependence on CDN, rendering delivery more robust and suppressing over-deployments at peak levels.
+Every user becomes a delivery node for others. Quanteec chases resources where they are available to avoid deploying more infrastructures.
+- [simple-peer - Simple WebRTC video, voice, and data channels](https://github.com/feross/simple-peer) - Simple WebRTC library for video, voice, and data channels with a concise API. Supports dynamic stream addition, Node.js usage via wrtc, and works in browsers without configuration. Powers many P2P projects including file sharing and video chat applications.
+- [Stealthy Peers: WebRTC P2P Streaming Security Analysis](https://arxiv.org/pdf/2212.02740) - Academic security analysis of WebRTC peer-assisted video streaming (P2P CDN offload architectures).
+- [WebRTC-cdn](https://github.com/AgustinSRG/webrtc-cdn) - Live media CDN over WebRTC: multi-node cluster coordinated via Redis Pub/Sub (Go, Docker) with WHIP/WHEP-style ingest and egress across nodes.
+- [Wifibroadcast – Analog-like transmission of live video data](https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data) - Wifibroadcast is a project aimed at the live transmission of HD video (and other) data using wifi radios. One prominent use case is to transmit camera images for a first person view (FPV) of remote..
+
+### Cloud & CDN
+
+- [Cloudflare Stream Live: Engineering Deep-Dive](https://blog.cloudflare.com/stream-live) - Engineering post on distributed live ingest architecture vs legacy single-region ingest, covering LL-HLS latency, WHIP/WHEP, and SRT support.
+- [DIY-Streaming-CDN](https://github.com/richtertoralf/DIY-Streaming-CDN) - Reference architecture and OSS stack (OBS + nginx + load balancer) for building a self-hosted livestream CDN.
+- [Fastly — Video Cache Prefetch with Compute@Edge](https://www.fastly.com/blog/video-cache-prefetch-with-compute-edge) - Technical writeup on an edge-compute (WebAssembly) pattern that prefetches upcoming video segments at the edge to cut origin round-trips.
+- [How Cloudflare Streams Video (Engineering)](https://blog.cloudflare.com/how-cloudflare-streams) - Engineering deep-dive on Cloudflare Stream's architecture: tus resumable upload protocol, encoding pipeline, dynamic underutilized-datacenter delivery, manifest-based ABR.
+- [Unified Streaming — Origin Shield Cache Recommendations](https://docs.unified-streaming.com/best-practice/caching/recommendations/shield-cache.html) - Technical doc on the origin shield caching pattern for video streaming to reduce origin load in multi-CDN setups.
+- [Varnish — Caching Video (official docs)](https://docs.varnish-software.com/book/cdn/caching-video) - Official technical guide on caching HLS/DASH segments and manifests with Varnish, including VCL snippets for TTL and live-segment expiry handling.
+
+#### Cloud Platforms
+
+- [Netflix Titus (Container orchestration for video)](https://netflix.github.io/titus) - Netflix's open source container management platform that runs video processing workloads among others. While not video-specific, Titus is key to how Netflix deploys and scales encoding and other batch jobs in a containerized fashion, ensuring efficient resource usage.
+- [Nvidia Docker](https://github.com/NVIDIA/nvidia-docker) - Build and run Docker containers leveraging NVIDIA GPUs.
+- [Riot Games Keeps League of Legends Esports Rolling With Fully Cloud-Based Virtualized Workflow](https://www.sportsvideo.org/2020/03/27/riot-games-keeps-league-of-legends-esports-rolling-with-fully-cloud-based-virtualized-production-workflow) - Although the traditional sports world has come to a standstill due to the coronavirus pandemic, many major esports organizations are still going strong, hosting competitions remotely. Riot Games keeps League of Legends esports rolling with a fully cloud-based, virtualized production workflow.
+
+### Streaming Analytics & Monitoring
+
+- [aws-samples/cloudfront-cmcd-realtime-dashboard](https://github.com/aws-samples/cloudfront-cmcd-realtime-dashboard) - Grafana dashboard enriching CloudFront logs with CMCD fields (bl/mtp/br/tb) for real-time QoE monitoring.
+- [Inca — Message Tracing and Loss Detection For Streaming Data @Netflix](https://medium.com/@NetflixTechBlog/inca-message-tracing-and-loss-detection-for-streaming-data-netflix-de4836fc38c9) - At Netflix, our real-time data infrastructure have embraced the multi-cluster Kafka architecture and Flink powered stream processing..
+- [NUStreaming/CMSD-DASH — CMSD in dash.js](https://github.com/NUStreaming/CMSD-DASH) - NUS implementation of CMSD in dash.js from the Mile-High Video paper on server-data-driven adaptation.
+- [OpenQoE](https://openqoe.dev) - Open-source video QoE monitoring platform with a JS SDK for HTML5/Video.js/hls.js/dash.js/Shaka, Cloudflare Worker ingestion, and Prometheus + Grafana dashboards tracking startup time, rebuffering, errors, and engagement.
+- [OpenQoE — Open-Source Video QoE Analytics](https://github.com/openqoe/openqoe-dev) - Apache-2.0 three-tier QoE stack: JS beaconing SDK (HTML5/Video.js/HLS.js/dash.js/Shaka) → Cloudflare Worker ingest → Prometheus/Grafana dashboards tracking startup time, rebuffer, errors, engagement.
+- [realeyes-media/cta-wave-cmcd-lib — CMCD SDK](https://github.com/realeyes-media/cta-wave-cmcd-lib) - CMCD SDK with examples for Android/Kotlin and TS/JS, including hls.js and ExoPlayer CMCDManager implementations.
+- [SCTE-104/35 and Beyond: A Look at Ad Insertion in an OTT World](https://www.tvtechnology.com/opinions/scte10435-and-beyond-a-look-at-ad-insertion-in-an-ott-world) - Ad Insertion is a very important part of many video delivery systems because of the monetization aspect-it generates revenue!
+- [switch media adease](https://www.switch.tv/mediahq/adease)
+- [ThreeFive SCTE35](https://github.com/futzu/scte-35_threefive) - An SCTE-35 parser and decoder for analyzing ad markers in MPEG-TS streams, designed for broadcast workflows.
+- [Understanding Real-time Bidding for AVOD Services](https://medium.com/@eyevinntechnology/understanding-real-time-bidding-for-avod-services-861ebfa8bd13) - We have in previous blog articles described the principles behind server-side ad-insertion and described some of the challenges with it as..
+- [unifiedstreaming/origin-cmsd — CMSD Server PoC](https://github.com/unifiedstreaming/origin-cmsd) - Varnish-based proof-of-concept implementing CMSD (Common Media Server Data) at the origin/CDN.
+
+### Edge Computing & Caching Solutions
+
+- [Edge Computing with Fastly CDN and Varnish VCL for Authenticated Requests - Endertech](https://endertech.com/blog/edge-computing-fastly-cdn-varnish-vcl-authenticated-requests) - A brief explanation of how to use Fastly CDN and Varnish with authenticated requests to offload static file serving from the origin and edge caching.
+- [EdgeCDN-X Open Source CDN](https://github.com/EdgeCDN-X) - EdgeCDN-X Is an open source CDN built on top of Kubernetes with ingress-nginx and CoreDNS for routing. ArgoCD is used for fast config distribution towards the edges. 
+
+The solution supports:
+- Static upstreams
+- S3 Origins
+- URL Signatures
+- Static IP Prefix routing
+- Geo routing
+- Active health-checks towards edges
+- Prometheus alert based edge exclusions.
+- [Lambda Edge Tutorial](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-edge-how-it-works-tutorial.html) - This tutorial shows you how to get started with Lambda@Edge by helping you create and add a sample Node.js function that runs in CloudFront. The example that we walk through adds HTTP security headers to a response, which can improve security and privacy for a website. (That said, you don't need a website for this walkthrough; we simply add security headers to a response when CloudFront retrieves a file.).
+- [Lambda@Edge Design Best Practices | Amazon Web Services](https://aws.amazon.com/blogs/networking-and-content-delivery/lambdaedge-design-best-practices) - Lambda@Edge transforms CloudFront into a highly programmable CDN with serverless compute capabilities closer to your viewers around the world. This blog is the first in a series that explains best practices associated with using Lambda@Edge functions to customize your content delivery.
+- [NGINX Cache Slice: Byte-Range Video Caching](https://blog.nginx.org/blog/smart-efficient-byte-range-caching-nginx) - Official NGINX blog explaining the slice module, which splits files into cacheable pieces so byte-range requests fill cache incrementally - purpose-built for HTML5 video pseudostreaming.
+- [RasoulNik/VoD — RL-based Edge Caching](https://github.com/RasoulNik/VoD) - Research repo implementing reinforcement-learning-based edge caching for VOD, with an nginx edge node and ML cache-eviction policy.
+
+### VOD Streaming Servers
+
+- [9 Best Home Server Apps to Automate Media Management](https://www.smarthomebeginner.com/best-home-server-apps) - These are top 9 best home server apps to automate media management, so you get the latest Movies, Music and TV Shows in the best quality available.
+- [Channel Engine](https://github.com/Eyevinn/channel-engine) - Engine for generating linear OTT TV channels from VOD content. Useful for creating 24/7 streaming channels.
+- [Creating a secure video-on-demand (VOD) platform using AWS](https://aws.amazon.com/blogs/media/creating-a-secure-video-on-demand-vod-platform-using-aws) - Authored by Chirag Oswal, Solution Architect, AWS, and Vikas Tiwari, Solution Architect Manager, AWS Video has become the primary means of Information sharing and learning. Customers are investing in innovative solutions to tap into the e-learning and video space. Video content is their IP and needs to be protected and securely delivered. Online video is a (...).
+- [Djmediastreamer](https://github.com/davidbt/djmediastreamer) - A Django project that allows you to catalog and stream your videos (using FFmpeg to add subtitles and transcode).
+- [Marsha](https://github.com/openfun/marsha) - A self-hosted opensource LTI video provider.
+- [olaris / olaris-server](https://gitlab.com/olaris/olaris-server) - Self-hosted media server with transcoding and streaming capabilities for personal video libraries.
+- [Pseudo Live Playout](https://github.com/Eyevinn/pseudo-live-playout) - Contribute to Eyevinn/pseudo-live-playout development by creating an account on GitHub.
+- [Streama](https://github.com/streamaserver/streama) - Self hosted streaming media server. HTTPS://docs.streama-project.com/.
+- [switch media live2vod](https://www.switch.tv/mediahq/live2vod)
+- [switch media mediahq](https://www.switch.tv/mediahq)
+- [Tube](https://github.com/prologic/tube) - A YouTube-like (without censorship and features you don't need!) Video Sharing App written in Go which also supports automatic transcoding to MP4 H.265 AAC, multiple collections and R..
+- [Unified Streaming Demos](https://demo.unified-streaming.com) - A showcase of Unified Streaming's capabilities, including adaptive streaming formats and DRM-protected playback.
+- [Unified Streaming Features Page](https://demo.unified-streaming.com/k8s/features/stable/#!/mpd) - A demonstration of Unified Streaming's feature set, including on-the-fly packaging and multi-format support.
+- [VOD on AWS](https://s3.amazonaws.com/solutions-reference/video-on-demand-on-aws/latest/video-on-demand-on-aws.pdf)
+- [VOD2Live](https://docs.google.com/presentation/d/1Ua76BBaZKtTmaZrlfM_eG0vwz0ZAqPIjreCSfB4qFQQ/edit?usp=sharing) - Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv.
+
+### CDN Integration & Distribution
+
+- [Adxchange Engine](https://github.com/Eyevinn/adxchange-engine) - Eyevinn Adxchange Engine is a microservice placed between the server-side ad-insertion component and the adserver or SSP.
+- [AWS CloudFront for Live Streaming](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/live-streaming.html) - To use AWS Media Services with CloudFront to deliver live content to a global audience, follow the guidance included in this section.
+- [AWS CloudFront Live failover](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html) - You can set up CloudFront with origin failover for scenarios that require high availability. To get started, create an origin group in which you designate a primary origin for CloudFront plus a second origin that CloudFront automatically switches to when the primary origin returns specific HTTP status code failure responses.
+- [NGINX S3 Proxy](https://github.com/coopernurse/nginx-s3-proxy) - Nginx compiled with aws-auth support, suitable for S3 reverse proxy usage.
+- [OTT Content Delivery– CDN Alternatives](https://medium.com/@eyevinntechnology/ott-content-delivery-cdn-alternatives-cafe75dab71d?source=userActivityShare-94bccb50d11-1560983135&_branch_match_id=670018733519578135) - Article exploring CDN alternatives for OTT content delivery. Covers infrastructure options for video streaming.
+- [This is How I Reduced My CloudFront Bills by 80%](https://medium.com/faun/this-is-how-i-reduced-my-cloudfront-bills-by-80-a7b0dfb24128) - If you are using S3 and CloudFront to host your content and noticed that your bills are increasing, read this!
+- [Understanding Server-Side Dynamic Ad Insertion](https://medium.com/@eyevinntechnology/understanding-server-side-dynamic-ad-insertion-d7ed90e34aa2) - In this post we're explaining the principles behind Server-Side Dynamic Ad Insertion technology. If you are already familiar with video..
+- [Vmapproxy](https://github.com/Eyevinn/vmapproxy) - Proxy service from Eyevinn for handling VMAP and VAST ad insertion metadata in video streams.
+
+#### CDN Integration
+
+- [Amazon S3 | Fastly Help Guides](https://docs.fastly.com/en/guides/amazon-s3)
+
+### RTMPRTSPHTTP Protocol Servers
+
+- [Create your own video streaming server with Linux](https://opensource.com/article/19/1/basic-live-video-streaming-server) - Using Nginx to create a streaming server using RTMP and nginx.
+- [Dtt2ip](https://github.com/ebu/dtt2ip) - Broadcast to IP conversion for Wifi indoor coverage.
+- [Dvbshout](https://github.com/njh/dvbshout) - Takes an MPEG transport stream from a DVB card, extracts audio channels from stream, and sends the audio to an Icecast / Shoutcast server and/or a RTP multicast packet stream.
+- [librist](https://code.videolan.org/rist/librist) - A library that can be used to easily add the RIST protocol to your application.
+- [Media Server](https://github.com/ireader/media-server) - RTSP/RTP/RTMP/FLV/HLS/MPEG-TS/MPEG-PS/MPEG-DASH/MP4/fMP4.
+- [Red5 Server](https://github.com/Red5/red5-server) - Open source media server supporting RTMP, HLS, and WebRTC streaming protocols in Java.
+- [SRT Open Source project](https://github.com/Haivision/srt)
+- [Streaming With SRT Protocol in OBS](https://obsproject.com/wiki/Streaming-With-SRT-Protocol)
 
 ## Intro & Learning
 
@@ -2855,7 +2657,7 @@ The solution supports:
 - [Build Your Own Video Streaming Platform - Linode Tutorial](https://www.classcentral.com/course/youtube-build-your-own-video-streaming-platform-it-s-easier-than-you-might-think-147570) - A free video tutorial that walks through the process of creating a video streaming website using HTML, CSS, and Next.js. It covers setting up a Next.js project, integrating Tailwind CSS, developing key components, and leveraging Linode Object Storage for video streaming.
 - [Building Scalable Video Encoding Pipelines Essentials - Tonex Training](https://www.tonex.com/training-courses/building-scalable-video-encoding-pipelines-essentials) - A training course covering the fundamentals of building scalable video encoding pipelines, including topics like video codecs, cloud-based encoding, and workflow optimization.
 - [Building Scalable Video Encoding Pipelines Training](https://www.tonex.com/training-courses/building-scalable-video-encoding-pipelines-training) - An in-depth training course by Tonex that focuses on designing and implementing robust video encoding systems. It covers principles, tools, and techniques to create efficient, scalable pipelines for high-quality video delivery, making it ideal for professionals aiming to enhance their video processing systems.
-- [Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com/#search=drm)
+- [Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com/#search=drm) - Browser compatibility data for DRM technologies, helping developers understand EME and content protection support across platforms.
 - [Cloudinary's Guide on Live Streaming](https://cloudinary.com/guides/live-streaming-video/a-guide-on-live-streaming-and-tips-for-making-it-a-success) - An in-depth guide explaining the live streaming process, including capturing video and audio, compressing and encoding video, and delivering content to audiences. It also offers tips for successful live streaming.
 - [Coding Video: A Practical Guide to HEVC and Beyond](https://www.oreilly.com/library/view/coding-video/9781118711781/c03.xhtml) - A comprehensive book that provides a practical guide to High Efficiency Video Coding (HEVC) and other video coding standards. It includes a chapter on the history of video coding and video coding standards, offering insights into the development and evolution of video compression technologies.
 - [Coursera: AR & Video Streaming Services Emerging Technologies](https://www.coursera.org/learn/ar-technologies-video-streaming) - An online course that explores augmented reality applications, technologies, products, and businesses, providing insights into video streaming methodologies and services.
@@ -2882,7 +2684,7 @@ The solution supports:
 - [How to Develop a Video Streaming Service in 2024](https://toxigon.com/developing-a-video-streaming-service) - A detailed guide by Toxigon that outlines the steps to develop a video streaming service, including planning, choosing the right technology stack, and ensuring video quality.
 - [How to Live Stream: Beginners Guide to Get Started](https://academy.wedio.com/how-to-live-stream) - A guide providing five simple steps to start live streaming, including choosing the right platform, setting up equipment, and engaging with your audience.
 - [How To Stream Video: A Beginner's Guide](https://web.archive.org/web/20260313011439/https://www.inetsolutions.org/how-to-stream-video-a-beginners-guide) - A beginner's guide covering the essentials of setting up audio and video sources, choosing streaming destinations, and understanding the basics of live streaming.
-- [HowVideo.works](https://howvideo.works)
+- [HowVideo.works](https://howvideo.works) - Educational resource explaining how video technology works from codec fundamentals to streaming delivery.
 - [IBM Video Streaming: Basics of Streaming Video Production](https://support.video.ibm.com/hc/en-us/articles/207852167-Basics-of-Streaming-Video-Production) - An article detailing the five essential elements of any streaming production setup, providing foundational knowledge for setting up and managing video streaming workflows.
 - [In-browser Transcoding of Video Files with FFmpeg and WebAssembly](https://blog.scottlogic.com/2020/11/23/ffmpeg-webassembly.html) - This article explores using the WebAssembly build of FFmpeg to perform video transcoding directly within the browser. It provides a step-by-step guide to setting up FFmpeg.WebAssembly and demonstrates how to transcode video files client-side.
 - [Integrating FFmpeg with React.js via WebAssembly](https://www.editframe.com/guides/integrating-ffmpeg-with-react.js-via-webassembly) - This guide explores utilizing FFmpeg within a React.js environment, leveraging WebAssembly for browser-based video processing tasks. It provides a step-by-step approach to setting up a React project with FFmpeg.WebAssembly, demonstrating client-side video manipulations such as format conversion and adding text overlays.
@@ -2978,7 +2780,7 @@ The solution supports:
 
 ### Encoding & Transcoding Guides
 
-- [3 Cases from a Video Expert: Encoding Basics](https://medium.com/vicuesoft-techblog/3-cases-from-a-video-expert-encoding-basics-b1ba1c398af8)
+- [3 Cases from a Video Expert: Encoding Basics](https://medium.com/vicuesoft-techblog/3-cases-from-a-video-expert-encoding-basics-b1ba1c398af8) - Vicuesoft blog article explaining fundamental video encoding concepts through practical case studies.
 - [Back to Basics: Encoding Definition and Adaptive Bitrate](https://bitmovin.com/encoding-definition-bitrates/?utm_campaign=Newsletter&utm_medium=email&_hsenc=p2ANqtz-8MPFxhR7snQrxPYM7Bl3UTEMgOh5ZXoDQCHjLl9lkskqE0IfBhEuz3us39Br-lvA_CnyNmQl6L5wqO6iKOfAJ8HznenQ&_hsmi=79678208&utm_content=79677632&utm_source=hs_email&hsCtaTracking=b8eb0e0a-f292-435e-8b99-719b75d81412%7C367afa65-d810-4c2e-aa2c-c87e897a8942)
 - [Codec Wiki — AV1 for Dummies](https://wiki.x266.mov/blog/av1-for-dummies) - Independent codec-wiki AV1 getting-started guide covering the encoder pipeline and practical encoding tips.
 - [CRF Guide (Constant Rate Factor in x264, x265 and libvpx)](https://slhck.info/video/2017/02/24/crf-guide.html) - What is the Constant Rate Factor?
@@ -2992,34 +2794,20 @@ The solution supports:
 - [Video Coding Basics - How is this so efficient?](https://youtu.be/LDeL7-49qm4) - An introduction to the basics of video coding.
 - [Video Encoding — Compression and Resolutions](https://medium.com/@eyevinntechnology/chessboard-for-beginners-video-encoding-compression-and-resolutions-bcefe04fa639) - Written by: Boris Asadanin, Streaming Media Consultant at Eyevinn Technology.
 
-#### FFmpeg
-
-- [FFmpeg and how to use it wrong](https://videoblerg.wordpress.com/2017/11/10/ffmpeg-and-how-to-use-it-wrong) - I've been in the streaming media industry since 2008 and have seen a lot of misinformation regarding both FFmpeg and libx264. In this post I hope to help shed some light on what does and does..
-- [FFmpeg Threads Command: How it Affects Quality and Performance](https://streaminglearningcenter.com/blogs/ffmpeg-command-threads-how-it-affects-quality-and-performance.html) - So, I received an email from an acquaintance that read, "I was curious if there is actually any benefit to a "threads=" type custom command in x264. Specifically many streamers are buying 8 core/16 thread CPUs to encode as a standalone client capturing information from a video capture device." I had an article on FFmpeg..
-- [x264 FFmpeg Options Guide - Linux Encoding](https://sites.google.com/site/linuxencoding/x264-ffmpeg-mapping)
-
-#### HEVC
-
-- [Guide to HEVC/H.265 Encoding and Playback](https://www.techspot.com/article/1131-hevc-h256-enconding-playback) - HEVC's main advantage over H.264 is that it offers roughly double the compression ratio for the same quality. This means that a video file encoded with HEVC can occupy half the space of its H.264 equivalent with no noticeable change in quality, or the same amount of space with improved quality.
-
-#### Audio
-
-- [How to Set Audio Levels for Video](https://www.premiumbeat.com/blog/how-to-set-audio-levels-for-video) - Bad sound can easily ruin good footage. Use these tips when it comes time to set audio levels for video and film projects.
-
 ### Books & Courses
 
-- [Circles of Confusion](https://tech.ebu.ch/publicaions/circles-of-confusion) - 2009-01-01. Roberts, Alan.
+- [Circles of Confusion](https://tech.ebu.ch/publicaions/circles-of-confusion) - EBU technical paper on circles of confusion in imaging. Covers optical and resolution considerations for video.
 - [Communicating Pictures](https://www.elsevier.com/books/communicating-pictures/bull/978-0-12-405906-1) - 2014-06-20 (1st Edition). Bull, David.
 - [Fora Soft — Video Encoding course](https://www.forasoft.com/learn/video-encoding) - Free 6-chapter course on video encoding: pixels, HDR, AV1/VVC, encoder internals, rate control, and quality metrics.
 - [Fundamentals of Multimedia](https://www.amazon.com/Fundamentals-Multimedia-Texts-Computer-Science/dp/303062126X) - 2022-02-17 (3rd Edition). Ze-Nian Li (Author), Mark S. Drew (Author), Jiangchuan Liu.
-- [The Good Parts of LibVLC](https://mfkl.gumroad.com/l/libvlc-good-parts) - 2022-09-15. Finkel, Martin.
+- [The Good Parts of LibVLC](https://mfkl.gumroad.com/l/libvlc-good-parts) - Guide focusing on practical LibVLC usage patterns. Helps developers integrate VLC media framework effectively.
 - [Video Compression Handbook](https://www.amazon.com/dp/0134866215) - 2018-07-03 (2nd Edition). Beach, Andy; Owen, Aaron.
 
 ### Player Development Documentation
 
 - [hls.js API Docs (HLS class reference)](https://hlsjs.video-dev.org/api-docs/hls.js.hls) - Official generated API reference for hls.js's core Hls class, hosted on the project's own docs domain (not GitHub).
 - [MSEPrimer — Media Source Extensions Tutorial](https://webplatform.github.io/docs/tutorials/MSEPrimer) - Community-maintained primer on Media Source Extensions fundamentals: SourceBuffer, appendBuffer, manifest structure basics.
-- [Netfix](https://github.com/nickdesaulniers/netfix) - Let's build a Netflix.
+- [Netfix](https://github.com/nickdesaulniers/netfix) - Educational project walking through building a Netflix-like streaming platform. Demonstrates VOD architecture basics.
 - [SDK Development Guide](https://github.com/rokudev/SDK-Development-Guide) - Contribute to rokudev/SDK-Development-Guide development by creating an account on GitHub.
 - [Shaka Player — Architecture Tutorial (official dev docs)](https://shaka-player-demo.appspot.com/docs/api/tutorial-architecture.html) - Official architecture diagrams and explanation of Shaka Player's Networking, Manifest, DRM, and Streaming engine components.
 - [Shaka Player — Welcome Tutorial (official dev docs)](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html) - Official Shaka Player developer onboarding tutorial hub (JSDoc-generated), entry point for building with the library.
@@ -3035,11 +2823,11 @@ The solution supports:
 
 ### Tutorials & Case Studies
 
-- [Best Practices for End-to-End Workflow Monitoring | Streaming Video Alliance](https://www.streamingvideoalliance.org/project/best-practices-for-end-to-end-workflow-monitoring)
+- [Best Practices for End-to-End Workflow Monitoring | Streaming Video Alliance](https://www.streamingvideoalliance.org/project/best-practices-for-end-to-end-workflow-monitoring) - Streaming Video Alliance guidelines for monitoring video workflows from ingest through delivery to end users.
 - [BigBlueButton](https://bigbluebutton.org) - An open source web conferencing system designed for online learning. BigBlueButton supports video, audio, slides, chat, and whiteboard, and is often integrated with learning platforms.
 - [Demystifying HTML5 Video Player](https://medium.com/@eyevinntechnology/demystifying-html5-video-player-e480846328f0) - In this post we will go under the hood of a HTML video player for video streaming. With the exception of Apple and their browser Safari, no..
 - [FFmpeg Libav Tutorial](https://github.com/leandromoreira/ffmpeg-libav-tutorial) - Learn how media works from basic to transmuxing, transcoding and more.
-- [FFmpeg tutorial](http://www.dranger.com/ffmpeg)
+- [FFmpeg tutorial](http://www.dranger.com/ffmpeg) - Tutorial series teaching FFmpeg usage and video processing fundamentals for developers.
 - [FFmpeg Wiki: Streaming Guide](https://trac.ffmpeg.org/wiki/StreamingGuide) - An official Wiki guide from FFmpeg explaining how to set up streaming using FFmpeg, including examples for streaming via RTMP to servers or using FFmpeg as a server for HLS/DASH.
 - [Galicaster](https://github.com/teltek/Galicaster) - An open source lecture capture system often used with the Opencast platform. It provides an interface for recording multiple video sources (camera, slides) in classrooms or conferences.
 - [hls.js Low-Latency Playlist Simulator](https://hls-js.netlify.app/demo/?src=LL-HLS_URL) - An online demo environment for hls.js where one can input a Low-Latency HLS playlist URL to test playback. Useful for testing LL-HLS streams in a real player implementation and observing buffering and timing behaviors.
@@ -3060,7 +2848,7 @@ The solution supports:
 ### Community Blogs & Forums
 
 - [About Frame Rates or Why 29.97?](https://theautomaticfilmmaker.com/blog/2009/2/23/about-frame-rates-or-why-2997.html) - I recently remembered this popular post from my old blog. Since that blog no longer exists, I thought I would repost it here. Since I wrote this post about a decade ago, many others of done a much better job describing this in detail. I highly recommend the following two videos by Alec Watson fro.
-- [OTT Content Delivery](https://medium.com/@eyevinntechnology/ott-content-delivery-b43a35ef24f6)
+- [OTT Content Delivery](https://medium.com/@eyevinntechnology/ott-content-delivery-b43a35ef24f6) - Overview article on OTT content delivery architecture and strategies. Covers video distribution fundamentals.
 
 ### Webinars & Conference Talks
 
@@ -3073,11 +2861,7 @@ The solution supports:
 
 #### Podcasts
 
-- [The Video Insiders](https://thevideoinsiders.simplecast.com/episodes) - Video Insiders Podcast.
-
-#### HLS
-
-- [Advances in HTTP Live Streaming - WWDC 2017 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2017/504) - HTTP Live Streaming allows you to stream live and on-demand content to global audiences. Learn about great new features and enhancements..
+- [The Video Insiders](https://thevideoinsiders.simplecast.com/episodes) - Podcast covering video technology trends, streaming industry insights, and engineering best practices.
 
 ### Video Streaming Tutorials
 
@@ -3085,15 +2869,11 @@ The solution supports:
 - [HLS adaptive streaming tutorial with CloudFront & JW Player | Miracle Tutorials](https://www.miracletutorials.com/hls-adaptive-streaming-tutorial-with-cloudfront-jw-player) - A step-by-step HLS adaptive streaming tutorial with CloudFront & JW Player in two parts. It is easier than you think. This tutorial presumes you have.
 - [HOW TO: View an HLS Stream in QuickTime or VLC – Softron Support Desk](https://softron.zendesk.com/hc/en-us/articles/207694617-HOW-TO-View-an-HLS-Stream-in-QuickTime-or-VLC?mobile_site=true)
 - [How video streaming works on the web: An introduction](https://medium.com/canal-tech/how-video-streaming-works-on-the-web-an-introduction-7919739f7e1) - Note: this article is an introduction to video streaming in JavaScript and is mostly targeted to web developers. A large part of the..
-- [Internet Video Streaming — ABR part 1](https://medium.com/@eyevinntechnology/internet-video-streaming-abr-part-1-b10964849e19?source=userActivityShare-94bccb50d11-1559723768&_branch_match_id=664736558865703297)
-- [Internet Video Streaming — ABR part 2](https://medium.com/@eyevinntechnology/internet-video-streaming-abr-part-2-dbce136b0d7c?source=userActivityShare-94bccb50d11-1559723862&_branch_match_id=664736952377004405)
+- [Internet Video Streaming — ABR part 1](https://medium.com/@eyevinntechnology/internet-video-streaming-abr-part-1-b10964849e19?source=userActivityShare-94bccb50d11-1559723768&_branch_match_id=664736558865703297) - First part of Eyevinn's introduction to adaptive bitrate streaming concepts and fundamentals for video delivery.
+- [Internet Video Streaming — ABR part 2](https://medium.com/@eyevinntechnology/internet-video-streaming-abr-part-2-dbce136b0d7c?source=userActivityShare-94bccb50d11-1559723862&_branch_match_id=664736952377004405) - Second part of Eyevinn's ABR series covering advanced adaptive bitrate streaming techniques and implementation.
 - [Introduction to HTTP Live Streaming: HLS on Android and More](https://www.toptal.com/apple/introduction-to-http-live-streaming-hls) - This article explains how HTTP Live Streaming works and demonstrates how to create an HLS player in Android.
 - [Streaming Onboarding](https://github.com/Eyevinn/streaming-onboarding) - New to streaming and don't know where to start? This is the place for you!
 - [Video Streaming Cheatsheet](https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet.pdf) - A double sided page, suitable for printing, that contains common terminology used in the video streaming industry in a quick reference format.
-
-#### HLS
-
-- [Guide to Mobile Video Streaming with HLS](https://mux.com/blog/mobile-hls-guide) - HTTP Live Streaming, also known as HLS, is the most common format used today for streaming video. If you're building a video streaming application today, you should probably use HLS. Apple created the HLS standard in 2009, and it is the required streaming format for iOS devices. Since then, Android.
 
 ## Contributing
 
