@@ -19,7 +19,7 @@ The easiest way to contribute is through our website:
 
 ### Option 2: Submit via GitHub
 
-1. Fork the repository: [https://github.com/krzemienski/awesome-video](https://github.com/krzemienski/awesome-video)
+1. Fork the repository: [krzemienski/awesome-video](krzemienski/awesome-video)
 2. Create a new branch: `git checkout -b add-resource-name`
 3. Add your resource to the appropriate section in README.md
 4. Follow the format: `- [Resource Name](URL) - Brief description.`
