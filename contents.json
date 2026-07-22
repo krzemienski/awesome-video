@@ -14336,6 +14336,24 @@
     },
     {
       "category": [
+        "quality-testing"
+      ],
+      "homepage": "https://pulse.beon.live",
+      "description": "Free agentless web checker for live-stream delivery. Paste an HLS, DASH or WHEP URL and it grades live-edge latency, throughput, bitrate-ladder health and rebuffering from a viewer's perspective.",
+      "title": "Pulse",
+      "tags": [
+        "HLS",
+        "DASH",
+        "WebRTC",
+        "latency",
+        "stream monitoring",
+        "health check",
+        "reporting",
+        "performance"
+      ]
+    },
+    {
+      "category": [
         "roku"
       ],
       "homepage": "https://github.com/juliomalves/roku-libs",
