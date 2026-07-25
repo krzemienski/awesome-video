@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "Vandar CLI",
+      "description": "AI-powered personalized video generation from the command line. Built on Remotion with React/Three.js visuals, AI scripting, and TTS.",
+      "homepage": "https://github.com/AddisonHoff/vandar-cli",
+      "category": [
+        "general-tools"
+      ],
+      "tags": [
+        "AI",
+        "video generation",
+        "CLI",
+        "Remotion",
+        "TTS"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
