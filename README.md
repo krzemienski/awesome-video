@@ -936,6 +936,7 @@
 - [subgen — Whisper Auto-Subtitles for Media Servers](https://github.com/McCloudS/subgen) - Auto-subtitle generator using Whisper (stable-ts + faster-whisper) for Jellyfin/Plex/Emby/Bazarr, CPU or CUDA.
 - [Subs Extract](https://github.com/cessen/subs_extract) - Extracts per-sentence subtitles + audio from a subtitle file + video file.
 - [subsai](https://github.com/absadiki/subsai) - Subtitle generation tool with WebUI, CLI, and Python API using faster-whisper; exports srt/ass/ssa/sub/JSON/txt/vtt with translation support.
+- [Subtitle Toolbox](https://khangyen.github.io/subtitle-toolbox/) - Browser-only tool that converts between SRT, WebVTT, and plain transcript, shifts cue timing, and cleans subtitles (strips formatting tags, removes hearing-impaired text, fixes numbering and overlaps); runs entirely client-side with no upload.
 - [subtp](https://github.com/mochi-neko/subtp) - Rust parser for SRT and WebVTT with round-trip parse/render of cues, comments, styles, and regions.
 - [TV Subtitle Extraction](https://github.com/statsbiblioteket/tv-subtitle-extraction) - System for extraction of subtitles from TV broadcasts.
 - [vidstack/captions — Lightweight JS Caption Parser/Renderer](https://github.com/vidstack/captions) - Modern ~5kB JS library parsing and rendering VTT/SRT/SSA captions, with server-side support, VTT-region rollup captions, and CSS styling.
