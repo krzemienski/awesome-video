@@ -585,6 +585,7 @@
 - [Express FFmpeg](https://github.com/bookyo/express-ffmpeg) - Node.js FFmpeg video transcode webui，基于Node.js的云转码系统 HTTPS://www.efvcms.com.
 - [Media Works](https://github.com/quarkscript/media_works) - Transcode video by FFmpeg with nvenc; normalize the volume; force dynamic range compression to the volume.
 - [MediaArchiver](https://github.com/zolinux/MediaArchiver) - Transcode video files using FFmpeg and python3.
+- [Mediaproc](https://github.com/psyb0t/docker-mediaproc) - Containerized media-processing API (FFmpeg, SoX, ImageMagick) driven over SSH for trim, concat, transcode, scale, and batch jobs.
 - [Mmf](https://github.com/mrpdaemon/mmf) - Video transcoding FFmpeg frontend in Python.
 - [Mobile FFmpeg](https://github.com/tanersener/mobile-ffmpeg) - FFmpeg for Android, iOS and tvOS.
 - [mofo7777/Stack Overflow](https://github.com/mofo7777/Stackoverflow) - All source codes I've provided on Stack Overflow as an answer, usually under tag ms-media-foundation. Mediafoundation, audio, video, 3D, decoder, encoder. - mofo7777/Stack Overflow.
@@ -989,6 +990,7 @@
 - [Audio Transcriber](https://github.com/shinobizero/audio_transcriber) - Transcodes audio & video files to text, supports MP3, M4A, WAV, MP4, MKV, AVI, MPG & MPEG. No Online API's. Python 3.
 - [FGVC](https://github.com/vt-vl-lab/FGVC) - (ECCV 2020) Flow-edge Guided Video Completion.
 - [FlashVSR](https://github.com/OpenImagingLab/FlashVSR) - CVPR 2026 real-time diffusion-based streaming video super-resolution using one-step, locality-constrained sparse attention with a tiny conditional decoder.
+- [Flickies](https://github.com/psyb0t/docker-flickies) - Self-hosted video API for lipsync (LatentSync, Wav2Lip) and face restoration (GFPGAN) plus FFmpeg operations, exposed over REST and MCP with CPU and CUDA support.
 - [Jukebox](https://github.com/openai/jukebox) - Code for the paper "Jukebox: A Generative Model for Music".
 - [SimpleVQA](https://github.com/sunwei925/SimpleVQA) - Deep-learning no-reference video quality assessment for user-generated content, in PyTorch with SlowFast feature extraction.
 - [Smart City Sample](https://github.com/OpenVisualCloud/Smart-City-Sample) - The smart city reference pipeline shows how to integrate various media building blocks, with analytics powered by the OpenVINO™ Toolkit, for traffic or stadium sensing, analytics and management tas..
