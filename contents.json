@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "OpenShorts",
+      "homepage": "https://github.com/mutonby/openshorts",
+      "description": "An open source AI clip generator that turns long-form video into vertical 9:16 short clips. It detects the moments worth clipping, reframes them with face tracking, burns in word-level subtitles and can dub the result into other languages. Built on Python, FFmpeg, faster-whisper and YOLOv8, and self-hostable with Docker Compose.",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video editing",
+        "short-form video",
+        "subtitles",
+        "machine learning",
+        "ffmpeg"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
