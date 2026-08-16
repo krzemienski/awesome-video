@@ -19,12 +19,28 @@ The easiest way to contribute is through our website:
 
 ### Option 2: Submit via GitHub
 
-1. Fork the repository: [krzemienski/awesome-video](krzemienski/awesome-video)
+1. Fork the repository: [krzemienski/awesome-video](https://github.com/krzemienski/awesome-video)
 2. Create a new branch: `git checkout -b add-resource-name`
-3. Add your resource to the appropriate section in README.md
-4. Follow the format: `- [Resource Name](URL) - Brief description.`
-5. Make sure your addition maintains alphabetical order
-6. Create a Pull Request
+3. Add your resource to `contents.json`, **not** `README.md`. The README is
+   generated from `contents.json`, so edits made directly to it are lost the
+   next time it is rebuilt.
+4. Add an entry to the `projects` array, using a `category` that already exists
+   in the `categories` array:
+
+   ```json
+   {
+     "title": "Resource Name",
+     "description": "Brief description.",
+     "homepage": "https://example.com",
+     "category": [
+       "media-tools"
+     ],
+     "tags": [
+       "video"
+     ]
+   }
+   ```
+5. Create a Pull Request
 
 ## Guidelines
 
@@ -35,10 +51,9 @@ The easiest way to contribute is through our website:
 - No promotional or marketing content
 
 ### Formatting
-- Use the format: `- [Name](URL) - Description.`
+- Add entries to `contents.json`, not `README.md`
 - Description should be concise (1-2 sentences)
 - Description must end with a period
-- Maintain alphabetical order within sections
 - Ensure URLs are working and use HTTPS when available
 
 ## Approval Process
