@@ -1153,6 +1153,21 @@
       ]
     },
     {
+      "title": "Boiler",
+      "description": "A free, open source macOS app that applies line boil, the shimmer hand-drawn animation gets from every frame being redrawn slightly differently, to ordinary video. It also offers chromatic aberration and film grain, accepts MP4, MOV and animated GIF, and exports H.264 with the original audio preserved.",
+      "homepage": "https://boiler.jejestudios.com",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video effects",
+        "animation",
+        "macos",
+        "ffmpeg",
+        "open source"
+      ]
+    },
+    {
       "title": "OOONA Tools",
       "description": "OOONA Tools offers professional online tools for subtitling and captioning, accessible from any computer at any time. The platform provides a simple and intuitive web interface for creating and editing captions and subtitles in any language. Features include frame-accurate text timing with an advanced timeline, video grid for precise caption positioning, audio waveform, and scene-change detection for accurate subtitle spotting. It supports import and export in various caption and subtitle formats, including TTML/DFXP, VTT, SCC, CAP, EBU-STL, SRT, IMSC1, PAC, 890, and more. Additionally, it supports generating image-based subtitles for DVD/Blu-ray/DCP authoring. Powerful Pro apps allow users to run automated QA scripts to check and fix files, as well as customize hotkeys and project settings.",
       "homepage": "https://theiabm.org/bamproducts/online-caption-subtitle-toolkit/",
