@@ -1960,6 +1960,7 @@
 
 - [Chrome Media Internals](https://developer.chrome.com/docs/devtools/media-panel) - A built-in Chrome tool that provides detailed logs and diagnostics for media playback and streaming issues.
 - [Man in the Middle Proxy](https://github.com/mitmproxy/mitmproxy) - An interactive HTTPS proxy that allows inspection, modification, and debugging of network traffic, useful for video streaming analysis.
+- [Roku Dev Studio](https://github.com/paramount-engineering/roku-dev-studio) - Cross-platform Desktop Developer productivity tool for Debugging, and Managing Roku applications.
 - [Video Containers Debugging Tools](https://github.com/leandromoreira/video-containers-debugging-tools) - A set of command lines to debug video streaming files like mp4 (MPEG-4 Part 14), ts (MPEG-2 Part 1), fmp4 in Dash, HLS, or MSS, with or without DRM.
 
 ### Build Scripts & Automation
