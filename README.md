@@ -1049,6 +1049,7 @@
 
 - [DVB Inspector](https://sourceforge.net/projects/dvbinspector) - Download DVB Inspector for free. DVB transport stream analyzer written in java. DVB Inspector is a java program to analyze captured DVB-streams. It is not a real time tool that can interact with PC-TV DVB hardware directly.
 - [Elecard Stream Analyzer](https://www.elecard.com/products/video-analysis/stream-analyzer) - Professional Video Analysis Tool For Syntax Analysis Of Encoded Media Streams. Operates With MPEG-2 PS/TS, VES and MP4 Files. Automation, batch execution via Command Line Interface. Check your multiplexer.
+- [PaperEdits Agentic Video Understanding Benchmark](https://paperedits.com/benchmarking/gemini-agentic-video-understanding-benchmark) - Matched Gemini 3.7 Flash comparison of agentic and static video inspection for editing tasks, with public protocol, outputs, scoring, latency, cost results, and limitations.
 - [Promising Initial Results with AV1 Testing - Streaming Learning Center](https://streaminglearningcenter.com/blogs/promising-initial-results-with-av1-testing.html) - I began testing AV1 early this week. Briefly, my tests involve 16 ten-second clips in four genres (movies, sports, animations, gaming) and an "other" category (music video, nature video).
 
 ## Protocols & Transport
@@ -2829,4 +2830,3 @@ Visit [https://awesome.video](https://awesome.video) to:
 
 ### Via GitHub
 Please read the [contribution guidelines](CONTRIBUTING.md) first.
-
