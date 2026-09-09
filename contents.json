@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "TranscriptFetch",
+      "description": "API that returns timestamped transcripts and captions for YouTube, TikTok, Instagram and podcast URLs, with speech-to-text fallback when a video has no captions.",
+      "homepage": "https://transcriptfetch.com",
+      "category": [
+        "subtitles-captions"
+      ],
+      "tags": [
+        "transcripts",
+        "captions",
+        "subtitles",
+        "speech-to-text",
+        "API"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
