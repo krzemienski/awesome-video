@@ -2735,6 +2735,7 @@
 - [Video and containers](https://neurocline.github.io/dev/2016/07/28/video-and-containers.html) - NALU, Annex B, and Start Codes.
 - [Video Coding Basics - How is this so efficient?](https://youtu.be/LDeL7-49qm4) - An introduction to the basics of video coding.
 - [Video Encoding — Compression and Resolutions](https://medium.com/@eyevinntechnology/chessboard-for-beginners-video-encoding-compression-and-resolutions-bcefe04fa639) - Written by: Boris Asadanin, Streaming Media Consultant at Eyevinn Technology.
+- [WebCodecs vs ffmpeg.wasm: What We Measured](https://videocompress.dev/webcodecs-vs-ffmpeg-wasm) - Measured comparison of the two browser-side encoding paths on identical clips: WebCodecs runs 7.5-10.1x faster, while ffmpeg.wasm's CRF rate control sometimes produces the smaller file. Also covers per-file routing, passthrough thresholds, and the 5x throughput spread between hardware and software WebCodecs encoders.
 
 ### Books & Courses
 
