@@ -804,6 +804,7 @@
 
 - [ffsubsync](https://github.com/smacke/ffsubsync) - A tool to automatically synchronize subtitles with video by analyzing audio tracks. It uses speech detection to align subtitle timing via FFmpeg and machine learning.
 - [Gaupol](https://otsaloma.io/gaupol) - An open source subtitle editor for text-based subtitle files, featuring timing adjustment, translation support, and built-in video preview (Linux).
+- [VideoText](https://videotext.io/) - Transcription with speaker diarization, subtitles, translation, and transcript formatting. Whisper large-v3. Files deleted after processing.
 
 #### Subtitles & Captions
 
@@ -941,7 +942,10 @@
 - [vidstack/captions — Lightweight JS Caption Parser/Renderer](https://github.com/vidstack/captions) - Modern ~5kB JS library parsing and rendering VTT/SRT/SSA captions, with server-side support, VTT-region rollup captions, and CSS styling.
 - [whisper-subtitle-generator](https://github.com/giakinh0823/whisper-subtitle-generator) - Cross-platform GUI for batch subtitle generation with SRT/VTT/JSON export, translation, and GPU acceleration. MIT.
 - [WhisperTimeSync — Transcript-to-Whisper Subtitle Aligner](https://github.com/EtienneAb3d/WhisperTimeSync) - Aligns an existing accurate transcript over Whisper timestamps to produce SRT with both good text and good timing.
-
+- [Video to Subtitles](https://videotext.io/video-to-subtitles) - ull caption generation hub: upload a video for timed SRT/VTT output, then fix, translate, or burn captions in the same workflow.
+- [Burn Subtitles](https://videotext.io/burn-subtitles) - Hardcodes SRT/VTT captions permanently into MP4 video — ideal for Instagram, TikTok, and players without native caption support.
+- [Translate Subtitles](https://videotext.io/translate-subtitles) - Free online SRT/VTT subtitle translator supporting 70+ languages with every cue timestamp preserved on download.
+- [Fix Subtitles](https://videotext.io/fix-subtitles) - Auto-corrects overlapping timestamps, long lines, CPS/reading-speed issues, and SRT/VTT formatting errors with instant download.
 ### VMAF PSNR SSIM Tools
 
 - [Collection of VMAF Resources](https://streaminglearningcenter.com/blogs/collection-of-vmaf-resources.html) - A colleague asked for some resources relating to VMAF. Rather than answer in an email I thought I would create a post around it. Some of these are from Netflix, most from me (Jan Ozer). I've broken the items into three groups; Computing VMAF, Using VMAF, and About VMAF.
@@ -995,6 +999,7 @@
 - [Upscale-A-Video](https://github.com/sczhou/Upscale-A-Video) - CVPR 2024 temporal-consistent diffusion model for real-world video super-resolution.
 - [Video TensorFlow](https://docs.google.com/presentation/d/1NAqYWmFOwxJEacZCuPLdX0mRNRFPFgeRbsm22EaxerU/edit?usp=sharing) - Using TensorFlow For Audience Measurement Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv.
 - [Videocr](https://github.com/apm1467/videocr) - Extract hardcoded subtitles from videos using machine learning.
+- [Video to Transcript](https://videotext.io/video-to-transcript) - Free AI video transcription with 98.5% word accuracy using Whisper large-v3; upload MP4/MOV/WebM/MKV and get a transcript, SRT/VTT, AI summary, and chapters in one pass.
 
 ### Color Grading & Correction Tools
 
@@ -1032,6 +1037,8 @@
 - [media-converter (M1XZG)](https://github.com/M1XZG/media-converter) - Self-hosted web-UI media converter with GPU acceleration (NVENC/AMF/QSV), Docker-ready, supports batch resolution upscaling and audio extraction.
 - [unifi-protect-remux](https://github.com/petergeneric/unifi-protect-remux) - Niche true-remux tool converting proprietary Ubiquiti UniFi Protect.ubv camera format to MP4 without re-encoding.
 - [wo-video-converter](https://github.com/thurti/wo-video-converter) - Offline browser-based video converter powered by FFmpeg-WebAssembly, no server upload required.
+- [Guideline Format](https://videotext.io/guideline-format) - Auto-formats raw transcripts to Rev, GoTranscript, TranscribeMe, or Scribie style guides — verbatim rules, speaker labels, punctuation, and QA compliance scoring, exported client-ready.
+- [Compress Video](https://videotext.io/compress-video) - Free online video compressor with light, medium, and heavy settings to shrink file size for faster sharing and uploads.
 
 ### Audio Analysis & Processing
 
