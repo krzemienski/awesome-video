@@ -229,7 +229,8 @@
 - [Android FFmpeg Transcoder](https://github.com/kibotu/Android-FFmpeg-Transcoder) - An Android library for performing video transcoding on-device, leveraging FFmpeg (or MediaCodec) to extract frames or encode videos on Android.
 - [Arch FFmpeg GPAC](https://github.com/majamee/arch-ffmpeg-gpac) - A ready-prepared video transcoding pipeline to create DASH/ HLS compatible video files & playlists.
 - [Auto-Editor](https://github.com/WyattBlue/auto-editor) - An automatic video editor written in Python that can remove silence, jump cuts, and more without manual editing. It processes video/audio to create a faster-paced output automatically.
-- [Avidemux](https://avidemux.sourceforge.net) - A simple, free video editor for cutting, filtering, and encoding tasks, supporting many file types and codecs.
+- [Avidemux](https://avidemux.sourceforge.net)
+- [ReelWorkshop](https://reelworkshop.com) - Browser-based compilation maker for importing clips, arranging moments, previewing edits, and exporting short-form MP4 videos. - A simple, free video editor for cutting, filtering, and encoding tasks, supporting many file types and codecs.
 - [AviSynth+](https://avs-plus.net) - An improved version of the classic AviSynth frameserver. AviSynth+ allows video processing and filtering through scripting, enabling complex edits and conversions on Windows with high performance.
 - [Avtk](https://github.com/senko/avtk) - A Python library for audio and video processing that provides tools for encoding and manipulating media files.
 - [avTranscoder](https://github.com/avTranscoder/avTranscoder) - C++ wrapper providing a high-level API around FFmpeg and LibAV for video transcoding tasks.
