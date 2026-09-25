@@ -30619,6 +30619,22 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "UpRes",
+      "description": "AI image and video upscaling SaaS and API supporting neural models up to 8K, temporal consistency, and CLI/MCP integration.",
+      "homepage": "https://upres.ai",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "AI",
+        "video upscaling",
+        "super-resolution",
+        "image enhancement",
+        "API",
+        "MCP"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
