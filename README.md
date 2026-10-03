@@ -932,6 +932,7 @@
 - [Cea Extractor](https://github.com/Comcast/cea-extractor) - Parsing and display logic for CEA-608 caption data in fragmented MP4 files.
 - [Extract Subtitles](https://github.com/shawnsky/extract-subtitles) - Utility to extract subtitle streams from video containers into separate text-based subtitle files.
 - [Node Thumbnails Webvtt](https://github.com/estliberitas/node-thumbnails-webvtt) - Video thumbnail generator generating WebVTT spec file.
+- [PandaVid tools](https://github.com/PandaVId-ai/Pandavid) - Zero-dependency SRT to WebVTT and WebVTT to SRT converter with a subtitles-to-text option, as a Node.js CLI, JavaScript module and browser page.
 - [Serverless Subtitles](https://github.com/awslabs/serverless-subtitles) - Can handle a video input, extract the sound, transcript it and generate different subtitle files for your video.
 - [subgen — Whisper Auto-Subtitles for Media Servers](https://github.com/McCloudS/subgen) - Auto-subtitle generator using Whisper (stable-ts + faster-whisper) for Jellyfin/Plex/Emby/Bazarr, CPU or CUDA.
 - [Subs Extract](https://github.com/cessen/subs_extract) - Extracts per-sentence subtitles + audio from a subtitle file + video file.
