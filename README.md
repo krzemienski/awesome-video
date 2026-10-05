@@ -1564,6 +1564,7 @@
 - [HybridMediaPlayer](https://github.com/mkaflowski/HybridMediaPlayer) - Android music and video player. Uses ExoPlayer 2 and MediaPlayer for lower APIs and makes using ExoMediaPlayer easier.
 - [lcevc-androidx-media — LCEVC Playback for AndroidX Media3](https://github.com/v-novaltd/lcevc-androidx-media) - Fork of AndroidX Media3 (ExoPlayer) adding MPEG-5 LCEVC playback support via a decoder_lcevc module.
 - [mpv-android](https://github.com/mpv-android/mpv-android) - An Android port of the mpv media player. It leverages mpv's core for high quality video playback on Android devices, supporting hardware decoding and gesture controls.
+- [TMPlayer](https://github.com/dracu-lah/TMPlayer) - Unofficial open source Telegram video player for Android TV, phones, Windows and Linux that streams videos in your chats while they download.
 - [VideoPlayView](https://github.com/MarcinMoskala/VideoPlayView) - A custom Android view that integrates a video player with a loader and placeholder image, enabling quick embedding of video playback in Android apps.
 - [VLC Android](https://code.videolan.org/videolan/vlc-android) - VLC for Android, Android TV and ChromeOS.
 
@@ -1698,6 +1699,7 @@
 - [KSPlayer](https://github.com/kingslay/KSPlayer) - Swift media player framework for iOS/macOS/tvOS/visionOS on AVPlayer+FFmpeg with HLG, HDR10, HDR10+, Dolby Vision, Dolby Atmos, and text/image subtitle support.
 - [mpv.net (GitHub)](https://github.com/mpvnet-player/mpv.net) - Modern mpv-based Windows media player with a customizable GUI, themes, and extension support built on the mpv engine.
 - [Ruffle](https://github.com/ruffle-rs/ruffle) - A Flash Player emulator written in Rust.
+- [TMPlayer](https://github.com/dracu-lah/TMPlayer) - Unofficial open source Telegram video player for Android TV, phones, Windows and Linux that streams videos in your chats while they download.
 - [VLC](https://github.com/videolan/vlc) - Media player - All pull requests are ignored, please follow HTTPS://wiki.videolan.org/Sending_Patches_VLC/.
 - [VTM Decoder VLC Plugin](https://github.com/InterDigitalInc/VTMDecoder_VLCPlugin) - VVC (H.266) video decoder plugin for VLC Media Player based on a multithreaded VTM decoder implementation. Includes TS demux plugin with VVC stream format support. Enables VVC playback in VLC with configurable threading and hurry-up mode.
 
