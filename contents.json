@@ -366,6 +366,19 @@
   ],
   "projects": [
     {
+      "title": "JLD: Perceptual Distance Through A Jacobian Lens",
+      "description": "Research paper introducing a full-reference perceptual distance from a frozen vision encoder, with image-quality benchmarks and a video extension.",
+      "homepage": "https://arxiv.org/abs/2610.05967",
+      "category": "quality-testing",
+      "tags": [
+        "full-reference",
+        "perceptual-quality",
+        "video-quality",
+        "image-quality",
+        "research"
+      ]
+    },
+    {
       "title": "MPEG Standards Documentation",
       "description": "The official repository of MPEG standards, providing comprehensive documentation on various media coding standards, including MPEG-1, MPEG-2, MPEG-4, and the latest MPEG-I. This resource is essential for developers seeking in-depth understanding and implementation details of MPEG standards.",
       "homepage": "https://www.mpeg.org/standards/",
