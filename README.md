@@ -1699,7 +1699,6 @@
 - [KSPlayer](https://github.com/kingslay/KSPlayer) - Swift media player framework for iOS/macOS/tvOS/visionOS on AVPlayer+FFmpeg with HLG, HDR10, HDR10+, Dolby Vision, Dolby Atmos, and text/image subtitle support.
 - [mpv.net (GitHub)](https://github.com/mpvnet-player/mpv.net) - Modern mpv-based Windows media player with a customizable GUI, themes, and extension support built on the mpv engine.
 - [Ruffle](https://github.com/ruffle-rs/ruffle) - A Flash Player emulator written in Rust.
-- [TMPlayer](https://github.com/dracu-lah/TMPlayer) - Unofficial open source Telegram video player for Android TV, phones, Windows and Linux that streams videos in your chats while they download.
 - [VLC](https://github.com/videolan/vlc) - Media player - All pull requests are ignored, please follow HTTPS://wiki.videolan.org/Sending_Patches_VLC/.
 - [VTM Decoder VLC Plugin](https://github.com/InterDigitalInc/VTMDecoder_VLCPlugin) - VVC (H.266) video decoder plugin for VLC Media Player based on a multithreaded VTM decoder implementation. Includes TS demux plugin with VVC stream format support. Enables VVC playback in VLC with configurable threading and hurry-up mode.
 
