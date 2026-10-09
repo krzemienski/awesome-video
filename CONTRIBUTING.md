@@ -8,7 +8,7 @@ Thank you for your interest in contributing! We welcome submissions of high-qual
 
 The easiest way to contribute is through our website:
 
-1. Visit [https://awesome-list.com](https://awesome-list.com)
+1. Visit [https://awesome.video](https://awesome.video)
 2. Click on "Submit Resource" in the navigation
 3. Fill out the submission form with:
    - Resource title
@@ -63,4 +63,4 @@ By participating in this project you agree to abide by its terms.
 
 ## Questions?
 
-If you have questions or need help, please visit [https://awesome-list.com](https://awesome-list.com) or open an issue.
+If you have questions or need help, please visit [https://awesome.video](https://awesome.video) or open an issue.
