@@ -1650,6 +1650,7 @@
 - [Libvlcsharp](https://github.com/videolan/LibVLCSharp) - Cross-platform.NET/Mono bindings for LibVLC.
 - [Rocute — Roku UI component library](https://web.archive.org/web/20250827020057/https://github.com/willowtreeapps/rocute) - UI component library for Roku SceneGraph: styled components, animations, screensavers.
 - [Streamlab](https://vimond.github.io/streamlab) - Multi-format stream test tool for the browser. Brings convenience to verifying, inspecting, and troubleshooting adaptive streams and video files. A common interface on top of Shaka Player, HLS.js, and Rx-Player.
+- [TalkAStranger Stream Overlays](https://github.com/umairkhan2582/talkastranger-stream-overlays) - Lightweight transparent OBS Studio and Streamlabs browser source for live viewer alerts and sparks.
 - [switch media universal player](https://www.switch.tv/mediahq/universal-player) - Switch Media's customizable video player framework and UI components for web and mobile applications.
 - [Vapoursynth (GitHub)](https://github.com/vapoursynth/vapoursynth) - A video processing framework with simplicity in mind.
 
@@ -1875,6 +1876,7 @@
 - [Hybrik API Reference](https://docs.hybrik.com/api/v1/HybrikAPI.html?#getting-started) - API reference documentation for Hybrik, a cloud-based media processing platform that provides endpoints for managing video encoding, transcoding, and delivery workflows.
 - [rust-ac-FFmpeg](https://github.com/angelcam/rust-ac-ffmpeg) - Safe minimal Rust bindings to libav with no bindgen dependency, supporting FFmpeg 4-7.
 - [stainless-FFmpeg](https://github.com/nomalab/stainless-ffmpeg) - Rust FFmpeg wrapper for building and running media processing graphs efficiently.
+- [TalkAStranger Live Linker SDK](https://github.com/umairkhan2582/talkastranger-live-linker-sdk) - SDK to connect WebRTC video streaming with cross-platform broadcasting and creator monetization.
 - [XML + Code + Good times = RSG Application](https://medium.com/plexlabs/xml-code-good-times-rsg-application-b963f0cec01b) - Written by John Zolezzi - April 6th 2018.
 
 ### DRM Solutions & Implementations
