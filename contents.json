@@ -30019,6 +30019,19 @@
       ]
     },
     {
+      "title": "icey",
+      "homepage": "https://github.com/nilstate/icey",
+      "description": "C++20 media toolkit for FFmpeg pipelines, WebRTC transport, signalling, and TURN relay.",
+      "category": "infrastructure-delivery",
+      "tags": [
+        "C++",
+        "FFmpeg",
+        "WebRTC",
+        "signalling",
+        "TURN"
+      ]
+    },
+    {
       "title": "Medooze Media Server",
       "homepage": "https://github.com/medooze/media-server",
       "description": "An open source SFU (Selective Forwarding Unit) and MCU for WebRTC that routes and processes real-time video streams, supporting low-latency streaming and conferencing.",
