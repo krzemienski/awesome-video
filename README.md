@@ -2560,6 +2560,7 @@
 - [Unified Streaming Features Page](https://demo.unified-streaming.com/k8s/features/stable/#!/mpd) - A demonstration of Unified Streaming's feature set, including on-the-fly packaging and multi-format support.
 - [VOD on AWS](https://s3.amazonaws.com/solutions-reference/video-on-demand-on-aws/latest/video-on-demand-on-aws.pdf) - AWS reference architecture document for implementing video-on-demand streaming solutions using Amazon Web Services infrastructure and tools.
 - [VOD2Live](https://docs.google.com/presentation/d/1Ua76BBaZKtTmaZrlfM_eG0vwz0ZAqPIjreCSfB4qFQQ/edit?usp=sharing) - Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv.
+- [Vodlix](https://www.vodlix.com) - White-label OTT platform for launching branded video streaming services, with VOD and live TV, SVOD/AVOD/TVOD monetization, and apps for web, mobile and Smart TVs.
 
 ### CDN Integration & Distribution
 
