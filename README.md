@@ -938,6 +938,7 @@
 - [subsai](https://github.com/absadiki/subsai) - Subtitle generation tool with WebUI, CLI, and Python API using faster-whisper; exports srt/ass/ssa/sub/JSON/txt/vtt with translation support.
 - [subtp](https://github.com/mochi-neko/subtp) - Rust parser for SRT and WebVTT with round-trip parse/render of cues, comments, styles, and regions.
 - [TV Subtitle Extraction](https://github.com/statsbiblioteket/tv-subtitle-extraction) - System for extraction of subtitles from TV broadcasts.
+- [VideoText Subtitle Tools](https://videotext.io/tools) - Free browser-based SRT/VTT validator, reading-speed and line-length checker, timing fixer and converters; files stay on the device.
 - [vidstack/captions — Lightweight JS Caption Parser/Renderer](https://github.com/vidstack/captions) - Modern ~5kB JS library parsing and rendering VTT/SRT/SSA captions, with server-side support, VTT-region rollup captions, and CSS styling.
 - [whisper-subtitle-generator](https://github.com/giakinh0823/whisper-subtitle-generator) - Cross-platform GUI for batch subtitle generation with SRT/VTT/JSON export, translation, and GPU acceleration. MIT.
 - [WhisperTimeSync — Transcript-to-Whisper Subtitle Aligner](https://github.com/EtienneAb3d/WhisperTimeSync) - Aligns an existing accurate transcript over Whisper timestamps to produce SRT with both good text and good timing.
