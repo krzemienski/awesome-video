@@ -1564,7 +1564,7 @@
 - [HybridMediaPlayer](https://github.com/mkaflowski/HybridMediaPlayer) - Android music and video player. Uses ExoPlayer 2 and MediaPlayer for lower APIs and makes using ExoMediaPlayer easier.
 - [lcevc-androidx-media — LCEVC Playback for AndroidX Media3](https://github.com/v-novaltd/lcevc-androidx-media) - Fork of AndroidX Media3 (ExoPlayer) adding MPEG-5 LCEVC playback support via a decoder_lcevc module.
 - [mpv-android](https://github.com/mpv-android/mpv-android) - An Android port of the mpv media player. It leverages mpv's core for high quality video playback on Android devices, supporting hardware decoding and gesture controls.
-- [TMPlayer](https://github.com/dracu-lah/TMPlayer) - Unofficial open source Telegram video player for Android TV, phones, Windows and Linux that streams videos in your chats while they download.
+- [TMPlayer](https://github.com/dracu-lah/TMPlayer) - Unofficial open source Telegram video player for Android TV, phones, Windows, macOS and Linux that streams the videos in your own chats while they download.
 - [VideoPlayView](https://github.com/MarcinMoskala/VideoPlayView) - A custom Android view that integrates a video player with a loader and placeholder image, enabling quick embedding of video playback in Android apps.
 - [VLC Android](https://code.videolan.org/videolan/vlc-android) - VLC for Android, Android TV and ChromeOS.
 
