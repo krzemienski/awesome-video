@@ -1374,6 +1374,7 @@
 
 - [Auto Dash HLS](https://github.com/majamee/auto-dash-hls) - Automated toolchain for generating DASH/ HLS compatible files from all videos inside a root folder.
 - [bash scripts to create VOD HLS stream with FFmpeg almighty (tested on Linux and macOS)](https://gist.github.com/mrbar42/ae111731906f958b396f30906004b3fa) - README.md.
+- [FlowPick M3U8 Playlist Analyzer](https://flowpick.net/tools/m3u8-playlist-analyzer) - Inspect HLS playlists in the browser, including variants, tracks, segments, codecs and encryption metadata.
 - [HLS Download](https://github.com/Eyevinn/hls-download) - Download HLS and convert to MP4.
 - [HLS To MP4](https://github.com/egg-bread/hls-to-mp4) - Download HLS videos as MP4 (WebVTT for caption download optional).
 - [hlsvalidator](https://github.com/ferpart/hlsvalidator) - Go application wrapping Apple's mediastreamvalidator for concurrent HLS validation with JSON/HTML reports.
