@@ -10199,7 +10199,7 @@
     {
       "title": "Brightcove Video Cloud",
       "description": "Brightcove Video Cloud is a comprehensive online video platform offering APIs and SDKs for developers to integrate video ingestion, transcoding, content management, and delivery into their applications. It supports live streaming, interactive video, monetization, DRM, and analytics, enabling developers to build robust video solutions.",
-      "homepage": "https://dev.web-origin.brightcove.com/en/online-video-platform/platform-and-apis",
+      "homepage": "https://apis.support.brightcove.com/getting-started/getting-started-brightcove-apis.html",
       "category": [
         "infrastructure-delivery"
       ],
@@ -25866,7 +25866,7 @@
     },
     {
       "title": "OpenPlayerJS",
-      "homepage": "https://openplayerjs.io/",
+      "homepage": "https://www.openplayerjs.com/",
       "description": "A lightweight open source video and audio player for the web. OpenPlayerJS supports modern streaming formats (HLS via hls.js, DASH via dash.js) and provides a clean UI that is easily customizable, aiming to be an easy-to-integrate solution.",
       "tags": [
         "HTML5",
