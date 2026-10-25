@@ -26176,6 +26176,22 @@
       ]
     },
     {
+      "title": "m3u8-doctor",
+      "homepage": "https://github.com/romainGouraud/m3u8-doctor",
+      "description": "A CLI and JavaScript library that explains an HLS stream in plain words: separate audio renditions, the real tracks read from the first segment, AES-128 key check, DRM detection, live or VOD, and the matching ffmpeg command.",
+      "tags": [
+        "m3u8",
+        "HLS",
+        "ffmpeg",
+        "cli",
+        "debugging",
+        "JavaScript"
+      ],
+      "category": [
+        "hls"
+      ]
+    },
+    {
       "title": "mpd-parser (Node)",
       "homepage": "https://github.com/videojs/mpd-parser",
       "description": "A JavaScript library for parsing MPEG-DASH MPD manifests, maintained under the videojs project umbrella. It can interpret the XML of an MPD and output a JSON structure, making it easier to work with DASH manifests in web applications.",
