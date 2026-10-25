@@ -14,7 +14,7 @@ end
 
 def output_projects(projects, category_id)
   output = ''
-  projects.select { |project| project['category'] == category_id }
+  projects.select { |project| Array(project['category']).include?(category_id) }
     .sort_by { |project| project['title'] }
     .each do |project|
     output << "* [#{project['title'].force_encoding('utf-8')}](#{project['homepage']}) #{output_linux project['tags']} - #{project['description']}\n"
@@ -24,7 +24,7 @@ end
 
 # Returns true if the category has any projects
 def has_projects(projects, category_id)
-  projects.any? { |project| project['category'] == category_id }
+  projects.any? { |project| Array(project['category']).include?(category_id) }
 end
 
 # Returns true if the category or any of its subcategories have projects
