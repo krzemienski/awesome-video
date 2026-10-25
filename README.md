@@ -1040,6 +1040,7 @@
 
 ### Quality Analysis & Metrics
 
+- [PostMicroTools Delivery Spec Validator](https://www.postmicrotools.com/deliveryspec/) - Free browser tool that checks measured loudness, true peak, codec, resolution and colour space against EBU R128, ATSC A/85, Netflix and YouTube delivery specs — a pre-flight reference rather than automated QC.
 - [QCTools Documentation](https://bavc.github.io/qctools) - QCTools (Quality Control Tools for Video Preservation) is a free and open source software tool that helps users analyze and understand their digitized video files through use of audiovisual analytics and filtering. QCTools is funded by the National Endowment for the Humanities and the Knight Foundation, and is developed by the Bay Area Video Coalition.
 - [Quality of Experience in Streaming](https://medium.com/@eyevinntechnology/quality-of-experience-in-streaming-5c25355a4111?source=userActivityShare-94bccb50d11-1559724940&_branch_match_id=664741478927428385) - In Eyevinn Technology's ambition to broader our sharing of knowledge we now expand this with addressing quality.
 - [Software Tools](https://github.com/VQEG/software-tools) - VQEG's Software and Tools Website.
