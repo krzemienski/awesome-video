@@ -992,6 +992,7 @@
 - [Jukebox](https://github.com/openai/jukebox) - Code for the paper "Jukebox: A Generative Model for Music".
 - [SimpleVQA](https://github.com/sunwei925/SimpleVQA) - Deep-learning no-reference video quality assessment for user-generated content, in PyTorch with SlowFast feature extraction.
 - [Smart City Sample](https://github.com/OpenVisualCloud/Smart-City-Sample) - The smart city reference pipeline shows how to integrate various media building blocks, with analytics powered by the OpenVINO™ Toolkit, for traffic or stadium sensing, analytics and management tas..
+- [UpRes](https://upres.ai) - AI image and video upscaling SaaS and API supporting neural models up to 8K, temporal consistency, and CLI/MCP integration.
 - [Upscale-A-Video](https://github.com/sczhou/Upscale-A-Video) - CVPR 2024 temporal-consistent diffusion model for real-world video super-resolution.
 - [Video TensorFlow](https://docs.google.com/presentation/d/1NAqYWmFOwxJEacZCuPLdX0mRNRFPFgeRbsm22EaxerU/edit?usp=sharing) - Using TensorFlow For Audience Measurement Kevin Staunton-Lambert Solutions Architect R&D @kevleyski www.switch.tv.
 - [Videocr](https://github.com/apm1467/videocr) - Extract hardcoded subtitles from videos using machine learning.
