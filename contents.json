@@ -30619,6 +30619,20 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "Face swap output: preview, OBS, and virtual cameras",
+      "description": "A practical guide to separating live preview, recording, OBS capture, and virtual-camera output, with step-by-step checks for the complete receiving-app video path.",
+      "homepage": "https://github.com/aloow/real-time-face-swap-guide/blob/main/obs-and-virtual-cameras.md",
+      "category": [
+        "learning-resources"
+      ],
+      "tags": [
+        "OBS Studio",
+        "virtual camera",
+        "webcam",
+        "tutorial"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
