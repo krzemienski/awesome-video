@@ -749,6 +749,7 @@
 - [IAB Open Measurement JS Clients (OMID)](https://github.com/InteractiveAdvertisingBureau/Open-Measurement-JSClients) - IAB Open Measurement (OMID) JavaScript verification clients for ad viewability/measurement; Apache 2.0.
 - [IAB SIMID (Secure Interactive Media Interface Definition)](https://interactiveadvertisingbureau.github.io/SIMID) - Official IAB Tech Lab spec replacing VPAID for interactive video ads, designed to work cleanly with server-side ad insertion (SSAI).
 - [rafaelcaricio/scte35 — Rust SCTE-35 parse/encode](https://github.com/rafaelcaricio/scte35) - Rust library to parse and encode SCTE-35 splice information with a type-safe builder API.
+- [rtblint](https://github.com/aleksUIX/rtblint) - An open-source OpenRTB bid request validator and linter, checking requests against the IAB Tech Lab OpenRTB spec (2.0 through 3.0) for malformed JSON, missing fields, and type mismatches. Ships as a free browser tester, a Rust CLI, and an MCP server for AI agents.
 - [SimpleSSAI — server-side ad insertion server](https://github.com/SimpleSSAI/SimpleSSAI) - API-driven server-side ad insertion stitching VMAP/VAST ads into HLS at segment boundaries.
 - [VASTlint — open-source VAST validator/inspector](https://vastlint.org) - Open-source VAST ad-tag validator and inspector implementing IAB spec/XSD rules, shipped as Rust core with Go/Python/npm/VS Code extension bindings.
 
