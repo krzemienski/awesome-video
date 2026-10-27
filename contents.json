@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "Pictograph",
+      "description": "Runs custom object detection, segmentation and tracking models on live video: an RTSP camera or a WebRTC webcam streams to a GPU-served model and each frame's detections come back as it is processed. Workflows add line-crossing counts, dwell time and webhooks.",
+      "homepage": "https://pictograph.io/docs/streams",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "computer vision",
+        "object detection",
+        "video analytics",
+        "webrtc",
+        "rtsp"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
