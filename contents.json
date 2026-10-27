@@ -27580,6 +27580,21 @@
       ]
     },
     {
+      "title": "EasyLottie Remove Video Background",
+      "homepage": "https://www.easylottie.com/remove-video-background",
+      "description": "A browser-based chroma key tool that removes a solid green, blue, white or black background from MP4, MOV, WebM or GIF and exports transparent WebM, PNG frames or GIF. Files are processed locally with WebCodecs and WebGL and are not uploaded.",
+      "tags": [
+        "chroma key",
+        "background removal",
+        "transparent video",
+        "webm",
+        "browser"
+      ],
+      "category": [
+        "media-tools"
+      ]
+    },
+    {
       "title": "Remotion",
       "homepage": "https://www.remotion.dev/",
       "description": "A framework for creating videos programmatically using React. Developers can use web technologies to render dynamic video content (with animations, data, etc.) and export it as MP4 videos.",
