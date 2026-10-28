@@ -286,6 +286,7 @@
 - [vid.stab](https://github.com/georgmartius/vid.stab) - An open source video stabilization library, used with FFmpeg to stabilize shaky footage by analyzing and smoothing camera motion.
 - [VidCoder](https://github.com/RandomEngy/VidCoder) - An open source Windows application for converting and ripping video files and DVDs/Blu-rays, built on the HandBrake engine with an enhanced user interface.
 - [VidCutter](https://github.com/ozmartian/vidcutter) - An open source cross-platform tool for fast video trimming and joining. VidCutter focuses on doing simple cuts without re-encoding, using intelligent scene detection and supporting many formats via FFmpeg.
+- [Video Dehydrator](https://github.com/philipvern-dot/video-dehydrator) - A Windows application that scans a folder for videos that are too large for their resolution and re-encodes them to smaller copies using HandBrake CLI and FFmpeg, keeping the originals until you delete them.
 - [video4j](https://github.com/metaloom/video4j) - A Java video processing library providing a set of tools and APIs to handle video operations in Java applications.
 - [VirtualDub](https://www.virtualdub.org) - A classic open source video capture and processing utility for Windows, useful for quick linear operations, filtering, and format conversions on AVI files.
 - [VLMC (VideoLAN Movie Creator)](https://www.videolan.org/vlmc) - An experimental non-linear video editing software from the VideoLAN project. Aims to offer basic editing (cutting, transitions, etc.) with a simple interface, built on libVLC.
