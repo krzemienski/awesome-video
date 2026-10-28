@@ -987,6 +987,7 @@
 
 - [Ad Insertion Sample (GitHub)](https://github.com/OpenVisualCloud/Ad-Insertion-Sample) - The ad-insertion reference pipeline shows how to integrate various media building blocks, with analytics powered by the OpenVINO™ Toolkit, for intelligent server-side ad insertion.
 - [Audio Transcriber](https://github.com/shinobizero/audio_transcriber) - Transcodes audio & video files to text, supports MP3, M4A, WAV, MP4, MKV, AVI, MPG & MPEG. No Online API's. Python 3.
+- [Awesome Video as Code](https://github.com/voidforall/awesome-video-as-code) - Curated list of renderers, agent skills, MCP servers, pipelines, and research for producing video from code written or directed by AI agents.
 - [FGVC](https://github.com/vt-vl-lab/FGVC) - (ECCV 2020) Flow-edge Guided Video Completion.
 - [FlashVSR](https://github.com/OpenImagingLab/FlashVSR) - CVPR 2026 real-time diffusion-based streaming video super-resolution using one-step, locality-constrained sparse attention with a tiny conditional decoder.
 - [Jukebox](https://github.com/openai/jukebox) - Code for the paper "Jukebox: A Generative Model for Music".
