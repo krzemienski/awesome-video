@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "FrameCompose",
+      "description": "Browser-based video editor with AI generation. Its preview composites scenes, transitions and effects with WebGPU and decodes video with WebCodecs.",
+      "homepage": "https://www.framecompose.com",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "editor",
+        "browser",
+        "webgpu",
+        "webcodecs",
+        "ai"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
