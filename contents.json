@@ -30619,6 +30619,20 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "VoxSail",
+      "description": "Browser-based video and audio localization with transcription, subtitle translation, AI dubbing, and an online review editor. Exports localized media, transcripts, and SRT or ASS subtitle files, depending on project type.",
+      "homepage": "https://voxsail.com/en/",
+      "category": [
+        "subtitles-captions"
+      ],
+      "tags": [
+        "subtitles",
+        "translation",
+        "dubbing",
+        "localization"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
