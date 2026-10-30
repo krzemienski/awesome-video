@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "Karaoke Captions",
+      "description": "Browser-based word-by-word video captions with on-device speech recognition, transcript and timing editing, and MP4, SRT and VTT export.",
+      "homepage": "https://karaokecaptions.com/",
+      "category": [
+        "subtitles-captions"
+      ],
+      "tags": [
+        "captions",
+        "subtitles",
+        "speech-to-text",
+        "browser",
+        "local-processing"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
