@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "ClipForge",
+      "description": "Local video studio for Windows that turns one clip into Shorts, TikTok and YouTube versions with captions, a logo and loudness normalizing, built on FFmpeg.",
+      "homepage": "https://github.com/DrummingBird1/clipforge-app",
+      "category": [
+        "encoding-tools"
+      ],
+      "tags": [
+        "ffmpeg",
+        "python",
+        "video-editor",
+        "shorts",
+        "nvenc"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
