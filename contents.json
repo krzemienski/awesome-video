@@ -13653,6 +13653,21 @@
       ]
     },
     {
+      "title": "jev-subtitle-translator",
+      "description": "Open-source SRT subtitle translator using structured LLM output (OpenRouter); preserves every cue and timestamp, retries missing lines, and runs automatic translation QC.",
+      "homepage": "https://github.com/GeekLinkDev/jev-subtitle-translator",
+      "category": [
+        "subtitles-captions"
+      ],
+      "tags": [
+        "subtitles",
+        "SRT",
+        "translation",
+        "LLM",
+        "python"
+      ]
+    },
+    {
       "category": [
         "subtitles-captions"
       ],
