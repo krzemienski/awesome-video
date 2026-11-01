@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "streamtop",
+      "homepage": "https://github.com/Jorji49/streamtop",
+      "description": "Terminal monitor for live HLS, DASH, and IPTV streams with segment wire probes, TR 101 290 checks, SCTE-35 markers, and Prometheus metrics.",
+      "category": [
+        "quality-testing"
+      ],
+      "tags": [
+        "HLS",
+        "DASH",
+        "stream monitoring",
+        "cli",
+        "rust"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
