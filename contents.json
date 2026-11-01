@@ -30619,6 +30619,20 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "Chrome HLS Playlist Inspection and Missing-Audio Troubleshooting",
+      "description": "A tutorial on inspecting permitted HLS streams in Chrome DevTools, distinguishing master and media playlists, and diagnosing separate audio tracks and incomplete downloads. Published by AnyVidDL.",
+      "homepage": "https://www.anyviddl.com/guides/m3u8-downloader-chrome",
+      "category": [
+        "tutorials-case-studies"
+      ],
+      "tags": [
+        "HLS",
+        "M3U8",
+        "Chrome DevTools",
+        "troubleshooting"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
