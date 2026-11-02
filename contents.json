@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "Kodecz",
+      "homepage": "https://github.com/konecz/kodecz",
+      "description": "Open-source engine that renders a web page (HTML, CSS, JavaScript, WebGL) into an MP4 frame by frame, on an NVIDIA GPU with NVENC or on any CPU with x264, without a screenshot per frame.",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video generation",
+        "programmatic video",
+        "html",
+        "nvenc",
+        "gpu"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
