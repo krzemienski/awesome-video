@@ -30619,6 +30619,36 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "tennis-evolution",
+      "homepage": "https://github.com/bobobo2026/tennis-evolution",
+      "description": "Open source CLI and MCP server that cuts rallies out of long sports recordings with keyframe-aligned stream copies, then builds one labelled highlight reel with ffmpeg (trim, concat, single encode) while passing iPhone HLG/BT.2020 colour tags through. Every output is verified for clean decode and audio/video sync.",
+      "category": [
+        "ffmpeg"
+      ],
+      "tags": [
+        "ffmpeg",
+        "hevc",
+        "hdr",
+        "highlights",
+        "cli"
+      ]
+    },
+    {
+      "title": "Keep iPhone HDR when cutting and joining videos with ffmpeg",
+      "homepage": "https://tennis-evolution.pages.dev/guides/ffmpeg-iphone-hdr-hlg/",
+      "description": "Why iPhone HEVC 10-bit HLG footage turns grey after an ffmpeg re-encode, and the flags that keep it HDR: colour tags, pix_fmt, hvc1, rotation, the spatial-audio track and Dolby Vision profile 8.4.",
+      "category": [
+        "hevc"
+      ],
+      "tags": [
+        "ffmpeg",
+        "hdr",
+        "hlg",
+        "iphone",
+        "tutorial"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
