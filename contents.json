@@ -15194,6 +15194,21 @@
     },
     {
       "category": [
+        "subtitles-captions"
+      ],
+      "homepage": "https://caption-x.com/subtitle-converter",
+      "description": "Free online subtitle converter. Converts SRT, VTT, ASS/SSA, SBV and JSON files into SRT, VTT, ASS, SBV, TXT or JSON, up to 20 files at a time, in the browser without uploading them.",
+      "title": "Caption X Subtitle Converter",
+      "tags": [
+        "subtitles",
+        "captions",
+        "srt",
+        "webvtt",
+        "converter"
+      ]
+    },
+    {
+      "category": [
         "web-players"
       ],
       "homepage": "https://github.com/videojs/video.js",
