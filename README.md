@@ -1694,6 +1694,7 @@
 
 ### Desktop Players
 
+- [Deckboy](https://github.com/Utopian-Academy/Deckboy) - Native, open-source media playback & show control app with SRT streaming, recording and Blackmagic SDI output.
 - [HWAcceleratedVP9Player](https://github.com/rinsuki/HWAcceleratedVP9Player) - Hardware Accelerated VP9 Player in macOS 11.0 Big Sur beta 4+.
 - [KSPlayer](https://github.com/kingslay/KSPlayer) - Swift media player framework for iOS/macOS/tvOS/visionOS on AVPlayer+FFmpeg with HLG, HDR10, HDR10+, Dolby Vision, Dolby Atmos, and text/image subtitle support.
 - [mpv.net (GitHub)](https://github.com/mpvnet-player/mpv.net) - Modern mpv-based Windows media player with a customizable GUI, themes, and extension support built on the mpv engine.
