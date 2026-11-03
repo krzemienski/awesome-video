@@ -940,6 +940,7 @@
 - [TV Subtitle Extraction](https://github.com/statsbiblioteket/tv-subtitle-extraction) - System for extraction of subtitles from TV broadcasts.
 - [vidstack/captions — Lightweight JS Caption Parser/Renderer](https://github.com/vidstack/captions) - Modern ~5kB JS library parsing and rendering VTT/SRT/SSA captions, with server-side support, VTT-region rollup captions, and CSS styling.
 - [whisper-subtitle-generator](https://github.com/giakinh0823/whisper-subtitle-generator) - Cross-platform GUI for batch subtitle generation with SRT/VTT/JSON export, translation, and GPU acceleration. MIT.
+- [SubFlow](https://github.com/IcaroPv01/subflow) - Fully local subtitle pipeline: Whisper transcription, glossary, batch translation, Netflix-style QC and ASR-hallucination checks. CLI + Claude Code skill, MIT.
 - [WhisperTimeSync — Transcript-to-Whisper Subtitle Aligner](https://github.com/EtienneAb3d/WhisperTimeSync) - Aligns an existing accurate transcript over Whisper timestamps to produce SRT with both good text and good timing.
 
 ### VMAF PSNR SSIM Tools
