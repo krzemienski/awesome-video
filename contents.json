@@ -30619,6 +30619,23 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "larry-xue/awesome-video-to-slides",
+      "description": "Curated list of tools for recovering the slides shown in a recorded talk, kept separate from tools that generate a new deck from a transcript. Each row records input, output, whether processing runs in the browser or on a server, the evidence that the output is editable, and the date the vendor page was last checked.",
+      "homepage": "https://github.com/larry-xue/awesome-video-to-slides",
+      "category": [
+        "learning-resources"
+      ],
+      "tags": [
+        "slides",
+        "presentation",
+        "screen recording",
+        "frame differencing",
+        "OCR",
+        "pptx",
+        "curated list"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
