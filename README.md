@@ -1030,6 +1030,7 @@
 
 - [FF Multi Converter](https://github.com/ilstam/FF-Multi-Converter) - GUI File Format Converter. Contribute to ilstam/FF-Multi-Converter development by creating an account on GitHub.
 - [media-converter (M1XZG)](https://github.com/M1XZG/media-converter) - Self-hosted web-UI media converter with GPU acceleration (NVENC/AMF/QSV), Docker-ready, supports batch resolution upscaling and audio extraction.
+- [Open Media Converter](https://github.com/albilu/open-media-converter) - Native Linux GTK4 GUI for batch video, audio, image and document conversion (FFmpeg, ImageMagick, Pandoc, LibreOffice) with presets and AppImage/DEB packages.
 - [unifi-protect-remux](https://github.com/petergeneric/unifi-protect-remux) - Niche true-remux tool converting proprietary Ubiquiti UniFi Protect.ubv camera format to MP4 without re-encoding.
 - [wo-video-converter](https://github.com/thurti/wo-video-converter) - Offline browser-based video converter powered by FFmpeg-WebAssembly, no server upload required.
 
