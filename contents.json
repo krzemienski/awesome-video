@@ -30619,6 +30619,19 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "VidSmaller",
+      "homepage": "https://vidsmaller.com",
+      "description": "Cloud video compressor that targets an exact file size, with a REST API.",
+      "category": [
+        "encoding-tools"
+      ],
+      "tags": [
+        "compression",
+        "encoding",
+        "api"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
