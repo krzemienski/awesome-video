@@ -29940,6 +29940,23 @@
       ]
     },
     {
+      "title": "GeekLink",
+      "description": "Desktop app for macOS and Windows that extracts hardcoded (burned-in) subtitles from video with OCR, transcribes speech locally with Whisper, and translates subtitles with AI. Freemium, closed source.",
+      "homepage": "https://geeklink.dev/",
+      "category": [
+        "subtitles-captions"
+      ],
+      "tags": [
+        "subtitles",
+        "OCR",
+        "hardcoded subtitles",
+        "transcription",
+        "translation",
+        "macOS",
+        "Windows"
+      ]
+    },
+    {
       "title": "Kaltura nginx-vod-module",
       "homepage": "https://github.com/kaltura/nginx-vod-module",
       "description": "An NGINX module for Video on Demand streaming that enables MP4 repackaging and dynamic adaptive streaming (HLS/DASH) support on Nginx servers.",
