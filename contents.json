@@ -23560,6 +23560,25 @@
       ]
     },
     {
+      "title": "Basis Video GOP Structure Test Streams",
+      "homepage": "https://basisvideo.com/video-encoding/free-h-264-test-streams-ffmpeg-recipes-gop-bitrate",
+      "category": [
+        "adaptive-streaming",
+        "players-clients",
+        "codecs"
+      ],
+      "description": "A curated reference suite of H.264 test streams isolating GOP structures, keyframing, and rate-control parameters for decoder compliance and ABR testing.",
+      "tags": [
+        "h264",
+        "test streams",
+        "gop",
+        "ffmpeg",
+        "abr",
+        "video encoding",
+        "streaming"
+      ]
+    },
+    {
       "title": "Eyevinn Stream Corruptor",
       "homepage": "https://github.com/Eyevinn/streaming-onboarding/blob/master/Stream-Corruptor.md",
       "category": [
