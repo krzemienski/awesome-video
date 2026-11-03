@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "VideoUpscaler",
+      "homepage": "https://videoupscaler.co",
+      "description": "Cloud GPU AI video upscaling, denoising, stabilization, and frame interpolation up to 4K, with an OpenAPI 3.1 REST API and workflow integrations (n8n, Zapier, Make).",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "upscaling",
+        "ai",
+        "enhancement",
+        "api",
+        "4k"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
