@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "charliewwdev/OpenMontage",
+      "description": "Self-hosted AI short-drama workstation: script, characters, storyboard, edge-tts voice and FFmpeg edit, deployed with Docker Compose (AGPL-3.0).",
+      "homepage": "https://github.com/charliewwdev/OpenMontage",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "ai video",
+        "ffmpeg",
+        "self-hosted",
+        "short drama",
+        "storyboard"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
