@@ -30619,6 +30619,22 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "halfsize",
+      "homepage": "https://github.com/YKLovePython/halfsize",
+      "description": "A Node.js command-line tool and offline web app that compresses a video to an exact target size, such as 20 MB for Discord or WeChat, and verifies the result with VMAF and SSIM.",
+      "category": [
+        "ffmpeg"
+      ],
+      "tags": [
+        "ffmpeg",
+        "video compression",
+        "target file size",
+        "vmaf",
+        "nodejs",
+        "cli"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
