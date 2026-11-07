@@ -30707,15 +30707,15 @@
     },
     {
       "title": "FreeRet",
-      "description": "Training-free multimodal retrieval code using Qwen2.5-VL embeddings and MCQ-based reranking, including image/video search demonstrations and evaluation.",
+      "description": "Training-free semantic image retrieval code using Qwen2.5-VL embeddings and MCQ-based reranking, with a composed-image search demo and MMEB evaluation.",
       "homepage": "https://github.com/MCG-NJU/FreeRet",
       "category": [
         "media-tools"
       ],
       "tags": [
-        "video analysis",
+        "computer vision",
         "machine learning",
-        "video retrieval",
+        "image retrieval",
         "multimodal retrieval"
       ]
     },
