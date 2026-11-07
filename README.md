@@ -1029,6 +1029,7 @@
 ### Conversion & Format Tools
 
 - [FF Multi Converter](https://github.com/ilstam/FF-Multi-Converter) - GUI File Format Converter. Contribute to ilstam/FF-Multi-Converter development by creating an account on GitHub.
+- [KaijuConverter](https://kaijuconverter.com) - High-speed online video and audio converter supporting MP4, WebM, AVI, MOV, MKV, MP3, and WAV with in-browser processing and API.
 - [media-converter (M1XZG)](https://github.com/M1XZG/media-converter) - Self-hosted web-UI media converter with GPU acceleration (NVENC/AMF/QSV), Docker-ready, supports batch resolution upscaling and audio extraction.
 - [unifi-protect-remux](https://github.com/petergeneric/unifi-protect-remux) - Niche true-remux tool converting proprietary Ubiquiti UniFi Protect.ubv camera format to MP4 without re-encoding.
 - [wo-video-converter](https://github.com/thurti/wo-video-converter) - Offline browser-based video converter powered by FFmpeg-WebAssembly, no server upload required.
