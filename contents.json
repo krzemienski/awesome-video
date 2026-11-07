@@ -30619,6 +30619,119 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "VideoJev",
+      "description": "Open video decision models for temporal grounding and multiple-choice question answering, with cached and joint inference to reuse visual computation.",
+      "homepage": "https://github.com/MCG-NJU/VideoJev",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video analysis",
+        "machine learning",
+        "video understanding",
+        "temporal grounding",
+        "question answering"
+      ]
+    },
+    {
+      "title": "OneStreamer",
+      "description": "Streaming-video LLM framework with timestamped hierarchical caption memory and learned response states for perception, historical QA and proactive responses.",
+      "homepage": "https://github.com/MCG-NJU/OneStreamer",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video analysis",
+        "machine learning",
+        "streaming video",
+        "memory",
+        "question answering"
+      ]
+    },
+    {
+      "title": "JoyAI-VL-Interaction",
+      "description": "Self-hosted real-time vision-language interaction stack with an 8B model that chooses silence, response or delegation and optional ASR, TTS and background-agent services.",
+      "homepage": "https://github.com/jd-opensource/JoyAI-VL-Interaction",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video analysis",
+        "machine learning",
+        "streaming video",
+        "vision-language interaction"
+      ]
+    },
+    {
+      "title": "TimeLens2",
+      "description": "Video temporal-grounding framework with public 2B, 4B and 8B models, SFT/GRPO training and benchmark evaluation for query-guided event localization.",
+      "homepage": "https://github.com/MCG-NJU/TimeLens2",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video analysis",
+        "machine learning",
+        "temporal grounding"
+      ]
+    },
+    {
+      "title": "VideoChat3",
+      "description": "4B video-language model with spatiotemporal I3D-ViT tokenization, training and evaluation code, and offline plus proactive online video-inference examples.",
+      "homepage": "https://github.com/MCG-NJU/VideoChat3",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video analysis",
+        "machine learning",
+        "video understanding",
+        "streaming video"
+      ]
+    },
+    {
+      "title": "Video-o3",
+      "description": "Long-video reasoning training and evaluation framework that interleaves clue seeking with inspection of relevant segments, with released SFT/RL checkpoints.",
+      "homepage": "https://github.com/MCG-NJU/Video-o3",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video analysis",
+        "machine learning",
+        "video reasoning",
+        "long video"
+      ]
+    },
+    {
+      "title": "FreeRet",
+      "description": "Training-free semantic image retrieval code using Qwen2.5-VL embeddings and MCQ-based reranking, with a composed-image search demo and MMEB evaluation.",
+      "homepage": "https://github.com/MCG-NJU/FreeRet",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "computer vision",
+        "machine learning",
+        "image retrieval",
+        "multimodal retrieval"
+      ]
+    },
+    {
+      "title": "MoG-VFI",
+      "description": "Optical-flow-guided generative video frame interpolation for real-world and animated scenes, with caption-conditioned inference and public real/animation checkpoints.",
+      "homepage": "https://github.com/MCG-NJU/MoG-VFI",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video processing",
+        "computer vision",
+        "machine learning",
+        "frame interpolation"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
