@@ -30619,6 +30619,22 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "Umless",
+      "homepage": "https://github.com/thoufeekx/umless",
+      "description": "An MIT-licensed Node.js CLI and MCP server that cuts filler words, stutters, retakes and long pauses out of talking-head videos, rendering the result with ffmpeg after transcribing the audio through the user's own OpenRouter key.",
+      "category": [
+        "ffmpeg"
+      ],
+      "tags": [
+        "ffmpeg",
+        "video editing",
+        "filler words",
+        "silence removal",
+        "nodejs",
+        "cli"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
