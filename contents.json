@@ -30619,6 +30619,20 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "ts_analyze",
+      "description": "Open-source command-line MPEG-TS analyzer that checks UDP/RTP streams (with SMPTE ST 2022-1 FEC and ST 2022-7) and TS files against ETSI TR 101 290, PCR accuracy and the T-STD buffer model, with text, XML and JSON reports and exit codes.",
+      "homepage": "https://github.com/perfect-soft/perfect-streamer-toolkit",
+      "category": [
+        "quality-testing"
+      ],
+      "tags": [
+        "MPEG-TS",
+        "TR 101 290",
+        "monitoring",
+        "IPTV"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
