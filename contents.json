@@ -30619,7 +30619,22 @@
         "video standards",
         "encoding"
       ]
-    }
-  ],
+    },
+      {
+      "title": "CutVoke",
+      "homepage": "https://github.com/frankShan001/CutVoke",
+      "description": "An open-source, local-first video editor where AI agents (via MCP, HTTP or CLI) and people edit the same multitrack timeline and export MP4 or an editable project.",
+      "category": [
+        "encoding-tools"
+      ],
+      "tags": [
+        "video editor",
+        "open source",
+        "mcp",
+        "ai agents",
+        "ffmpeg"
+      ]
+      }
+],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
 }
