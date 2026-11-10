@@ -1153,6 +1153,20 @@
       ]
     },
     {
+      "title": "Vidney",
+      "description": "Browser workspace for generating video from text or photos, with pet-photo video effects, shared credits and paid plans.",
+      "homepage": "https://vidney.ai/",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "ai",
+        "text-to-video",
+        "image-to-video",
+        "video effects"
+      ]
+    },
+    {
       "title": "OOONA Tools",
       "description": "OOONA Tools offers professional online tools for subtitling and captioning, accessible from any computer at any time. The platform provides a simple and intuitive web interface for creating and editing captions and subtitles in any language. Features include frame-accurate text timing with an advanced timeline, video grid for precise caption positioning, audio waveform, and scene-change detection for accurate subtitle spotting. It supports import and export in various caption and subtitle formats, including TTML/DFXP, VTT, SCC, CAP, EBU-STL, SRT, IMSC1, PAC, 890, and more. Additionally, it supports generating image-based subtitles for DVD/Blu-ray/DCP authoring. Powerful Pro apps allow users to run automated QA scripts to check and fix files, as well as customize hotkeys and project settings.",
       "homepage": "https://theiabm.org/bamproducts/online-caption-subtitle-toolkit/",
