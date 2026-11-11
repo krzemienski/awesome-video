@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "Kinetograph",
+      "description": "A programmatic video engine: write Remotion-style TypeScript or HTML, and a Rust GPU compositor renders it to video with no browser.",
+      "homepage": "https://github.com/0xS4N4TG/kinetograph",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video-generation",
+        "programmatic-video",
+        "remotion",
+        "Node.js",
+        "Rust"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
