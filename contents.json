@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "VideoDB",
+      "homepage": "https://videodb.io",
+      "description": "Hosted video service with an MCP server and agent skills that let AI agents watch, search, clip and caption video and monitor live streams. Works in Claude, ChatGPT, Cursor and other MCP clients.",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "ai agents",
+        "mcp",
+        "video search",
+        "clipping",
+        "captions"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
