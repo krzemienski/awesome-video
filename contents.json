@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "EXR Converter",
+      "description": "Desktop app and CLI for EXR to video and video to EXR conversion, built for VFX dailies, review exports, and plate round-trips, with OpenColorIO color management, slates, and camera RAW support.",
+      "homepage": "https://github.com/derek-rein/exr-converter",
+      "category": [
+        "encoding-tools"
+      ],
+      "tags": [
+        "ffmpeg",
+        "exr",
+        "opencolorio",
+        "vfx",
+        "video-converter"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
