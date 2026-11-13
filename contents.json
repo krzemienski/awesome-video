@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "CueCheck Subtitle Checker",
+      "description": "Browser-local SRT, WebVTT, and MKV subtitle validator, reading-speed checker, and format converter. Checks Netflix, BBC, DCMP, and YouTube timing and line-length standards without uploading media files.",
+      "homepage": "https://cuecheck.app",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "subtitles",
+        "captioning",
+        "webvtt",
+        "srt",
+        "localization"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
