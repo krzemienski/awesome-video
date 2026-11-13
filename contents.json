@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "AI Short Video Method Library",
+      "description": "Three MIT-licensed examples for rendering GSAP, Vega-Lite and Mermaid scenes as vertical videos, with shared capture scripts.",
+      "homepage": "https://github.com/Nickwang684/ai-short-video-method-library",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "programmatic video",
+        "GSAP",
+        "Vega-Lite",
+        "Mermaid",
+        "FFmpeg"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
