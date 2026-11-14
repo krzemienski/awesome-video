@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "VidQuark",
+      "description": "Browser-based tool for downloading public TikTok videos as MP4 and converting available audio to MP3.",
+      "homepage": "https://vidquark.com/",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "downloader",
+        "video-download",
+        "audio-download",
+        "tiktok",
+        "mp3"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
