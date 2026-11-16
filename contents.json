@@ -30622,7 +30622,7 @@
     },
     {
       "title": "VideoDB",
-      "homepage": "https://videodb.io",
+      "homepage": "https://videodb.io/?utm_source=github.com/krzemienski/awesome-video&utm_medium=directory",
       "description": "Hosted video service with an MCP server and agent skills that let AI agents watch, search, clip and caption video and monitor live streams. Works in Claude, ChatGPT, Cursor and other MCP clients.",
       "category": [
         "media-tools"
