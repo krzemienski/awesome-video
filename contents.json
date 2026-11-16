@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "VideoDB",
+      "homepage": "https://videodb.io/?utm_source=github.com/krzemienski/awesome-video&utm_medium=directory",
+      "description": "VideoDB lets an AI agent watch, search and clip video. Works in Claude, ChatGPT, Claude Code, Cursor and any MCP client.",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "ai agents",
+        "mcp",
+        "video search",
+        "clipping",
+        "captions"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
