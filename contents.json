@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "frameyeet",
+      "homepage": "https://frameyeet.com",
+      "description": "A free browser-based video editor that scans a long gameplay recording, suggests vertical 9:16 short candidates with the reason for each, and exports the chosen ones. Everything runs locally in the browser (export uses WebCodecs), so the video is never uploaded.",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video editor",
+        "browser",
+        "webcodecs",
+        "short-form video",
+        "9:16"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
