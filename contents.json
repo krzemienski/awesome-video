@@ -826,6 +826,18 @@
       ]
     },
     {
+      "title": "KaijuConverter",
+      "description": "High-speed online video and audio converter supporting MP4, WebM, AVI, MOV, MKV, MP3, and WAV with in-browser processing and API.",
+      "homepage": "https://kaijuconverter.com",
+      "category": "encoding-codecs",
+      "tags": [
+        "video",
+        "audio",
+        "conversion",
+        "api"
+      ]
+    },
+    {
       "title": "libVLC",
       "description": "libVLC is the core engine and interface of the VLC media player, providing a modular framework for multimedia applications. It supports a wide range of media formats and streaming protocols, enabling developers to integrate powerful video playback and streaming capabilities into their applications.",
       "homepage": "https://www.videolan.org/vlc/libvlc.html",
