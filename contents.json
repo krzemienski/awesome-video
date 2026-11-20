@@ -28917,6 +28917,21 @@
       ]
     },
     {
+      "title": "TorrentGlide",
+      "homepage": "https://torrentglide.github.io/",
+      "description": "A browser extension for Chrome and Firefox that plays magnet and .torrent links in a player tab while they download, streamed by a local rqbit client. It decodes MKV, HEVC and AVI in the browser with FFmpeg compiled to WebAssembly and WebCodecs.",
+      "tags": [
+        "torrent",
+        "browser extension",
+        "video player",
+        "WebAssembly",
+        "WebCodecs"
+      ],
+      "category": [
+        "web-players"
+      ]
+    },
+    {
       "title": "ClipBucket",
       "homepage": "https://github.com/arslancb/clipbucket",
       "description": "An open source video sharing platform (YouTube-like) allowing users to upload, manage, and stream video content on their own server.",
