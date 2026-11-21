@@ -933,6 +933,7 @@
 - [Extract Subtitles](https://github.com/shawnsky/extract-subtitles) - Utility to extract subtitle streams from video containers into separate text-based subtitle files.
 - [Node Thumbnails Webvtt](https://github.com/estliberitas/node-thumbnails-webvtt) - Video thumbnail generator generating WebVTT spec file.
 - [Serverless Subtitles](https://github.com/awslabs/serverless-subtitles) - Can handle a video input, extract the sound, transcript it and generate different subtitle files for your video.
+- [SRT Subtitle Shifter](https://alltoolsverse.com/tools/subtitle-srt-shifter/) - Shifts every timestamp in an SRT subtitle file forward or backward by a configurable number of seconds.
 - [subgen — Whisper Auto-Subtitles for Media Servers](https://github.com/McCloudS/subgen) - Auto-subtitle generator using Whisper (stable-ts + faster-whisper) for Jellyfin/Plex/Emby/Bazarr, CPU or CUDA.
 - [Subs Extract](https://github.com/cessen/subs_extract) - Extracts per-sentence subtitles + audio from a subtitle file + video file.
 - [subsai](https://github.com/absadiki/subsai) - Subtitle generation tool with WebUI, CLI, and Python API using faster-whisper; exports srt/ass/ssa/sub/JSON/txt/vtt with translation support.
