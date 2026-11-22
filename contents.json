@@ -30619,7 +30619,7 @@
         "video standards",
         "encoding"
       ]
-    }
+    }, {"title": "Zapmatte Green Screen Remover", "description": "Open-source green screen remover for video: transparent WebM, ProRes 4444, alpha matte. Built on Robust Video Matting + chroma key + despill.", "homepage": "https://github.com/wsmhj/zapmatte-green-screen-remover", "category": ["media-tools"], "tags": ["green-screen", "chroma-key", "video-matting", "background-removal"]}
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
 }
