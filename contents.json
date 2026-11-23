@@ -30619,6 +30619,18 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "ViralForge",
+      "description": "CLI and MCP tools for local video structure analysis and editable video projects.",
+      "homepage": "https://github.com/fendouai/ViralForge",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video",
+        "analysis"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
