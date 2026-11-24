@@ -366,6 +366,20 @@
   ],
   "projects": [
     {
+      "title": "SpeakerEject 5.1 and 7.1 Channel Test MP4s",
+      "description": "Short CC BY 4.0 H.264 MP4 fixtures with 5.1 or 7.1 AAC-LC audio and spoken and on-screen channel labels for testing playback routing.",
+      "homepage": "https://speakereject.com/surround-sound-test/#voice-announced-files",
+      "category": [
+        "general-tools"
+      ],
+      "tags": [
+        "testing",
+        "sample-streams",
+        "test-content",
+        "audio"
+      ]
+    },
+    {
       "title": "MPEG Standards Documentation",
       "description": "The official repository of MPEG standards, providing comprehensive documentation on various media coding standards, including MPEG-1, MPEG-2, MPEG-4, and the latest MPEG-I. This resource is essential for developers seeking in-depth understanding and implementation details of MPEG standards.",
       "homepage": "https://www.mpeg.org/standards/",
