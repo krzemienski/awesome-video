@@ -30619,6 +30619,20 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title":"TranscriptGrid",
+      "homepage":"https://transcriptgrid.com",
+      "description":"Free video-to-text in your browser, no uploads.",
+      "category":[
+        "subtitles-captions"
+      ],
+      "tags":[
+        "subtitles",
+        "captions",
+        "transcription",
+        "video-to-text"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
