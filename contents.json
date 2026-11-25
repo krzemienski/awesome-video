@@ -30619,6 +30619,19 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "Valmera Caption Cut Map",
+      "homepage": "https://valmera.io/blog/edit-teams-town-hall-recording#caption-cut-map",
+      "description": "Browser-local utility that remaps SRT or WebVTT cues after straight cuts, flags cues that cross a cut, and exports a plain-text WebVTT draft.",
+      "category": [
+        "subtitles-captions"
+      ],
+      "tags": [
+        "captions",
+        "webvtt",
+        "subtitle timing"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
