@@ -27182,6 +27182,20 @@
       ]
     },
     {
+      "title": "AgentShot",
+      "homepage": "https://github.com/hormuz-labs/agentshot",
+      "description": "An open-source AI video editor for macOS, Windows and Linux. Describe the edit in plain language and point at a frame when something is off; it edits locally and shows a before/after for every change.",
+      "tags": [
+        "video editor",
+        "open source",
+        "ai",
+        "cross-platform"
+      ],
+      "category": [
+        "encoding-tools"
+      ]
+    },
+    {
       "title": "Pitivi",
       "homepage": "http://www.pitivi.org/",
       "description": "A free, open source video editor for Linux built on the GStreamer framework, focusing on an intuitive user interface and integration with GNOME.",
