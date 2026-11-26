@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "videojs-story-view",
+      "description": "Instagram-style stories for the web, as a dependency-free <story-view> custom element or a Video.js 8 plugin, with tap and swipe navigation, hold to pause and muted autoplay on phones.",
+      "homepage": "https://github.com/hicay/videojs-story-view",
+      "category": [
+        "web-players"
+      ],
+      "tags": [
+        "video.js",
+        "plugin",
+        "web components",
+        "stories",
+        "JavaScript"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
