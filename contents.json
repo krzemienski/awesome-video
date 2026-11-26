@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "YouTube Subtitle Downloader (Transcript Dock)",
+      "homepage": "https://www.transcriptdock.com/tools/youtube-subtitle-downloader",
+      "description": "A free browser tool that downloads the captions of a YouTube video as an SRT or VTT file, with no account. It only works on videos that have captions and is limited to three videos a day.",
+      "category": [
+        "subtitles-captions"
+      ],
+      "tags": [
+        "subtitle",
+        "srt",
+        "vtt",
+        "youtube",
+        "web"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
