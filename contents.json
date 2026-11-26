@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "Gumlet CLI",
+      "description": "Open-source command-line tool for the Gumlet video platform to upload videos and manage assets, playlists, live streams and image CDN cache purges from the terminal or CI.",
+      "homepage": "https://github.com/gumlet/cli",
+      "category": [
+        "infrastructure-delivery"
+      ],
+      "tags": [
+        "video hosting",
+        "video streaming",
+        "CLI",
+        "live streaming",
+        "developer tools"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
