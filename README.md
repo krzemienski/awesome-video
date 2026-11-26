@@ -226,6 +226,7 @@
 ### Encoding Tools
 
 - [Adobe Media Encoder (AME) Guide](https://helpx.adobe.com/media-encoder/user-guide.html) - User guide for Adobe Media Encoder, a tool that automates batch transcoding and export from Adobe's video apps. Useful resource for understanding batch encoding settings for various formats and how to optimize output for different platforms.
+- [AgentShot](https://github.com/hormuz-labs/agentshot) - An open-source AI video editor for macOS, Windows and Linux. Describe the edit in plain language and point at a frame when something is off; it edits locally and shows a before/after for every change.
 - [Android FFmpeg Transcoder](https://github.com/kibotu/Android-FFmpeg-Transcoder) - An Android library for performing video transcoding on-device, leveraging FFmpeg (or MediaCodec) to extract frames or encode videos on Android.
 - [Arch FFmpeg GPAC](https://github.com/majamee/arch-ffmpeg-gpac) - A ready-prepared video transcoding pipeline to create DASH/ HLS compatible video files & playlists.
 - [Auto-Editor](https://github.com/WyattBlue/auto-editor) - An automatic video editor written in Python that can remove silence, jump cuts, and more without manual editing. It processes video/audio to create a faster-paced output automatically.
@@ -258,7 +259,6 @@
 - [Liquid Dl](https://github.com/Kthulu120/liquid_dl) - Liquid-dl is a simple tool for utlities such as FFmpeg, YouTube-dl, and scdl.
 - [Lossless Cut](https://github.com/mifi/lossless-cut) - A tool for trimming and cutting video files without re-encoding, preserving the original quality and codec data.
 - [Manifesto](https://github.com/gitfu/manifesto) - An HLS tool for creating multiple variants, a master.m3u8 file, and converting 608 captions to segmented webvtt subtitles via FFmpeg.
-- [Manul](https://github.com/hormuz-labs/manul) - An open-source AI video editor for macOS and Linux. Describe the edit in plain language and point at a frame when something is off; it edits locally and shows a before/after for every change.
 - [Mlt](https://github.com/mltframework/mlt) - Cross-platform multimedia framework for video editing, processing, and playback applications.
 - [MLT Framework](https://www.mltframework.org) - An open source multimedia framework for video editing applications. MLT provides a toolkit for developers to build editors (used by Kdenlive, Shotcut) with support for a range of effects and transitions.
 - [Moviepy (GitHub)](https://github.com/Zulko/moviepy) - A Python library for video editing and composition that uses FFmpeg backend to create, edit, and manipulate video files programmatically.
