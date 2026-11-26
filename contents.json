@@ -30619,6 +30619,21 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "explainroo",
+      "homepage": "https://github.com/vincentsch/explainroo",
+      "description": "Open-source tool that lets a coding agent like Claude Code or Codex make narrated explainer videos and product demos. It renders on your own computer with a local voice (Kokoro), word timing (Whisper) and FFmpeg, with no account or API key.",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video generation",
+        "explainer video",
+        "text-to-speech",
+        "ai agents",
+        "open source"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
