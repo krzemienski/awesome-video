@@ -30619,6 +30619,20 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "RVM (rvm-web)",
+      "homepage": "https://github.com/metiutek/rvm-web",
+      "description": "Removes the background from a video without a green screen, locally, using Robust Video Matting. Exports real alpha for Premiere, DaVinci Resolve and OBS, with optional AI upscaling.",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video matting",
+        "background removal",
+        "alpha channel",
+        "open source"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
