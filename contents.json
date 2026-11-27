@@ -30619,6 +30619,22 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "RTSP Inspector",
+      "description": "Local-first desktop RTSP stream diagnostic tool for Windows, Linux, and macOS that inspects DESCRIBE/SDP handshakes, RTP packet cadence, codec parameters, and transport errors with a free Community Edition.",
+      "homepage": "https://hannes-software.com/rtsp-inspector/",
+      "category": [
+        "protocols-transport",
+        "quality-testing"
+      ],
+      "tags": [
+        "rtsp",
+        "rtp",
+        "sdp",
+        "debugging",
+        "streaming"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
