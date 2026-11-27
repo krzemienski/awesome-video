@@ -30619,6 +30619,20 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "vedit",
+      "homepage": "https://github.com/metiutek/editorvideo-ai",
+      "description": "Open-source timeline video editor that an AI agent can drive over MCP (Claude Code, Cursor, Codex). Every edit renders on a deterministic FFmpeg engine, runs locally.",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "video editing",
+        "ffmpeg",
+        "ai",
+        "open source"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
