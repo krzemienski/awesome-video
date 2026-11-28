@@ -30619,6 +30619,20 @@
         "video standards",
         "encoding"
       ]
+    },
+    {
+      "title": "HyperFrames 24fps vs 60fps Visualizer",
+      "homepage": "https://hyperframes.net/tools/24fps-vs-60fps-visualizer",
+      "description": "Interactive browser-based frame-rate comparison demo (24fps, 60fps, 120fps) and FPS conversion utility for inspecting sample-and-hold motion judder and optical-flow frame interpolation without local installs.",
+      "category": [
+        "media-tools"
+      ],
+      "tags": [
+        "frame interpolation",
+        "fps",
+        "motion smoothness",
+        "browser tool"
+      ]
     }
   ],
   "ios_app_link": "https://apps.apple.com/app/awesome-video/id1234567890"
